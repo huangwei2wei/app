@@ -1,0 +1,6 @@
+# Agent message type advertisements
+
+ao.SKILL_UPDATE
+ao.START_ABILITY
+ao.ABILITY_UPDATE
+ao.STAT_XP_UPDATE

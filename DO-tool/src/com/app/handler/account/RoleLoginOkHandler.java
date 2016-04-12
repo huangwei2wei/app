@@ -1,0 +1,237 @@
+package com.app.handler.account;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.commons.lang.ArrayUtils;
+
+import com.app.dispatch.StatisticsServer;
+import com.app.empire.protocol.data.account.GetRandomName;
+import com.app.empire.protocol.data.account.GetRoleList;
+import com.app.empire.protocol.data.account.Heartbeat;
+import com.app.empire.protocol.data.backpack.GetBackpackList;
+import com.app.empire.protocol.data.backpack.UseGoods;
+import com.app.empire.protocol.data.copymap.AcessCopyMap;
+import com.app.empire.protocol.data.copymap.CompleteCopyMap;
+import com.app.empire.protocol.data.copymap.GetList;
+import com.app.empire.protocol.data.copymap.GetTeam;
+import com.app.empire.protocol.data.copymap.SaveTeam;
+import com.app.empire.protocol.data.equip.GetEquipList;
+import com.app.empire.protocol.data.hero.GetHeroList;
+import com.app.empire.protocol.data.hero.GetSkillList;
+import com.app.empire.protocol.data.mail.GetMailList;
+import com.app.empire.protocol.data.mail.ReceiveMail;
+import com.app.empire.protocol.data.npc.GetNpc;
+import com.app.empire.protocol.data.pvproom.CreateRoom;
+import com.app.empire.protocol.data.pvproom.GetRoomList;
+import com.app.empire.protocol.data.pvproom.IntoRoom;
+import com.app.empire.protocol.data.pvproom.Start;
+import com.app.empire.protocol.data.shop.Buy;
+import com.app.empire.protocol.data.shop.GetShop;
+import com.app.empire.protocol.data.shop.Refresh;
+import com.app.empire.protocol.data.test.ItemVo;
+import com.app.empire.protocol.data.test.Test;
+import com.app.net.IConnector;
+import com.app.protocol.data.AbstractData;
+import com.app.protocol.handler.IDataHandler;
+
+public class RoleLoginOkHandler implements IDataHandler {
+	public AbstractData handle(AbstractData data) throws Exception {
+		StatisticsServer.getStatisticsServer().getResNum().getAndIncrement();
+		IConnector connector = data.getSource();
+		System.out.println("角色登录数量:" + StatisticsServer.getStatisticsServer().getPlayerNum().incrementAndGet());
+		GetRandomName getRandomName = new GetRandomName();
+		// GetRoleList getRoleList = new GetRoleList();
+		// connector.send(getRandomName);
+		/**
+		 * List<Integer> b = new ArrayList<Integer>(); List<Boolean> d = new ArrayList<Boolean>(); List<String> f = new ArrayList<String>(); List<Long> h = new ArrayList<Long>(); List<Byte> j = new
+		 * ArrayList<Byte>(); List<Short> l = new ArrayList<Short>();
+		 * 
+		 * for (int i = 0; i < 10; i++) { b.add(i); d.add(true); f.add("abc"); h.add(9999119999L); j.add((byte) i); l.add((short) (i * 10)); }
+		 * 
+		 * Test test = new Test(); test.setA(1); test.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()]))); test.setC(false); test.setD(ArrayUtils.toPrimitive(d.toArray(new
+		 * Boolean[d.size()]))); test.setE("testttttttt"); test.setF(f.toArray(new String[f.size()])); test.setG(100000); test.setH(ArrayUtils.toPrimitive(h.toArray(new Long[h.size()])));
+		 * test.setI((byte) 125); test.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()]))); test.setK((short) 1800); test.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
+		 * connector.send(test);
+		 */
+
+		// for (int i = 0; i < 10000000; i++) {
+		// connector.send(getRoleList);
+		// StatisticsServer.getStatisticsServer().getReqNum().getAndIncrement();
+		// Thread.sleep(1000);
+		// }
+
+		// 心跳
+		// for (int i = 0; i < 1000000; i++) {
+		// System.out.println("---心---" + i);
+		// Heartbeat heartbeat = new Heartbeat();
+		// connector.send(heartbeat);
+		// Thread.sleep(3000);
+		// }
+
+		// StudySkill studySkill = new StudySkill();
+		// studySkill.setHeroId(7530);
+		// studySkill.setSkillBaseId(101);
+		// connector.send(studySkill);
+
+		// GetHeroList getHeroList = new GetHeroList();
+		// connector.send(getHeroList);
+
+		//
+		// GetEquipList getEquipList = new GetEquipList();
+		// int[] heroids = {1};
+		// getEquipList.setHeroId(heroids);
+		// connector.send(getEquipList);
+		//
+//		 GetMailList getMaillist = new GetMailList();
+//		 getMaillist.setSkip(0);
+//		 getMaillist.setLimit(10);
+//		 connector.send(getMaillist);
+		//
+		// ReceiveMail receiveMail = new ReceiveMail();
+		// receiveMail.setMailId(new int[]{5});
+		// connector.send(receiveMail);
+		//
+		// CreateRoom createRoom = new CreateRoom();
+		// createRoom.setRoomType(1);
+		// createRoom.setHeroId(1);
+		// connector.send(createRoom);
+		//
+		// GetRoomList getRoomList = new GetRoomList();
+		// getRoomList.setRoomType(1);
+		// connector.send(getRoomList);
+
+		// IntoRoom intoRoom = new IntoRoom();
+		// intoRoom.setHeroId(1);
+		// intoRoom.setRoomId(1);
+		// intoRoom.setRoomType(1);
+		// connector.send(intoRoom);
+
+		// Start start = new Start();
+		// start.setRoomType(1);
+		// start.setRoomId(1);
+		// connector.send(start);
+		// System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaa");
+		// GetSkillList getSkillList = new GetSkillList();
+		// int[] ids = {1};
+		// getSkillList.setHeroId(ids);
+		// connector.send(getSkillList);
+
+		// GetBackpackList getBackpackList = new GetBackpackList();
+		// connector.send(getBackpackList);
+		//
+		//
+		// UseGoods useGoods = new UseGoods();
+		// useGoods.setId(3);
+		// useGoods.setGoodsNum(1);
+		// connector.send(useGoods);
+		// 接副本
+		// AcessCopyMap acessCopyMap = new AcessCopyMap();
+		// acessCopyMap.setCopyMapType((byte) 1);
+		// acessCopyMap.setCopyMapId(5);
+		// connector.send(acessCopyMap);
+
+		// CompleteCopyMap completeCopyMap = new CompleteCopyMap();
+		// completeCopyMap.setCopyMapType((byte) 1);
+		// completeCopyMap.setCopyMapId(5);
+		// connector.send(completeCopyMap);
+
+		// GetList getList = new GetList();
+		// getList.setCopyType(1);
+		// getList.setSkip(0);
+		// getList.setLimit(10);
+		// connector.send(getList);
+		// GetShop getShop = new GetShop();
+		// getShop.setShopType(1);
+		// connector.send(getShop);
+
+		// Buy buy = new Buy();
+		// buy.setShopType(1);
+		// buy.setId(3);
+		// connector.send(buy);
+
+		// private int teamType;// 类型1、主线副本
+		// private int heroId;// 英雄id
+		// private int[] arms;// 兵种
+		// private int[] ArmsNum;// 兵种数量
+		// private int animalId;// 神兽
+
+		// SaveTeam saveTeam = new SaveTeam();
+		// saveTeam.setTeamType(1);
+		// saveTeam.setHeroId(1);
+		// saveTeam.setArms(new int[] {1,2});
+		// saveTeam.setArmsNum(new int[] {1,2});
+		// saveTeam.setAnimalId(1);
+		// connector.send(saveTeam);
+		//
+		// GetTeam getTeam = new GetTeam();
+		// getTeam.setTeamType(1);
+		// connector.send(getTeam);
+		// GetTeam getTeam = new GetTeam();
+		// getTeam.setTeamType(1);
+		// connector.send(getTeam);
+
+		// GetShop getShop = new GetShop();
+		// getShop.setShopType(1);
+		// connector.send(getShop);
+		//
+		// Refresh refresh = new Refresh();
+		// refresh.setShopType(1);
+		// connector.send(refresh);
+
+		// GetNpc getNpc = new GetNpc();
+		// connector.send(getNpc);
+
+		List<Integer> b = new ArrayList<Integer>();
+		List<Boolean> d = new ArrayList<Boolean>();
+		List<String> f = new ArrayList<String>();
+		List<Long> h = new ArrayList<Long>();
+		List<Byte> j = new ArrayList<Byte>();
+		List<Short> l = new ArrayList<Short>();
+
+		for (int i = 0; i < 10; i++) {
+			b.add(i);
+			d.add(true);
+			f.add("abc");
+			h.add(9999119999L);
+			j.add((byte) i);
+			l.add((short) (i * 10));
+		}
+
+		Test test = new Test();
+		test.setA(1);
+		test.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()])));
+		test.setC(false);
+		test.setD(ArrayUtils.toPrimitive(d.toArray(new Boolean[d.size()])));
+		test.setE("testttttttt");
+		test.setF(f.toArray(new String[f.size()]));
+		test.setG(100000);
+		test.setH(ArrayUtils.toPrimitive(h.toArray(new Long[h.size()])));
+		test.setI((byte) 125);
+		test.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
+		test.setK((short) 1800);
+		test.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
+
+		List<ItemVo> list = new ArrayList<ItemVo>();
+		for (int i = 0; i < 300; i++) {
+			ItemVo itemVo = new ItemVo();
+			itemVo.setA(1);
+			itemVo.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()])));
+			itemVo.setC(false);
+			itemVo.setD(ArrayUtils.toPrimitive(d.toArray(new Boolean[d.size()])));
+			itemVo.setE("testttttttt");
+			itemVo.setF(f.toArray(new String[f.size()]));
+			itemVo.setG(100000);
+			itemVo.setH(ArrayUtils.toPrimitive(h.toArray(new Long[h.size()])));
+			itemVo.setI((byte) 125);
+			itemVo.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
+			itemVo.setK((short) 1800);
+			itemVo.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
+			list.add(itemVo);
+		}
+		test.setM(list);
+		connector.send(test);
+
+		return null;
+	}
+}

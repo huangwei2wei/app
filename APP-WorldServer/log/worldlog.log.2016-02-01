@@ -1,0 +1,2665 @@
+[2016-02-01|10:55:35] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-02-01|10:55:35] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-02-01|10:55:35] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYN_Move 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYN_Attack 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-02-01|10:55:35] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-02-01|10:55:35] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-02-01|10:55:35] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-02-01|10:55:35] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 HERO_ResetSkillOK 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 HERO_UseGoodsOK 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 EQUIP_MergeEquipOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 COPYMAP_SaveTeamOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 COPYMAP_GetTeamOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PVP_RoomPlayerInfo 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PVP_GetRoomListOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PVP_CreateRoomOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PVP_IntoRoomOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PVP_OutRoomOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PVP_LoadComplete 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PVP_LoadCompleteOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 PVP_StartStatus 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SHOP_GetShopOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SHOP_BuyOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 SHOP_RefreshOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 NPC_GetNpcOK 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 NPC_UpgradeOK 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 NPC_BuyOK 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 NPC_ReceiveOK 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-02-01|10:55:35] 没有找到 TEST_Test 对应的protocol handler
+[2016-02-01|10:55:36] MLog clients using log4j logging.
+[2016-02-01|10:55:36] Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2016-02-01|10:55:36] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[2016-02-01|10:55:36] HHH000412: Hibernate Core {4.3.9.Final}
+[2016-02-01|10:55:36] HHH000206: hibernate.properties not found
+[2016-02-01|10:55:36] HHH000021: Bytecode provider name : javassist
+[2016-02-01|10:55:36] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.log.xml
+[2016-02-01|10:55:36] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-02-01|10:55:36] HHH000041: Configured SessionFactory: null
+[2016-02-01|10:55:37] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9e16xtnskf4y6t|438902ce, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9e16xtnskf4y6t|438902ce, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://192.168.1.12/s_log_1?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-02-01|10:55:37] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-02-01|10:55:37] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-02-01|10:55:37] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-02-01|10:55:37] HHH000397: Using ASTQueryTranslatorFactory
+[2016-02-01|10:55:37] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.gameConfig.xml
+[2016-02-01|10:55:37] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-02-01|10:55:37] HHH000041: Configured SessionFactory: null
+[2016-02-01|10:55:37] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9e16xtnskf4y6t|6ddbb2dd, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9e16xtnskf4y6t|6ddbb2dd, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://192.168.1.12/game_config?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-02-01|10:55:37] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-02-01|10:55:37] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-02-01|10:55:37] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-02-01|10:55:37] HHH000397: Using ASTQueryTranslatorFactory
+[2016-02-01|10:55:40] connect auth
+[2016-02-01|10:55:40] Account auth connected
+[2016-02-01|10:55:40] AccountService connected
+[2016-02-01|10:55:40] BattleService connected
+[2016-02-01|10:55:40] NearbyService connected
+[2016-02-01|10:55:40] 游戏世界服务器启动...
+[2016-02-01|10:56:29] account:abc8
+[2016-02-01|10:56:29] AccountID[249][Login Ok]
+[2016-02-01|10:56:29] createWorldPlayer ID[71]Level[10] load from db
+[2016-02-01|10:56:29] udid:abc8
+[2016-02-01|10:56:40] 在线人数: 1
+[2016-02-01|10:56:40] 7	1454295400364	角色在线数量:1
+[2016-02-01|10:56:49] UseGoodsHandler-----Time:61
+[2016-02-01|10:57:40] 在线人数: 1
+[2016-02-01|10:57:40] 7	1454295460391	角色在线数量:1
+[2016-02-01|10:58:25] 玩家增加钻石 ：id=71---name=abc8,diamond=-30
+[2016-02-01|10:58:27] account:DDGDG
+[2016-02-01|10:58:27] AccountID[215][Login Ok]
+[2016-02-01|10:58:27] createWorldPlayer ID[44]Level[10] load from db
+[2016-02-01|10:58:27] udid:DDGDG
+[2016-02-01|10:58:40] 在线人数: 2
+[2016-02-01|10:58:40] 7	1454295520402	角色在线数量:2
+[2016-02-01|10:59:40] 在线人数: 2
+[2016-02-01|10:59:40] 7	1454295580409	角色在线数量:2
+[2016-02-01|11:00:20] SessionClosed SessionId:1----playerId:71
+[2016-02-01|11:00:20] 3	1454295620627	玩家退出playerId:71	10	-1698523616
+[2016-02-01|11:00:20] 注销保存玩家信息：id=71,name=abc8,level=10
+[2016-02-01|11:00:40] 在线人数: 1
+[2016-02-01|11:00:40] 7	1454295640411	角色在线数量:1
+[2016-02-01|11:00:48] account:abc9
+[2016-02-01|11:00:48] AccountID[252][Login Ok]
+[2016-02-01|11:00:53] 1	1454295653577	72	abc9
+[2016-02-01|11:00:53] createWorldPlayer ID[72]Level[10] load from db
+[2016-02-01|11:00:53] udid:abc9
+[2016-02-01|11:00:53] RoleLoginHandler-----Time:157
+[2016-02-01|11:01:10] 玩家增加钻石 ：id=72---name=abc9,diamond=-9
+[2016-02-01|11:01:15] 玩家增加金币 ：id=72---name=abc9,gold=-100
+[2016-02-01|11:01:18] SessionClosed SessionId:2----playerId:44
+[2016-02-01|11:01:18] 3	1454295678028	玩家退出playerId:44	10	-1698406152
+[2016-02-01|11:01:18] 注销保存玩家信息：id=44,name=可妮莉雅,level=10
+[2016-02-01|11:01:19] 玩家增加钻石 ：id=72---name=abc9,diamond=-30
+[2016-02-01|11:01:40] 在线人数: 1
+[2016-02-01|11:01:40] 7	1454295700412	角色在线数量:1
+[2016-02-01|11:01:47] 玩家增加金币 ：id=72---name=abc9,gold=-300
+[2016-02-01|11:01:51] 玩家增加钻石 ：id=72---name=abc9,diamond=-10
+[2016-02-01|11:02:40] 在线人数: 1
+[2016-02-01|11:02:40] 7	1454295760417	角色在线数量:1
+[2016-02-01|11:02:50] 玩家增加钻石 ：id=72---name=abc9,diamond=-50
+[2016-02-01|11:02:58] 玩家增加钻石 ：id=72---name=abc9,diamond=-50
+[2016-02-01|11:03:17] 玩家增加钻石 ：id=72---name=abc9,diamond=-28
+[2016-02-01|11:03:20] 玩家增加钻石 ：id=72---name=abc9,diamond=-100
+[2016-02-01|11:03:36] account:DDGDG
+[2016-02-01|11:03:36] AccountID[215][Login Ok]
+[2016-02-01|11:03:36] createWorldPlayer ID[44]Level[10] load from db
+[2016-02-01|11:03:36] udid:DDGDG
+[2016-02-01|11:03:40] 在线人数: 2
+[2016-02-01|11:03:40] 7	1454295820422	角色在线数量:2
+[2016-02-01|11:03:47] 玩家增加钻石 ：id=72---name=abc9,diamond=-100
+[2016-02-01|11:04:14] account:666
+[2016-02-01|11:04:14] AccountID[99][Login Ok]
+[2016-02-01|11:04:14] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|11:04:14] udid:666
+[2016-02-01|11:04:34] 玩家增加钻石 ：id=6---name=joanne,diamond=-50
+[2016-02-01|11:04:40] 在线人数: 3
+[2016-02-01|11:04:40] 7	1454295880436	角色在线数量:3
+[2016-02-01|11:05:09] SessionClosed SessionId:4----playerId:44
+[2016-02-01|11:05:09] 3	1454295909601	玩家退出playerId:44	10	-1698096448
+[2016-02-01|11:05:09] 注销保存玩家信息：id=44,name=可妮莉雅,level=10
+[2016-02-01|11:05:40] 在线人数: 2
+[2016-02-01|11:05:40] 7	1454295940444	角色在线数量:2
+[2016-02-01|11:06:22] SessionClosed SessionId:3----playerId:72
+[2016-02-01|11:06:22] 3	1454295982445	玩家退出playerId:72	10	-1698259751
+[2016-02-01|11:06:22] 注销保存玩家信息：id=72,name=abc9,level=10
+[2016-02-01|11:06:31] account:abc9
+[2016-02-01|11:06:31] AccountID[252][Login Ok]
+[2016-02-01|11:06:31] createWorldPlayer ID[72]Level[10] load from db
+[2016-02-01|11:06:31] udid:abc9
+[2016-02-01|11:06:40] 在线人数: 2
+[2016-02-01|11:06:40] 7	1454296000445	角色在线数量:2
+[2016-02-01|11:06:59] 玩家增加钻石 ：id=6---name=joanne,diamond=-50
+[2016-02-01|11:07:28] 玩家增加钻石 ：id=72---name=abc9,diamond=-16
+[2016-02-01|11:07:35] 玩家增加金币 ：id=72---name=abc9,gold=-300
+[2016-02-01|11:07:40] 在线人数: 2
+[2016-02-01|11:07:40] 7	1454296060456	角色在线数量:2
+[2016-02-01|11:07:41] 玩家增加钻石 ：id=72---name=abc9,diamond=-100
+[2016-02-01|11:07:49] 玩家增加金币 ：id=72---name=abc9,gold=-70
+[2016-02-01|11:08:08] 玩家增加钻石 ：id=72---name=abc9,diamond=-20
+[2016-02-01|11:08:12] 玩家增加金币 ：id=72---name=abc9,gold=-400
+[2016-02-01|11:08:26] 玩家增加钻石 ：id=6---name=joanne,diamond=-100
+[2016-02-01|11:08:30] 玩家增加金币 ：id=6---name=joanne,gold=-80
+[2016-02-01|11:08:32] account:hfhf
+[2016-02-01|11:08:32] AccountID[253][Login Ok]
+[2016-02-01|11:08:34] 玩家增加金币 ：id=6---name=joanne,gold=-100
+[2016-02-01|11:08:37] 玩家增加金币 ：id=6---name=joanne,gold=-300
+[2016-02-01|11:08:40] 在线人数: 2
+[2016-02-01|11:08:40] 7	1454296120471	角色在线数量:2
+[2016-02-01|11:08:47] 玩家增加钻石 ：id=6---name=joanne,diamond=-10
+[2016-02-01|11:08:56] 玩家增加钻石 ：id=6---name=joanne,diamond=-30
+[2016-02-01|11:09:33] 1	1454296173878	73	宝儿
+[2016-02-01|11:09:33] createWorldPlayer ID[73]Level[10] load from db
+[2016-02-01|11:09:33] udid:hfhf
+[2016-02-01|11:09:40] 在线人数: 3
+[2016-02-01|11:09:40] 7	1454296180480	角色在线数量:3
+[2016-02-01|11:10:07] SessionClosed SessionId:6----playerId:72
+[2016-02-01|11:10:07] 3	1454296207514	玩家退出playerId:72	10	-1697922096
+[2016-02-01|11:10:07] 注销保存玩家信息：id=72,name=abc9,level=10
+[2016-02-01|11:10:16] SessionClosed SessionId:5----playerId:6
+[2016-02-01|11:10:16] 3	1454296216228	玩家退出playerId:6	1	-1698058751
+[2016-02-01|11:10:16] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|11:10:16] account:abc9
+[2016-02-01|11:10:16] AccountID[252][Login Ok]
+[2016-02-01|11:10:16] createWorldPlayer ID[72]Level[10] load from db
+[2016-02-01|11:10:16] udid:abc9
+[2016-02-01|11:10:28] account:666
+[2016-02-01|11:10:28] AccountID[99][Login Ok]
+[2016-02-01|11:10:28] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|11:10:28] udid:666
+[2016-02-01|11:10:40] 在线人数: 3
+[2016-02-01|11:10:40] 7	1454296240490	角色在线数量:3
+[2016-02-01|11:10:46] com.app.empire.world.exception.PlayerDataException: 物品数量不足
+[2016-02-01|11:11:22] SessionClosed SessionId:8----playerId:72
+[2016-02-01|11:11:22] 3	1454296282277	玩家退出playerId:72	10	-1697696383
+[2016-02-01|11:11:22] 注销保存玩家信息：id=72,name=abc9,level=10
+[2016-02-01|11:11:32] 玩家增加钻石 ：id=6---name=joanne,diamond=-500
+[2016-02-01|11:11:40] 在线人数: 2
+[2016-02-01|11:11:40] 7	1454296300490	角色在线数量:2
+[2016-02-01|11:11:56] account:abc9
+[2016-02-01|11:11:56] AccountID[252][Login Ok]
+[2016-02-01|11:11:56] createWorldPlayer ID[72]Level[10] load from db
+[2016-02-01|11:11:56] udid:abc9
+[2016-02-01|11:12:40] 在线人数: 3
+[2016-02-01|11:12:40] 7	1454296360497	角色在线数量:3
+[2016-02-01|11:13:40] 在线人数: 3
+[2016-02-01|11:13:40] 7	1454296420512	角色在线数量:3
+[2016-02-01|11:14:10] SessionClosed SessionId:10----playerId:72
+[2016-02-01|11:14:10] 3	1454296450918	玩家退出playerId:72	10	-1697596615
+[2016-02-01|11:14:10] 注销保存玩家信息：id=72,name=abc9,level=10
+[2016-02-01|11:14:22] account:abc10
+[2016-02-01|11:14:22] AccountID[254][Login Ok]
+[2016-02-01|11:14:28] 1	1454296468486	74	abc10
+[2016-02-01|11:14:28] createWorldPlayer ID[74]Level[10] load from db
+[2016-02-01|11:14:28] udid:abc10
+[2016-02-01|11:14:40] 在线人数: 3
+[2016-02-01|11:14:40] 7	1454296480512	角色在线数量:3
+[2016-02-01|11:14:48] 玩家增加钻石 ：id=74---name=abc10,diamond=-50
+[2016-02-01|11:14:53] 玩家增加钻石 ：id=74---name=abc10,diamond=-50
+[2016-02-01|11:15:25] 玩家增加钻石 ：id=74---name=abc10,diamond=-8
+[2016-02-01|11:15:29] 玩家增加钻石 ：id=74---name=abc10,diamond=-10
+[2016-02-01|11:15:40] 在线人数: 3
+[2016-02-01|11:15:40] 7	1454296540522	角色在线数量:3
+[2016-02-01|11:15:47] 玩家增加钻石 ：id=74---name=abc10,diamond=-40
+[2016-02-01|11:16:40] 在线人数: 3
+[2016-02-01|11:16:40] 7	1454296600536	角色在线数量:3
+[2016-02-01|11:17:40] 在线人数: 3
+[2016-02-01|11:17:40] 7	1454296660543	角色在线数量:3
+[2016-02-01|11:18:20] SessionClosed SessionId:9----playerId:6
+[2016-02-01|11:18:20] 3	1454296700731	玩家退出playerId:6	1	-1697685204
+[2016-02-01|11:18:20] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|11:18:34] account:666
+[2016-02-01|11:18:34] AccountID[99][Login Ok]
+[2016-02-01|11:18:34] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|11:18:34] udid:666
+[2016-02-01|11:18:40] 在线人数: 3
+[2016-02-01|11:18:40] 7	1454296720557	角色在线数量:3
+[2016-02-01|11:18:57] 玩家增加钻石 ：id=6---name=joanne,diamond=-500
+[2016-02-01|11:19:40] 在线人数: 3
+[2016-02-01|11:19:40] 7	1454296780560	角色在线数量:3
+[2016-02-01|11:19:49] SessionClosed SessionId:11----playerId:74
+[2016-02-01|11:19:49] 3	1454296789371	玩家退出playerId:74	10	-1697444858
+[2016-02-01|11:19:49] 注销保存玩家信息：id=74,name=abc10,level=10
+[2016-02-01|11:20:40] 在线人数: 2
+[2016-02-01|11:20:40] 7	1454296840567	角色在线数量:2
+[2016-02-01|11:21:40] 在线人数: 2
+[2016-02-01|11:21:40] 7	1454296900571	角色在线数量:2
+[2016-02-01|11:22:12] account:abc9
+[2016-02-01|11:22:12] AccountID[252][Login Ok]
+[2016-02-01|11:22:12] createWorldPlayer ID[72]Level[10] load from db
+[2016-02-01|11:22:12] udid:abc9
+[2016-02-01|11:22:40] 在线人数: 3
+[2016-02-01|11:22:40] 7	1454296960586	角色在线数量:3
+[2016-02-01|11:22:51] UseGoodsHandler-----Time:21567
+[2016-02-01|11:23:24] SessionClosed SessionId:13----playerId:72
+[2016-02-01|11:23:24] 3	1454297004284	玩家退出playerId:72	10	-1696980564
+[2016-02-01|11:23:24] 注销保存玩家信息：id=72,name=abc9,level=10
+[2016-02-01|11:23:40] 在线人数: 2
+[2016-02-01|11:23:40] 7	1454297020586	角色在线数量:2
+[2016-02-01|11:24:21] account:abc10
+[2016-02-01|11:24:21] AccountID[254][Login Ok]
+[2016-02-01|11:24:21] createWorldPlayer ID[74]Level[10] load from db
+[2016-02-01|11:24:21] udid:abc10
+[2016-02-01|11:24:40] 在线人数: 3
+[2016-02-01|11:24:40] 7	1454297080589	角色在线数量:3
+[2016-02-01|11:25:40] 在线人数: 3
+[2016-02-01|11:25:40] 7	1454297140590	角色在线数量:3
+[2016-02-01|11:26:16] SessionClosed SessionId:7----playerId:73
+[2016-02-01|11:26:16] 3	1454297176292	玩家退出playerId:73	10	-1697739466
+[2016-02-01|11:26:16] 注销保存玩家信息：id=73,name=宝儿,level=10
+[2016-02-01|11:26:28] SessionClosed SessionId:12----playerId:6
+[2016-02-01|11:26:28] 3	1454297188913	玩家退出playerId:6	1	-1697198798
+[2016-02-01|11:26:28] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|11:26:37] account:666
+[2016-02-01|11:26:37] AccountID[99][Login Ok]
+[2016-02-01|11:26:37] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|11:26:37] udid:666
+[2016-02-01|11:26:40] 在线人数: 2
+[2016-02-01|11:26:40] 7	1454297200605	角色在线数量:2
+[2016-02-01|11:26:43] account:uu
+[2016-02-01|11:26:43] AccountID[235][Login Ok]
+[2016-02-01|11:26:43] createWorldPlayer ID[66]Level[10] load from db
+[2016-02-01|11:26:43] udid:uu
+[2016-02-01|11:27:17] 玩家增加钻石 ：id=6---name=joanne,diamond=-500
+[2016-02-01|11:27:26] 玩家增加钻石 ：id=6---name=joanne,diamond=-500
+[2016-02-01|11:27:40] 在线人数: 3
+[2016-02-01|11:27:40] 7	1454297260613	角色在线数量:3
+[2016-02-01|11:28:40] 在线人数: 3
+[2016-02-01|11:28:40] 7	1454297320626	角色在线数量:3
+[2016-02-01|11:28:59] SessionClosed SessionId:15----playerId:6
+[2016-02-01|11:28:59] 3	1454297339895	玩家退出playerId:6	1	-1696715859
+[2016-02-01|11:28:59] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|11:29:07] account:666
+[2016-02-01|11:29:07] AccountID[99][Login Ok]
+[2016-02-01|11:29:07] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|11:29:07] udid:666
+[2016-02-01|11:29:22] 玩家增加钻石 ：id=6---name=joanne,diamond=-500
+[2016-02-01|11:29:40] 在线人数: 3
+[2016-02-01|11:29:40] 7	1454297380632	角色在线数量:3
+[2016-02-01|11:29:53] account:silly5
+[2016-02-01|11:29:53] AccountID[250][Login Ok]
+[2016-02-01|11:29:55] 1	1454297395013	75	威利
+[2016-02-01|11:29:55] createWorldPlayer ID[75]Level[10] load from db
+[2016-02-01|11:29:55] udid:silly5
+[2016-02-01|11:30:40] 在线人数: 4
+[2016-02-01|11:30:40] 7	1454297440635	角色在线数量:4
+[2016-02-01|11:31:40] 在线人数: 4
+[2016-02-01|11:31:40] 7	1454297500641	角色在线数量:4
+[2016-02-01|11:32:40] 在线人数: 4
+[2016-02-01|11:32:40] 7	1454297560655	角色在线数量:4
+[2016-02-01|11:33:20] SessionClosed SessionId:14----playerId:74
+[2016-02-01|11:33:20] 3	1454297600564	玩家退出playerId:74	10	-1696851854
+[2016-02-01|11:33:20] 注销保存玩家信息：id=74,name=abc10,level=10
+[2016-02-01|11:33:32] account:abc1
+[2016-02-01|11:33:32] AccountID[116][Login Ok]
+[2016-02-01|11:33:32] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|11:33:32] udid:abc1
+[2016-02-01|11:33:40] 在线人数: 4
+[2016-02-01|11:33:40] 7	1454297620661	角色在线数量:4
+[2016-02-01|11:34:07] SessionClosed SessionId:18----playerId:6
+[2016-02-01|11:34:07] 3	1454297647735	玩家退出playerId:6	1	-1696565410
+[2016-02-01|11:34:07] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|11:34:16] account:666
+[2016-02-01|11:34:16] AccountID[99][Login Ok]
+[2016-02-01|11:34:16] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|11:34:16] udid:666
+[2016-02-01|11:34:20] SessionClosed SessionId:19----playerId:1
+[2016-02-01|11:34:20] 3	1454297660917	玩家退出playerId:1	30	-1696300351
+[2016-02-01|11:34:20] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|11:34:31] 玩家增加钻石 ：id=6---name=joanne,diamond=-500
+[2016-02-01|11:34:38] SessionClosed SessionId:16----playerId:66
+[2016-02-01|11:34:38] 3	1454297678452	玩家退出playerId:66	10	-1696709413
+[2016-02-01|11:34:38] 注销保存玩家信息：id=66,name=布兹,level=10
+[2016-02-01|11:34:40] 在线人数: 2
+[2016-02-01|11:34:40] 7	1454297680668	角色在线数量:2
+[2016-02-01|11:35:40] 在线人数: 2
+[2016-02-01|11:35:40] 7	1454297740673	角色在线数量:2
+[2016-02-01|11:36:11] SessionClosed SessionId:20----playerId:6
+[2016-02-01|11:36:11] 3	1454297771451	玩家退出playerId:6	1	-1696257037
+[2016-02-01|11:36:11] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|11:36:40] 在线人数: 1
+[2016-02-01|11:36:40] 7	1454297800684	角色在线数量:1
+[2016-02-01|11:36:55] account:abc1
+[2016-02-01|11:36:55] AccountID[116][Login Ok]
+[2016-02-01|11:36:55] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|11:36:55] udid:abc1
+[2016-02-01|11:37:40] 在线人数: 2
+[2016-02-01|11:37:40] 7	1454297860687	角色在线数量:2
+[2016-02-01|11:38:34] UseGoodsHandler-----Time:838530
+[2016-02-01|11:38:36] CompleteCopyMapHandler-----Time:415104
+[2016-02-01|11:38:40] 在线人数: 2
+[2016-02-01|11:38:40] 7	1454297920687	角色在线数量:2
+[2016-02-01|11:38:51] CompleteCopyMapHandler-----Time:183484
+[2016-02-01|11:39:02] CompleteCopyMapHandler-----Time:21565
+[2016-02-01|11:39:02] UseGoodsHandler-----Time:291390
+[2016-02-01|11:39:40] 在线人数: 2
+[2016-02-01|11:39:40] 7	1454297980700	角色在线数量:2
+[2016-02-01|11:40:11] SessionClosed SessionId:21----playerId:1
+[2016-02-01|11:40:11] 3	1454298011154	玩家退出playerId:1	30	-1696097969
+[2016-02-01|11:40:11] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|11:40:23] account:abc10
+[2016-02-01|11:40:23] AccountID[254][Login Ok]
+[2016-02-01|11:40:23] createWorldPlayer ID[74]Level[10] load from db
+[2016-02-01|11:40:23] udid:abc10
+[2016-02-01|11:40:40] 在线人数: 2
+[2016-02-01|11:40:40] 7	1454298040705	角色在线数量:2
+[2016-02-01|11:40:45] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|11:40:48] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|11:41:23] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|11:41:37] UseGoodsHandler-----Time:609
+[2016-02-01|11:41:40] 在线人数: 2
+[2016-02-01|11:41:40] 7	1454298100712	角色在线数量:2
+[2016-02-01|11:42:01] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|11:42:05] account:uu
+[2016-02-01|11:42:05] AccountID[235][Login Ok]
+[2016-02-01|11:42:05] createWorldPlayer ID[66]Level[10] load from db
+[2016-02-01|11:42:05] udid:uu
+[2016-02-01|11:42:12] SessionClosed SessionId:23----playerId:66
+[2016-02-01|11:42:12] 3	1454298132483	玩家退出playerId:66	10	-1695787634
+[2016-02-01|11:42:12] 注销保存玩家信息：id=66,name=布兹,level=10
+[2016-02-01|11:42:15] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|11:42:40] 在线人数: 2
+[2016-02-01|11:42:40] 7	1454298160715	角色在线数量:2
+[2016-02-01|11:43:40] 在线人数: 2
+[2016-02-01|11:43:40] 7	1454298220724	角色在线数量:2
+[2016-02-01|11:43:54] SessionClosed SessionId:22----playerId:74
+[2016-02-01|11:43:54] 3	1454298234741	玩家退出playerId:74	10	-1695889914
+[2016-02-01|11:43:54] 注销保存玩家信息：id=74,name=abc10,level=10
+[2016-02-01|11:44:06] account:abc1
+[2016-02-01|11:44:06] AccountID[116][Login Ok]
+[2016-02-01|11:44:06] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|11:44:06] udid:abc1
+[2016-02-01|11:44:15] account:666
+[2016-02-01|11:44:15] AccountID[99][Login Ok]
+[2016-02-01|11:44:15] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|11:44:15] udid:666
+[2016-02-01|11:44:36] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|11:44:40] 在线人数: 3
+[2016-02-01|11:44:40] 7	1454298280728	角色在线数量:3
+[2016-02-01|11:44:42] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|11:44:45] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|11:44:48] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|11:44:53] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|11:45:17] SessionClosed SessionId:17----playerId:75
+[2016-02-01|11:45:17] 3	1454298317536	玩家退出playerId:75	10	-1696518331
+[2016-02-01|11:45:17] 注销保存玩家信息：id=75,name=威利,level=10
+[2016-02-01|11:45:40] 在线人数: 2
+[2016-02-01|11:45:40] 7	1454298340734	角色在线数量:2
+[2016-02-01|11:46:40] 在线人数: 2
+[2016-02-01|11:46:40] 7	1454298400741	角色在线数量:2
+[2016-02-01|11:47:40] 在线人数: 2
+[2016-02-01|11:47:40] 7	1454298460752	角色在线数量:2
+[2016-02-01|11:48:06] SessionClosed SessionId:25----playerId:6
+[2016-02-01|11:48:06] 3	1454298486584	玩家退出playerId:6	1	-1695657355
+[2016-02-01|11:48:06] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|11:48:40] 在线人数: 1
+[2016-02-01|11:48:40] 7	1454298520767	角色在线数量:1
+[2016-02-01|11:49:17] account:666
+[2016-02-01|11:49:17] AccountID[99][Login Ok]
+[2016-02-01|11:49:17] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|11:49:17] udid:666
+[2016-02-01|11:49:40] 在线人数: 2
+[2016-02-01|11:49:40] 7	1454298580767	角色在线数量:2
+[2016-02-01|11:49:50] SessionClosed SessionId:26----playerId:6
+[2016-02-01|11:49:50] 3	1454298590723	玩家退出playerId:6	1	-1695355552
+[2016-02-01|11:49:50] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|11:49:58] account:666
+[2016-02-01|11:49:58] AccountID[99][Login Ok]
+[2016-02-01|11:49:58] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|11:49:58] udid:666
+[2016-02-01|11:50:35] 玩家增加钻石 ：id=6---name=joanne,diamond=-100
+[2016-02-01|11:50:40] 在线人数: 2
+[2016-02-01|11:50:40] 7	1454298640773	角色在线数量:2
+[2016-02-01|11:51:40] 在线人数: 2
+[2016-02-01|11:51:40] 7	1454298700781	角色在线数量:2
+[2016-02-01|11:52:40] 在线人数: 2
+[2016-02-01|11:52:40] 7	1454298760786	角色在线数量:2
+[2016-02-01|11:52:52] SessionClosed SessionId:27----playerId:6
+[2016-02-01|11:52:52] 3	1454298772479	玩家退出playerId:6	1	-1695314769
+[2016-02-01|11:52:52] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|11:53:00] account:666
+[2016-02-01|11:53:00] AccountID[99][Login Ok]
+[2016-02-01|11:53:00] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|11:53:00] udid:666
+[2016-02-01|11:53:03] GetHeroListHandler-----Time:63
+[2016-02-01|11:53:03] GetBackpackListHandler-----Time:109
+[2016-02-01|11:53:17] SessionClosed SessionId:24----playerId:1
+[2016-02-01|11:53:17] 3	1454298797089	玩家退出playerId:1	30	-1695667184
+[2016-02-01|11:53:17] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|11:53:38] account:abc1
+[2016-02-01|11:53:38] AccountID[116][Login Ok]
+[2016-02-01|11:53:38] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|11:53:38] udid:abc1
+[2016-02-01|11:53:40] 在线人数: 2
+[2016-02-01|11:53:40] 7	1454298820794	角色在线数量:2
+[2016-02-01|11:54:40] 在线人数: 2
+[2016-02-01|11:54:40] 7	1454298880804	角色在线数量:2
+[2016-02-01|11:55:21] SessionClosed SessionId:28----playerId:6
+[2016-02-01|11:55:21] 3	1454298921592	玩家退出playerId:6	1	-1695132546
+[2016-02-01|11:55:21] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|11:55:35] account:666
+[2016-02-01|11:55:35] AccountID[99][Login Ok]
+[2016-02-01|11:55:36] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|11:55:36] udid:666
+[2016-02-01|11:55:36] RoleLoginHandler-----Time:156
+[2016-02-01|11:55:40] 在线人数: 2
+[2016-02-01|11:55:40] 7	1454298940812	角色在线数量:2
+[2016-02-01|11:55:44] SessionClosed SessionId:29----playerId:1
+[2016-02-01|11:55:44] 3	1454298944818	玩家退出playerId:1	30	-1695094676
+[2016-02-01|11:55:44] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|11:56:40] 在线人数: 1
+[2016-02-01|11:56:40] 7	1454299000822	角色在线数量:1
+[2016-02-01|11:56:59] SessionClosed SessionId:30----playerId:6
+[2016-02-01|11:56:59] 3	1454299019839	玩家退出playerId:6	1	-1694977316
+[2016-02-01|11:56:59] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|11:57:40] 在线人数: 0
+[2016-02-01|11:57:40] 7	1454299060836	角色在线数量:0
+[2016-02-01|11:57:47] account:abc1
+[2016-02-01|11:57:47] AccountID[116][Login Ok]
+[2016-02-01|11:57:47] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|11:57:47] udid:abc1
+[2016-02-01|11:58:28] account:abc1
+[2016-02-01|11:58:28] AccountID[116][Login Ok]
+[2016-02-01|11:58:28] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|11:58:28] udid:abc1
+[2016-02-01|11:58:40] 在线人数: 1
+[2016-02-01|11:58:40] 7	1454299120848	角色在线数量:1
+[2016-02-01|11:59:08] SessionClosed SessionId:1----playerId:1
+[2016-02-01|11:59:08] 3	1454299148814	玩家退出playerId:1	30	-1694804844
+[2016-02-01|11:59:08] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|11:59:40] 在线人数: 0
+[2016-02-01|11:59:40] 7	1454299180853	角色在线数量:0
+[2016-02-01|12:00:04] account:666
+[2016-02-01|12:00:04] AccountID[99][Login Ok]
+[2016-02-01|12:00:04] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|12:00:04] udid:666
+[2016-02-01|12:00:40] 在线人数: 1
+[2016-02-01|12:00:40] 7	1454299240868	角色在线数量:1
+[2016-02-01|12:00:52] account:abc1
+[2016-02-01|12:00:52] AccountID[116][Login Ok]
+[2016-02-01|12:00:52] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|12:00:52] udid:abc1
+[2016-02-01|12:01:40] 在线人数: 2
+[2016-02-01|12:01:40] 7	1454299300883	角色在线数量:2
+[2016-02-01|12:01:49] SessionClosed SessionId:31----playerId:1
+[2016-02-01|12:01:49] 3	1454299309127	玩家退出playerId:1	30	-1694661309
+[2016-02-01|12:01:49] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|12:02:12] SessionClosed SessionId:2----playerId:1
+[2016-02-01|12:02:12] 用户下线异常3
+[2016-02-01|12:02:28] SessionClosed SessionId:32----playerId:6
+[2016-02-01|12:02:28] 3	1454299348975	玩家退出playerId:6	1	-1694709063
+[2016-02-01|12:02:28] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|12:02:37] account:666
+[2016-02-01|12:02:37] AccountID[99][Login Ok]
+[2016-02-01|12:02:37] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|12:02:37] udid:666
+[2016-02-01|12:02:40] 在线人数: 1
+[2016-02-01|12:02:40] 7	1454299360887	角色在线数量:1
+[2016-02-01|12:03:40] 在线人数: 1
+[2016-02-01|12:03:40] 7	1454299420901	角色在线数量:1
+[2016-02-01|12:03:54] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:273)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:690)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:664)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:653)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1124)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-02-01|12:03:54] CN dis closed
+[2016-02-01|12:04:40] 在线人数: 1
+[2016-02-01|12:04:40] 7	1454299480908	角色在线数量:1
+[2016-02-01|12:04:58] SessionClosed SessionId:33----playerId:6
+[2016-02-01|12:04:58] 3	1454299498201	玩家退出playerId:6	1	-1694555922
+[2016-02-01|12:04:58] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|12:05:40] 在线人数: 0
+[2016-02-01|12:05:40] 7	1454299540916	角色在线数量:0
+[2016-02-01|12:06:40] 在线人数: 0
+[2016-02-01|12:06:40] 7	1454299600927	角色在线数量:0
+[2016-02-01|12:07:40] 在线人数: 0
+[2016-02-01|12:07:40] 7	1454299660942	角色在线数量:0
+[2016-02-01|12:08:40] 在线人数: 0
+[2016-02-01|12:08:40] 7	1454299720942	角色在线数量:0
+[2016-02-01|12:09:40] 在线人数: 0
+[2016-02-01|12:09:40] 7	1454299780942	角色在线数量:0
+[2016-02-01|12:10:40] 在线人数: 0
+[2016-02-01|12:10:40] 7	1454299840943	角色在线数量:0
+[2016-02-01|12:11:40] 在线人数: 0
+[2016-02-01|12:11:40] 7	1454299900943	角色在线数量:0
+[2016-02-01|12:12:40] 在线人数: 0
+[2016-02-01|12:12:40] 7	1454299960952	角色在线数量:0
+[2016-02-01|12:13:06] account:abc1
+[2016-02-01|12:13:06] AccountID[116][Login Ok]
+[2016-02-01|12:13:06] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|12:13:06] udid:abc1
+[2016-02-01|12:13:24] SessionClosed SessionId:34----playerId:1
+[2016-02-01|12:13:24] 3	1454300004617	玩家退出playerId:1	30	-1693926574
+[2016-02-01|12:13:24] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|12:13:33] account:abc1
+[2016-02-01|12:13:33] AccountID[116][Login Ok]
+[2016-02-01|12:13:33] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|12:13:33] udid:abc1
+[2016-02-01|12:13:40] 在线人数: 1
+[2016-02-01|12:13:40] 7	1454300020955	角色在线数量:1
+[2016-02-01|12:14:40] 在线人数: 1
+[2016-02-01|12:14:40] 7	1454300080962	角色在线数量:1
+[2016-02-01|12:14:57] SessionClosed SessionId:35----playerId:1
+[2016-02-01|12:14:57] 3	1454300097882	玩家退出playerId:1	30	-1693900121
+[2016-02-01|12:14:57] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|12:15:40] 在线人数: 0
+[2016-02-01|12:15:40] 7	1454300140966	角色在线数量:0
+[2016-02-01|12:16:40] 在线人数: 0
+[2016-02-01|12:16:40] 7	1454300200968	角色在线数量:0
+[2016-02-01|12:17:40] 在线人数: 0
+[2016-02-01|12:17:40] 7	1454300260974	角色在线数量:0
+[2016-02-01|12:18:40] 在线人数: 0
+[2016-02-01|12:18:40] 7	1454300320979	角色在线数量:0
+[2016-02-01|12:19:40] 在线人数: 0
+[2016-02-01|12:19:40] 7	1454300380983	角色在线数量:0
+[2016-02-01|12:20:40] 在线人数: 0
+[2016-02-01|12:20:40] 7	1454300440992	角色在线数量:0
+[2016-02-01|12:21:40] 在线人数: 0
+[2016-02-01|12:21:40] 7	1454300500997	角色在线数量:0
+[2016-02-01|12:22:41] 在线人数: 0
+[2016-02-01|12:22:41] 7	1454300561001	角色在线数量:0
+[2016-02-01|12:23:41] 在线人数: 0
+[2016-02-01|12:23:41] 7	1454300621001	角色在线数量:0
+[2016-02-01|12:24:41] 在线人数: 0
+[2016-02-01|12:24:41] 7	1454300681002	角色在线数量:0
+[2016-02-01|12:25:41] 在线人数: 0
+[2016-02-01|12:25:41] 7	1454300741004	角色在线数量:0
+[2016-02-01|12:26:41] 在线人数: 0
+[2016-02-01|12:26:41] 7	1454300801004	角色在线数量:0
+[2016-02-01|12:27:41] 在线人数: 0
+[2016-02-01|12:27:41] 7	1454300861005	角色在线数量:0
+[2016-02-01|12:28:41] 在线人数: 0
+[2016-02-01|12:28:41] 7	1454300921005	角色在线数量:0
+[2016-02-01|12:29:41] 在线人数: 0
+[2016-02-01|12:29:41] 7	1454300981006	角色在线数量:0
+[2016-02-01|12:30:41] 在线人数: 0
+[2016-02-01|12:30:41] 7	1454301041007	角色在线数量:0
+[2016-02-01|12:31:41] 在线人数: 0
+[2016-02-01|12:31:41] 7	1454301101007	角色在线数量:0
+[2016-02-01|12:32:41] 在线人数: 0
+[2016-02-01|12:32:41] 7	1454301161007	角色在线数量:0
+[2016-02-01|12:33:41] 在线人数: 0
+[2016-02-01|12:33:41] 7	1454301221008	角色在线数量:0
+[2016-02-01|12:34:41] 在线人数: 0
+[2016-02-01|12:34:41] 7	1454301281008	角色在线数量:0
+[2016-02-01|12:35:41] 在线人数: 0
+[2016-02-01|12:35:41] 7	1454301341009	角色在线数量:0
+[2016-02-01|12:36:41] 在线人数: 0
+[2016-02-01|12:36:41] 7	1454301401009	角色在线数量:0
+[2016-02-01|12:37:41] 在线人数: 0
+[2016-02-01|12:37:41] 7	1454301461010	角色在线数量:0
+[2016-02-01|12:38:41] 在线人数: 0
+[2016-02-01|12:38:41] 7	1454301521014	角色在线数量:0
+[2016-02-01|12:39:41] 在线人数: 0
+[2016-02-01|12:39:41] 7	1454301581022	角色在线数量:0
+[2016-02-01|12:40:37] account:abc1
+[2016-02-01|12:40:37] AccountID[116][Login Ok]
+[2016-02-01|12:40:37] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|12:40:37] udid:abc1
+[2016-02-01|12:40:41] 在线人数: 1
+[2016-02-01|12:40:41] 7	1454301641022	角色在线数量:1
+[2016-02-01|12:40:41] GetShopHandler-----Time:126
+[2016-02-01|12:40:41] GetEquipListHandler-----Time:77
+[2016-02-01|12:40:41] GetSkillListHandler-----Time:86
+[2016-02-01|12:41:41] 在线人数: 1
+[2016-02-01|12:41:41] 7	1454301701029	角色在线数量:1
+[2016-02-01|12:42:27] SessionClosed SessionId:36----playerId:1
+[2016-02-01|12:42:27] 3	1454301747414	玩家退出playerId:1	30	-1692276159
+[2016-02-01|12:42:27] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|12:42:41] 在线人数: 0
+[2016-02-01|12:42:41] 7	1454301761031	角色在线数量:0
+[2016-02-01|12:42:48] account:abc1
+[2016-02-01|12:42:48] AccountID[116][Login Ok]
+[2016-02-01|12:42:48] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|12:42:48] udid:abc1
+[2016-02-01|12:43:41] 在线人数: 1
+[2016-02-01|12:43:41] 7	1454301821032	角色在线数量:1
+[2016-02-01|12:44:38] SessionClosed SessionId:37----playerId:1
+[2016-02-01|12:44:38] 3	1454301878655	玩家退出playerId:1	30	-1692144722
+[2016-02-01|12:44:38] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|12:44:41] 在线人数: 0
+[2016-02-01|12:44:41] 7	1454301881032	角色在线数量:0
+[2016-02-01|12:45:41] 在线人数: 0
+[2016-02-01|12:45:41] 7	1454301941033	角色在线数量:0
+[2016-02-01|12:46:41] 在线人数: 0
+[2016-02-01|12:46:41] 7	1454302001033	角色在线数量:0
+[2016-02-01|12:47:41] 在线人数: 0
+[2016-02-01|12:47:41] 7	1454302061034	角色在线数量:0
+[2016-02-01|12:48:41] 在线人数: 0
+[2016-02-01|12:48:41] 7	1454302121034	角色在线数量:0
+[2016-02-01|12:49:21] account:abc1
+[2016-02-01|12:49:21] AccountID[116][Login Ok]
+[2016-02-01|12:49:21] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|12:49:21] udid:abc1
+[2016-02-01|12:49:41] 在线人数: 1
+[2016-02-01|12:49:41] 7	1454302181034	角色在线数量:1
+[2016-02-01|12:50:22] SessionClosed SessionId:38----playerId:1
+[2016-02-01|12:50:22] 3	1454302222764	玩家退出playerId:1	30	-1691751472
+[2016-02-01|12:50:22] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|12:50:33] account:abc11
+[2016-02-01|12:50:33] AccountID[257][Login Ok]
+[2016-02-01|12:50:39] 1	1454302239019	76	abc11
+[2016-02-01|12:50:39] createWorldPlayer ID[76]Level[10] load from db
+[2016-02-01|12:50:39] udid:abc11
+[2016-02-01|12:50:41] 在线人数: 1
+[2016-02-01|12:50:41] 7	1454302241035	角色在线数量:1
+[2016-02-01|12:50:43] GetShopHandler-----Time:60
+[2016-02-01|12:51:41] 在线人数: 1
+[2016-02-01|12:51:41] 7	1454302301035	角色在线数量:1
+[2016-02-01|12:51:47] SessionClosed SessionId:39----playerId:76
+[2016-02-01|12:51:47] 3	1454302307246	玩家退出playerId:76	10	-1691674314
+[2016-02-01|12:51:47] 注销保存玩家信息：id=76,name=abc11,level=10
+[2016-02-01|12:51:57] account:abc11
+[2016-02-01|12:51:57] AccountID[257][Login Ok]
+[2016-02-01|12:51:57] createWorldPlayer ID[76]Level[10] load from db
+[2016-02-01|12:51:57] udid:abc11
+[2016-02-01|12:52:13] 玩家增加金币 ：id=76---name=abc11,gold=-80
+[2016-02-01|12:52:18] 玩家增加金币 ：id=76---name=abc11,gold=-400
+[2016-02-01|12:52:21] 玩家增加钻石 ：id=76---name=abc11,diamond=-50
+[2016-02-01|12:52:25] 玩家增加钻石 ：id=76---name=abc11,diamond=-50
+[2016-02-01|12:52:30] 玩家增加钻石 ：id=76---name=abc11,diamond=-100
+[2016-02-01|12:52:34] 玩家增加钻石 ：id=76---name=abc11,diamond=-100
+[2016-02-01|12:52:38] 玩家增加钻石 ：id=76---name=abc11,diamond=-36
+[2016-02-01|12:52:41] 在线人数: 1
+[2016-02-01|12:52:41] 7	1454302361036	角色在线数量:1
+[2016-02-01|12:53:41] 在线人数: 1
+[2016-02-01|12:53:41] 7	1454302421036	角色在线数量:1
+[2016-02-01|12:54:41] 在线人数: 1
+[2016-02-01|12:54:41] 7	1454302481044	角色在线数量:1
+[2016-02-01|12:55:41] 在线人数: 1
+[2016-02-01|12:55:41] 7	1454302541044	角色在线数量:1
+[2016-02-01|12:56:41] 在线人数: 1
+[2016-02-01|12:56:41] 7	1454302601044	角色在线数量:1
+[2016-02-01|12:57:41] 在线人数: 1
+[2016-02-01|12:57:41] 7	1454302661048	角色在线数量:1
+[2016-02-01|12:58:41] 在线人数: 1
+[2016-02-01|12:58:41] 7	1454302721048	角色在线数量:1
+[2016-02-01|12:59:41] 在线人数: 1
+[2016-02-01|12:59:41] 7	1454302781049	角色在线数量:1
+[2016-02-01|13:00:17] SessionClosed SessionId:40----playerId:76
+[2016-02-01|13:00:17] 3	1454302817691	玩家退出playerId:76	10	-1691595779
+[2016-02-01|13:00:18] 注销保存玩家信息：id=76,name=abc11,level=10
+[2016-02-01|13:00:18] SessionClosedHandler-----Time:311
+[2016-02-01|13:00:41] 在线人数: 0
+[2016-02-01|13:00:41] 7	1454302841049	角色在线数量:0
+[2016-02-01|13:01:41] 在线人数: 0
+[2016-02-01|13:01:41] 7	1454302901049	角色在线数量:0
+[2016-02-01|13:02:41] 在线人数: 0
+[2016-02-01|13:02:41] 7	1454302961050	角色在线数量:0
+[2016-02-01|13:03:41] 在线人数: 0
+[2016-02-01|13:03:41] 7	1454303021050	角色在线数量:0
+[2016-02-01|13:04:41] 在线人数: 0
+[2016-02-01|13:04:41] 7	1454303081052	角色在线数量:0
+[2016-02-01|13:05:41] 在线人数: 0
+[2016-02-01|13:05:41] 7	1454303141053	角色在线数量:0
+[2016-02-01|13:06:41] 在线人数: 0
+[2016-02-01|13:06:41] 7	1454303201054	角色在线数量:0
+[2016-02-01|13:07:41] 在线人数: 0
+[2016-02-01|13:07:41] 7	1454303261054	角色在线数量:0
+[2016-02-01|13:08:41] 在线人数: 0
+[2016-02-01|13:08:41] 7	1454303321055	角色在线数量:0
+[2016-02-01|13:09:41] 在线人数: 0
+[2016-02-01|13:09:41] 7	1454303381056	角色在线数量:0
+[2016-02-01|13:10:41] 在线人数: 0
+[2016-02-01|13:10:41] 7	1454303441059	角色在线数量:0
+[2016-02-01|13:11:41] 在线人数: 0
+[2016-02-01|13:11:41] 7	1454303501059	角色在线数量:0
+[2016-02-01|13:12:41] 在线人数: 0
+[2016-02-01|13:12:41] 7	1454303561063	角色在线数量:0
+[2016-02-01|13:13:41] 在线人数: 0
+[2016-02-01|13:13:41] 7	1454303621064	角色在线数量:0
+[2016-02-01|13:14:41] 在线人数: 0
+[2016-02-01|13:14:41] 7	1454303681064	角色在线数量:0
+[2016-02-01|13:15:41] 在线人数: 0
+[2016-02-01|13:15:41] 7	1454303741065	角色在线数量:0
+[2016-02-01|13:16:41] 在线人数: 0
+[2016-02-01|13:16:41] 7	1454303801066	角色在线数量:0
+[2016-02-01|13:17:41] 在线人数: 0
+[2016-02-01|13:17:41] 7	1454303861066	角色在线数量:0
+[2016-02-01|13:18:41] 在线人数: 0
+[2016-02-01|13:18:41] 7	1454303921067	角色在线数量:0
+[2016-02-01|13:19:41] 在线人数: 0
+[2016-02-01|13:19:41] 7	1454303981067	角色在线数量:0
+[2016-02-01|13:20:41] 在线人数: 0
+[2016-02-01|13:20:41] 7	1454304041067	角色在线数量:0
+[2016-02-01|13:21:41] 在线人数: 0
+[2016-02-01|13:21:41] 7	1454304101067	角色在线数量:0
+[2016-02-01|13:22:41] 在线人数: 0
+[2016-02-01|13:22:41] 7	1454304161068	角色在线数量:0
+[2016-02-01|13:23:41] 在线人数: 0
+[2016-02-01|13:23:41] 7	1454304221069	角色在线数量:0
+[2016-02-01|13:24:41] 在线人数: 0
+[2016-02-01|13:24:41] 7	1454304281070	角色在线数量:0
+[2016-02-01|13:25:41] 在线人数: 0
+[2016-02-01|13:25:41] 7	1454304341070	角色在线数量:0
+[2016-02-01|13:26:41] 在线人数: 0
+[2016-02-01|13:26:41] 7	1454304401071	角色在线数量:0
+[2016-02-01|13:27:41] 在线人数: 0
+[2016-02-01|13:27:41] 7	1454304461072	角色在线数量:0
+[2016-02-01|13:28:41] 在线人数: 0
+[2016-02-01|13:28:41] 7	1454304521072	角色在线数量:0
+[2016-02-01|13:29:41] 在线人数: 0
+[2016-02-01|13:29:41] 7	1454304581074	角色在线数量:0
+[2016-02-01|13:30:41] 在线人数: 0
+[2016-02-01|13:30:41] 7	1454304641075	角色在线数量:0
+[2016-02-01|13:31:41] 在线人数: 0
+[2016-02-01|13:31:41] 7	1454304701077	角色在线数量:0
+[2016-02-01|13:32:41] 在线人数: 0
+[2016-02-01|13:32:41] 7	1454304761078	角色在线数量:0
+[2016-02-01|13:33:41] 在线人数: 0
+[2016-02-01|13:33:41] 7	1454304821079	角色在线数量:0
+[2016-02-01|13:34:41] 在线人数: 0
+[2016-02-01|13:34:41] 7	1454304881083	角色在线数量:0
+[2016-02-01|13:35:41] 在线人数: 0
+[2016-02-01|13:35:41] 7	1454304941083	角色在线数量:0
+[2016-02-01|13:36:41] 在线人数: 0
+[2016-02-01|13:36:41] 7	1454305001084	角色在线数量:0
+[2016-02-01|13:37:41] 在线人数: 0
+[2016-02-01|13:37:41] 7	1454305061084	角色在线数量:0
+[2016-02-01|13:38:41] 在线人数: 0
+[2016-02-01|13:38:41] 7	1454305121086	角色在线数量:0
+[2016-02-01|13:39:41] 在线人数: 0
+[2016-02-01|13:39:41] 7	1454305181087	角色在线数量:0
+[2016-02-01|13:40:41] 在线人数: 0
+[2016-02-01|13:40:41] 7	1454305241087	角色在线数量:0
+[2016-02-01|13:41:41] 在线人数: 0
+[2016-02-01|13:41:41] 7	1454305301088	角色在线数量:0
+[2016-02-01|13:42:41] 在线人数: 0
+[2016-02-01|13:42:41] 7	1454305361089	角色在线数量:0
+[2016-02-01|13:43:41] 在线人数: 0
+[2016-02-01|13:43:41] 7	1454305421089	角色在线数量:0
+[2016-02-01|13:44:41] 在线人数: 0
+[2016-02-01|13:44:41] 7	1454305481090	角色在线数量:0
+[2016-02-01|13:45:41] 在线人数: 0
+[2016-02-01|13:45:41] 7	1454305541092	角色在线数量:0
+[2016-02-01|13:46:41] 在线人数: 0
+[2016-02-01|13:46:41] 7	1454305601093	角色在线数量:0
+[2016-02-01|13:47:41] 在线人数: 0
+[2016-02-01|13:47:41] 7	1454305661095	角色在线数量:0
+[2016-02-01|13:48:41] 在线人数: 0
+[2016-02-01|13:48:41] 7	1454305721096	角色在线数量:0
+[2016-02-01|13:49:41] 在线人数: 0
+[2016-02-01|13:49:41] 7	1454305781096	角色在线数量:0
+[2016-02-01|13:50:41] 在线人数: 0
+[2016-02-01|13:50:41] 7	1454305841096	角色在线数量:0
+[2016-02-01|13:51:41] 在线人数: 0
+[2016-02-01|13:51:41] 7	1454305901097	角色在线数量:0
+[2016-02-01|13:52:41] 在线人数: 0
+[2016-02-01|13:52:41] 7	1454305961097	角色在线数量:0
+[2016-02-01|13:53:41] 在线人数: 0
+[2016-02-01|13:53:41] 7	1454306021098	角色在线数量:0
+[2016-02-01|13:54:41] 在线人数: 0
+[2016-02-01|13:54:41] 7	1454306081099	角色在线数量:0
+[2016-02-01|13:55:41] 在线人数: 0
+[2016-02-01|13:55:41] 7	1454306141099	角色在线数量:0
+[2016-02-01|13:56:41] 在线人数: 0
+[2016-02-01|13:56:41] 7	1454306201099	角色在线数量:0
+[2016-02-01|13:57:41] 在线人数: 0
+[2016-02-01|13:57:41] 7	1454306261103	角色在线数量:0
+[2016-02-01|13:58:41] 在线人数: 0
+[2016-02-01|13:58:41] 7	1454306321103	角色在线数量:0
+[2016-02-01|13:59:41] 在线人数: 0
+[2016-02-01|13:59:41] 7	1454306381103	角色在线数量:0
+[2016-02-01|14:00:41] 在线人数: 0
+[2016-02-01|14:00:41] 7	1454306441104	角色在线数量:0
+[2016-02-01|14:01:41] 在线人数: 0
+[2016-02-01|14:01:41] 7	1454306501105	角色在线数量:0
+[2016-02-01|14:02:41] 在线人数: 0
+[2016-02-01|14:02:41] 7	1454306561105	角色在线数量:0
+[2016-02-01|14:03:41] 在线人数: 0
+[2016-02-01|14:03:41] 7	1454306621106	角色在线数量:0
+[2016-02-01|14:04:41] 在线人数: 0
+[2016-02-01|14:04:41] 7	1454306681107	角色在线数量:0
+[2016-02-01|14:05:41] 在线人数: 0
+[2016-02-01|14:05:41] 7	1454306741107	角色在线数量:0
+[2016-02-01|14:06:41] 在线人数: 0
+[2016-02-01|14:06:41] 7	1454306801108	角色在线数量:0
+[2016-02-01|14:07:41] 在线人数: 0
+[2016-02-01|14:07:41] 7	1454306861112	角色在线数量:0
+[2016-02-01|14:08:41] 在线人数: 0
+[2016-02-01|14:08:41] 7	1454306921113	角色在线数量:0
+[2016-02-01|14:09:41] 在线人数: 0
+[2016-02-01|14:09:41] 7	1454306981114	角色在线数量:0
+[2016-02-01|14:10:41] 在线人数: 0
+[2016-02-01|14:10:41] 7	1454307041114	角色在线数量:0
+[2016-02-01|14:11:41] 在线人数: 0
+[2016-02-01|14:11:41] 7	1454307101124	角色在线数量:0
+[2016-02-01|14:12:41] 在线人数: 0
+[2016-02-01|14:12:41] 7	1454307161125	角色在线数量:0
+[2016-02-01|14:13:41] 在线人数: 0
+[2016-02-01|14:13:41] 7	1454307221126	角色在线数量:0
+[2016-02-01|14:14:41] 在线人数: 0
+[2016-02-01|14:14:41] 7	1454307281126	角色在线数量:0
+[2016-02-01|14:15:41] 在线人数: 0
+[2016-02-01|14:15:41] 7	1454307341126	角色在线数量:0
+[2016-02-01|14:16:41] 在线人数: 0
+[2016-02-01|14:16:41] 7	1454307401127	角色在线数量:0
+[2016-02-01|14:17:41] 在线人数: 0
+[2016-02-01|14:17:41] 7	1454307461127	角色在线数量:0
+[2016-02-01|14:18:41] 在线人数: 0
+[2016-02-01|14:18:41] 7	1454307521128	角色在线数量:0
+[2016-02-01|14:19:41] 在线人数: 0
+[2016-02-01|14:19:41] 7	1454307581128	角色在线数量:0
+[2016-02-01|14:20:41] 在线人数: 0
+[2016-02-01|14:20:41] 7	1454307641129	角色在线数量:0
+[2016-02-01|14:21:41] 在线人数: 0
+[2016-02-01|14:21:41] 7	1454307701129	角色在线数量:0
+[2016-02-01|14:22:41] 在线人数: 0
+[2016-02-01|14:22:41] 7	1454307761137	角色在线数量:0
+[2016-02-01|14:23:41] 在线人数: 0
+[2016-02-01|14:23:41] 7	1454307821146	角色在线数量:0
+[2016-02-01|14:24:41] 在线人数: 0
+[2016-02-01|14:24:41] 7	1454307881148	角色在线数量:0
+[2016-02-01|14:25:41] 在线人数: 0
+[2016-02-01|14:25:41] 7	1454307941157	角色在线数量:0
+[2016-02-01|14:26:41] 在线人数: 0
+[2016-02-01|14:26:41] 7	1454308001158	角色在线数量:0
+[2016-02-01|14:27:41] 在线人数: 0
+[2016-02-01|14:27:41] 7	1454308061163	角色在线数量:0
+[2016-02-01|14:28:41] 在线人数: 0
+[2016-02-01|14:28:41] 7	1454308121169	角色在线数量:0
+[2016-02-01|14:29:41] 在线人数: 0
+[2016-02-01|14:29:41] 7	1454308181175	角色在线数量:0
+[2016-02-01|14:30:41] 在线人数: 0
+[2016-02-01|14:30:41] 7	1454308241180	角色在线数量:0
+[2016-02-01|14:31:41] 在线人数: 0
+[2016-02-01|14:31:41] 7	1454308301186	角色在线数量:0
+[2016-02-01|14:32:41] 在线人数: 0
+[2016-02-01|14:32:41] 7	1454308361191	角色在线数量:0
+[2016-02-01|14:33:41] 在线人数: 0
+[2016-02-01|14:33:41] 7	1454308421197	角色在线数量:0
+[2016-02-01|14:34:41] 在线人数: 0
+[2016-02-01|14:34:41] 7	1454308481203	角色在线数量:0
+[2016-02-01|14:35:41] 在线人数: 0
+[2016-02-01|14:35:41] 7	1454308541205	角色在线数量:0
+[2016-02-01|14:36:41] 在线人数: 0
+[2016-02-01|14:36:41] 7	1454308601212	角色在线数量:0
+[2016-02-01|14:37:41] 在线人数: 0
+[2016-02-01|14:37:41] 7	1454308661218	角色在线数量:0
+[2016-02-01|14:38:41] 在线人数: 0
+[2016-02-01|14:38:41] 7	1454308721226	角色在线数量:0
+[2016-02-01|14:39:41] 在线人数: 0
+[2016-02-01|14:39:41] 7	1454308781226	角色在线数量:0
+[2016-02-01|14:40:41] 在线人数: 0
+[2016-02-01|14:40:41] 7	1454308841230	角色在线数量:0
+[2016-02-01|14:41:41] 在线人数: 0
+[2016-02-01|14:41:41] 7	1454308901232	角色在线数量:0
+[2016-02-01|14:42:41] 在线人数: 0
+[2016-02-01|14:42:41] 7	1454308961234	角色在线数量:0
+[2016-02-01|14:43:41] 在线人数: 0
+[2016-02-01|14:43:41] 7	1454309021236	角色在线数量:0
+[2016-02-01|14:44:04] account:yyy
+[2016-02-01|14:44:04] AccountID[241][Login Ok]
+[2016-02-01|14:44:04] createWorldPlayer ID[64]Level[10] load from db
+[2016-02-01|14:44:04] udid:yyy
+[2016-02-01|14:44:30] 玩家增加钻石 ：id=64---name=寇里,diamond=-50
+[2016-02-01|14:44:34] 玩家增加金币 ：id=64---name=寇里,gold=-210
+[2016-02-01|14:44:41] 玩家增加钻石 ：id=64---name=寇里,diamond=-50
+[2016-02-01|14:44:41] 在线人数: 1
+[2016-02-01|14:44:41] 7	1454309081242	角色在线数量:1
+[2016-02-01|14:45:41] 在线人数: 1
+[2016-02-01|14:45:41] 7	1454309141247	角色在线数量:1
+[2016-02-01|14:46:40] SaveTeamHandler-----Time:51
+[2016-02-01|14:46:41] 在线人数: 1
+[2016-02-01|14:46:41] 7	1454309201250	角色在线数量:1
+[2016-02-01|14:47:41] 在线人数: 1
+[2016-02-01|14:47:41] 7	1454309261250	角色在线数量:1
+[2016-02-01|14:48:41] 在线人数: 1
+[2016-02-01|14:48:41] 7	1454309321251	角色在线数量:1
+[2016-02-01|14:49:18] account:abc11
+[2016-02-01|14:49:19] AccountID[257][Login Ok]
+[2016-02-01|14:49:19] createWorldPlayer ID[76]Level[10] load from db
+[2016-02-01|14:49:19] udid:abc11
+[2016-02-01|14:49:41] 在线人数: 2
+[2016-02-01|14:49:41] 7	1454309381258	角色在线数量:2
+[2016-02-01|14:50:06] 玩家增加钻石 ：id=64---name=寇里,diamond=-100
+[2016-02-01|14:50:08] 玩家增加钻石 ：id=64---name=寇里,diamond=-100
+[2016-02-01|14:50:08] 玩家增加钻石 ：id=64---name=寇里,diamond=-100
+[2016-02-01|14:50:14] 玩家增加钻石 ：id=64---name=寇里,diamond=-200
+[2016-02-01|14:50:18] 玩家增加钻石 ：id=64---name=寇里,diamond=-200
+[2016-02-01|14:50:40] 玩家增加钻石 ：id=76---name=abc11,diamond=-8
+[2016-02-01|14:50:41] 在线人数: 2
+[2016-02-01|14:50:41] 7	1454309441266	角色在线数量:2
+[2016-02-01|14:50:45] 玩家增加金币 ：id=76---name=abc11,gold=-200
+[2016-02-01|14:50:54] 玩家增加金币 ：id=76---name=abc11,gold=2000
+[2016-02-01|14:50:56] 玩家增加金币 ：id=76---name=abc11,gold=2000
+[2016-02-01|14:51:01] 玩家增加金币 ：id=76---name=abc11,gold=33900
+[2016-02-01|14:51:03] 玩家增加金币 ：id=76---name=abc11,gold=33900
+[2016-02-01|14:51:09] 玩家增加金币 ：id=76---name=abc11,gold=1000
+[2016-02-01|14:51:13] 玩家增加金币 ：id=76---name=abc11,gold=400
+[2016-02-01|14:51:14] 玩家增加金币 ：id=76---name=abc11,gold=400
+[2016-02-01|14:51:14] SellGoodsHandler-----Time:411
+[2016-02-01|14:51:15] 玩家增加金币 ：id=76---name=abc11,gold=400
+[2016-02-01|14:51:15] SellGoodsHandler-----Time:93
+[2016-02-01|14:51:16] 玩家增加金币 ：id=76---name=abc11,gold=400
+[2016-02-01|14:51:20] 玩家增加金币 ：id=76---name=abc11,gold=200
+[2016-02-01|14:51:41] 在线人数: 2
+[2016-02-01|14:51:41] 7	1454309501274	角色在线数量:2
+[2016-02-01|14:51:42] SessionClosed SessionId:42----playerId:76
+[2016-02-01|14:51:42] 3	1454309502568	玩家退出playerId:76	10	-1684553975
+[2016-02-01|14:51:42] 注销保存玩家信息：id=76,name=abc11,level=10
+[2016-02-01|14:51:57] 玩家增加钻石 ：id=64---name=寇里,diamond=-24
+[2016-02-01|14:52:41] 在线人数: 1
+[2016-02-01|14:52:41] 7	1454309561277	角色在线数量:1
+[2016-02-01|14:52:42] 玩家增加钻石 ：id=64---name=寇里,diamond=-40
+[2016-02-01|14:52:56] 玩家增加钻石 ：id=64---name=寇里,diamond=-40
+[2016-02-01|14:52:56] BuyHandler-----Time:51
+[2016-02-01|14:53:41] 在线人数: 1
+[2016-02-01|14:53:41] 7	1454309621280	角色在线数量:1
+[2016-02-01|14:54:11] 玩家增加钻石 ：id=64---name=寇里,diamond=-40
+[2016-02-01|14:54:41] 在线人数: 1
+[2016-02-01|14:54:41] 7	1454309681280	角色在线数量:1
+[2016-02-01|14:55:12] account:abc12
+[2016-02-01|14:55:12] AccountID[259][Login Ok]
+[2016-02-01|14:55:18] 1	1454309718528	77	abc12
+[2016-02-01|14:55:18] createWorldPlayer ID[77]Level[10] load from db
+[2016-02-01|14:55:18] udid:abc12
+[2016-02-01|14:55:37] 玩家增加钻石 ：id=77---name=abc12,diamond=-14
+[2016-02-01|14:55:41] 在线人数: 2
+[2016-02-01|14:55:41] 7	1454309741280	角色在线数量:2
+[2016-02-01|14:55:42] 玩家增加钻石 ：id=77---name=abc12,diamond=-10
+[2016-02-01|14:55:42] BuyHandler-----Time:271
+[2016-02-01|14:55:50] 玩家增加钻石 ：id=77---name=abc12,diamond=-50
+[2016-02-01|14:55:55] 玩家增加钻石 ：id=77---name=abc12,diamond=-50
+[2016-02-01|14:56:02] 玩家增加钻石 ：id=77---name=abc12,diamond=-100
+[2016-02-01|14:56:02] RefreshHandler-----Time:288
+[2016-02-01|14:56:09] 玩家增加钻石 ：id=77---name=abc12,diamond=-100
+[2016-02-01|14:56:14] 玩家增加钻石 ：id=77---name=abc12,diamond=-100
+[2016-02-01|14:56:20] 玩家增加钻石 ：id=77---name=abc12,diamond=-200
+[2016-02-01|14:56:26] 玩家增加钻石 ：id=77---name=abc12,diamond=-200
+[2016-02-01|14:56:31] 玩家增加钻石 ：id=77---name=abc12,diamond=-200
+[2016-02-01|14:56:31] RefreshHandler-----Time:66
+[2016-02-01|14:56:38] 玩家增加钻石 ：id=77---name=abc12,diamond=-300
+[2016-02-01|14:56:38] RefreshHandler-----Time:80
+[2016-02-01|14:56:38] SessionClosed SessionId:41----playerId:64
+[2016-02-01|14:56:38] 3	1454309798892	玩家退出playerId:64	10	-1684868731
+[2016-02-01|14:56:39] 注销保存玩家信息：id=64,name=寇里,level=10
+[2016-02-01|14:56:39] SessionClosedHandler-----Time:110
+[2016-02-01|14:56:41] 在线人数: 1
+[2016-02-01|14:56:41] 7	1454309801280	角色在线数量:1
+[2016-02-01|14:56:46] 玩家增加金币 ：id=77---name=abc12,gold=-320
+[2016-02-01|14:56:46] BuyHandler-----Time:135
+[2016-02-01|14:56:51] 玩家增加钻石 ：id=77---name=abc12,diamond=-300
+[2016-02-01|14:56:56] 玩家增加钻石 ：id=77---name=abc12,diamond=-300
+[2016-02-01|14:57:03] 玩家增加钻石 ：id=77---name=abc12,diamond=-300
+[2016-02-01|14:57:03] RefreshHandler-----Time:52
+[2016-02-01|14:57:07] 玩家增加钻石 ：id=77---name=abc12,diamond=-300
+[2016-02-01|14:57:11] 玩家增加钻石 ：id=77---name=abc12,diamond=-300
+[2016-02-01|14:57:18] 玩家增加钻石 ：id=77---name=abc12,diamond=-300
+[2016-02-01|14:57:18] RefreshHandler-----Time:143
+[2016-02-01|14:57:34] UseGoodsHandler-----Time:504
+[2016-02-01|14:57:41] 在线人数: 1
+[2016-02-01|14:57:41] 7	1454309861281	角色在线数量:1
+[2016-02-01|14:57:48] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|14:57:51] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|14:57:55] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|14:57:58] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-02-01|14:58:41] 在线人数: 1
+[2016-02-01|14:58:41] 7	1454309921281	角色在线数量:1
+[2016-02-01|14:59:38] SessionClosed SessionId:43----playerId:77
+[2016-02-01|14:59:38] 3	1454309978588	玩家退出playerId:77	10	-1684194816
+[2016-02-01|14:59:38] 注销保存玩家信息：id=77,name=abc12,level=10
+[2016-02-01|14:59:41] 在线人数: 0
+[2016-02-01|14:59:41] 7	1454309981282	角色在线数量:0
+[2016-02-01|15:00:41] 在线人数: 0
+[2016-02-01|15:00:41] 7	1454310041282	角色在线数量:0
+[2016-02-01|15:01:41] 在线人数: 0
+[2016-02-01|15:01:41] 7	1454310101282	角色在线数量:0
+[2016-02-01|15:02:41] 在线人数: 0
+[2016-02-01|15:02:41] 7	1454310161283	角色在线数量:0
+[2016-02-01|15:02:48] account:uu
+[2016-02-01|15:02:48] AccountID[235][Login Ok]
+[2016-02-01|15:02:48] createWorldPlayer ID[66]Level[10] load from db
+[2016-02-01|15:02:48] udid:uu
+[2016-02-01|15:03:41] 在线人数: 1
+[2016-02-01|15:03:41] 7	1454310221283	角色在线数量:1
+[2016-02-01|15:04:41] 在线人数: 1
+[2016-02-01|15:04:41] 7	1454310281284	角色在线数量:1
+[2016-02-01|15:05:41] 在线人数: 1
+[2016-02-01|15:05:41] 7	1454310341284	角色在线数量:1
+[2016-02-01|15:06:41] 在线人数: 1
+[2016-02-01|15:06:41] 7	1454310401287	角色在线数量:1
+[2016-02-01|15:07:41] 在线人数: 1
+[2016-02-01|15:07:41] 7	1454310461291	角色在线数量:1
+[2016-02-01|15:07:50] CompleteCopyMapHandler-----Time:64
+[2016-02-01|15:08:41] 在线人数: 1
+[2016-02-01|15:08:41] 7	1454310521299	角色在线数量:1
+[2016-02-01|15:09:41] 在线人数: 1
+[2016-02-01|15:09:41] 7	1454310581299	角色在线数量:1
+[2016-02-01|15:10:41] 在线人数: 1
+[2016-02-01|15:10:41] 7	1454310641306	角色在线数量:1
+[2016-02-01|15:11:41] 在线人数: 1
+[2016-02-01|15:11:41] 7	1454310701314	角色在线数量:1
+[2016-02-01|15:12:39] GetTeamHandler-----Time:80
+[2016-02-01|15:12:41] 在线人数: 1
+[2016-02-01|15:12:41] 7	1454310761317	角色在线数量:1
+[2016-02-01|15:13:41] 在线人数: 1
+[2016-02-01|15:13:41] 7	1454310821325	角色在线数量:1
+[2016-02-01|15:14:41] 在线人数: 1
+[2016-02-01|15:14:41] 7	1454310881328	角色在线数量:1
+[2016-02-01|15:15:41] 在线人数: 1
+[2016-02-01|15:15:41] 7	1454310941343	角色在线数量:1
+[2016-02-01|15:16:41] 在线人数: 1
+[2016-02-01|15:16:41] 7	1454311001357	角色在线数量:1
+[2016-02-01|15:17:41] 在线人数: 1
+[2016-02-01|15:17:41] 7	1454311061359	角色在线数量:1
+[2016-02-01|15:18:41] 在线人数: 1
+[2016-02-01|15:18:41] 7	1454311121366	角色在线数量:1
+[2016-02-01|15:19:41] 在线人数: 1
+[2016-02-01|15:19:41] 7	1454311181378	角色在线数量:1
+[2016-02-01|15:20:41] 在线人数: 1
+[2016-02-01|15:20:41] 7	1454311241389	角色在线数量:1
+[2016-02-01|15:21:09] SessionClosed SessionId:44----playerId:66
+[2016-02-01|15:21:09] 3	1454311269815	玩家退出playerId:66	10	-1683744952
+[2016-02-01|15:21:09] 注销保存玩家信息：id=66,name=布兹,level=10
+[2016-02-01|15:21:41] 在线人数: 0
+[2016-02-01|15:21:41] 7	1454311301389	角色在线数量:0
+[2016-02-01|15:22:41] 在线人数: 0
+[2016-02-01|15:22:41] 7	1454311361398	角色在线数量:0
+[2016-02-01|15:23:41] 在线人数: 0
+[2016-02-01|15:23:41] 7	1454311421405	角色在线数量:0
+[2016-02-01|15:24:41] 在线人数: 0
+[2016-02-01|15:24:41] 7	1454311481410	角色在线数量:0
+[2016-02-01|15:25:41] 在线人数: 0
+[2016-02-01|15:25:41] 7	1454311541421	角色在线数量:0
+[2016-02-01|15:26:41] 在线人数: 0
+[2016-02-01|15:26:41] 7	1454311601433	角色在线数量:0
+[2016-02-01|15:27:41] 在线人数: 0
+[2016-02-01|15:27:41] 7	1454311661438	角色在线数量:0
+[2016-02-01|15:28:41] 在线人数: 0
+[2016-02-01|15:28:41] 7	1454311721453	角色在线数量:0
+[2016-02-01|15:29:41] 在线人数: 0
+[2016-02-01|15:29:41] 7	1454311781458	角色在线数量:0
+[2016-02-01|15:30:41] 在线人数: 0
+[2016-02-01|15:30:41] 7	1454311841470	角色在线数量:0
+[2016-02-01|15:31:41] 在线人数: 0
+[2016-02-01|15:31:41] 7	1454311901472	角色在线数量:0
+[2016-02-01|15:32:41] 在线人数: 0
+[2016-02-01|15:32:41] 7	1454311961485	角色在线数量:0
+[2016-02-01|15:33:14] account:666
+[2016-02-01|15:33:14] AccountID[99][Login Ok]
+[2016-02-01|15:33:14] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|15:33:14] udid:666
+[2016-02-01|15:33:41] 在线人数: 1
+[2016-02-01|15:33:41] 7	1454312021496	角色在线数量:1
+[2016-02-01|15:34:41] 在线人数: 1
+[2016-02-01|15:34:41] 7	1454312081509	角色在线数量:1
+[2016-02-01|15:35:24] SessionClosed SessionId:45----playerId:6
+[2016-02-01|15:35:24] 3	1454312124823	玩家退出playerId:6	1	-1681919257
+[2016-02-01|15:35:24] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|15:35:33] account:666
+[2016-02-01|15:35:33] AccountID[99][Login Ok]
+[2016-02-01|15:35:34] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|15:35:34] udid:666
+[2016-02-01|15:35:41] 在线人数: 1
+[2016-02-01|15:35:41] 7	1454312141512	角色在线数量:1
+[2016-02-01|15:36:41] 在线人数: 1
+[2016-02-01|15:36:41] 7	1454312201514	角色在线数量:1
+[2016-02-01|15:37:41] 在线人数: 1
+[2016-02-01|15:37:41] 7	1454312261525	角色在线数量:1
+[2016-02-01|15:38:26] 玩家增加钻石 ：id=6---name=joanne,diamond=-7
+[2016-02-01|15:38:41] 在线人数: 1
+[2016-02-01|15:38:41] 7	1454312321529	角色在线数量:1
+[2016-02-01|15:39:41] 在线人数: 1
+[2016-02-01|15:39:41] 7	1454312381537	角色在线数量:1
+[2016-02-01|15:40:41] 在线人数: 1
+[2016-02-01|15:40:41] 7	1454312441543	角色在线数量:1
+[2016-02-01|15:40:54] SessionClosed SessionId:46----playerId:6
+[2016-02-01|15:40:54] 3	1454312454868	玩家退出playerId:6	1	-1681779311
+[2016-02-01|15:40:54] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|15:41:41] 在线人数: 0
+[2016-02-01|15:41:41] 7	1454312501549	角色在线数量:0
+[2016-02-01|15:42:41] 在线人数: 0
+[2016-02-01|15:42:41] 7	1454312561555	角色在线数量:0
+[2016-02-01|15:43:41] 在线人数: 0
+[2016-02-01|15:43:41] 7	1454312621559	角色在线数量:0
+[2016-02-01|15:44:31] account:666
+[2016-02-01|15:44:31] AccountID[99][Login Ok]
+[2016-02-01|15:44:31] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|15:44:31] udid:666
+[2016-02-01|15:44:31] RoleLoginHandler-----Time:95
+[2016-02-01|15:44:41] 在线人数: 1
+[2016-02-01|15:44:41] 7	1454312681566	角色在线数量:1
+[2016-02-01|15:45:41] 在线人数: 1
+[2016-02-01|15:45:41] 7	1454312741579	角色在线数量:1
+[2016-02-01|15:46:41] 在线人数: 1
+[2016-02-01|15:46:41] 7	1454312801585	角色在线数量:1
+[2016-02-01|15:47:41] 在线人数: 1
+[2016-02-01|15:47:41] 7	1454312861597	角色在线数量:1
+[2016-02-01|15:47:47] SessionClosed SessionId:47----playerId:6
+[2016-02-01|15:47:47] 3	1454312867465	玩家退出playerId:6	1	-1681241845
+[2016-02-01|15:47:47] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|15:48:12] account:abc12
+[2016-02-01|15:48:12] AccountID[259][Login Ok]
+[2016-02-01|15:48:12] createWorldPlayer ID[77]Level[10] load from db
+[2016-02-01|15:48:12] udid:abc12
+[2016-02-01|15:48:35] SessionClosed SessionId:48----playerId:77
+[2016-02-01|15:48:35] 3	1454312915840	玩家退出playerId:77	10	-1681021138
+[2016-02-01|15:48:35] 注销保存玩家信息：id=77,name=abc12,level=10
+[2016-02-01|15:48:41] 在线人数: 0
+[2016-02-01|15:48:41] 7	1454312921597	角色在线数量:0
+[2016-02-01|15:48:57] account:666
+[2016-02-01|15:48:57] AccountID[99][Login Ok]
+[2016-02-01|15:48:57] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|15:48:57] udid:666
+[2016-02-01|15:49:41] 在线人数: 1
+[2016-02-01|15:49:41] 7	1454312981609	角色在线数量:1
+[2016-02-01|15:50:28] SessionClosed SessionId:49----playerId:6
+[2016-02-01|15:50:28] 3	1454313028563	玩家退出playerId:6	1	-1680976091
+[2016-02-01|15:50:28] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|15:50:37] account:666
+[2016-02-01|15:50:37] AccountID[99][Login Ok]
+[2016-02-01|15:50:37] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|15:50:37] udid:666
+[2016-02-01|15:50:41] 在线人数: 1
+[2016-02-01|15:50:41] 7	1454313041618	角色在线数量:1
+[2016-02-01|15:51:41] 在线人数: 1
+[2016-02-01|15:51:41] 7	1454313101621	角色在线数量:1
+[2016-02-01|15:52:41] 在线人数: 1
+[2016-02-01|15:52:41] 7	1454313161628	角色在线数量:1
+[2016-02-01|15:53:41] 在线人数: 1
+[2016-02-01|15:53:41] 7	1454313221634	角色在线数量:1
+[2016-02-01|15:54:41] 在线人数: 1
+[2016-02-01|15:54:41] 7	1454313281646	角色在线数量:1
+[2016-02-01|15:55:41] 在线人数: 1
+[2016-02-01|15:55:41] 7	1454313341651	角色在线数量:1
+[2016-02-01|15:56:41] 在线人数: 1
+[2016-02-01|15:56:41] 7	1454313401659	角色在线数量:1
+[2016-02-01|15:57:41] 在线人数: 1
+[2016-02-01|15:57:41] 7	1454313461673	角色在线数量:1
+[2016-02-01|15:58:12] SessionClosed SessionId:50----playerId:6
+[2016-02-01|15:58:12] 3	1454313492336	玩家退出playerId:6	1	-1680876005
+[2016-02-01|15:58:12] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|15:58:41] 在线人数: 0
+[2016-02-01|15:58:41] 7	1454313521688	角色在线数量:0
+[2016-02-01|15:58:46] account:uu
+[2016-02-01|15:58:46] AccountID[235][Login Ok]
+[2016-02-01|15:58:46] createWorldPlayer ID[66]Level[10] load from db
+[2016-02-01|15:58:46] udid:uu
+[2016-02-01|15:59:10] SessionClosed SessionId:51----playerId:66
+[2016-02-01|15:59:10] 3	1454313550424	玩家退出playerId:66	10	-1680387233
+[2016-02-01|15:59:10] 注销保存玩家信息：id=66,name=布兹,level=10
+[2016-02-01|15:59:14] account:666
+[2016-02-01|15:59:14] AccountID[99][Login Ok]
+[2016-02-01|15:59:14] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|15:59:14] udid:666
+[2016-02-01|15:59:18] GetBackpackListHandler-----Time:62
+[2016-02-01|15:59:21] SessionClosed SessionId:53----playerId:-1
+[2016-02-01|15:59:21] 用户下线异常2
+[2016-02-01|15:59:41] 在线人数: 1
+[2016-02-01|15:59:41] 7	1454313581699	角色在线数量:1
+[2016-02-01|16:00:41] 在线人数: 1
+[2016-02-01|16:00:41] 7	1454313641712	角色在线数量:1
+[2016-02-01|16:01:41] 在线人数: 1
+[2016-02-01|16:01:41] 7	1454313701722	角色在线数量:1
+[2016-02-01|16:02:41] 在线人数: 1
+[2016-02-01|16:02:41] 7	1454313761726	角色在线数量:1
+[2016-02-01|16:02:43] account:uu
+[2016-02-01|16:02:43] AccountID[235][Login Ok]
+[2016-02-01|16:02:43] createWorldPlayer ID[66]Level[10] load from db
+[2016-02-01|16:02:43] udid:uu
+[2016-02-01|16:02:47] SessionClosed SessionId:54----playerId:66
+[2016-02-01|16:02:47] 3	1454313767600	玩家退出playerId:66	10	-1680149992
+[2016-02-01|16:02:47] 注销保存玩家信息：id=66,name=布兹,level=10
+[2016-02-01|16:03:41] 在线人数: 1
+[2016-02-01|16:03:41] 7	1454313821729	角色在线数量:1
+[2016-02-01|16:04:41] 在线人数: 1
+[2016-02-01|16:04:41] 7	1454313881737	角色在线数量:1
+[2016-02-01|16:05:41] 在线人数: 1
+[2016-02-01|16:05:41] 7	1454313941739	角色在线数量:1
+[2016-02-01|16:05:43] SessionClosed SessionId:52----playerId:6
+[2016-02-01|16:05:43] 3	1454313943300	玩家退出playerId:6	1	-1680358813
+[2016-02-01|16:05:43] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|16:06:15] account:666
+[2016-02-01|16:06:15] AccountID[99][Login Ok]
+[2016-02-01|16:06:15] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|16:06:15] udid:666
+[2016-02-01|16:06:41] 在线人数: 1
+[2016-02-01|16:06:41] 7	1454314001747	角色在线数量:1
+[2016-02-01|16:07:41] 在线人数: 1
+[2016-02-01|16:07:41] 7	1454314061751	角色在线数量:1
+[2016-02-01|16:08:41] 在线人数: 1
+[2016-02-01|16:08:41] 7	1454314121751	角色在线数量:1
+[2016-02-01|16:09:41] 在线人数: 1
+[2016-02-01|16:09:41] 7	1454314181763	角色在线数量:1
+[2016-02-01|16:10:41] 在线人数: 1
+[2016-02-01|16:10:41] 7	1454314241777	角色在线数量:1
+[2016-02-01|16:11:41] 在线人数: 1
+[2016-02-01|16:11:41] 7	1454314301788	角色在线数量:1
+[2016-02-01|16:12:41] 在线人数: 1
+[2016-02-01|16:12:41] 7	1454314361804	角色在线数量:1
+[2016-02-01|16:13:41] 在线人数: 1
+[2016-02-01|16:13:41] 7	1454314421815	角色在线数量:1
+[2016-02-01|16:14:16] SessionClosed SessionId:56----playerId:-1
+[2016-02-01|16:14:16] 用户下线异常2
+[2016-02-01|16:14:41] 在线人数: 1
+[2016-02-01|16:14:41] 7	1454314481819	角色在线数量:1
+[2016-02-01|16:15:41] 在线人数: 1
+[2016-02-01|16:15:41] 7	1454314541832	角色在线数量:1
+[2016-02-01|16:16:41] 在线人数: 1
+[2016-02-01|16:16:41] 7	1454314601832	角色在线数量:1
+[2016-02-01|16:17:41] 在线人数: 1
+[2016-02-01|16:17:41] 7	1454314661837	角色在线数量:1
+[2016-02-01|16:18:36] SessionClosed SessionId:55----playerId:6
+[2016-02-01|16:18:36] 3	1454314716073	玩家退出playerId:6	1	-1679938026
+[2016-02-01|16:18:36] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|16:18:41] 在线人数: 0
+[2016-02-01|16:18:41] 7	1454314721837	角色在线数量:0
+[2016-02-01|16:18:52] account:666
+[2016-02-01|16:18:52] AccountID[99][Login Ok]
+[2016-02-01|16:18:53] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|16:18:53] udid:666
+[2016-02-01|16:19:41] 在线人数: 1
+[2016-02-01|16:19:41] 7	1454314781838	角色在线数量:1
+[2016-02-01|16:20:41] 在线人数: 1
+[2016-02-01|16:20:41] 7	1454314841838	角色在线数量:1
+[2016-02-01|16:21:41] 在线人数: 1
+[2016-02-01|16:21:41] 7	1454314901838	角色在线数量:1
+[2016-02-01|16:22:41] account:silly6
+[2016-02-01|16:22:41] AccountID[256][Login Ok]
+[2016-02-01|16:22:41] 在线人数: 1
+[2016-02-01|16:22:41] 7	1454314961839	角色在线数量:1
+[2016-02-01|16:22:49] 1	1454314969541	78	蕾娜塔
+[2016-02-01|16:22:49] createWorldPlayer ID[78]Level[10] load from db
+[2016-02-01|16:22:49] udid:silly6
+[2016-02-01|16:23:41] 在线人数: 2
+[2016-02-01|16:23:41] 7	1454315021839	角色在线数量:2
+[2016-02-01|16:24:33] 玩家增加金币 ：id=78---name=蕾娜塔,gold=-240
+[2016-02-01|16:24:41] 在线人数: 2
+[2016-02-01|16:24:41] 7	1454315081840	角色在线数量:2
+[2016-02-01|16:24:43] SessionClosed SessionId:57----playerId:6
+[2016-02-01|16:24:43] 3	1454315083147	玩家退出playerId:6	1	-1679180290
+[2016-02-01|16:24:43] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|16:24:53] 玩家增加钻石 ：id=78---name=蕾娜塔,diamond=-20
+[2016-02-01|16:25:05] account:abc1
+[2016-02-01|16:25:05] AccountID[116][Login Ok]
+[2016-02-01|16:25:05] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|16:25:05] udid:abc1
+[2016-02-01|16:25:11] SessionClosed SessionId:59----playerId:1
+[2016-02-01|16:25:11] 3	1454315111946	玩家退出playerId:1	30	-1678807572
+[2016-02-01|16:25:11] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|16:25:41] 在线人数: 1
+[2016-02-01|16:25:41] 7	1454315141840	角色在线数量:1
+[2016-02-01|16:26:41] 在线人数: 1
+[2016-02-01|16:26:41] 7	1454315201841	角色在线数量:1
+[2016-02-01|16:27:41] 在线人数: 1
+[2016-02-01|16:27:41] 7	1454315261841	角色在线数量:1
+[2016-02-01|16:28:41] 在线人数: 1
+[2016-02-01|16:28:41] 7	1454315321843	角色在线数量:1
+[2016-02-01|16:29:41] 在线人数: 1
+[2016-02-01|16:29:41] 7	1454315381844	角色在线数量:1
+[2016-02-01|16:30:19] account:666
+[2016-02-01|16:30:19] AccountID[99][Login Ok]
+[2016-02-01|16:30:19] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|16:30:19] udid:666
+[2016-02-01|16:30:41] 在线人数: 2
+[2016-02-01|16:30:41] 7	1454315441848	角色在线数量:2
+[2016-02-01|16:31:41] 在线人数: 2
+[2016-02-01|16:31:41] 7	1454315501850	角色在线数量:2
+[2016-02-01|16:32:41] 在线人数: 2
+[2016-02-01|16:32:41] 7	1454315561858	角色在线数量:2
+[2016-02-01|16:33:41] 在线人数: 2
+[2016-02-01|16:33:41] 7	1454315621872	角色在线数量:2
+[2016-02-01|16:34:40] SessionClosed SessionId:58----playerId:78
+[2016-02-01|16:34:40] 3	1454315680767	玩家退出playerId:78	10	-1678943800
+[2016-02-01|16:34:40] 注销保存玩家信息：id=78,name=蕾娜塔,level=10
+[2016-02-01|16:34:41] 在线人数: 1
+[2016-02-01|16:34:41] 7	1454315681878	角色在线数量:1
+[2016-02-01|16:35:41] 在线人数: 1
+[2016-02-01|16:35:41] 7	1454315741892	角色在线数量:1
+[2016-02-01|16:36:41] 在线人数: 1
+[2016-02-01|16:36:41] 7	1454315801894	角色在线数量:1
+[2016-02-01|16:37:41] 在线人数: 1
+[2016-02-01|16:37:41] 7	1454315861897	角色在线数量:1
+[2016-02-01|16:38:41] 在线人数: 1
+[2016-02-01|16:38:41] 7	1454315921905	角色在线数量:1
+[2016-02-01|16:39:31] account:uu
+[2016-02-01|16:39:31] AccountID[235][Login Ok]
+[2016-02-01|16:39:32] createWorldPlayer ID[66]Level[10] load from db
+[2016-02-01|16:39:32] udid:uu
+[2016-02-01|16:39:41] 在线人数: 2
+[2016-02-01|16:39:41] 7	1454315981913	角色在线数量:2
+[2016-02-01|16:40:41] 在线人数: 2
+[2016-02-01|16:40:41] 7	1454316041914	角色在线数量:2
+[2016-02-01|16:41:41] 在线人数: 2
+[2016-02-01|16:41:41] 7	1454316101925	角色在线数量:2
+[2016-02-01|16:42:41] 在线人数: 2
+[2016-02-01|16:42:41] 7	1454316161925	角色在线数量:2
+[2016-02-01|16:43:25] account:DDGDG
+[2016-02-01|16:43:25] AccountID[215][Login Ok]
+[2016-02-01|16:43:25] createWorldPlayer ID[44]Level[10] load from db
+[2016-02-01|16:43:25] udid:DDGDG
+[2016-02-01|16:43:41] 在线人数: 3
+[2016-02-01|16:43:41] 7	1454316221925	角色在线数量:3
+[2016-02-01|16:44:41] 在线人数: 3
+[2016-02-01|16:44:41] 7	1454316281925	角色在线数量:3
+[2016-02-01|16:45:15] SessionClosed SessionId:62----playerId:44
+[2016-02-01|16:45:15] 3	1454316315525	玩家退出playerId:44	10	-1677707960
+[2016-02-01|16:45:15] 注销保存玩家信息：id=44,name=可妮莉雅,level=10
+[2016-02-01|16:45:35] account:DDGDG
+[2016-02-01|16:45:35] AccountID[215][Login Ok]
+[2016-02-01|16:45:35] createWorldPlayer ID[44]Level[10] load from db
+[2016-02-01|16:45:35] udid:DDGDG
+[2016-02-01|16:45:40] SessionClosed SessionId:60----playerId:6
+[2016-02-01|16:45:40] 3	1454316340516	玩家退出playerId:6	1	-1678493467
+[2016-02-01|16:45:40] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|16:45:41] 在线人数: 2
+[2016-02-01|16:45:41] 7	1454316341936	角色在线数量:2
+[2016-02-01|16:46:41] 在线人数: 2
+[2016-02-01|16:46:41] 7	1454316401942	角色在线数量:2
+[2016-02-01|16:47:10] account:666
+[2016-02-01|16:47:10] AccountID[99][Login Ok]
+[2016-02-01|16:47:10] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|16:47:10] udid:666
+[2016-02-01|16:47:41] 在线人数: 3
+[2016-02-01|16:47:41] 7	1454316461948	角色在线数量:3
+[2016-02-01|16:48:26] SessionClosed SessionId:63----playerId:44
+[2016-02-01|16:48:26] 3	1454316506602	玩家退出playerId:44	10	-1677577667
+[2016-02-01|16:48:26] 注销保存玩家信息：id=44,name=可妮莉雅,level=10
+[2016-02-01|16:48:41] 在线人数: 2
+[2016-02-01|16:48:41] 7	1454316521948	角色在线数量:2
+[2016-02-01|16:49:41] 在线人数: 2
+[2016-02-01|16:49:41] 7	1454316581951	角色在线数量:2
+[2016-02-01|16:49:50] SessionClosed SessionId:64----playerId:6
+[2016-02-01|16:49:50] 3	1454316590168	玩家退出playerId:6	1	-1677482720
+[2016-02-01|16:49:50] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|16:50:00] account:666
+[2016-02-01|16:50:00] AccountID[99][Login Ok]
+[2016-02-01|16:50:00] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|16:50:00] udid:666
+[2016-02-01|16:50:41] 在线人数: 2
+[2016-02-01|16:50:41] 7	1454316641961	角色在线数量:2
+[2016-02-01|16:51:41] 在线人数: 2
+[2016-02-01|16:51:41] 7	1454316701966	角色在线数量:2
+[2016-02-01|16:52:41] 在线人数: 2
+[2016-02-01|16:52:41] 7	1454316761971	角色在线数量:2
+[2016-02-01|16:53:41] 在线人数: 2
+[2016-02-01|16:53:41] 7	1454316821987	角色在线数量:2
+[2016-02-01|16:54:41] 在线人数: 2
+[2016-02-01|16:54:41] 7	1454316881997	角色在线数量:2
+[2016-02-01|16:55:26] SessionClosed SessionId:65----playerId:6
+[2016-02-01|16:55:26] 3	1454316926739	玩家退出playerId:6	1	-1677312699
+[2016-02-01|16:55:26] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|16:55:41] 在线人数: 1
+[2016-02-01|16:55:41] 7	1454316941997	角色在线数量:1
+[2016-02-01|16:55:42] SessionClosed SessionId:66----playerId:-1
+[2016-02-01|16:55:42] 用户下线异常2
+[2016-02-01|16:55:42] account:666
+[2016-02-01|16:55:42] AccountID[99][Login Ok]
+[2016-02-01|16:55:42] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|16:55:42] udid:666
+[2016-02-01|16:56:41] 在线人数: 2
+[2016-02-01|16:56:41] 7	1454317001997	角色在线数量:2
+[2016-02-01|16:57:42] 在线人数: 2
+[2016-02-01|16:57:42] 7	1454317062003	角色在线数量:2
+[2016-02-01|16:58:42] 在线人数: 2
+[2016-02-01|16:58:42] 7	1454317122006	角色在线数量:2
+[2016-02-01|16:59:42] 在线人数: 2
+[2016-02-01|16:59:42] 7	1454317182019	角色在线数量:2
+[2016-02-01|17:00:42] 在线人数: 2
+[2016-02-01|17:00:42] 7	1454317242025	角色在线数量:2
+[2016-02-01|17:01:42] 在线人数: 2
+[2016-02-01|17:01:42] 7	1454317302026	角色在线数量:2
+[2016-02-01|17:02:42] 在线人数: 2
+[2016-02-01|17:02:42] 7	1454317362032	角色在线数量:2
+[2016-02-01|17:03:42] 在线人数: 2
+[2016-02-01|17:03:42] 7	1454317422046	角色在线数量:2
+[2016-02-01|17:04:42] 在线人数: 2
+[2016-02-01|17:04:42] 7	1454317482057	角色在线数量:2
+[2016-02-01|17:05:42] 在线人数: 2
+[2016-02-01|17:05:42] 7	1454317542069	角色在线数量:2
+[2016-02-01|17:06:42] 在线人数: 2
+[2016-02-01|17:06:42] 7	1454317602072	角色在线数量:2
+[2016-02-01|17:07:42] 在线人数: 2
+[2016-02-01|17:07:42] 7	1454317662074	角色在线数量:2
+[2016-02-01|17:08:42] 在线人数: 2
+[2016-02-01|17:08:42] 7	1454317722090	角色在线数量:2
+[2016-02-01|17:09:42] 在线人数: 2
+[2016-02-01|17:09:42] 7	1454317782096	角色在线数量:2
+[2016-02-01|17:10:16] SessionClosed SessionId:61----playerId:66
+[2016-02-01|17:10:16] 3	1454317816362	玩家退出playerId:66	10	-1677941234
+[2016-02-01|17:10:16] 注销保存玩家信息：id=66,name=布兹,level=10
+[2016-02-01|17:10:42] 在线人数: 1
+[2016-02-01|17:10:42] 7	1454317842098	角色在线数量:1
+[2016-02-01|17:11:42] 在线人数: 1
+[2016-02-01|17:11:42] 7	1454317902101	角色在线数量:1
+[2016-02-01|17:12:42] 在线人数: 1
+[2016-02-01|17:12:42] 7	1454317962102	角色在线数量:1
+[2016-02-01|17:13:42] 在线人数: 1
+[2016-02-01|17:13:42] 7	1454318022109	角色在线数量:1
+[2016-02-01|17:14:42] 在线人数: 1
+[2016-02-01|17:14:42] 7	1454318082121	角色在线数量:1
+[2016-02-01|17:15:42] 在线人数: 1
+[2016-02-01|17:15:42] 7	1454318142125	角色在线数量:1
+[2016-02-01|17:16:42] 在线人数: 1
+[2016-02-01|17:16:42] 7	1454318202126	角色在线数量:1
+[2016-02-01|17:17:42] 在线人数: 1
+[2016-02-01|17:17:42] 7	1454318262132	角色在线数量:1
+[2016-02-01|17:18:42] 在线人数: 1
+[2016-02-01|17:18:42] 7	1454318322136	角色在线数量:1
+[2016-02-01|17:19:42] 在线人数: 1
+[2016-02-01|17:19:42] 7	1454318382141	角色在线数量:1
+[2016-02-01|17:20:42] 在线人数: 1
+[2016-02-01|17:20:42] 7	1454318442156	角色在线数量:1
+[2016-02-01|17:21:42] 在线人数: 1
+[2016-02-01|17:21:42] 7	1454318502162	角色在线数量:1
+[2016-02-01|17:22:42] 在线人数: 1
+[2016-02-01|17:22:42] 7	1454318562172	角色在线数量:1
+[2016-02-01|17:23:42] 在线人数: 1
+[2016-02-01|17:23:42] 7	1454318622178	角色在线数量:1
+[2016-02-01|17:24:42] 在线人数: 1
+[2016-02-01|17:24:42] 7	1454318682191	角色在线数量:1
+[2016-02-01|17:25:42] 在线人数: 1
+[2016-02-01|17:25:42] 7	1454318742192	角色在线数量:1
+[2016-02-01|17:26:42] 在线人数: 1
+[2016-02-01|17:26:42] 7	1454318802195	角色在线数量:1
+[2016-02-01|17:27:42] 在线人数: 1
+[2016-02-01|17:27:42] 7	1454318862210	角色在线数量:1
+[2016-02-01|17:28:42] 在线人数: 1
+[2016-02-01|17:28:42] 7	1454318922215	角色在线数量:1
+[2016-02-01|17:29:42] 在线人数: 1
+[2016-02-01|17:29:42] 7	1454318982222	角色在线数量:1
+[2016-02-01|17:30:42] 在线人数: 1
+[2016-02-01|17:30:42] 7	1454319042230	角色在线数量:1
+[2016-02-01|17:31:42] 在线人数: 1
+[2016-02-01|17:31:42] 7	1454319102232	角色在线数量:1
+[2016-02-01|17:32:42] 在线人数: 1
+[2016-02-01|17:32:42] 7	1454319162243	角色在线数量:1
+[2016-02-01|17:33:42] 在线人数: 1
+[2016-02-01|17:33:42] 7	1454319222243	角色在线数量:1
+[2016-02-01|17:34:42] 在线人数: 1
+[2016-02-01|17:34:42] 7	1454319282244	角色在线数量:1
+[2016-02-01|17:35:42] 在线人数: 1
+[2016-02-01|17:35:42] 7	1454319342244	角色在线数量:1
+[2016-02-01|17:36:42] 在线人数: 1
+[2016-02-01|17:36:42] 7	1454319402245	角色在线数量:1
+[2016-02-01|17:37:42] 在线人数: 1
+[2016-02-01|17:37:42] 7	1454319462245	角色在线数量:1
+[2016-02-01|17:38:42] 在线人数: 1
+[2016-02-01|17:38:42] 7	1454319522245	角色在线数量:1
+[2016-02-01|17:39:42] 在线人数: 1
+[2016-02-01|17:39:42] 7	1454319582246	角色在线数量:1
+[2016-02-01|17:40:31] account:DDGDG
+[2016-02-01|17:40:31] AccountID[215][Login Ok]
+[2016-02-01|17:40:31] createWorldPlayer ID[44]Level[10] load from db
+[2016-02-01|17:40:31] udid:DDGDG
+[2016-02-01|17:40:42] 在线人数: 2
+[2016-02-01|17:40:42] 7	1454319642246	角色在线数量:2
+[2016-02-01|17:41:42] 在线人数: 2
+[2016-02-01|17:41:42] 7	1454319702247	角色在线数量:2
+[2016-02-01|17:41:56] SessionClosed SessionId:68----playerId:44
+[2016-02-01|17:41:56] 3	1454319716553	玩家退出playerId:44	10	-1674281594
+[2016-02-01|17:41:56] 注销保存玩家信息：id=44,name=可妮莉雅,level=10
+[2016-02-01|17:42:42] 在线人数: 1
+[2016-02-01|17:42:42] 7	1454319762247	角色在线数量:1
+[2016-02-01|17:43:42] 在线人数: 1
+[2016-02-01|17:43:42] 7	1454319822248	角色在线数量:1
+[2016-02-01|17:44:42] 在线人数: 1
+[2016-02-01|17:44:42] 7	1454319882248	角色在线数量:1
+[2016-02-01|17:45:42] 在线人数: 1
+[2016-02-01|17:45:42] 7	1454319942248	角色在线数量:1
+[2016-02-01|17:46:03] SessionClosed SessionId:67----playerId:6
+[2016-02-01|17:46:03] 3	1454319963676	玩家退出playerId:6	1	-1676970440
+[2016-02-01|17:46:03] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|17:46:42] 在线人数: 0
+[2016-02-01|17:46:42] 7	1454320002249	角色在线数量:0
+[2016-02-01|17:47:42] 在线人数: 0
+[2016-02-01|17:47:42] 7	1454320062249	角色在线数量:0
+[2016-02-01|17:48:42] 在线人数: 0
+[2016-02-01|17:48:42] 7	1454320122250	角色在线数量:0
+[2016-02-01|17:49:42] 在线人数: 0
+[2016-02-01|17:49:42] 7	1454320182250	角色在线数量:0
+[2016-02-01|17:50:42] 在线人数: 0
+[2016-02-01|17:50:42] 7	1454320242255	角色在线数量:0
+[2016-02-01|17:51:42] 在线人数: 0
+[2016-02-01|17:51:42] 7	1454320302265	角色在线数量:0
+[2016-02-01|17:52:42] 在线人数: 0
+[2016-02-01|17:52:42] 7	1454320362277	角色在线数量:0
+[2016-02-01|17:53:42] 在线人数: 0
+[2016-02-01|17:53:42] 7	1454320422291	角色在线数量:0
+[2016-02-01|17:53:51] account:yy3
+[2016-02-01|17:53:51] AccountID[228][Login Ok]
+[2016-02-01|17:53:51] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|17:53:51] udid:yy3
+[2016-02-01|17:54:22] SessionClosed SessionId:69----playerId:56
+[2016-02-01|17:54:22] 3	1454320462413	玩家退出playerId:56	10	-1673482220
+[2016-02-01|17:54:22] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|17:54:39] account:yy3
+[2016-02-01|17:54:39] AccountID[228][Login Ok]
+[2016-02-01|17:54:39] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|17:54:39] udid:yy3
+[2016-02-01|17:54:42] 在线人数: 1
+[2016-02-01|17:54:42] 7	1454320482305	角色在线数量:1
+[2016-02-01|17:55:42] 在线人数: 1
+[2016-02-01|17:55:42] 7	1454320542315	角色在线数量:1
+[2016-02-01|17:56:15] SessionClosed SessionId:70----playerId:56
+[2016-02-01|17:56:15] 3	1454320575961	玩家退出playerId:56	10	-1673433613
+[2016-02-01|17:56:15] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|17:56:42] 在线人数: 0
+[2016-02-01|17:56:42] 7	1454320602321	角色在线数量:0
+[2016-02-01|17:57:42] 在线人数: 0
+[2016-02-01|17:57:42] 7	1454320662330	角色在线数量:0
+[2016-02-01|17:58:25] account:yy3
+[2016-02-01|17:58:25] AccountID[228][Login Ok]
+[2016-02-01|17:58:25] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|17:58:25] udid:yy3
+[2016-02-01|17:58:25] RoleLoginHandler-----Time:187
+[2016-02-01|17:58:42] 在线人数: 1
+[2016-02-01|17:58:42] 7	1454320722331	角色在线数量:1
+[2016-02-01|17:59:34] SessionClosed SessionId:71----playerId:56
+[2016-02-01|17:59:34] 3	1454320774242	玩家退出playerId:56	10	-1673207626
+[2016-02-01|17:59:34] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|17:59:42] 在线人数: 0
+[2016-02-01|17:59:42] 7	1454320782336	角色在线数量:0
+[2016-02-01|17:59:53] account:yy3
+[2016-02-01|17:59:53] AccountID[228][Login Ok]
+[2016-02-01|17:59:53] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|17:59:53] udid:yy3
+[2016-02-01|18:00:42] 在线人数: 1
+[2016-02-01|18:00:42] 7	1454320842347	角色在线数量:1
+[2016-02-01|18:01:02] SessionClosed SessionId:72----playerId:56
+[2016-02-01|18:01:02] 3	1454320862381	玩家退出playerId:56	10	-1673119447
+[2016-02-01|18:01:02] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|18:01:42] 在线人数: 0
+[2016-02-01|18:01:42] 7	1454320902355	角色在线数量:0
+[2016-02-01|18:02:42] 在线人数: 0
+[2016-02-01|18:02:42] 7	1454320962360	角色在线数量:0
+[2016-02-01|18:03:42] 在线人数: 0
+[2016-02-01|18:03:42] 7	1454321022371	角色在线数量:0
+[2016-02-01|18:04:42] 在线人数: 0
+[2016-02-01|18:04:42] 7	1454321082380	角色在线数量:0
+[2016-02-01|18:05:42] 在线人数: 0
+[2016-02-01|18:05:42] 7	1454321142381	角色在线数量:0
+[2016-02-01|18:05:45] account:abc
+[2016-02-01|18:05:45] AccountID[115][Login Ok]
+[2016-02-01|18:05:45] createWorldPlayer ID[41]Level[10] load from db
+[2016-02-01|18:05:45] udid:abc
+[2016-02-01|18:06:42] 在线人数: 1
+[2016-02-01|18:06:42] 7	1454321202387	角色在线数量:1
+[2016-02-01|18:06:45] SessionClosed SessionId:73----playerId:41
+[2016-02-01|18:06:45] 3	1454321205024	玩家退出playerId:41	10	-1672767908
+[2016-02-01|18:06:45] 注销保存玩家信息：id=41,name=asd,level=10
+[2016-02-01|18:06:56] account:abc1
+[2016-02-01|18:06:56] AccountID[116][Login Ok]
+[2016-02-01|18:06:56] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|18:06:56] udid:abc1
+[2016-02-01|18:07:15] 玩家增加金币 ：id=1---name=abc1,gold=100
+[2016-02-01|18:07:16] 玩家增加金币 ：id=1---name=abc1,gold=100
+[2016-02-01|18:07:42] 在线人数: 1
+[2016-02-01|18:07:42] 7	1454321262387	角色在线数量:1
+[2016-02-01|18:08:28] account:DDGDG
+[2016-02-01|18:08:28] AccountID[215][Login Ok]
+[2016-02-01|18:08:28] createWorldPlayer ID[44]Level[10] load from db
+[2016-02-01|18:08:28] udid:DDGDG
+[2016-02-01|18:08:42] 在线人数: 2
+[2016-02-01|18:08:42] 7	1454321322391	角色在线数量:2
+[2016-02-01|18:09:42] 在线人数: 2
+[2016-02-01|18:09:42] 7	1454321382392	角色在线数量:2
+[2016-02-01|18:10:19] SessionClosed SessionId:75----playerId:44
+[2016-02-01|18:10:19] 3	1454321419190	玩家退出playerId:44	10	-1672605015
+[2016-02-01|18:10:19] 注销保存玩家信息：id=44,name=可妮莉雅,level=10
+[2016-02-01|18:10:42] 在线人数: 1
+[2016-02-01|18:10:42] 7	1454321442403	角色在线数量:1
+[2016-02-01|18:11:34] account:666
+[2016-02-01|18:11:34] AccountID[99][Login Ok]
+[2016-02-01|18:11:34] createWorldPlayer ID[6]Level[1] load from db
+[2016-02-01|18:11:34] udid:666
+[2016-02-01|18:11:42] 在线人数: 2
+[2016-02-01|18:11:42] 7	1454321502405	角色在线数量:2
+[2016-02-01|18:11:43] GetBackpackListHandler-----Time:406
+[2016-02-01|18:12:17] SessionClosed SessionId:74----playerId:1
+[2016-02-01|18:12:17] 3	1454321537136	玩家退出playerId:1	30	-1672697179
+[2016-02-01|18:12:17] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|18:12:42] 在线人数: 1
+[2016-02-01|18:12:42] 7	1454321562411	角色在线数量:1
+[2016-02-01|18:13:42] 在线人数: 1
+[2016-02-01|18:13:42] 7	1454321622414	角色在线数量:1
+[2016-02-01|18:14:42] 在线人数: 1
+[2016-02-01|18:14:42] 7	1454321682430	角色在线数量:1
+[2016-02-01|18:15:42] 在线人数: 1
+[2016-02-01|18:15:42] 7	1454321742443	角色在线数量:1
+[2016-02-01|18:16:42] 在线人数: 1
+[2016-02-01|18:16:42] 7	1454321802448	角色在线数量:1
+[2016-02-01|18:16:48] SessionClosed SessionId:77----playerId:-1
+[2016-02-01|18:16:48] 用户下线异常2
+[2016-02-01|18:17:42] 在线人数: 1
+[2016-02-01|18:17:42] 7	1454321862452	角色在线数量:1
+[2016-02-01|18:18:42] 在线人数: 1
+[2016-02-01|18:18:42] 7	1454321922463	角色在线数量:1
+[2016-02-01|18:19:42] 在线人数: 1
+[2016-02-01|18:19:42] 7	1454321982464	角色在线数量:1
+[2016-02-01|18:20:42] 在线人数: 1
+[2016-02-01|18:20:42] 7	1454322042475	角色在线数量:1
+[2016-02-01|18:21:42] 在线人数: 1
+[2016-02-01|18:21:42] 7	1454322102490	角色在线数量:1
+[2016-02-01|18:22:42] 在线人数: 1
+[2016-02-01|18:22:42] 7	1454322162500	角色在线数量:1
+[2016-02-01|18:23:42] 在线人数: 1
+[2016-02-01|18:23:42] 7	1454322222500	角色在线数量:1
+[2016-02-01|18:24:42] 在线人数: 1
+[2016-02-01|18:24:42] 7	1454322282501	角色在线数量:1
+[2016-02-01|18:25:42] 在线人数: 1
+[2016-02-01|18:25:42] 7	1454322342502	角色在线数量:1
+[2016-02-01|18:26:42] 在线人数: 1
+[2016-02-01|18:26:42] 7	1454322402503	角色在线数量:1
+[2016-02-01|18:27:42] 在线人数: 1
+[2016-02-01|18:27:42] 7	1454322462503	角色在线数量:1
+[2016-02-01|18:28:42] 在线人数: 1
+[2016-02-01|18:28:42] 7	1454322522504	角色在线数量:1
+[2016-02-01|18:29:42] 在线人数: 1
+[2016-02-01|18:29:42] 7	1454322582507	角色在线数量:1
+[2016-02-01|18:30:42] 在线人数: 1
+[2016-02-01|18:30:42] 7	1454322642508	角色在线数量:1
+[2016-02-01|18:31:42] 在线人数: 1
+[2016-02-01|18:31:42] 7	1454322702508	角色在线数量:1
+[2016-02-01|18:32:42] 在线人数: 1
+[2016-02-01|18:32:42] 7	1454322762513	角色在线数量:1
+[2016-02-01|18:33:42] 在线人数: 1
+[2016-02-01|18:33:42] 7	1454322822513	角色在线数量:1
+[2016-02-01|18:34:42] 在线人数: 1
+[2016-02-01|18:34:42] 7	1454322882513	角色在线数量:1
+[2016-02-01|18:35:42] 在线人数: 1
+[2016-02-01|18:35:42] 7	1454322942514	角色在线数量:1
+[2016-02-01|18:36:42] 在线人数: 1
+[2016-02-01|18:36:42] 7	1454323002514	角色在线数量:1
+[2016-02-01|18:37:42] 在线人数: 1
+[2016-02-01|18:37:42] 7	1454323062515	角色在线数量:1
+[2016-02-01|18:38:42] 在线人数: 1
+[2016-02-01|18:38:42] 7	1454323122515	角色在线数量:1
+[2016-02-01|18:39:42] 在线人数: 1
+[2016-02-01|18:39:42] 7	1454323182515	角色在线数量:1
+[2016-02-01|18:40:42] 在线人数: 1
+[2016-02-01|18:40:42] 7	1454323242516	角色在线数量:1
+[2016-02-01|18:41:42] 在线人数: 1
+[2016-02-01|18:41:42] 7	1454323302516	角色在线数量:1
+[2016-02-01|18:42:42] 在线人数: 1
+[2016-02-01|18:42:42] 7	1454323362517	角色在线数量:1
+[2016-02-01|18:43:42] 在线人数: 1
+[2016-02-01|18:43:42] 7	1454323422517	角色在线数量:1
+[2016-02-01|18:44:42] 在线人数: 1
+[2016-02-01|18:44:42] 7	1454323482518	角色在线数量:1
+[2016-02-01|18:45:42] 在线人数: 1
+[2016-02-01|18:45:42] 7	1454323542518	角色在线数量:1
+[2016-02-01|18:46:42] 在线人数: 1
+[2016-02-01|18:46:42] 7	1454323602518	角色在线数量:1
+[2016-02-01|18:47:42] 在线人数: 1
+[2016-02-01|18:47:42] 7	1454323662519	角色在线数量:1
+[2016-02-01|18:48:42] 在线人数: 1
+[2016-02-01|18:48:42] 7	1454323722519	角色在线数量:1
+[2016-02-01|18:49:42] 在线人数: 1
+[2016-02-01|18:49:42] 7	1454323782520	角色在线数量:1
+[2016-02-01|18:50:42] 在线人数: 1
+[2016-02-01|18:50:42] 7	1454323842520	角色在线数量:1
+[2016-02-01|18:51:30] account:yy3
+[2016-02-01|18:51:30] AccountID[228][Login Ok]
+[2016-02-01|18:51:30] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|18:51:30] udid:yy3
+[2016-02-01|18:51:42] 在线人数: 2
+[2016-02-01|18:51:42] 7	1454323902521	角色在线数量:2
+[2016-02-01|18:52:42] 在线人数: 2
+[2016-02-01|18:52:42] 7	1454323962521	角色在线数量:2
+[2016-02-01|18:53:42] 在线人数: 2
+[2016-02-01|18:53:42] 7	1454324022521	角色在线数量:2
+[2016-02-01|18:53:50] SessionClosed SessionId:78----playerId:56
+[2016-02-01|18:53:50] 3	1454324030995	玩家退出playerId:56	10	-1670022385
+[2016-02-01|18:53:50] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|18:54:42] 在线人数: 1
+[2016-02-01|18:54:42] 7	1454324082522	角色在线数量:1
+[2016-02-01|18:55:42] 在线人数: 1
+[2016-02-01|18:55:42] 7	1454324142525	角色在线数量:1
+[2016-02-01|18:56:34] account:yy3
+[2016-02-01|18:56:34] AccountID[228][Login Ok]
+[2016-02-01|18:56:34] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|18:56:34] udid:yy3
+[2016-02-01|18:56:42] 在线人数: 2
+[2016-02-01|18:56:42] 7	1454324202530	角色在线数量:2
+[2016-02-01|18:57:42] 在线人数: 2
+[2016-02-01|18:57:42] 7	1454324262545	角色在线数量:2
+[2016-02-01|18:58:25] SessionClosed SessionId:79----playerId:56
+[2016-02-01|18:58:25] 3	1454324305513	玩家退出playerId:56	10	-1669718711
+[2016-02-01|18:58:25] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|18:58:42] 在线人数: 1
+[2016-02-01|18:58:42] 7	1454324322545	角色在线数量:1
+[2016-02-01|18:59:24] account:yy3
+[2016-02-01|18:59:24] AccountID[228][Login Ok]
+[2016-02-01|18:59:24] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|18:59:24] udid:yy3
+[2016-02-01|18:59:37] GetTeamHandler-----Time:71
+[2016-02-01|18:59:42] 在线人数: 2
+[2016-02-01|18:59:42] 7	1454324382546	角色在线数量:2
+[2016-02-01|18:59:44] SaveTeamHandler-----Time:127
+[2016-02-01|18:59:45] AcessCopyMapHandler-----Time:184
+[2016-02-01|19:00:42] 在线人数: 2
+[2016-02-01|19:00:42] 7	1454324442546	角色在线数量:2
+[2016-02-01|19:01:14] SessionClosed SessionId:80----playerId:56
+[2016-02-01|19:01:14] 3	1454324474762	玩家退出playerId:56	10	-1669548613
+[2016-02-01|19:01:14] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|19:01:42] 在线人数: 1
+[2016-02-01|19:01:42] 7	1454324502547	角色在线数量:1
+[2016-02-01|19:02:42] 在线人数: 1
+[2016-02-01|19:02:42] 7	1454324562548	角色在线数量:1
+[2016-02-01|19:03:42] 在线人数: 1
+[2016-02-01|19:03:42] 7	1454324622548	角色在线数量:1
+[2016-02-01|19:04:27] account:yy3
+[2016-02-01|19:04:27] AccountID[228][Login Ok]
+[2016-02-01|19:04:27] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|19:04:27] udid:yy3
+[2016-02-01|19:04:42] 在线人数: 2
+[2016-02-01|19:04:42] 7	1454324682549	角色在线数量:2
+[2016-02-01|19:05:42] 在线人数: 2
+[2016-02-01|19:05:42] 7	1454324742549	角色在线数量:2
+[2016-02-01|19:06:03] SessionClosed SessionId:81----playerId:56
+[2016-02-01|19:06:03] 3	1454324763072	玩家退出playerId:56	10	-1669246191
+[2016-02-01|19:06:03] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|19:06:42] 在线人数: 1
+[2016-02-01|19:06:42] 7	1454324802550	角色在线数量:1
+[2016-02-01|19:07:42] 在线人数: 1
+[2016-02-01|19:07:42] 7	1454324862550	角色在线数量:1
+[2016-02-01|19:08:25] SessionClosed SessionId:76----playerId:6
+[2016-02-01|19:08:25] 3	1454324905098	玩家退出playerId:6	1	-1672419122
+[2016-02-01|19:08:25] 注销保存玩家信息：id=6,name=joanne,level=1
+[2016-02-01|19:08:42] 在线人数: 0
+[2016-02-01|19:08:42] 7	1454324922550	角色在线数量:0
+[2016-02-01|19:09:42] 在线人数: 0
+[2016-02-01|19:09:42] 7	1454324982551	角色在线数量:0
+[2016-02-01|19:10:42] 在线人数: 0
+[2016-02-01|19:10:42] 7	1454325042551	角色在线数量:0
+[2016-02-01|19:11:36] account:abc1
+[2016-02-01|19:11:36] AccountID[116][Login Ok]
+[2016-02-01|19:11:36] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|19:11:36] udid:abc1
+[2016-02-01|19:11:42] 在线人数: 1
+[2016-02-01|19:11:42] 7	1454325102551	角色在线数量:1
+[2016-02-01|19:12:42] 在线人数: 1
+[2016-02-01|19:12:42] 7	1454325162554	角色在线数量:1
+[2016-02-01|19:13:42] 在线人数: 1
+[2016-02-01|19:13:42] 7	1454325222562	角色在线数量:1
+[2016-02-01|19:14:10] account:yy3
+[2016-02-01|19:14:10] AccountID[228][Login Ok]
+[2016-02-01|19:14:10] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|19:14:10] udid:yy3
+[2016-02-01|19:14:42] 在线人数: 2
+[2016-02-01|19:14:42] 7	1454325282569	角色在线数量:2
+[2016-02-01|19:15:42] 在线人数: 2
+[2016-02-01|19:15:42] 7	1454325342572	角色在线数量:2
+[2016-02-01|19:16:42] 在线人数: 2
+[2016-02-01|19:16:42] 7	1454325402579	角色在线数量:2
+[2016-02-01|19:17:01] SessionClosed SessionId:83----playerId:56
+[2016-02-01|19:17:01] 3	1454325421048	玩家退出playerId:56	10	-1668662688
+[2016-02-01|19:17:01] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|19:17:42] 在线人数: 1
+[2016-02-01|19:17:42] 7	1454325462582	角色在线数量:1
+[2016-02-01|19:18:42] 在线人数: 1
+[2016-02-01|19:18:42] 7	1454325522589	角色在线数量:1
+[2016-02-01|19:19:42] 在线人数: 1
+[2016-02-01|19:19:42] 7	1454325582589	角色在线数量:1
+[2016-02-01|19:20:42] 在线人数: 1
+[2016-02-01|19:20:42] 7	1454325642592	角色在线数量:1
+[2016-02-01|19:21:42] 在线人数: 1
+[2016-02-01|19:21:42] 7	1454325702596	角色在线数量:1
+[2016-02-01|19:22:42] 在线人数: 1
+[2016-02-01|19:22:42] 7	1454325762598	角色在线数量:1
+[2016-02-01|19:23:26] SessionClosed SessionId:82----playerId:1
+[2016-02-01|19:23:26] 3	1454325806847	玩家退出playerId:1	30	-1668817023
+[2016-02-01|19:23:26] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|19:23:42] 在线人数: 0
+[2016-02-01|19:23:42] 7	1454325822602	角色在线数量:0
+[2016-02-01|19:24:42] 在线人数: 0
+[2016-02-01|19:24:42] 7	1454325882605	角色在线数量:0
+[2016-02-01|19:25:42] 在线人数: 0
+[2016-02-01|19:25:42] 7	1454325942608	角色在线数量:0
+[2016-02-01|19:26:42] 在线人数: 0
+[2016-02-01|19:26:42] 7	1454326002618	角色在线数量:0
+[2016-02-01|19:27:42] 在线人数: 0
+[2016-02-01|19:27:42] 7	1454326062624	角色在线数量:0
+[2016-02-01|19:28:42] 在线人数: 0
+[2016-02-01|19:28:42] 7	1454326122629	角色在线数量:0
+[2016-02-01|19:29:42] 在线人数: 0
+[2016-02-01|19:29:42] 7	1454326182631	角色在线数量:0
+[2016-02-01|19:30:42] 在线人数: 0
+[2016-02-01|19:30:42] 7	1454326242638	角色在线数量:0
+[2016-02-01|19:31:42] 在线人数: 0
+[2016-02-01|19:31:42] 7	1454326302643	角色在线数量:0
+[2016-02-01|19:32:42] 在线人数: 0
+[2016-02-01|19:32:42] 7	1454326362647	角色在线数量:0
+[2016-02-01|19:32:45] account:abc1
+[2016-02-01|19:32:45] AccountID[116][Login Ok]
+[2016-02-01|19:32:45] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|19:32:45] udid:abc1
+[2016-02-01|19:33:42] 在线人数: 1
+[2016-02-01|19:33:42] 7	1454326422651	角色在线数量:1
+[2016-02-01|19:34:42] 在线人数: 1
+[2016-02-01|19:34:42] 7	1454326482652	角色在线数量:1
+[2016-02-01|19:35:42] 在线人数: 1
+[2016-02-01|19:35:42] 7	1454326542652	角色在线数量:1
+[2016-02-01|19:36:35] SessionClosed SessionId:84----playerId:1
+[2016-02-01|19:36:35] 3	1454326595385	玩家退出playerId:1	30	-1667548005
+[2016-02-01|19:36:35] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|19:36:42] 在线人数: 0
+[2016-02-01|19:36:42] 7	1454326602653	角色在线数量:0
+[2016-02-01|19:36:49] account:abc1
+[2016-02-01|19:36:49] AccountID[116][Login Ok]
+[2016-02-01|19:36:49] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|19:36:49] udid:abc1
+[2016-02-01|19:37:42] 在线人数: 1
+[2016-02-01|19:37:42] 7	1454326662653	角色在线数量:1
+[2016-02-01|19:38:42] 在线人数: 1
+[2016-02-01|19:38:42] 7	1454326722661	角色在线数量:1
+[2016-02-01|19:39:30] account:yy3
+[2016-02-01|19:39:30] AccountID[228][Login Ok]
+[2016-02-01|19:39:30] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|19:39:30] udid:yy3
+[2016-02-01|19:39:42] 在线人数: 2
+[2016-02-01|19:39:42] 7	1454326782661	角色在线数量:2
+[2016-02-01|19:40:40] SessionClosed SessionId:85----playerId:1
+[2016-02-01|19:40:40] 3	1454326840228	玩家退出playerId:1	30	-1667303509
+[2016-02-01|19:40:40] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|19:40:42] 在线人数: 1
+[2016-02-01|19:40:42] 7	1454326842669	角色在线数量:1
+[2016-02-01|19:41:42] 在线人数: 1
+[2016-02-01|19:41:42] 7	1454326902675	角色在线数量:1
+[2016-02-01|19:42:42] 在线人数: 1
+[2016-02-01|19:42:42] 7	1454326962683	角色在线数量:1
+[2016-02-01|19:42:49] SessionClosed SessionId:86----playerId:56
+[2016-02-01|19:42:49] 3	1454326969125	玩家退出playerId:56	10	-1667143227
+[2016-02-01|19:42:49] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|19:43:09] account:yy3
+[2016-02-01|19:43:09] AccountID[228][Login Ok]
+[2016-02-01|19:43:09] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|19:43:09] udid:yy3
+[2016-02-01|19:43:42] 在线人数: 1
+[2016-02-01|19:43:42] 7	1454327022688	角色在线数量:1
+[2016-02-01|19:44:42] 在线人数: 1
+[2016-02-01|19:44:42] 7	1454327082695	角色在线数量:1
+[2016-02-01|19:45:42] 在线人数: 1
+[2016-02-01|19:45:42] 7	1454327142701	角色在线数量:1
+[2016-02-01|19:45:53] SessionClosed SessionId:87----playerId:56
+[2016-02-01|19:45:53] 3	1454327153407	玩家退出playerId:56	10	-1666923856
+[2016-02-01|19:45:53] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|19:46:42] 在线人数: 0
+[2016-02-01|19:46:42] 7	1454327202703	角色在线数量:0
+[2016-02-01|19:47:19] account:yy3
+[2016-02-01|19:47:19] AccountID[228][Login Ok]
+[2016-02-01|19:47:19] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|19:47:19] udid:yy3
+[2016-02-01|19:47:42] 在线人数: 1
+[2016-02-01|19:47:42] 7	1454327262712	角色在线数量:1
+[2016-02-01|19:48:42] 在线人数: 1
+[2016-02-01|19:48:42] 7	1454327322713	角色在线数量:1
+[2016-02-01|19:49:02] SessionClosed SessionId:88----playerId:56
+[2016-02-01|19:49:02] 3	1454327342529	玩家退出playerId:56	10	-1666673679
+[2016-02-01|19:49:02] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|19:49:42] 在线人数: 0
+[2016-02-01|19:49:42] 7	1454327382719	角色在线数量:0
+[2016-02-01|19:50:42] 在线人数: 0
+[2016-02-01|19:50:42] 7	1454327442724	角色在线数量:0
+[2016-02-01|19:51:42] 在线人数: 0
+[2016-02-01|19:51:42] 7	1454327502729	角色在线数量:0
+[2016-02-01|19:52:42] 在线人数: 0
+[2016-02-01|19:52:42] 7	1454327562733	角色在线数量:0
+[2016-02-01|19:53:42] 在线人数: 0
+[2016-02-01|19:53:42] 7	1454327622734	角色在线数量:0
+[2016-02-01|19:54:42] 在线人数: 0
+[2016-02-01|19:54:42] 7	1454327682740	角色在线数量:0
+[2016-02-01|19:55:42] 在线人数: 0
+[2016-02-01|19:55:42] 7	1454327742742	角色在线数量:0
+[2016-02-01|19:56:00] account:yy3
+[2016-02-01|19:56:00] AccountID[228][Login Ok]
+[2016-02-01|19:56:00] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|19:56:00] udid:yy3
+[2016-02-01|19:56:42] 在线人数: 1
+[2016-02-01|19:56:42] 7	1454327802745	角色在线数量:1
+[2016-02-01|19:57:42] 在线人数: 1
+[2016-02-01|19:57:42] 7	1454327862748	角色在线数量:1
+[2016-02-01|19:57:59] SessionClosed SessionId:89----playerId:56
+[2016-02-01|19:57:59] 3	1454327879917	玩家退出playerId:56	10	-1666153241
+[2016-02-01|19:57:59] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|19:58:37] account:yy3
+[2016-02-01|19:58:37] AccountID[228][Login Ok]
+[2016-02-01|19:58:37] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|19:58:37] udid:yy3
+[2016-02-01|19:58:42] 在线人数: 1
+[2016-02-01|19:58:42] 7	1454327922748	角色在线数量:1
+[2016-02-01|19:59:42] 在线人数: 1
+[2016-02-01|19:59:42] 7	1454327982753	角色在线数量:1
+[2016-02-01|20:00:17] SessionClosed SessionId:90----playerId:56
+[2016-02-01|20:00:17] 3	1454328017068	玩家退出playerId:56	10	-1665996082
+[2016-02-01|20:00:17] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|20:00:42] 在线人数: 0
+[2016-02-01|20:00:42] 7	1454328042761	角色在线数量:0
+[2016-02-01|20:01:42] 在线人数: 0
+[2016-02-01|20:01:42] 7	1454328102765	角色在线数量:0
+[2016-02-01|20:02:42] 在线人数: 0
+[2016-02-01|20:02:42] 7	1454328162771	角色在线数量:0
+[2016-02-01|20:03:42] 在线人数: 0
+[2016-02-01|20:03:42] 7	1454328222780	角色在线数量:0
+[2016-02-01|20:04:42] 在线人数: 0
+[2016-02-01|20:04:42] 7	1454328282789	角色在线数量:0
+[2016-02-01|20:05:42] 在线人数: 0
+[2016-02-01|20:05:42] 7	1454328342798	角色在线数量:0
+[2016-02-01|20:06:42] 在线人数: 0
+[2016-02-01|20:06:42] 7	1454328402798	角色在线数量:0
+[2016-02-01|20:07:42] 在线人数: 0
+[2016-02-01|20:07:42] 7	1454328462805	角色在线数量:0
+[2016-02-01|20:08:29] account:yy3
+[2016-02-01|20:08:29] AccountID[228][Login Ok]
+[2016-02-01|20:08:29] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|20:08:29] udid:yy3
+[2016-02-01|20:08:42] 在线人数: 1
+[2016-02-01|20:08:42] 7	1454328522814	角色在线数量:1
+[2016-02-01|20:09:42] 在线人数: 1
+[2016-02-01|20:09:42] 7	1454328582814	角色在线数量:1
+[2016-02-01|20:10:42] 在线人数: 1
+[2016-02-01|20:10:42] 7	1454328642814	角色在线数量:1
+[2016-02-01|20:11:42] 在线人数: 1
+[2016-02-01|20:11:42] 7	1454328702820	角色在线数量:1
+[2016-02-01|20:11:49] SessionClosed SessionId:91----playerId:56
+[2016-02-01|20:11:49] 3	1454328709654	玩家退出playerId:56	10	-1665404139
+[2016-02-01|20:11:49] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|20:12:36] account:yy3
+[2016-02-01|20:12:36] AccountID[228][Login Ok]
+[2016-02-01|20:12:37] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|20:12:37] udid:yy3
+[2016-02-01|20:12:42] 在线人数: 1
+[2016-02-01|20:12:42] 7	1454328762828	角色在线数量:1
+[2016-02-01|20:12:53] account:abc1
+[2016-02-01|20:12:53] AccountID[116][Login Ok]
+[2016-02-01|20:12:53] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|20:12:53] udid:abc1
+[2016-02-01|20:13:42] 在线人数: 2
+[2016-02-01|20:13:42] 7	1454328822828	角色在线数量:2
+[2016-02-01|20:13:48] SessionClosed SessionId:93----playerId:1
+[2016-02-01|20:13:48] 3	1454328828666	玩家退出playerId:1	30	-1665139384
+[2016-02-01|20:13:48] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|20:13:57] account:abc1
+[2016-02-01|20:13:57] AccountID[116][Login Ok]
+[2016-02-01|20:13:57] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|20:13:57] udid:abc1
+[2016-02-01|20:14:42] 在线人数: 2
+[2016-02-01|20:14:42] 7	1454328882828	角色在线数量:2
+[2016-02-01|20:14:47] SessionClosed SessionId:92----playerId:56
+[2016-02-01|20:14:47] 3	1454328887975	玩家退出playerId:56	10	-1665156293
+[2016-02-01|20:14:47] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|20:15:03] account:yy3
+[2016-02-01|20:15:03] AccountID[228][Login Ok]
+[2016-02-01|20:15:03] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|20:15:03] udid:yy3
+[2016-02-01|20:15:25] SessionClosed SessionId:95----playerId:56
+[2016-02-01|20:15:25] 3	1454328925335	玩家退出playerId:56	10	-1665010196
+[2016-02-01|20:15:25] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|20:15:42] 在线人数: 1
+[2016-02-01|20:15:42] 7	1454328942829	角色在线数量:1
+[2016-02-01|20:15:46] account:yy3
+[2016-02-01|20:15:46] AccountID[228][Login Ok]
+[2016-02-01|20:15:46] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|20:15:46] udid:yy3
+[2016-02-01|20:16:05] GetTeamHandler-----Time:63
+[2016-02-01|20:16:42] 在线人数: 2
+[2016-02-01|20:16:42] 7	1454329002829	角色在线数量:2
+[2016-02-01|20:16:52] SessionClosed SessionId:96----playerId:56
+[2016-02-01|20:16:52] 3	1454329012573	玩家退出playerId:56	10	-1664966607
+[2016-02-01|20:16:52] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|20:17:17] SessionClosed SessionId:94----playerId:1
+[2016-02-01|20:17:17] 3	1454329037708	玩家退出playerId:1	30	-1665075695
+[2016-02-01|20:17:17] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|20:17:39] account:yy3
+[2016-02-01|20:17:39] AccountID[228][Login Ok]
+[2016-02-01|20:17:39] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|20:17:39] udid:yy3
+[2016-02-01|20:17:42] 在线人数: 1
+[2016-02-01|20:17:42] 7	1454329062830	角色在线数量:1
+[2016-02-01|20:18:42] 在线人数: 1
+[2016-02-01|20:18:42] 7	1454329122830	角色在线数量:1
+[2016-02-01|20:18:59] SessionClosed SessionId:97----playerId:56
+[2016-02-01|20:18:59] 3	1454329139732	玩家退出playerId:56	10	-1664854047
+[2016-02-01|20:18:59] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|20:19:42] 在线人数: 0
+[2016-02-01|20:19:42] 7	1454329182831	角色在线数量:0
+[2016-02-01|20:20:37] account:yy3
+[2016-02-01|20:20:37] AccountID[228][Login Ok]
+[2016-02-01|20:20:37] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|20:20:37] udid:yy3
+[2016-02-01|20:20:42] 在线人数: 1
+[2016-02-01|20:20:42] 7	1454329242831	角色在线数量:1
+[2016-02-01|20:21:42] 在线人数: 1
+[2016-02-01|20:21:42] 7	1454329302831	角色在线数量:1
+[2016-02-01|20:22:10] SessionClosed SessionId:98----playerId:56
+[2016-02-01|20:22:10] 3	1454329330651	玩家退出playerId:56	10	-1664675500
+[2016-02-01|20:22:10] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|20:22:42] 在线人数: 0
+[2016-02-01|20:22:42] 7	1454329362832	角色在线数量:0
+[2016-02-01|20:23:42] 在线人数: 0
+[2016-02-01|20:23:42] 7	1454329422832	角色在线数量:0
+[2016-02-01|20:24:42] 在线人数: 0
+[2016-02-01|20:24:42] 7	1454329482833	角色在线数量:0
+[2016-02-01|20:25:42] 在线人数: 0
+[2016-02-01|20:25:42] 7	1454329542833	角色在线数量:0
+[2016-02-01|20:26:42] 在线人数: 0
+[2016-02-01|20:26:42] 7	1454329602834	角色在线数量:0
+[2016-02-01|20:27:42] 在线人数: 0
+[2016-02-01|20:27:42] 7	1454329662834	角色在线数量:0
+[2016-02-01|20:28:42] 在线人数: 0
+[2016-02-01|20:28:42] 7	1454329722835	角色在线数量:0
+[2016-02-01|20:29:42] 在线人数: 0
+[2016-02-01|20:29:42] 7	1454329782835	角色在线数量:0
+[2016-02-01|20:30:42] 在线人数: 0
+[2016-02-01|20:30:42] 7	1454329842844	角色在线数量:0
+[2016-02-01|20:31:42] 在线人数: 0
+[2016-02-01|20:31:42] 7	1454329902845	角色在线数量:0
+[2016-02-01|20:32:42] 在线人数: 0
+[2016-02-01|20:32:42] 7	1454329962846	角色在线数量:0
+[2016-02-01|20:33:42] 在线人数: 0
+[2016-02-01|20:33:42] 7	1454330022851	角色在线数量:0
+[2016-02-01|20:34:42] 在线人数: 0
+[2016-02-01|20:34:42] 7	1454330082853	角色在线数量:0
+[2016-02-01|20:35:42] 在线人数: 0
+[2016-02-01|20:35:42] 7	1454330142856	角色在线数量:0
+[2016-02-01|20:36:42] 在线人数: 0
+[2016-02-01|20:36:42] 7	1454330202861	角色在线数量:0
+[2016-02-01|20:37:42] 在线人数: 0
+[2016-02-01|20:37:42] 7	1454330262867	角色在线数量:0
+[2016-02-01|20:38:42] 在线人数: 0
+[2016-02-01|20:38:42] 7	1454330322876	角色在线数量:0
+[2016-02-01|20:39:42] 在线人数: 0
+[2016-02-01|20:39:42] 7	1454330382885	角色在线数量:0
+[2016-02-01|20:40:42] 在线人数: 0
+[2016-02-01|20:40:42] 7	1454330442892	角色在线数量:0
+[2016-02-01|20:41:42] 在线人数: 0
+[2016-02-01|20:41:42] 7	1454330502894	角色在线数量:0
+[2016-02-01|20:42:42] 在线人数: 0
+[2016-02-01|20:42:42] 7	1454330562895	角色在线数量:0
+[2016-02-01|20:43:42] 在线人数: 0
+[2016-02-01|20:43:42] 7	1454330622899	角色在线数量:0
+[2016-02-01|20:43:52] account:yy3
+[2016-02-01|20:43:52] AccountID[228][Login Ok]
+[2016-02-01|20:43:52] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|20:43:52] udid:yy3
+[2016-02-01|20:44:06] SaveTeamHandler-----Time:111
+[2016-02-01|20:44:42] 在线人数: 1
+[2016-02-01|20:44:42] 7	1454330682902	角色在线数量:1
+[2016-02-01|20:45:42] 在线人数: 1
+[2016-02-01|20:45:42] 7	1454330742909	角色在线数量:1
+[2016-02-01|20:46:42] 在线人数: 1
+[2016-02-01|20:46:42] 7	1454330802912	角色在线数量:1
+[2016-02-01|20:47:24] SessionClosed SessionId:99----playerId:56
+[2016-02-01|20:47:24] 3	1454330844657	玩家退出playerId:56	10	-1663280484
+[2016-02-01|20:47:24] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|20:47:42] 在线人数: 0
+[2016-02-01|20:47:42] 7	1454330862918	角色在线数量:0
+[2016-02-01|20:47:47] account:DDGDG
+[2016-02-01|20:47:47] AccountID[215][Login Ok]
+[2016-02-01|20:47:47] createWorldPlayer ID[44]Level[10] load from db
+[2016-02-01|20:47:47] udid:DDGDG
+[2016-02-01|20:48:02] account:yy3
+[2016-02-01|20:48:02] AccountID[228][Login Ok]
+[2016-02-01|20:48:02] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|20:48:02] udid:yy3
+[2016-02-01|20:48:03] account:abc1
+[2016-02-01|20:48:03] AccountID[116][Login Ok]
+[2016-02-01|20:48:04] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|20:48:04] udid:abc1
+[2016-02-01|20:48:42] 在线人数: 3
+[2016-02-01|20:48:42] 7	1454330922927	角色在线数量:3
+[2016-02-01|20:49:38] SessionClosed SessionId:100----playerId:44
+[2016-02-01|20:49:38] 3	1454330978285	玩家退出playerId:44	10	-1663045467
+[2016-02-01|20:49:38] 注销保存玩家信息：id=44,name=可妮莉雅,level=10
+[2016-02-01|20:49:42] 在线人数: 2
+[2016-02-01|20:49:42] 7	1454330982935	角色在线数量:2
+[2016-02-01|20:49:53] SessionClosed SessionId:101----playerId:56
+[2016-02-01|20:49:53] 3	1454330993210	玩家退出playerId:56	10	-1663030545
+[2016-02-01|20:49:53] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|20:50:24] SessionClosed SessionId:102----playerId:1
+[2016-02-01|20:50:24] 3	1454331024427	玩家退出playerId:1	30	-1663029325
+[2016-02-01|20:50:24] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|20:50:42] 在线人数: 0
+[2016-02-01|20:50:42] 7	1454331042936	角色在线数量:0
+[2016-02-01|20:51:18] account:abc1
+[2016-02-01|20:51:18] AccountID[116][Login Ok]
+[2016-02-01|20:51:18] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|20:51:18] udid:abc1
+[2016-02-01|20:51:18] RoleLoginHandler-----Time:179
+[2016-02-01|20:51:23] GetEquipListHandler-----Time:114
+[2016-02-01|20:51:32] 玩家增加金币 ：id=1---name=abc1,gold=4300
+[2016-02-01|20:51:34] 玩家增加金币 ：id=1---name=abc1,gold=4300
+[2016-02-01|20:51:35] 玩家增加金币 ：id=1---name=abc1,gold=4300
+[2016-02-01|20:51:36] 玩家增加金币 ：id=1---name=abc1,gold=4300
+[2016-02-01|20:51:37] 玩家增加金币 ：id=1---name=abc1,gold=4300
+[2016-02-01|20:51:38] 玩家增加金币 ：id=1---name=abc1,gold=4300
+[2016-02-01|20:51:38] 玩家增加金币 ：id=1---name=abc1,gold=4300
+[2016-02-01|20:51:38] SellGoodsHandler-----Time:51
+[2016-02-01|20:51:39] 玩家增加金币 ：id=1---name=abc1,gold=4300
+[2016-02-01|20:51:40] 玩家增加金币 ：id=1---name=abc1,gold=4300
+[2016-02-01|20:51:42] 在线人数: 1
+[2016-02-01|20:51:42] 7	1454331102943	角色在线数量:1
+[2016-02-01|20:51:43] 玩家增加金币 ：id=1---name=abc1,gold=4100
+[2016-02-01|20:51:47] 玩家增加金币 ：id=1---name=abc1,gold=400
+[2016-02-01|20:52:01] 玩家增加金币 ：id=1---name=abc1,gold=500
+[2016-02-01|20:52:19] 玩家增加金币 ：id=1---name=abc1,gold=100
+[2016-02-01|20:52:19] 玩家增加金币 ：id=1---name=abc1,gold=100
+[2016-02-01|20:52:42] 在线人数: 1
+[2016-02-01|20:52:42] 7	1454331162943	角色在线数量:1
+[2016-02-01|20:53:06] 玩家增加金币 ：id=1---name=abc1,gold=-160
+[2016-02-01|20:53:15] 玩家增加金币 ：id=1---name=abc1,gold=2000
+[2016-02-01|20:53:23] 玩家增加金币 ：id=1---name=abc1,gold=2000
+[2016-02-01|20:53:24] 玩家增加金币 ：id=1---name=abc1,gold=2000
+[2016-02-01|20:53:29] SessionClosed SessionId:103----playerId:1
+[2016-02-01|20:53:29] 3	1454331209526	玩家退出playerId:1	30	-1662834470
+[2016-02-01|20:53:29] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|20:53:38] account:abc1
+[2016-02-01|20:53:38] AccountID[116][Login Ok]
+[2016-02-01|20:53:38] createWorldPlayer ID[1]Level[30] load from db
+[2016-02-01|20:53:38] udid:abc1
+[2016-02-01|20:53:40] account:yy3
+[2016-02-01|20:53:40] AccountID[228][Login Ok]
+[2016-02-01|20:53:40] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|20:53:40] udid:yy3
+[2016-02-01|20:53:42] GetBackpackListHandler-----Time:68
+[2016-02-01|20:53:42] 在线人数: 2
+[2016-02-01|20:53:42] 7	1454331222949	角色在线数量:2
+[2016-02-01|20:53:49] 玩家增加金币 ：id=1---name=abc1,gold=2000
+[2016-02-01|20:53:51] 玩家增加金币 ：id=1---name=abc1,gold=2000
+[2016-02-01|20:53:59] 玩家增加钻石 ：id=1---name=abc1,diamond=-50
+[2016-02-01|20:54:03] 玩家增加金币 ：id=1---name=abc1,gold=-180
+[2016-02-01|20:54:10] 玩家增加金币 ：id=1---name=abc1,gold=500
+[2016-02-01|20:54:12] 玩家增加金币 ：id=1---name=abc1,gold=500
+[2016-02-01|20:54:13] 玩家增加金币 ：id=1---name=abc1,gold=500
+[2016-02-01|20:54:13] 玩家增加金币 ：id=1---name=abc1,gold=500
+[2016-02-01|20:54:14] 玩家增加金币 ：id=1---name=abc1,gold=500
+[2016-02-01|20:54:14] 玩家增加金币 ：id=1---name=abc1,gold=500
+[2016-02-01|20:54:14] 玩家增加金币 ：id=1---name=abc1,gold=500
+[2016-02-01|20:54:15] 玩家增加金币 ：id=1---name=abc1,gold=500
+[2016-02-01|20:54:15] 玩家增加金币 ：id=1---name=abc1,gold=500
+[2016-02-01|20:54:16] 玩家增加金币 ：id=1---name=abc1,gold=500
+[2016-02-01|20:54:42] 在线人数: 2
+[2016-02-01|20:54:42] 7	1454331282950	角色在线数量:2
+[2016-02-01|20:54:57] SessionClosed SessionId:105----playerId:56
+[2016-02-01|20:54:57] 3	1454331297766	玩家退出playerId:56	10	-1662692836
+[2016-02-01|20:54:57] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|20:55:16] account:yy3
+[2016-02-01|20:55:16] AccountID[228][Login Ok]
+[2016-02-01|20:55:16] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|20:55:16] udid:yy3
+[2016-02-01|20:55:42] 在线人数: 2
+[2016-02-01|20:55:42] 7	1454331342958	角色在线数量:2
+[2016-02-01|20:56:42] 在线人数: 2
+[2016-02-01|20:56:42] 7	1454331402964	角色在线数量:2
+[2016-02-01|20:57:42] 在线人数: 2
+[2016-02-01|20:57:42] 7	1454331462970	角色在线数量:2
+[2016-02-01|20:58:10] SessionClosed SessionId:106----playerId:56
+[2016-02-01|20:58:10] 3	1454331490866	玩家退出playerId:56	10	-1662596922
+[2016-02-01|20:58:10] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|20:58:28] account:yy3
+[2016-02-01|20:58:28] AccountID[228][Login Ok]
+[2016-02-01|20:58:28] createWorldPlayer ID[56]Level[10] load from db
+[2016-02-01|20:58:28] udid:yy3
+[2016-02-01|20:58:42] 在线人数: 2
+[2016-02-01|20:58:42] 7	1454331522973	角色在线数量:2
+[2016-02-01|20:58:58] SessionClosed SessionId:104----playerId:1
+[2016-02-01|20:58:58] 3	1454331538577	玩家退出playerId:1	30	-1662695223
+[2016-02-01|20:58:58] 注销保存玩家信息：id=1,name=abc1,level=30
+[2016-02-01|20:59:42] 在线人数: 1
+[2016-02-01|20:59:42] 7	1454331582983	角色在线数量:1
+[2016-02-01|21:00:42] 在线人数: 1
+[2016-02-01|21:00:42] 7	1454331642985	角色在线数量:1
+[2016-02-01|21:01:42] 在线人数: 1
+[2016-02-01|21:01:42] 7	1454331702992	角色在线数量:1
+[2016-02-01|21:01:48] SessionClosed SessionId:107----playerId:56
+[2016-02-01|21:01:48] 3	1454331708425	玩家退出playerId:56	10	-1662404875
+[2016-02-01|21:01:48] 注销保存玩家信息：id=56,name=yy3,level=10
+[2016-02-01|21:02:43] 在线人数: 0
+[2016-02-01|21:02:43] 7	1454331763001	角色在线数量:0
+[2016-02-01|21:03:43] 在线人数: 0
+[2016-02-01|21:03:43] 7	1454331823004	角色在线数量:0
+[2016-02-01|21:04:43] 在线人数: 0
+[2016-02-01|21:04:43] 7	1454331883005	角色在线数量:0
+[2016-02-01|21:05:43] 在线人数: 0
+[2016-02-01|21:05:43] 7	1454331943005	角色在线数量:0
+[2016-02-01|21:06:43] 在线人数: 0
+[2016-02-01|21:06:43] 7	1454332003006	角色在线数量:0
+[2016-02-01|21:07:43] 在线人数: 0
+[2016-02-01|21:07:43] 7	1454332063006	角色在线数量:0
+[2016-02-01|21:08:43] 在线人数: 0
+[2016-02-01|21:08:43] 7	1454332123007	角色在线数量:0
+[2016-02-01|21:09:43] 在线人数: 0
+[2016-02-01|21:09:43] 7	1454332183007	角色在线数量:0
+[2016-02-01|21:10:43] 在线人数: 0
+[2016-02-01|21:10:43] 7	1454332243008	角色在线数量:0
+[2016-02-01|21:11:43] 在线人数: 0
+[2016-02-01|21:11:43] 7	1454332303008	角色在线数量:0
+[2016-02-01|21:12:43] 在线人数: 0
+[2016-02-01|21:12:43] 7	1454332363008	角色在线数量:0
+[2016-02-01|21:13:43] 在线人数: 0
+[2016-02-01|21:13:43] 7	1454332423009	角色在线数量:0
+[2016-02-01|21:14:43] 在线人数: 0
+[2016-02-01|21:14:43] 7	1454332483009	角色在线数量:0
+[2016-02-01|21:15:43] 在线人数: 0
+[2016-02-01|21:15:43] 7	1454332543010	角色在线数量:0
+[2016-02-01|21:16:43] 在线人数: 0
+[2016-02-01|21:16:43] 7	1454332603010	角色在线数量:0
+[2016-02-01|21:17:43] 在线人数: 0
+[2016-02-01|21:17:43] 7	1454332663011	角色在线数量:0
+[2016-02-01|21:18:43] 在线人数: 0
+[2016-02-01|21:18:43] 7	1454332723011	角色在线数量:0
+[2016-02-01|21:19:43] 在线人数: 0
+[2016-02-01|21:19:43] 7	1454332783011	角色在线数量:0
+[2016-02-01|21:20:43] 在线人数: 0
+[2016-02-01|21:20:43] 7	1454332843012	角色在线数量:0
+[2016-02-01|21:21:43] 在线人数: 0
+[2016-02-01|21:21:43] 7	1454332903012	角色在线数量:0
+[2016-02-01|21:22:43] 在线人数: 0
+[2016-02-01|21:22:43] 7	1454332963013	角色在线数量:0
+[2016-02-01|21:23:43] 在线人数: 0
+[2016-02-01|21:23:43] 7	1454333023013	角色在线数量:0
+[2016-02-01|21:24:43] 在线人数: 0
+[2016-02-01|21:24:43] 7	1454333083014	角色在线数量:0
+[2016-02-01|21:25:43] 在线人数: 0
+[2016-02-01|21:25:43] 7	1454333143014	角色在线数量:0
+[2016-02-01|21:26:43] 在线人数: 0
+[2016-02-01|21:26:43] 7	1454333203014	角色在线数量:0
+[2016-02-01|21:27:43] 在线人数: 0
+[2016-02-01|21:27:43] 7	1454333263015	角色在线数量:0
+[2016-02-01|21:28:43] 在线人数: 0
+[2016-02-01|21:28:43] 7	1454333323015	角色在线数量:0
+[2016-02-01|21:29:43] 在线人数: 0
+[2016-02-01|21:29:43] 7	1454333383016	角色在线数量:0
+[2016-02-01|21:30:43] 在线人数: 0
+[2016-02-01|21:30:43] 7	1454333443016	角色在线数量:0
+[2016-02-01|21:31:43] 在线人数: 0
+[2016-02-01|21:31:43] 7	1454333503017	角色在线数量:0
+[2016-02-01|21:32:43] 在线人数: 0
+[2016-02-01|21:32:43] 7	1454333563017	角色在线数量:0
+[2016-02-01|21:33:43] 在线人数: 0
+[2016-02-01|21:33:43] 7	1454333623017	角色在线数量:0
+[2016-02-01|21:34:43] 在线人数: 0
+[2016-02-01|21:34:43] 7	1454333683018	角色在线数量:0
+[2016-02-01|21:35:43] 在线人数: 0
+[2016-02-01|21:35:43] 7	1454333743018	角色在线数量:0
+[2016-02-01|21:36:43] 在线人数: 0
+[2016-02-01|21:36:43] 7	1454333803019	角色在线数量:0
+[2016-02-01|21:37:43] 在线人数: 0
+[2016-02-01|21:37:43] 7	1454333863019	角色在线数量:0
+[2016-02-01|21:38:43] 在线人数: 0
+[2016-02-01|21:38:43] 7	1454333923020	角色在线数量:0
+[2016-02-01|21:39:43] 在线人数: 0
+[2016-02-01|21:39:43] 7	1454333983020	角色在线数量:0
+[2016-02-01|21:40:43] 在线人数: 0
+[2016-02-01|21:40:43] 7	1454334043020	角色在线数量:0
+[2016-02-01|21:41:43] 在线人数: 0
+[2016-02-01|21:41:43] 7	1454334103021	角色在线数量:0
+[2016-02-01|21:42:43] 在线人数: 0
+[2016-02-01|21:42:43] 7	1454334163021	角色在线数量:0
+[2016-02-01|21:43:43] 在线人数: 0
+[2016-02-01|21:43:43] 7	1454334223022	角色在线数量:0
+[2016-02-01|21:44:43] 在线人数: 0
+[2016-02-01|21:44:43] 7	1454334283022	角色在线数量:0
+[2016-02-01|21:45:43] 在线人数: 0
+[2016-02-01|21:45:43] 7	1454334343023	角色在线数量:0
+[2016-02-01|21:46:43] 在线人数: 0
+[2016-02-01|21:46:43] 7	1454334403023	角色在线数量:0
+[2016-02-01|21:47:43] 在线人数: 0
+[2016-02-01|21:47:43] 7	1454334463024	角色在线数量:0
+[2016-02-01|21:48:43] 在线人数: 0
+[2016-02-01|21:48:43] 7	1454334523024	角色在线数量:0
+[2016-02-01|21:49:43] 在线人数: 0
+[2016-02-01|21:49:43] 7	1454334583024	角色在线数量:0
+[2016-02-01|21:50:43] 在线人数: 0
+[2016-02-01|21:50:43] 7	1454334643025	角色在线数量:0
+[2016-02-01|21:51:43] 在线人数: 0
+[2016-02-01|21:51:43] 7	1454334703025	角色在线数量:0
+[2016-02-01|21:52:43] 在线人数: 0
+[2016-02-01|21:52:43] 7	1454334763026	角色在线数量:0
+[2016-02-01|21:53:43] 在线人数: 0
+[2016-02-01|21:53:43] 7	1454334823026	角色在线数量:0
+[2016-02-01|21:54:43] 在线人数: 0
+[2016-02-01|21:54:43] 7	1454334883027	角色在线数量:0
+[2016-02-01|21:55:43] 在线人数: 0
+[2016-02-01|21:55:43] 7	1454334943027	角色在线数量:0
+[2016-02-01|21:56:43] 在线人数: 0
+[2016-02-01|21:56:43] 7	1454335003027	角色在线数量:0
+[2016-02-01|21:57:43] 在线人数: 0
+[2016-02-01|21:57:43] 7	1454335063028	角色在线数量:0
+[2016-02-01|21:58:43] 在线人数: 0
+[2016-02-01|21:58:43] 7	1454335123028	角色在线数量:0
+[2016-02-01|21:59:43] 在线人数: 0
+[2016-02-01|21:59:43] 7	1454335183029	角色在线数量:0
+[2016-02-01|22:00:43] 在线人数: 0
+[2016-02-01|22:00:43] 7	1454335243029	角色在线数量:0
+[2016-02-01|22:01:43] 在线人数: 0
+[2016-02-01|22:01:43] 7	1454335303030	角色在线数量:0
+[2016-02-01|22:02:43] 在线人数: 0
+[2016-02-01|22:02:43] 7	1454335363030	角色在线数量:0
+[2016-02-01|22:03:43] 在线人数: 0
+[2016-02-01|22:03:43] 7	1454335423030	角色在线数量:0
+[2016-02-01|22:04:43] 在线人数: 0
+[2016-02-01|22:04:43] 7	1454335483031	角色在线数量:0
+[2016-02-01|22:05:43] 在线人数: 0
+[2016-02-01|22:05:43] 7	1454335543031	角色在线数量:0
+[2016-02-01|22:06:43] 在线人数: 0
+[2016-02-01|22:06:43] 7	1454335603032	角色在线数量:0
+[2016-02-01|22:07:43] 在线人数: 0
+[2016-02-01|22:07:43] 7	1454335663032	角色在线数量:0
+[2016-02-01|22:08:43] 在线人数: 0
+[2016-02-01|22:08:43] 7	1454335723033	角色在线数量:0
+[2016-02-01|22:09:43] 在线人数: 0
+[2016-02-01|22:09:43] 7	1454335783033	角色在线数量:0
+[2016-02-01|22:10:43] 在线人数: 0
+[2016-02-01|22:10:43] 7	1454335843033	角色在线数量:0
+[2016-02-01|22:11:43] 在线人数: 0
+[2016-02-01|22:11:43] 7	1454335903040	角色在线数量:0
+[2016-02-01|22:12:43] 在线人数: 0
+[2016-02-01|22:12:43] 7	1454335963046	角色在线数量:0
+[2016-02-01|22:13:43] 在线人数: 0
+[2016-02-01|22:13:43] 7	1454336023052	角色在线数量:0
+[2016-02-01|22:14:43] 在线人数: 0
+[2016-02-01|22:14:43] 7	1454336083061	角色在线数量:0
+[2016-02-01|22:15:43] 在线人数: 0
+[2016-02-01|22:15:43] 7	1454336143062	角色在线数量:0
+[2016-02-01|22:16:43] 在线人数: 0
+[2016-02-01|22:16:43] 7	1454336203063	角色在线数量:0
+[2016-02-01|22:17:43] 在线人数: 0
+[2016-02-01|22:17:43] 7	1454336263063	角色在线数量:0
+[2016-02-01|22:18:43] 在线人数: 0
+[2016-02-01|22:18:43] 7	1454336323064	角色在线数量:0
+[2016-02-01|22:19:43] 在线人数: 0
+[2016-02-01|22:19:43] 7	1454336383065	角色在线数量:0
+[2016-02-01|22:20:43] 在线人数: 0
+[2016-02-01|22:20:43] 7	1454336443065	角色在线数量:0
+[2016-02-01|22:21:43] 在线人数: 0
+[2016-02-01|22:21:43] 7	1454336503066	角色在线数量:0
+[2016-02-01|22:22:43] 在线人数: 0
+[2016-02-01|22:22:43] 7	1454336563075	角色在线数量:0
+[2016-02-01|22:23:43] 在线人数: 0
+[2016-02-01|22:23:43] 7	1454336623078	角色在线数量:0
+[2016-02-01|22:24:43] 在线人数: 0
+[2016-02-01|22:24:43] 7	1454336683081	角色在线数量:0
+[2016-02-01|22:25:43] 在线人数: 0
+[2016-02-01|22:25:43] 7	1454336743087	角色在线数量:0
+[2016-02-01|22:26:43] 在线人数: 0
+[2016-02-01|22:26:43] 7	1454336803088	角色在线数量:0
+[2016-02-01|22:27:43] 在线人数: 0
+[2016-02-01|22:27:43] 7	1454336863096	角色在线数量:0
+[2016-02-01|22:28:43] 在线人数: 0
+[2016-02-01|22:28:43] 7	1454336923100	角色在线数量:0
+[2016-02-01|22:29:43] 在线人数: 0
+[2016-02-01|22:29:43] 7	1454336983106	角色在线数量:0
+[2016-02-01|22:30:43] 在线人数: 0
+[2016-02-01|22:30:43] 7	1454337043113	角色在线数量:0
+[2016-02-01|22:31:43] 在线人数: 0
+[2016-02-01|22:31:43] 7	1454337103120	角色在线数量:0
+[2016-02-01|22:32:43] 在线人数: 0
+[2016-02-01|22:32:43] 7	1454337163129	角色在线数量:0
+[2016-02-01|22:33:43] 在线人数: 0
+[2016-02-01|22:33:43] 7	1454337223135	角色在线数量:0
+[2016-02-01|22:34:43] 在线人数: 0
+[2016-02-01|22:34:43] 7	1454337283140	角色在线数量:0
+[2016-02-01|22:35:43] 在线人数: 0
+[2016-02-01|22:35:43] 7	1454337343148	角色在线数量:0
+[2016-02-01|22:36:43] 在线人数: 0
+[2016-02-01|22:36:43] 7	1454337403153	角色在线数量:0
+[2016-02-01|22:37:43] 在线人数: 0
+[2016-02-01|22:37:43] 7	1454337463160	角色在线数量:0
+[2016-02-01|22:38:43] 在线人数: 0
+[2016-02-01|22:38:43] 7	1454337523160	角色在线数量:0
+[2016-02-01|22:39:43] 在线人数: 0
+[2016-02-01|22:39:43] 7	1454337583169	角色在线数量:0
+[2016-02-01|22:40:43] 在线人数: 0
+[2016-02-01|22:40:43] 7	1454337643178	角色在线数量:0
+[2016-02-01|22:41:43] 在线人数: 0
+[2016-02-01|22:41:43] 7	1454337703180	角色在线数量:0
+[2016-02-01|22:42:43] 在线人数: 0
+[2016-02-01|22:42:43] 7	1454337763180	角色在线数量:0
+[2016-02-01|22:43:43] 在线人数: 0
+[2016-02-01|22:43:43] 7	1454337823182	角色在线数量:0
+[2016-02-01|22:44:43] 在线人数: 0
+[2016-02-01|22:44:43] 7	1454337883188	角色在线数量:0
+[2016-02-01|22:45:43] 在线人数: 0
+[2016-02-01|22:45:43] 7	1454337943191	角色在线数量:0
+[2016-02-01|22:46:43] 在线人数: 0
+[2016-02-01|22:46:43] 7	1454338003198	角色在线数量:0
+[2016-02-01|22:47:43] 在线人数: 0
+[2016-02-01|22:47:43] 7	1454338063200	角色在线数量:0
+[2016-02-01|22:48:43] 在线人数: 0
+[2016-02-01|22:48:43] 7	1454338123205	角色在线数量:0
+[2016-02-01|22:49:43] 在线人数: 0
+[2016-02-01|22:49:43] 7	1454338183206	角色在线数量:0
+[2016-02-01|22:50:43] 在线人数: 0
+[2016-02-01|22:50:43] 7	1454338243207	角色在线数量:0
+[2016-02-01|22:51:43] 在线人数: 0
+[2016-02-01|22:51:43] 7	1454338303207	角色在线数量:0
+[2016-02-01|22:52:43] 在线人数: 0
+[2016-02-01|22:52:43] 7	1454338363207	角色在线数量:0
+[2016-02-01|22:53:43] 在线人数: 0
+[2016-02-01|22:53:43] 7	1454338423208	角色在线数量:0
+[2016-02-01|22:54:43] 在线人数: 0
+[2016-02-01|22:54:43] 7	1454338483209	角色在线数量:0
+[2016-02-01|22:55:43] 在线人数: 0
+[2016-02-01|22:55:43] 7	1454338543209	角色在线数量:0
+[2016-02-01|22:56:43] 在线人数: 0
+[2016-02-01|22:56:43] 7	1454338603212	角色在线数量:0
+[2016-02-01|22:57:43] 在线人数: 0
+[2016-02-01|22:57:43] 7	1454338663214	角色在线数量:0
+[2016-02-01|22:58:43] 在线人数: 0
+[2016-02-01|22:58:43] 7	1454338723223	角色在线数量:0
+[2016-02-01|22:59:43] 在线人数: 0
+[2016-02-01|22:59:43] 7	1454338783232	角色在线数量:0
+[2016-02-01|23:00:43] 在线人数: 0
+[2016-02-01|23:00:43] 7	1454338843234	角色在线数量:0
+[2016-02-01|23:01:43] 在线人数: 0
+[2016-02-01|23:01:43] 7	1454338903242	角色在线数量:0
+[2016-02-01|23:02:43] 在线人数: 0
+[2016-02-01|23:02:43] 7	1454338963251	角色在线数量:0
+[2016-02-01|23:03:43] 在线人数: 0
+[2016-02-01|23:03:43] 7	1454339023255	角色在线数量:0
+[2016-02-01|23:04:43] 在线人数: 0
+[2016-02-01|23:04:43] 7	1454339083256	角色在线数量:0
+[2016-02-01|23:05:43] 在线人数: 0
+[2016-02-01|23:05:43] 7	1454339143257	角色在线数量:0
+[2016-02-01|23:06:43] 在线人数: 0
+[2016-02-01|23:06:43] 7	1454339203266	角色在线数量:0
+[2016-02-01|23:07:43] 在线人数: 0
+[2016-02-01|23:07:43] 7	1454339263272	角色在线数量:0
+[2016-02-01|23:08:43] 在线人数: 0
+[2016-02-01|23:08:43] 7	1454339323278	角色在线数量:0
+[2016-02-01|23:09:43] 在线人数: 0
+[2016-02-01|23:09:43] 7	1454339383288	角色在线数量:0
+[2016-02-01|23:10:43] 在线人数: 0
+[2016-02-01|23:10:43] 7	1454339443288	角色在线数量:0
+[2016-02-01|23:11:43] 在线人数: 0
+[2016-02-01|23:11:43] 7	1454339503294	角色在线数量:0
+[2016-02-01|23:12:43] 在线人数: 0
+[2016-02-01|23:12:43] 7	1454339563294	角色在线数量:0
+[2016-02-01|23:13:43] 在线人数: 0
+[2016-02-01|23:13:43] 7	1454339623303	角色在线数量:0
+[2016-02-01|23:14:43] 在线人数: 0
+[2016-02-01|23:14:43] 7	1454339683311	角色在线数量:0
+[2016-02-01|23:15:43] 在线人数: 0
+[2016-02-01|23:15:43] 7	1454339743320	角色在线数量:0
+[2016-02-01|23:16:43] 在线人数: 0
+[2016-02-01|23:16:43] 7	1454339803324	角色在线数量:0
+[2016-02-01|23:17:43] 在线人数: 0
+[2016-02-01|23:17:43] 7	1454339863327	角色在线数量:0
+[2016-02-01|23:18:43] 在线人数: 0
+[2016-02-01|23:18:43] 7	1454339923330	角色在线数量:0
+[2016-02-01|23:19:43] 在线人数: 0
+[2016-02-01|23:19:43] 7	1454339983330	角色在线数量:0
+[2016-02-01|23:20:43] 在线人数: 0
+[2016-02-01|23:20:43] 7	1454340043333	角色在线数量:0
+[2016-02-01|23:21:43] 在线人数: 0
+[2016-02-01|23:21:43] 7	1454340103334	角色在线数量:0
+[2016-02-01|23:22:43] 在线人数: 0
+[2016-02-01|23:22:43] 7	1454340163341	角色在线数量:0
+[2016-02-01|23:23:43] 在线人数: 0
+[2016-02-01|23:23:43] 7	1454340223341	角色在线数量:0
+[2016-02-01|23:24:43] 在线人数: 0
+[2016-02-01|23:24:43] 7	1454340283341	角色在线数量:0
+[2016-02-01|23:25:43] 在线人数: 0
+[2016-02-01|23:25:43] 7	1454340343342	角色在线数量:0
+[2016-02-01|23:26:43] 在线人数: 0
+[2016-02-01|23:26:43] 7	1454340403342	角色在线数量:0
+[2016-02-01|23:27:43] 在线人数: 0
+[2016-02-01|23:27:43] 7	1454340463342	角色在线数量:0
+[2016-02-01|23:28:43] 在线人数: 0
+[2016-02-01|23:28:43] 7	1454340523343	角色在线数量:0
+[2016-02-01|23:29:43] 在线人数: 0
+[2016-02-01|23:29:43] 7	1454340583344	角色在线数量:0
+[2016-02-01|23:30:43] 在线人数: 0
+[2016-02-01|23:30:43] 7	1454340643351	角色在线数量:0
+[2016-02-01|23:31:43] 在线人数: 0
+[2016-02-01|23:31:43] 7	1454340703354	角色在线数量:0
+[2016-02-01|23:32:43] 在线人数: 0
+[2016-02-01|23:32:43] 7	1454340763363	角色在线数量:0
+[2016-02-01|23:33:43] 在线人数: 0
+[2016-02-01|23:33:43] 7	1454340823364	角色在线数量:0
+[2016-02-01|23:34:43] 在线人数: 0
+[2016-02-01|23:34:43] 7	1454340883374	角色在线数量:0
+[2016-02-01|23:35:43] 在线人数: 0
+[2016-02-01|23:35:43] 7	1454340943382	角色在线数量:0
+[2016-02-01|23:36:43] 在线人数: 0
+[2016-02-01|23:36:43] 7	1454341003387	角色在线数量:0
+[2016-02-01|23:37:43] 在线人数: 0
+[2016-02-01|23:37:43] 7	1454341063391	角色在线数量:0
+[2016-02-01|23:38:43] 在线人数: 0
+[2016-02-01|23:38:43] 7	1454341123395	角色在线数量:0
+[2016-02-01|23:39:43] 在线人数: 0
+[2016-02-01|23:39:43] 7	1454341183400	角色在线数量:0
+[2016-02-01|23:40:43] 在线人数: 0
+[2016-02-01|23:40:43] 7	1454341243400	角色在线数量:0
+[2016-02-01|23:41:43] 在线人数: 0
+[2016-02-01|23:41:43] 7	1454341303407	角色在线数量:0
+[2016-02-01|23:42:43] 在线人数: 0
+[2016-02-01|23:42:43] 7	1454341363415	角色在线数量:0
+[2016-02-01|23:43:43] 在线人数: 0
+[2016-02-01|23:43:43] 7	1454341423424	角色在线数量:0
+[2016-02-01|23:44:43] 在线人数: 0
+[2016-02-01|23:44:43] 7	1454341483428	角色在线数量:0
+[2016-02-01|23:45:43] 在线人数: 0
+[2016-02-01|23:45:43] 7	1454341543430	角色在线数量:0
+[2016-02-01|23:46:43] 在线人数: 0
+[2016-02-01|23:46:43] 7	1454341603439	角色在线数量:0
+[2016-02-01|23:47:43] 在线人数: 0
+[2016-02-01|23:47:43] 7	1454341663443	角色在线数量:0
+[2016-02-01|23:48:43] 在线人数: 0
+[2016-02-01|23:48:43] 7	1454341723450	角色在线数量:0
+[2016-02-01|23:49:43] 在线人数: 0
+[2016-02-01|23:49:43] 7	1454341783450	角色在线数量:0
+[2016-02-01|23:50:43] 在线人数: 0
+[2016-02-01|23:50:43] 7	1454341843458	角色在线数量:0
+[2016-02-01|23:51:43] 在线人数: 0
+[2016-02-01|23:51:43] 7	1454341903460	角色在线数量:0
+[2016-02-01|23:52:43] 在线人数: 0
+[2016-02-01|23:52:43] 7	1454341963462	角色在线数量:0
+[2016-02-01|23:53:43] 在线人数: 0
+[2016-02-01|23:53:43] 7	1454342023470	角色在线数量:0
+[2016-02-01|23:54:43] 在线人数: 0
+[2016-02-01|23:54:43] 7	1454342083476	角色在线数量:0
+[2016-02-01|23:55:43] 在线人数: 0
+[2016-02-01|23:55:43] 7	1454342143479	角色在线数量:0
+[2016-02-01|23:56:43] 在线人数: 0
+[2016-02-01|23:56:43] 7	1454342203489	角色在线数量:0
+[2016-02-01|23:57:43] 在线人数: 0
+[2016-02-01|23:57:43] 7	1454342263497	角色在线数量:0
+[2016-02-01|23:58:43] 在线人数: 0
+[2016-02-01|23:58:43] 7	1454342323503	角色在线数量:0
+[2016-02-01|23:59:43] 在线人数: 0
+[2016-02-01|23:59:43] 7	1454342383511	角色在线数量:0

@@ -1,0 +1,17 @@
+# Agent message type advertisements
+
+ao.GET_PROPERTY
+ao.SET_PROPERTY
+ao.OBJINFO_REQ
+duel.disconnect 
+duel.challengeDisconnect
+combat.INTERRUPT_ABILITY
+arena.removePlayer
+combat.GET_AOE_TARGETS
+combat.UPDATE_FATIGUE
+mob.TARGET_IN_REACTION_RANGE
+ao.GETWNODE_REQ
+mob.REMOVE_TARGET_TO_CHECK
+ao.EVENT
+ao.UPDATEWNODE_REQ
+ao.COMMAND

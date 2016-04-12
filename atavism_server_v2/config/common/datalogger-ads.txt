@@ -1,0 +1,5 @@
+# Agent message type advertisements
+
+ao.DATA_LOG
+ao.GET_PROPERTY
+ao.SET_PROPERTY

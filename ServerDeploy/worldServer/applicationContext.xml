@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:mongo="http://www.springframework.org/schema/data/mongo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	        http://www.springframework.org/schema/context
+	        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	        http://www.springframework.org/schema/tx
+	        http://www.springframework.org/schema/tx/spring-tx.xsd
+	        http://www.springframework.org/schema/aop
+	        http://www.springframework.org/schema/aop/spring-aop.xsd
+	        http://www.springframework.org/schema/data/mongo
+	        http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
+	<!-- JDBC参数配置 -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="true">
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath:/jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 玩家log数据源配置 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<!-- 设置JDBC驱动名称 -->
+		<property name="driverClass" value="${jdbc.driver}" />
+		<!-- 设置JDBC连接URL -->
+		<property name="jdbcUrl" value="${jdbc.url}" />
+		<!-- 设置数据库用户名 -->
+		<property name="user" value="${jdbc.username}" />
+		<!-- 设置数据库密码 -->
+		<property name="password" value="${jdbc.password}" />
+		<!-- 设置连接池初始值 -->
+		<property name="initialPoolSize" value="5" />
+		<!-- 设置连接池最大值 -->
+		<property name="maxPoolSize" value="20" />
+		<!-- 设置连接池最小值 -->
+		<property name="minPoolSize" value="1" />
+		<!-- 设置连接池最大空闲值 -->
+		<property name="maxIdleTime" value="60" />
+	</bean>
+
+	<bean id="logSessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<!-- 配置Hibernate拦截器,自动填充数据的插入、更新时间 -->
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:hibernate.cfg.log.xml" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+				<prop key="hibernate.cache.use_second_level_cache">${hibernate.cache.use_second_level_cache}</prop>
+				<prop key="hibernate.cache.provider_class">${hibernate.cache.provider_class}</prop>
+				<prop key="hibernate.cache.use_query_cache">${hibernate.cache.use_query_cache}</prop>
+				<prop key="hibernate.jdbc.fetch_size">${hibernate.jdbc.fetch_size}</prop>
+				<prop key="hibernate.jdbc.batch_size">${hibernate.jdbc.batch_size}</prop>
+				<prop key="hibernate.bytecode.use_reflection_optimizer">${hibernate.bytecode.use_reflection_optimizer}</prop>
+				<prop key="hibernate.connection.release_mode">auto</prop>
+				<prop key="hibernate.autoReconnect">true</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- log 事务管理 -->
+	<!-- <bean id="logTransactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager"> <property name="sessionFactory" ref="logSessionFactory" /> </bean> <tx:advice id="txAdvice" 
+		transaction-manager="logTransactionManager"> <tx:attributes> <tx:method name="get*" read-only="true" /> <tx:method name="find*" read-only="true" /> <tx:method name="*" rollback-for="Exception" /> </tx:attributes> 
+		</tx:advice> <aop:config proxy-target-class="true"> <aop:pointcut id="logPointcut" expression="execution(* com.app.empire.world.dao.mysql.gameLog.impl.*.*(..))" /> <aop:advisor advice-ref="txAdvice" pointcut-ref="logPointcut" 
+		/> </aop:config> -->
+	<!-- <tx:annotation-driven transaction-manager="logTransactionManager" proxy-target-class="true"/> -->
+	<!-- 游戏Config数据源配置 -->
+	<bean id="gameConfigDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<!-- 设置JDBC驱动名称 -->
+		<property name="driverClass" value="${gameConfig.jdbc.driver}" />
+		<!-- 设置JDBC连接URL -->
+		<property name="jdbcUrl" value="${gameConfig.jdbc.url}" />
+		<!-- 设置数据库用户名 -->
+		<property name="user" value="${gameConfig.jdbc.username}" />
+		<!-- 设置数据库密码 -->
+		<property name="password" value="${gameConfig.jdbc.password}" />
+		<!-- 设置连接池初始值 -->
+		<property name="initialPoolSize" value="2" />
+		<!-- 设置连接池最大值 -->
+		<property name="maxPoolSize" value="10" />
+		<!-- 设置连接池最小值 -->
+		<property name="minPoolSize" value="1" />
+		<!-- 设置连接池最大空闲值 -->
+		<property name="maxIdleTime" value="60" />
+	</bean>
+
+	<bean id="gameConfigSessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<!-- 配置Hibernate拦截器,自动填充数据的插入、更新时间 -->
+		<property name="dataSource" ref="gameConfigDataSource" />
+		<property name="configLocation" value="classpath:hibernate.cfg.gameConfig.xml" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${gameConfig.hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${gameConfig.hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql">${gameConfig.hibernate.format_sql}</prop>
+				<prop key="hibernate.cache.use_second_level_cache">${gameConfig.hibernate.cache.use_second_level_cache}</prop>
+				<prop key="hibernate.cache.provider_class">${gameConfig.hibernate.cache.provider_class}</prop>
+				<prop key="hibernate.cache.use_query_cache">${gameConfig.hibernate.cache.use_query_cache}</prop>
+				<prop key="hibernate.jdbc.fetch_size">${gameConfig.hibernate.jdbc.fetch_size}</prop>
+				<prop key="hibernate.jdbc.batch_size">${gameConfig.hibernate.jdbc.batch_size}</prop>
+				<prop key="hibernate.bytecode.use_reflection_optimizer">${gameConfig.hibernate.bytecode.use_reflection_optimizer}</prop>
+				<prop key="hibernate.connection.release_mode">auto</prop>
+				<prop key="hibernate.autoReconnect">true</prop>
+			</props>
+
+		</property>
+	</bean>
+	<!-- mySql 配置结束 -->
+	<!-- mongo 配置开始 -->
+	<!-- mongo:mongo host="${mongodb.host}" port="${mongodb.port}" / -->
+	<mongo:mongo-client host="${mongodb.host}" port="${mongodb.port}" />
+	<!-- mongo的工厂，通过它来取得mongo实例,dbname为mongodb的数据库名，没有的话会自动创建 -->
+	<!-- mongo:db-factory dbname="${mongodb.dbname}" mongo-ref="mongo" username="${mongodb.username}" password="${mongodb.password}"/ -->
+	<mongo:db-factory dbname="${mongodb.dbname}" mongo-ref="mongo" />
+
+	<!-- mongodb的主要操作对象，所有对mongodb的增删改查的操作都是通过它完成 -->
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+	</bean>
+	<bean id="mongoRepositoryFactory" class="org.springframework.data.mongodb.repository.support.MongoRepositoryFactory">
+		<constructor-arg ref="mongoTemplate" />
+	</bean>
+
+	<!-- 映射转换器，扫描back-package目录下的文件，根据注释，把它们作为mongodb的一个collection的映射 -->
+	<mongo:mapping-converter base-package="com.app.db.mongo.entity,com.app.empire.world.entity.mongo" />
+	<!-- mongodb bean的仓库目录，会自动扫描扩展了MongoRepository接口的接口进行注入 -->
+	<mongo:repositories base-package="com.app.db.mongo.dao.impl,com.app.empire.world.dao.mongo.impl" />
+	<context:component-scan base-package="com.app.db,com.app.empire.world" />
+	<import resource="application-scheduling.xml" />
+ 	<import resource="redis-context.xml"/>
+
+
+
+	<!-- <bean id="GameConfigService" parent="gameConfigBaseTransactionProxy"> <property name="target"> <bean class="com.app.empire.world.service.base.impl.GameConfigService"> <property name="baseLanguageDao"> 
+		<bean class="com.app.empire.world.dao.mysql.gameConfig.impl.BaseLanguageDao"> <property name="sessionFactory" ref="gameConfigSessionFactory" /> </bean> </property> </bean> </property> </bean> -->
+
+	<!-- world Service -->
+	<!-- <bean id="PlayerService" parent="worldBaseTransactionProxy"> <property name="target"> <bean class="com.app.empire.world.server.service.base.impl.BasePlayerService"> <property name="playerDao"> <bean 
+		class="com.app.empire.world.dao.mysql.gameConfig.impl.PlayerDao"> <property name="sessionFactory" ref="sessionFactory" /> </bean> </property> </bean> </property> </bean> -->
+
+	<!-- <bean id="ChatRecordService" parent="worldBaseTransactionProxy"> <property name="target"> <bean class="com.app.empire.world.server.service.base.impl.ChatRecordService"> <property name="dao"> <bean 
+		class="com.app.empire.world.dao.mysql.gameConfig.impl.ChatRecordDao"> <property name="sessionFactory" ref="sessionFactory" /> </bean> </property> </bean> </property> </bean> -->
+
+	<!-- <bean id="OperationConfigService" parent="worldBaseTransactionProxy"> <property name="target"> <bean class="com.app.empire.world.server.service.base.impl.OperationConfigService"> <property name="dao"> 
+		<bean class="com.app.empire.world.dao.mysql.gameConfig.impl.OperationConfigDao"> <property name="sessionFactory" ref="sessionFactory" /> </bean> </property> </bean> </property> </bean> -->
+	<!-- <bean id="OrderService" parent="worldBaseTransactionProxy"> <property name="target"> <bean class="com.app.empire.world.server.service.base.impl.OrderService"> <property name="dao"> <bean class="com.app.empire.world.dao.mysql.gameConfig.impl.OrderDao"> 
+		<property name="sessionFactory" ref="sessionFactory" /> </bean> </property> </bean> </property> </bean> -->
+
+
+
+	<!-- 第三方渠道配置 by:zengxc -->
+	<!-- <bean id="ThirdConfigService" parent="worldBaseTransactionProxy"> <property name="target"> <bean class="com.app.empire.world.server.service.base.impl.ThirdConfigService"> <property name="dao"> <bean 
+		class="com.app.empire.world.dao.mysql.gameConfig.impl.ThirdConfigDao"> <property name="sessionFactory" ref="sessionFactory" /> </bean> </property> </bean> </property> </bean> -->
+
+
+
+</beans>

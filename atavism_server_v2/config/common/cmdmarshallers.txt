@@ -1,0 +1,5 @@
+atavism.msgsys.Message,100
+atavism.msgsys.MessageType,101
+atavism.msgsys.AllocNameMessage,102
+atavism.msgsys.AllocNameResponseMessage,103
+atavism.msgsys.ResponseMessage,104

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="dist/lib/agis.jar"/>
+	<classpathentry kind="lib" path="dist/lib/atavism.jar"/>
+	<classpathentry kind="lib" path="dist/lib/currency.jar"/>
+	<classpathentry kind="lib" path="dist/lib/injected.jar"/>
+	<classpathentry kind="lib" path="other/bcel-5.2.jar"/>
+	<classpathentry kind="lib" path="other/java-getopt-1.0.11.jar"/>
+	<classpathentry kind="lib" path="other/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="other/jsp-api.jar"/>
+	<classpathentry kind="lib" path="other/jython.jar"/>
+	<classpathentry kind="lib" path="other/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="other/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="other/mbsclient.jar"/>
+	<classpathentry kind="lib" path="other/mysql-connector-java-3.1.14-bin.jar"/>
+	<classpathentry kind="lib" path="other/rhino1_5R5/js.jar"/>
+	<classpathentry kind="lib" path="other/servlet-api.jar"/>
+	<classpathentry kind="lib" path="other/shiro-core-1.0-incubating-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="other/slf4j-api-1.5.6.jar"/>
+	<classpathentry kind="lib" path="other/slf4j-log4j12-1.5.6.jar"/>
+	<classpathentry kind="lib" path="other/tools.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

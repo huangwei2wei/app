@@ -1,0 +1,352 @@
+[2014-03-13|14:46:38] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@e70e30: display name [org.springframework.context.support.ClassPathXmlApplicationContext@e70e30]; startup date [Thu Mar 13 14:46:38 CST 2014]; root of context hierarchy
+[2014-03-13|14:46:38] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-13|14:46:38] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@e70e30]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1014e21
+[2014-03-13|14:46:38] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1014e21: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-13|14:48:43] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@18a49e0: display name [org.springframework.context.support.ClassPathXmlApplicationContext@18a49e0]; startup date [Thu Mar 13 14:48:43 CST 2014]; root of context hierarchy
+[2014-03-13|14:48:43] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-13|14:48:44] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@18a49e0]: org.springframework.beans.factory.support.DefaultListableBeanFactory@3bc20e
+[2014-03-13|14:48:44] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3bc20e: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-13|14:48:44] Hibernate Annotations 3.3.0.GA
+[2014-03-13|14:48:44] Hibernate 3.2.6
+[2014-03-13|14:48:44] hibernate.properties not found
+[2014-03-13|14:48:44] Bytecode provider name : cglib
+[2014-03-13|14:48:44] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-13|14:48:44] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-13|14:48:44] Configured SessionFactory: null
+[2014-03-13|14:48:44] Building new Hibernate SessionFactory
+[2014-03-13|14:48:44] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-13|14:48:44] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-13|14:48:44] Hibernate Validator not found: ignoring
+[2014-03-13|14:48:45] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-13|14:48:45] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-13|14:48:45] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-13|14:48:45] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-13|14:48:45] Using default transaction strategy (direct JDBC transactions)
+[2014-03-13|14:48:45] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-13|14:48:45] Automatic flush during beforeCompletion(): disabled
+[2014-03-13|14:48:45] Automatic session close at end of transaction: disabled
+[2014-03-13|14:48:45] JDBC batch size: 15
+[2014-03-13|14:48:45] JDBC batch updates for versioned data: disabled
+[2014-03-13|14:48:45] Scrollable result sets: enabled
+[2014-03-13|14:48:45] JDBC3 getGeneratedKeys(): enabled
+[2014-03-13|14:48:45] Connection release mode: on_close
+[2014-03-13|14:48:45] Maximum outer join fetch depth: 2
+[2014-03-13|14:48:45] Default batch fetch size: 1
+[2014-03-13|14:48:45] Generate SQL with comments: disabled
+[2014-03-13|14:48:45] Order SQL updates by primary key: disabled
+[2014-03-13|14:48:45] Order SQL inserts for batching: disabled
+[2014-03-13|14:48:45] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-13|14:48:45] Using ASTQueryTranslatorFactory
+[2014-03-13|14:48:45] Query language substitutions: {}
+[2014-03-13|14:48:45] JPA-QL strict compliance: disabled
+[2014-03-13|14:48:45] Second-level cache: disabled
+[2014-03-13|14:48:45] Query cache: disabled
+[2014-03-13|14:48:45] Optimize cache for minimal puts: disabled
+[2014-03-13|14:48:45] Structured second-level cache entries: disabled
+[2014-03-13|14:48:45] Statistics: disabled
+[2014-03-13|14:48:45] Deleted entity synthetic identifier rollback: disabled
+[2014-03-13|14:48:45] Default entity-mode: pojo
+[2014-03-13|14:48:45] Named query checking : enabled
+[2014-03-13|14:48:45] building session factory
+[2014-03-13|14:48:46] Not binding factory to JNDI, no JNDI name configured
+[2014-03-13|14:48:46] Using DataSource [org.apache.commons.dbcp.BasicDataSource@6f9f88] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-13|14:48:46] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3bc20e: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-13|14:48:46] Closing Hibernate SessionFactory
+[2014-03-13|14:48:46] closing
+[2014-03-13|14:49:28] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@18a49e0: display name [org.springframework.context.support.ClassPathXmlApplicationContext@18a49e0]; startup date [Thu Mar 13 14:49:28 CST 2014]; root of context hierarchy
+[2014-03-13|14:49:28] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-13|14:49:28] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@18a49e0]: org.springframework.beans.factory.support.DefaultListableBeanFactory@111ded2
+[2014-03-13|14:49:28] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@111ded2: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-13|14:49:28] Hibernate Annotations 3.3.0.GA
+[2014-03-13|14:49:28] Hibernate 3.2.6
+[2014-03-13|14:49:28] hibernate.properties not found
+[2014-03-13|14:49:28] Bytecode provider name : cglib
+[2014-03-13|14:49:28] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-13|14:49:29] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-13|14:49:29] Configured SessionFactory: null
+[2014-03-13|14:49:29] Building new Hibernate SessionFactory
+[2014-03-13|14:49:29] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-13|14:49:29] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-13|14:49:29] Hibernate Validator not found: ignoring
+[2014-03-13|14:49:29] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-13|14:49:29] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-13|14:49:29] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-13|14:49:29] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-13|14:49:29] Using default transaction strategy (direct JDBC transactions)
+[2014-03-13|14:49:29] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-13|14:49:29] Automatic flush during beforeCompletion(): disabled
+[2014-03-13|14:49:29] Automatic session close at end of transaction: disabled
+[2014-03-13|14:49:29] JDBC batch size: 15
+[2014-03-13|14:49:29] JDBC batch updates for versioned data: disabled
+[2014-03-13|14:49:29] Scrollable result sets: enabled
+[2014-03-13|14:49:29] JDBC3 getGeneratedKeys(): enabled
+[2014-03-13|14:49:29] Connection release mode: on_close
+[2014-03-13|14:49:29] Maximum outer join fetch depth: 2
+[2014-03-13|14:49:29] Default batch fetch size: 1
+[2014-03-13|14:49:29] Generate SQL with comments: disabled
+[2014-03-13|14:49:29] Order SQL updates by primary key: disabled
+[2014-03-13|14:49:29] Order SQL inserts for batching: disabled
+[2014-03-13|14:49:29] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-13|14:49:29] Using ASTQueryTranslatorFactory
+[2014-03-13|14:49:29] Query language substitutions: {}
+[2014-03-13|14:49:29] JPA-QL strict compliance: disabled
+[2014-03-13|14:49:29] Second-level cache: disabled
+[2014-03-13|14:49:29] Query cache: disabled
+[2014-03-13|14:49:29] Optimize cache for minimal puts: disabled
+[2014-03-13|14:49:29] Structured second-level cache entries: disabled
+[2014-03-13|14:49:29] Statistics: disabled
+[2014-03-13|14:49:29] Deleted entity synthetic identifier rollback: disabled
+[2014-03-13|14:49:29] Default entity-mode: pojo
+[2014-03-13|14:49:29] Named query checking : enabled
+[2014-03-13|14:49:29] building session factory
+[2014-03-13|14:49:29] Not binding factory to JNDI, no JNDI name configured
+[2014-03-13|14:49:29] Using DataSource [org.apache.commons.dbcp.BasicDataSource@2aaec8] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-13|14:49:29] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@111ded2: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-13|14:49:29] Closing Hibernate SessionFactory
+[2014-03-13|14:49:29] closing
+[2014-03-13|14:50:34] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@154864a: display name [org.springframework.context.support.ClassPathXmlApplicationContext@154864a]; startup date [Thu Mar 13 14:50:34 CST 2014]; root of context hierarchy
+[2014-03-13|14:50:34] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-13|14:50:35] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@154864a]: org.springframework.beans.factory.support.DefaultListableBeanFactory@b09697
+[2014-03-13|14:50:35] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b09697: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-13|14:50:35] Hibernate Annotations 3.3.0.GA
+[2014-03-13|14:50:35] Hibernate 3.2.6
+[2014-03-13|14:50:35] hibernate.properties not found
+[2014-03-13|14:50:35] Bytecode provider name : cglib
+[2014-03-13|14:50:35] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-13|14:50:35] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-13|14:50:35] Configured SessionFactory: null
+[2014-03-13|14:50:35] Building new Hibernate SessionFactory
+[2014-03-13|14:50:35] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-13|14:50:35] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-13|14:50:35] Hibernate Validator not found: ignoring
+[2014-03-13|14:50:35] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-13|14:50:35] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-13|14:50:35] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-13|14:50:35] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-13|14:50:35] Using default transaction strategy (direct JDBC transactions)
+[2014-03-13|14:50:35] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-13|14:50:35] Automatic flush during beforeCompletion(): disabled
+[2014-03-13|14:50:35] Automatic session close at end of transaction: disabled
+[2014-03-13|14:50:35] JDBC batch size: 15
+[2014-03-13|14:50:35] JDBC batch updates for versioned data: disabled
+[2014-03-13|14:50:35] Scrollable result sets: enabled
+[2014-03-13|14:50:35] JDBC3 getGeneratedKeys(): enabled
+[2014-03-13|14:50:35] Connection release mode: on_close
+[2014-03-13|14:50:35] Maximum outer join fetch depth: 2
+[2014-03-13|14:50:35] Default batch fetch size: 1
+[2014-03-13|14:50:35] Generate SQL with comments: disabled
+[2014-03-13|14:50:35] Order SQL updates by primary key: disabled
+[2014-03-13|14:50:35] Order SQL inserts for batching: disabled
+[2014-03-13|14:50:35] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-13|14:50:35] Using ASTQueryTranslatorFactory
+[2014-03-13|14:50:35] Query language substitutions: {}
+[2014-03-13|14:50:35] JPA-QL strict compliance: disabled
+[2014-03-13|14:50:35] Second-level cache: disabled
+[2014-03-13|14:50:35] Query cache: disabled
+[2014-03-13|14:50:35] Optimize cache for minimal puts: disabled
+[2014-03-13|14:50:35] Structured second-level cache entries: disabled
+[2014-03-13|14:50:35] Statistics: disabled
+[2014-03-13|14:50:35] Deleted entity synthetic identifier rollback: disabled
+[2014-03-13|14:50:35] Default entity-mode: pojo
+[2014-03-13|14:50:35] Named query checking : enabled
+[2014-03-13|14:50:35] building session factory
+[2014-03-13|14:50:36] Not binding factory to JNDI, no JNDI name configured
+[2014-03-13|14:50:36] Using DataSource [org.apache.commons.dbcp.BasicDataSource@38d0a8] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-13|14:50:36] 渠道登陆接口服务器启动...
+[2014-03-13|14:52:23] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16d2633: display name [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]; startup date [Thu Mar 13 14:52:23 CST 2014]; root of context hierarchy
+[2014-03-13|14:52:23] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-13|14:52:23] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056
+[2014-03-13|14:52:23] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-13|14:52:23] Hibernate Annotations 3.3.0.GA
+[2014-03-13|14:52:23] Hibernate 3.2.6
+[2014-03-13|14:52:23] hibernate.properties not found
+[2014-03-13|14:52:23] Bytecode provider name : cglib
+[2014-03-13|14:52:23] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-13|14:52:23] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-13|14:52:23] Configured SessionFactory: null
+[2014-03-13|14:52:23] Building new Hibernate SessionFactory
+[2014-03-13|14:52:23] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-13|14:52:24] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-13|14:52:24] Hibernate Validator not found: ignoring
+[2014-03-13|14:52:24] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-13|14:52:24] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-13|14:52:24] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-13|14:52:24] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-13|14:52:24] Using default transaction strategy (direct JDBC transactions)
+[2014-03-13|14:52:24] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-13|14:52:24] Automatic flush during beforeCompletion(): disabled
+[2014-03-13|14:52:24] Automatic session close at end of transaction: disabled
+[2014-03-13|14:52:24] JDBC batch size: 15
+[2014-03-13|14:52:24] JDBC batch updates for versioned data: disabled
+[2014-03-13|14:52:24] Scrollable result sets: enabled
+[2014-03-13|14:52:24] JDBC3 getGeneratedKeys(): enabled
+[2014-03-13|14:52:24] Connection release mode: on_close
+[2014-03-13|14:52:24] Maximum outer join fetch depth: 2
+[2014-03-13|14:52:24] Default batch fetch size: 1
+[2014-03-13|14:52:24] Generate SQL with comments: disabled
+[2014-03-13|14:52:24] Order SQL updates by primary key: disabled
+[2014-03-13|14:52:24] Order SQL inserts for batching: disabled
+[2014-03-13|14:52:24] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-13|14:52:24] Using ASTQueryTranslatorFactory
+[2014-03-13|14:52:24] Query language substitutions: {}
+[2014-03-13|14:52:24] JPA-QL strict compliance: disabled
+[2014-03-13|14:52:24] Second-level cache: disabled
+[2014-03-13|14:52:24] Query cache: disabled
+[2014-03-13|14:52:24] Optimize cache for minimal puts: disabled
+[2014-03-13|14:52:24] Structured second-level cache entries: disabled
+[2014-03-13|14:52:24] Statistics: disabled
+[2014-03-13|14:52:24] Deleted entity synthetic identifier rollback: disabled
+[2014-03-13|14:52:24] Default entity-mode: pojo
+[2014-03-13|14:52:24] Named query checking : enabled
+[2014-03-13|14:52:24] building session factory
+[2014-03-13|14:52:24] Not binding factory to JNDI, no JNDI name configured
+[2014-03-13|14:52:24] Using DataSource [org.apache.commons.dbcp.BasicDataSource@1a8a9e7] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-13|14:52:24] 渠道登陆接口服务器启动...
+[2014-03-13|16:37:14] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16d2633: display name [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]; startup date [Thu Mar 13 16:37:14 CST 2014]; root of context hierarchy
+[2014-03-13|16:37:15] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-13|16:37:15] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056
+[2014-03-13|16:37:15] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-13|16:37:15] Hibernate Annotations 3.3.0.GA
+[2014-03-13|16:37:15] Hibernate 3.2.6
+[2014-03-13|16:37:15] hibernate.properties not found
+[2014-03-13|16:37:15] Bytecode provider name : cglib
+[2014-03-13|16:37:15] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-13|16:37:15] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-13|16:37:15] Configured SessionFactory: null
+[2014-03-13|16:37:16] Building new Hibernate SessionFactory
+[2014-03-13|16:37:16] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-13|16:37:16] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-13|16:37:16] Hibernate Validator not found: ignoring
+[2014-03-13|16:37:16] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-13|16:37:16] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-13|16:37:16] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-13|16:37:16] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-13|16:37:16] Using default transaction strategy (direct JDBC transactions)
+[2014-03-13|16:37:16] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-13|16:37:16] Automatic flush during beforeCompletion(): disabled
+[2014-03-13|16:37:16] Automatic session close at end of transaction: disabled
+[2014-03-13|16:37:16] JDBC batch size: 15
+[2014-03-13|16:37:16] JDBC batch updates for versioned data: disabled
+[2014-03-13|16:37:16] Scrollable result sets: enabled
+[2014-03-13|16:37:16] JDBC3 getGeneratedKeys(): enabled
+[2014-03-13|16:37:16] Connection release mode: on_close
+[2014-03-13|16:37:16] Maximum outer join fetch depth: 2
+[2014-03-13|16:37:16] Default batch fetch size: 1
+[2014-03-13|16:37:16] Generate SQL with comments: disabled
+[2014-03-13|16:37:16] Order SQL updates by primary key: disabled
+[2014-03-13|16:37:16] Order SQL inserts for batching: disabled
+[2014-03-13|16:37:16] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-13|16:37:16] Using ASTQueryTranslatorFactory
+[2014-03-13|16:37:16] Query language substitutions: {}
+[2014-03-13|16:37:16] JPA-QL strict compliance: disabled
+[2014-03-13|16:37:16] Second-level cache: disabled
+[2014-03-13|16:37:16] Query cache: disabled
+[2014-03-13|16:37:16] Optimize cache for minimal puts: disabled
+[2014-03-13|16:37:16] Structured second-level cache entries: disabled
+[2014-03-13|16:37:16] Statistics: disabled
+[2014-03-13|16:37:16] Deleted entity synthetic identifier rollback: disabled
+[2014-03-13|16:37:16] Default entity-mode: pojo
+[2014-03-13|16:37:16] Named query checking : enabled
+[2014-03-13|16:37:17] building session factory
+[2014-03-13|16:37:17] Not binding factory to JNDI, no JNDI name configured
+[2014-03-13|16:37:17] Using DataSource [org.apache.commons.dbcp.BasicDataSource@adb3f] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-13|16:37:17] 渠道登陆接口服务器启动...
+[2014-03-13|16:39:03] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16d2633: display name [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]; startup date [Thu Mar 13 16:39:03 CST 2014]; root of context hierarchy
+[2014-03-13|16:39:03] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-13|16:39:03] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056
+[2014-03-13|16:39:03] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-13|16:39:03] Hibernate Annotations 3.3.0.GA
+[2014-03-13|16:39:03] Hibernate 3.2.6
+[2014-03-13|16:39:03] hibernate.properties not found
+[2014-03-13|16:39:03] Bytecode provider name : cglib
+[2014-03-13|16:39:03] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-13|16:39:04] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-13|16:39:04] Configured SessionFactory: null
+[2014-03-13|16:39:04] Building new Hibernate SessionFactory
+[2014-03-13|16:39:04] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-13|16:39:04] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-13|16:39:04] Hibernate Validator not found: ignoring
+[2014-03-13|16:39:04] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-13|16:39:04] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-13|16:39:04] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-13|16:39:04] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-13|16:39:04] Using default transaction strategy (direct JDBC transactions)
+[2014-03-13|16:39:04] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-13|16:39:04] Automatic flush during beforeCompletion(): disabled
+[2014-03-13|16:39:04] Automatic session close at end of transaction: disabled
+[2014-03-13|16:39:04] JDBC batch size: 15
+[2014-03-13|16:39:04] JDBC batch updates for versioned data: disabled
+[2014-03-13|16:39:04] Scrollable result sets: enabled
+[2014-03-13|16:39:04] JDBC3 getGeneratedKeys(): enabled
+[2014-03-13|16:39:04] Connection release mode: on_close
+[2014-03-13|16:39:04] Maximum outer join fetch depth: 2
+[2014-03-13|16:39:04] Default batch fetch size: 1
+[2014-03-13|16:39:04] Generate SQL with comments: disabled
+[2014-03-13|16:39:04] Order SQL updates by primary key: disabled
+[2014-03-13|16:39:04] Order SQL inserts for batching: disabled
+[2014-03-13|16:39:04] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-13|16:39:04] Using ASTQueryTranslatorFactory
+[2014-03-13|16:39:04] Query language substitutions: {}
+[2014-03-13|16:39:04] JPA-QL strict compliance: disabled
+[2014-03-13|16:39:04] Second-level cache: disabled
+[2014-03-13|16:39:04] Query cache: disabled
+[2014-03-13|16:39:04] Optimize cache for minimal puts: disabled
+[2014-03-13|16:39:04] Structured second-level cache entries: disabled
+[2014-03-13|16:39:04] Statistics: disabled
+[2014-03-13|16:39:04] Deleted entity synthetic identifier rollback: disabled
+[2014-03-13|16:39:04] Default entity-mode: pojo
+[2014-03-13|16:39:04] Named query checking : enabled
+[2014-03-13|16:39:04] building session factory
+[2014-03-13|16:39:04] Not binding factory to JNDI, no JNDI name configured
+[2014-03-13|16:39:04] Using DataSource [org.apache.commons.dbcp.BasicDataSource@1a8a9e7] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-13|16:39:04] 渠道登陆接口服务器启动...
+[2014-03-13|16:42:20] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c9217: display name [org.springframework.context.support.ClassPathXmlApplicationContext@3c9217]; startup date [Thu Mar 13 16:42:20 CST 2014]; root of context hierarchy
+[2014-03-13|16:42:20] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-13|16:42:20] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@3c9217]: org.springframework.beans.factory.support.DefaultListableBeanFactory@16eb6bc
+[2014-03-13|16:42:20] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16eb6bc: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-13|16:42:20] Hibernate Annotations 3.3.0.GA
+[2014-03-13|16:42:20] Hibernate 3.2.6
+[2014-03-13|16:42:20] hibernate.properties not found
+[2014-03-13|16:42:20] Bytecode provider name : cglib
+[2014-03-13|16:42:20] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-13|16:42:20] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-13|16:42:20] Configured SessionFactory: null
+[2014-03-13|16:42:20] Building new Hibernate SessionFactory
+[2014-03-13|16:42:20] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-13|16:42:21] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-13|16:42:21] Hibernate Validator not found: ignoring
+[2014-03-13|16:42:21] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-13|16:42:21] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-13|16:42:21] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-13|16:42:21] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-13|16:42:21] Using default transaction strategy (direct JDBC transactions)
+[2014-03-13|16:42:21] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-13|16:42:21] Automatic flush during beforeCompletion(): disabled
+[2014-03-13|16:42:21] Automatic session close at end of transaction: disabled
+[2014-03-13|16:42:21] JDBC batch size: 15
+[2014-03-13|16:42:21] JDBC batch updates for versioned data: disabled
+[2014-03-13|16:42:21] Scrollable result sets: enabled
+[2014-03-13|16:42:21] JDBC3 getGeneratedKeys(): enabled
+[2014-03-13|16:42:21] Connection release mode: on_close
+[2014-03-13|16:42:21] Maximum outer join fetch depth: 2
+[2014-03-13|16:42:21] Default batch fetch size: 1
+[2014-03-13|16:42:21] Generate SQL with comments: disabled
+[2014-03-13|16:42:21] Order SQL updates by primary key: disabled
+[2014-03-13|16:42:21] Order SQL inserts for batching: disabled
+[2014-03-13|16:42:21] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-13|16:42:21] Using ASTQueryTranslatorFactory
+[2014-03-13|16:42:21] Query language substitutions: {}
+[2014-03-13|16:42:21] JPA-QL strict compliance: disabled
+[2014-03-13|16:42:21] Second-level cache: disabled
+[2014-03-13|16:42:21] Query cache: disabled
+[2014-03-13|16:42:21] Optimize cache for minimal puts: disabled
+[2014-03-13|16:42:21] Structured second-level cache entries: disabled
+[2014-03-13|16:42:21] Statistics: disabled
+[2014-03-13|16:42:21] Deleted entity synthetic identifier rollback: disabled
+[2014-03-13|16:42:21] Default entity-mode: pojo
+[2014-03-13|16:42:21] Named query checking : enabled
+[2014-03-13|16:42:21] building session factory
+[2014-03-13|16:42:21] Not binding factory to JNDI, no JNDI name configured
+[2014-03-13|16:42:21] Using DataSource [org.apache.commons.dbcp.BasicDataSource@58f124] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-13|16:42:21] 渠道登陆接口服务器启动...
+[2014-03-13|16:42:26] 渠道号： 0 第三方平台服务器返回的message:  服务端返回的code: 0 服务端返回的message：0

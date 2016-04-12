@@ -1,0 +1,1162 @@
+[2016-01-14|02:59:30] CNclosed
+[2016-01-14|02:59:44] 在线人数: 0
+[2016-01-14|02:59:44] 7	1452711584863	角色在线数量:0
+[2016-01-14|14:22:30] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-01-14|14:22:30] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-01-14|14:22:30] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-01-14|14:22:30] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYN_Move 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYN_Attack 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-01-14|14:22:31] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-01-14|14:22:31] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-01-14|14:22:31] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-01-14|14:22:31] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 EQUIP_MergeAndWearEquip 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 EQUIP_MergeAndWearEquipOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-01-14|14:22:31] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 PVP_RoomPlayerInfo 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 PVP_GetRoomListOk 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 PVP_CreateRoomOk 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 PVP_IntoRoomOk 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 PVP_OutRoomOk 对应的protocol handler
+[2016-01-14|14:22:32] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadComplete
+[2016-01-14|14:22:32] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadCompleteOk
+[2016-01-14|14:22:32] 没有找到 PVP_StartStatus 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 STORE_MysticStore 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 STORE_MysticStoreOk 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-01-14|14:22:32] 没有找到 TEST_Test 对应的protocol handler
+[2016-01-14|14:22:37] MLog clients using log4j logging.
+[2016-01-14|14:22:37] Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2016-01-14|14:22:38] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[2016-01-14|14:22:38] HHH000412: Hibernate Core {4.3.9.Final}
+[2016-01-14|14:22:38] HHH000206: hibernate.properties not found
+[2016-01-14|14:22:38] HHH000021: Bytecode provider name : javassist
+[2016-01-14|14:22:38] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.log.xml
+[2016-01-14|14:22:38] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-14|14:22:38] HHH000041: Configured SessionFactory: null
+[2016-01-14|14:22:39] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9ehfajqmpfcs63|72e0be6, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9ehfajqmpfcs63|72e0be6, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://192.168.1.12/s_log_1?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-14|14:22:39] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-14|14:22:39] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-14|14:22:39] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-14|14:22:39] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-14|14:22:40] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.gameConfig.xml
+[2016-01-14|14:22:40] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-14|14:22:40] HHH000041: Configured SessionFactory: null
+[2016-01-14|14:22:40] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9ehfajqmpfcs63|737ef1e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9ehfajqmpfcs63|737ef1e, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://192.168.1.12/game_config?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-14|14:22:40] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-14|14:22:40] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-14|14:22:40] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-14|14:22:40] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-14|14:22:46] connect auth
+[2016-01-14|14:22:46] Account auth connected
+[2016-01-14|14:22:46] AccountService connected
+[2016-01-14|14:22:46] BattleService connected
+[2016-01-14|14:22:46] NearbyService connected
+[2016-01-14|14:22:46] 游戏世界服务器启动...
+[2016-01-14|14:23:46] 在线人数: 0
+[2016-01-14|14:23:46] 7	1452752626426	角色在线数量:0
+[2016-01-14|14:24:46] 在线人数: 0
+[2016-01-14|14:24:46] 7	1452752686439	角色在线数量:0
+[2016-01-14|14:25:46] 在线人数: 0
+[2016-01-14|14:25:46] 7	1452752746452	角色在线数量:0
+[2016-01-14|14:26:46] 在线人数: 0
+[2016-01-14|14:26:46] 7	1452752806455	角色在线数量:0
+[2016-01-14|14:27:46] 在线人数: 0
+[2016-01-14|14:27:46] 7	1452752866457	角色在线数量:0
+[2016-01-14|14:28:46] 在线人数: 0
+[2016-01-14|14:28:46] 7	1452752926460	角色在线数量:0
+[2016-01-14|14:29:46] 在线人数: 0
+[2016-01-14|14:29:46] 7	1452752986463	角色在线数量:0
+[2016-01-14|14:30:46] 在线人数: 0
+[2016-01-14|14:30:46] 7	1452753046465	角色在线数量:0
+[2016-01-14|14:31:46] 在线人数: 0
+[2016-01-14|14:31:46] 7	1452753106468	角色在线数量:0
+[2016-01-14|14:32:20] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-01-14|14:32:20] CNclosed
+[2016-01-14|20:09:17] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-01-14|20:09:17] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-01-14|20:09:17] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYN_Move 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYN_Attack 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-01-14|20:09:17] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-01-14|20:09:17] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-01-14|20:09:17] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-01-14|20:09:17] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 EQUIP_MergeAndWearEquip 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 EQUIP_MergeAndWearEquipOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PVP_RoomPlayerInfo 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PVP_GetRoomListOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PVP_CreateRoomOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PVP_IntoRoomOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 PVP_OutRoomOk 对应的protocol handler
+[2016-01-14|20:09:17] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadComplete
+[2016-01-14|20:09:17] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadCompleteOk
+[2016-01-14|20:09:17] 没有找到 PVP_StartStatus 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 STORE_MysticStore 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 STORE_MysticStoreOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-01-14|20:09:17] 没有找到 TEST_Test 对应的protocol handler
+[2016-01-14|20:09:18] MLog clients using log4j logging.
+[2016-01-14|20:09:19] Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2016-01-14|20:09:19] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[2016-01-14|20:09:19] HHH000412: Hibernate Core {4.3.9.Final}
+[2016-01-14|20:09:19] HHH000206: hibernate.properties not found
+[2016-01-14|20:09:19] HHH000021: Bytecode provider name : javassist
+[2016-01-14|20:09:19] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.log.xml
+[2016-01-14|20:09:19] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-14|20:09:19] HHH000041: Configured SessionFactory: null
+[2016-01-14|20:09:19] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9ehroeav100cecu|cff654c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9ehroeav100cecu|cff654c, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://192.168.1.12/s_log_1?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-14|20:09:19] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-14|20:09:19] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-14|20:09:19] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-14|20:09:19] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-14|20:09:19] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.gameConfig.xml
+[2016-01-14|20:09:19] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-14|20:09:19] HHH000041: Configured SessionFactory: null
+[2016-01-14|20:09:19] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9ehroeav100cecu|215bbb25, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9ehroeav100cecu|215bbb25, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://192.168.1.12/game_config?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-14|20:09:19] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-14|20:09:19] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-14|20:09:19] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-14|20:09:19] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-14|20:09:22] connect auth
+[2016-01-14|20:09:22] Account auth connected
+[2016-01-14|20:09:22] AccountService connected
+[2016-01-14|20:09:22] BattleService connected
+[2016-01-14|20:09:22] NearbyService connected
+[2016-01-14|20:09:22] 游戏世界服务器启动...
+[2016-01-14|20:10:22] 在线人数: 0
+[2016-01-14|20:10:22] 7	1452773422168	角色在线数量:0
+[2016-01-14|20:11:22] 在线人数: 0
+[2016-01-14|20:11:22] 7	1452773482182	角色在线数量:0
+[2016-01-14|20:12:22] 在线人数: 0
+[2016-01-14|20:12:22] 7	1452773542187	角色在线数量:0
+[2016-01-14|20:13:22] 在线人数: 0
+[2016-01-14|20:13:22] 7	1452773602203	角色在线数量:0
+[2016-01-14|20:14:22] 在线人数: 0
+[2016-01-14|20:14:22] 7	1452773662210	角色在线数量:0
+[2016-01-14|20:15:22] 在线人数: 0
+[2016-01-14|20:15:22] 7	1452773722212	角色在线数量:0
+[2016-01-14|20:16:22] 在线人数: 0
+[2016-01-14|20:16:22] 7	1452773782216	角色在线数量:0
+[2016-01-14|20:17:22] 在线人数: 0
+[2016-01-14|20:17:22] 7	1452773842221	角色在线数量:0
+[2016-01-14|20:18:22] 在线人数: 0
+[2016-01-14|20:18:22] 7	1452773902232	角色在线数量:0
+[2016-01-14|20:19:22] 在线人数: 0
+[2016-01-14|20:19:22] 7	1452773962239	角色在线数量:0
+[2016-01-14|20:20:22] 在线人数: 0
+[2016-01-14|20:20:22] 7	1452774022243	角色在线数量:0
+[2016-01-14|20:21:22] 在线人数: 0
+[2016-01-14|20:21:22] 7	1452774082255	角色在线数量:0
+[2016-01-14|20:22:22] 在线人数: 0
+[2016-01-14|20:22:22] 7	1452774142256	角色在线数量:0
+[2016-01-14|20:23:22] 在线人数: 0
+[2016-01-14|20:23:22] 7	1452774202266	角色在线数量:0
+[2016-01-14|20:24:22] 在线人数: 0
+[2016-01-14|20:24:22] 7	1452774262281	角色在线数量:0
+[2016-01-14|20:25:22] 在线人数: 0
+[2016-01-14|20:25:22] 7	1452774322293	角色在线数量:0
+[2016-01-14|20:26:22] 在线人数: 0
+[2016-01-14|20:26:22] 7	1452774382304	角色在线数量:0
+[2016-01-14|20:27:22] 在线人数: 0
+[2016-01-14|20:27:22] 7	1452774442306	角色在线数量:0
+[2016-01-14|20:28:22] 在线人数: 0
+[2016-01-14|20:28:22] 7	1452774502312	角色在线数量:0
+[2016-01-14|20:29:22] 在线人数: 0
+[2016-01-14|20:29:22] 7	1452774562321	角色在线数量:0
+[2016-01-14|20:30:22] 在线人数: 0
+[2016-01-14|20:30:22] 7	1452774622323	角色在线数量:0
+[2016-01-14|20:31:22] 在线人数: 0
+[2016-01-14|20:31:22] 7	1452774682333	角色在线数量:0
+[2016-01-14|20:32:22] 在线人数: 0
+[2016-01-14|20:32:22] 7	1452774742347	角色在线数量:0
+[2016-01-14|20:33:22] 在线人数: 0
+[2016-01-14|20:33:22] 7	1452774802349	角色在线数量:0
+[2016-01-14|20:34:22] 在线人数: 0
+[2016-01-14|20:34:22] 7	1452774862357	角色在线数量:0
+[2016-01-14|20:35:22] 在线人数: 0
+[2016-01-14|20:35:22] 7	1452774922359	角色在线数量:0
+[2016-01-14|20:36:22] 在线人数: 0
+[2016-01-14|20:36:22] 7	1452774982366	角色在线数量:0
+[2016-01-14|20:37:22] 在线人数: 0
+[2016-01-14|20:37:22] 7	1452775042367	角色在线数量:0
+[2016-01-14|20:38:22] 在线人数: 0
+[2016-01-14|20:38:22] 7	1452775102367	角色在线数量:0
+[2016-01-14|20:39:22] 在线人数: 0
+[2016-01-14|20:39:22] 7	1452775162373	角色在线数量:0
+[2016-01-14|20:40:22] 在线人数: 0
+[2016-01-14|20:40:22] 7	1452775222381	角色在线数量:0
+[2016-01-14|20:41:22] 在线人数: 0
+[2016-01-14|20:41:22] 7	1452775282382	角色在线数量:0
+[2016-01-14|20:42:22] 在线人数: 0
+[2016-01-14|20:42:22] 7	1452775342382	角色在线数量:0
+[2016-01-14|20:43:22] 在线人数: 0
+[2016-01-14|20:43:22] 7	1452775402383	角色在线数量:0
+[2016-01-14|20:44:22] 在线人数: 0
+[2016-01-14|20:44:22] 7	1452775462383	角色在线数量:0
+[2016-01-14|20:45:22] 在线人数: 0
+[2016-01-14|20:45:22] 7	1452775522384	角色在线数量:0
+[2016-01-14|20:46:22] 在线人数: 0
+[2016-01-14|20:46:22] 7	1452775582384	角色在线数量:0
+[2016-01-14|20:47:22] 在线人数: 0
+[2016-01-14|20:47:22] 7	1452775642385	角色在线数量:0
+[2016-01-14|20:48:22] 在线人数: 0
+[2016-01-14|20:48:22] 7	1452775702394	角色在线数量:0
+[2016-01-14|20:49:22] 在线人数: 0
+[2016-01-14|20:49:22] 7	1452775762405	角色在线数量:0
+[2016-01-14|20:49:24] account:doter
+[2016-01-14|20:49:24] AccountID[77][Login Ok]
+[2016-01-14|20:49:24] createWorldPlayer ID[16]Level[1] load from db
+[2016-01-14|20:49:24] udid:doter
+[2016-01-14|20:49:24] com.app.empire.world.exception.PlayerDataException: 物品不存在
+[2016-01-14|20:50:22] 在线人数: 1
+[2016-01-14|20:50:22] 7	1452775822406	角色在线数量:1
+[2016-01-14|20:50:24] SessionClosed SessionId:1----playerId:16
+[2016-01-14|20:50:24] 3	1452775824796	玩家退出playerId:16	1	1076818373
+[2016-01-14|20:50:24] 注销保存玩家信息：id=16,name=doter,level=1
+[2016-01-14|20:50:24] SessionClosedHandler-----Time:63
+[2016-01-14|20:51:22] 在线人数: 0
+[2016-01-14|20:51:22] 7	1452775882416	角色在线数量:0
+[2016-01-14|20:52:22] 在线人数: 0
+[2016-01-14|20:52:22] 7	1452775942428	角色在线数量:0
+[2016-01-14|20:53:22] 在线人数: 0
+[2016-01-14|20:53:22] 7	1452776002434	角色在线数量:0
+[2016-01-14|20:54:22] 在线人数: 0
+[2016-01-14|20:54:22] 7	1452776062434	角色在线数量:0
+[2016-01-14|20:54:45] account:doter
+[2016-01-14|20:54:45] AccountID[77][Login Ok]
+[2016-01-14|20:54:45] createWorldPlayer ID[16]Level[1] load from db
+[2016-01-14|20:54:45] udid:doter
+[2016-01-14|20:54:45] com.app.empire.world.exception.PlayerDataException: 物品不存在
+[2016-01-14|20:54:58] account:doter
+[2016-01-14|20:54:58] 3	1452776098307	玩家退出playerId:16	1	1077139068
+[2016-01-14|20:54:58] 注销保存玩家信息：id=16,name=doter,level=1
+[2016-01-14|20:54:58] AccountID[77][Login Ok]
+[2016-01-14|20:54:58] createWorldPlayer ID[16]Level[1] load from db
+[2016-01-14|20:54:58] udid:doter
+[2016-01-14|20:54:58] com.app.empire.world.exception.PlayerDataException: 物品不存在
+[2016-01-14|20:55:22] 在线人数: 1
+[2016-01-14|20:55:22] 7	1452776122448	角色在线数量:1
+[2016-01-14|20:55:43] account:doter
+[2016-01-14|20:55:43] 3	1452776143870	玩家退出playerId:16	1	1077152275
+[2016-01-14|20:55:43] 注销保存玩家信息：id=16,name=doter,level=1
+[2016-01-14|20:55:43] AccountID[77][Login Ok]
+[2016-01-14|20:55:43] createWorldPlayer ID[16]Level[1] load from db
+[2016-01-14|20:55:43] udid:doter
+[2016-01-14|20:55:43] com.app.empire.world.exception.PlayerDataException: 物品不存在
+[2016-01-14|20:56:22] 在线人数: 1
+[2016-01-14|20:56:22] 7	1452776182450	角色在线数量:1
+[2016-01-14|20:56:44] SessionClosed SessionId:4----playerId:16
+[2016-01-14|20:56:44] 3	1452776204275	玩家退出playerId:16	1	1077197838
+[2016-01-14|20:56:44] 注销保存玩家信息：id=16,name=doter,level=1
+[2016-01-14|20:57:06] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-01-14|20:57:06] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-01-14|20:57:06] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYN_Move 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYN_Attack 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-01-14|20:57:06] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-01-14|20:57:06] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-01-14|20:57:06] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-01-14|20:57:06] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 EQUIP_MergeAndWearEquip 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 EQUIP_MergeAndWearEquipOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PVP_RoomPlayerInfo 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PVP_GetRoomListOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PVP_CreateRoomOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PVP_IntoRoomOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 PVP_OutRoomOk 对应的protocol handler
+[2016-01-14|20:57:06] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadComplete
+[2016-01-14|20:57:06] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadCompleteOk
+[2016-01-14|20:57:06] 没有找到 PVP_StartStatus 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 STORE_MysticStore 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 STORE_MysticStoreOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-01-14|20:57:06] 没有找到 TEST_Test 对应的protocol handler
+[2016-01-14|20:57:07] MLog clients using log4j logging.
+[2016-01-14|20:57:07] Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2016-01-14|20:57:07] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[2016-01-14|20:57:07] HHH000412: Hibernate Core {4.3.9.Final}
+[2016-01-14|20:57:07] HHH000206: hibernate.properties not found
+[2016-01-14|20:57:07] HHH000021: Bytecode provider name : javassist
+[2016-01-14|20:57:07] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.log.xml
+[2016-01-14|20:57:07] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-14|20:57:07] HHH000041: Configured SessionFactory: null
+[2016-01-14|20:57:07] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9ehtdvov1f9uaq5|4e005207, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9ehtdvov1f9uaq5|4e005207, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://192.168.1.12/s_log_1?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-14|20:57:08] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-14|20:57:08] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-14|20:57:08] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-14|20:57:08] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-14|20:57:08] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.gameConfig.xml
+[2016-01-14|20:57:08] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-14|20:57:08] HHH000041: Configured SessionFactory: null
+[2016-01-14|20:57:08] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9ehtdvov1f9uaq5|24f4eff, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9ehtdvov1f9uaq5|24f4eff, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://192.168.1.12/game_config?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-14|20:57:08] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-14|20:57:08] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-14|20:57:08] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-14|20:57:08] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-14|20:57:10] connect auth
+[2016-01-14|20:57:10] Account auth connected
+[2016-01-14|20:57:10] AccountService connected
+[2016-01-14|20:57:10] BattleService connected
+[2016-01-14|20:57:10] NearbyService connected
+[2016-01-14|20:57:10] 游戏世界服务器启动...
+[2016-01-14|20:57:28] account:doter
+[2016-01-14|20:57:28] AccountID[77][Login Ok]
+[2016-01-14|20:57:28] createWorldPlayer ID[16]Level[1] load from db
+[2016-01-14|20:57:28] udid:doter
+[2016-01-14|20:57:28] com.app.empire.world.exception.PlayerDataException: 物品不存在
+[2016-01-14|20:57:42] SessionClosed SessionId:1----playerId:16
+[2016-01-14|20:57:42] 3	1452776262663	玩家退出playerId:16	1	1077302312
+[2016-01-14|20:57:42] 注销保存玩家信息：id=16,name=doter,level=1
+[2016-01-14|20:58:10] 在线人数: 0
+[2016-01-14|20:58:10] 7	1452776290560	角色在线数量:0
+[2016-01-14|20:58:15] account:doter
+[2016-01-14|20:58:15] AccountID[77][Login Ok]
+[2016-01-14|20:58:15] createWorldPlayer ID[16]Level[1] load from db
+[2016-01-14|20:58:15] udid:doter
+[2016-01-14|20:58:15] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-01-14|20:59:07] SessionClosed SessionId:2----playerId:16
+[2016-01-14|20:59:07] 注销保存玩家信息：id=16,name=doter,level=1
+[2016-01-14|20:59:07] 3	1452776347330	玩家退出playerId:16	1	1077348981
+[2016-01-14|20:59:10] 在线人数: 0
+[2016-01-14|20:59:10] 7	1452776350564	角色在线数量:0
+[2016-01-14|20:59:11] account:doter
+[2016-01-14|20:59:11] AccountID[77][Login Ok]
+[2016-01-14|20:59:11] createWorldPlayer ID[16]Level[1] load from db
+[2016-01-14|20:59:11] udid:doter
+[2016-01-14|21:00:10] 在线人数: 1
+[2016-01-14|21:00:10] 7	1452776410564	角色在线数量:1
+[2016-01-14|21:00:11] SessionClosed SessionId:3----playerId:16
+[2016-01-14|21:00:11] 3	1452776411853	玩家退出playerId:16	1	1077405426
+[2016-01-14|21:00:11] 注销保存玩家信息：id=16,name=doter,level=1
+[2016-01-14|21:01:10] 在线人数: 0
+[2016-01-14|21:01:10] 7	1452776470565	角色在线数量:0
+[2016-01-14|21:01:42] com.app.empire.world.exception.PlayerDataException: 物品不能使用
+[2016-01-14|21:02:10] 在线人数: 0
+[2016-01-14|21:02:10] 7	1452776530574	角色在线数量:0
+[2016-01-14|21:02:11] account:doter
+[2016-01-14|21:02:11] AccountID[77][Login Ok]
+[2016-01-14|21:02:11] createWorldPlayer ID[16]Level[1] load from db
+[2016-01-14|21:02:11] udid:doter
+[2016-01-14|21:02:17] java.lang.NullPointerException
+[2016-01-14|21:02:33] SessionClosed SessionId:4----playerId:16
+[2016-01-14|21:02:33] 3	1452776553397	玩家退出playerId:16	1	1077585234
+[2016-01-14|21:02:33] 注销保存玩家信息：id=16,name=doter,level=1
+[2016-01-14|21:03:10] 在线人数: 0
+[2016-01-14|21:03:10] 7	1452776590583	角色在线数量:0
+[2016-01-14|21:04:10] 在线人数: 0
+[2016-01-14|21:04:10] 7	1452776650592	角色在线数量:0
+[2016-01-14|21:05:10] 在线人数: 0
+[2016-01-14|21:05:10] 7	1452776710596	角色在线数量:0
+[2016-01-14|21:05:25] account:doter
+[2016-01-14|21:05:25] AccountID[77][Login Ok]
+[2016-01-14|21:05:25] createWorldPlayer ID[16]Level[1] load from db
+[2016-01-14|21:05:25] udid:doter
+[2016-01-14|21:06:02] java.lang.NullPointerException
+[2016-01-14|21:06:05] SessionClosed SessionId:5----playerId:16
+[2016-01-14|21:06:05] 3	1452776765145	玩家退出playerId:16	1	1077779300
+[2016-01-14|21:06:05] 注销保存玩家信息：id=16,name=doter,level=1
+[2016-01-14|21:06:10] 在线人数: 0
+[2016-01-14|21:06:10] 7	1452776770597	角色在线数量:0
+[2016-01-14|21:06:45] account:doter
+[2016-01-14|21:06:45] AccountID[77][Login Ok]
+[2016-01-14|21:06:45] createWorldPlayer ID[16]Level[1] load from db
+[2016-01-14|21:06:45] udid:doter
+[2016-01-14|21:07:10] 在线人数: 1
+[2016-01-14|21:07:10] 7	1452776830609	角色在线数量:1
+[2016-01-14|21:07:12] java.lang.NullPointerException
+[2016-01-14|21:08:05] SessionClosed SessionId:6----playerId:16
+[2016-01-14|21:08:05] 3	1452776885657	玩家退出playerId:16	1	1077859306
+[2016-01-14|21:08:05] 注销保存玩家信息：id=16,name=doter,level=1
+[2016-01-14|21:08:09] account:doter
+[2016-01-14|21:08:09] AccountID[77][Login Ok]
+[2016-01-14|21:08:09] createWorldPlayer ID[16]Level[1] load from db
+[2016-01-14|21:08:09] udid:doter
+[2016-01-14|21:08:10] 在线人数: 1
+[2016-01-14|21:08:10] 7	1452776890612	角色在线数量:1
+[2016-01-14|21:08:32] UseGoodsHandler-----Time:22446
+[2016-01-14|21:09:10] 在线人数: 1
+[2016-01-14|21:09:10] 7	1452776950622	角色在线数量:1
+[2016-01-14|21:09:32] SessionClosed SessionId:7----playerId:16
+[2016-01-14|21:09:32] 3	1452776972860	玩家退出playerId:16	2	1077943938
+[2016-01-14|21:09:32] 注销保存玩家信息：id=16,name=doter,level=2
+[2016-01-14|21:10:10] 在线人数: 0
+[2016-01-14|21:10:10] 7	1452777010631	角色在线数量:0
+[2016-01-14|21:11:10] 在线人数: 0
+[2016-01-14|21:11:10] 7	1452777070633	角色在线数量:0
+[2016-01-14|21:12:10] 在线人数: 0
+[2016-01-14|21:12:10] 7	1452777130633	角色在线数量:0
+[2016-01-14|21:13:10] 在线人数: 0
+[2016-01-14|21:13:10] 7	1452777190648	角色在线数量:0
+[2016-01-14|21:14:10] 在线人数: 0
+[2016-01-14|21:14:10] 7	1452777250662	角色在线数量:0
+[2016-01-14|21:15:10] 在线人数: 0
+[2016-01-14|21:15:10] 7	1452777310678	角色在线数量:0
+[2016-01-14|21:15:38] account:luo
+[2016-01-14|21:15:38] AccountID[38][Login Ok]
+[2016-01-14|21:15:43] createWorldPlayer ID[5]Level[1] load from db
+[2016-01-14|21:15:43] udid:luo
+[2016-01-14|21:16:08] SessionClosed SessionId:8----playerId:5
+[2016-01-14|21:16:08] 3	1452777368328	玩家退出playerId:5	1	1078396955
+[2016-01-14|21:16:08] 注销保存玩家信息：id=5,name=abc,level=1
+[2016-01-14|21:16:10] 在线人数: 0
+[2016-01-14|21:16:10] 7	1452777370688	角色在线数量:0
+[2016-01-14|21:16:32] account:luo
+[2016-01-14|21:16:32] AccountID[38][Login Ok]
+[2016-01-14|21:16:35] createWorldPlayer ID[5]Level[1] load from db
+[2016-01-14|21:16:35] udid:luo
+[2016-01-14|21:17:10] 在线人数: 1
+[2016-01-14|21:17:10] 7	1452777430701	角色在线数量:1
+[2016-01-14|21:17:25] account:doter
+[2016-01-14|21:17:25] AccountID[77][Login Ok]
+[2016-01-14|21:17:25] createWorldPlayer ID[16]Level[2] load from db
+[2016-01-14|21:17:25] udid:doter
+[2016-01-14|21:17:27] UseGoodsHandler-----Time:2734
+[2016-01-14|21:17:43] SessionClosed SessionId:10----playerId:16
+[2016-01-14|21:17:43] 3	1452777463161	玩家退出playerId:16	3	1078499152
+[2016-01-14|21:17:43] 注销保存玩家信息：id=16,name=doter,level=3
+[2016-01-14|21:18:01] SessionClosed SessionId:9----playerId:5
+[2016-01-14|21:18:01] 3	1452777481820	玩家退出playerId:5	1	1078449800
+[2016-01-14|21:18:01] 注销保存玩家信息：id=5,name=abc,level=1
+[2016-01-14|21:18:10] 在线人数: 0
+[2016-01-14|21:18:10] 7	1452777490713	角色在线数量:0
+[2016-01-14|21:18:42] account:luo
+[2016-01-14|21:18:42] AccountID[38][Login Ok]
+[2016-01-14|21:18:51] createWorldPlayer ID[5]Level[1] load from db
+[2016-01-14|21:18:51] udid:luo
+[2016-01-14|21:19:10] 在线人数: 1
+[2016-01-14|21:19:10] 7	1452777550717	角色在线数量:1
+[2016-01-14|21:19:28] SessionClosed SessionId:11----playerId:5
+[2016-01-14|21:19:28] 3	1452777568116	玩家退出playerId:5	1	1078585653
+[2016-01-14|21:19:28] 注销保存玩家信息：id=5,name=abc,level=1
+[2016-01-14|21:20:02] account:luo
+[2016-01-14|21:20:02] AccountID[38][Login Ok]
+[2016-01-14|21:20:07] createWorldPlayer ID[5]Level[1] load from db
+[2016-01-14|21:20:07] udid:luo
+[2016-01-14|21:20:10] 在线人数: 1
+[2016-01-14|21:20:10] 7	1452777610732	角色在线数量:1
+[2016-01-14|21:21:08] SessionClosed SessionId:12----playerId:5
+[2016-01-14|21:21:08] 3	1452777668135	玩家退出playerId:5	1	1078661721
+[2016-01-14|21:21:08] 注销保存玩家信息：id=5,name=abc,level=1
+[2016-01-14|21:21:10] 在线人数: 0
+[2016-01-14|21:21:10] 7	1452777670743	角色在线数量:0
+[2016-01-14|21:21:33] account:doter
+[2016-01-14|21:21:33] AccountID[77][Login Ok]
+[2016-01-14|21:21:36] createWorldPlayer ID[16]Level[3] load from db
+[2016-01-14|21:21:36] udid:doter
+[2016-01-14|21:21:49] com.app.empire.world.exception.PlayerDataException: 物品不存在
+[2016-01-14|21:22:10] 在线人数: 1
+[2016-01-14|21:22:10] 7	1452777730746	角色在线数量:1
+[2016-01-14|21:23:00] SessionClosed SessionId:13----playerId:16
+[2016-01-14|21:23:00] 3	1452777780133	玩家退出playerId:16	3	1078750799
+[2016-01-14|21:23:00] 注销保存玩家信息：id=16,name=doter,level=3
+[2016-01-14|21:23:10] 在线人数: 0
+[2016-01-14|21:23:10] 7	1452777790747	角色在线数量:0
+[2016-01-14|21:23:25] account:doter
+[2016-01-14|21:23:25] AccountID[77][Login Ok]
+[2016-01-14|21:23:28] createWorldPlayer ID[16]Level[3] load from db
+[2016-01-14|21:23:28] udid:doter
+[2016-01-14|21:24:10] 在线人数: 1
+[2016-01-14|21:24:10] 7	1452777850748	角色在线数量:1
+[2016-01-14|21:24:41] SessionClosed SessionId:14----playerId:16
+[2016-01-14|21:24:41] 3	1452777881828	玩家退出playerId:16	4	1078862723
+[2016-01-14|21:24:41] 注销保存玩家信息：id=16,name=doter,level=4
+[2016-01-14|21:25:10] 在线人数: 0
+[2016-01-14|21:25:10] 7	1452777910762	角色在线数量:0
+[2016-01-14|21:26:10] 在线人数: 0
+[2016-01-14|21:26:10] 7	1452777970765	角色在线数量:0
+[2016-01-14|21:27:10] 在线人数: 0
+[2016-01-14|21:27:10] 7	1452778030766	角色在线数量:0
+[2016-01-14|21:28:10] 在线人数: 0
+[2016-01-14|21:28:10] 7	1452778090766	角色在线数量:0
+[2016-01-14|21:29:10] 在线人数: 0
+[2016-01-14|21:29:10] 7	1452778150767	角色在线数量:0
+[2016-01-14|21:29:16] account:doter
+[2016-01-14|21:29:16] AccountID[77][Login Ok]
+[2016-01-14|21:29:20] createWorldPlayer ID[16]Level[4] load from db
+[2016-01-14|21:29:20] udid:doter
+[2016-01-14|21:30:10] 在线人数: 1
+[2016-01-14|21:30:10] 7	1452778210773	角色在线数量:1
+[2016-01-14|21:30:40] SessionClosed SessionId:15----playerId:16
+[2016-01-14|21:30:40] 3	1452778240235	玩家退出playerId:16	4	1079214054
+[2016-01-14|21:30:40] 注销保存玩家信息：id=16,name=doter,level=4
+[2016-01-14|21:31:10] 在线人数: 0
+[2016-01-14|21:31:10] 7	1452778270775	角色在线数量:0
+[2016-01-14|21:31:16] account:doter
+[2016-01-14|21:31:16] AccountID[77][Login Ok]
+[2016-01-14|21:31:20] createWorldPlayer ID[16]Level[4] load from db
+[2016-01-14|21:31:20] udid:doter
+[2016-01-14|21:32:10] 在线人数: 1
+[2016-01-14|21:32:10] 7	1452778330783	角色在线数量:1
+[2016-01-14|21:32:33] SessionClosed SessionId:16----playerId:16
+[2016-01-14|21:32:33] 3	1452778353278	玩家退出playerId:16	4	1079334892
+[2016-01-14|21:32:33] 注销保存玩家信息：id=16,name=doter,level=4
+[2016-01-14|21:32:58] account:doter
+[2016-01-14|21:32:58] AccountID[77][Login Ok]
+[2016-01-14|21:33:01] createWorldPlayer ID[16]Level[4] load from db
+[2016-01-14|21:33:01] udid:doter
+[2016-01-14|21:33:10] 在线人数: 1
+[2016-01-14|21:33:10] 7	1452778390789	角色在线数量:1
+[2016-01-14|21:34:10] 在线人数: 1
+[2016-01-14|21:34:10] 7	1452778450790	角色在线数量:1
+[2016-01-14|21:34:10] SessionClosed SessionId:17----playerId:16
+[2016-01-14|21:34:10] 3	1452778450907	玩家退出playerId:16	5	1079435488
+[2016-01-14|21:34:10] 注销保存玩家信息：id=16,name=doter,level=5
+[2016-01-14|21:34:37] account:doter
+[2016-01-14|21:34:37] AccountID[77][Login Ok]
+[2016-01-14|21:34:40] createWorldPlayer ID[16]Level[5] load from db
+[2016-01-14|21:34:40] udid:doter
+[2016-01-14|21:35:10] 在线人数: 1
+[2016-01-14|21:35:10] 7	1452778510790	角色在线数量:1
+[2016-01-14|21:35:27] SessionClosed SessionId:18----playerId:16
+[2016-01-14|21:35:27] 3	1452778527631	玩家退出playerId:16	5	1079534745
+[2016-01-14|21:35:27] 注销保存玩家信息：id=16,name=doter,level=5
+[2016-01-14|21:35:40] account:doter
+[2016-01-14|21:35:40] AccountID[77][Login Ok]
+[2016-01-14|21:35:43] createWorldPlayer ID[16]Level[5] load from db
+[2016-01-14|21:35:43] udid:doter
+[2016-01-14|21:36:10] 在线人数: 1
+[2016-01-14|21:36:10] 7	1452778570791	角色在线数量:1
+[2016-01-14|21:36:51] SessionClosed SessionId:19----playerId:16
+[2016-01-14|21:36:51] 3	1452778611731	玩家退出playerId:16	5	1079597805
+[2016-01-14|21:36:51] 注销保存玩家信息：id=16,name=doter,level=5
+[2016-01-14|21:37:10] 在线人数: 0
+[2016-01-14|21:37:10] 7	1452778630791	角色在线数量:0
+[2016-01-14|21:38:10] 在线人数: 0
+[2016-01-14|21:38:10] 7	1452778690792	角色在线数量:0
+[2016-01-14|21:39:10] 在线人数: 0
+[2016-01-14|21:39:10] 7	1452778750792	角色在线数量:0
+[2016-01-14|21:40:10] 在线人数: 0
+[2016-01-14|21:40:10] 7	1452778810792	角色在线数量:0
+[2016-01-14|21:40:23] account:doter
+[2016-01-14|21:40:23] AccountID[77][Login Ok]
+[2016-01-14|21:40:27] createWorldPlayer ID[16]Level[5] load from db
+[2016-01-14|21:40:27] udid:doter
+[2016-01-14|21:41:10] 在线人数: 1
+[2016-01-14|21:41:10] 7	1452778870793	角色在线数量:1
+[2016-01-14|21:41:39] SessionClosed SessionId:20----playerId:16
+[2016-01-14|21:41:39] 3	1452778899407	玩家退出playerId:16	5	1079881526
+[2016-01-14|21:41:39] 注销保存玩家信息：id=16,name=doter,level=5
+[2016-01-14|21:42:10] 在线人数: 0
+[2016-01-14|21:42:10] 7	1452778930793	角色在线数量:0
+[2016-01-14|21:43:10] 在线人数: 0
+[2016-01-14|21:43:10] 7	1452778990794	角色在线数量:0
+[2016-01-14|21:44:10] 在线人数: 0
+[2016-01-14|21:44:10] 7	1452779050794	角色在线数量:0
+[2016-01-14|21:45:10] 在线人数: 0
+[2016-01-14|21:45:10] 7	1452779110795	角色在线数量:0
+[2016-01-14|21:46:08] account:doter
+[2016-01-14|21:46:08] AccountID[77][Login Ok]
+[2016-01-14|21:46:10] 在线人数: 0
+[2016-01-14|21:46:10] 7	1452779170795	角色在线数量:0
+[2016-01-14|21:46:11] createWorldPlayer ID[16]Level[5] load from db
+[2016-01-14|21:46:11] udid:doter
+[2016-01-14|21:47:10] 在线人数: 1
+[2016-01-14|21:47:10] 7	1452779230796	角色在线数量:1
+[2016-01-14|21:48:10] 在线人数: 1
+[2016-01-14|21:48:10] 7	1452779290796	角色在线数量:1
+[2016-01-14|21:48:54] 玩家增加金币 ：id=16---name=doter,gold=100
+[2016-01-14|21:48:55] 玩家增加金币 ：id=16---name=doter,gold=100
+[2016-01-14|21:48:56] 玩家增加金币 ：id=16---name=doter,gold=100
+[2016-01-14|21:48:58] 玩家增加金币 ：id=16---name=doter,gold=100
+[2016-01-14|21:48:59] 玩家增加金币 ：id=16---name=doter,gold=100
+[2016-01-14|21:49:04] 玩家增加金币 ：id=16---name=doter,gold=100
+[2016-01-14|21:49:10] 在线人数: 1
+[2016-01-14|21:49:10] 7	1452779350797	角色在线数量:1
+[2016-01-14|21:50:04] SessionClosed SessionId:21----playerId:16
+[2016-01-14|21:50:04] 3	1452779404473	玩家退出playerId:16	6	1080225801
+[2016-01-14|21:50:04] 注销保存玩家信息：id=16,name=doter,level=6
+[2016-01-14|21:50:10] 在线人数: 0
+[2016-01-14|21:50:10] 7	1452779410797	角色在线数量:0
+[2016-01-14|21:51:10] 在线人数: 0
+[2016-01-14|21:51:10] 7	1452779470798	角色在线数量:0
+[2016-01-14|21:52:10] 在线人数: 0
+[2016-01-14|21:52:10] 7	1452779530798	角色在线数量:0
+[2016-01-14|21:53:10] 在线人数: 0
+[2016-01-14|21:53:10] 7	1452779590798	角色在线数量:0
+[2016-01-14|21:54:10] 在线人数: 0
+[2016-01-14|21:54:10] 7	1452779650799	角色在线数量:0
+[2016-01-14|21:55:10] 在线人数: 0
+[2016-01-14|21:55:10] 7	1452779710799	角色在线数量:0
+[2016-01-14|21:56:10] 在线人数: 0
+[2016-01-14|21:56:10] 7	1452779770800	角色在线数量:0
+[2016-01-14|21:57:10] 在线人数: 0
+[2016-01-14|21:57:10] 7	1452779830800	角色在线数量:0
+[2016-01-14|21:58:10] 在线人数: 0
+[2016-01-14|21:58:10] 7	1452779890801	角色在线数量:0
+[2016-01-14|21:59:10] 在线人数: 0
+[2016-01-14|21:59:10] 7	1452779950801	角色在线数量:0
+[2016-01-14|22:00:10] 在线人数: 0
+[2016-01-14|22:00:10] 7	1452780010801	角色在线数量:0
+[2016-01-14|22:01:10] 在线人数: 0
+[2016-01-14|22:01:10] 7	1452780070802	角色在线数量:0
+[2016-01-14|22:02:03] account:detor
+[2016-01-14|22:02:03] AccountID[96][Login Ok]
+[2016-01-14|22:02:09] 1	1452780129862	25	detor
+[2016-01-14|22:02:09] createWorldPlayer ID[25]Level[1] load from db
+[2016-01-14|22:02:09] udid:detor
+[2016-01-14|22:02:09] RoleLoginHandler-----Time:251
+[2016-01-14|22:02:10] 在线人数: 1
+[2016-01-14|22:02:10] 7	1452780130814	角色在线数量:1
+[2016-01-14|22:03:10] SessionClosed SessionId:22----playerId:25
+[2016-01-14|22:03:10] 3	1452780190125	玩家退出playerId:25	1	1081183830
+[2016-01-14|22:03:10] 注销保存玩家信息：id=25,name=detor,level=1
+[2016-01-14|22:03:10] 在线人数: 0
+[2016-01-14|22:03:10] 7	1452780190828	角色在线数量:0
+[2016-01-14|22:04:10] 在线人数: 0
+[2016-01-14|22:04:10] 7	1452780250829	角色在线数量:0
+[2016-01-14|22:05:10] 在线人数: 0
+[2016-01-14|22:05:10] 7	1452780310840	角色在线数量:0
+[2016-01-14|22:06:10] 在线人数: 0
+[2016-01-14|22:06:10] 7	1452780370845	角色在线数量:0
+[2016-01-14|22:06:13] account:detor
+[2016-01-14|22:06:13] AccountID[96][Login Ok]
+[2016-01-14|22:06:18] createWorldPlayer ID[25]Level[1] load from db
+[2016-01-14|22:06:18] udid:detor
+[2016-01-14|22:06:28] SessionClosed SessionId:23----playerId:25
+[2016-01-14|22:06:28] 3	1452780388744	玩家退出playerId:25	1	1081432552
+[2016-01-14|22:06:28] 注销保存玩家信息：id=25,name=detor,level=1
+[2016-01-14|22:06:45] account:detor
+[2016-01-14|22:06:45] AccountID[96][Login Ok]
+[2016-01-14|22:06:50] createWorldPlayer ID[25]Level[1] load from db
+[2016-01-14|22:06:50] udid:detor
+[2016-01-14|22:07:04] SessionClosed SessionId:24----playerId:25
+[2016-01-14|22:07:04] 3	1452780424953	玩家退出playerId:25	1	1081464769
+[2016-01-14|22:07:04] 注销保存玩家信息：id=25,name=detor,level=1
+[2016-01-14|22:07:10] 在线人数: 0
+[2016-01-14|22:07:10] 7	1452780430845	角色在线数量:0
+[2016-01-14|22:07:24] account:detor
+[2016-01-14|22:07:24] AccountID[96][Login Ok]
+[2016-01-14|22:07:34] SessionClosed SessionId:25----playerId:-1
+[2016-01-14|22:07:34] 用户下线异常2
+[2016-01-14|22:07:48] account:doter
+[2016-01-14|22:07:48] AccountID[77][Login Ok]
+[2016-01-14|22:07:57] createWorldPlayer ID[16]Level[6] load from db
+[2016-01-14|22:07:57] udid:doter
+[2016-01-14|22:08:10] 在线人数: 1
+[2016-01-14|22:08:10] 7	1452780490854	角色在线数量:1
+[2016-01-14|22:09:00] 玩家增加金币 ：id=16---name=doter,gold=10000
+[2016-01-14|22:09:10] 在线人数: 1
+[2016-01-14|22:09:10] 7	1452780550857	角色在线数量:1
+[2016-01-14|22:09:18] 玩家增加金币 ：id=16---name=doter,gold=100
+[2016-01-14|22:09:20] 玩家增加金币 ：id=16---name=doter,gold=100
+[2016-01-14|22:09:20] 玩家增加金币 ：id=16---name=doter,gold=100
+[2016-01-14|22:09:29] 玩家增加金币 ：id=16---name=doter,gold=1000
+[2016-01-14|22:09:30] 玩家增加金币 ：id=16---name=doter,gold=1000
+[2016-01-14|22:09:33] 玩家增加金币 ：id=16---name=doter,gold=1000
+[2016-01-14|22:09:35] 玩家增加金币 ：id=16---name=doter,gold=1000
+[2016-01-14|22:09:35] 玩家增加金币 ：id=16---name=doter,gold=1000
+[2016-01-14|22:09:38] com.app.empire.world.exception.PlayerDataException: 物品不存在
+[2016-01-14|22:10:07] SessionClosed SessionId:26----playerId:16
+[2016-01-14|22:10:07] 3	1452780607490	玩家退出playerId:16	6	1081531913
+[2016-01-14|22:10:07] 注销保存玩家信息：id=16,name=doter,level=6
+[2016-01-14|22:10:10] 在线人数: 0
+[2016-01-14|22:10:10] 7	1452780610864	角色在线数量:0
+[2016-01-14|22:11:05] SessionClosed SessionId:27----playerId:-1
+[2016-01-14|22:11:05] 用户下线异常2
+[2016-01-14|22:11:10] 在线人数: 0
+[2016-01-14|22:11:10] 7	1452780670878	角色在线数量:0
+[2016-01-14|22:12:10] 在线人数: 0
+[2016-01-14|22:12:10] 7	1452780730884	角色在线数量:0
+[2016-01-14|22:13:10] 在线人数: 0
+[2016-01-14|22:13:10] 7	1452780790892	角色在线数量:0
+[2016-01-14|22:14:10] 在线人数: 0
+[2016-01-14|22:14:10] 7	1452780850900	角色在线数量:0
+[2016-01-14|22:14:45] account:doter
+[2016-01-14|22:14:45] AccountID[77][Login Ok]
+[2016-01-14|22:14:45] createWorldPlayer ID[16]Level[6] load from db
+[2016-01-14|22:14:45] udid:doter
+[2016-01-14|22:14:45] com.app.empire.world.exception.PlayerDataException: 物品不存在
+[2016-01-14|22:15:29] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-01-14|22:15:29] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-01-14|22:15:29] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYN_Move 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYN_Attack 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-01-14|22:15:29] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-01-14|22:15:29] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-01-14|22:15:29] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-01-14|22:15:29] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 EQUIP_MergeAndWearEquip 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 EQUIP_MergeAndWearEquipOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PVP_RoomPlayerInfo 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PVP_GetRoomListOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PVP_CreateRoomOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PVP_IntoRoomOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 PVP_OutRoomOk 对应的protocol handler
+[2016-01-14|22:15:29] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadComplete
+[2016-01-14|22:15:29] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadCompleteOk
+[2016-01-14|22:15:29] 没有找到 PVP_StartStatus 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 STORE_MysticStore 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 STORE_MysticStoreOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-01-14|22:15:29] 没有找到 TEST_Test 对应的protocol handler
+[2016-01-14|22:15:30] MLog clients using log4j logging.
+[2016-01-14|22:15:31] Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2016-01-14|22:15:31] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[2016-01-14|22:15:31] HHH000412: Hibernate Core {4.3.9.Final}
+[2016-01-14|22:15:31] HHH000206: hibernate.properties not found
+[2016-01-14|22:15:31] HHH000021: Bytecode provider name : javassist
+[2016-01-14|22:15:31] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.log.xml
+[2016-01-14|22:15:31] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-14|22:15:31] HHH000041: Configured SessionFactory: null
+[2016-01-14|22:15:31] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9ehw6ow0qx85co|77584abf, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9ehw6ow0qx85co|77584abf, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://192.168.1.12/s_log_1?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-14|22:15:31] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-14|22:15:31] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-14|22:15:31] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-14|22:15:31] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-14|22:15:31] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.gameConfig.xml
+[2016-01-14|22:15:31] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-14|22:15:31] HHH000041: Configured SessionFactory: null
+[2016-01-14|22:15:31] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9ehw6ow0qx85co|51e12a3a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9ehw6ow0qx85co|51e12a3a, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://192.168.1.12/game_config?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-14|22:15:31] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-14|22:15:31] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-14|22:15:31] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-14|22:15:31] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-14|22:15:33] connect auth
+[2016-01-14|22:15:34] Account auth connected
+[2016-01-14|22:15:34] AccountService connected
+[2016-01-14|22:15:34] BattleService connected
+[2016-01-14|22:15:34] NearbyService connected
+[2016-01-14|22:15:34] 游戏世界服务器启动...
+[2016-01-14|22:15:40] account:doter
+[2016-01-14|22:15:40] AccountID[77][Login Ok]
+[2016-01-14|22:15:40] createWorldPlayer ID[16]Level[6] load from db
+[2016-01-14|22:15:40] udid:doter
+[2016-01-14|22:16:10] com.app.empire.world.exception.PlayerDataException: 物品不存在
+[2016-01-14|22:16:33] 在线人数: 1
+[2016-01-14|22:16:34] 7	1452780994005	角色在线数量:1
+[2016-01-14|22:17:10] SessionClosed SessionId:1----playerId:16
+[2016-01-14|22:17:10] 3	1452781030808	玩家退出playerId:16	6	1081994012
+[2016-01-14|22:17:10] 注销保存玩家信息：id=16,name=doter,level=6
+[2016-01-14|22:17:34] 在线人数: 0
+[2016-01-14|22:17:34] 7	1452781054016	角色在线数量:0
+[2016-01-14|22:18:34] 在线人数: 0
+[2016-01-14|22:18:34] 7	1452781114023	角色在线数量:0
+[2016-01-14|22:19:34] 在线人数: 0
+[2016-01-14|22:19:34] 7	1452781174030	角色在线数量:0
+[2016-01-14|22:20:34] 在线人数: 0
+[2016-01-14|22:20:34] 7	1452781234036	角色在线数量:0
+[2016-01-14|22:21:34] 在线人数: 0
+[2016-01-14|22:21:34] 7	1452781294038	角色在线数量:0
+[2016-01-14|22:22:34] 在线人数: 0
+[2016-01-14|22:22:34] 7	1452781354046	角色在线数量:0
+[2016-01-14|22:23:34] 在线人数: 0
+[2016-01-14|22:23:34] 7	1452781414059	角色在线数量:0
+[2016-01-14|22:24:34] 在线人数: 0
+[2016-01-14|22:24:34] 7	1452781474074	角色在线数量:0
+[2016-01-14|22:25:34] 在线人数: 0
+[2016-01-14|22:25:34] 7	1452781534076	角色在线数量:0
+[2016-01-14|22:26:34] 在线人数: 0
+[2016-01-14|22:26:34] 7	1452781594085	角色在线数量:0
+[2016-01-14|22:27:34] 在线人数: 0
+[2016-01-14|22:27:34] 7	1452781654090	角色在线数量:0
+[2016-01-14|22:28:34] 在线人数: 0
+[2016-01-14|22:28:34] 7	1452781714103	角色在线数量:0
+[2016-01-14|22:29:34] 在线人数: 0
+[2016-01-14|22:29:34] 7	1452781774114	角色在线数量:0
+[2016-01-14|22:30:34] 在线人数: 0
+[2016-01-14|22:30:34] 7	1452781834128	角色在线数量:0
+[2016-01-14|22:31:34] 在线人数: 0
+[2016-01-14|22:31:34] 7	1452781894140	角色在线数量:0
+[2016-01-14|22:32:34] 在线人数: 0
+[2016-01-14|22:32:34] 7	1452781954154	角色在线数量:0
+[2016-01-14|22:33:34] 在线人数: 0
+[2016-01-14|22:33:34] 7	1452782014166	角色在线数量:0
+[2016-01-14|22:34:34] 在线人数: 0
+[2016-01-14|22:34:34] 7	1452782074176	角色在线数量:0
+[2016-01-14|22:35:34] 在线人数: 0
+[2016-01-14|22:35:34] 7	1452782134189	角色在线数量:0
+[2016-01-14|22:36:34] 在线人数: 0
+[2016-01-14|22:36:34] 7	1452782194199	角色在线数量:0
+[2016-01-14|22:37:34] 在线人数: 0
+[2016-01-14|22:37:34] 7	1452782254206	角色在线数量:0
+[2016-01-14|22:38:34] 在线人数: 0
+[2016-01-14|22:38:34] 7	1452782314210	角色在线数量:0
+[2016-01-14|22:39:34] 在线人数: 0
+[2016-01-14|22:39:34] 7	1452782374210	角色在线数量:0
+[2016-01-14|22:40:34] 在线人数: 0
+[2016-01-14|22:40:34] 7	1452782434225	角色在线数量:0
+[2016-01-14|22:41:34] 在线人数: 0
+[2016-01-14|22:41:34] 7	1452782494226	角色在线数量:0
+[2016-01-14|22:42:34] 在线人数: 0
+[2016-01-14|22:42:34] 7	1452782554241	角色在线数量:0
+[2016-01-14|22:43:34] 在线人数: 0
+[2016-01-14|22:43:34] 7	1452782614243	角色在线数量:0
+[2016-01-14|22:44:34] 在线人数: 0
+[2016-01-14|22:44:34] 7	1452782674248	角色在线数量:0
+[2016-01-14|22:45:34] 在线人数: 0
+[2016-01-14|22:45:34] 7	1452782734262	角色在线数量:0
+[2016-01-14|22:46:34] 在线人数: 0
+[2016-01-14|22:46:34] 7	1452782794276	角色在线数量:0
+[2016-01-14|22:47:34] 在线人数: 0
+[2016-01-14|22:47:34] 7	1452782854283	角色在线数量:0
+[2016-01-14|22:48:34] 在线人数: 0
+[2016-01-14|22:48:34] 7	1452782914286	角色在线数量:0
+[2016-01-14|22:49:34] 在线人数: 0
+[2016-01-14|22:49:34] 7	1452782974294	角色在线数量:0

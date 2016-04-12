@@ -1,0 +1,559 @@
+[2014-03-24|10:21:50] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@e70e30: display name [org.springframework.context.support.ClassPathXmlApplicationContext@e70e30]; startup date [Mon Mar 24 10:21:50 CST 2014]; root of context hierarchy
+[2014-03-24|10:21:50] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-24|10:21:50] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@e70e30]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1014e21
+[2014-03-24|10:21:50] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1014e21: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-24|10:21:50] Hibernate Annotations 3.3.0.GA
+[2014-03-24|10:21:50] Hibernate 3.2.6
+[2014-03-24|10:21:50] hibernate.properties not found
+[2014-03-24|10:21:50] Bytecode provider name : cglib
+[2014-03-24|10:21:50] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-24|10:21:50] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-24|10:21:51] Configured SessionFactory: null
+[2014-03-24|10:21:51] Building new Hibernate SessionFactory
+[2014-03-24|10:21:51] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-24|10:21:51] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-24|10:21:51] Hibernate Validator not found: ignoring
+[2014-03-24|10:21:51] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-24|10:21:51] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-24|10:21:51] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-24|10:21:51] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-24|10:21:51] Using default transaction strategy (direct JDBC transactions)
+[2014-03-24|10:21:51] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-24|10:21:51] Automatic flush during beforeCompletion(): disabled
+[2014-03-24|10:21:51] Automatic session close at end of transaction: disabled
+[2014-03-24|10:21:51] JDBC batch size: 15
+[2014-03-24|10:21:51] JDBC batch updates for versioned data: disabled
+[2014-03-24|10:21:51] Scrollable result sets: enabled
+[2014-03-24|10:21:51] JDBC3 getGeneratedKeys(): enabled
+[2014-03-24|10:21:51] Connection release mode: on_close
+[2014-03-24|10:21:51] Maximum outer join fetch depth: 2
+[2014-03-24|10:21:51] Default batch fetch size: 1
+[2014-03-24|10:21:51] Generate SQL with comments: disabled
+[2014-03-24|10:21:51] Order SQL updates by primary key: disabled
+[2014-03-24|10:21:51] Order SQL inserts for batching: disabled
+[2014-03-24|10:21:51] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-24|10:21:51] Using ASTQueryTranslatorFactory
+[2014-03-24|10:21:51] Query language substitutions: {}
+[2014-03-24|10:21:51] JPA-QL strict compliance: disabled
+[2014-03-24|10:21:51] Second-level cache: disabled
+[2014-03-24|10:21:51] Query cache: disabled
+[2014-03-24|10:21:51] Optimize cache for minimal puts: disabled
+[2014-03-24|10:21:51] Structured second-level cache entries: disabled
+[2014-03-24|10:21:52] Statistics: disabled
+[2014-03-24|10:21:52] Deleted entity synthetic identifier rollback: disabled
+[2014-03-24|10:21:52] Default entity-mode: pojo
+[2014-03-24|10:21:52] Named query checking : enabled
+[2014-03-24|10:21:52] building session factory
+[2014-03-24|10:21:52] Not binding factory to JNDI, no JNDI name configured
+[2014-03-24|10:21:52] Using DataSource [org.apache.commons.dbcp.BasicDataSource@1b4ee5e] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-24|10:21:52] 渠道登陆接口服务器启动...
+[2014-03-24|10:27:07] 渠道号： 0 第三方平台服务器返回的message:  服务端返回的code: 0 服务端返回的message：0
+[2014-03-24|10:33:27] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c9217: display name [org.springframework.context.support.ClassPathXmlApplicationContext@3c9217]; startup date [Mon Mar 24 10:33:27 CST 2014]; root of context hierarchy
+[2014-03-24|10:33:27] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-24|10:33:27] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@3c9217]: org.springframework.beans.factory.support.DefaultListableBeanFactory@16eb6bc
+[2014-03-24|10:33:27] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16eb6bc: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-24|10:33:27] Hibernate Annotations 3.3.0.GA
+[2014-03-24|10:33:27] Hibernate 3.2.6
+[2014-03-24|10:33:27] hibernate.properties not found
+[2014-03-24|10:33:27] Bytecode provider name : cglib
+[2014-03-24|10:33:27] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-24|10:33:27] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-24|10:33:27] Configured SessionFactory: null
+[2014-03-24|10:33:27] Building new Hibernate SessionFactory
+[2014-03-24|10:33:27] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-24|10:33:27] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-24|10:33:27] Hibernate Validator not found: ignoring
+[2014-03-24|10:33:28] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-24|10:33:28] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-24|10:33:28] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-24|10:33:28] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-24|10:33:28] Using default transaction strategy (direct JDBC transactions)
+[2014-03-24|10:33:28] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-24|10:33:28] Automatic flush during beforeCompletion(): disabled
+[2014-03-24|10:33:28] Automatic session close at end of transaction: disabled
+[2014-03-24|10:33:28] JDBC batch size: 15
+[2014-03-24|10:33:28] JDBC batch updates for versioned data: disabled
+[2014-03-24|10:33:28] Scrollable result sets: enabled
+[2014-03-24|10:33:28] JDBC3 getGeneratedKeys(): enabled
+[2014-03-24|10:33:28] Connection release mode: on_close
+[2014-03-24|10:33:28] Maximum outer join fetch depth: 2
+[2014-03-24|10:33:28] Default batch fetch size: 1
+[2014-03-24|10:33:28] Generate SQL with comments: disabled
+[2014-03-24|10:33:28] Order SQL updates by primary key: disabled
+[2014-03-24|10:33:28] Order SQL inserts for batching: disabled
+[2014-03-24|10:33:28] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-24|10:33:28] Using ASTQueryTranslatorFactory
+[2014-03-24|10:33:28] Query language substitutions: {}
+[2014-03-24|10:33:28] JPA-QL strict compliance: disabled
+[2014-03-24|10:33:28] Second-level cache: disabled
+[2014-03-24|10:33:28] Query cache: disabled
+[2014-03-24|10:33:28] Optimize cache for minimal puts: disabled
+[2014-03-24|10:33:28] Structured second-level cache entries: disabled
+[2014-03-24|10:33:28] Statistics: disabled
+[2014-03-24|10:33:28] Deleted entity synthetic identifier rollback: disabled
+[2014-03-24|10:33:28] Default entity-mode: pojo
+[2014-03-24|10:33:28] Named query checking : enabled
+[2014-03-24|10:33:28] building session factory
+[2014-03-24|10:33:28] Not binding factory to JNDI, no JNDI name configured
+[2014-03-24|10:33:28] Using DataSource [org.apache.commons.dbcp.BasicDataSource@108edd0] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-24|10:33:28] 渠道登陆接口服务器启动...
+[2014-03-24|10:40:45] 登陆请求信息:
+[2014-03-24|10:40:45] data=79997674608893ee14042c9f9100110daeffa9ff1ad1a9b4e&channelid=1018&
+[2014-03-24|10:40:45] 渠道号： 0 第三方平台服务器返回的message:  服务端返回的code: 0 服务端返回的message：0
+[2014-03-24|10:40:59] 登陆请求信息:
+[2014-03-24|10:40:59] data=79997674608893ee14042c9f9100110daeffa9ff1ad1a9b4e&serialno=79997674608893ee14042c9f9100110daeffa9ff1ad1a9b4e&channelid=1018&
+[2014-03-24|10:41:59] 登陆请求信息:
+[2014-03-24|10:41:59] data=7999767461a93a8438507b4fe35312f3fa5522a5e763e3ec7&channelid=1018&
+[2014-03-24|10:41:59] 渠道号： 0 第三方平台服务器返回的message:  服务端返回的code: 0 服务端返回的message：0
+[2014-03-24|10:42:00] 登陆请求信息:
+[2014-03-24|10:42:00] data=7999767461a93a8438507b4fe35312f3fa5522a5e763e3ec7&serialno=7999767461a93a8438507b4fe35312f3fa5522a5e763e3ec7&channelid=1018&
+[2014-03-24|11:04:49] 登陆请求信息:
+[2014-03-24|11:04:49] data={"code":"799976746f013875e902f2edca8810893d2067f8a75beeddd"}&channelid=1018&
+[2014-03-24|11:04:49] 渠道号： 0 第三方平台服务器返回的message:  服务端返回的code: 0 服务端返回的message：0
+[2014-03-24|11:05:01] 登陆请求信息:
+[2014-03-24|11:05:01] data={"code":"799976746f013875e902f2edca8810893d2067f8a75beeddd"}&serialno={"code":"799976746f013875e902f2edca8810893d2067f8a75beeddd"}&channelid=1018&
+[2014-03-24|11:17:23] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16d2633: display name [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]; startup date [Mon Mar 24 11:17:23 CST 2014]; root of context hierarchy
+[2014-03-24|11:17:23] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-24|11:17:23] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056
+[2014-03-24|11:17:23] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-24|11:17:23] Hibernate Annotations 3.3.0.GA
+[2014-03-24|11:17:23] Hibernate 3.2.6
+[2014-03-24|11:17:23] hibernate.properties not found
+[2014-03-24|11:17:23] Bytecode provider name : cglib
+[2014-03-24|11:17:23] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-24|11:17:23] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-24|11:17:23] Configured SessionFactory: null
+[2014-03-24|11:17:23] Building new Hibernate SessionFactory
+[2014-03-24|11:17:23] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-24|11:17:23] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-24|11:17:23] Hibernate Validator not found: ignoring
+[2014-03-24|11:17:23] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-24|11:17:23] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-24|11:17:23] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-24|11:17:23] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-24|11:17:23] Using default transaction strategy (direct JDBC transactions)
+[2014-03-24|11:17:23] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-24|11:17:23] Automatic flush during beforeCompletion(): disabled
+[2014-03-24|11:17:23] Automatic session close at end of transaction: disabled
+[2014-03-24|11:17:23] JDBC batch size: 15
+[2014-03-24|11:17:23] JDBC batch updates for versioned data: disabled
+[2014-03-24|11:17:23] Scrollable result sets: enabled
+[2014-03-24|11:17:23] JDBC3 getGeneratedKeys(): enabled
+[2014-03-24|11:17:23] Connection release mode: on_close
+[2014-03-24|11:17:23] Maximum outer join fetch depth: 2
+[2014-03-24|11:17:23] Default batch fetch size: 1
+[2014-03-24|11:17:23] Generate SQL with comments: disabled
+[2014-03-24|11:17:23] Order SQL updates by primary key: disabled
+[2014-03-24|11:17:23] Order SQL inserts for batching: disabled
+[2014-03-24|11:17:23] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-24|11:17:23] Using ASTQueryTranslatorFactory
+[2014-03-24|11:17:23] Query language substitutions: {}
+[2014-03-24|11:17:23] JPA-QL strict compliance: disabled
+[2014-03-24|11:17:23] Second-level cache: disabled
+[2014-03-24|11:17:23] Query cache: disabled
+[2014-03-24|11:17:23] Optimize cache for minimal puts: disabled
+[2014-03-24|11:17:23] Structured second-level cache entries: disabled
+[2014-03-24|11:17:24] Statistics: disabled
+[2014-03-24|11:17:24] Deleted entity synthetic identifier rollback: disabled
+[2014-03-24|11:17:24] Default entity-mode: pojo
+[2014-03-24|11:17:24] Named query checking : enabled
+[2014-03-24|11:17:24] building session factory
+[2014-03-24|11:17:24] Not binding factory to JNDI, no JNDI name configured
+[2014-03-24|11:17:24] Using DataSource [org.apache.commons.dbcp.BasicDataSource@38d0a8] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-24|11:17:24] 渠道登陆接口服务器启动...
+[2014-03-24|11:17:38] 登陆请求信息:
+[2014-03-24|11:17:38] data={"code":"799976746f6b8e7f67c47f1486eaf3c76d491fcb2f4e1a068"}&channelid=1018&
+[2014-03-24|11:17:38] 渠道号： 0 第三方平台服务器返回的message:  服务端返回的code: 0 服务端返回的message：0
+[2014-03-24|11:17:39] 登陆请求信息:
+[2014-03-24|11:17:39] data={"code":"799976746f6b8e7f67c47f1486eaf3c76d491fcb2f4e1a068"}&serialno=20369879&channelid=1018&
+[2014-03-24|11:21:55] 登陆请求信息:
+[2014-03-24|11:21:55] data={"code":"799976746a2d6c0fe341a8d6fcd21a3a8ec17ac59cad13afe"}&channelid=1018&
+[2014-03-24|11:21:55] 渠道号： 0 第三方平台服务器返回的message:  服务端返回的code: 0 服务端返回的message：0
+[2014-03-24|11:22:33] 登陆请求信息:
+[2014-03-24|11:22:33] data={"code":"799976746a2d6c0fe341a8d6fcd21a3a8ec17ac59cad13afe"}&serialno=13511767&channelid=1018&
+[2014-03-24|11:24:51] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1f82982: display name [org.springframework.context.support.ClassPathXmlApplicationContext@1f82982]; startup date [Mon Mar 24 11:24:51 CST 2014]; root of context hierarchy
+[2014-03-24|11:24:51] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-24|11:24:51] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@1f82982]: org.springframework.beans.factory.support.DefaultListableBeanFactory@3bc20e
+[2014-03-24|11:24:51] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3bc20e: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-24|11:24:51] Hibernate Annotations 3.3.0.GA
+[2014-03-24|11:24:51] Hibernate 3.2.6
+[2014-03-24|11:24:51] hibernate.properties not found
+[2014-03-24|11:24:51] Bytecode provider name : cglib
+[2014-03-24|11:24:51] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-24|11:24:51] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-24|11:24:51] Configured SessionFactory: null
+[2014-03-24|11:24:51] Building new Hibernate SessionFactory
+[2014-03-24|11:24:51] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-24|11:24:51] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-24|11:24:51] Hibernate Validator not found: ignoring
+[2014-03-24|11:24:51] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-24|11:24:51] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-24|11:24:51] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-24|11:24:51] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-24|11:24:51] Using default transaction strategy (direct JDBC transactions)
+[2014-03-24|11:24:51] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-24|11:24:51] Automatic flush during beforeCompletion(): disabled
+[2014-03-24|11:24:51] Automatic session close at end of transaction: disabled
+[2014-03-24|11:24:51] JDBC batch size: 15
+[2014-03-24|11:24:51] JDBC batch updates for versioned data: disabled
+[2014-03-24|11:24:51] Scrollable result sets: enabled
+[2014-03-24|11:24:51] JDBC3 getGeneratedKeys(): enabled
+[2014-03-24|11:24:51] Connection release mode: on_close
+[2014-03-24|11:24:51] Maximum outer join fetch depth: 2
+[2014-03-24|11:24:51] Default batch fetch size: 1
+[2014-03-24|11:24:51] Generate SQL with comments: disabled
+[2014-03-24|11:24:51] Order SQL updates by primary key: disabled
+[2014-03-24|11:24:51] Order SQL inserts for batching: disabled
+[2014-03-24|11:24:51] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-24|11:24:51] Using ASTQueryTranslatorFactory
+[2014-03-24|11:24:51] Query language substitutions: {}
+[2014-03-24|11:24:51] JPA-QL strict compliance: disabled
+[2014-03-24|11:24:51] Second-level cache: disabled
+[2014-03-24|11:24:51] Query cache: disabled
+[2014-03-24|11:24:51] Optimize cache for minimal puts: disabled
+[2014-03-24|11:24:51] Structured second-level cache entries: disabled
+[2014-03-24|11:24:52] Statistics: disabled
+[2014-03-24|11:24:52] Deleted entity synthetic identifier rollback: disabled
+[2014-03-24|11:24:52] Default entity-mode: pojo
+[2014-03-24|11:24:52] Named query checking : enabled
+[2014-03-24|11:24:52] building session factory
+[2014-03-24|11:24:52] Not binding factory to JNDI, no JNDI name configured
+[2014-03-24|11:24:52] Using DataSource [org.apache.commons.dbcp.BasicDataSource@6f9f88] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-24|11:24:52] 渠道登陆接口服务器启动...
+[2014-03-24|11:32:38] 登陆请求信息:
+[2014-03-24|11:32:38] data=799976746eee0ffcd4282d3fdfd5509187c294c156ab5ecf8&channelid=1018&
+[2014-03-24|11:32:38] 渠道号： 0 第三方平台服务器返回的message:  服务端返回的code: 0 服务端返回的message：0
+[2014-03-24|11:34:57] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16d2633: display name [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]; startup date [Mon Mar 24 11:34:57 CST 2014]; root of context hierarchy
+[2014-03-24|11:34:57] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-24|11:34:57] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056
+[2014-03-24|11:34:57] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-24|11:34:58] Hibernate Annotations 3.3.0.GA
+[2014-03-24|11:34:58] Hibernate 3.2.6
+[2014-03-24|11:34:58] hibernate.properties not found
+[2014-03-24|11:34:58] Bytecode provider name : cglib
+[2014-03-24|11:34:58] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-24|11:34:58] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-24|11:34:58] Configured SessionFactory: null
+[2014-03-24|11:34:58] Building new Hibernate SessionFactory
+[2014-03-24|11:34:58] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-24|11:34:58] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-24|11:34:58] Hibernate Validator not found: ignoring
+[2014-03-24|11:34:58] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-24|11:34:58] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-24|11:34:58] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-24|11:34:58] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-24|11:34:58] Using default transaction strategy (direct JDBC transactions)
+[2014-03-24|11:34:58] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-24|11:34:58] Automatic flush during beforeCompletion(): disabled
+[2014-03-24|11:34:58] Automatic session close at end of transaction: disabled
+[2014-03-24|11:34:58] JDBC batch size: 15
+[2014-03-24|11:34:58] JDBC batch updates for versioned data: disabled
+[2014-03-24|11:34:58] Scrollable result sets: enabled
+[2014-03-24|11:34:58] JDBC3 getGeneratedKeys(): enabled
+[2014-03-24|11:34:58] Connection release mode: on_close
+[2014-03-24|11:34:58] Maximum outer join fetch depth: 2
+[2014-03-24|11:34:58] Default batch fetch size: 1
+[2014-03-24|11:34:58] Generate SQL with comments: disabled
+[2014-03-24|11:34:58] Order SQL updates by primary key: disabled
+[2014-03-24|11:34:58] Order SQL inserts for batching: disabled
+[2014-03-24|11:34:58] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-24|11:34:58] Using ASTQueryTranslatorFactory
+[2014-03-24|11:34:58] Query language substitutions: {}
+[2014-03-24|11:34:58] JPA-QL strict compliance: disabled
+[2014-03-24|11:34:58] Second-level cache: disabled
+[2014-03-24|11:34:58] Query cache: disabled
+[2014-03-24|11:34:58] Optimize cache for minimal puts: disabled
+[2014-03-24|11:34:58] Structured second-level cache entries: disabled
+[2014-03-24|11:34:58] Statistics: disabled
+[2014-03-24|11:34:58] Deleted entity synthetic identifier rollback: disabled
+[2014-03-24|11:34:58] Default entity-mode: pojo
+[2014-03-24|11:34:58] Named query checking : enabled
+[2014-03-24|11:34:58] building session factory
+[2014-03-24|11:34:58] Not binding factory to JNDI, no JNDI name configured
+[2014-03-24|11:34:58] Using DataSource [org.apache.commons.dbcp.BasicDataSource@1b4ee5e] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-24|11:34:58] 渠道登陆接口服务器启动...
+[2014-03-24|11:37:43] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16d2633: display name [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]; startup date [Mon Mar 24 11:37:43 CST 2014]; root of context hierarchy
+[2014-03-24|11:37:43] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-24|11:37:43] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@16d2633]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056
+[2014-03-24|11:37:43] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1415056: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-24|11:37:43] Hibernate Annotations 3.3.0.GA
+[2014-03-24|11:37:43] Hibernate 3.2.6
+[2014-03-24|11:37:43] hibernate.properties not found
+[2014-03-24|11:37:43] Bytecode provider name : cglib
+[2014-03-24|11:37:43] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-24|11:37:43] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-24|11:37:44] Configured SessionFactory: null
+[2014-03-24|11:37:44] Building new Hibernate SessionFactory
+[2014-03-24|11:37:44] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-24|11:37:44] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-24|11:37:44] Hibernate Validator not found: ignoring
+[2014-03-24|11:37:44] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-24|11:37:44] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-24|11:37:44] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-24|11:37:44] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-24|11:37:44] Using default transaction strategy (direct JDBC transactions)
+[2014-03-24|11:37:44] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-24|11:37:44] Automatic flush during beforeCompletion(): disabled
+[2014-03-24|11:37:44] Automatic session close at end of transaction: disabled
+[2014-03-24|11:37:44] JDBC batch size: 15
+[2014-03-24|11:37:44] JDBC batch updates for versioned data: disabled
+[2014-03-24|11:37:44] Scrollable result sets: enabled
+[2014-03-24|11:37:44] JDBC3 getGeneratedKeys(): enabled
+[2014-03-24|11:37:44] Connection release mode: on_close
+[2014-03-24|11:37:44] Maximum outer join fetch depth: 2
+[2014-03-24|11:37:44] Default batch fetch size: 1
+[2014-03-24|11:37:44] Generate SQL with comments: disabled
+[2014-03-24|11:37:44] Order SQL updates by primary key: disabled
+[2014-03-24|11:37:44] Order SQL inserts for batching: disabled
+[2014-03-24|11:37:44] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-24|11:37:44] Using ASTQueryTranslatorFactory
+[2014-03-24|11:37:44] Query language substitutions: {}
+[2014-03-24|11:37:44] JPA-QL strict compliance: disabled
+[2014-03-24|11:37:44] Second-level cache: disabled
+[2014-03-24|11:37:44] Query cache: disabled
+[2014-03-24|11:37:44] Optimize cache for minimal puts: disabled
+[2014-03-24|11:37:44] Structured second-level cache entries: disabled
+[2014-03-24|11:37:44] Statistics: disabled
+[2014-03-24|11:37:44] Deleted entity synthetic identifier rollback: disabled
+[2014-03-24|11:37:44] Default entity-mode: pojo
+[2014-03-24|11:37:44] Named query checking : enabled
+[2014-03-24|11:37:44] building session factory
+[2014-03-24|11:37:44] Not binding factory to JNDI, no JNDI name configured
+[2014-03-24|11:37:44] Using DataSource [org.apache.commons.dbcp.BasicDataSource@adb3f] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-24|11:37:44] 渠道登陆接口服务器启动...
+[2014-03-24|11:37:50] 登陆请求信息:
+[2014-03-24|11:37:50] data=799976746eee0ffcd4282d3fdfd5509187c294c156ab5ecf8&serialno=28328720&channelid=1018&
+[2014-03-24|11:37:50] 渠道号： 1018 客户端传过来第1个参数：799976746eee0ffcd4282d3fdfd5509187c294c156ab5ecf8
+[2014-03-24|11:38:09] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1f82982: display name [org.springframework.context.support.ClassPathXmlApplicationContext@1f82982]; startup date [Mon Mar 24 11:38:09 CST 2014]; root of context hierarchy
+[2014-03-24|11:38:09] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2014-03-24|11:38:09] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@1f82982]: org.springframework.beans.factory.support.DefaultListableBeanFactory@3bc20e
+[2014-03-24|11:38:09] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3bc20e: defining beans [DataSource,SessionFactory,hibernateProperties,TransactionManager,BaseTransactionProxy,ThirdConfigService]; root of factory hierarchy
+[2014-03-24|11:38:09] Hibernate Annotations 3.3.0.GA
+[2014-03-24|11:38:09] Hibernate 3.2.6
+[2014-03-24|11:38:09] hibernate.properties not found
+[2014-03-24|11:38:09] Bytecode provider name : cglib
+[2014-03-24|11:38:09] using JDK 1.4 java.sql.Timestamp handling
+[2014-03-24|11:38:09] configuring from url: file:/E:/workspace/ChannelServer/bin/hibernate.cfg.xml
+[2014-03-24|11:38:09] Configured SessionFactory: null
+[2014-03-24|11:38:09] Building new Hibernate SessionFactory
+[2014-03-24|11:38:09] Binding entity from annotated class: com.wyd.channel.bean.ThirdConfig
+[2014-03-24|11:38:10] Bind entity com.wyd.channel.bean.ThirdConfig on table third_configs
+[2014-03-24|11:38:10] Hibernate Validator not found: ignoring
+[2014-03-24|11:38:10] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[2014-03-24|11:38:10] RDBMS: MySQL, version: 5.0.45-community-nt
+[2014-03-24|11:38:10] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+[2014-03-24|11:38:10] Using dialect: com.wyd.db.hibernate.CustomSQLDialect
+[2014-03-24|11:38:10] Using default transaction strategy (direct JDBC transactions)
+[2014-03-24|11:38:10] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2014-03-24|11:38:10] Automatic flush during beforeCompletion(): disabled
+[2014-03-24|11:38:10] Automatic session close at end of transaction: disabled
+[2014-03-24|11:38:10] JDBC batch size: 15
+[2014-03-24|11:38:10] JDBC batch updates for versioned data: disabled
+[2014-03-24|11:38:10] Scrollable result sets: enabled
+[2014-03-24|11:38:10] JDBC3 getGeneratedKeys(): enabled
+[2014-03-24|11:38:10] Connection release mode: on_close
+[2014-03-24|11:38:10] Maximum outer join fetch depth: 2
+[2014-03-24|11:38:10] Default batch fetch size: 1
+[2014-03-24|11:38:10] Generate SQL with comments: disabled
+[2014-03-24|11:38:10] Order SQL updates by primary key: disabled
+[2014-03-24|11:38:10] Order SQL inserts for batching: disabled
+[2014-03-24|11:38:10] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2014-03-24|11:38:10] Using ASTQueryTranslatorFactory
+[2014-03-24|11:38:10] Query language substitutions: {}
+[2014-03-24|11:38:10] JPA-QL strict compliance: disabled
+[2014-03-24|11:38:10] Second-level cache: disabled
+[2014-03-24|11:38:10] Query cache: disabled
+[2014-03-24|11:38:10] Optimize cache for minimal puts: disabled
+[2014-03-24|11:38:10] Structured second-level cache entries: disabled
+[2014-03-24|11:38:10] Statistics: disabled
+[2014-03-24|11:38:10] Deleted entity synthetic identifier rollback: disabled
+[2014-03-24|11:38:10] Default entity-mode: pojo
+[2014-03-24|11:38:10] Named query checking : enabled
+[2014-03-24|11:38:10] building session factory
+[2014-03-24|11:38:10] Not binding factory to JNDI, no JNDI name configured
+[2014-03-24|11:38:10] Using DataSource [org.apache.commons.dbcp.BasicDataSource@2aaec8] of Hibernate SessionFactory for HibernateTransactionManager
+[2014-03-24|11:38:10] 渠道登陆接口服务器启动...
+[2014-03-24|15:28:58] 登陆请求信息:
+[2014-03-24|15:28:58] 
+[2014-03-24|15:29:00] 登陆请求信息:
+[2014-03-24|15:29:00] 
+[2014-03-24|15:41:39] 登陆请求信息:
+[2014-03-24|15:41:39] data=273031332028f80382a88efa6ff04450d591e829e5762233&channelid=1018&
+[2014-03-24|15:41:39] 渠道号： 1018 客户端传过来第1个参数：273031332028f80382a88efa6ff04450d591e829e5762233
+[2014-03-24|15:41:39] 登陆请求信息:
+[2014-03-24|15:41:39] data=273031332028f80382a88efa6ff04450d591e829e5762233&serialno=17545278&channelid=1018&
+[2014-03-24|15:42:24] 登陆请求信息:
+[2014-03-24|15:42:24] data=27303133a61ce9abe2e144c0042102cb90da95f4b93043eb&channelid=1018&
+[2014-03-24|15:42:24] 渠道号： 1018 客户端传过来第1个参数：27303133a61ce9abe2e144c0042102cb90da95f4b93043eb
+[2014-03-24|15:42:24] 登陆请求信息:
+[2014-03-24|15:42:24] data=27303133a61ce9abe2e144c0042102cb90da95f4b93043eb&serialno=13536836&channelid=1018&
+[2014-03-24|15:42:39] 登陆请求信息:
+[2014-03-24|15:42:39] data=2730313317bfae29fd69c201a975c4d205d676f5dc8d7093&channelid=1018&
+[2014-03-24|15:42:39] 渠道号： 1018 客户端传过来第1个参数：2730313317bfae29fd69c201a975c4d205d676f5dc8d7093
+[2014-03-24|15:42:39] 登陆请求信息:
+[2014-03-24|15:42:39] data=2730313317bfae29fd69c201a975c4d205d676f5dc8d7093&serialno=6555211&channelid=1018&
+[2014-03-24|15:47:47] 登陆请求信息:
+[2014-03-24|15:47:47] data=27303133acc314f37d4291ccfa3844a87de47a8d9ac819dd&channelid=1018&
+[2014-03-24|15:47:47] 渠道号： 1018 客户端传过来第1个参数：27303133acc314f37d4291ccfa3844a87de47a8d9ac819dd
+[2014-03-24|15:48:00] 登陆请求信息:
+[2014-03-24|15:48:00] data=27303133acc314f37d4291ccfa3844a87de47a8d9ac819dd&serialno=368548&channelid=1018&
+[2014-03-24|15:48:53] 登陆请求信息:
+[2014-03-24|15:48:53] data=27303133acc314f37d4291ccfa3844a87de47a8d9ac819dd&serialno=368548&channelid=1018&
+[2014-03-24|15:50:31] 登陆请求信息:
+[2014-03-24|15:50:31] data=2730313320b69e39443d1b3fb79c5ce0b0ee9c10ac5de177&channelid=1018&
+[2014-03-24|15:50:31] 渠道号： 1018 客户端传过来第1个参数：2730313320b69e39443d1b3fb79c5ce0b0ee9c10ac5de177
+[2014-03-24|15:50:32] 登陆请求信息:
+[2014-03-24|15:50:32] data=2730313320b69e39443d1b3fb79c5ce0b0ee9c10ac5de177&serialno=2698971&channelid=1018&
+[2014-03-24|15:50:58] 登陆请求信息:
+[2014-03-24|15:50:58] data=2730313320b69e39443d1b3fb79c5ce0b0ee9c10ac5de177&serialno=2698971&channelid=1018&
+[2014-03-24|16:00:11] 登陆请求信息:
+[2014-03-24|16:00:11] data=27303133df535bffd0bc0568fd6a8d4a3e4d582df81beb2b&channelid=1018&
+[2014-03-24|16:00:11] 渠道号： 1018 客户端传过来第1个参数：27303133df535bffd0bc0568fd6a8d4a3e4d582df81beb2b
+[2014-03-24|16:00:11] 登陆请求信息:
+[2014-03-24|16:00:11] data=27303133df535bffd0bc0568fd6a8d4a3e4d582df81beb2b&serialno=30865482&channelid=1018&
+[2014-03-24|16:00:22] 登陆请求信息:
+[2014-03-24|16:00:22] data=27303133df535bffd0bc0568fd6a8d4a3e4d582df81beb2b&serialno=30865482&channelid=1018&
+[2014-03-24|16:27:16] 登陆请求信息:
+[2014-03-24|16:27:16] data=27303133db6ed57bef614da4109e91ce6e3ecbd3908954e4&channelid=1018&
+[2014-03-24|16:27:16] 渠道号： 1018 客户端传过来第1个参数：27303133db6ed57bef614da4109e91ce6e3ecbd3908954e4
+[2014-03-24|16:27:17] 登陆请求信息:
+[2014-03-24|16:27:17] data=27303133db6ed57bef614da4109e91ce6e3ecbd3908954e4&serialno=15450786&channelid=1018&
+[2014-03-24|16:27:27] 登陆请求信息:
+[2014-03-24|16:27:27] data=27303133db6ed57bef614da4109e91ce6e3ecbd3908954e4&serialno=15450786&channelid=1018&
+[2014-03-24|16:27:37] 登陆请求信息:
+[2014-03-24|16:27:37] data=27303133db6ed57bef614da4109e91ce6e3ecbd3908954e4&serialno=15450786&channelid=1018&
+[2014-03-24|16:27:47] 登陆请求信息:
+[2014-03-24|16:27:47] data=27303133db6ed57bef614da4109e91ce6e3ecbd3908954e4&serialno=15450786&channelid=1018&
+[2014-03-24|16:27:57] 登陆请求信息:
+[2014-03-24|16:27:57] data=27303133db6ed57bef614da4109e91ce6e3ecbd3908954e4&serialno=15450786&channelid=1018&
+[2014-03-24|16:28:07] 登陆请求信息:
+[2014-03-24|16:28:07] data=27303133db6ed57bef614da4109e91ce6e3ecbd3908954e4&serialno=15450786&channelid=1018&
+[2014-03-24|16:28:17] 登陆请求信息:
+[2014-03-24|16:28:17] data=27303133db6ed57bef614da4109e91ce6e3ecbd3908954e4&serialno=15450786&channelid=1018&
+[2014-03-24|16:28:28] 登陆请求信息:
+[2014-03-24|16:28:28] data=27303133db6ed57bef614da4109e91ce6e3ecbd3908954e4&serialno=15450786&channelid=1018&
+[2014-03-24|16:28:38] 登陆请求信息:
+[2014-03-24|16:28:38] data=27303133db6ed57bef614da4109e91ce6e3ecbd3908954e4&serialno=15450786&channelid=1018&
+[2014-03-24|16:30:49] 登陆请求信息:
+[2014-03-24|16:30:49] data=2730313321b07d246422096ebb449e09ac63025b0955f3f2&channelid=1018&
+[2014-03-24|16:30:49] 渠道号： 1018 客户端传过来第1个参数：2730313321b07d246422096ebb449e09ac63025b0955f3f2
+[2014-03-24|16:30:53] 登陆请求信息:
+[2014-03-24|16:30:53] data=2730313321b07d246422096ebb449e09ac63025b0955f3f2&serialno=3107562&channelid=1018&
+[2014-03-24|16:31:03] 登陆请求信息:
+[2014-03-24|16:31:03] data=2730313321b07d246422096ebb449e09ac63025b0955f3f2&serialno=3107562&channelid=1018&
+[2014-03-24|16:32:08] 登陆请求信息:
+[2014-03-24|16:32:08] data=5689&channelid=1018&
+[2014-03-24|16:32:08] 渠道号： 1018 客户端传过来第1个参数：5689
+[2014-03-24|16:32:08] 渠道号： 1018 客户端传过来第2个参数：{"code":7999767461a93a8438507b4fe35312f3fa552}
+[2014-03-24|16:32:12] Unable to respond to any of these challenges: {oauth2=OAuth2}
+[2014-03-24|16:32:12] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[2014-03-24|16:33:19] 登陆请求信息:
+[2014-03-24|16:33:19] data=5689&channelid=1018&
+[2014-03-24|16:33:19] 渠道号： 1018 客户端传过来第1个参数：5689
+[2014-03-24|16:33:19] 渠道号： 1018 客户端传过来第2个参数：{"code":7999767461a93a8438507b4fe35312f3fa552}
+[2014-03-24|16:33:43] Unable to respond to any of these challenges: {oauth2=OAuth2}
+[2014-03-24|16:33:43] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[2014-03-24|16:35:08] 登陆请求信息:
+[2014-03-24|16:35:08] data=5689&channelid=1018&
+[2014-03-24|16:35:08] 渠道号： 1018 客户端传过来第1个参数：5689
+[2014-03-24|16:35:08] 渠道号： 1018 客户端传过来第2个参数：{"code":7999767461a93a8438507b4fe35312f3fa552}
+[2014-03-24|16:35:12] Unable to respond to any of these challenges: {oauth2=OAuth2}
+[2014-03-24|16:35:12] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[2014-03-24|16:36:06] 登陆请求信息:
+[2014-03-24|16:36:06] data=5689&channelid=1018&
+[2014-03-24|16:36:06] 渠道号： 1018 客户端传过来第1个参数：5689
+[2014-03-24|16:36:06] 渠道号： 1018 客户端传过来第2个参数：{"code":7999767461a93a8438507b4fe35312f3fa5522a5e763e3ec7}
+[2014-03-24|16:36:06] Unable to respond to any of these challenges: {oauth2=OAuth2}
+[2014-03-24|16:36:06] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[2014-03-24|16:41:32] 登陆请求信息:
+[2014-03-24|16:41:32] data=2730313379fc905b68416171ed810cb3762c2d90a263739f&channelid=1018&
+[2014-03-24|16:41:32] 渠道号： 1018 客户端传过来第1个参数：2730313379fc905b68416171ed810cb3762c2d90a263739f
+[2014-03-24|16:41:32] 登陆请求信息:
+[2014-03-24|16:41:32] data=2730313379fc905b68416171ed810cb3762c2d90a263739f&serialno=5238287&channelid=1018&
+[2014-03-24|16:41:42] 登陆请求信息:
+[2014-03-24|16:41:42] data=2730313379fc905b68416171ed810cb3762c2d90a263739f&serialno=5238287&channelid=1018&
+[2014-03-24|16:45:00] 登陆请求信息:
+[2014-03-24|16:45:00] data=2730313397480da1d6846d9c5104b6d8424509af0b8d81c1&channelid=1018&
+[2014-03-24|16:45:00] 渠道号： 1018 客户端传过来第1个参数：2730313397480da1d6846d9c5104b6d8424509af0b8d81c1
+[2014-03-24|16:45:10] 登陆请求信息:
+[2014-03-24|16:45:10] data=2730313397480da1d6846d9c5104b6d8424509af0b8d81c1&serialno=28410353&channelid=1018&
+[2014-03-24|16:45:36] 登陆请求信息:
+[2014-03-24|16:45:36] data=2730313397480da1d6846d9c5104b6d8424509af0b8d81c1&serialno=28410353&channelid=1018&
+[2014-03-24|16:55:03] 登陆请求信息:
+[2014-03-24|16:55:03] data=27303133694959aaf84dd204ea55285762171e43ead92f88&channelid=1018&
+[2014-03-24|16:55:03] 渠道号： 1018 客户端传过来第1个参数：27303133694959aaf84dd204ea55285762171e43ead92f88
+[2014-03-24|16:55:03] 登陆请求信息:
+[2014-03-24|16:55:03] data=27303133694959aaf84dd204ea55285762171e43ead92f88&serialno=11354068&channelid=1018&
+[2014-03-24|16:55:13] 登陆请求信息:
+[2014-03-24|16:55:13] data=27303133694959aaf84dd204ea55285762171e43ead92f88&serialno=11354068&channelid=1018&
+[2014-03-24|16:55:24] 登陆请求信息:
+[2014-03-24|16:55:24] data=27303133694959aaf84dd204ea55285762171e43ead92f88&serialno=11354068&channelid=1018&
+[2014-03-24|17:10:14] 登陆请求信息:
+[2014-03-24|17:10:14] data=27303133f4ff20a591b125904ee82feba936568540dc1ee5&channelid=1018&
+[2014-03-24|17:10:14] 渠道号： 1018 客户端传过来第1个参数：27303133f4ff20a591b125904ee82feba936568540dc1ee5
+[2014-03-24|17:10:15] 登陆请求信息:
+[2014-03-24|17:10:15] data=27303133f4ff20a591b125904ee82feba936568540dc1ee5&serialno=3994917&channelid=1018&
+[2014-03-24|17:10:25] 登陆请求信息:
+[2014-03-24|17:10:25] data=27303133f4ff20a591b125904ee82feba936568540dc1ee5&serialno=3994917&channelid=1018&
+[2014-03-24|17:10:35] 登陆请求信息:
+[2014-03-24|17:10:35] data=27303133f4ff20a591b125904ee82feba936568540dc1ee5&serialno=3994917&channelid=1018&
+[2014-03-24|17:18:29] 登陆请求信息:
+[2014-03-24|17:18:29] data=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f&channelid=1018&
+[2014-03-24|17:18:29] 渠道号： 1018 客户端传过来第1个参数：273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f
+[2014-03-24|17:18:29] 登陆请求信息:
+[2014-03-24|17:18:29] data=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f&serialno=27110059&channelid=1018&
+[2014-03-24|17:18:39] 登陆请求信息:
+[2014-03-24|17:18:39] data=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f&serialno=27110059&channelid=1018&
+[2014-03-24|17:18:49] 登陆请求信息:
+[2014-03-24|17:18:49] data=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f&serialno=27110059&channelid=1018&
+[2014-03-24|17:19:27] 登陆请求信息:
+[2014-03-24|17:19:27] data={uid=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f}&channelid=1018&serialno=27110059&
+[2014-03-24|17:19:33] 登陆请求信息:
+[2014-03-24|17:19:33] data={uid=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f}&channelid=1018&serialno=27110059&
+[2014-03-24|17:19:36] 登陆请求信息:
+[2014-03-24|17:19:36] data={uid=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f}&channelid=1018&serialno=27110059&
+[2014-03-24|17:19:43] 登陆请求信息:
+[2014-03-24|17:19:43] data={uid=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f}&channelid=1018&serialno=27110059&
+[2014-03-24|17:19:45] 登陆请求信息:
+[2014-03-24|17:19:45] data={uid=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f}&channelid=1018&serialno=27110059&
+[2014-03-24|17:26:28] 登陆请求信息:
+[2014-03-24|17:26:28] data=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f&channelid=1018&serialno=27110059&
+[2014-03-24|17:26:30] 登陆请求信息:
+[2014-03-24|17:26:30] data=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f&channelid=1018&serialno=27110059&
+[2014-03-24|17:26:32] 登陆请求信息:
+[2014-03-24|17:26:32] data=273031334ddbfb631a2cc1686ec9b12a6d1de0572e76b11f&channelid=1018&serialno=27110059&
+[2014-03-24|17:32:26] 登陆请求信息:
+[2014-03-24|17:32:26] data=273031331105f71aa798d53955d99eab6625815e191bbc67&channelid=1018&
+[2014-03-24|17:32:26] 渠道号： 1018 客户端传过来第1个参数：273031331105f71aa798d53955d99eab6625815e191bbc67
+[2014-03-24|17:32:26] 登陆请求信息:
+[2014-03-24|17:32:26] data=273031331105f71aa798d53955d99eab6625815e191bbc67&serialno=5920025&channelid=1018&
+[2014-03-24|17:32:36] 登陆请求信息:
+[2014-03-24|17:32:36] data=273031331105f71aa798d53955d99eab6625815e191bbc67&serialno=5920025&channelid=1018&
+[2014-03-24|17:32:47] 登陆请求信息:
+[2014-03-24|17:32:47] data=273031331105f71aa798d53955d99eab6625815e191bbc67&serialno=5920025&channelid=1018&
+[2014-03-24|17:37:26] 登陆请求信息:
+[2014-03-24|17:37:26] data=27303133e2a9e27ae810bd6cbcdd55eeb8888f9b5d2258f9&channelid=1018&
+[2014-03-24|17:37:26] 渠道号： 1018 客户端传过来第1个参数：27303133e2a9e27ae810bd6cbcdd55eeb8888f9b5d2258f9
+[2014-03-24|17:37:27] 登陆请求信息:
+[2014-03-24|17:37:27] data=27303133e2a9e27ae810bd6cbcdd55eeb8888f9b5d2258f9&serialno=13327842&channelid=1018&
+[2014-03-24|17:37:37] 登陆请求信息:
+[2014-03-24|17:37:37] data=27303133e2a9e27ae810bd6cbcdd55eeb8888f9b5d2258f9&serialno=13327842&channelid=1018&
+[2014-03-24|17:37:47] 登陆请求信息:
+[2014-03-24|17:37:47] data=27303133e2a9e27ae810bd6cbcdd55eeb8888f9b5d2258f9&serialno=13327842&channelid=1018&
+[2014-03-24|17:38:33] 登陆请求信息:
+[2014-03-24|17:38:33] data=&serialno=13327842&channelid=1018&
+[2014-03-24|17:38:48] 登陆请求信息:
+[2014-03-24|17:38:48] data=&serialno=13327842&channelid=1018&
+[2014-03-24|17:41:23] 登陆请求信息:
+[2014-03-24|17:41:23] data=&serialno=13327842&channelid=1018&
+[2014-03-24|17:48:34] 登陆请求信息:
+[2014-03-24|17:48:34] data=273031332e3d999aaa423aa0d7abf316093b2782c8cf0410&channelid=1018&
+[2014-03-24|17:48:34] 渠道号： 1018 客户端传过来第1个参数：273031332e3d999aaa423aa0d7abf316093b2782c8cf0410
+[2014-03-24|17:48:34] 登陆请求信息:
+[2014-03-24|17:48:34] data=273031332e3d999aaa423aa0d7abf316093b2782c8cf0410&serialno=23702030&channelid=1018&
+[2014-03-24|17:48:45] 登陆请求信息:
+[2014-03-24|17:48:45] data=273031332e3d999aaa423aa0d7abf316093b2782c8cf0410&serialno=23702030&channelid=1018&
+[2014-03-24|17:48:55] 登陆请求信息:
+[2014-03-24|17:48:55] data=273031332e3d999aaa423aa0d7abf316093b2782c8cf0410&serialno=23702030&channelid=1018&
+[2014-03-24|17:54:42] 登陆请求信息:
+[2014-03-24|17:54:42] data=&serialno=13327842&channelid=1018&

@@ -1,0 +1,2 @@
+crafting.CRAFT_ITEM
+gm.CHECK_COMPONENT

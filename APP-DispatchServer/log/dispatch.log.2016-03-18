@@ -1,0 +1,1459 @@
+[2016-03-18|17:57:36] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-03-18|17:57:36] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-03-18|17:57:36] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_UpdatePlayerName 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_UpdatePlayerNameOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYN_Move 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYN_Attack 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-03-18|17:57:36] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-03-18|17:57:36] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-03-18|17:57:36] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-03-18|17:57:36] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 MAIL_GetMailList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 MAIL_LockMail 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 MAIL_ReceiveMail 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 MAIL_DelMail 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 HERO_StudySkill 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 HERO_ResetSkill 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 HERO_ResetSkillOK 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 HERO_UseGoods 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 HERO_UseGoodsOK 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 EQUIP_WearEquip 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 EQUIP_MergeEquip 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 EQUIP_MergeEquipOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 EQUIP_ActivateAchieve 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BACKPACK_GetBackpackList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BACKPACK_UseGoods 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BACKPACK_SellGoods 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 COPYMAP_AcessCopyMap 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 COPYMAP_CompleteCopyMap 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 COPYMAP_SaveTeam 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 COPYMAP_SaveTeamOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 COPYMAP_GetTeam 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 COPYMAP_GetTeamOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_RoomPlayerInfo 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_GetRoomList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_GetRoomListOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_CreateRoom 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_CreateRoomOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_IntoRoom 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_IntoRoomOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_OutRoom 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_OutRoomOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_Start 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_LoadComplete 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_LoadCompleteOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 PVPROOM_StartStatus 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SHOP_GetShop 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SHOP_GetShopOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SHOP_Buy 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SHOP_BuyOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SHOP_Refresh 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 SHOP_RefreshOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 NPC_GetNpc 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 NPC_GetNpcOK 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 NPC_Upgrade 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 NPC_UpgradeOK 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 NPC_Buy 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 NPC_BuyOK 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 NPC_Receive 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 NPC_ReceiveOK 对应的protocol handler
+[2016-03-18|17:57:36] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.Skill
+[2016-03-18|17:57:36] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-03-18|17:57:36] 没有找到 TEST_Test 对应的protocol handler
+[2016-03-18|17:57:36] TimeControlProcessor Control start.
+[2016-03-18|17:57:36] load trustip.txt
+[2016-03-18|17:57:36] add trustIpService: com.app.dispatch.TrustIpService@7437e222
+[2016-03-18|17:57:36] binded
+[2016-03-18|17:57:36] 数据分发服务器启动完成  -- 端口:19990
+[2016-03-18|18:24:38] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-03-18|18:24:38] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-03-18|18:24:38] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_UpdatePlayerName 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_UpdatePlayerNameOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYN_Move 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYN_Attack 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-03-18|18:24:38] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-03-18|18:24:38] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-03-18|18:24:38] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-03-18|18:24:38] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 MAIL_GetMailList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 MAIL_LockMail 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 MAIL_ReceiveMail 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 MAIL_DelMail 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 HERO_StudySkill 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 HERO_ResetSkill 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 HERO_ResetSkillOK 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 HERO_UseGoods 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 HERO_UseGoodsOK 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 EQUIP_WearEquip 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 EQUIP_MergeEquip 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 EQUIP_MergeEquipOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 EQUIP_ActivateAchieve 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BACKPACK_GetBackpackList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BACKPACK_UseGoods 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BACKPACK_SellGoods 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 COPYMAP_AcessCopyMap 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 COPYMAP_CompleteCopyMap 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 COPYMAP_SaveTeam 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 COPYMAP_SaveTeamOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 COPYMAP_GetTeam 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 COPYMAP_GetTeamOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_RoomPlayerInfo 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_GetRoomList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_GetRoomListOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_CreateRoom 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_CreateRoomOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_IntoRoom 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_IntoRoomOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_OutRoom 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_OutRoomOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_Start 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_LoadComplete 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_LoadCompleteOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 PVPROOM_StartStatus 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SHOP_GetShop 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SHOP_GetShopOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SHOP_Buy 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SHOP_BuyOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SHOP_Refresh 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 SHOP_RefreshOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 NPC_GetNpc 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 NPC_GetNpcOK 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 NPC_Upgrade 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 NPC_UpgradeOK 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 NPC_Buy 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 NPC_BuyOK 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 NPC_Receive 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 NPC_ReceiveOK 对应的protocol handler
+[2016-03-18|18:24:38] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.Skill
+[2016-03-18|18:24:38] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-03-18|18:24:38] 没有找到 TEST_Test 对应的protocol handler
+[2016-03-18|18:24:38] TimeControlProcessor Control start.
+[2016-03-18|18:24:38] load trustip.txt
+[2016-03-18|18:24:39] add trustIpService: com.app.dispatch.TrustIpService@4ab7532a
+[2016-03-18|18:24:39] binded
+[2016-03-18|18:24:39] 数据分发服务器启动完成  -- 端口:19990
+[2016-03-18|18:25:16] ok:192.168.1.80
+[2016-03-18|18:25:33] SyncTime[10] ONLINE[1] MAX[1500]
+[2016-03-18|18:25:39] ONLINE Session[1]
+[2016-03-18|18:26:33] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:26:39] ONLINE Session[0]
+[2016-03-18|18:26:41] ok:192.168.1.84
+[2016-03-18|18:27:33] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:27:35] ok:192.168.1.80
+[2016-03-18|18:27:39] ONLINE Session[2]
+[2016-03-18|18:28:33] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:28:39] ONLINE Session[2]
+[2016-03-18|18:29:33] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:29:39] ONLINE Session[1]
+[2016-03-18|18:29:55] ok:192.168.1.84
+[2016-03-18|18:30:03] ok:192.168.1.80
+[2016-03-18|18:30:33] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:30:39] ONLINE Session[2]
+[2016-03-18|18:31:33] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:31:39] ONLINE Session[1]
+[2016-03-18|18:32:23] ok:192.168.1.80
+[2016-03-18|18:32:33] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:32:39] ONLINE Session[2]
+[2016-03-18|18:33:08] ok:192.168.1.84
+[2016-03-18|18:33:33] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:33:39] ONLINE Session[2]
+[2016-03-18|18:34:33] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:34:39] ONLINE Session[1]
+[2016-03-18|18:35:33] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|18:35:39] ONLINE Session[0]
+[2016-03-18|18:36:33] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|18:36:39] ONLINE Session[0]
+[2016-03-18|18:37:33] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|18:37:39] ONLINE Session[0]
+[2016-03-18|18:38:33] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|18:38:39] ONLINE Session[0]
+[2016-03-18|18:39:28] ok:192.168.1.80
+[2016-03-18|18:39:33] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:39:39] ONLINE Session[1]
+[2016-03-18|18:40:33] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:40:35] ok:192.168.1.84
+[2016-03-18|18:40:39] ONLINE Session[2]
+[2016-03-18|18:41:33] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:41:39] ONLINE Session[1]
+[2016-03-18|18:42:33] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:42:39] ONLINE Session[1]
+[2016-03-18|18:43:33] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:43:39] ONLINE Session[1]
+[2016-03-18|18:44:34] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:44:39] ONLINE Session[1]
+[2016-03-18|18:44:50] ok:192.168.1.84
+[2016-03-18|18:45:34] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:45:39] ONLINE Session[1]
+[2016-03-18|18:46:29] ok:192.168.1.84
+[2016-03-18|18:46:34] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:46:39] ONLINE Session[1]
+[2016-03-18|18:47:03] ok:192.168.1.80
+[2016-03-18|18:47:10] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-18|18:47:34] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:47:39] ONLINE Session[1]
+[2016-03-18|18:48:04] ok:192.168.1.80
+[2016-03-18|18:48:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:48:39] ONLINE Session[2]
+[2016-03-18|18:49:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:49:39] ONLINE Session[1]
+[2016-03-18|18:50:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:50:39] ONLINE Session[1]
+[2016-03-18|18:51:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:51:34] ok:192.168.1.80
+[2016-03-18|18:51:39] ONLINE Session[2]
+[2016-03-18|18:52:39] ONLINE Session[2]
+[2016-03-18|18:53:10] SyncTime[36198] ONLINE[2] MAX[1500]
+[2016-03-18|18:53:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:53:39] ONLINE Session[1]
+[2016-03-18|18:54:28] ok:192.168.1.80
+[2016-03-18|18:54:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:54:39] ONLINE Session[2]
+[2016-03-18|18:55:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:55:39] ONLINE Session[2]
+[2016-03-18|18:55:55] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-18|18:55:58] ok:192.168.1.80
+[2016-03-18|18:56:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:56:39] ONLINE Session[2]
+[2016-03-18|18:57:34] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:57:39] ONLINE Session[1]
+[2016-03-18|18:57:56] ok:192.168.1.80
+[2016-03-18|18:58:19] ok:192.168.1.84
+[2016-03-18|18:58:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|18:58:39] ONLINE Session[2]
+[2016-03-18|18:59:34] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|18:59:39] ONLINE Session[1]
+[2016-03-18|19:00:05] ok:192.168.1.80
+[2016-03-18|19:00:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|19:00:39] ONLINE Session[2]
+[2016-03-18|19:01:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|19:01:39] ONLINE Session[1]
+[2016-03-18|19:01:58] ok:192.168.1.80
+[2016-03-18|19:02:07] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-18|19:02:23] ok:192.168.1.80
+[2016-03-18|19:02:34] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|19:02:38] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-18|19:02:39] ONLINE Session[1]
+[2016-03-18|19:03:03] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-03-18|19:03:03] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-03-18|19:03:03] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_UpdatePlayerName 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_UpdatePlayerNameOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYN_Move 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYN_Attack 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-03-18|19:03:03] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-03-18|19:03:03] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-03-18|19:03:03] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-03-18|19:03:03] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 MAIL_GetMailList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 MAIL_LockMail 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 MAIL_ReceiveMail 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 MAIL_DelMail 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 HERO_StudySkill 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 HERO_ResetSkill 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 HERO_ResetSkillOK 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 HERO_UseGoods 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 HERO_UseGoodsOK 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 EQUIP_WearEquip 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 EQUIP_MergeEquip 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 EQUIP_MergeEquipOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 EQUIP_ActivateAchieve 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BACKPACK_GetBackpackList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BACKPACK_UseGoods 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BACKPACK_SellGoods 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 COPYMAP_AcessCopyMap 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 COPYMAP_CompleteCopyMap 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 COPYMAP_SaveTeam 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 COPYMAP_SaveTeamOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 COPYMAP_GetTeam 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 COPYMAP_GetTeamOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_RoomPlayerInfo 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_GetRoomList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_GetRoomListOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_CreateRoom 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_CreateRoomOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_IntoRoom 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_IntoRoomOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_OutRoom 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_OutRoomOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_Start 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_LoadComplete 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_LoadCompleteOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 PVPROOM_StartStatus 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SHOP_GetShop 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SHOP_GetShopOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SHOP_Buy 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SHOP_BuyOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SHOP_Refresh 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 SHOP_RefreshOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 NPC_GetNpc 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 NPC_GetNpcOK 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 NPC_Upgrade 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 NPC_UpgradeOK 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 NPC_Buy 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 NPC_BuyOK 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 NPC_Receive 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 NPC_ReceiveOK 对应的protocol handler
+[2016-03-18|19:03:03] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.Skill
+[2016-03-18|19:03:03] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-03-18|19:03:03] 没有找到 TEST_Test 对应的protocol handler
+[2016-03-18|19:03:03] TimeControlProcessor Control start.
+[2016-03-18|19:03:03] load trustip.txt
+[2016-03-18|19:03:03] add trustIpService: com.app.dispatch.TrustIpService@7b1c661c
+[2016-03-18|19:03:03] binded
+[2016-03-18|19:03:03] 数据分发服务器启动完成  -- 端口:19990
+[2016-03-18|19:03:08] ok:192.168.1.80
+[2016-03-18|19:03:58] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|19:04:03] ONLINE Session[1]
+[2016-03-18|19:04:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:05:03] ONLINE Session[0]
+[2016-03-18|19:05:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:06:03] ONLINE Session[0]
+[2016-03-18|19:06:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:07:03] ONLINE Session[0]
+[2016-03-18|19:07:21] ok:192.168.1.80
+[2016-03-18|19:07:58] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|19:08:03] ONLINE Session[1]
+[2016-03-18|19:08:44] ok:192.168.1.80
+[2016-03-18|19:08:58] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|19:09:03] ONLINE Session[1]
+[2016-03-18|19:09:57] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-18|19:09:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:10:00] ok:192.168.1.80
+[2016-03-18|19:10:03] ONLINE Session[1]
+[2016-03-18|19:10:25] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-18|19:10:26] ok:192.168.1.80
+[2016-03-18|19:10:58] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|19:11:03] ONLINE Session[1]
+[2016-03-18|19:11:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:12:03] ONLINE Session[0]
+[2016-03-18|19:12:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:13:03] ONLINE Session[0]
+[2016-03-18|19:13:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:14:03] ONLINE Session[0]
+[2016-03-18|19:14:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:15:03] ONLINE Session[0]
+[2016-03-18|19:15:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:16:03] ONLINE Session[0]
+[2016-03-18|19:16:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:17:03] ONLINE Session[0]
+[2016-03-18|19:17:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:18:03] ONLINE Session[0]
+[2016-03-18|19:18:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:19:03] ONLINE Session[0]
+[2016-03-18|19:19:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:20:03] ONLINE Session[0]
+[2016-03-18|19:20:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|19:21:03] ONLINE Session[0]
+[2016-03-18|19:31:19] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-03-18|19:31:19] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-03-18|19:31:19] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_UpdatePlayerName 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_UpdatePlayerNameOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYN_Move 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYN_Attack 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-03-18|19:31:19] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-03-18|19:31:19] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-03-18|19:31:19] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-03-18|19:31:19] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 MAIL_GetMailList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 MAIL_LockMail 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 MAIL_ReceiveMail 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 MAIL_DelMail 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 HERO_StudySkill 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 HERO_ResetSkill 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 HERO_ResetSkillOK 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 HERO_UseGoods 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 HERO_UseGoodsOK 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 EQUIP_WearEquip 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 EQUIP_MergeEquip 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 EQUIP_MergeEquipOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 EQUIP_ActivateAchieve 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BACKPACK_GetBackpackList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BACKPACK_UseGoods 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BACKPACK_SellGoods 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 COPYMAP_AcessCopyMap 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 COPYMAP_CompleteCopyMap 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 COPYMAP_SaveTeam 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 COPYMAP_SaveTeamOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 COPYMAP_GetTeam 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 COPYMAP_GetTeamOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_RoomPlayerInfo 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_GetRoomList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_GetRoomListOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_CreateRoom 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_CreateRoomOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_IntoRoom 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_IntoRoomOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_OutRoom 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_OutRoomOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_Start 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_LoadComplete 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_LoadCompleteOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 PVPROOM_StartStatus 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SHOP_GetShop 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SHOP_GetShopOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SHOP_Buy 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SHOP_BuyOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SHOP_Refresh 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 SHOP_RefreshOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 NPC_GetNpc 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 NPC_GetNpcOK 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 NPC_Upgrade 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 NPC_UpgradeOK 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 NPC_Buy 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 NPC_BuyOK 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 NPC_Receive 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 NPC_ReceiveOK 对应的protocol handler
+[2016-03-18|19:31:19] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.Skill
+[2016-03-18|19:31:19] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-03-18|19:31:19] 没有找到 TEST_Test 对应的protocol handler
+[2016-03-18|19:31:19] TimeControlProcessor Control start.
+[2016-03-18|19:31:19] load trustip.txt
+[2016-03-18|19:31:19] add trustIpService: com.app.dispatch.TrustIpService@4d6c3541
+[2016-03-18|19:31:19] binded
+[2016-03-18|19:31:19] 数据分发服务器启动完成  -- 端口:19990
+[2016-03-18|19:31:23] ok:192.168.1.80
+[2016-03-18|19:32:13] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|19:32:19] ONLINE Session[1]
+[2016-03-18|19:32:32] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-18|19:32:33] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-18|19:32:33] this.serverSession is null.
+[2016-03-18|20:12:50] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-03-18|20:12:50] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-03-18|20:12:50] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_UpdatePlayerName 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_UpdatePlayerNameOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYN_Move 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYN_Attack 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-03-18|20:12:50] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-03-18|20:12:50] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-03-18|20:12:50] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-03-18|20:12:50] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 MAIL_GetMailList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 MAIL_LockMail 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 MAIL_ReceiveMail 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 MAIL_DelMail 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 HERO_StudySkill 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 HERO_ResetSkill 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 HERO_ResetSkillOK 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 HERO_UseGoods 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 HERO_UseGoodsOK 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 EQUIP_WearEquip 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 EQUIP_MergeEquip 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 EQUIP_MergeEquipOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 EQUIP_ActivateAchieve 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BACKPACK_GetBackpackList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BACKPACK_UseGoods 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BACKPACK_SellGoods 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 COPYMAP_AcessCopyMap 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 COPYMAP_CompleteCopyMap 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 COPYMAP_SaveTeam 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 COPYMAP_SaveTeamOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 COPYMAP_GetTeam 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 COPYMAP_GetTeamOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_RoomPlayerInfo 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_GetRoomList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_GetRoomListOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_CreateRoom 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_CreateRoomOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_IntoRoom 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_IntoRoomOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_OutRoom 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_OutRoomOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_Start 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_LoadComplete 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_LoadCompleteOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 PVPROOM_StartStatus 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SHOP_GetShop 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SHOP_GetShopOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SHOP_Buy 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SHOP_BuyOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SHOP_Refresh 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 SHOP_RefreshOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 NPC_GetNpc 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 NPC_GetNpcOK 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 NPC_Upgrade 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 NPC_UpgradeOK 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 NPC_Buy 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 NPC_BuyOK 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 NPC_Receive 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 NPC_ReceiveOK 对应的protocol handler
+[2016-03-18|20:12:50] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.Skill
+[2016-03-18|20:12:50] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-03-18|20:12:50] 没有找到 TEST_Test 对应的protocol handler
+[2016-03-18|20:12:51] TimeControlProcessor Control start.
+[2016-03-18|20:12:51] load trustip.txt
+[2016-03-18|20:12:51] add trustIpService: com.app.dispatch.TrustIpService@4d6c3541
+[2016-03-18|20:12:51] binded
+[2016-03-18|20:12:51] 数据分发服务器启动完成  -- 端口:19990
+[2016-03-18|20:12:57] ok:192.168.1.80
+[2016-03-18|20:13:44] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|20:13:51] ONLINE Session[1]
+[2016-03-18|20:14:40] ok:192.168.1.66
+[2016-03-18|20:14:44] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|20:14:51] ONLINE Session[1]
+[2016-03-18|20:15:28] ok:192.168.1.80
+[2016-03-18|20:15:44] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|20:15:51] ONLINE Session[2]
+[2016-03-18|20:16:44] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|20:16:51] ONLINE Session[1]
+[2016-03-18|20:17:26] ok:192.168.1.80
+[2016-03-18|20:17:44] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|20:17:51] ONLINE Session[2]
+[2016-03-18|20:18:44] SyncTime[0] ONLINE[2] MAX[1500]
+[2016-03-18|20:18:51] ONLINE Session[1]
+[2016-03-18|20:47:15] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-03-18|20:47:15] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-03-18|20:47:15] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_UpdatePlayerName 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_UpdatePlayerNameOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYN_Move 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYN_Attack 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-03-18|20:47:15] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-03-18|20:47:15] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-03-18|20:47:15] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-03-18|20:47:15] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 MAIL_GetMailList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 MAIL_LockMail 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 MAIL_ReceiveMail 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 MAIL_DelMail 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 HERO_StudySkill 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 HERO_ResetSkill 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 HERO_ResetSkillOK 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 HERO_UseGoods 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 HERO_UseGoodsOK 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 EQUIP_WearEquip 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 EQUIP_MergeEquip 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 EQUIP_MergeEquipOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 EQUIP_ActivateAchieve 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BACKPACK_GetBackpackList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BACKPACK_UseGoods 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BACKPACK_SellGoods 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 COPYMAP_AcessCopyMap 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 COPYMAP_CompleteCopyMap 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 COPYMAP_SaveTeam 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 COPYMAP_SaveTeamOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 COPYMAP_GetTeam 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 COPYMAP_GetTeamOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_RoomPlayerInfo 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_GetRoomList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_GetRoomListOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_CreateRoom 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_CreateRoomOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_IntoRoom 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_IntoRoomOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_OutRoom 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_OutRoomOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_Start 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_LoadComplete 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_LoadCompleteOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 PVPROOM_StartStatus 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SHOP_GetShop 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SHOP_GetShopOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SHOP_Buy 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SHOP_BuyOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SHOP_Refresh 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 SHOP_RefreshOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 NPC_GetNpc 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 NPC_GetNpcOK 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 NPC_Upgrade 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 NPC_UpgradeOK 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 NPC_Buy 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 NPC_BuyOK 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 NPC_Receive 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 NPC_ReceiveOK 对应的protocol handler
+[2016-03-18|20:47:15] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.Skill
+[2016-03-18|20:47:15] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-03-18|20:47:15] 没有找到 TEST_Test 对应的protocol handler
+[2016-03-18|20:47:15] TimeControlProcessor Control start.
+[2016-03-18|20:47:15] load trustip.txt
+[2016-03-18|20:47:15] add trustIpService: com.app.dispatch.TrustIpService@78114b
+[2016-03-18|20:47:15] binded
+[2016-03-18|20:47:15] 数据分发服务器启动完成  -- 端口:19990
+[2016-03-18|20:47:25] ok:192.168.1.80
+[2016-03-18|20:48:12] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|20:48:15] ONLINE Session[1]
+[2016-03-18|20:49:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|20:49:15] ONLINE Session[0]
+[2016-03-18|20:50:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|20:50:15] ONLINE Session[0]
+[2016-03-18|20:51:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|20:51:15] ONLINE Session[0]
+[2016-03-18|20:51:31] ok:192.168.1.80
+[2016-03-18|20:52:12] SyncTime[1] ONLINE[1] MAX[1500]
+[2016-03-18|20:52:15] ONLINE Session[1]
+[2016-03-18|20:53:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|20:53:15] ONLINE Session[0]
+[2016-03-18|20:54:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|20:54:15] ONLINE Session[0]
+[2016-03-18|20:55:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|20:55:15] ONLINE Session[0]
+[2016-03-18|20:56:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|20:56:15] ONLINE Session[0]
+[2016-03-18|20:57:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|20:57:15] ONLINE Session[0]
+[2016-03-18|20:58:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|20:58:15] ONLINE Session[0]
+[2016-03-18|20:59:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|20:59:15] ONLINE Session[0]
+[2016-03-18|21:00:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|21:00:15] ONLINE Session[0]
+[2016-03-18|21:01:01] ok:192.168.1.80
+[2016-03-18|21:01:12] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|21:01:15] ONLINE Session[1]
+[2016-03-18|21:02:12] SyncTime[0] ONLINE[1] MAX[1500]
+[2016-03-18|21:02:15] ONLINE Session[1]
+[2016-03-18|21:03:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|21:03:15] ONLINE Session[0]
+[2016-03-18|21:04:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|21:04:15] ONLINE Session[0]
+[2016-03-18|21:05:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|21:05:15] ONLINE Session[0]
+[2016-03-18|21:06:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|21:06:15] ONLINE Session[0]
+[2016-03-18|21:07:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|21:07:15] ONLINE Session[0]
+[2016-03-18|21:08:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|21:08:15] ONLINE Session[0]
+[2016-03-18|21:09:12] SyncTime[0] ONLINE[0] MAX[1500]
+[2016-03-18|21:09:15] ONLINE Session[0]

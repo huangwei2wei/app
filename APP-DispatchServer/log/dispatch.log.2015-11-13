@@ -1,0 +1,1063 @@
+[2015-11-13|19:09:00] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-13|19:09:00] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-13|19:09:00] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-13|19:09:00] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-13|19:09:00] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-13|19:09:00] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-13|19:09:00] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-13|19:09:00] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-13|19:09:00] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-13|19:09:00] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-13|19:09:00] TimeControlProcessor Control start.
+[2015-11-13|19:09:00] load trustip.txt
+[2015-11-13|19:09:00] add trustIpService: com.app.dispatch.TrustIpService@368eb8bf
+[2015-11-13|19:09:00] binded
+[2015-11-13|19:09:00] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-13|19:09:31] ok:192.168.1.80
+[2015-11-13|19:09:48] SyncTime[6] ONLINE[0] MAX[1500]
+[2015-11-13|19:10:00] ONLINE Session[1]
+[2015-11-13|19:10:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:11:00] ONLINE Session[0]
+[2015-11-13|19:11:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:12:00] ONLINE Session[0]
+[2015-11-13|19:12:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:13:00] ONLINE Session[0]
+[2015-11-13|19:13:26] ok:192.168.1.80
+[2015-11-13|19:13:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:14:00] ONLINE Session[1]
+[2015-11-13|19:14:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:15:00] ONLINE Session[0]
+[2015-11-13|19:15:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:16:00] ONLINE Session[0]
+[2015-11-13|19:16:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:17:00] ONLINE Session[0]
+[2015-11-13|19:17:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:18:00] ONLINE Session[0]
+[2015-11-13|19:18:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:19:00] ONLINE Session[0]
+[2015-11-13|19:19:03] ok:192.168.1.80
+[2015-11-13|19:19:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:20:00] ONLINE Session[0]
+[2015-11-13|19:20:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:21:00] ONLINE Session[0]
+[2015-11-13|19:21:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:22:00] ONLINE Session[0]
+[2015-11-13|19:22:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:23:00] ONLINE Session[0]
+[2015-11-13|19:23:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:24:00] ONLINE Session[0]
+[2015-11-13|19:24:48] SyncTime[4] ONLINE[0] MAX[1500]
+[2015-11-13|19:25:00] ONLINE Session[0]
+[2015-11-13|19:25:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:26:00] ONLINE Session[0]
+[2015-11-13|19:26:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:26:51] ok:192.168.1.80
+[2015-11-13|19:27:00] ONLINE Session[1]
+[2015-11-13|19:27:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:28:00] ONLINE Session[0]
+[2015-11-13|19:28:17] ok:192.168.1.80
+[2015-11-13|19:28:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:29:00] ONLINE Session[1]
+[2015-11-13|19:29:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:30:00] ONLINE Session[0]
+[2015-11-13|19:30:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:31:00] ONLINE Session[0]
+[2015-11-13|19:31:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:32:00] ONLINE Session[0]
+[2015-11-13|19:32:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:33:00] ONLINE Session[0]
+[2015-11-13|19:33:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:34:00] ONLINE Session[0]
+[2015-11-13|19:34:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:35:00] ONLINE Session[0]
+[2015-11-13|19:35:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:36:00] ONLINE Session[0]
+[2015-11-13|19:36:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:37:00] ONLINE Session[0]
+[2015-11-13|19:37:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:38:00] ONLINE Session[0]
+[2015-11-13|19:38:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:39:00] ONLINE Session[0]
+[2015-11-13|19:39:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:40:00] ONLINE Session[0]
+[2015-11-13|19:40:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:41:00] ONLINE Session[0]
+[2015-11-13|19:41:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:42:00] ONLINE Session[0]
+[2015-11-13|19:42:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:43:00] ONLINE Session[0]
+[2015-11-13|19:43:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:44:00] ONLINE Session[0]
+[2015-11-13|19:44:48] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|19:45:00] ONLINE Session[0]
+[2015-11-13|19:45:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:46:00] ONLINE Session[0]
+[2015-11-13|19:46:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:47:00] ONLINE Session[0]
+[2015-11-13|19:47:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:48:00] ONLINE Session[0]
+[2015-11-13|19:48:48] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|19:49:00] ONLINE Session[0]
+[2015-11-13|19:49:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:50:00] ONLINE Session[0]
+[2015-11-13|19:50:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:51:00] ONLINE Session[0]
+[2015-11-13|19:51:48] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|19:52:00] ONLINE Session[0]
+[2015-11-13|19:52:48] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|19:53:00] ONLINE Session[0]
+[2015-11-13|19:53:48] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|19:54:00] ONLINE Session[0]
+[2015-11-13|19:54:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:55:00] ONLINE Session[0]
+[2015-11-13|19:55:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:56:00] ONLINE Session[0]
+[2015-11-13|19:56:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:57:00] ONLINE Session[0]
+[2015-11-13|19:57:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:58:00] ONLINE Session[0]
+[2015-11-13|19:58:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|19:59:00] ONLINE Session[0]
+[2015-11-13|19:59:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:00:00] ONLINE Session[0]
+[2015-11-13|20:00:48] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|20:01:00] ONLINE Session[0]
+[2015-11-13|20:01:03] ok:192.168.1.80
+[2015-11-13|20:01:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:02:00] ONLINE Session[1]
+[2015-11-13|20:02:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:02:56] ok:192.168.1.80
+[2015-11-13|20:03:00] ONLINE Session[1]
+[2015-11-13|20:03:48] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:05:21] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-13|20:05:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-13|20:05:21] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-13|20:05:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-13|20:05:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-13|20:05:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-13|20:05:21] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-13|20:05:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-13|20:05:21] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-13|20:05:21] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-13|20:05:21] TimeControlProcessor Control start.
+[2015-11-13|20:05:21] load trustip.txt
+[2015-11-13|20:05:21] add trustIpService: com.app.dispatch.TrustIpService@190e58a3
+[2015-11-13|20:05:21] binded
+[2015-11-13|20:05:21] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-13|20:05:26] ok:192.168.1.80
+[2015-11-13|20:06:10] SyncTime[5] ONLINE[0] MAX[1500]
+[2015-11-13|20:06:21] ONLINE Session[1]
+[2015-11-13|20:07:41] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-13|20:07:41] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-13|20:07:41] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-13|20:07:41] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-13|20:07:41] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-13|20:07:41] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-13|20:07:41] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-13|20:07:41] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-13|20:07:41] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-13|20:07:41] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-13|20:07:41] TimeControlProcessor Control start.
+[2015-11-13|20:07:41] load trustip.txt
+[2015-11-13|20:07:42] add trustIpService: com.app.dispatch.TrustIpService@54031f94
+[2015-11-13|20:07:42] binded
+[2015-11-13|20:07:42] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-13|20:07:47] ok:192.168.1.80
+[2015-11-13|20:08:37] SyncTime[3] ONLINE[0] MAX[1500]
+[2015-11-13|20:08:42] ONLINE Session[1]
+[2015-11-13|20:09:16] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-13|20:09:16] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-13|20:09:16] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-13|20:09:16] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-13|20:09:16] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-13|20:09:16] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-13|20:09:16] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-13|20:09:16] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-13|20:09:16] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-13|20:09:16] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-13|20:09:16] TimeControlProcessor Control start.
+[2015-11-13|20:09:16] load trustip.txt
+[2015-11-13|20:09:16] add trustIpService: com.app.dispatch.TrustIpService@7cdd422e
+[2015-11-13|20:09:16] binded
+[2015-11-13|20:09:16] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-13|20:09:22] ok:192.168.1.80
+[2015-11-13|20:10:10] SyncTime[6] ONLINE[0] MAX[1500]
+[2015-11-13|20:10:16] ONLINE Session[0]
+[2015-11-13|20:11:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:11:16] ONLINE Session[0]
+[2015-11-13|20:12:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:12:16] ONLINE Session[0]
+[2015-11-13|20:13:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:13:16] ONLINE Session[0]
+[2015-11-13|20:14:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:14:16] ONLINE Session[0]
+[2015-11-13|20:15:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:15:16] ONLINE Session[0]
+[2015-11-13|20:16:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:16:16] ONLINE Session[0]
+[2015-11-13|20:17:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:17:16] ONLINE Session[0]
+[2015-11-13|20:18:10] SyncTime[3] ONLINE[0] MAX[1500]
+[2015-11-13|20:18:16] ONLINE Session[0]
+[2015-11-13|20:19:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:19:16] ONLINE Session[0]
+[2015-11-13|20:20:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:20:16] ONLINE Session[0]
+[2015-11-13|20:21:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:21:16] ONLINE Session[0]
+[2015-11-13|20:22:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:22:16] ONLINE Session[0]
+[2015-11-13|20:23:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:23:16] ONLINE Session[0]
+[2015-11-13|20:24:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:24:16] ONLINE Session[0]
+[2015-11-13|20:25:10] SyncTime[4] ONLINE[0] MAX[1500]
+[2015-11-13|20:25:16] ONLINE Session[0]
+[2015-11-13|20:26:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:26:16] ONLINE Session[0]
+[2015-11-13|20:27:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:27:16] ONLINE Session[0]
+[2015-11-13|20:28:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:28:16] ONLINE Session[0]
+[2015-11-13|20:29:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:29:16] ONLINE Session[0]
+[2015-11-13|20:30:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:30:16] ONLINE Session[0]
+[2015-11-13|20:31:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:31:16] ONLINE Session[0]
+[2015-11-13|20:32:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:32:16] ONLINE Session[0]
+[2015-11-13|20:33:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:33:16] ONLINE Session[0]
+[2015-11-13|20:34:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:34:16] ONLINE Session[0]
+[2015-11-13|20:35:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:35:16] ONLINE Session[0]
+[2015-11-13|20:36:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:36:16] ONLINE Session[0]
+[2015-11-13|20:37:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:37:16] ONLINE Session[0]
+[2015-11-13|20:38:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:38:16] ONLINE Session[0]
+[2015-11-13|20:39:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:39:16] ONLINE Session[0]
+[2015-11-13|20:40:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:40:16] ONLINE Session[0]
+[2015-11-13|20:41:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:41:16] ONLINE Session[0]
+[2015-11-13|20:42:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:42:16] ONLINE Session[0]
+[2015-11-13|20:43:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:43:16] ONLINE Session[0]
+[2015-11-13|20:44:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:44:16] ONLINE Session[0]
+[2015-11-13|20:45:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:45:16] ONLINE Session[0]
+[2015-11-13|20:46:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:46:16] ONLINE Session[0]
+[2015-11-13|20:47:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:47:16] ONLINE Session[0]
+[2015-11-13|20:48:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:48:16] ONLINE Session[0]
+[2015-11-13|20:49:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|20:49:16] ONLINE Session[0]
+[2015-11-13|20:50:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:50:16] ONLINE Session[0]
+[2015-11-13|20:51:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:51:16] ONLINE Session[0]
+[2015-11-13|20:52:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:52:16] ONLINE Session[0]
+[2015-11-13|20:53:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:53:16] ONLINE Session[0]
+[2015-11-13|20:54:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:54:16] ONLINE Session[0]
+[2015-11-13|20:55:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|20:55:16] ONLINE Session[0]
+[2015-11-13|20:56:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:56:16] ONLINE Session[0]
+[2015-11-13|20:57:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:57:16] ONLINE Session[0]
+[2015-11-13|20:58:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|20:58:16] ONLINE Session[0]
+[2015-11-13|20:59:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|20:59:16] ONLINE Session[0]
+[2015-11-13|21:00:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:00:16] ONLINE Session[0]
+[2015-11-13|21:01:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:01:16] ONLINE Session[0]
+[2015-11-13|21:02:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:02:16] ONLINE Session[0]
+[2015-11-13|21:03:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:03:16] ONLINE Session[0]
+[2015-11-13|21:04:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:04:16] ONLINE Session[0]
+[2015-11-13|21:05:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:05:16] ONLINE Session[0]
+[2015-11-13|21:06:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:06:16] ONLINE Session[0]
+[2015-11-13|21:07:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:07:16] ONLINE Session[0]
+[2015-11-13|21:08:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:08:16] ONLINE Session[0]
+[2015-11-13|21:09:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:09:16] ONLINE Session[0]
+[2015-11-13|21:10:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:10:16] ONLINE Session[0]
+[2015-11-13|21:11:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:11:16] ONLINE Session[0]
+[2015-11-13|21:12:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:12:16] ONLINE Session[0]
+[2015-11-13|21:13:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:13:16] ONLINE Session[0]
+[2015-11-13|21:14:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:14:16] ONLINE Session[0]
+[2015-11-13|21:15:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|21:15:16] ONLINE Session[0]
+[2015-11-13|21:16:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:16:16] ONLINE Session[0]
+[2015-11-13|21:17:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:17:16] ONLINE Session[0]
+[2015-11-13|21:18:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:18:16] ONLINE Session[0]
+[2015-11-13|21:19:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:19:16] ONLINE Session[0]
+[2015-11-13|21:20:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:20:16] ONLINE Session[0]
+[2015-11-13|21:21:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:21:16] ONLINE Session[0]
+[2015-11-13|21:22:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:22:16] ONLINE Session[0]
+[2015-11-13|21:23:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:23:16] ONLINE Session[0]
+[2015-11-13|21:24:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:24:16] ONLINE Session[0]
+[2015-11-13|21:25:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:25:16] ONLINE Session[0]
+[2015-11-13|21:26:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:26:16] ONLINE Session[0]
+[2015-11-13|21:27:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:27:16] ONLINE Session[0]
+[2015-11-13|21:28:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:28:16] ONLINE Session[0]
+[2015-11-13|21:29:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:29:16] ONLINE Session[0]
+[2015-11-13|21:30:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:30:16] ONLINE Session[0]
+[2015-11-13|21:31:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:31:16] ONLINE Session[0]
+[2015-11-13|21:32:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|21:32:16] ONLINE Session[0]
+[2015-11-13|21:33:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:33:16] ONLINE Session[0]
+[2015-11-13|21:34:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:34:16] ONLINE Session[0]
+[2015-11-13|21:35:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:35:16] ONLINE Session[0]
+[2015-11-13|21:36:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:36:16] ONLINE Session[0]
+[2015-11-13|21:37:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:37:16] ONLINE Session[0]
+[2015-11-13|21:38:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|21:38:16] ONLINE Session[0]
+[2015-11-13|21:39:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:39:16] ONLINE Session[0]
+[2015-11-13|21:40:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:40:16] ONLINE Session[0]
+[2015-11-13|21:41:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:41:16] ONLINE Session[0]
+[2015-11-13|21:42:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:42:16] ONLINE Session[0]
+[2015-11-13|21:43:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:43:16] ONLINE Session[0]
+[2015-11-13|21:44:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:44:16] ONLINE Session[0]
+[2015-11-13|21:45:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|21:45:16] ONLINE Session[0]
+[2015-11-13|21:46:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:46:16] ONLINE Session[0]
+[2015-11-13|21:47:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:47:16] ONLINE Session[0]
+[2015-11-13|21:48:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:48:16] ONLINE Session[0]
+[2015-11-13|21:49:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|21:49:16] ONLINE Session[0]
+[2015-11-13|21:50:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:50:16] ONLINE Session[0]
+[2015-11-13|21:51:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|21:51:16] ONLINE Session[0]
+[2015-11-13|21:52:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:52:16] ONLINE Session[0]
+[2015-11-13|21:53:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:53:16] ONLINE Session[0]
+[2015-11-13|21:54:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|21:54:16] ONLINE Session[0]
+[2015-11-13|21:55:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:55:16] ONLINE Session[0]
+[2015-11-13|21:56:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:56:16] ONLINE Session[0]
+[2015-11-13|21:57:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|21:57:16] ONLINE Session[0]
+[2015-11-13|21:58:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|21:58:16] ONLINE Session[0]
+[2015-11-13|21:59:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|21:59:16] ONLINE Session[0]
+[2015-11-13|22:00:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:00:16] ONLINE Session[0]
+[2015-11-13|22:01:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:01:16] ONLINE Session[0]
+[2015-11-13|22:02:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:02:16] ONLINE Session[0]
+[2015-11-13|22:03:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:03:16] ONLINE Session[0]
+[2015-11-13|22:04:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:04:16] ONLINE Session[0]
+[2015-11-13|22:05:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:05:16] ONLINE Session[0]
+[2015-11-13|22:06:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:06:16] ONLINE Session[0]
+[2015-11-13|22:07:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:07:16] ONLINE Session[0]
+[2015-11-13|22:08:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:08:16] ONLINE Session[0]
+[2015-11-13|22:09:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:09:16] ONLINE Session[0]
+[2015-11-13|22:10:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:10:16] ONLINE Session[0]
+[2015-11-13|22:11:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|22:11:16] ONLINE Session[0]
+[2015-11-13|22:12:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:12:16] ONLINE Session[0]
+[2015-11-13|22:13:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|22:13:16] ONLINE Session[0]
+[2015-11-13|22:14:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:14:16] ONLINE Session[0]
+[2015-11-13|22:15:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|22:15:16] ONLINE Session[0]
+[2015-11-13|22:16:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:16:16] ONLINE Session[0]
+[2015-11-13|22:17:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:17:16] ONLINE Session[0]
+[2015-11-13|22:18:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:18:16] ONLINE Session[0]
+[2015-11-13|22:19:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:19:16] ONLINE Session[0]
+[2015-11-13|22:20:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:20:16] ONLINE Session[0]
+[2015-11-13|22:21:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:21:16] ONLINE Session[0]
+[2015-11-13|22:22:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:22:16] ONLINE Session[0]
+[2015-11-13|22:23:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:23:16] ONLINE Session[0]
+[2015-11-13|22:24:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|22:24:16] ONLINE Session[0]
+[2015-11-13|22:25:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:25:16] ONLINE Session[0]
+[2015-11-13|22:26:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:26:16] ONLINE Session[0]
+[2015-11-13|22:27:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:27:16] ONLINE Session[0]
+[2015-11-13|22:28:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:28:16] ONLINE Session[0]
+[2015-11-13|22:29:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:29:16] ONLINE Session[0]
+[2015-11-13|22:30:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|22:30:16] ONLINE Session[0]
+[2015-11-13|22:31:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:31:16] ONLINE Session[0]
+[2015-11-13|22:32:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:32:16] ONLINE Session[0]
+[2015-11-13|22:33:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|22:33:16] ONLINE Session[0]
+[2015-11-13|22:34:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:34:16] ONLINE Session[0]
+[2015-11-13|22:35:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:35:16] ONLINE Session[0]
+[2015-11-13|22:36:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|22:36:16] ONLINE Session[0]
+[2015-11-13|22:37:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:37:16] ONLINE Session[0]
+[2015-11-13|22:38:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:38:16] ONLINE Session[0]
+[2015-11-13|22:39:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|22:39:16] ONLINE Session[0]
+[2015-11-13|22:40:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:40:16] ONLINE Session[0]
+[2015-11-13|22:41:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:41:16] ONLINE Session[0]
+[2015-11-13|22:42:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:42:16] ONLINE Session[0]
+[2015-11-13|22:43:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:43:16] ONLINE Session[0]
+[2015-11-13|22:44:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:44:16] ONLINE Session[0]
+[2015-11-13|22:45:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:45:16] ONLINE Session[0]
+[2015-11-13|22:46:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|22:46:16] ONLINE Session[0]
+[2015-11-13|22:47:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:47:16] ONLINE Session[0]
+[2015-11-13|22:48:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:48:16] ONLINE Session[0]
+[2015-11-13|22:49:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|22:49:16] ONLINE Session[0]
+[2015-11-13|22:50:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:50:16] ONLINE Session[0]
+[2015-11-13|22:51:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:51:16] ONLINE Session[0]
+[2015-11-13|22:52:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:52:16] ONLINE Session[0]
+[2015-11-13|22:53:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|22:53:16] ONLINE Session[0]
+[2015-11-13|22:54:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|22:54:16] ONLINE Session[0]
+[2015-11-13|22:55:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:55:16] ONLINE Session[0]
+[2015-11-13|22:56:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:56:16] ONLINE Session[0]
+[2015-11-13|22:57:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:57:16] ONLINE Session[0]
+[2015-11-13|22:58:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:58:16] ONLINE Session[0]
+[2015-11-13|22:59:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|22:59:16] ONLINE Session[0]
+[2015-11-13|23:00:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|23:00:16] ONLINE Session[0]
+[2015-11-13|23:01:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:01:16] ONLINE Session[0]
+[2015-11-13|23:02:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:02:16] ONLINE Session[0]
+[2015-11-13|23:03:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|23:03:16] ONLINE Session[0]
+[2015-11-13|23:04:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:04:16] ONLINE Session[0]
+[2015-11-13|23:05:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|23:05:16] ONLINE Session[0]
+[2015-11-13|23:06:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:06:16] ONLINE Session[0]
+[2015-11-13|23:07:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:07:16] ONLINE Session[0]
+[2015-11-13|23:08:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|23:08:16] ONLINE Session[0]
+[2015-11-13|23:09:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:09:16] ONLINE Session[0]
+[2015-11-13|23:10:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|23:10:16] ONLINE Session[0]
+[2015-11-13|23:11:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:11:16] ONLINE Session[0]
+[2015-11-13|23:12:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:12:16] ONLINE Session[0]
+[2015-11-13|23:13:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|23:13:16] ONLINE Session[0]
+[2015-11-13|23:14:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:14:16] ONLINE Session[0]
+[2015-11-13|23:15:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:15:16] ONLINE Session[0]
+[2015-11-13|23:16:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:16:16] ONLINE Session[0]
+[2015-11-13|23:17:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:17:16] ONLINE Session[0]
+[2015-11-13|23:18:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|23:18:16] ONLINE Session[0]
+[2015-11-13|23:19:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:19:16] ONLINE Session[0]
+[2015-11-13|23:20:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:20:16] ONLINE Session[0]
+[2015-11-13|23:21:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:21:16] ONLINE Session[0]
+[2015-11-13|23:22:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|23:22:16] ONLINE Session[0]
+[2015-11-13|23:23:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|23:23:16] ONLINE Session[0]
+[2015-11-13|23:24:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:24:16] ONLINE Session[0]
+[2015-11-13|23:25:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|23:25:16] ONLINE Session[0]
+[2015-11-13|23:26:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:26:16] ONLINE Session[0]
+[2015-11-13|23:27:10] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-13|23:27:16] ONLINE Session[0]
+[2015-11-13|23:28:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:28:16] ONLINE Session[0]
+[2015-11-13|23:29:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:29:16] ONLINE Session[0]
+[2015-11-13|23:30:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:30:16] ONLINE Session[0]
+[2015-11-13|23:31:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:31:16] ONLINE Session[0]
+[2015-11-13|23:32:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:32:16] ONLINE Session[0]
+[2015-11-13|23:33:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:33:16] ONLINE Session[0]
+[2015-11-13|23:34:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:34:16] ONLINE Session[0]
+[2015-11-13|23:35:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:35:16] ONLINE Session[0]
+[2015-11-13|23:36:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|23:36:16] ONLINE Session[0]
+[2015-11-13|23:37:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:37:16] ONLINE Session[0]
+[2015-11-13|23:38:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:38:16] ONLINE Session[0]
+[2015-11-13|23:39:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:39:16] ONLINE Session[0]
+[2015-11-13|23:40:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:40:16] ONLINE Session[0]
+[2015-11-13|23:41:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|23:41:16] ONLINE Session[0]
+[2015-11-13|23:42:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:42:16] ONLINE Session[0]
+[2015-11-13|23:43:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:43:16] ONLINE Session[0]
+[2015-11-13|23:44:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:44:16] ONLINE Session[0]
+[2015-11-13|23:45:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:45:16] ONLINE Session[0]
+[2015-11-13|23:46:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|23:46:16] ONLINE Session[0]
+[2015-11-13|23:47:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:47:16] ONLINE Session[0]
+[2015-11-13|23:48:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:48:16] ONLINE Session[0]
+[2015-11-13|23:49:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:49:16] ONLINE Session[0]
+[2015-11-13|23:50:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:50:16] ONLINE Session[0]
+[2015-11-13|23:51:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:51:16] ONLINE Session[0]
+[2015-11-13|23:52:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:52:16] ONLINE Session[0]
+[2015-11-13|23:53:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|23:53:16] ONLINE Session[0]
+[2015-11-13|23:54:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:54:16] ONLINE Session[0]
+[2015-11-13|23:55:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:55:16] ONLINE Session[0]
+[2015-11-13|23:56:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:56:16] ONLINE Session[0]
+[2015-11-13|23:57:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:57:16] ONLINE Session[0]
+[2015-11-13|23:58:10] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-13|23:58:16] ONLINE Session[0]
+[2015-11-13|23:59:10] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-13|23:59:16] ONLINE Session[0]

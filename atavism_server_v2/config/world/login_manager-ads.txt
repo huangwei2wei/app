@@ -1,0 +1,7 @@
+# Agent message type advertisements
+
+combat.GET_SKILL
+ao.DATA_LOG
+ao.CHARACTER_CREATED
+ao.CHARACTER_DELETED
+ao.OBJINFO_REQ

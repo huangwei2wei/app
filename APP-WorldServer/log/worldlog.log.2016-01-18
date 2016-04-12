@@ -1,0 +1,1161 @@
+[2016-01-18|17:58:21] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-01-18|17:58:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-01-18|17:58:21] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYN_Move 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYN_Attack 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-01-18|17:58:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-01-18|17:58:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-01-18|17:58:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-01-18|17:58:21] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 EQUIP_MergeAndWearEquip 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 EQUIP_MergeAndWearEquipOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PVP_RoomPlayerInfo 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PVP_GetRoomListOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PVP_CreateRoomOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PVP_IntoRoomOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 PVP_OutRoomOk 对应的protocol handler
+[2016-01-18|17:58:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadComplete
+[2016-01-18|17:58:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadCompleteOk
+[2016-01-18|17:58:21] 没有找到 PVP_StartStatus 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 STORE_MysticStore 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 STORE_MysticStoreOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-01-18|17:58:21] 没有找到 TEST_Test 对应的protocol handler
+[2016-01-18|17:58:23] MLog clients using log4j logging.
+[2016-01-18|17:58:24] Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2016-01-18|17:58:24] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[2016-01-18|17:58:24] HHH000412: Hibernate Core {4.3.9.Final}
+[2016-01-18|17:58:24] HHH000206: hibernate.properties not found
+[2016-01-18|17:58:24] HHH000021: Bytecode provider name : javassist
+[2016-01-18|17:58:24] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.log.xml
+[2016-01-18|17:58:24] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-18|17:58:24] HHH000041: Configured SessionFactory: null
+[2016-01-18|17:58:24] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9encrfxx1prat00|328a5f8b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9encrfxx1prat00|328a5f8b, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://192.168.1.12/s_log_1?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-18|17:58:24] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-18|17:58:24] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-18|17:58:24] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-18|17:58:24] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-18|17:58:25] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.gameConfig.xml
+[2016-01-18|17:58:25] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-18|17:58:25] HHH000041: Configured SessionFactory: null
+[2016-01-18|17:58:25] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9encrfxx1prat00|55fa81, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9encrfxx1prat00|55fa81, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://192.168.1.12/game_config?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-18|17:58:25] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-18|17:58:25] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-18|17:58:25] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-18|17:58:25] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-18|17:58:27] connect auth
+[2016-01-18|17:58:27] Account auth connected
+[2016-01-18|17:58:27] AccountService connected
+[2016-01-18|17:58:27] BattleService connected
+[2016-01-18|17:58:27] NearbyService connected
+[2016-01-18|17:58:28] 游戏世界服务器启动...
+[2016-01-18|17:59:27] 在线人数: 0
+[2016-01-18|17:59:27] 7	1453111167923	角色在线数量:0
+[2016-01-18|18:00:27] 在线人数: 0
+[2016-01-18|18:00:27] 7	1453111227927	角色在线数量:0
+[2016-01-18|18:01:27] 在线人数: 0
+[2016-01-18|18:01:27] 7	1453111287929	角色在线数量:0
+[2016-01-18|18:02:27] 在线人数: 0
+[2016-01-18|18:02:27] 7	1453111347931	角色在线数量:0
+[2016-01-18|18:03:27] 在线人数: 0
+[2016-01-18|18:03:27] 7	1453111407945	角色在线数量:0
+[2016-01-18|18:04:27] 在线人数: 0
+[2016-01-18|18:04:27] 7	1453111467949	角色在线数量:0
+[2016-01-18|18:05:27] 在线人数: 0
+[2016-01-18|18:05:27] 7	1453111527962	角色在线数量:0
+[2016-01-18|18:06:27] 在线人数: 0
+[2016-01-18|18:06:27] 7	1453111587972	角色在线数量:0
+[2016-01-18|18:07:27] 在线人数: 0
+[2016-01-18|18:07:27] 7	1453111647987	角色在线数量:0
+[2016-01-18|18:08:27] 在线人数: 0
+[2016-01-18|18:08:27] 7	1453111707987	角色在线数量:0
+[2016-01-18|18:09:27] 在线人数: 0
+[2016-01-18|18:09:27] 7	1453111767993	角色在线数量:0
+[2016-01-18|18:10:28] 在线人数: 0
+[2016-01-18|18:10:28] 7	1453111828005	角色在线数量:0
+[2016-01-18|18:11:28] 在线人数: 0
+[2016-01-18|18:11:28] 7	1453111888012	角色在线数量:0
+[2016-01-18|18:12:28] 在线人数: 0
+[2016-01-18|18:12:28] 7	1453111948014	角色在线数量:0
+[2016-01-18|18:13:28] 在线人数: 0
+[2016-01-18|18:13:28] 7	1453112008016	角色在线数量:0
+[2016-01-18|18:14:28] 在线人数: 0
+[2016-01-18|18:14:28] 7	1453112068017	角色在线数量:0
+[2016-01-18|18:15:28] 在线人数: 0
+[2016-01-18|18:15:28] 7	1453112128031	角色在线数量:0
+[2016-01-18|18:16:28] 在线人数: 0
+[2016-01-18|18:16:28] 7	1453112188040	角色在线数量:0
+[2016-01-18|18:17:28] 在线人数: 0
+[2016-01-18|18:17:28] 7	1453112248043	角色在线数量:0
+[2016-01-18|18:18:28] 在线人数: 0
+[2016-01-18|18:18:28] 7	1453112308045	角色在线数量:0
+[2016-01-18|18:19:28] 在线人数: 0
+[2016-01-18|18:19:28] 7	1453112368047	角色在线数量:0
+[2016-01-18|18:20:28] 在线人数: 0
+[2016-01-18|18:20:28] 7	1453112428052	角色在线数量:0
+[2016-01-18|18:21:28] 在线人数: 0
+[2016-01-18|18:21:28] 7	1453112488052	角色在线数量:0
+[2016-01-18|18:22:28] 在线人数: 0
+[2016-01-18|18:22:28] 7	1453112548058	角色在线数量:0
+[2016-01-18|18:23:28] 在线人数: 0
+[2016-01-18|18:23:28] 7	1453112608062	角色在线数量:0
+[2016-01-18|18:24:28] 在线人数: 0
+[2016-01-18|18:24:28] 7	1453112668062	角色在线数量:0
+[2016-01-18|18:25:28] 在线人数: 0
+[2016-01-18|18:25:28] 7	1453112728067	角色在线数量:0
+[2016-01-18|18:26:28] 在线人数: 0
+[2016-01-18|18:26:28] 7	1453112788082	角色在线数量:0
+[2016-01-18|18:27:28] 在线人数: 0
+[2016-01-18|18:27:28] 7	1453112848087	角色在线数量:0
+[2016-01-18|18:28:28] 在线人数: 0
+[2016-01-18|18:28:28] 7	1453112908101	角色在线数量:0
+[2016-01-18|18:29:28] 在线人数: 0
+[2016-01-18|18:29:28] 7	1453112968114	角色在线数量:0
+[2016-01-18|18:30:28] 在线人数: 0
+[2016-01-18|18:30:28] 7	1453113028114	角色在线数量:0
+[2016-01-18|18:31:28] 在线人数: 0
+[2016-01-18|18:31:28] 7	1453113088119	角色在线数量:0
+[2016-01-18|18:32:28] 在线人数: 0
+[2016-01-18|18:32:28] 7	1453113148134	角色在线数量:0
+[2016-01-18|18:33:28] 在线人数: 0
+[2016-01-18|18:33:28] 7	1453113208139	角色在线数量:0
+[2016-01-18|18:34:28] 在线人数: 0
+[2016-01-18|18:34:28] 7	1453113268152	角色在线数量:0
+[2016-01-18|18:35:28] 在线人数: 0
+[2016-01-18|18:35:28] 7	1453113328154	角色在线数量:0
+[2016-01-18|18:36:28] 在线人数: 0
+[2016-01-18|18:36:28] 7	1453113388156	角色在线数量:0
+[2016-01-18|18:37:28] 在线人数: 0
+[2016-01-18|18:37:28] 7	1453113448158	角色在线数量:0
+[2016-01-18|18:38:28] 在线人数: 0
+[2016-01-18|18:38:28] 7	1453113508162	角色在线数量:0
+[2016-01-18|18:39:28] 在线人数: 0
+[2016-01-18|18:39:28] 7	1453113568175	角色在线数量:0
+[2016-01-18|18:40:28] 在线人数: 0
+[2016-01-18|18:40:28] 7	1453113628189	角色在线数量:0
+[2016-01-18|18:41:28] 在线人数: 0
+[2016-01-18|18:41:28] 7	1453113688193	角色在线数量:0
+[2016-01-18|18:42:28] 在线人数: 0
+[2016-01-18|18:42:28] 7	1453113748196	角色在线数量:0
+[2016-01-18|18:43:28] 在线人数: 0
+[2016-01-18|18:43:28] 7	1453113808203	角色在线数量:0
+[2016-01-18|18:44:28] 在线人数: 0
+[2016-01-18|18:44:28] 7	1453113868207	角色在线数量:0
+[2016-01-18|18:45:28] 在线人数: 0
+[2016-01-18|18:45:28] 7	1453113928208	角色在线数量:0
+[2016-01-18|18:46:28] 在线人数: 0
+[2016-01-18|18:46:28] 7	1453113988208	角色在线数量:0
+[2016-01-18|18:47:28] 在线人数: 0
+[2016-01-18|18:47:28] 7	1453114048209	角色在线数量:0
+[2016-01-18|18:48:28] 在线人数: 0
+[2016-01-18|18:48:28] 7	1453114108209	角色在线数量:0
+[2016-01-18|18:49:28] 在线人数: 0
+[2016-01-18|18:49:28] 7	1453114168209	角色在线数量:0
+[2016-01-18|18:50:28] 在线人数: 0
+[2016-01-18|18:50:28] 7	1453114228210	角色在线数量:0
+[2016-01-18|18:51:28] 在线人数: 0
+[2016-01-18|18:51:28] 7	1453114288210	角色在线数量:0
+[2016-01-18|18:52:28] 在线人数: 0
+[2016-01-18|18:52:28] 7	1453114348211	角色在线数量:0
+[2016-01-18|18:53:28] 在线人数: 0
+[2016-01-18|18:53:28] 7	1453114408211	角色在线数量:0
+[2016-01-18|18:54:28] 在线人数: 0
+[2016-01-18|18:54:28] 7	1453114468212	角色在线数量:0
+[2016-01-18|18:55:28] 在线人数: 0
+[2016-01-18|18:55:28] 7	1453114528212	角色在线数量:0
+[2016-01-18|18:56:28] 在线人数: 0
+[2016-01-18|18:56:28] 7	1453114588213	角色在线数量:0
+[2016-01-18|18:57:28] 在线人数: 0
+[2016-01-18|18:57:28] 7	1453114648213	角色在线数量:0
+[2016-01-18|18:58:28] 在线人数: 0
+[2016-01-18|18:58:28] 7	1453114708213	角色在线数量:0
+[2016-01-18|18:59:28] 在线人数: 0
+[2016-01-18|18:59:28] 7	1453114768214	角色在线数量:0
+[2016-01-18|19:00:28] 在线人数: 0
+[2016-01-18|19:00:28] 7	1453114828214	角色在线数量:0
+[2016-01-18|19:01:28] 在线人数: 0
+[2016-01-18|19:01:28] 7	1453114888215	角色在线数量:0
+[2016-01-18|19:50:24] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SERVER_Kick 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2016-01-18|19:50:24] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2016-01-18|19:50:24] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYN_Move 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYN_ReturnMove 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYN_ReportPlace 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYN_ViewPlayerData 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYN_JumpMap 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYN_Attack 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYN_ReturnAttack 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 CHAT_RemoveChannels 对应的protocol handler
+[2016-01-18|19:50:24] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2016-01-18|19:50:24] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2016-01-18|19:50:24] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2016-01-18|19:50:24] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 MAIL_GetMailListOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 MAIL_LockMailOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 MAIL_ReceiveMailOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 MAIL_DelMailOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 MAIL_NewMail 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 HERO_UpdateHeroData 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 EQUIP_WearEquipOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 EQUIP_MergeAndWearEquip 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 EQUIP_MergeAndWearEquipOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 EQUIP_RefineEquip 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 EQUIP_RefineEquipOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 EQUIP_ActivateAchieveOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BACKPACK_UpdateGoodsData 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BACKPACK_GetBackpackListOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BACKPACK_UseGoodsOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 BACKPACK_SellGoodsOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 COPYMAP_AcessCopyMapOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 COPYMAP_CompleteCopyMapOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PVP_RoomPlayerInfo 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PVP_GetRoomListOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PVP_CreateRoomOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PVP_IntoRoomOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 PVP_OutRoomOk 对应的protocol handler
+[2016-01-18|19:50:24] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadComplete
+[2016-01-18|19:50:24] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.pvp.LoadCompleteOk
+[2016-01-18|19:50:24] 没有找到 PVP_StartStatus 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 STORE_MysticStore 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 STORE_MysticStoreOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2016-01-18|19:50:24] 没有找到 TEST_Test 对应的protocol handler
+[2016-01-18|19:50:25] MLog clients using log4j logging.
+[2016-01-18|19:50:25] Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+[2016-01-18|19:50:25] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[2016-01-18|19:50:25] HHH000412: Hibernate Core {4.3.9.Final}
+[2016-01-18|19:50:25] HHH000206: hibernate.properties not found
+[2016-01-18|19:50:25] HHH000021: Bytecode provider name : javassist
+[2016-01-18|19:50:25] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.log.xml
+[2016-01-18|19:50:25] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-18|19:50:25] HHH000041: Configured SessionFactory: null
+[2016-01-18|19:50:25] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9engribv1o9bx9x|2c1526a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9engribv1o9bx9x|2c1526a, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://192.168.1.12/s_log_1?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-18|19:50:26] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-18|19:50:26] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-18|19:50:26] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-18|19:50:26] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-18|19:50:26] HHH000044: Configuring from URL: file:/F:/app/APP-WorldServer/bin/hibernate.cfg.gameConfig.xml
+[2016-01-18|19:50:26] HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[2016-01-18|19:50:26] HHH000041: Configured SessionFactory: null
+[2016-01-18|19:50:26] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15c9engribv1o9bx9x|2dfeb676, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15c9engribv1o9bx9x|2dfeb676, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://192.168.1.12/game_config?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2016-01-18|19:50:26] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2016-01-18|19:50:26] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[2016-01-18|19:50:26] HHH000399: Using default transaction strategy (direct JDBC transactions)
+[2016-01-18|19:50:26] HHH000397: Using ASTQueryTranslatorFactory
+[2016-01-18|19:50:28] connect auth
+[2016-01-18|19:50:28] Account auth connected
+[2016-01-18|19:50:28] AccountService connected
+[2016-01-18|19:50:28] BattleService connected
+[2016-01-18|19:50:28] NearbyService connected
+[2016-01-18|19:50:28] 游戏世界服务器启动...
+[2016-01-18|19:51:28] 在线人数: 0
+[2016-01-18|19:51:28] 7	1453117888669	角色在线数量:0
+[2016-01-18|19:51:34] account:666
+[2016-01-18|19:51:34] AccountID[99][Login Ok]
+[2016-01-18|19:51:50] 1	1453117910066	27	joanne
+[2016-01-18|19:51:50] createWorldPlayer ID[27]Level[1] load from db
+[2016-01-18|19:51:50] udid:666
+[2016-01-18|19:51:50] RoleLoginHandler-----Time:110
+[2016-01-18|19:52:28] 在线人数: 1
+[2016-01-18|19:52:28] 7	1453117948671	角色在线数量:1
+[2016-01-18|19:53:02] SessionClosed SessionId:1----playerId:27
+[2016-01-18|19:53:02] 3	1453117982145	玩家退出playerId:27	1	1418964018
+[2016-01-18|19:53:02] 注销保存玩家信息：id=27,name=joanne,level=1
+[2016-01-18|19:53:28] account:666
+[2016-01-18|19:53:28] AccountID[99][Login Ok]
+[2016-01-18|19:53:28] 在线人数: 0
+[2016-01-18|19:53:28] 7	1453118008674	角色在线数量:0
+[2016-01-18|19:53:28] createWorldPlayer ID[27]Level[1] load from db
+[2016-01-18|19:53:28] udid:666
+[2016-01-18|19:54:18] SessionClosed SessionId:2----playerId:27
+[2016-01-18|19:54:18] 3	1453118058736	玩家退出playerId:27	1	1419062674
+[2016-01-18|19:54:18] 注销保存玩家信息：id=27,name=joanne,level=1
+[2016-01-18|19:54:28] 在线人数: 0
+[2016-01-18|19:54:28] 7	1453118068674	角色在线数量:0
+[2016-01-18|19:54:35] account:666
+[2016-01-18|19:54:35] AccountID[99][Login Ok]
+[2016-01-18|19:54:35] createWorldPlayer ID[27]Level[1] load from db
+[2016-01-18|19:54:35] udid:666
+[2016-01-18|19:55:28] 在线人数: 1
+[2016-01-18|19:55:28] 7	1453118128688	角色在线数量:1
+[2016-01-18|19:55:43] SessionClosed SessionId:3----playerId:27
+[2016-01-18|19:55:43] 3	1453118143884	玩家退出playerId:27	1	1419129431
+[2016-01-18|19:55:43] 注销保存玩家信息：id=27,name=joanne,level=1
+[2016-01-18|19:56:28] 在线人数: 0
+[2016-01-18|19:56:28] 7	1453118188701	角色在线数量:0
+[2016-01-18|19:57:28] 在线人数: 0
+[2016-01-18|19:57:28] 7	1453118248716	角色在线数量:0
+[2016-01-18|19:58:28] 在线人数: 0
+[2016-01-18|19:58:28] 7	1453118308719	角色在线数量:0
+[2016-01-18|19:59:28] 在线人数: 0
+[2016-01-18|19:59:28] 7	1453118368733	角色在线数量:0
+[2016-01-18|20:00:28] 在线人数: 0
+[2016-01-18|20:00:28] 7	1453118428737	角色在线数量:0
+[2016-01-18|20:01:28] 在线人数: 0
+[2016-01-18|20:01:28] 7	1453118488751	角色在线数量:0
+[2016-01-18|20:02:28] 在线人数: 0
+[2016-01-18|20:02:28] 7	1453118548756	角色在线数量:0
+[2016-01-18|20:03:28] 在线人数: 0
+[2016-01-18|20:03:28] 7	1453118608768	角色在线数量:0
+[2016-01-18|20:04:28] 在线人数: 0
+[2016-01-18|20:04:28] 7	1453118668775	角色在线数量:0
+[2016-01-18|20:05:28] 在线人数: 0
+[2016-01-18|20:05:28] 7	1453118728789	角色在线数量:0
+[2016-01-18|20:06:14] account:chi
+[2016-01-18|20:06:14] AccountID[98][Login Ok]
+[2016-01-18|20:06:17] 1	1453118777132	28	贾斯特
+[2016-01-18|20:06:17] createWorldPlayer ID[28]Level[1] load from db
+[2016-01-18|20:06:17] udid:chi
+[2016-01-18|20:06:17] RoleLoginHandler-----Time:64
+[2016-01-18|20:06:28] 在线人数: 1
+[2016-01-18|20:06:28] 7	1453118788803	角色在线数量:1
+[2016-01-18|20:07:17] SessionClosed SessionId:4----playerId:28
+[2016-01-18|20:07:17] 3	1453118837896	玩家退出playerId:28	1	1419831100
+[2016-01-18|20:07:17] 注销保存玩家信息：id=28,name=贾斯特,level=1
+[2016-01-18|20:07:28] 在线人数: 0
+[2016-01-18|20:07:28] 7	1453118848804	角色在线数量:0
+[2016-01-18|20:08:19] account:chi
+[2016-01-18|20:08:19] AccountID[98][Login Ok]
+[2016-01-18|20:08:19] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:08:19] udid:chi
+[2016-01-18|20:08:26] GetListHandler-----Time:62
+[2016-01-18|20:08:28] 在线人数: 1
+[2016-01-18|20:08:28] 7	1453118908805	角色在线数量:1
+[2016-01-18|20:08:35] AcessCopyMapHandler-----Time:4732
+[2016-01-18|20:09:01] SessionClosed SessionId:5----playerId:28
+[2016-01-18|20:09:01] 3	1453118941779	玩家退出playerId:28	50	1419953162
+[2016-01-18|20:09:01] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:09:16] account:chi
+[2016-01-18|20:09:16] AccountID[98][Login Ok]
+[2016-01-18|20:09:16] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:09:16] udid:chi
+[2016-01-18|20:09:28] 在线人数: 1
+[2016-01-18|20:09:28] 7	1453118968814	角色在线数量:1
+[2016-01-18|20:10:24] SessionClosed SessionId:6----playerId:28
+[2016-01-18|20:10:24] 3	1453119024440	玩家退出playerId:28	50	1420010347
+[2016-01-18|20:10:24] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:10:28] 在线人数: 0
+[2016-01-18|20:10:28] 7	1453119028825	角色在线数量:0
+[2016-01-18|20:10:43] account:chi
+[2016-01-18|20:10:43] AccountID[98][Login Ok]
+[2016-01-18|20:10:43] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:10:43] udid:chi
+[2016-01-18|20:11:28] 在线人数: 1
+[2016-01-18|20:11:28] 7	1453119088826	角色在线数量:1
+[2016-01-18|20:11:51] SessionClosed SessionId:7----playerId:28
+[2016-01-18|20:11:51] 3	1453119111375	玩家退出playerId:28	50	1420097605
+[2016-01-18|20:11:51] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:12:28] 在线人数: 0
+[2016-01-18|20:12:28] 7	1453119148841	角色在线数量:0
+[2016-01-18|20:12:28] account:chi
+[2016-01-18|20:12:28] AccountID[98][Login Ok]
+[2016-01-18|20:12:28] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:12:28] udid:chi
+[2016-01-18|20:13:08] SessionClosed SessionId:8----playerId:28
+[2016-01-18|20:13:08] 3	1453119188243	玩家退出playerId:28	50	1420202951
+[2016-01-18|20:13:08] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:13:22] account:chi
+[2016-01-18|20:13:22] AccountID[98][Login Ok]
+[2016-01-18|20:13:22] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:13:22] udid:chi
+[2016-01-18|20:13:28] 在线人数: 1
+[2016-01-18|20:13:28] 7	1453119208843	角色在线数量:1
+[2016-01-18|20:13:53] SessionClosed SessionId:9----playerId:28
+[2016-01-18|20:13:53] 3	1453119233326	玩家退出playerId:28	50	1420256768
+[2016-01-18|20:13:53] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:14:07] account:chi
+[2016-01-18|20:14:07] AccountID[98][Login Ok]
+[2016-01-18|20:14:07] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:14:07] udid:chi
+[2016-01-18|20:14:22] SessionClosed SessionId:10----playerId:28
+[2016-01-18|20:14:22] 3	1453119262988	玩家退出playerId:28	50	1420301771
+[2016-01-18|20:14:22] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:14:28] 在线人数: 0
+[2016-01-18|20:14:28] 7	1453119268854	角色在线数量:0
+[2016-01-18|20:14:41] account:chi
+[2016-01-18|20:14:41] AccountID[98][Login Ok]
+[2016-01-18|20:14:41] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:14:41] udid:chi
+[2016-01-18|20:15:28] 在线人数: 1
+[2016-01-18|20:15:28] 7	1453119328858	角色在线数量:1
+[2016-01-18|20:15:34] SessionClosed SessionId:11----playerId:28
+[2016-01-18|20:15:34] 3	1453119334475	玩家退出playerId:28	50	1420335681
+[2016-01-18|20:15:34] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:15:49] account:chi
+[2016-01-18|20:15:49] AccountID[98][Login Ok]
+[2016-01-18|20:15:49] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:15:49] udid:chi
+[2016-01-18|20:16:28] 在线人数: 1
+[2016-01-18|20:16:28] 7	1453119388867	角色在线数量:1
+[2016-01-18|20:16:29] SessionClosed SessionId:12----playerId:28
+[2016-01-18|20:16:29] 3	1453119389024	玩家退出playerId:28	50	1420403334
+[2016-01-18|20:16:29] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:16:44] account:chi
+[2016-01-18|20:16:44] AccountID[98][Login Ok]
+[2016-01-18|20:16:44] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:16:44] udid:chi
+[2016-01-18|20:17:28] 在线人数: 1
+[2016-01-18|20:17:28] 7	1453119448870	角色在线数量:1
+[2016-01-18|20:17:51] SessionClosed SessionId:13----playerId:28
+[2016-01-18|20:17:51] 3	1453119471623	玩家退出playerId:28	50	1420458082
+[2016-01-18|20:17:51] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:18:16] account:chi
+[2016-01-18|20:18:16] AccountID[98][Login Ok]
+[2016-01-18|20:18:16] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:18:16] udid:chi
+[2016-01-18|20:18:28] 在线人数: 1
+[2016-01-18|20:18:28] 7	1453119508876	角色在线数量:1
+[2016-01-18|20:18:50] SessionClosed SessionId:14----playerId:28
+[2016-01-18|20:18:50] 3	1453119530612	玩家退出playerId:28	50	1420550745
+[2016-01-18|20:18:50] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:19:04] account:sdkj
+[2016-01-18|20:19:04] AccountID[100][Login Ok]
+[2016-01-18|20:19:06] 1	1453119546095	29	贝蒂
+[2016-01-18|20:19:06] createWorldPlayer ID[29]Level[1] load from db
+[2016-01-18|20:19:06] udid:sdkj
+[2016-01-18|20:19:28] 在线人数: 1
+[2016-01-18|20:19:28] 7	1453119568878	角色在线数量:1
+[2016-01-18|20:20:05] SessionClosed SessionId:15----playerId:29
+[2016-01-18|20:20:05] 3	1453119605487	玩家退出playerId:29	1	1420600047
+[2016-01-18|20:20:05] 注销保存玩家信息：id=29,name=贝蒂,level=1
+[2016-01-18|20:20:20] account:heheheheeee
+[2016-01-18|20:20:20] AccountID[101][Login Ok]
+[2016-01-18|20:20:21] 1	1453119621777	30	巴顿
+[2016-01-18|20:20:21] createWorldPlayer ID[30]Level[1] load from db
+[2016-01-18|20:20:21] udid:heheheheeee
+[2016-01-18|20:20:28] 在线人数: 1
+[2016-01-18|20:20:28] 7	1453119628881	角色在线数量:1
+[2016-01-18|20:20:31] com.app.empire.world.exception.PlayerDataException: 粮草不足
+[2016-01-18|20:20:36] SessionClosed SessionId:16----playerId:30
+[2016-01-18|20:20:36] 3	1453119636358	玩家退出playerId:30	1	1420675744
+[2016-01-18|20:20:36] 注销保存玩家信息：id=30,name=巴顿,level=1
+[2016-01-18|20:20:52] account:chi
+[2016-01-18|20:20:52] AccountID[98][Login Ok]
+[2016-01-18|20:20:52] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:20:52] udid:chi
+[2016-01-18|20:21:28] 在线人数: 1
+[2016-01-18|20:21:28] 7	1453119688896	角色在线数量:1
+[2016-01-18|20:22:00] SessionClosed SessionId:17----playerId:28
+[2016-01-18|20:22:00] 3	1453119720182	玩家退出playerId:28	50	1420706274
+[2016-01-18|20:22:00] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:22:28] 在线人数: 0
+[2016-01-18|20:22:28] 7	1453119748910	角色在线数量:0
+[2016-01-18|20:23:28] 在线人数: 0
+[2016-01-18|20:23:28] 7	1453119808917	角色在线数量:0
+[2016-01-18|20:24:28] 在线人数: 0
+[2016-01-18|20:24:28] 7	1453119868917	角色在线数量:0
+[2016-01-18|20:25:28] 在线人数: 0
+[2016-01-18|20:25:28] 7	1453119928932	角色在线数量:0
+[2016-01-18|20:26:28] 在线人数: 0
+[2016-01-18|20:26:28] 7	1453119988942	角色在线数量:0
+[2016-01-18|20:27:14] account:chi
+[2016-01-18|20:27:14] AccountID[98][Login Ok]
+[2016-01-18|20:27:14] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:27:14] udid:chi
+[2016-01-18|20:27:28] 在线人数: 1
+[2016-01-18|20:27:28] 7	1453120048955	角色在线数量:1
+[2016-01-18|20:28:28] 在线人数: 1
+[2016-01-18|20:28:28] 7	1453120108965	角色在线数量:1
+[2016-01-18|20:28:37] com.app.empire.world.exception.PlayerDataException: 参数错误
+[2016-01-18|20:28:54] SessionClosed SessionId:18----playerId:28
+[2016-01-18|20:28:54] 3	1453120134293	玩家退出playerId:28	50	1421088161
+[2016-01-18|20:28:54] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:29:10] account:chi
+[2016-01-18|20:29:10] AccountID[98][Login Ok]
+[2016-01-18|20:29:10] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:29:10] udid:chi
+[2016-01-18|20:29:28] 在线人数: 1
+[2016-01-18|20:29:28] 7	1453120168973	角色在线数量:1
+[2016-01-18|20:29:33] com.app.empire.world.exception.PlayerDataException: 参数错误
+[2016-01-18|20:30:28] 在线人数: 1
+[2016-01-18|20:30:28] 7	1453120228974	角色在线数量:1
+[2016-01-18|20:30:34] SessionClosed SessionId:19----playerId:28
+[2016-01-18|20:30:34] 3	1453120234188	玩家退出playerId:28	50	1421204326
+[2016-01-18|20:30:34] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:31:28] 在线人数: 0
+[2016-01-18|20:31:28] 7	1453120288978	角色在线数量:0
+[2016-01-18|20:32:23] account:chi
+[2016-01-18|20:32:23] AccountID[98][Login Ok]
+[2016-01-18|20:32:23] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:32:23] udid:chi
+[2016-01-18|20:32:28] 在线人数: 1
+[2016-01-18|20:32:28] 7	1453120348992	角色在线数量:1
+[2016-01-18|20:33:23] SessionClosed SessionId:20----playerId:28
+[2016-01-18|20:33:23] 3	1453120403620	玩家退出playerId:28	50	1421397906
+[2016-01-18|20:33:23] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:33:28] 在线人数: 0
+[2016-01-18|20:33:28] 7	1453120408994	角色在线数量:0
+[2016-01-18|20:33:39] account:chi
+[2016-01-18|20:33:39] AccountID[98][Login Ok]
+[2016-01-18|20:33:39] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:33:39] udid:chi
+[2016-01-18|20:34:29] 在线人数: 1
+[2016-01-18|20:34:29] 7	1453120469001	角色在线数量:1
+[2016-01-18|20:34:47] SessionClosed SessionId:21----playerId:28
+[2016-01-18|20:34:47] 3	1453120487252	玩家退出playerId:28	50	1421473030
+[2016-01-18|20:34:47] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:35:29] 在线人数: 0
+[2016-01-18|20:35:29] 7	1453120529006	角色在线数量:0
+[2016-01-18|20:36:29] 在线人数: 0
+[2016-01-18|20:36:29] 7	1453120589020	角色在线数量:0
+[2016-01-18|20:37:29] 在线人数: 0
+[2016-01-18|20:37:29] 7	1453120649021	角色在线数量:0
+[2016-01-18|20:38:29] 在线人数: 0
+[2016-01-18|20:38:29] 7	1453120709021	角色在线数量:0
+[2016-01-18|20:39:29] 在线人数: 0
+[2016-01-18|20:39:29] 7	1453120769022	角色在线数量:0
+[2016-01-18|20:39:30] account:chi
+[2016-01-18|20:39:30] AccountID[98][Login Ok]
+[2016-01-18|20:39:30] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:39:30] udid:chi
+[2016-01-18|20:40:29] 在线人数: 1
+[2016-01-18|20:40:29] 7	1453120829027	角色在线数量:1
+[2016-01-18|20:40:38] SessionClosed SessionId:22----playerId:28
+[2016-01-18|20:40:38] 3	1453120838419	玩家退出playerId:28	50	1421824660
+[2016-01-18|20:40:38] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:41:29] 在线人数: 0
+[2016-01-18|20:41:29] 7	1453120889030	角色在线数量:0
+[2016-01-18|20:42:29] 在线人数: 0
+[2016-01-18|20:42:29] 7	1453120949031	角色在线数量:0
+[2016-01-18|20:43:29] 在线人数: 0
+[2016-01-18|20:43:29] 7	1453121009042	角色在线数量:0
+[2016-01-18|20:44:29] 在线人数: 0
+[2016-01-18|20:44:29] 7	1453121069057	角色在线数量:0
+[2016-01-18|20:45:29] 在线人数: 0
+[2016-01-18|20:45:29] 7	1453121129063	角色在线数量:0
+[2016-01-18|20:46:29] 在线人数: 0
+[2016-01-18|20:46:29] 7	1453121189078	角色在线数量:0
+[2016-01-18|20:47:29] 在线人数: 0
+[2016-01-18|20:47:29] 7	1453121249084	角色在线数量:0
+[2016-01-18|20:48:29] 在线人数: 0
+[2016-01-18|20:48:29] 7	1453121309097	角色在线数量:0
+[2016-01-18|20:49:29] 在线人数: 0
+[2016-01-18|20:49:29] 7	1453121369110	角色在线数量:0
+[2016-01-18|20:50:29] 在线人数: 0
+[2016-01-18|20:50:29] 7	1453121429125	角色在线数量:0
+[2016-01-18|20:51:29] 在线人数: 0
+[2016-01-18|20:51:29] 7	1453121489137	角色在线数量:0
+[2016-01-18|20:52:29] 在线人数: 0
+[2016-01-18|20:52:29] 7	1453121549150	角色在线数量:0
+[2016-01-18|20:53:18] account:chi
+[2016-01-18|20:53:18] AccountID[98][Login Ok]
+[2016-01-18|20:53:18] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:53:18] udid:chi
+[2016-01-18|20:53:29] 在线人数: 1
+[2016-01-18|20:53:29] 7	1453121609151	角色在线数量:1
+[2016-01-18|20:54:26] SessionClosed SessionId:23----playerId:28
+[2016-01-18|20:54:26] 3	1453121666620	玩家退出playerId:28	50	1422652037
+[2016-01-18|20:54:26] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:54:29] 在线人数: 0
+[2016-01-18|20:54:29] 7	1453121669151	角色在线数量:0
+[2016-01-18|20:54:59] account:789789
+[2016-01-18|20:54:59] AccountID[36][Login Ok]
+[2016-01-18|20:54:59] createWorldPlayer ID[17]Level[1] load from db
+[2016-01-18|20:54:59] udid:789789
+[2016-01-18|20:55:29] 在线人数: 1
+[2016-01-18|20:55:29] 7	1453121729153	角色在线数量:1
+[2016-01-18|20:55:42] account:chi
+[2016-01-18|20:55:42] AccountID[98][Login Ok]
+[2016-01-18|20:55:42] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:55:42] udid:chi
+[2016-01-18|20:56:29] 在线人数: 2
+[2016-01-18|20:56:29] 7	1453121789162	角色在线数量:2
+[2016-01-18|20:56:41] SessionClosed SessionId:24----playerId:17
+[2016-01-18|20:56:41] 3	1453121801925	玩家退出playerId:17	1	1422753269
+[2016-01-18|20:56:41] 注销保存玩家信息：id=17,name=789abc,level=1
+[2016-01-18|20:56:49] SessionClosed SessionId:25----playerId:28
+[2016-01-18|20:56:49] 3	1453121809962	玩家退出playerId:28	50	1422796375
+[2016-01-18|20:56:49] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:57:29] 在线人数: 0
+[2016-01-18|20:57:29] 7	1453121849163	角色在线数量:0
+[2016-01-18|20:58:17] account:chi
+[2016-01-18|20:58:17] AccountID[98][Login Ok]
+[2016-01-18|20:58:17] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:58:17] udid:chi
+[2016-01-18|20:58:29] 在线人数: 1
+[2016-01-18|20:58:29] 7	1453121909172	角色在线数量:1
+[2016-01-18|20:59:02] SessionClosed SessionId:26----playerId:28
+[2016-01-18|20:59:02] 3	1453121942136	玩家退出playerId:28	50	1422951158
+[2016-01-18|20:59:02] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|20:59:29] 在线人数: 0
+[2016-01-18|20:59:29] 7	1453121969176	角色在线数量:0
+[2016-01-18|20:59:50] account:chi
+[2016-01-18|20:59:50] AccountID[98][Login Ok]
+[2016-01-18|20:59:50] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|20:59:50] udid:chi
+[2016-01-18|21:00:29] 在线人数: 1
+[2016-01-18|21:00:29] 7	1453122029188	角色在线数量:1
+[2016-01-18|21:00:58] SessionClosed SessionId:27----playerId:28
+[2016-01-18|21:00:58] 3	1453122058743	玩家退出playerId:28	50	1423044932
+[2016-01-18|21:00:58] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:01:29] 在线人数: 0
+[2016-01-18|21:01:29] 7	1453122089188	角色在线数量:0
+[2016-01-18|21:01:51] account:chi
+[2016-01-18|21:01:51] AccountID[98][Login Ok]
+[2016-01-18|21:01:51] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:01:51] udid:chi
+[2016-01-18|21:02:13] SessionClosed SessionId:28----playerId:28
+[2016-01-18|21:02:13] 3	1453122133951	玩家退出playerId:28	50	1423165443
+[2016-01-18|21:02:13] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:02:28] account:chi
+[2016-01-18|21:02:28] AccountID[98][Login Ok]
+[2016-01-18|21:02:28] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:02:28] udid:chi
+[2016-01-18|21:02:29] 在线人数: 1
+[2016-01-18|21:02:29] 7	1453122149195	角色在线数量:1
+[2016-01-18|21:03:29] 在线人数: 1
+[2016-01-18|21:03:29] 7	1453122209196	角色在线数量:1
+[2016-01-18|21:03:35] SessionClosed SessionId:29----playerId:28
+[2016-01-18|21:03:35] 3	1453122215547	玩家退出playerId:28	50	1423202211
+[2016-01-18|21:03:35] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:03:50] account:789789
+[2016-01-18|21:03:50] AccountID[36][Login Ok]
+[2016-01-18|21:03:50] createWorldPlayer ID[17]Level[1] load from db
+[2016-01-18|21:03:50] udid:789789
+[2016-01-18|21:04:29] 在线人数: 1
+[2016-01-18|21:04:29] 7	1453122269200	角色在线数量:1
+[2016-01-18|21:04:59] SessionClosed SessionId:30----playerId:17
+[2016-01-18|21:04:59] 3	1453122299945	玩家退出playerId:17	1	1423284046
+[2016-01-18|21:04:59] 注销保存玩家信息：id=17,name=789abc,level=1
+[2016-01-18|21:05:29] 在线人数: 0
+[2016-01-18|21:05:29] 7	1453122329201	角色在线数量:0
+[2016-01-18|21:06:29] 在线人数: 0
+[2016-01-18|21:06:29] 7	1453122389210	角色在线数量:0
+[2016-01-18|21:06:47] account:chi
+[2016-01-18|21:06:47] AccountID[98][Login Ok]
+[2016-01-18|21:06:47] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:06:47] udid:chi
+[2016-01-18|21:07:14] SessionClosed SessionId:31----playerId:28
+[2016-01-18|21:07:14] 3	1453122434435	玩家退出playerId:28	50	1423461517
+[2016-01-18|21:07:14] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:07:29] 在线人数: 0
+[2016-01-18|21:07:29] 7	1453122449215	角色在线数量:0
+[2016-01-18|21:07:35] account:chi
+[2016-01-18|21:07:35] AccountID[98][Login Ok]
+[2016-01-18|21:07:35] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:07:35] udid:chi
+[2016-01-18|21:08:02] SessionClosed SessionId:32----playerId:28
+[2016-01-18|21:08:02] 3	1453122482118	玩家退出playerId:28	50	1423509885
+[2016-01-18|21:08:02] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:08:18] account:chi
+[2016-01-18|21:08:18] AccountID[98][Login Ok]
+[2016-01-18|21:08:19] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:08:19] udid:chi
+[2016-01-18|21:08:29] 在线人数: 1
+[2016-01-18|21:08:29] 7	1453122509224	角色在线数量:1
+[2016-01-18|21:08:33] account:789789
+[2016-01-18|21:08:33] AccountID[36][Login Ok]
+[2016-01-18|21:08:33] createWorldPlayer ID[17]Level[1] load from db
+[2016-01-18|21:08:33] udid:789789
+[2016-01-18|21:09:03] SessionClosed SessionId:33----playerId:28
+[2016-01-18|21:09:03] 3	1453122543660	玩家退出playerId:28	50	1423552977
+[2016-01-18|21:09:03] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:09:18] account:chi
+[2016-01-18|21:09:18] AccountID[98][Login Ok]
+[2016-01-18|21:09:18] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:09:18] udid:chi
+[2016-01-18|21:09:29] 在线人数: 2
+[2016-01-18|21:09:29] 7	1453122569233	角色在线数量:2
+[2016-01-18|21:10:06] SessionClosed SessionId:34----playerId:17
+[2016-01-18|21:10:06] 3	1453122606887	玩家退出playerId:17	1	1423567551
+[2016-01-18|21:10:06] 注销保存玩家信息：id=17,name=789abc,level=1
+[2016-01-18|21:10:25] SessionClosed SessionId:35----playerId:28
+[2016-01-18|21:10:25] 3	1453122625573	玩家退出playerId:28	50	1423612690
+[2016-01-18|21:10:25] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:10:29] 在线人数: 0
+[2016-01-18|21:10:29] 7	1453122629235	角色在线数量:0
+[2016-01-18|21:11:29] 在线人数: 0
+[2016-01-18|21:11:29] 7	1453122689244	角色在线数量:0
+[2016-01-18|21:12:29] 在线人数: 0
+[2016-01-18|21:12:29] 7	1453122749245	角色在线数量:0
+[2016-01-18|21:13:29] 在线人数: 0
+[2016-01-18|21:13:29] 7	1453122809248	角色在线数量:0
+[2016-01-18|21:14:10] account:chi
+[2016-01-18|21:14:10] AccountID[98][Login Ok]
+[2016-01-18|21:14:10] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:14:10] udid:chi
+[2016-01-18|21:14:29] 在线人数: 1
+[2016-01-18|21:14:29] 7	1453122869251	角色在线数量:1
+[2016-01-18|21:15:17] SessionClosed SessionId:36----playerId:28
+[2016-01-18|21:15:17] 3	1453122917251	玩家退出playerId:28	50	1423904501
+[2016-01-18|21:15:17] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:15:29] 在线人数: 0
+[2016-01-18|21:15:29] 7	1453122929253	角色在线数量:0
+[2016-01-18|21:15:49] account:chi
+[2016-01-18|21:15:49] AccountID[98][Login Ok]
+[2016-01-18|21:15:49] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:15:49] udid:chi
+[2016-01-18|21:16:29] 在线人数: 1
+[2016-01-18|21:16:29] 7	1453122989253	角色在线数量:1
+[2016-01-18|21:16:52] SessionClosed SessionId:37----playerId:28
+[2016-01-18|21:16:52] 3	1453123012513	玩家退出playerId:28	50	1424003368
+[2016-01-18|21:16:52] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:17:11] account:chi
+[2016-01-18|21:17:11] AccountID[98][Login Ok]
+[2016-01-18|21:17:11] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:17:11] udid:chi
+[2016-01-18|21:17:29] 在线人数: 1
+[2016-01-18|21:17:29] 7	1453123049255	角色在线数量:1
+[2016-01-18|21:17:53] SessionClosed SessionId:38----playerId:28
+[2016-01-18|21:17:53] 3	1453123073836	玩家退出playerId:28	50	1424085793
+[2016-01-18|21:17:53] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:18:28] account:chi
+[2016-01-18|21:18:28] AccountID[98][Login Ok]
+[2016-01-18|21:18:28] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:18:28] udid:chi
+[2016-01-18|21:18:29] 在线人数: 1
+[2016-01-18|21:18:29] 7	1453123109263	角色在线数量:1
+[2016-01-18|21:19:21] SessionClosed SessionId:39----playerId:28
+[2016-01-18|21:19:21] 3	1453123161676	玩家退出playerId:28	50	1424162597
+[2016-01-18|21:19:21] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:19:29] 在线人数: 0
+[2016-01-18|21:19:29] 7	1453123169273	角色在线数量:0
+[2016-01-18|21:19:36] account:chi
+[2016-01-18|21:19:36] AccountID[98][Login Ok]
+[2016-01-18|21:19:36] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:19:36] udid:chi
+[2016-01-18|21:20:29] 在线人数: 1
+[2016-01-18|21:20:29] 7	1453123229277	角色在线数量:1
+[2016-01-18|21:20:44] SessionClosed SessionId:40----playerId:28
+[2016-01-18|21:20:44] 3	1453123244132	玩家退出playerId:28	50	1424230595
+[2016-01-18|21:20:44] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:21:29] 在线人数: 0
+[2016-01-18|21:21:29] 7	1453123289278	角色在线数量:0
+[2016-01-18|21:21:37] account:chi
+[2016-01-18|21:21:37] AccountID[98][Login Ok]
+[2016-01-18|21:21:37] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:21:37] udid:chi
+[2016-01-18|21:22:29] 在线人数: 1
+[2016-01-18|21:22:29] 7	1453123349283	角色在线数量:1
+[2016-01-18|21:22:44] SessionClosed SessionId:41----playerId:28
+[2016-01-18|21:22:44] 3	1453123364996	玩家退出playerId:28	50	1424351482
+[2016-01-18|21:22:44] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:23:29] 在线人数: 0
+[2016-01-18|21:23:29] 7	1453123409284	角色在线数量:0
+[2016-01-18|21:24:26] account:789789
+[2016-01-18|21:24:26] AccountID[36][Login Ok]
+[2016-01-18|21:24:26] createWorldPlayer ID[17]Level[1] load from db
+[2016-01-18|21:24:26] udid:789789
+[2016-01-18|21:24:29] 在线人数: 1
+[2016-01-18|21:24:29] 7	1453123469299	角色在线数量:1
+[2016-01-18|21:25:29] 在线人数: 1
+[2016-01-18|21:25:29] 7	1453123529305	角色在线数量:1
+[2016-01-18|21:25:35] SessionClosed SessionId:42----playerId:17
+[2016-01-18|21:25:35] 3	1453123535097	玩家退出playerId:17	1	1424520170
+[2016-01-18|21:25:35] 注销保存玩家信息：id=17,name=789abc,level=1
+[2016-01-18|21:26:29] 在线人数: 0
+[2016-01-18|21:26:29] 7	1453123589318	角色在线数量:0
+[2016-01-18|21:27:29] 在线人数: 0
+[2016-01-18|21:27:29] 7	1453123649322	角色在线数量:0
+[2016-01-18|21:28:29] 在线人数: 0
+[2016-01-18|21:28:29] 7	1453123709329	角色在线数量:0
+[2016-01-18|21:29:29] 在线人数: 0
+[2016-01-18|21:29:29] 7	1453123769335	角色在线数量:0
+[2016-01-18|21:29:47] account:chi
+[2016-01-18|21:29:47] AccountID[98][Login Ok]
+[2016-01-18|21:29:47] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:29:47] udid:chi
+[2016-01-18|21:30:20] account:666
+[2016-01-18|21:30:20] AccountID[99][Login Ok]
+[2016-01-18|21:30:20] createWorldPlayer ID[27]Level[1] load from db
+[2016-01-18|21:30:20] udid:666
+[2016-01-18|21:30:22] SessionClosed SessionId:43----playerId:28
+[2016-01-18|21:30:22] 3	1453123822851	玩家退出playerId:28	50	1424841711
+[2016-01-18|21:30:22] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:30:29] 在线人数: 1
+[2016-01-18|21:30:29] 7	1453123829344	角色在线数量:1
+[2016-01-18|21:30:39] account:chi
+[2016-01-18|21:30:39] AccountID[98][Login Ok]
+[2016-01-18|21:30:39] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:30:39] udid:chi
+[2016-01-18|21:31:20] SessionClosed SessionId:45----playerId:28
+[2016-01-18|21:31:20] 3	1453123880930	玩家退出playerId:28	50	1424893214
+[2016-01-18|21:31:20] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:31:29] 在线人数: 1
+[2016-01-18|21:31:29] 7	1453123889346	角色在线数量:1
+[2016-01-18|21:31:29] SessionClosed SessionId:44----playerId:27
+[2016-01-18|21:31:29] 3	1453123889863	玩家退出playerId:27	1	1424874456
+[2016-01-18|21:31:29] 注销保存玩家信息：id=27,name=joanne,level=1
+[2016-01-18|21:31:35] account:chi
+[2016-01-18|21:31:35] AccountID[98][Login Ok]
+[2016-01-18|21:31:35] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:31:35] udid:chi
+[2016-01-18|21:32:29] 在线人数: 1
+[2016-01-18|21:32:29] 7	1453123949354	角色在线数量:1
+[2016-01-18|21:32:42] SessionClosed SessionId:46----playerId:28
+[2016-01-18|21:32:42] 3	1453123962329	玩家退出playerId:28	50	1424949369
+[2016-01-18|21:32:42] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:33:29] 在线人数: 0
+[2016-01-18|21:33:29] 7	1453124009363	角色在线数量:0
+[2016-01-18|21:33:46] account:chi
+[2016-01-18|21:33:46] AccountID[98][Login Ok]
+[2016-01-18|21:33:46] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:33:46] udid:chi
+[2016-01-18|21:34:29] 在线人数: 1
+[2016-01-18|21:34:29] 7	1453124069372	角色在线数量:1
+[2016-01-18|21:34:43] SessionClosed SessionId:47----playerId:28
+[2016-01-18|21:34:43] 3	1453124083566	玩家退出playerId:28	50	1425080815
+[2016-01-18|21:34:43] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:35:00] account:chi
+[2016-01-18|21:35:00] AccountID[98][Login Ok]
+[2016-01-18|21:35:00] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:35:00] udid:chi
+[2016-01-18|21:35:29] 在线人数: 1
+[2016-01-18|21:35:29] 7	1453124129381	角色在线数量:1
+[2016-01-18|21:36:09] SessionClosed SessionId:48----playerId:28
+[2016-01-18|21:36:09] 3	1453124169271	玩家退出playerId:28	50	1425154533
+[2016-01-18|21:36:09] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:36:29] 在线人数: 0
+[2016-01-18|21:36:29] 7	1453124189393	角色在线数量:0
+[2016-01-18|21:36:32] account:666
+[2016-01-18|21:36:32] AccountID[99][Login Ok]
+[2016-01-18|21:36:33] createWorldPlayer ID[27]Level[1] load from db
+[2016-01-18|21:36:33] udid:666
+[2016-01-18|21:37:29] 在线人数: 1
+[2016-01-18|21:37:29] 7	1453124249406	角色在线数量:1
+[2016-01-18|21:37:41] SessionClosed SessionId:49----playerId:27
+[2016-01-18|21:37:41] 3	1453124261864	玩家退出playerId:27	1	1425246976
+[2016-01-18|21:37:41] 注销保存玩家信息：id=27,name=joanne,level=1
+[2016-01-18|21:38:29] 在线人数: 0
+[2016-01-18|21:38:29] 7	1453124309410	角色在线数量:0
+[2016-01-18|21:39:29] 在线人数: 0
+[2016-01-18|21:39:29] 7	1453124369419	角色在线数量:0
+[2016-01-18|21:39:54] account:666
+[2016-01-18|21:39:54] AccountID[99][Login Ok]
+[2016-01-18|21:39:54] createWorldPlayer ID[27]Level[1] load from db
+[2016-01-18|21:39:54] udid:666
+[2016-01-18|21:40:29] 在线人数: 1
+[2016-01-18|21:40:29] 7	1453124429420	角色在线数量:1
+[2016-01-18|21:41:03] SessionClosed SessionId:50----playerId:27
+[2016-01-18|21:41:03] 3	1453124463659	玩家退出playerId:27	1	1425448822
+[2016-01-18|21:41:03] 注销保存玩家信息：id=27,name=joanne,level=1
+[2016-01-18|21:41:29] 在线人数: 0
+[2016-01-18|21:41:29] 7	1453124489428	角色在线数量:0
+[2016-01-18|21:42:29] 在线人数: 0
+[2016-01-18|21:42:29] 7	1453124549433	角色在线数量:0
+[2016-01-18|21:43:29] 在线人数: 0
+[2016-01-18|21:43:29] 7	1453124609447	角色在线数量:0
+[2016-01-18|21:44:29] 在线人数: 0
+[2016-01-18|21:44:29] 7	1453124669451	角色在线数量:0
+[2016-01-18|21:45:29] 在线人数: 0
+[2016-01-18|21:45:29] 7	1453124729464	角色在线数量:0
+[2016-01-18|21:45:33] account:chi
+[2016-01-18|21:45:33] AccountID[98][Login Ok]
+[2016-01-18|21:45:33] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:45:33] udid:chi
+[2016-01-18|21:46:29] 在线人数: 1
+[2016-01-18|21:46:29] 7	1453124789467	角色在线数量:1
+[2016-01-18|21:46:40] SessionClosed SessionId:51----playerId:28
+[2016-01-18|21:46:40] 3	1453124800435	玩家退出playerId:28	50	1425787798
+[2016-01-18|21:46:40] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:47:04] account:chi
+[2016-01-18|21:47:04] AccountID[98][Login Ok]
+[2016-01-18|21:47:04] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:47:04] udid:chi
+[2016-01-18|21:47:29] 在线人数: 1
+[2016-01-18|21:47:29] 7	1453124849474	角色在线数量:1
+[2016-01-18|21:47:31] SessionClosed SessionId:52----playerId:28
+[2016-01-18|21:47:31] 3	1453124851413	玩家退出playerId:28	50	1425878149
+[2016-01-18|21:47:31] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:47:46] account:chi
+[2016-01-18|21:47:46] AccountID[98][Login Ok]
+[2016-01-18|21:47:46] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:47:46] udid:chi
+[2016-01-18|21:48:29] 在线人数: 1
+[2016-01-18|21:48:29] 7	1453124909474	角色在线数量:1
+[2016-01-18|21:48:56] SessionClosed SessionId:53----playerId:28
+[2016-01-18|21:48:56] 3	1453124936364	玩家退出playerId:28	50	1425920780
+[2016-01-18|21:48:56] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:49:29] 在线人数: 0
+[2016-01-18|21:49:29] 7	1453124969475	角色在线数量:0
+[2016-01-18|21:50:25] account:chi
+[2016-01-18|21:50:25] AccountID[98][Login Ok]
+[2016-01-18|21:50:25] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:50:25] udid:chi
+[2016-01-18|21:50:29] 在线人数: 1
+[2016-01-18|21:50:29] 7	1453125029475	角色在线数量:1
+[2016-01-18|21:50:51] com.app.empire.world.exception.PlayerDataException: 参数错误
+[2016-01-18|21:51:29] 在线人数: 1
+[2016-01-18|21:51:29] 7	1453125089476	角色在线数量:1
+[2016-01-18|21:51:51] SessionClosed SessionId:54----playerId:28
+[2016-01-18|21:51:51] 3	1453125111494	玩家退出playerId:28	50	1426079032
+[2016-01-18|21:51:51] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:52:26] account:chi
+[2016-01-18|21:52:26] AccountID[98][Login Ok]
+[2016-01-18|21:52:26] createWorldPlayer ID[28]Level[50] load from db
+[2016-01-18|21:52:26] udid:chi
+[2016-01-18|21:52:29] 在线人数: 1
+[2016-01-18|21:52:29] 7	1453125149476	角色在线数量:1
+[2016-01-18|21:53:29] 在线人数: 1
+[2016-01-18|21:53:29] 7	1453125209476	角色在线数量:1
+[2016-01-18|21:53:47] SessionClosed SessionId:55----playerId:28
+[2016-01-18|21:53:47] 3	1453125227843	玩家退出playerId:28	50	1426200835
+[2016-01-18|21:53:47] 注销保存玩家信息：id=28,name=贾斯特,level=50
+[2016-01-18|21:54:29] 在线人数: 0
+[2016-01-18|21:54:29] 7	1453125269477	角色在线数量:0
+[2016-01-18|21:55:29] 在线人数: 0
+[2016-01-18|21:55:29] 7	1453125329481	角色在线数量:0
+[2016-01-18|21:56:29] 在线人数: 0
+[2016-01-18|21:56:29] 7	1453125389491	角色在线数量:0
+[2016-01-18|21:57:29] account:666
+[2016-01-18|21:57:29] AccountID[99][Login Ok]
+[2016-01-18|21:57:29] createWorldPlayer ID[27]Level[1] load from db
+[2016-01-18|21:57:29] udid:666
+[2016-01-18|21:57:29] 在线人数: 1
+[2016-01-18|21:57:29] 7	1453125449492	角色在线数量:1
+[2016-01-18|21:58:29] 在线人数: 1
+[2016-01-18|21:58:29] 7	1453125509493	角色在线数量:1
+[2016-01-18|21:58:37] SessionClosed SessionId:56----playerId:27
+[2016-01-18|21:58:37] 3	1453125517900	玩家退出playerId:27	1	1426503183
+[2016-01-18|21:58:37] 注销保存玩家信息：id=27,name=joanne,level=1
+[2016-01-18|21:59:29] 在线人数: 0
+[2016-01-18|21:59:29] 7	1453125569501	角色在线数量:0
+[2016-01-18|22:00:29] 在线人数: 0
+[2016-01-18|22:00:29] 7	1453125629502	角色在线数量:0
+[2016-01-18|22:01:29] 在线人数: 0
+[2016-01-18|22:01:29] 7	1453125689510	角色在线数量:0
+[2016-01-18|22:01:38] account:666
+[2016-01-18|22:01:38] AccountID[99][Login Ok]
+[2016-01-18|22:01:38] createWorldPlayer ID[27]Level[1] load from db
+[2016-01-18|22:01:38] udid:666
+[2016-01-18|22:02:29] 在线人数: 1
+[2016-01-18|22:02:29] 7	1453125749515	角色在线数量:1
+[2016-01-18|22:02:49] SessionClosed SessionId:57----playerId:27
+[2016-01-18|22:02:49] 3	1453125769475	玩家退出playerId:27	1	1426752118
+[2016-01-18|22:02:49] 注销保存玩家信息：id=27,name=joanne,level=1
+[2016-01-18|22:03:29] 在线人数: 0
+[2016-01-18|22:03:29] 7	1453125809515	角色在线数量:0
+[2016-01-18|22:04:29] 在线人数: 0
+[2016-01-18|22:04:29] 7	1453125869530	角色在线数量:0
+[2016-01-18|22:05:29] 在线人数: 0
+[2016-01-18|22:05:29] 7	1453125929542	角色在线数量:0
+[2016-01-18|22:06:29] 在线人数: 0
+[2016-01-18|22:06:29] 7	1453125989550	角色在线数量:0
+[2016-01-18|22:07:29] 在线人数: 0
+[2016-01-18|22:07:29] 7	1453126049559	角色在线数量:0
+[2016-01-18|22:08:29] 在线人数: 0
+[2016-01-18|22:08:29] 7	1453126109571	角色在线数量:0
+[2016-01-18|22:09:29] 在线人数: 0
+[2016-01-18|22:09:29] 7	1453126169579	角色在线数量:0
+[2016-01-18|22:10:29] 在线人数: 0
+[2016-01-18|22:10:29] 7	1453126229583	角色在线数量:0
+[2016-01-18|22:11:29] 在线人数: 0
+[2016-01-18|22:11:29] 7	1453126289585	角色在线数量:0
+[2016-01-18|22:12:29] 在线人数: 0
+[2016-01-18|22:12:29] 7	1453126349592	角色在线数量:0
+[2016-01-18|22:13:29] 在线人数: 0
+[2016-01-18|22:13:29] 7	1453126409595	角色在线数量:0
+[2016-01-18|22:14:29] 在线人数: 0
+[2016-01-18|22:14:29] 7	1453126469599	角色在线数量:0
+[2016-01-18|22:15:29] 在线人数: 0
+[2016-01-18|22:15:29] 7	1453126529601	角色在线数量:0
+[2016-01-18|22:16:29] 在线人数: 0
+[2016-01-18|22:16:29] 7	1453126589603	角色在线数量:0
+[2016-01-18|22:17:29] 在线人数: 0
+[2016-01-18|22:17:29] 7	1453126649608	角色在线数量:0
+[2016-01-18|22:18:29] 在线人数: 0
+[2016-01-18|22:18:29] 7	1453126709618	角色在线数量:0
+[2016-01-18|22:19:29] 在线人数: 0
+[2016-01-18|22:19:29] 7	1453126769623	角色在线数量:0
+[2016-01-18|22:20:29] 在线人数: 0
+[2016-01-18|22:20:29] 7	1453126829638	角色在线数量:0
+[2016-01-18|22:21:29] 在线人数: 0
+[2016-01-18|22:21:29] 7	1453126889650	角色在线数量:0
+[2016-01-18|22:22:29] 在线人数: 0
+[2016-01-18|22:22:29] 7	1453126949653	角色在线数量:0
+[2016-01-18|22:23:29] 在线人数: 0
+[2016-01-18|22:23:29] 7	1453127009662	角色在线数量:0
+[2016-01-18|22:24:29] 在线人数: 0
+[2016-01-18|22:24:29] 7	1453127069665	角色在线数量:0
+[2016-01-18|22:25:29] 在线人数: 0
+[2016-01-18|22:25:29] 7	1453127129669	角色在线数量:0
+[2016-01-18|22:26:29] 在线人数: 0
+[2016-01-18|22:26:29] 7	1453127189678	角色在线数量:0
+[2016-01-18|22:27:29] 在线人数: 0
+[2016-01-18|22:27:29] 7	1453127249684	角色在线数量:0
+[2016-01-18|22:28:29] 在线人数: 0
+[2016-01-18|22:28:29] 7	1453127309690	角色在线数量:0
+[2016-01-18|22:29:29] 在线人数: 0
+[2016-01-18|22:29:29] 7	1453127369704	角色在线数量:0
+[2016-01-18|22:30:29] 在线人数: 0
+[2016-01-18|22:30:29] 7	1453127429719	角色在线数量:0
+[2016-01-18|22:31:29] 在线人数: 0
+[2016-01-18|22:31:29] 7	1453127489735	角色在线数量:0
+[2016-01-18|22:32:29] 在线人数: 0
+[2016-01-18|22:32:29] 7	1453127549750	角色在线数量:0
+[2016-01-18|22:33:29] 在线人数: 0
+[2016-01-18|22:33:29] 7	1453127609756	角色在线数量:0
+[2016-01-18|22:34:29] 在线人数: 0
+[2016-01-18|22:34:29] 7	1453127669765	角色在线数量:0
+[2016-01-18|22:35:29] 在线人数: 0
+[2016-01-18|22:35:29] 7	1453127729773	角色在线数量:0
+[2016-01-18|22:36:29] 在线人数: 0
+[2016-01-18|22:36:29] 7	1453127789780	角色在线数量:0
+[2016-01-18|22:37:29] 在线人数: 0
+[2016-01-18|22:37:29] 7	1453127849788	角色在线数量:0
+[2016-01-18|22:38:29] 在线人数: 0
+[2016-01-18|22:38:29] 7	1453127909801	角色在线数量:0
+[2016-01-18|22:39:29] 在线人数: 0
+[2016-01-18|22:39:29] 7	1453127969802	角色在线数量:0
+[2016-01-18|22:40:29] 在线人数: 0
+[2016-01-18|22:40:29] 7	1453128029816	角色在线数量:0
+[2016-01-18|22:41:29] 在线人数: 0
+[2016-01-18|22:41:29] 7	1453128089819	角色在线数量:0
+[2016-01-18|22:42:29] 在线人数: 0
+[2016-01-18|22:42:29] 7	1453128149834	角色在线数量:0
+[2016-01-18|22:43:29] 在线人数: 0
+[2016-01-18|22:43:29] 7	1453128209836	角色在线数量:0

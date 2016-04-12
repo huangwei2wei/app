@@ -1,0 +1,66 @@
+/* CSS Document */
+
+body  {
+	/*width: 910px;*/
+  background-image: url("../images/BackgroundPhP.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  /*margin-left:auto;
+	margin-right:auto;
+  position:relative */
+  z-index: 10;
+}
+  
+#Top  {
+	/*width: 910px; */
+  height: 196px;
+  background-image: url("../images/AtavismLogo_Dark.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  /*margin-left:auto;
+	margin-right:auto; */
+  position:relative;
+}
+
+#Top-Content  {
+  /*bottom: 0;
+  margin-left:auto;
+	margin-right:auto;
+  position:absolute;
+  text-align:center;*/
+  display: table-cell;
+  vertical-align: bottom;
+}
+  
+#MenuHolder {
+	width: 910px;	
+	height: 60px;
+	margin-top:21px;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+	overflow:visible;
+	background-color:#1AC2E5;
+  font-weight: bold;
+	position:relative
+	!important;
+	z-index:999;
+}
+
+#Middle {
+	z-index:50;
+}
+
+#Footer {
+	width: 910px;	
+	height: 20px;
+	margin-top:auto;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+	overflow:visible;
+	background-color:#1AC2E5;
+	position:relative;
+	color:#FFFFFF;
+}
+

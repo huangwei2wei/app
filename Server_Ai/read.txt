@@ -1,0 +1,8 @@
+// 显示帮助
+$ java -jar decompiler.jar
+$ java -jar decompiler.jar -?
+// 反编译单文件
+$ java -jar decompiler.jar java.lang.String
+$ java -DAnsi=true -jar decompiler.jar java.util.Collections
+// 反编译 jar 到目录
+$ java -jar decompiler.jar -jar myJar.jar -o out

@@ -1,0 +1,1 @@
+<img src="images/AtavismLogo_Dark.png" width="910" height="196" alt=""/><br>

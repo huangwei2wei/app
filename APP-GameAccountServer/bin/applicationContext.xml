@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd" -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd        
+        http://www.springframework.org/schema/data/mongo
+        http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
+
+	<!-- <mongo:mongo host="192.168.1.11" port="8000" /> -->
+	<mongo:mongo-client host="192.168.1.11" port="8000" />
+	<!-- mongo的工厂，通过它来取得mongo实例,dbname为mongodb的数据库名，没有的话会自动创建 -->
+	<!-- mongo:db-factory dbname="log_msg" mongo-ref="mongo" username="test" 
+		password="123456"/ -->
+	<mongo:db-factory dbname="account" mongo-ref="mongo" />
+
+	<!-- mongodb的主要操作对象，所有对mongodb的增删改查的操作都是通过它完成 -->
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+	</bean>
+	<bean id="mongoRepositoryFactory"
+		class="org.springframework.data.mongodb.repository.support.MongoRepositoryFactory">
+		<constructor-arg ref="mongoTemplate" />
+	</bean>
+
+	<!-- 映射转换器，扫描back-package目录下的文件，根据注释，把它们作为mongodb的一个collection的映射 -->
+	<mongo:mapping-converter
+		base-package="com.app.db.mongo.entity,com.app.empire.gameaccount.bean" />
+	<!-- mongodb bean的仓库目录，会自动扫描扩展了MongoRepository接口的接口进行注入 -->
+	<mongo:repositories
+		base-package="com.app.db.mongo.dao.impl,com.app.empire.gameaccount.dao.impl" />
+
+	<context:annotation-config />
+	<context:component-scan
+		base-package="com.app.db.mongo.dao,com.app.empire.gameaccount" />
+
+
+
+	<!-- bean id="AccountService" parent="baseTransactionProxy"> <property name="target"> 
+		<bean class="com.app.empire.gameaccount.service.impl.AccountService"> <property 
+		name="accountDao"> <bean class="com.app.empire.gameaccount.dao.impl.AccountDao"> 
+		<property name="sessionFactory" ref="sessionFactory"/> </bean> </property> 
+		</bean> </property> </bean> <bean id="EmpireaccountService" parent="baseTransactionProxy"> 
+		<property name="target"> <bean class="com.app.empire.gameaccount.service.impl.EmpireaccountService"> 
+		<property name="empireaccountDao"> <bean class="com.app.empire.gameaccount.dao.impl.EmpireaccountDao"> 
+		<property name="sessionFactory" ref="sessionFactory" /> </bean> </property> 
+		</bean> </property> </bean -->
+
+
+</beans>

@@ -1,0 +1,30 @@
+[2015-12-27|22:40:55] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-27|22:41:05] worldServer 断线重连。。。
+[2015-12-27|22:41:05] 重连.
+[2015-12-27|22:41:22] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-27|22:41:28] ONLINE Session[0]
+[2015-12-27|22:42:22] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-27|22:42:28] ONLINE Session[0]
+[2015-12-27|22:43:22] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-27|22:43:28] ONLINE Session[0]
+[2015-12-27|22:44:22] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-27|22:44:28] ONLINE Session[0]
+[2015-12-27|22:45:22] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-27|22:45:28] ONLINE Session[0]

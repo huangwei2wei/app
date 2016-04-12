@@ -1,0 +1,1 @@
+All rights reserved to Atavism© and Neojac Entertainment Inc©

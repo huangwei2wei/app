@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="res/config"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/APP-EmpireNetProtocol"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/APP-NetProtocol"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/APP-DB"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/NetGame"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

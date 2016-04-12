@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<project name="ServerDeploy" default="all" basedir=".">
+	<property name="deploy.lib" value="lib" />
+	<property name="source.lib" value="../Library/lib" />
+	<target name="copyLib">
+		<echo message="Copy lib files." />
+		<copy todir="${deploy.lib}">
+			<fileset dir="${source.lib}" defaultexcludes="true" includes="**/*" />
+		</copy>
+	</target>
+	<target name="callDB">
+		<echo message="build db.jar" />
+		<ant antfile="build.xml" dir="../APP-DB/" />
+	</target>
+	<target name="callTapzoy">
+		<echo message="build Tapzoy.jar" />
+		<ant antfile="build.xml" dir="../APP-Tapzoy/" />
+	</target>
+	<target name="callChannel">
+		<echo message="build ChannelAccess.jar" />
+		<ant antfile="build.xml" dir="../ChannelAccess/" />
+	</target>
+
+	<target name="callRelayServer">
+		<echo message="build RelayServer.jar" />
+		<ant antfile="build.xml" dir="../APP-RelayServer/" />
+	</target>
+
+	<target name="callVM">
+		<echo message="build vm.jar" />
+		<ant antfile="build.xml" dir="../VM/" />
+	</target>
+
+	<target name="callCommon">
+		<echo message="build Common.jar" />
+		<ant antfile="build.xml" dir="../Common/" />
+	</target>
+
+	<target name="callNetProtocol">
+		<echo message="build protocol.jar" />
+		<ant antfile="build.xml" dir="../APP-NetProtocol/" />
+	</target>
+
+	<target name="callEmpireNetProtocol">
+		<echo message="build empireProtocol.jar" />
+		<ant antfile="build.xml" dir="../APP-EmpireNetProtocol/" />
+	</target>
+	<target name="callImage">
+		<echo message="build image.jar" />
+		<ant antfile="build.xml" dir="../Image/" />
+	</target>
+	<target name="callAccountServer">
+		<echo message="build AccountServer.jar" />
+		<ant antfile="build.xml" dir="../APP-AccountServer/" />
+	</target>
+	<target name="callGameAccountServer">
+		<echo message="build GameAccountServer.jar" />
+		<ant antfile="build.xml" dir="../APP-GameAccountServer/" />
+	</target>
+	<target name="callIpdServer">
+		<echo message="build IpdServer.jar" />
+		<ant antfile="build.xml" dir="../APP-IpdServer/" />
+	</target>
+	<target name="callWorldServer">
+		<echo message="build WorldServer.jar" />
+		<ant antfile="build.xml" dir="../APP-WorldServer/" />
+	</target>
+	<target name="callDispatchServer">
+		<echo message="build DispatchServer.jar" />
+		<ant antfile="build.xml" dir="../APP-DispatchServer/" />
+	</target>
+	<target name="callExtensionServer">
+		<echo message="build ExtensionServer.jar" />
+		<ant antfile="build.xml" dir="../APP-ExtensionServer/" />
+	</target>
+	<target name="callExchangeServer">
+		<echo message="build ExchangeServer.jar" />
+		<ant antfile="build.xml" dir="../APP-ExchangeServer/" />
+	</target>
+	<target name="callChmod">
+		<chmod perm="777">
+			<fileset dir="./" includes="**/*.sh" />
+		</chmod>
+	</target>
+	<target name="all">
+		<ant target="copyLib" />
+		<ant target="callDB" />
+		<!--
+		<ant target="callChannel" />
+		<ant target="callTapzoy" />
+		<ant target="callRelayServer" />
+		<ant target="callExtensionServer" />
+		<ant target="callExchangeServer" />
+		<ant target="callVM" />
+		<ant target="callImage" />
+		<ant target="callCommon" />
+		<ant target="callAccountServer" />
+		-->
+		<ant target="callNetProtocol" />
+		<ant target="callEmpireNetProtocol" />
+
+		<ant target="callGameAccountServer" />
+		<ant target="callIpdServer" />
+		<ant target="callWorldServer" />
+		<ant target="callDispatchServer" />
+		<ant target="callChmod" />
+		<echo message="job done!!" />
+	</target>
+</project>

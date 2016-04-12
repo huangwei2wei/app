@@ -1,0 +1,12 @@
+#id;password;ip
+CN_0;dandandao;192.168.1.100
+CN_1;dandandao;192.168.1.100
+CN_2;dandandao;192.168.1.100
+CN_3;dandandao;192.168.1.100
+CN_4;dandandao;192.168.1.100
+CN_5;dandandao;192.168.1.100
+CN_6;dandandao;192.168.1.100
+CN_7;dandandao;192.168.1.100
+CN_8;dandandao;192.168.1.100
+CN_9;dandandao;192.168.1.100
+areaservice;dandandao;192.168.1.100

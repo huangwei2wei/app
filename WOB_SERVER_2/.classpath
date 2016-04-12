@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="agis_source_from_Procyon"/>
+	<classpathentry kind="src" path="atavism_source_from_Procyon"/>
+	<classpathentry kind="src" path="currency_source_from_Procyon"/>
+	<classpathentry kind="src" path="injected_source_from_Procyon"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

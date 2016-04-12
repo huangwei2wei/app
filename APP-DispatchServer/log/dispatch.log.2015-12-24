@@ -1,0 +1,68 @@
+[2015-12-24|09:45:36] java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-24|09:45:37] ONLINE Session[0]
+[2015-12-24|09:45:46] worldServer 断线重连。。。
+[2015-12-24|09:45:46] 重连.
+[2015-12-24|09:45:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|09:46:37] ONLINE Session[0]
+[2015-12-24|09:46:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|09:47:37] ONLINE Session[0]
+[2015-12-24|09:47:51] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-12-24|09:48:37] ONLINE Session[0]
+[2015-12-24|09:48:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|09:49:37] ONLINE Session[0]
+[2015-12-24|09:49:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|09:50:37] ONLINE Session[0]
+[2015-12-24|09:50:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|09:51:37] ONLINE Session[0]
+[2015-12-24|09:51:51] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-12-24|09:52:37] ONLINE Session[0]
+[2015-12-24|09:52:51] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-12-24|09:53:37] ONLINE Session[0]
+[2015-12-24|09:53:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|09:54:37] ONLINE Session[0]
+[2015-12-24|09:54:51] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-12-24|09:55:37] ONLINE Session[0]
+[2015-12-24|09:55:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|09:56:37] ONLINE Session[0]
+[2015-12-24|09:56:51] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-12-24|09:57:37] ONLINE Session[0]
+[2015-12-24|09:57:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|09:58:37] ONLINE Session[0]
+[2015-12-24|09:58:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|09:59:37] ONLINE Session[0]
+[2015-12-24|09:59:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|10:00:37] ONLINE Session[0]
+[2015-12-24|10:00:51] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-12-24|10:01:37] ONLINE Session[0]
+[2015-12-24|10:01:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|10:02:37] ONLINE Session[0]
+[2015-12-24|10:02:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|10:03:37] ONLINE Session[0]
+[2015-12-24|10:03:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|10:04:37] ONLINE Session[0]
+[2015-12-24|10:04:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|10:05:37] ONLINE Session[0]
+[2015-12-24|10:05:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|10:06:37] ONLINE Session[0]
+[2015-12-24|10:06:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|10:07:37] ONLINE Session[0]
+[2015-12-24|10:07:51] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-12-24|10:08:37] ONLINE Session[0]
+[2015-12-24|10:08:51] SyncTime[0] ONLINE[0] MAX[1500]

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<project name="ChannelServer" default="all" basedir=".">
+	<property name="src.dir" value="src" />
+	<property name="build.dir" value="classes" />
+	<property name="deploy.dir" value="../../ServerDeploy/ChannelServer" />
+	<property name="config.res.dir" value="res/config" />
+	<property name="other.res.dir" value="res/other" />
+	<property name="script.res.dir" value="res/script" />
+	<property name="default.lib" value="../../ServerDeploy/lib" />
+	<property name="server.lib" value="../../ServerDeploy/serverLib" />
+	<target name="prepare">
+		<echo message="Creating directory ${build.dir} and ${deploy.dir}" />
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${deploy.dir}" />
+		<mkdir dir="${deploy.dir}/log" />
+	</target>
+	<target name="compile">
+		<echo message="Compiling source files." />
+		<javac srcdir="${src.dir}" source="1.6" target="1.6" destdir="${build.dir}"
+			debug="off" encoding="utf-8">
+			<classpath>
+				<fileset dir="${default.lib}">
+					<include name="**/*.jar" />
+				</fileset>
+				<fileset dir="${server.lib}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+	<target name="clean">
+		<echo message="Delete all files in ${build.dir} and ${deploy.dir}" />
+		<delete includeemptydirs="false">
+			<fileset dir="${build.dir}" defaultexcludes="true" includes="**/*" />
+			<fileset dir="${deploy.dir}" defaultexcludes="true" includes="**/*" />
+			<fileset dir="${deploy.dir}/log" defaultexcludes="true" includes="**/*" />
+		</delete>
+	</target>
+	<target name="jar">
+		<echo message="jar classes into ${deploy.dir}" />
+		<jar basedir="${build.dir}" destfile="${deploy.dir}/${ant.project.name}.jar" />
+	</target>
+	<target name="cpotherfiles">
+		<echo
+			message="Copy other files from ${script.res.dir}, ${config.res.dir}, ${other.res.dir}." />
+		<copy todir="${deploy.dir}">
+			<fileset dir="${script.res.dir}" defaultexcludes="true"
+				includes="**/*" />
+			<fileset dir="${config.res.dir}" defaultexcludes="true"
+				includes="**/*" />
+			<fileset dir="${other.res.dir}" defaultexcludes="true"
+				includes="**/*" />
+		</copy>
+	</target>
+	<target name="deploy">
+	</target>
+	<target name="all" depends="prepare, clean,  compile, jar,cpotherfiles" />
+</project>

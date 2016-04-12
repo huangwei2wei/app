@@ -1,0 +1,1838 @@
+[2015-11-12|18:58:48] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-12|18:58:48] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-12|18:58:48] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-12|18:58:48] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-12|18:58:48] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-12|18:58:48] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-12|18:58:48] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-12|18:58:48] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-12|18:58:48] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-12|18:58:48] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-12|18:58:48] TimeControlProcessor Control start.
+[2015-11-12|18:58:48] load trustip.txt
+[2015-11-12|18:58:48] add trustIpService: com.app.dispatch.TrustIpService@368eb8bf
+[2015-11-12|18:58:48] binded
+[2015-11-12|18:58:48] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-12|18:59:42] SyncTime[6] ONLINE[0] MAX[1500]
+[2015-11-12|18:59:48] ONLINE Session[0]
+[2015-11-12|19:00:02] ok:192.168.1.177
+[2015-11-12|19:00:23] java.io.IOException: 连接被对端重置
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-11-12|19:00:42] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:00:48] ONLINE Session[0]
+[2015-11-12|19:01:42] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:01:48] ONLINE Session[0]
+[2015-11-12|19:02:15] ok:192.168.1.177
+[2015-11-12|19:02:36] java.io.IOException: 连接被对端重置
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-11-12|19:02:48] ONLINE Session[0]
+[2015-11-12|19:03:10] SyncTime[28114] ONLINE[0] MAX[1500]
+[2015-11-12|19:03:48] ONLINE Session[0]
+[2015-11-12|19:04:48] ONLINE Session[0]
+[2015-11-12|19:05:21] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-12|19:05:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-12|19:05:21] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-12|19:05:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-12|19:05:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-12|19:05:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-12|19:05:21] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-12|19:05:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-12|19:05:21] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-12|19:05:21] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-12|19:05:22] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-12|19:05:22] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-12|19:05:22] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-12|19:05:22] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-12|19:05:22] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-12|19:05:22] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-12|19:05:22] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-12|19:05:22] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-12|19:05:22] TimeControlProcessor Control start.
+[2015-11-12|19:05:22] load trustip.txt
+[2015-11-12|19:05:22] add trustIpService: com.app.dispatch.TrustIpService@54031f94
+[2015-11-12|19:05:22] binded
+[2015-11-12|19:05:22] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-12|19:05:34] ok:192.168.1.177
+[2015-11-12|19:05:55] java.io.IOException: 连接被对端重置
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-11-12|19:06:16] SyncTime[7] ONLINE[0] MAX[1500]
+[2015-11-12|19:06:22] ONLINE Session[0]
+[2015-11-12|19:07:16] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:07:22] ONLINE Session[0]
+[2015-11-12|19:08:16] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:08:22] ONLINE Session[0]
+[2015-11-12|19:09:16] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:09:22] ONLINE Session[0]
+[2015-11-12|19:10:16] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:10:22] ONLINE Session[0]
+[2015-11-12|19:11:16] SyncTime[3] ONLINE[0] MAX[1500]
+[2015-11-12|19:11:22] ONLINE Session[0]
+[2015-11-12|19:12:16] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:12:22] ONLINE Session[0]
+[2015-11-12|19:13:16] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:13:18] ok:192.168.1.177
+[2015-11-12|19:13:22] ONLINE Session[1]
+[2015-11-12|19:13:39] java.io.IOException: 连接被对端重置
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-11-12|19:14:16] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:14:22] ONLINE Session[0]
+[2015-11-12|19:15:16] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:15:22] ONLINE Session[0]
+[2015-11-12|19:16:16] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:16:20] ok:192.168.1.80
+[2015-11-12|19:16:22] ONLINE Session[1]
+[2015-11-12|19:17:22] ONLINE Session[0]
+[2015-11-12|19:18:19] ok:192.168.1.80
+[2015-11-12|19:18:22] ONLINE Session[1]
+[2015-11-12|19:18:35] ok:192.168.1.80
+[2015-11-12|19:19:22] ONLINE Session[1]
+[2015-11-12|19:20:22] ONLINE Session[0]
+[2015-11-12|19:21:22] ONLINE Session[0]
+[2015-11-12|19:22:05] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-12|19:22:05] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-12|19:22:05] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-12|19:22:05] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-12|19:22:05] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-12|19:22:05] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-12|19:22:05] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-12|19:22:05] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-12|19:22:05] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-12|19:22:05] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-12|19:22:06] TimeControlProcessor Control start.
+[2015-11-12|19:22:06] load trustip.txt
+[2015-11-12|19:22:06] add trustIpService: com.app.dispatch.TrustIpService@54031f94
+[2015-11-12|19:22:06] binded
+[2015-11-12|19:22:06] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-12|19:22:43] ok:192.168.1.177
+[2015-11-12|19:22:58] SyncTime[722] ONLINE[0] MAX[1500]
+[2015-11-12|19:23:05] java.io.IOException: 连接被对端重置
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-11-12|19:23:06] ONLINE Session[0]
+[2015-11-12|19:23:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:24:06] ONLINE Session[0]
+[2015-11-12|19:24:20] ok:192.168.1.177
+[2015-11-12|19:24:41] java.io.IOException: 连接被对端重置
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-11-12|19:24:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:25:06] ONLINE Session[0]
+[2015-11-12|19:25:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:26:06] ONLINE Session[0]
+[2015-11-12|19:26:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-12|19:27:06] ONLINE Session[0]
+[2015-11-12|19:27:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:28:06] ONLINE Session[0]
+[2015-11-12|19:28:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:29:06] ONLINE Session[0]
+[2015-11-12|19:29:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:30:06] ONLINE Session[0]
+[2015-11-12|19:30:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:31:06] ONLINE Session[0]
+[2015-11-12|19:31:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:32:06] ONLINE Session[0]
+[2015-11-12|19:32:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:33:06] ONLINE Session[0]
+[2015-11-12|19:33:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-12|19:34:06] ONLINE Session[0]
+[2015-11-12|19:34:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:35:06] ONLINE Session[0]
+[2015-11-12|19:35:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:36:06] ONLINE Session[0]
+[2015-11-12|19:36:15] ok:192.168.1.177
+[2015-11-12|19:36:36] java.io.IOException: 连接被对端重置
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-11-12|19:36:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:37:06] ONLINE Session[0]
+[2015-11-12|19:37:58] SyncTime[4] ONLINE[0] MAX[1500]
+[2015-11-12|19:38:06] ONLINE Session[0]
+[2015-11-12|19:38:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:39:04] ok:192.168.1.177
+[2015-11-12|19:39:06] ONLINE Session[1]
+[2015-11-12|19:39:35] java.io.IOException: 连接被对端重置
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-11-12|19:39:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:40:06] ONLINE Session[0]
+[2015-11-12|19:40:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:41:06] ONLINE Session[0]
+[2015-11-12|19:41:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:42:06] ONLINE Session[0]
+[2015-11-12|19:42:48] ok:192.168.1.177
+[2015-11-12|19:42:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:43:06] ONLINE Session[1]
+[2015-11-12|19:43:10] java.io.IOException: 连接被对端重置
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-11-12|19:43:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:44:06] ONLINE Session[0]
+[2015-11-12|19:44:25] ok:192.168.1.177
+[2015-11-12|19:44:46] java.io.IOException: 连接被对端重置
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:280)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:677)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:651)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:640)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1111)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-11-12|19:44:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:45:06] ONLINE Session[0]
+[2015-11-12|19:45:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:46:06] ONLINE Session[0]
+[2015-11-12|19:46:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:47:06] ONLINE Session[0]
+[2015-11-12|19:47:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:48:06] ONLINE Session[0]
+[2015-11-12|19:48:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:49:06] ONLINE Session[0]
+[2015-11-12|19:49:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-12|19:50:06] ONLINE Session[0]
+[2015-11-12|19:50:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:51:06] ONLINE Session[0]
+[2015-11-12|19:51:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:52:06] ONLINE Session[0]
+[2015-11-12|19:52:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:53:06] ONLINE Session[0]
+[2015-11-12|19:53:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:54:06] ONLINE Session[0]
+[2015-11-12|19:54:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:55:06] ONLINE Session[0]
+[2015-11-12|19:55:58] SyncTime[3] ONLINE[0] MAX[1500]
+[2015-11-12|19:56:06] ONLINE Session[0]
+[2015-11-12|19:56:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|19:57:06] ONLINE Session[0]
+[2015-11-12|19:57:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:58:06] ONLINE Session[0]
+[2015-11-12|19:58:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|19:59:06] ONLINE Session[0]
+[2015-11-12|19:59:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|20:00:05] ok:192.168.1.177
+[2015-11-12|20:00:06] ONLINE Session[1]
+[2015-11-12|20:00:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|20:01:06] ONLINE Session[0]
+[2015-11-12|20:01:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|20:02:06] ONLINE Session[0]
+[2015-11-12|20:02:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|20:03:06] ONLINE Session[0]
+[2015-11-12|20:03:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|20:04:06] ONLINE Session[0]
+[2015-11-12|20:04:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:05:06] ONLINE Session[0]
+[2015-11-12|20:05:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|20:06:06] ONLINE Session[0]
+[2015-11-12|20:06:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|20:07:06] ONLINE Session[0]
+[2015-11-12|20:07:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:08:06] ONLINE Session[0]
+[2015-11-12|20:08:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:09:06] ONLINE Session[0]
+[2015-11-12|20:09:58] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-12|20:10:06] ONLINE Session[0]
+[2015-11-12|20:10:57] ok:192.168.1.80
+[2015-11-12|20:10:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:11:06] ONLINE Session[1]
+[2015-11-12|20:11:58] SyncTime[2] ONLINE[1] MAX[1500]
+[2015-11-12|20:12:06] ONLINE Session[0]
+[2015-11-12|20:12:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:13:06] ONLINE Session[0]
+[2015-11-12|20:13:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:14:06] ONLINE Session[0]
+[2015-11-12|20:14:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:15:06] ONLINE Session[0]
+[2015-11-12|20:15:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|20:16:06] ONLINE Session[0]
+[2015-11-12|20:16:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:17:06] ONLINE Session[0]
+[2015-11-12|20:17:58] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|20:18:06] ONLINE Session[0]
+[2015-11-12|20:18:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:19:06] ONLINE Session[0]
+[2015-11-12|20:19:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:20:06] ONLINE Session[0]
+[2015-11-12|20:20:58] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:21:06] ONLINE Session[0]
+[2015-11-12|20:49:54] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-12|20:49:54] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-12|20:49:54] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-12|20:49:54] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-12|20:49:54] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-12|20:49:54] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-12|20:49:54] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-12|20:49:54] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-12|20:49:54] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-12|20:49:54] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-12|20:49:55] TimeControlProcessor Control start.
+[2015-11-12|20:49:55] load trustip.txt
+[2015-11-12|20:49:55] add trustIpService: com.app.dispatch.TrustIpService@7cdd422e
+[2015-11-12|20:49:55] binded
+[2015-11-12|20:49:55] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-12|20:50:49] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|20:50:55] ONLINE Session[0]
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:08] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:09] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:10] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:11] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:12] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:13] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:14] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:15] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:16] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:17] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:18] ok:192.168.1.80
+[2015-11-12|20:51:49] SyncTime[0] ONLINE[1000] MAX[1500]
+[2015-11-12|20:51:55] ONLINE Session[1000]
+[2015-11-12|20:52:49] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-12|20:52:55] ONLINE Session[0]
+[2015-11-12|20:53:49] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-12|20:53:55] ONLINE Session[0]

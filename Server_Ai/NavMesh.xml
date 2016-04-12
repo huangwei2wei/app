@@ -1,0 +1,11 @@
+<NavMeshParams>
+	<Orig>
+		<float>1.0</float>
+		<float>1.0</float>
+		<float>1.2</float>
+	</Orig>
+	<TileWidth>5.0</TileWidth>
+	<TileHeight>5.2</TileHeight>
+	<MaxTiles>30</MaxTiles>
+	<MaxPolys>5</MaxPolys>
+</NavMeshParams>

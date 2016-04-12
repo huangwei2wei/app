@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<project name="protocol" default="all" basedir=".">
+	<property name="src.dir" value="src" />
+	<property name="build.dir" value="classes" />
+	<property name="deploy.dir" value="../ServerDeploy/serverLib" />
+	<property name="default.lib" value="../ServerDeploy/lib" />
+	<target name="prepare">
+		<echo message="Creating directory ${build.dir} and ${deploy.dir}" />
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${deploy.dir}" />
+	</target>
+	<target name="compile">
+		<echo message="Compiling source files." />
+		<javac srcdir="${src.dir}" source="1.7" target="1.7" destdir="${build.dir}" debug="off" encoding="utf-8" includeantruntime="false">
+			<classpath>
+				<fileset dir="${default.lib}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+	<target name="clean">
+		<echo message="Delete all files in ${build.dir} and ${deploy.dir}" />
+		<delete includeemptydirs="true">
+			<fileset dir="${build.dir}" defaultexcludes="true" includes="**/*" />
+			<fileset dir="${deploy.dir}" defaultexcludes="true" includes="${ant.project.name}.jar" />
+		</delete>
+	</target>
+	<target name="jar">
+		<echo message="jar classes into ${deploy.dir}" />
+		<jar basedir="${build.dir}" destfile="${deploy.dir}/${ant.project.name}.jar" />
+	</target>
+	<target name="deploy">
+	</target>
+	<target name="all" depends="prepare, clean, compile, jar" />
+</project>

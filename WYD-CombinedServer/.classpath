@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="res/config"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/WYD-DB"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/netgame"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

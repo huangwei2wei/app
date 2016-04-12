@@ -1,0 +1,2530 @@
+[2015-11-27|15:10:41] load trustip_single.txt
+[2015-11-27|15:10:57] load trustip_single.txt
+[2015-11-27|15:11:29] load trustip_single.txt
+[2015-11-27|15:14:06] load trustip_single.txt
+[2015-11-27|15:14:21] load trustip_single.txt
+[2015-11-27|15:15:40] load trustip_single.txt
+[2015-11-27|15:27:45] load trustip_single.txt
+[2015-11-27|15:27:56] load trustip_single.txt
+[2015-11-27|15:28:20] load trustip_single.txt
+[2015-11-27|15:28:47] load trustip_single.txt
+[2015-11-27|15:29:12] load trustip_single.txt
+[2015-11-27|15:31:50] load trustip_single.txt
+[2015-11-27|17:20:06] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:20:06] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:20:06] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:20:06] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:20:06] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:20:06] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:20:06] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:20:06] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:20:06] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:20:06] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:20:06] TimeControlProcessor Control start.
+[2015-11-27|17:20:39] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:20:39] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:20:39] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:20:39] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:20:39] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:20:39] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:20:39] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:20:39] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:20:39] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:20:39] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:20:39] TimeControlProcessor Control start.
+[2015-11-27|17:22:56] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:22:56] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:22:56] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:22:56] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:22:56] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:22:56] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:22:56] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:22:56] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:22:57] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:22:57] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:22:57] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:22:57] TimeControlProcessor Control start.
+[2015-11-27|17:25:10] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:25:10] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:25:10] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:25:10] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:25:10] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:25:10] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:25:10] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:25:10] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:25:10] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:25:10] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:25:10] TimeControlProcessor Control start.
+[2015-11-27|17:25:28] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:25:28] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:25:28] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:25:28] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:25:28] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:25:28] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:25:28] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:25:28] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:25:28] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:25:28] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:25:28] TimeControlProcessor Control start.
+[2015-11-27|17:32:29] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:32:29] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:32:29] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:32:29] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:32:29] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:32:29] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:32:29] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:32:29] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:32:29] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:32:29] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:32:30] TimeControlProcessor Control start.
+[2015-11-27|17:32:59] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:32:59] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:32:59] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:32:59] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:32:59] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:32:59] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:32:59] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:32:59] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:32:59] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:32:59] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:32:59] TimeControlProcessor Control start.
+[2015-11-27|17:34:04] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:34:04] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:34:04] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:34:04] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:34:04] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:34:04] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:34:04] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:34:04] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:34:04] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:34:04] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:34:04] TimeControlProcessor Control start.
+[2015-11-27|17:34:54] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:34:54] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:34:54] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:34:54] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:34:54] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:34:54] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:34:54] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:34:54] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:34:54] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:34:54] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:34:54] TimeControlProcessor Control start.
+[2015-11-27|17:34:58] load trustip.txt
+[2015-11-27|17:34:58] add trustIpService: com.app.dispatch.TrustIpService@1a483edb
+[2015-11-27|17:34:58] binded
+[2015-11-27|17:34:58] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-27|17:35:21] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:35:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:35:21] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:35:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:35:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:35:21] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:35:21] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:35:21] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:35:22] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:35:22] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:35:22] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:35:22] TimeControlProcessor Control start.
+[2015-11-27|17:35:22] load trustip.txt
+[2015-11-27|17:35:22] add trustIpService: com.app.dispatch.TrustIpService@211120f9
+[2015-11-27|17:35:22] binded
+[2015-11-27|17:35:22] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-27|17:35:39] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:35:39] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:35:39] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:35:39] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:35:40] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:35:40] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:35:40] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:35:40] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:35:40] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:35:40] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:35:40] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:35:40] TimeControlProcessor Control start.
+[2015-11-27|17:35:40] load trustip.txt
+[2015-11-27|17:35:40] add trustIpService: com.app.dispatch.TrustIpService@2717f065
+[2015-11-27|17:35:40] binded
+[2015-11-27|17:35:40] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-27|17:35:58] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|17:35:58] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|17:35:58] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|17:35:58] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|17:35:58] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|17:35:58] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|17:35:58] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|17:35:58] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|17:35:58] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|17:35:58] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|17:35:58] TimeControlProcessor Control start.
+[2015-11-27|17:35:58] load trustip.txt
+[2015-11-27|17:35:59] add trustIpService: com.app.dispatch.TrustIpService@6b8bcc64
+[2015-11-27|17:35:59] binded
+[2015-11-27|17:35:59] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-27|18:59:48] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|18:59:48] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|18:59:48] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|18:59:48] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|18:59:48] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|18:59:48] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|18:59:48] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|18:59:48] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|18:59:48] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|18:59:48] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|18:59:48] TimeControlProcessor Control start.
+[2015-11-27|18:59:48] load trustip.txt
+[2015-11-27|18:59:48] add trustIpService: com.app.dispatch.TrustIpService@7edc0dd8
+[2015-11-27|18:59:48] binded
+[2015-11-27|18:59:48] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-27|19:00:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:00:48] ONLINE Session[0]
+[2015-11-27|19:01:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:01:38] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|19:01:38] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|19:01:38] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|19:01:39] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|19:01:39] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|19:01:39] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|19:01:39] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|19:01:39] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|19:01:39] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|19:01:39] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|19:01:39] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|19:01:39] TimeControlProcessor Control start.
+[2015-11-27|19:01:39] load trustip.txt
+[2015-11-27|19:01:39] add trustIpService: com.app.dispatch.TrustIpService@7edc0dd8
+[2015-11-27|19:01:39] binded
+[2015-11-27|19:01:39] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-27|19:02:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:02:39] ONLINE Session[0]
+[2015-11-27|19:03:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:03:39] ONLINE Session[0]
+[2015-11-27|19:04:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:04:39] ONLINE Session[0]
+[2015-11-27|19:05:27] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|19:05:27] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|19:05:27] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|19:05:27] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|19:05:27] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|19:05:27] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|19:05:27] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|19:05:27] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|19:05:27] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|19:05:27] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|19:05:27] TimeControlProcessor Control start.
+[2015-11-27|19:05:27] load trustip.txt
+[2015-11-27|19:05:27] add trustIpService: com.app.dispatch.TrustIpService@22ace5ba
+[2015-11-27|19:05:27] binded
+[2015-11-27|19:05:27] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-27|19:05:46] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|19:05:46] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|19:05:46] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|19:05:46] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|19:05:46] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|19:05:46] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|19:05:46] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|19:05:46] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|19:05:46] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|19:05:46] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|19:05:46] TimeControlProcessor Control start.
+[2015-11-27|19:05:46] load trustip.txt
+[2015-11-27|19:05:46] add trustIpService: com.app.dispatch.TrustIpService@14a78af0
+[2015-11-27|19:05:46] binded
+[2015-11-27|19:05:46] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-27|19:06:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:06:46] ONLINE Session[0]
+[2015-11-27|19:19:38] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|19:19:38] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|19:19:38] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|19:19:38] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|19:19:38] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|19:19:38] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|19:19:38] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|19:19:38] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|19:19:39] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|19:19:39] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|19:19:39] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|19:19:39] TimeControlProcessor Control start.
+[2015-11-27|19:19:39] load trustip.txt
+[2015-11-27|19:19:39] add trustIpService: com.app.dispatch.TrustIpService@211120f9
+[2015-11-27|19:19:39] binded
+[2015-11-27|19:19:39] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-27|19:19:53] ok:192.168.1.80
+[2015-11-27|19:20:20] SyncTime[2] ONLINE[1] MAX[1500]
+[2015-11-27|19:20:39] ONLINE Session[1]
+[2015-11-27|19:21:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:21:39] ONLINE Session[0]
+[2015-11-27|19:22:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:22:39] ONLINE Session[0]
+[2015-11-27|19:23:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:23:39] ONLINE Session[0]
+[2015-11-27|19:24:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:24:39] ONLINE Session[0]
+[2015-11-27|19:25:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:25:39] ONLINE Session[0]
+[2015-11-27|19:26:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:26:39] ONLINE Session[0]
+[2015-11-27|19:27:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:27:39] ONLINE Session[0]
+[2015-11-27|19:28:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:28:39] ONLINE Session[0]
+[2015-11-27|19:28:56] ok:192.168.1.80
+[2015-11-27|19:29:27] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|19:29:27] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|19:29:27] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|19:29:27] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|19:29:27] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|19:29:27] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|19:29:27] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|19:29:27] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|19:29:27] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|19:29:27] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|19:29:27] TimeControlProcessor Control start.
+[2015-11-27|19:29:27] load trustip.txt
+[2015-11-27|19:29:27] add trustIpService: com.app.dispatch.TrustIpService@22ace5ba
+[2015-11-27|19:29:27] binded
+[2015-11-27|19:29:27] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-27|19:29:31] ok:192.168.1.80
+[2015-11-27|19:30:20] SyncTime[3] ONLINE[1] MAX[1500]
+[2015-11-27|19:30:27] ONLINE Session[1]
+[2015-11-27|19:31:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:31:27] ONLINE Session[0]
+[2015-11-27|19:32:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:32:27] ONLINE Session[0]
+[2015-11-27|19:33:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:33:27] ONLINE Session[0]
+[2015-11-27|19:34:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:34:27] ONLINE Session[0]
+[2015-11-27|19:35:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:35:27] ONLINE Session[0]
+[2015-11-27|19:36:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:36:27] ONLINE Session[0]
+[2015-11-27|19:37:20] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-27|19:37:27] ONLINE Session[0]
+[2015-11-27|19:38:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:38:27] ONLINE Session[0]
+[2015-11-27|19:39:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:39:27] ONLINE Session[0]
+[2015-11-27|19:40:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:40:27] ONLINE Session[0]
+[2015-11-27|19:41:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:41:27] ONLINE Session[0]
+[2015-11-27|19:42:20] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-27|19:42:27] ONLINE Session[0]
+[2015-11-27|19:43:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:43:27] ONLINE Session[0]
+[2015-11-27|19:44:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:44:27] ONLINE Session[0]
+[2015-11-27|19:45:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:45:27] ONLINE Session[0]
+[2015-11-27|19:46:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:46:27] ONLINE Session[0]
+[2015-11-27|19:47:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:47:27] ONLINE Session[0]
+[2015-11-27|19:48:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:48:27] ONLINE Session[0]
+[2015-11-27|19:49:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:49:27] ONLINE Session[0]
+[2015-11-27|19:50:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:50:27] ONLINE Session[0]
+[2015-11-27|19:51:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:51:27] ONLINE Session[0]
+[2015-11-27|19:52:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:52:27] ONLINE Session[0]
+[2015-11-27|19:53:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:53:27] ONLINE Session[0]
+[2015-11-27|19:54:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:54:27] ONLINE Session[0]
+[2015-11-27|19:55:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:55:27] ONLINE Session[0]
+[2015-11-27|19:56:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:56:27] ONLINE Session[0]
+[2015-11-27|19:57:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|19:57:27] ONLINE Session[0]
+[2015-11-27|19:58:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:58:27] ONLINE Session[0]
+[2015-11-27|19:59:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|19:59:27] ONLINE Session[0]
+[2015-11-27|20:00:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:00:27] ONLINE Session[0]
+[2015-11-27|20:01:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:01:27] ONLINE Session[0]
+[2015-11-27|20:02:20] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-27|20:02:27] ONLINE Session[0]
+[2015-11-27|20:03:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:03:27] ONLINE Session[0]
+[2015-11-27|20:04:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:04:27] ONLINE Session[0]
+[2015-11-27|20:05:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:05:27] ONLINE Session[0]
+[2015-11-27|20:06:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:06:27] ONLINE Session[0]
+[2015-11-27|20:07:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:07:27] ONLINE Session[0]
+[2015-11-27|20:08:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:08:27] ONLINE Session[0]
+[2015-11-27|20:09:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:09:27] ONLINE Session[0]
+[2015-11-27|20:10:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:10:27] ONLINE Session[0]
+[2015-11-27|20:11:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:11:27] ONLINE Session[0]
+[2015-11-27|20:12:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:12:27] ONLINE Session[0]
+[2015-11-27|20:13:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:13:27] ONLINE Session[0]
+[2015-11-27|20:14:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:14:27] ONLINE Session[0]
+[2015-11-27|20:15:20] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-27|20:15:27] ONLINE Session[0]
+[2015-11-27|20:16:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:16:27] ONLINE Session[0]
+[2015-11-27|20:17:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:17:27] ONLINE Session[0]
+[2015-11-27|20:18:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:18:27] ONLINE Session[0]
+[2015-11-27|20:19:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:19:27] ONLINE Session[0]
+[2015-11-27|20:20:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:20:27] ONLINE Session[0]
+[2015-11-27|20:21:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:21:27] ONLINE Session[0]
+[2015-11-27|20:22:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:22:27] ONLINE Session[0]
+[2015-11-27|20:23:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:23:27] ONLINE Session[0]
+[2015-11-27|20:24:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:24:27] ONLINE Session[0]
+[2015-11-27|20:25:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:25:27] ONLINE Session[0]
+[2015-11-27|20:26:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:26:27] ONLINE Session[0]
+[2015-11-27|20:27:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:27:27] ONLINE Session[0]
+[2015-11-27|20:28:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:28:27] ONLINE Session[0]
+[2015-11-27|20:29:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:29:27] ONLINE Session[0]
+[2015-11-27|20:30:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:30:27] ONLINE Session[0]
+[2015-11-27|20:31:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:31:27] ONLINE Session[0]
+[2015-11-27|20:32:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:32:27] ONLINE Session[0]
+[2015-11-27|20:33:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:33:27] ONLINE Session[0]
+[2015-11-27|20:34:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:34:27] ONLINE Session[0]
+[2015-11-27|20:35:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:35:27] ONLINE Session[0]
+[2015-11-27|20:36:20] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-27|20:36:27] ONLINE Session[0]
+[2015-11-27|20:37:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:37:27] ONLINE Session[0]
+[2015-11-27|20:38:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:38:27] ONLINE Session[0]
+[2015-11-27|20:39:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:39:27] ONLINE Session[0]
+[2015-11-27|20:40:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:40:27] ONLINE Session[0]
+[2015-11-27|20:41:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:44:19] 没有找到 ERROR_ProtocolError 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_Heartbeat 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_WorldServerToAccountServer 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_DispatchLogin 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_UpdateServerInfo 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_NotifyMaxPlayer 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_SyncLoad 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_AccountLogin 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_AccountLoginOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_SessionClosed 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_SetClientIPAddress 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_Kick 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_SyncPlayer 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_PlayerLogout 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_BroadCast 对应的protocol handler
+[2015-11-27|20:44:19] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.server.ForceBroadCast
+[2015-11-27|20:44:19] 没有找到 SERVER_ShutDown 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SERVER_NotifyMaintance 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_Heartbeat 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_Login 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_LoginOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_RepeatLogin 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_GetRoleList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_GetRoleListOK 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_RoleCreate 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_RoleLogin 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_RoleLoginOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_Move 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_ReturnMove 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_ReportPlace 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_ViewPlayerData 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_JumpMap 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_UpdatePlayerData 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_UpdateHeroData 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_GetRandomName 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_GetRandomNameOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_SetToken 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_LoginAgain 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ACCOUNT_LoginFail 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 CHAT_SendMessage 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 CHAT_ReceiveMessage 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 CHAT_ChangeChannel 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 CHAT_SyncChannels 对应的protocol handler
+[2015-11-27|20:44:19] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.NOP
+[2015-11-27|20:44:19] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.SYNC
+[2015-11-27|20:44:19] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.system.HttpClose
+[2015-11-27|20:44:19] 没有找到 SYSTEM_ShakeHands 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_TopHands 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetIslandState 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetIslandStateOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetSystemInfo 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetSystemInfoOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetNoviceRemark 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetNoviceRemarkOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetItemPriceAndVip 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetItemPriceAndVipOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_EarthPush 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_BattleShakeHands 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetPayAppRewardList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetPayAppRewardListOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetPayAppReward 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetPayAppRewardOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetKeyProcess 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 SYSTEM_GetKeyProcessOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 MAIL_SendMail 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 MAIL_SendMailOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 MAIL_DeleteMail 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 MAIL_DeleteMailOk 对应的protocol handler
+[2015-11-27|20:44:19] 初始化ProtocolFactory错误:java.lang.ClassNotFoundException: com.app.empire.protocol.data.mail.HasNewMail
+[2015-11-27|20:44:19] 没有找到 BULLETIN_GetBulletin 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 BULLETIN_GetBulletinOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 BULLETIN_GetAbout 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 BULLETIN_GetAboutOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 BULLETIN_GetHelp 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 BULLETIN_GetHelpOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 BULLETIN_GetWeiboInfo 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 BULLETIN_GetWeiboInfoOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 BULLETIN_WeiboShare 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORLOG_GetLogList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORLOG_SendLogList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORLOG_GetLog 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORLOG_SendLog 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORCODE_GetList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORCODE_GetListOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORCODE_CheckList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORCODE_CheckOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORCODE_GetSmsCodeList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORCODE_GetSmsCodeListOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORCODE_GetSmsCodeNewList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 ERRORCODE_GetSmsCodeNewListOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_GetProductIdList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_SendProductIdList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_IOSSendProductCheckInfo 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_BuySuccess 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_BuyFailed 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_AndroidSendProductCheckInfo 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_SendProductId 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_GetRuleList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_GetRuleListOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_GetCallBackUri 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_GetCallBackUriOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_RequestSmsCodeSerialid 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_RequestSmsCodeSerialidOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_SubmitSMSProduct 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 PURCHASE_SMSProductBuySuccess 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 EQUIP_GetEquipList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 EQUIP_GetEquipListOk 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 HERO_GetHeroList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 HERO_GetHeroListOK 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 HERO_StudySkill 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 HERO_StudySkillOK 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 HERO_GetSkillList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 HERO_GetSkillListOK 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 COPYMAP_GetList 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 COPYMAP_GetListOK 对应的protocol handler
+[2015-11-27|20:44:19] 没有找到 TEST_Test 对应的protocol handler
+[2015-11-27|20:44:20] TimeControlProcessor Control start.
+[2015-11-27|20:44:20] load trustip.txt
+[2015-11-27|20:44:20] add trustIpService: com.app.dispatch.TrustIpService@211120f9
+[2015-11-27|20:44:20] binded
+[2015-11-27|20:44:20] 数据分发服务器启动完成  -- 端口:19990
+[2015-11-27|20:44:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:44:24] ok:192.168.1.80
+[2015-11-27|20:45:20] ONLINE Session[1]
+[2015-11-27|20:45:20] SyncTime[1] ONLINE[1] MAX[1500]
+[2015-11-27|20:46:20] ONLINE Session[0]
+[2015-11-27|20:46:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:47:20] ONLINE Session[0]
+[2015-11-27|20:47:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:48:20] ONLINE Session[0]
+[2015-11-27|20:48:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:49:20] ONLINE Session[0]
+[2015-11-27|20:49:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:50:20] ONLINE Session[0]
+[2015-11-27|20:50:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:51:20] ONLINE Session[0]
+[2015-11-27|20:51:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:52:20] ONLINE Session[0]
+[2015-11-27|20:52:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:53:20] ONLINE Session[0]
+[2015-11-27|20:53:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:54:20] ONLINE Session[0]
+[2015-11-27|20:54:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:55:20] ONLINE Session[0]
+[2015-11-27|20:55:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:56:20] ONLINE Session[0]
+[2015-11-27|20:56:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:57:20] ONLINE Session[0]
+[2015-11-27|20:57:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|20:58:20] ONLINE Session[0]
+[2015-11-27|20:58:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|20:59:20] ONLINE Session[0]
+[2015-11-27|20:59:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|21:00:20] ONLINE Session[0]
+[2015-11-27|21:00:20] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-27|21:01:20] ONLINE Session[0]
+[2015-11-27|21:01:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|21:02:20] ONLINE Session[0]
+[2015-11-27|21:02:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|21:03:20] ONLINE Session[0]
+[2015-11-27|21:03:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|21:04:20] ONLINE Session[0]
+[2015-11-27|21:04:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|21:05:20] ONLINE Session[0]
+[2015-11-27|21:05:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|21:06:20] ONLINE Session[0]
+[2015-11-27|21:06:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|21:07:20] ONLINE Session[0]
+[2015-11-27|21:07:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|21:08:20] ONLINE Session[0]
+[2015-11-27|21:08:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|21:09:20] ONLINE Session[0]
+[2015-11-27|21:09:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|21:10:20] ONLINE Session[0]
+[2015-11-27|21:10:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|21:11:20] ONLINE Session[0]
+[2015-11-27|21:11:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|21:12:20] ONLINE Session[0]
+[2015-11-27|21:12:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|21:13:20] ONLINE Session[0]
+[2015-11-27|21:13:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|21:14:20] ONLINE Session[0]
+[2015-11-27|21:14:20] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-27|21:15:20] ONLINE Session[0]
+[2015-11-27|21:15:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|21:16:20] ONLINE Session[0]
+[2015-11-27|21:16:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|21:17:20] ONLINE Session[0]
+[2015-11-27|21:17:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|21:18:20] ONLINE Session[0]
+[2015-11-27|21:18:20] SyncTime[2] ONLINE[0] MAX[1500]
+[2015-11-27|21:19:20] ONLINE Session[0]
+[2015-11-27|21:19:20] SyncTime[1] ONLINE[0] MAX[1500]
+[2015-11-27|21:20:20] ONLINE Session[0]
+[2015-11-27|21:20:20] SyncTime[0] ONLINE[0] MAX[1500]
+[2015-11-27|21:21:20] ONLINE Session[0]
+[2015-11-27|21:21:20] SyncTime[1] ONLINE[0] MAX[1500]

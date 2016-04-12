@@ -1,0 +1,7 @@
+渠道登陆验证接口
+第一次创建登陆验证进程 参数channleid,data[]
+服务器返回serialno
+第二次查询验证结果 参数channleid,serialno
+返回{"serialno":18485233,"state":0,"code":"","message":""}
+当state＝1是，进程处理完。
+

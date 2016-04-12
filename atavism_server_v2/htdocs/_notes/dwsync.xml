@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="index.php" server="10.9.8.62//" local="130843352563346628" remote="130843352400000000" Dst="2" />
+<file name="conndb_world_content.inc.php" server="10.9.8.62//" local="130828538796722283" remote="130828369200000000" Dst="2" />
+<file name="conndb_atavism.inc.php" server="10.9.8.62//" local="130843040846267431" remote="130843040400000000" Dst="2" />
+<file name="getBackdatingDB.php" server="10.9.8.62//" local="130843213518433714" remote="130843213200000000" Dst="2" />
+<file name="atavismfunctions.inc.php" server="10.9.8.62//" local="130843023552198267" remote="130843023000000000" Dst="2" />
+<file name="update_itemtemplates.php" server="10.9.8.62//" local="130843343410000000" remote="130843342800000000" Dst="2" />
+<file name="getLogs.php" server="10.9.8.62//" local="130843183554079851" remote="130843183800000000" Dst="2" />
+<file name="makeSQLBackup.php" server="10.9.8.62//" local="130843205244010444" remote="130843204800000000" Dst="2" />
+<file name="getSQLBackup.php" server="10.9.8.62//" local="130837056196729697" remote="130837056000000000" Dst="2" />
+<file name="restoreMySQLfromBackup.php" server="10.9.8.62//" local="130843184572168082" remote="130843185600000000" Dst="2" />
+<file name="config.inc.php" server="10.9.8.62//" local="130843344056080040" remote="130843344000000000" Dst="2" />
+<file name="top.php" server="10.9.8.62//" local="130843158807504428" remote="130843158600000000" Dst="2" />
+<file name="menu.php" server="10.9.8.62//" local="130842349291502761" remote="130842349200000000" Dst="2" />
+<file name="middle.php" server="10.9.8.62//" local="130843212992133611" remote="130843212600000000" Dst="2" />
+<file name="footer.php" server="10.9.8.62//" local="130842358921643574" remote="130842358800000000" Dst="2" />
+<file name="connection.inc.php" server="10.9.8.62//" local="130841346552279358" remote="130828330200000000" Dst="2" />
+<file name="updatetemplate.php" server="10.9.8.62//" local="130843201146456077" remote="130843200600000000" Dst="2" />
+<file name="htdocs.7z" server="10.9.8.62//" local="130841346555559546" remote="130828315800000000" Dst="2" />
+<file name="session.php" server="10.9.8.62//" local="130843346264366347" remote="130843345800000000" Dst="2" />
+<file name="login.php" server="10.9.8.62//" local="130843363913045794" remote="130843363800000000" Dst="2" />
+<file name="logout.php" server="10.9.8.62//" local="130843130956591447" remote="130843130400000000" Dst="2" />
+<file name="profile.php" server="10.9.8.62//" local="130843157757594376" remote="130843157400000000" Dst="2" />
+</dwsync>
