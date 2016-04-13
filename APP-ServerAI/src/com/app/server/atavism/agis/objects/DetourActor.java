@@ -9,6 +9,7 @@ package com.app.server.atavism.agis.objects;
 import org.apache.log4j.Logger;
 
 import com.app.empire.protocol.data.ai.CommandMessage;
+import com.app.empire.protocol.data.ai.GotoCommandMessage;
 import com.app.protocol.data.AbstractData;
 import com.app.server.atavism.server.objects.EntityManager;
 import com.app.server.atavism.server.engine.Namespace;
@@ -97,8 +98,8 @@ public class DetourActor {
 		String command = cmdMsg.getCmd();
 		log.debug("DetourActor.onMessage: command = " + command + "; oid = " + this.oid);
 		if (command.equals("goto")) {
-			BaseBehavior.GotoCommandMessage gotoMsg = (BaseBehavior.GotoCommandMessage) msg;
-			Point destination = gotoMsg.getDestination();
+			GotoCommandMessage gotoMsg = (GotoCommandMessage) msg;
+			Point destination = new Point(gotoMsg.getX(), gotoMsg.getY(), gotoMsg.getZ());//gotoMsg.getDestination();
 			this.mode = "goto";
 			this.roamingBehavior = true;
 			this.navMeshManager.setActorTarget(this.oid, destination);

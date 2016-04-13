@@ -1,17 +1,16 @@
 package com.app.empire.protocol.data.ai;
 
-import com.app.empire.protocol.Protocol;
 import com.app.protocol.data.AbstractData;
 
-public class CommandMessage extends AbstractData {
+public abstract class CommandMessage extends AbstractData {
 	private String cmd;// 控制命令
 
-	public CommandMessage(int sessionId, int serial) {
-		super(Protocol.MAIN_AI, Protocol.CHAT_ReceiveMessage, sessionId, serial);
+	public CommandMessage(byte type, byte subType, int sessionId, int serial) {
+		super(type, subType, sessionId, serial);
 	}
 
-	public CommandMessage() {
-		super(Protocol.MAIN_AI, Protocol.CHAT_ReceiveMessage);
+	public CommandMessage(byte type, byte subType) {
+		super(type, subType);
 	}
 
 	public String getCmd() {
