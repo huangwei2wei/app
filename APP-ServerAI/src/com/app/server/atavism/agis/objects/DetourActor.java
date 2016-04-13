@@ -116,7 +116,7 @@ public class DetourActor {
 				try {
 					ArrivedEventMessage arrivedEventMessage = new ArrivedEventMessage();
 					arrivedEventMessage.setOid(this.oid.getData());
-					Engine.getAgent().sendBroadcast(arrivedEventMessage);// 广播
+					// Engine.getAgent().sendBroadcast(arrivedEventMessage);// 广播
 
 				} catch (Exception e) {
 					log.error("BaseBehavior.onMessage: Error sending ArrivedEventMessage, error was '" + e.getMessage() + "'");
@@ -181,7 +181,9 @@ public class DetourActor {
 				distanceSquared = Point.distanceToSquared(pos, this.targetLoc);
 				log.debug("DETOUR: distanceSquared = " + distanceSquared);
 				if (distanceSquared < 0.5f) {
-					Engine.getAgent().sendBroadcast((Message) new BaseBehavior.ArrivedEventMessage(this.oid));// 到达事件消息
+					ArrivedEventMessage arrivedEventMessage = new ArrivedEventMessage();
+					arrivedEventMessage.setOid(this.oid.getData());
+					// Engine.getAgent().sendBroadcast((Message) new BaseBehavior.ArrivedEventMessage(this.oid));// 到达事件消息
 
 					this.navMeshManager.resetActorTarget(this.oid);
 					this.lastDir = AOVector.Zero;

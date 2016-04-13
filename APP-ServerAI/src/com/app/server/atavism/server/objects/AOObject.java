@@ -27,7 +27,7 @@ import com.app.server.atavism.server.engine.InterpolatedWorldNode;
 import com.app.server.atavism.server.engine.BasicWorldNode;
 import com.app.server.atavism.server.engine.WorldNode;
 //import com.app.server.atavism.server.util.AORuntimeException;
-import com.app.server.atavism.server.engine.Event;
+//import com.app.server.atavism.server.engine.Event;
 import java.io.Serializable;
 import com.app.server.atavism.server.engine.OID;
 import com.app.server.atavism.server.engine.Namespace;
@@ -138,9 +138,9 @@ public class AOObject extends Entity {
 		}
 	}
 
-	public void sendEvent(final Event event) {
-		// throw new AORuntimeException("legacy code");
-	}
+	// public void sendEvent(final Event event) {
+	// throw new AORuntimeException("legacy code");
+	// }
 	/**
 	 * 获取世界节点
 	 * 
