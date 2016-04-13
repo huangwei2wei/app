@@ -11,7 +11,7 @@ import com.app.server.atavism.server.pathing.PathLinear;
 import com.app.server.atavism.server.objects.LightData;
 import com.app.server.atavism.server.objects.SoundData;
 import com.app.server.atavism.server.objects.Region;
-import atavism.server.messages.PropertyMessage;
+import com.app.server.atavism.server.messages.PropertyMessage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;

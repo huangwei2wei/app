@@ -8,7 +8,9 @@ package com.app.server.atavism.agis.objects;
 
 import org.apache.log4j.Logger;
 
+import com.app.empire.protocol.data.ai.ArrivedEventMessage;
 import com.app.empire.protocol.data.ai.CommandMessage;
+import com.app.empire.protocol.data.ai.FollowCommandMessage;
 import com.app.empire.protocol.data.ai.GotoCommandMessage;
 import com.app.protocol.data.AbstractData;
 import com.app.server.atavism.server.objects.EntityManager;
@@ -93,13 +95,12 @@ public class DetourActor {
 
 	// 处理
 	public void handleMessage(AbstractData msg, final int flags) {
-
 		CommandMessage cmdMsg = (CommandMessage) msg;
 		String command = cmdMsg.getCmd();
 		log.debug("DetourActor.onMessage: command = " + command + "; oid = " + this.oid);
 		if (command.equals("goto")) {
 			GotoCommandMessage gotoMsg = (GotoCommandMessage) msg;
-			Point destination = new Point(gotoMsg.getX(), gotoMsg.getY(), gotoMsg.getZ());//gotoMsg.getDestination();
+			Point destination = new Point(gotoMsg.getX(), gotoMsg.getY(), gotoMsg.getZ());// gotoMsg.getDestination();
 			this.mode = "goto";
 			this.roamingBehavior = true;
 			this.navMeshManager.setActorTarget(this.oid, destination);
@@ -113,16 +114,19 @@ public class DetourActor {
 			this.mode = "stop";
 			if (this.roamingBehavior) {
 				try {
-					Engine.getAgent().sendBroadcast(new BaseBehavior.ArrivedEventMessage(this.oid));
+					ArrivedEventMessage arrivedEventMessage = new ArrivedEventMessage();
+					arrivedEventMessage.setOid(this.oid.getData());
+					Engine.getAgent().sendBroadcast(arrivedEventMessage);// 广播
+
 				} catch (Exception e) {
 					log.error("BaseBehavior.onMessage: Error sending ArrivedEventMessage, error was '" + e.getMessage() + "'");
 					throw new RuntimeException(e);
 				}
 			}
 		} else if (command.equals("follow")) {
-			BaseBehavior.FollowCommandMessage followMsg = (BaseBehavior.FollowCommandMessage) msg;
+			FollowCommandMessage followMsg = (FollowCommandMessage) msg;
 			this.mode = "follow";
-			this.target = ((AOObject) EntityManager.getEntityByNamespace(followMsg.getTarget().getOid(), Namespace.WORLD_MANAGER));
+			this.target = ((AOObject) EntityManager.getEntityByNamespace(OID.fromLong(followMsg.getOid()), Namespace.WORLD_MANAGER));
 			this.speed = followMsg.getSpeed().intValue();
 			this.distanceToFollowAt = followMsg.getDistanceToFollowAt().floatValue();
 			setupFollow(this.lastLoc);
@@ -178,6 +182,7 @@ public class DetourActor {
 				log.debug("DETOUR: distanceSquared = " + distanceSquared);
 				if (distanceSquared < 0.5f) {
 					Engine.getAgent().sendBroadcast((Message) new BaseBehavior.ArrivedEventMessage(this.oid));// 到达事件消息
+
 					this.navMeshManager.resetActorTarget(this.oid);
 					this.lastDir = AOVector.Zero;
 					this.navMeshManager.setActorSpeed(this.oid, 0.0f);
