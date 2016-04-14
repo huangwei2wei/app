@@ -80,7 +80,9 @@ public class ObjectStub extends Entity implements EntityWithWorldNode {
 	public void updateWorldNode() {
 		WorldManagerClient.updateWorldNode(this.getOid(), new BasicWorldNode(this.node));
 	}
-
+	/**
+	 * 重生
+	 */
 	public void spawn() {
 		final OID oid = this.getOid();
 		MobManagerPlugin.getTracker(this.getInstanceOid()).addLocalObject(oid, (Integer) EnginePlugin.getObjectProperty(oid, Namespace.WORLD_MANAGER, "reactionRadius"));

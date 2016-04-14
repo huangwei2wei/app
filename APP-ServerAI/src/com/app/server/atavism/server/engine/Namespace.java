@@ -4,29 +4,17 @@
 
 package com.app.server.atavism.server.engine;
 
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.ObjectStreamException;
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Iterator;
-import java.util.Set;
-//import atavism.server.util.AORuntimeException;
-//import atavism.server.plugins.BillingClient;
-//import atavism.agis.plugins.ClassAbilityClient;
-//import atavism.agis.plugins.TrainerClient;
-//import atavism.server.plugins.InstanceClient;
-//import atavism.server.plugins.InventoryClient;
-//import atavism.agis.plugins.CombatClient;
-//import atavism.server.plugins.WorldManagerClient;
-//import atavism.server.util.Log;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamException;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-//import atavism.server.network.AOByteBuffer;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.io.Serializable;
-//import atavism.server.marshalling.Marshallable;
 
 
 public class Namespace implements Serializable
@@ -39,7 +27,7 @@ public class Namespace implements Serializable
     public static final long serialVersionUID = 1L;
     public static AtomicInteger id = new AtomicInteger(0);
     public static Namespace WORLD_MANAGER;
-    
+    public static Namespace MOB;
     
     public Namespace() {
         this.number = 0;
@@ -154,6 +142,7 @@ public class Namespace implements Serializable
     }
     public static void encacheNamespaceMapping() {
         Namespace.WORLD_MANAGER = intern("NS.wmgr");
+        Namespace.MOB = intern("NS.mob");
     }
     static {
         Namespace.namespaceStringToNamespace = new HashMap<String, Namespace>();
