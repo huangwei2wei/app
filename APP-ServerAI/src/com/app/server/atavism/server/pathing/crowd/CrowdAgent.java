@@ -6,7 +6,11 @@ package com.app.server.atavism.server.pathing.crowd;
 
 import com.app.server.atavism.server.pathing.detour.NavMeshQuery;
 import com.app.server.atavism.server.pathing.recast.Helper;
-
+/**
+ * 人群代理
+ * @author doter
+ *
+ */
 public class CrowdAgent
 {
     public static int CrowdAgentMaxNeighbors;

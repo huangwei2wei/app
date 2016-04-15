@@ -416,7 +416,7 @@ public class Crowd {
 		return this._maxAgents;
 	}
 	/**
-	 * 添加媒介
+	 * 添加代理
 	 * 
 	 * @param pos
 	 * @param param

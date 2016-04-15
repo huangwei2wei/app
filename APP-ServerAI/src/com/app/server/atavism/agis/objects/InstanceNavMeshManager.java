@@ -9,9 +9,7 @@ import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
-
 import org.apache.log4j.Logger;
-
 import com.app.server.atavism.server.engine.Engine;
 import com.app.server.atavism.server.engine.OID;
 import com.app.server.atavism.server.math.AOVector;
@@ -22,7 +20,12 @@ import com.app.server.atavism.server.pathing.detour.NavMesh;
 import com.app.server.atavism.server.pathing.detour.NavMeshQuery;
 import com.app.server.atavism.server.pathing.detour.QueryFilter;
 import com.app.server.atavism.server.pathing.recast.NavMeshParamXmlLoader;
-
+/**
+ * 场景加载及场景内怪物的管理
+ * 
+ * @author doter
+ * 
+ */
 public class InstanceNavMeshManager implements Runnable {
 	private Logger log = Logger.getLogger("navmesh");
 	private ArrayList<DetourActor> actors;
@@ -64,7 +67,7 @@ public class InstanceNavMeshManager implements Runnable {
 			(this.crowd = new Crowd()).setFilter(this.filter);
 			this.crowd.Init(5000, 0.5f, this.navMesh);
 			this.lastUpdate = System.currentTimeMillis();
-			Engine.getExecutor().scheduleAtFixedRate(this, 500L, 250L, TimeUnit.MILLISECONDS);
+			Engine.getExecutor().scheduleAtFixedRate(this, 500L, 250L, TimeUnit.MILLISECONDS);// 定时触发
 		} else {
 			log.debug("NAVMESH: navMesh not loaded for instance: " + name);
 		}
@@ -107,7 +110,13 @@ public class InstanceNavMeshManager implements Runnable {
 		}
 		log.debug("NAVMESH: completed actor update");
 	}
-
+	/**
+	 * 添加怪物
+	 * 
+	 * @param actorOid
+	 * @param loc
+	 * @param actor
+	 */
 	public void addActor(final OID actorOid, final Point loc, final DetourActor actor) {
 		if (this.navMeshQuery == null) {
 			log.debug("DETOUR: no navMeshQuery so actor not added.");
@@ -158,7 +167,11 @@ public class InstanceNavMeshManager implements Runnable {
 			this.crowd.GetAgent(actor.getAgentId()).DesiredSpeed = speed;
 		}
 	}
-
+	/**
+	 * 移除怪物
+	 * 
+	 * @param actorOid
+	 */
 	public void removeActor(final OID actorOid) {
 		log.debug("DETOUR: remove actor: " + actorOid);
 		final DetourActor actor = this.getDetourActorByOid(actorOid);

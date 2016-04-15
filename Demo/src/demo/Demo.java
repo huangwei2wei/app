@@ -200,21 +200,30 @@ public class Demo {
 		// }
 		// }
 
-		for (int i = 0; i < 10; i++) {
-			System.out.println("----------c" + i);
-			aaa : {
-				System.out.println("----------b");
-				if (i > 2) {
-					System.out.println(i);
-//					 continue;
-//					break bbb;
-				}
-				System.out.println("aaa");
-			}
-			bbb : {
-				System.out.println("bbbb");
-			}
-		}
+//		for (int i = 0; i < 10; i++) {
+//			System.out.println("----------c" + i);
+//			aaa : {
+//				System.out.println("----------b");
+//				if (i > 2) {
+//					System.out.println(i);
+////					 continue;
+////					break bbb;
+//				}
+//				System.out.println("aaa");
+//			}
+//			bbb : {
+//				System.out.println("bbbb");
+//			}
+//		}
+		
+		 Calendar cal = Calendar.getInstance();
+		 int i = cal.get(Calendar.DAY_OF_WEEK);
+		 System.out.println(i);
+		 HashMap<String, String> m = new HashMap<String, String>();
+		 m.put("1", "a");
+		 m.put("2", "a");
+		 
+		 System.out.println(m.get(1+""));
 	}
 
 }

@@ -3,8 +3,14 @@
 // 
 
 package com.app.server.atavism.server.pathing.crowd;
-
 import com.app.server.atavism.server.pathing.crowd.UpdateFlags;
+
+/**
+ * 人群代理参数
+ * 
+ * @author doter
+ * 
+ */
 
 public class CrowdAgentParams {
 	public float Radius;// 半径
