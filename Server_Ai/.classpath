@@ -4,11 +4,8 @@
 	<classpathentry kind="src" path="atavism"/>
 	<classpathentry kind="src" path="currency"/>
 	<classpathentry kind="src" path="injected"/>
-	<classpathentry kind="lib" path="agis.jar"/>
-	<classpathentry kind="lib" path="atavism.jar"/>
-	<classpathentry kind="lib" path="currency.jar"/>
-	<classpathentry kind="lib" path="injected.jar"/>
-	<classpathentry kind="lib" path="procyon-decompiler-0.5.30.jar"/>
+	<classpathentry kind="src" path="other"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/other"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

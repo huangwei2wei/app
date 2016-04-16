@@ -6,7 +6,7 @@ package com.app.server.atavism.server.objects;
 
 import java.util.Collection;
 import java.util.Iterator;
-import com.app.server.atavism.server.engine.EnginePlugin;
+//import com.app.server.atavism.server.engine.EnginePlugin;
 import com.app.server.atavism.server.plugins.MobManagerPlugin;
 import com.app.server.atavism.server.plugins.WorldManagerClient;
 import com.app.server.atavism.server.engine.BasicWorldNode;
@@ -16,7 +16,11 @@ import java.util.ArrayList;
 import com.app.server.atavism.server.engine.Behavior;
 import java.util.List;
 import com.app.server.atavism.server.engine.InterpolatedWorldNode;
-
+/**
+ * 对象存根
+ * @author doter
+ *
+ */
 public class ObjectStub extends Entity implements EntityWithWorldNode {
 	InterpolatedWorldNode node;
 	int templateID;
@@ -102,9 +106,9 @@ public class ObjectStub extends Entity implements EntityWithWorldNode {
 			behav.deactivate();
 		}
 		final OID oid = this.getOid();
-		if (MobManagerPlugin.getTracker(this.getInstanceOid()) != null) {
-			MobManagerPlugin.getTracker(this.getInstanceOid()).removeLocalObject(oid);
-		}
+//		if (MobManagerPlugin.getTracker(this.getInstanceOid()) != null) {
+//			MobManagerPlugin.getTracker(this.getInstanceOid()).removeLocalObject(oid);
+//		}
 		EntityManager.removeEntityByNamespace(oid, Namespace.MOB);
 	}
 
