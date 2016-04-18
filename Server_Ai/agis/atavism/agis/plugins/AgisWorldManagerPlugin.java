@@ -705,7 +705,12 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 			return true;
 		}
 	}
-
+	/**
+	 * Ìí¼ÓµØÍ¼³¡¾°
+	 * 
+	 * @author doter
+	 * 
+	 */
 	class SpawnInstanceMobsHook implements Hook {
 		public boolean processMessage(final Message msg, final int flags) {
 			final AgisMobClient.SpawnInstanceMobsMessage SPMsg = (AgisMobClient.SpawnInstanceMobsMessage) msg;

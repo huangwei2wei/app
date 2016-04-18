@@ -50,7 +50,7 @@ public class InstanceNavMeshManager implements Runnable {
 	}
 
 	public boolean loadWorldNavMesh(final String name) {
-		final String navMeshFilePath = "..\\navmesh\\" + name + "\\" + name + ".xml";
+		final String navMeshFilePath = Thread.currentThread().getContextClassLoader().getResource("./navmesh/" + name + "/" + name + ".xml").getPath();
 		final NavMeshParamXmlLoader loader = new NavMeshParamXmlLoader(navMeshFilePath);
 		final boolean navMeshLoaded = loader.load(this.navMesh);
 		if (navMeshLoaded) {

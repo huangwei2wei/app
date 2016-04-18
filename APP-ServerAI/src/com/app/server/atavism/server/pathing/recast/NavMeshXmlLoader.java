@@ -87,7 +87,7 @@ public class NavMeshXmlLoader {
 					final float[] navVerts = new float[navVertsNodes.size()];
 					for (int j = 0; j < navVertsNodes.size(); ++j) {
 						final Element eElement = (Element) navVertsNodes.get(j);
-						navVerts[j] = Float.parseFloat(eElement.getNodeValue());
+						navVerts[j] = Float.parseFloat(eElement.getFirstChild().getNodeValue());
 					}
 					navMeshBuilder.NavVerts = navVerts;
 				} else if (nodeList.item(i).getNodeName().equals("NavPolys")) {
@@ -116,7 +116,7 @@ public class NavMeshXmlLoader {
 					final float[] navDVerts = new float[navDVertsNodes.size()];
 					for (int j = 0; j < navDVertsNodes.size(); ++j) {
 						final Element eElement = (Element) navDVertsNodes.get(j);
-						navDVerts[j] = Float.parseFloat(eElement.getNodeValue());
+						navDVerts[j] = Float.parseFloat(eElement.getFirstChild().getNodeValue());
 					}
 					navMeshBuilder.NavDVerts = navDVerts;
 				} else if (nodeList.item(i).getNodeName().equals("NavDTris")) {
@@ -124,7 +124,7 @@ public class NavMeshXmlLoader {
 					final short[] navDTris = new short[navDTrisNodes.size()];
 					for (int j = 0; j < navDTrisNodes.size(); ++j) {
 						final Element eElement = (Element) navDTrisNodes.get(j);
-						navDTris[j] = Short.parseShort(eElement.getNodeValue());
+						navDTris[j] = Short.parseShort(eElement.getFirstChild().getNodeValue());
 					}
 					navMeshBuilder.NavDTris = navDTris;
 				} else if (nodeList.item(i).getNodeName().equals("NavBvTree")) {
@@ -156,42 +156,43 @@ public class NavMeshXmlLoader {
 	protected MeshHeader processHeader(final Node node) {
 		final MeshHeader header = new MeshHeader();
 		Element eElement = (Element) XMLHelper.getMatchingChild(node, "Magic");
-		log.debug("NAVMESH: magic=" + eElement.getNodeValue());
-		header.Magic = Integer.parseInt(eElement.getNodeValue());
+		System.out.println("NAVMESH: magic=" + eElement.getFirstChild().getNodeValue());
+		log.debug("NAVMESH: magic=" + eElement.getFirstChild().getNodeValue());
+		header.Magic = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "Version");
-		header.Version = Integer.parseInt(eElement.getNodeValue());
+		header.Version = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "X");
-		header.X = Integer.parseInt(eElement.getNodeValue());
+		header.X = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "Y");
-		header.Y = Integer.parseInt(eElement.getNodeValue());
+		header.Y = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "Layer");
-		header.Layer = Integer.parseInt(eElement.getNodeValue());
+		header.Layer = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "UserId");
-		header.UserId = Long.parseLong(eElement.getNodeValue());
+		header.UserId = Long.parseLong(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "PolyCount");
-		header.PolyCount = Integer.parseInt(eElement.getNodeValue());
+		header.PolyCount = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "VertCount");
-		header.VertCount = Integer.parseInt(eElement.getNodeValue());
+		header.VertCount = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "MaxLinkCount");
-		header.MaxLinkCount = Integer.parseInt(eElement.getNodeValue());
+		header.MaxLinkCount = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "DetailMeshCount");
-		header.DetailMeshCount = Integer.parseInt(eElement.getNodeValue());
+		header.DetailMeshCount = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "DetailVertCount");
-		header.DetailVertCount = Integer.parseInt(eElement.getNodeValue());
+		header.DetailVertCount = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "DetailTriCount");
-		header.DetailTriCount = Integer.parseInt(eElement.getNodeValue());
+		header.DetailTriCount = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "BVNodeCount");
-		header.BVNodeCount = Integer.parseInt(eElement.getNodeValue());
+		header.BVNodeCount = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "OffMeshConCount");
-		header.OffMeshConCount = Integer.parseInt(eElement.getNodeValue());
+		header.OffMeshConCount = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "OffMeshBase");
-		header.OffMeshBase = Integer.parseInt(eElement.getNodeValue());
+		header.OffMeshBase = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "WalkableHeight");
-		header.WalkableHeight = Float.parseFloat(eElement.getNodeValue());
+		header.WalkableHeight = Float.parseFloat(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "WalkableRadius");
-		header.WalkableRadius = Float.parseFloat(eElement.getNodeValue());
+		header.WalkableRadius = Float.parseFloat(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "WalkableClimb");
-		header.WalkableClimb = Float.parseFloat(eElement.getNodeValue());
+		header.WalkableClimb = Float.parseFloat(eElement.getFirstChild().getNodeValue());
 		final Node bminNode = XMLHelper.getMatchingChild(node, "BMin");
 		if (bminNode == null) {
 			log.debug("No <BMin> node in BVNode");
@@ -200,7 +201,7 @@ public class NavMeshXmlLoader {
 			final float[] bmin = new float[bminNodes.size()];
 			for (int i = 0; i < bminNodes.size(); ++i) {
 				eElement = (Element) bminNodes.get(i);
-				bmin[i] = Float.parseFloat(eElement.getNodeValue());
+				bmin[i] = Float.parseFloat(eElement.getFirstChild().getNodeValue());
 			}
 			header.BMin = bmin;
 		}
@@ -212,23 +213,23 @@ public class NavMeshXmlLoader {
 			final float[] bmax = new float[bmaxNodes.size()];
 			for (int j = 0; j < bmaxNodes.size(); ++j) {
 				eElement = (Element) bmaxNodes.get(j);
-				bmax[j] = Float.parseFloat(eElement.getNodeValue());
+				bmax[j] = Float.parseFloat(eElement.getFirstChild().getNodeValue());
 			}
 			header.BMax = bmax;
 		}
 		eElement = (Element) XMLHelper.getMatchingChild(node, "TileRef");
-		header.TileRef = Long.parseLong(eElement.getNodeValue());
+		header.TileRef = Long.parseLong(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "BVQuantFactor");
-		header.BVQuantFactor = Float.parseFloat(eElement.getNodeValue());
+		header.BVQuantFactor = Float.parseFloat(eElement.getFirstChild().getNodeValue());
 		return header;
 	}
 
 	protected Poly processNavPoly(final Node node) {
 		final Poly poly = new Poly();
 		Element eElement = (Element) XMLHelper.getMatchingChild(node, "_areaAndType");
-		poly._areaAndType = Short.parseShort(eElement.getNodeValue());
+		poly._areaAndType = Short.parseShort(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "FirstLink");
-		poly.FirstLink = Long.parseLong(eElement.getNodeValue());
+		poly.FirstLink = Long.parseLong(eElement.getFirstChild().getNodeValue());
 		final Node vertsNode = XMLHelper.getMatchingChild(node, "Verts");
 		if (vertsNode == null) {
 			log.debug("No <NavVerts> node in Poly");
@@ -237,7 +238,7 @@ public class NavMeshXmlLoader {
 			final int[] verts = new int[vertsNodes.size()];
 			for (int i = 0; i < vertsNodes.size(); ++i) {
 				eElement = (Element) vertsNodes.get(i);
-				verts[i] = Integer.parseInt(eElement.getNodeValue());
+				verts[i] = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 			}
 			poly.Verts = verts;
 		}
@@ -249,55 +250,55 @@ public class NavMeshXmlLoader {
 			final int[] neis = new int[neisNodes.size()];
 			for (int j = 0; j < neisNodes.size(); ++j) {
 				eElement = (Element) neisNodes.get(j);
-				neis[j] = Integer.parseInt(eElement.getNodeValue());
+				neis[j] = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 			}
 			poly.Neis = neis;
 		}
 		eElement = (Element) XMLHelper.getMatchingChild(node, "Flags");
-		poly.Flags = Integer.parseInt(eElement.getNodeValue());
+		poly.Flags = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "VertCount");
-		poly.VertCount = Short.parseShort(eElement.getNodeValue());
+		poly.VertCount = Short.parseShort(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "Area");
-		poly.setArea(Short.parseShort(eElement.getNodeValue()));
+		poly.setArea(Short.parseShort(eElement.getFirstChild().getNodeValue()));
 		eElement = (Element) XMLHelper.getMatchingChild(node, "Type");
-		poly.setType(Short.parseShort(eElement.getNodeValue()));
+		poly.setType(Short.parseShort(eElement.getFirstChild().getNodeValue()));
 		return poly;
 	}
 
 	protected Link processLink(final Node node) {
 		final Link link = new Link();
 		Element eElement = (Element) XMLHelper.getMatchingChild(node, "Ref");
-		link.Ref = Long.parseLong(eElement.getNodeValue());
+		link.Ref = Long.parseLong(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "Next");
-		link.Next = Long.parseLong(eElement.getNodeValue());
+		link.Next = Long.parseLong(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "Edge");
-		link.Edge = Short.parseShort(eElement.getNodeValue());
+		link.Edge = Short.parseShort(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "Side");
-		link.Side = Short.parseShort(eElement.getNodeValue());
+		link.Side = Short.parseShort(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "BMin");
-		link.BMin = Short.parseShort(eElement.getNodeValue());
+		link.BMin = Short.parseShort(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "BMax");
-		link.BMax = Short.parseShort(eElement.getNodeValue());
+		link.BMax = Short.parseShort(eElement.getFirstChild().getNodeValue());
 		return link;
 	}
 
 	protected PolyDetail processPolyDetail(final Node node) {
 		final PolyDetail detail = new PolyDetail();
 		Element eElement = (Element) XMLHelper.getMatchingChild(node, "VertBase");
-		detail.VertBase = Long.parseLong(eElement.getNodeValue());
+		detail.VertBase = Long.parseLong(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "TriBase");
-		detail.TriBase = Long.parseLong(eElement.getNodeValue());
+		detail.TriBase = Long.parseLong(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "VertCount");
-		detail.VertCount = Short.parseShort(eElement.getNodeValue());
+		detail.VertCount = Short.parseShort(eElement.getFirstChild().getNodeValue());
 		eElement = (Element) XMLHelper.getMatchingChild(node, "TriCount");
-		detail.TriCount = Short.parseShort(eElement.getNodeValue());
+		detail.TriCount = Short.parseShort(eElement.getFirstChild().getNodeValue());
 		return detail;
 	}
 
 	protected BVNode processBVNode(final Node node) {
 		final BVNode bvNode = new BVNode();
 		Element eElement = (Element) XMLHelper.getMatchingChild(node, "I");
-		bvNode.I = Integer.parseInt(eElement.getNodeValue());
+		bvNode.I = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 		final Node bminNode = XMLHelper.getMatchingChild(node, "BMin");
 		if (bminNode == null) {
 			log.debug("No <BMin> node in BVNode");
@@ -306,7 +307,7 @@ public class NavMeshXmlLoader {
 			final int[] bmin = new int[bminNodes.size()];
 			for (int i = 0; i < bminNodes.size(); ++i) {
 				eElement = (Element) bminNodes.get(i);
-				bmin[i] = Integer.parseInt(eElement.getNodeValue());
+				bmin[i] = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 			}
 			bvNode.BMin = bmin;
 		}
@@ -318,7 +319,7 @@ public class NavMeshXmlLoader {
 			final int[] bmax = new int[bmaxNodes.size()];
 			for (int j = 0; j < bmaxNodes.size(); ++j) {
 				eElement = (Element) bmaxNodes.get(j);
-				bmax[j] = Integer.parseInt(eElement.getNodeValue());
+				bmax[j] = Integer.parseInt(eElement.getFirstChild().getNodeValue());
 			}
 			bvNode.BMax = bmax;
 		}
@@ -335,20 +336,20 @@ public class NavMeshXmlLoader {
 			final float[] pos = new float[posNodes.size()];
 			for (int i = 0; i < posNodes.size(); ++i) {
 				final Element eElement = (Element) posNodes.get(i);
-				pos[i] = Float.parseFloat(eElement.getNodeValue());
+				pos[i] = Float.parseFloat(eElement.getFirstChild().getNodeValue());
 			}
 			omc.Pos = pos;
 		}
 		Element eElement2 = (Element) XMLHelper.getMatchingChild(node, "Rad");
-		omc.Rad = Float.parseFloat(eElement2.getNodeValue());
+		omc.Rad = Float.parseFloat(eElement2.getFirstChild().getNodeValue());
 		eElement2 = (Element) XMLHelper.getMatchingChild(node, "Poly");
-		omc.Poly = Integer.parseInt(eElement2.getNodeValue());
+		omc.Poly = Integer.parseInt(eElement2.getFirstChild().getNodeValue());
 		eElement2 = (Element) XMLHelper.getMatchingChild(node, "Flags");
-		omc.Flags = Short.parseShort(eElement2.getNodeValue());
+		omc.Flags = Short.parseShort(eElement2.getFirstChild().getNodeValue());
 		eElement2 = (Element) XMLHelper.getMatchingChild(node, "Side");
-		omc.Side = Short.parseShort(eElement2.getNodeValue());
+		omc.Side = Short.parseShort(eElement2.getFirstChild().getNodeValue());
 		eElement2 = (Element) XMLHelper.getMatchingChild(node, "UserId");
-		omc.UserId = Long.parseLong(eElement2.getNodeValue());
+		omc.UserId = Long.parseLong(eElement2.getFirstChild().getNodeValue());
 		return omc;
 	}
 }

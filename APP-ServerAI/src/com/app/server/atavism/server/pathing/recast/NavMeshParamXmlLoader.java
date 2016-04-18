@@ -29,8 +29,8 @@ import org.w3c.dom.Document;
 public class NavMeshParamXmlLoader {
 	protected String worldFileName;
 	protected Document worldDoc;
-	protected Logger log  = Logger.getLogger("navmesh");
-		
+	protected Logger log = Logger.getLogger("navmesh");
+
 	public NavMeshParamXmlLoader(final String worldFileName) {
 		this.worldFileName = worldFileName;
 	}
@@ -44,6 +44,7 @@ public class NavMeshParamXmlLoader {
 			final DocumentBuilder builder = XMLHelper.makeDocBuilder();
 			log.debug("NAVMESH: loading in file: " + this.worldFileName);
 			final File xmlFile = new File(this.worldFileName);
+			// final File xmlFile = new File(Thread.currentThread().getContextClassLoader().getResource(this.worldFileName).getPath());
 			this.worldDoc = builder.parse(xmlFile);
 		} catch (IOException e2) {
 			log.error("NavMesh WorldFile not found: " + this.worldFileName + ". Reverting to old pathing system");
@@ -56,6 +57,7 @@ public class NavMeshParamXmlLoader {
 	}
 	/**
 	 * 生成
+	 * 
 	 * @param navMesh
 	 * @return
 	 */
@@ -74,18 +76,18 @@ public class NavMeshParamXmlLoader {
 			final float[] orig = new float[origNodes.size()];
 			for (int i = 0; i < origNodes.size(); ++i) {
 				final Node eElement = origNodes.get(i);
-				orig[i] = Float.parseFloat(eElement.getNodeValue());
+				orig[i] = Float.parseFloat(eElement.getFirstChild().getNodeValue());
 			}
 			param.Orig = orig;
 		}
 		Element eElement2 = (Element) XMLHelper.getMatchingChild(paramNode, "TileWidth");
-		param.TileWidth = Float.parseFloat(eElement2.getNodeValue());
+		param.TileWidth = Float.parseFloat(eElement2.getFirstChild().getNodeValue());
 		eElement2 = (Element) XMLHelper.getMatchingChild(paramNode, "TileHeight");
-		param.TileHeight = Float.parseFloat(eElement2.getNodeValue());
+		param.TileHeight = Float.parseFloat(eElement2.getFirstChild().getNodeValue());
 		eElement2 = (Element) XMLHelper.getMatchingChild(paramNode, "MaxTiles");
-		param.MaxTiles = Integer.parseInt(eElement2.getNodeValue());
+		param.MaxTiles = Integer.parseInt(eElement2.getFirstChild().getNodeValue());
 		eElement2 = (Element) XMLHelper.getMatchingChild(paramNode, "MaxPolys");
-		param.MaxPolys = Integer.parseInt(eElement2.getNodeValue());
+		param.MaxPolys = Integer.parseInt(eElement2.getFirstChild().getNodeValue());
 		navMesh.Init(param);// 初始化
 		final int maxX = (int) Math.sqrt(param.MaxTiles);// 开方
 		final String fileName = this.worldFileName.substring(0, this.worldFileName.length() - 4);

@@ -1622,7 +1622,7 @@ public class MessageAgent implements MessageIO.Callback, TcpAcceptCallback, Resp
 					Log.exception("MessageMarshaller", ex);
 					continue;
 				}
-				break;
+				// break;
 			}
 		}
 
@@ -1671,7 +1671,7 @@ public class MessageAgent implements MessageIO.Callback, TcpAcceptCallback, Resp
 					Log.exception("SelfMessage", ex);
 					continue;
 				}
-				break;
+				// break;
 			}
 		}
 
@@ -1854,7 +1854,7 @@ public class MessageAgent implements MessageIO.Callback, TcpAcceptCallback, Resp
 					Log.exception("MessageAgent.MessageAgentStatsLogger.run thread interrupted", e);
 					continue;
 				}
-				break;
+				// break;
 			}
 		}
 	}
