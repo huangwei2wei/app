@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavMeshParams>
+	<Orig>
+		<float>6.51528549</float>
+		<float>22.5857277</float>
+		<float>-23.4517441</float>
+	</Orig>
+	<TileWidth>307.2</TileWidth>
+	<TileHeight>307.2</TileHeight>
+	<MaxTiles>1</MaxTiles>
+	<MaxPolys>4194304</MaxPolys>
+</NavMeshParams>
+
