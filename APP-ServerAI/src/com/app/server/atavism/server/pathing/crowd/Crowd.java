@@ -253,7 +253,9 @@ public class Crowd {
 	private void CheckPathValitidy(final CrowdAgent[] agents, final int nagents, final float dt) {
 		final int CheckLookAhead = 10;
 		final float TargetReplanDelay = 1.0f;
-		for (final CrowdAgent ag : agents) {
+		// for (final CrowdAgent ag : agents) {
+		for (int i = 0; i < nagents; i++) {
+			CrowdAgent ag = agents[i];
 			Label_0495 : {
 				if (ag.State == CrowdAgentState.Walking) {
 					if (ag.TargetState != MoveRequestState.TargetNone) {
@@ -570,126 +572,152 @@ public class Crowd {
 	 * @return
 	 */
 	public CrowdAgentDebugInfo Update(final float dt, final CrowdAgentDebugInfo debug) {
+
 		log.debug("CROWD: starting update with time: " + dt);
 		this._velocitySampleCount = 0;
-		final int debugIdx = (debug != null) ? debug.Idx : -1;
-		final CrowdAgent[] agents = this._activeAgents;
-		final int nagents = this.GetActiveAgents(agents, this._maxAgents);
-		this.CheckPathValitidy(agents, nagents, dt);
-		this.UpdateMoveRequest(dt);
-		this.UpdateTopologyOptimization(agents, nagents, dt);
+		int debugIdx = debug != null ? debug.Idx : -1;
+
+		CrowdAgent[] agents = this._activeAgents;
+		int nagents = GetActiveAgents(agents, this._maxAgents);
+
+		CheckPathValitidy(agents, nagents, dt);
+
+		UpdateMoveRequest(dt);
+
+		UpdateTopologyOptimization(agents, nagents, dt);
+
 		this._grid.Clear();
-		for (int i = 0; i < nagents; ++i) {
-			final CrowdAgent ag = agents[i];
-			final float[] p = ag.npos;
-			final float r = ag.Param.Radius;
+		for (int i = 0; i < nagents; i++) {
+			CrowdAgent ag = agents[i];
+			float[] p = ag.npos;
+			float r = ag.Param.Radius;
 			this._grid.AddItem(i, p[0] - r, p[2] - r, p[0] + r, p[2] + r);
 		}
-		for (int i = 0; i < nagents; ++i) {
-			final CrowdAgent ag = agents[i];
-			if (ag.State == CrowdAgentState.Walking) {
-				final float updateThr = ag.Param.CollisionQueryRange * 0.25f;
-				final float dist = Helper.VDist2DSqr(ag.npos[0], ag.npos[1], ag.npos[2], ag.Boundary.getCenter()[0], ag.Boundary.getCenter()[1], ag.Boundary.getCenter()[2]);
-				if (dist > updateThr * updateThr || !ag.Boundary.IsValid(this._navQuery, this._filter)) {
-					ag.Boundary.Update(ag.Corridor.FirstPoly(), ag.npos, ag.Param.CollisionQueryRange, this._navQuery, this._filter);
-				}
-				ag.NNeis = GetNeighbors(ag.npos, ag.Param.Height, ag.Param.CollisionQueryRange, ag, ag.Neis, CrowdAgent.CrowdAgentMaxNeighbors, agents, nagents, this._grid);
-				for (int j = 0; j < ag.NNeis; ++j) {
-					ag.Neis[j].Idx = this.AgentIndex(agents[ag.Neis[j].Idx]);
-				}
+
+		for (int i = 0; i < nagents; i++) {
+			CrowdAgent ag = agents[i];
+			if (ag.State != CrowdAgentState.Walking)
+				continue;
+			float updateThr = ag.Param.CollisionQueryRange * 0.25F;
+
+			float dist = Helper.VDist2DSqr(ag.npos[0], ag.npos[1], ag.npos[2], ag.Boundary.getCenter()[0], ag.Boundary.getCenter()[1], ag.Boundary.getCenter()[2]);
+
+			if ((dist > updateThr * updateThr) || (!ag.Boundary.IsValid(this._navQuery, this._filter).booleanValue())) {
+				ag.Boundary.Update(ag.Corridor.FirstPoly(), ag.npos, ag.Param.CollisionQueryRange, this._navQuery, this._filter);
 			}
-		}
-		for (int i = 0; i < nagents; ++i) {
-			final CrowdAgent ag = agents[i];
-			if (ag.State == CrowdAgentState.Walking) {
-				if (ag.TargetState != MoveRequestState.TargetNone) {
-					if (ag.TargetState != MoveRequestState.TargetVelocity) {
-						ag.NCorners = ag.Corridor.FindCorners(ag.CornerVerts, ag.CornerFlags, ag.CornerPolys, CrowdAgent.CrowdAgentMaxCorners, this._navQuery, this._filter);
-						if ((ag.Param.UpdateFlags.getValue() & UpdateFlags.OptimizeVisibility.getValue()) != 0x0 && ag.NCorners > 0) {
-							final float[] target = new float[3];
-							System.arraycopy(ag.CornerVerts, Math.min(1, ag.NCorners - 1) * 3, target, 0, 3);
-							ag.Corridor.OptimizePathVisibility(target, ag.Param.PathOptimizationRange, this._navQuery, this._filter);
-							if (debugIdx == i) {
-								Helper.VCopy(debug.OptStart, ag.Corridor.Pos());
-								Helper.VCopy(debug.OptEnd, target);
-							}
-						} else if (debugIdx == i) {
-							Helper.VSet(debug.OptStart, 0.0f, 0.0f, 0.0f);
-							Helper.VSet(debug.OptEnd, 0.0f, 0.0f, 0.0f);
-						}
-					}
-				}
+
+			ag.NNeis = GetNeighbors(ag.npos, ag.Param.Height, ag.Param.CollisionQueryRange, ag, ag.Neis, CrowdAgent.CrowdAgentMaxNeighbors, agents, nagents, this._grid);
+
+			for (int j = 0; j < ag.NNeis; j++) {
+				ag.Neis[j].Idx = AgentIndex(agents[ag.Neis[j].Idx]);
 			}
+
 		}
-		for (int i = 0; i < nagents; ++i) {
-			final CrowdAgent ag = agents[i];
-			if (ag.State == CrowdAgentState.Walking) {
-				if (ag.TargetState != MoveRequestState.TargetNone) {
-					if (ag.TargetState != MoveRequestState.TargetVelocity) {
-						final float triggerRadius = ag.Param.Radius * 2.25f;
-						if (ag.OverOffMeshConnection(triggerRadius)) {
-							final int idx = this.AgentIndex(ag);
-							final CrowdAgentAnimation anim = this._agentAnims[idx];
-							final long[] refs = new long[2];
-							if (ag.Corridor.MoveOverOffmeshConnection(ag.CornerPolys[ag.NCorners - 1], refs, anim.StartPos, anim.EndPos, this._navQuery)) {
-								Helper.VCopy(anim.InitPos, ag.npos);
-								anim.PolyRef = refs[1];
-								anim.Active = true;
-								anim.T = 0.0f;
-								anim.TMax = Helper.VDist2D(anim.StartPos, anim.EndPos) / ag.Param.MaxSpeed * 0.5f;
-								ag.State = CrowdAgentState.OffMesh;
-								ag.NCorners = 0;
-								ag.NNeis = 0;
-							}
-						}
-					}
-				}
+
+		for (int i = 0; i < nagents; i++) {
+			CrowdAgent ag = agents[i];
+
+			if ((ag.State != CrowdAgentState.Walking) || (ag.TargetState == MoveRequestState.TargetNone) || (ag.TargetState == MoveRequestState.TargetVelocity)) {
+				continue;
 			}
+			ag.NCorners = ag.Corridor.FindCorners(ag.CornerVerts, ag.CornerFlags, ag.CornerPolys, CrowdAgent.CrowdAgentMaxCorners, this._navQuery, this._filter);
+
+			if (((ag.Param.UpdateFlags.getValue() & UpdateFlags.OptimizeVisibility.getValue()) != 0) && (ag.NCorners > 0)) {
+				float[] target = new float[3];
+				System.arraycopy(ag.CornerVerts, Math.min(1, ag.NCorners - 1) * 3, target, 0, 3);
+				ag.Corridor.OptimizePathVisibility(target, ag.Param.PathOptimizationRange, this._navQuery, this._filter);
+				if (debugIdx == i) {
+					Helper.VCopy(debug.OptStart, ag.Corridor.Pos());
+					Helper.VCopy(debug.OptEnd, target);
+				}
+			} else {
+				if (debugIdx != i)
+					continue;
+				Helper.VSet(debug.OptStart, 0.0F, 0.0F, 0.0F);
+				Helper.VSet(debug.OptEnd, 0.0F, 0.0F, 0.0F);
+			}
+
 		}
-		for (int i = 0; i < nagents; ++i) {
-			final CrowdAgent ag = agents[i];
+
+		for (int i = 0; i < nagents; i++) {
+			CrowdAgent ag = agents[i];
+
+			if ((ag.State != CrowdAgentState.Walking) || (ag.TargetState == MoveRequestState.TargetNone) || (ag.TargetState == MoveRequestState.TargetVelocity)) {
+				continue;
+			}
+			float triggerRadius = ag.Param.Radius * 2.25F;
+			if (!ag.OverOffMeshConnection(triggerRadius).booleanValue())
+				continue;
+			int idx = AgentIndex(ag);
+			CrowdAgentAnimation anim = this._agentAnims[idx];
+
+			long[] refs = new long[2];
+			if (!ag.Corridor.MoveOverOffmeshConnection(ag.CornerPolys[(ag.NCorners - 1)], refs, anim.StartPos, anim.EndPos, this._navQuery).booleanValue())
+				continue;
+			Helper.VCopy(anim.InitPos, ag.npos);
+			anim.PolyRef = refs[1];
+			anim.Active = Boolean.valueOf(true);
+			anim.T = 0.0F;
+			anim.TMax = (Helper.VDist2D(anim.StartPos, anim.EndPos) / ag.Param.MaxSpeed * 0.5F);
+
+			ag.State = CrowdAgentState.OffMesh;
+			ag.NCorners = 0;
+			ag.NNeis = 0;
+		}
+
+		for (int i = 0; i < nagents; i++) {
+			CrowdAgent ag = agents[i];
+
 			if (ag.State == CrowdAgentState.Walking) {
 				if (ag.TargetState == MoveRequestState.TargetNone) {
-					Helper.VSet(ag.dvel, 0.0f, 0.0f, 0.0f);
+					Helper.VSet(ag.dvel, 0.0F, 0.0F, 0.0F);
 				} else {
-					float[] dvel = {0.0f, 0.0f, 0.0f};
+					float[] dvel = {0.0F, 0.0F, 0.0F};
+
 					if (ag.TargetState == MoveRequestState.TargetVelocity) {
 						Helper.VCopy(dvel, ag.TargetPos);
 						ag.DesiredSpeed = Helper.VLen(ag.TargetPos);
 					} else {
-						if ((ag.Param.UpdateFlags.getValue() & UpdateFlags.AnticipateTurns.getValue()) != 0x0) {
+						if ((ag.Param.UpdateFlags.getValue() & UpdateFlags.AnticipateTurns.getValue()) != 0) {
 							dvel = ag.CalcSmoothSteerDirection(dvel);
 						} else {
 							dvel = ag.CalcStraightSteerDirection(dvel);
 						}
-						final float slowDownRadius = ag.Param.Radius * 2.0f;
-						final float speedScale = ag.GetDistanceToGoal(slowDownRadius) / slowDownRadius;
+
+						float slowDownRadius = ag.Param.Radius * 2.0F;
+						float speedScale = ag.GetDistanceToGoal(slowDownRadius) / slowDownRadius;
+
 						dvel = Helper.VScale(dvel[0], dvel[1], dvel[2], ag.DesiredSpeed * speedScale);
 					}
-					if ((ag.Param.UpdateFlags.getValue() & UpdateFlags.Separation.getValue()) != 0x0) {
-						final float separationDist = ag.Param.CollisionQueryRange;
-						final float invSeparationDist = 1.0f / separationDist;
-						final float separationWeight = ag.Param.SeparationWeight;
-						float w = 0.0f;
-						float[] disp = {0.0f, 0.0f, 0.0f};
-						for (int k = 0; k < ag.NNeis; ++k) {
-							final CrowdAgent nei = this._agents[ag.Neis[k].Idx];
-							final float[] diff = Helper.VSub(ag.npos[0], ag.npos[1], ag.npos[2], nei.npos[0], nei.npos[1], nei.npos[2]);
-							diff[1] = 0.0f;
-							final float distSqr = Helper.VLenSqr(diff);
-							if (distSqr >= 1.0E-5f) {
-								if (distSqr <= separationDist * separationDist) {
-									final float dist2 = (float) Math.sqrt(distSqr);
-									final float weight = separationWeight * (1.0f - dist2 * invSeparationDist * dist2 * invSeparationDist);
-									disp = Helper.VMad(disp, disp, diff, weight / dist2);
-									++w;
-								}
-							}
+
+					if ((ag.Param.UpdateFlags.getValue() & UpdateFlags.Separation.getValue()) != 0) {
+						float separationDist = ag.Param.CollisionQueryRange;
+						float invSeparationDist = 1.0F / separationDist;
+						float separationWeight = ag.Param.SeparationWeight;
+
+						float w = 0.0F;
+						float[] disp = {0.0F, 0.0F, 0.0F};
+
+						for (int j = 0; j < ag.NNeis; j++) {
+							CrowdAgent nei = this._agents[ag.Neis[j].Idx];
+
+							float[] diff = Helper.VSub(ag.npos[0], ag.npos[1], ag.npos[2], nei.npos[0], nei.npos[1], nei.npos[2]);
+							diff[1] = 0.0F;
+
+							float distSqr = Helper.VLenSqr(diff);
+							if ((distSqr < 1.0E-005F) || (distSqr > separationDist * separationDist))
+								continue;
+							float dist = (float) Math.sqrt(distSqr);
+							float weight = separationWeight * (1.0F - dist * invSeparationDist * dist * invSeparationDist);
+
+							disp = Helper.VMad(disp, disp, diff, weight / dist);
+							w += 1.0F;
 						}
-						if (w > 1.0E-4f) {
-							dvel = Helper.VMad(dvel, dvel, disp, 1.0f / w);
-							final float speedSqr = Helper.VLenSqr(dvel);
-							final float desiredSpeed = ag.DesiredSpeed * ag.DesiredSpeed;
+
+						if (w > 1.0E-004F) {
+							dvel = Helper.VMad(dvel, dvel, disp, 1.0F / w);
+							float speedSqr = Helper.VLenSqr(dvel);
+							float desiredSpeed = ag.DesiredSpeed * ag.DesiredSpeed;
 							if (speedSqr > desiredSpeed) {
 								dvel = Helper.VScale(dvel[0], dvel[1], dvel[2], desiredSpeed / speedSqr);
 							}
@@ -698,123 +726,154 @@ public class Crowd {
 					Helper.VCopy(ag.dvel, dvel);
 				}
 			}
+
 		}
-		for (int i = 0; i < nagents; ++i) {
-			final CrowdAgent ag = agents[i];
-			if (ag.State == CrowdAgentState.Walking) {
-				if ((ag.Param.UpdateFlags.getValue() & UpdateFlags.ObstacleAvoidance.getValue()) != 0x0) {
-					this._obstacleQuery.Reset();
-					for (int l = 0; l < ag.NNeis; ++l) {
-						final CrowdAgent nei2 = this._agents[ag.Neis[l].Idx];
-						this._obstacleQuery.AddCircle(nei2.npos, nei2.Param.Radius, nei2.vel, nei2.dvel);
+
+		for (int i = 0; i < nagents; i++) {
+			CrowdAgent ag = agents[i];
+
+			if (ag.State != CrowdAgentState.Walking) {
+				continue;
+			}
+			if ((ag.Param.UpdateFlags.getValue() & UpdateFlags.ObstacleAvoidance.getValue()) != 0) {
+				this._obstacleQuery.Reset();
+
+				for (int j = 0; j < ag.NNeis; j++) {
+					CrowdAgent nei = this._agents[ag.Neis[j].Idx];
+					this._obstacleQuery.AddCircle(nei.npos, nei.Param.Radius, nei.vel, nei.dvel);
+				}
+
+				for (int j = 0; j < ag.Boundary.SegmentCount(); j++) {
+					log.debug("CROWD: getting segment: " + j);
+					float[] s0 = new float[3];
+					float[] s1 = new float[3];
+					System.arraycopy(ag.Boundary.GetSegment(j), 0, s0, 0, 3);
+					System.arraycopy(ag.Boundary.GetSegment(j), 3, s1, 0, 3);
+					if (Helper.TriArea2D(ag.npos, s0, s1) >= 0.0F) {
+						this._obstacleQuery.AddSegment(s0, s1);
 					}
-					for (int l = 0; l < ag.Boundary.SegmentCount(); ++l) {
-						log.debug("CROWD: getting segment: " + l);
-						final float[] s0 = new float[3];
-						final float[] s2 = new float[3];
-						System.arraycopy(ag.Boundary.GetSegment(l), 0, s0, 0, 3);
-						System.arraycopy(ag.Boundary.GetSegment(l), 3, s2, 0, 3);
-						if (Helper.TriArea2D(ag.npos, s0, s2) >= 0.0f) {
-							this._obstacleQuery.AddSegment(s0, s2);
-						}
-					}
-					ObstacleAvoidanceDebugData vod = null;
-					if (debugIdx == i) {
-						vod = debug.Vod;
-					}
-					final Boolean adaptive = true;
-					int ns = 0;
-					final ObstacleAvoidanceParams param = this._obstacleQueryParams[ag.Param.ObstacleAvoidanceType];
-					if (adaptive) {
-						ns = this._obstacleQuery.SampleVelocityAdaptive(ag.npos, ag.Param.Radius, ag.DesiredSpeed, ag.vel, ag.dvel, ag.nvel, param, vod);
-					} else {
-						ns = this._obstacleQuery.SampleVelocityGrid(ag.npos, ag.Param.Radius, ag.DesiredSpeed, ag.vel, ag.dvel, ag.nvel, param, vod);
-					}
-					this._velocitySampleCount += ns;
+				}
+
+				ObstacleAvoidanceDebugData vod = null;
+				if (debugIdx == i) {
+					vod = debug.Vod;
+				}
+				Boolean adaptive = Boolean.valueOf(true);
+				int ns = 0;
+
+				ObstacleAvoidanceParams param = this._obstacleQueryParams[ag.Param.ObstacleAvoidanceType];
+
+				if (adaptive.booleanValue()) {
+					ns = this._obstacleQuery.SampleVelocityAdaptive(ag.npos, ag.Param.Radius, ag.DesiredSpeed, ag.vel, ag.dvel, ag.nvel, param, vod);
 				} else {
-					Helper.VCopy(ag.nvel, ag.dvel);
+					ns = this._obstacleQuery.SampleVelocityGrid(ag.npos, ag.Param.Radius, ag.DesiredSpeed, ag.vel, ag.dvel, ag.nvel, param, vod);
 				}
+
+				this._velocitySampleCount += ns;
+			} else {
+				Helper.VCopy(ag.nvel, ag.dvel);
 			}
+
 		}
-		for (int i = 0; i < nagents; ++i) {
-			final CrowdAgent ag = agents[i];
-			if (ag.State == CrowdAgentState.Walking) {
-				ag.Integrate(dt);
-			}
+
+		for (int i = 0; i < nagents; i++) {
+			CrowdAgent ag = agents[i];
+			if (ag.State != CrowdAgentState.Walking)
+				continue;
+			ag.Integrate(dt);
 		}
-		final float CollisionResolveFactor = 0.7f;
-		for (int iter = 0; iter < 4; ++iter) {
-			for (final CrowdAgent ag2 : agents) {
-				final int idx2 = this.AgentIndex(ag2);
-				if (ag2.State == CrowdAgentState.Walking) {
-					Helper.VSet(ag2.disp, 0.0f, 0.0f, 0.0f);
-					float w2 = 0.0f;
-					for (int j2 = 0; j2 < ag2.NNeis; ++j2) {
-						final CrowdAgent nei3 = this._agents[ag2.Neis[j2].Idx];
-						final int idx3 = this.AgentIndex(nei3);
-						final float[] diff2 = Helper.VSub(ag2.npos[0], ag2.npos[1], ag2.npos[2], nei3.npos[0], nei3.npos[1], nei3.npos[2]);
-						diff2[1] = 0.0f;
-						float dist3 = Helper.VLenSqr(diff2);
-						if (dist3 <= (ag2.Param.Radius + nei3.Param.Radius) * (ag2.Param.Radius + nei3.Param.Radius)) {
-							dist3 = (float) Math.sqrt(dist3);
-							float pen = ag2.Param.Radius + nei3.Param.Radius - dist3;
-							if (dist3 < 1.0E-4f) {
-								if (idx2 > idx3) {
-									Helper.VSet(diff2, -ag2.dvel[2], 0.0f, ag2.dvel[0]);
-								} else {
-									Helper.VSet(diff2, ag2.dvel[2], 0.0f, -ag2.vel[0]);
-								}
-								pen = 0.01f;
-							} else {
-								pen = 1.0f / dist3 * (pen * 0.5f) * CollisionResolveFactor;
-							}
-							ag2.disp = Helper.VMad(ag2.disp, ag2.disp, diff2, pen);
-							++w2;
+
+		float CollisionResolveFactor = 0.7F;
+
+		for (int iter = 0; iter < 4; iter++) {
+			for (int i = 0; i < nagents; i++) {
+				CrowdAgent ag = agents[i];
+				int idx0 = AgentIndex(ag);
+
+				if (ag.State != CrowdAgentState.Walking)
+					continue;
+				Helper.VSet(ag.disp, 0.0F, 0.0F, 0.0F);
+
+				float w = 0.0F;
+
+				for (int j = 0; j < ag.NNeis; j++) {
+					CrowdAgent nei = this._agents[ag.Neis[j].Idx];
+					int idx1 = AgentIndex(nei);
+
+					float[] diff = Helper.VSub(ag.npos[0], ag.npos[1], ag.npos[2], nei.npos[0], nei.npos[1], nei.npos[2]);
+
+					diff[1] = 0.0F;
+
+					float dist = Helper.VLenSqr(diff);
+					if (dist <= (ag.Param.Radius + nei.Param.Radius) * (ag.Param.Radius + nei.Param.Radius)) {
+						dist = (float) Math.sqrt(dist);
+						float pen = ag.Param.Radius + nei.Param.Radius - dist;
+						if (dist < 1.0E-004F) {
+							if (idx0 > idx1)
+								Helper.VSet(diff, -ag.dvel[2], 0.0F, ag.dvel[0]);
+							else
+								Helper.VSet(diff, ag.dvel[2], 0.0F, -ag.vel[0]);
+							pen = 0.01F;
+						} else {
+							pen = 1.0F / dist * (pen * 0.5F) * CollisionResolveFactor;
 						}
+
+						ag.disp = Helper.VMad(ag.disp, ag.disp, diff, pen);
+
+						w += 1.0F;
 					}
-					if (w2 > 1.0E-4f) {
-						final float iw = 1.0f / w2;
-						ag2.disp = Helper.VScale(ag2.disp[0], ag2.disp[1], ag2.disp[2], iw);
-					}
 				}
+				if (w <= 1.0E-004F)
+					continue;
+				float iw = 1.0F / w;
+				ag.disp = Helper.VScale(ag.disp[0], ag.disp[1], ag.disp[2], iw);
 			}
-			for (final CrowdAgent ag2 : agents) {
-				if (ag2.State == CrowdAgentState.Walking) {
-					ag2.npos = Helper.VAdd(ag2.npos[0], ag2.npos[1], ag2.npos[2], ag2.disp[0], ag2.disp[1], ag2.disp[2]);
-				}
+
+			for (int i = 0; i < nagents; i++) {
+				CrowdAgent ag = agents[i];
+				if (ag.State != CrowdAgentState.Walking)
+					continue;
+				ag.npos = Helper.VAdd(ag.npos[0], ag.npos[1], ag.npos[2], ag.disp[0], ag.disp[1], ag.disp[2]);
 			}
+
 		}
-		for (final CrowdAgent ag3 : agents) {
-			if (ag3.State == CrowdAgentState.Walking) {
-				ag3.Corridor.MovePosition(ag3.npos, this._navQuery, this._filter);
-				Helper.VCopy(ag3.npos, ag3.Corridor.Pos());
-				if (ag3.TargetState == MoveRequestState.TargetNone || ag3.TargetState == MoveRequestState.TargetVelocity) {
-					ag3.Corridor.Reset(ag3.Corridor.FirstPoly(), ag3.npos);
-				}
-			}
+
+		for (int i = 0; i < nagents; i++) {
+			CrowdAgent ag = agents[i];
+			if (ag.State != CrowdAgentState.Walking)
+				continue;
+			ag.Corridor.MovePosition(ag.npos, this._navQuery, this._filter);
+			Helper.VCopy(ag.npos, ag.Corridor.Pos());
+
+			if ((ag.TargetState != MoveRequestState.TargetNone) && (ag.TargetState != MoveRequestState.TargetVelocity))
+				continue;
+			ag.Corridor.Reset(ag.Corridor.FirstPoly(), ag.npos);
 		}
-		for (int i2 = 0; i2 < this._maxAgents; ++i2) {
-			final CrowdAgentAnimation anim2 = this._agentAnims[i2];
-			if (anim2.Active) {
-				final CrowdAgent ag2 = agents[i2];
-				final CrowdAgentAnimation crowdAgentAnimation = anim2;
-				crowdAgentAnimation.T += dt;
-				if (anim2.T > anim2.TMax) {
-					anim2.Active = false;
-					ag2.State = CrowdAgentState.Walking;
+
+		for (int i = 0; i < this._maxAgents; i++) {
+			CrowdAgentAnimation anim = this._agentAnims[i];
+			if (!anim.Active.booleanValue()) {
+				continue;
+			}
+			CrowdAgent ag = agents[i];
+
+			anim.T += dt;
+			if (anim.T > anim.TMax) {
+				anim.Active = Boolean.valueOf(false);
+				ag.State = CrowdAgentState.Walking;
+			} else {
+				float ta = anim.TMax * 0.15F;
+				float tb = anim.TMax;
+				if (anim.T < ta) {
+					float u = Tween(anim.T, 0.0F, ta);
+					ag.npos = Helper.VLerp(ag.npos, anim.InitPos[0], anim.InitPos[1], anim.InitPos[2], anim.StartPos[0], anim.StartPos[1], anim.StartPos[2], u);
 				} else {
-					final float ta = anim2.TMax * 0.15f;
-					final float tb = anim2.TMax;
-					if (anim2.T < ta) {
-						final float u = this.Tween(anim2.T, 0.0f, ta);
-						ag2.npos = Helper.VLerp(ag2.npos, anim2.InitPos[0], anim2.InitPos[1], anim2.InitPos[2], anim2.StartPos[0], anim2.StartPos[1], anim2.StartPos[2], u);
-					} else {
-						final float u = this.Tween(anim2.T, ta, tb);
-						ag2.npos = Helper.VLerp(ag2.npos, anim2.StartPos[0], anim2.StartPos[1], anim2.StartPos[2], anim2.EndPos[0], anim2.EndPos[1], anim2.EndPos[2], u);
-					}
-					Helper.VSet(ag2.vel, 0.0f, 0.0f, 0.0f);
-					Helper.VSet(ag2.dvel, 0.0f, 0.0f, 0.0f);
+					float u = Tween(anim.T, ta, tb);
+					ag.npos = Helper.VLerp(ag.npos, anim.StartPos[0], anim.StartPos[1], anim.StartPos[2], anim.EndPos[0], anim.EndPos[1], anim.EndPos[2], u);
 				}
+
+				Helper.VSet(ag.vel, 0.0F, 0.0F, 0.0F);
+				Helper.VSet(ag.dvel, 0.0F, 0.0F, 0.0F);
 			}
 		}
 		return debug;
