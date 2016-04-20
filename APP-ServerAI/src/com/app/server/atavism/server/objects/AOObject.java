@@ -39,86 +39,83 @@ public class AOObject extends Entity {
 	public static final String perceiverKey = "aoobj.perceiver";
 	public static final String aoidKey = "aoobj.aoid";
 	public static final String dcKey = "aoobj.dc";
-	private String scaleKey;
-	private String permCBKey;
-	private static AOObjectCreateHook createHook;
-	public static Lock transferLock;
+	private String scaleKey = "aoobj.scale";
+
+	private String permCBKey = "aoobj.permCB";
+
+	private static AOObjectCreateHook createHook = null;
+
+	public static Lock transferLock = LockFactory.makeLock("objXferLock");
 	private static final long serialVersionUID = 1L;
 
 	public AOObject() {
-		this.scaleKey = "aoobj.scale";
-		this.permCBKey = "aoobj.permCB";
-		this.setNamespace(Namespace.WORLD_MANAGER);
-		this.init();
+		setNamespace(Namespace.WORLD_MANAGER);
+		init();
 	}
 
-	public AOObject(final String name) {
+	public AOObject(String name) {
 		super(name);
-		this.scaleKey = "aoobj.scale";
-		this.permCBKey = "aoobj.permCB";
-		this.setNamespace(Namespace.WORLD_MANAGER);
-		this.init();
+		setNamespace(Namespace.WORLD_MANAGER);
+		init();
 	}
 
-	public AOObject(final OID oid) {
+	public AOObject(OID oid) {
 		super(oid);
-		this.scaleKey = "aoobj.scale";
-		this.permCBKey = "aoobj.permCB";
-		this.setNamespace(Namespace.WORLD_MANAGER);
-		this.init();
+		setNamespace(Namespace.WORLD_MANAGER);
+		init();
 	}
 
 	private void init() {
-		final AOObjectCreateHook hook = getObjCreateHook();
-		if (hook != null) {
+		AOObjectCreateHook hook = getObjCreateHook();
+		if (hook != null)
 			hook.objectCreateHook(this);
-		}
 	}
 
 	public OID getMasterOid() {
-		return this.getOid();
+		return getOid();
 	}
 
 	public boolean isMob() {
-		return this.getType().isMob();
+		return getType().isMob();
 	}
 
 	public boolean isItem() {
-		return this.getType() == ObjectTypes.item;
+		return getType() == ObjectTypes.item;
 	}
 
 	public boolean isLight() {
-		return this.getType() == ObjectTypes.light;
+		return getType() == ObjectTypes.light;
 	}
 
 	public boolean isUser() {
-		return this.getType().isPlayer();
+		return getType().isPlayer();
 	}
 
 	public boolean isStructure() {
-		return this.getType().isStructure();
+		return getType().isStructure();
 	}
 
-	@Override
 	public String toString() {
-		return "[AOObject: " + this.getName() + ":" + this.getOid() + ", type=" + this.getType() + "]";
+		return "[AOObject: " + getName() + ":" + getOid() + ", type=" + getType() + "]";
 	}
 
-	public ObjState setState(final String state, final ObjState obj) {
+	public ObjState setState(String state, ObjState obj) {
 		this.lock.lock();
 		try {
-			final StateMap stateMap = this.getStateMap();
-			return stateMap.setState(state, obj);
+			StateMap stateMap = getStateMap();
+			ObjState localObjState = stateMap.setState(state, obj);
+			return localObjState;
 		} finally {
 			this.lock.unlock();
 		}
 	}
 
-	public ObjState getState(final String s) {
+	public ObjState getState(String s) {
 		this.lock.lock();
 		try {
-			final StateMap stateMap = this.getStateMap();
-			return stateMap.getState(s);
+			StateMap stateMap = getStateMap();
+			ObjState localObjState = stateMap.getState(s);
+			return localObjState;
 		} finally {
 			this.lock.unlock();
 		}
@@ -127,79 +124,73 @@ public class AOObject extends Entity {
 	private StateMap getStateMap() {
 		this.lock.lock();
 		try {
-			StateMap stateMap = (StateMap) this.getProperty("aoobj.statemap");
+			StateMap stateMap = (StateMap) getProperty("aoobj.statemap");
 			if (stateMap == null) {
 				stateMap = new StateMap();
-				this.setProperty("aoobj.statemap", stateMap);
+				setProperty("aoobj.statemap", stateMap);
 			}
-			return stateMap;
+			StateMap localStateMap1 = stateMap;
+			return localStateMap1;
 		} finally {
 			this.lock.unlock();
 		}
 	}
 
-	// public void sendEvent(final Event event) {
+	// public void sendEvent(Event event) {
 	// throw new AORuntimeException("legacy code");
 	// }
-	/**
-	 * 获取世界节点
-	 * 
-	 * @return
-	 */
+
 	public WorldNode worldNode() {
-		return (WorldNode) this.getProperty("aoobj.wnode");
+		return (WorldNode) getProperty("aoobj.wnode");
 	}
 
-	public void worldNode(final WorldNode worldNode) {
-		this.setProperty("aoobj.wnode", worldNode);
+	public void worldNode(WorldNode worldNode) {
+		setProperty("aoobj.wnode", worldNode);
 	}
 
 	public BasicWorldNode baseWorldNode() {
-		return new BasicWorldNode((InterpolatedWorldNode) this.getProperty("aoobj.wnode"));
+		return new BasicWorldNode((InterpolatedWorldNode) getProperty("aoobj.wnode"));
 	}
 
 	public Point getLoc() {
-		final WorldNode node = this.worldNode();
-		return (node == null) ? null : node.getLoc();
+		WorldNode node = worldNode();
+		return node == null ? null : node.getLoc();
 	}
 
 	public Point getCurrentLoc() {
-		final WorldNode node = this.worldNode();
-		return (node == null) ? null : node.getCurrentLoc();
+		WorldNode node = worldNode();
+		return node == null ? null : node.getCurrentLoc();
 	}
-	/**
-	 * 获取方向
-	 * 
-	 * @return
-	 */
+
 	public Quaternion getOrientation() {
-		final WorldNode node = this.worldNode();
-		return (node == null) ? null : node.getOrientation();
+		WorldNode node = worldNode();
+		return node == null ? null : node.getOrientation();
 	}
 
 	public AOVector getDirection() {
-		final InterpolatedWorldNode iwn = (InterpolatedWorldNode) this.getProperty("aoobj.wnode");
+		InterpolatedWorldNode iwn = (InterpolatedWorldNode) getProperty("aoobj.wnode");
 		return iwn.getDir();
 	}
 
 	public InterpolatedWorldNode.InterpolatedDirLocOrientTime getDirLocOrientTime() {
-		final InterpolatedWorldNode iwn = (InterpolatedWorldNode) this.getProperty("aoobj.wnode");
+		InterpolatedWorldNode iwn = (InterpolatedWorldNode) getProperty("aoobj.wnode");
 		return iwn.getDirLocOrientTime();
 	}
 
 	public MobilePerceiver<WMWorldNode> perceiver() {
 		this.lock.lock();
 		try {
-			return (MobilePerceiver<WMWorldNode>) this.getProperty("aoobj.perceiver");
+			MobilePerceiver localMobilePerceiver = (MobilePerceiver) getProperty("aoobj.perceiver");
+			return localMobilePerceiver;
 		} finally {
 			this.lock.unlock();
 		}
 	}
 
-	public void perceiver(final MobilePerceiver<WMWorldNode> p) {
+	public void perceiver(MobilePerceiver<WMWorldNode> p) {
 		this.lock.lock();
 		try {
-			final MobilePerceiver<WMWorldNode> perceiver = this.perceiver();
+			MobilePerceiver perceiver = perceiver();
 			if (perceiver == p) {
 				log.warn("AOObject.setPerceiver: new/cur perceiver same");
 			}
@@ -207,159 +198,154 @@ public class AOObject extends Entity {
 				perceiver.setElement(null);
 				log.warn("AOObject.setPerceiver: perceiv is already not null");
 			}
-			log.debug("AOObject.setPerceiver: obj oid=" + this.getOid() + ", perceiver=" + p);
-			this.setProperty("aoobj.perceiver", p);
-			if (p != null) {
-				p.setElement((WMWorldNode) this.worldNode());
-			}
+			log.debug("AOObject.setPerceiver: obj oid=" + getOid() + ", perceiver=" + p);
+			setProperty("aoobj.perceiver", p);
+			if (p != null)
+				p.setElement((WMWorldNode) worldNode());
 		} finally {
 			this.lock.unlock();
 		}
 	}
 
 	public OID atavismID() {
-		return (OID) this.getProperty("aoobj.aoid");
+		return (OID) getProperty("aoobj.aoid");
 	}
 
-	public void atavismID(final OID id) {
-		this.setProperty("aoobj.aoid", id);
+	public void atavismID(OID id) {
+		setProperty("aoobj.aoid", id);
 	}
 
-	public void displayContext(final DisplayContext dc) {
+	public void displayContext(DisplayContext dc) {
 		DisplayContext dcCopy = null;
 		if (dc != null) {
 			dcCopy = (DisplayContext) dc.clone();
-			dcCopy.setObjRef(this.getOid());
+			dcCopy.setObjRef(getOid());
 		}
-		this.setProperty("aoobj.dc", dcCopy);
+		setProperty("aoobj.dc", dcCopy);
 	}
 
 	public DisplayContext displayContext() {
-		final DisplayContext dc = (DisplayContext) this.getProperty("aoobj.dc");
+		DisplayContext dc = (DisplayContext) getProperty("aoobj.dc");
 		return dc;
 	}
 
-	public void scale(final float scale) {
-		this.scale(new AOVector(scale, scale, scale));
+	public void scale(float scale) {
+		scale(new AOVector(scale, scale, scale));
 	}
 
-	public void scale(final AOVector scale) {
-		this.setProperty(this.scaleKey, (Serializable) scale.clone());
+	public void scale(AOVector scale) {
+		setProperty(this.scaleKey, (AOVector) scale.clone());
 	}
 
 	public AOVector scale() {
-		return (AOVector) this.getProperty(this.scaleKey);
+		return (AOVector) getProperty(this.scaleKey);
 	}
 
-	public static void registerObjCreateHook(final AOObjectCreateHook hook) {
-		AOObject.createHook = hook;
+	public static void registerObjCreateHook(AOObjectCreateHook hook) {
+		createHook = hook;
 	}
 
 	public static AOObjectCreateHook getObjCreateHook() {
-		return AOObject.createHook;
+		return createHook;
 	}
 
-	public void permissionCallback(final PermissionCallback cb) {
-		this.setProperty(this.permCBKey, cb);
+	public void permissionCallback(PermissionCallback cb) {
+		setProperty(this.permCBKey, cb);
 	}
 
 	public PermissionCallback permissionCallback() {
-		return (PermissionCallback) this.getProperty(this.permCBKey);
+		return (PermissionCallback) getProperty(this.permCBKey);
 	}
 
-	public static void writeObject(final ObjectOutput out, final Object obj) throws IOException {
+	public static void writeObject(ObjectOutput out, Object obj) throws IOException {
 		out.writeBoolean(obj == null);
-		if (obj != null) {
+		if (obj != null)
 			out.writeObject(obj);
-		}
 	}
 
-	public static Object readObject(final ObjectInput in) throws IOException, ClassNotFoundException {
-		final boolean isNull = in.readBoolean();
+	public static Object readObject(ObjectInput in) throws IOException, ClassNotFoundException {
+		boolean isNull = in.readBoolean();
 		if (!isNull) {
 			return in.readObject();
 		}
 		return null;
 	}
 
-	public static void writeString(final ObjectOutput out, final String string) throws IOException {
-		if (string == null) {
+	public static void writeString(ObjectOutput out, String string) throws IOException {
+		if (string == null)
 			out.writeUTF("");
-		} else {
+		else
 			out.writeUTF(string);
-		}
 	}
 
 	public static Collection<AOObject> getAllObjects() {
-		final Entity[] entities = EntityManager.getAllEntitiesByNamespace(Namespace.WORLD_MANAGER);
-		final Set<AOObject> objSet = new HashSet<AOObject>();
-		for (final Entity e : entities) {
-			if (e instanceof AOObject) {
+		Entity[] entities = EntityManager.getAllEntitiesByNamespace(Namespace.WORLD_MANAGER);
+		Set objSet = new HashSet();
+		for (Entity e : entities) {
+			if ((e instanceof AOObject)) {
 				objSet.add((AOObject) e);
 			}
 		}
 		return objSet;
 	}
 
-	public static AOObject getObject(final OID oid) {
+	public static AOObject getObject(OID oid) {
 		return (AOObject) EntityManager.getEntityByNamespace(oid, Namespace.WORLD_MANAGER);
 	}
 
 	static {
-		AOObject.createHook = null;
-		AOObject.transferLock = LockFactory.makeLock("objXferLock");
 		try {
-			final BeanInfo info = Introspector.getBeanInfo(AOObject.class);
-			final PropertyDescriptor[] propertyDescriptors = info.getPropertyDescriptors();
-			for (int i = 0; i < propertyDescriptors.length; ++i) {
-			}
+			BeanInfo info = Introspector.getBeanInfo(AOObject.class);
+			PropertyDescriptor[] propertyDescriptors = info.getPropertyDescriptors();
+
+			for (int i = 0; i < propertyDescriptors.length; i++);
 		} catch (Exception e) {
 			log.error("failed aoobject beans initalization");
 		}
 	}
 
 	public static class StateMap implements Serializable {
-		Lock lock;
-		Map<String, ObjState> map;
+		Lock lock = null;
+		Map<String, ObjState> map = new HashMap();
 		private static final long serialVersionUID = 1L;
 
 		public StateMap() {
-			this.lock = null;
-			this.map = new HashMap<String, ObjState>();
-			this.setupTransient();
+			setupTransient();
 		}
 
 		private void setupTransient() {
 			this.lock = LockFactory.makeLock("StateMapLock");
 		}
 
-		private void readObject(final ObjectInputStream in) throws IOException, ClassNotFoundException {
+		private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
 			in.defaultReadObject();
-			this.setupTransient();
+			setupTransient();
 		}
 
-		public ObjState setState(final String state, final ObjState objState) {
+		public ObjState setState(String state, ObjState objState) {
 			this.lock.lock();
 			try {
-				return this.map.put(state, objState);
+				ObjState localObjState = (ObjState) this.map.put(state, objState);
+				return localObjState;
 			} finally {
 				this.lock.unlock();
 			}
 		}
 
-		public ObjState getState(final String state) {
+		public ObjState getState(String state) {
 			this.lock.lock();
 			try {
-				return this.map.get(state);
+				ObjState localObjState = (ObjState) this.map.get(state);
+				return localObjState;
 			} finally {
 				this.lock.unlock();
 			}
 		}
 
-		public void setMap(final Map<String, ObjState> map) {
+		public void setMap(Map<String, ObjState> map) {
 			this.lock.lock();
 			try {
-				this.map = new HashMap<String, ObjState>(map);
+				this.map = new HashMap(map);
 			} finally {
 				this.lock.unlock();
 			}
@@ -368,7 +354,8 @@ public class AOObject extends Entity {
 		public Map<String, ObjState> getMap() {
 			this.lock.lock();
 			try {
-				return new HashMap<String, ObjState>(this.map);
+				HashMap localHashMap = new HashMap(this.map);
+				return localHashMap;
 			} finally {
 				this.lock.unlock();
 			}

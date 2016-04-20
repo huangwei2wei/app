@@ -117,6 +117,12 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 		this.getHookManager().addHook(AgisMobClient.MSG_TYPE_SPAWN_INSTANCE_MOBS, (Hook) new SpawnInstanceMobsHook());
 	}
 
+	/**
+	 * 生成 世界经理人 子对象
+	 * @param template
+	 * @param masterOid
+	 * @return
+	 */
 	protected AOObject generateWorldManagerSubObject(final Template template, final OID masterOid) {
 		final ObjectType objType = (ObjectType) template.get(Namespace.WORLD_MANAGER, WorldManagerClient.TEMPL_OBJECT_TYPE);
 		AOObject obj = null;

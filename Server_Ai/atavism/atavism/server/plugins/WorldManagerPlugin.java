@@ -1658,7 +1658,7 @@ public abstract class WorldManagerPlugin extends EnginePlugin implements Message
 				Log.warn("GenerateSubObjectHook: no props in ns " + Namespace.WORLD_MANAGER);
 				return null;
 			}
-			final OID instanceOid = props.get(WorldManagerClient.TEMPL_INSTANCE);
+			final OID instanceOid = (OID) props.get(WorldManagerClient.TEMPL_INSTANCE);
 			if (instanceOid == null) {
 				Log.error("GenerateSubObjectHook: missing instanceOid");
 				return null;
@@ -1667,31 +1667,31 @@ public abstract class WorldManagerPlugin extends EnginePlugin implements Message
 				Log.error("GenerateSubObjectHook: unknown instanceOid=" + instanceOid);
 				return null;
 			}
-			final Point loc = props.get(WorldManagerClient.TEMPL_LOC);
+			final Point loc = (Point) props.get(WorldManagerClient.TEMPL_LOC);
 			if (loc == null) {
 				Log.warn("GenerateSubObjectHook: no loc in templ");
 				return null;
 			}
-			String objName = props.get(WorldManagerClient.TEMPL_NAME);
+			String objName = (String) props.get(WorldManagerClient.TEMPL_NAME);
 			if (objName == null) {
 				objName = template.getName();
 				if (objName == null) {
 					objName = "(null)";
 				}
 			}
-			Quaternion orient = props.get(WorldManagerClient.TEMPL_ORIENT);
+			Quaternion orient = (Quaternion) props.get(WorldManagerClient.TEMPL_ORIENT);
 			if (orient == null) {
 				orient = new Quaternion();
 			}
-			AOVector scale = props.get(WorldManagerClient.TEMPL_SCALE);
+			AOVector scale = (AOVector) props.get(WorldManagerClient.TEMPL_SCALE);
 			if (scale == null) {
 				scale = new AOVector(1.0f, 1.0f, 1.0f);
 			}
-			final Integer perceptionRadius = props.get(WorldManagerClient.TEMPL_PERCEPTION_RADIUS);
+			final Integer perceptionRadius = (Integer) props.get(WorldManagerClient.TEMPL_PERCEPTION_RADIUS);
 			final AOObject wObj = WorldManagerPlugin.this.generateWorldManagerSubObject(template, masterOid);
 			wObj.setName(objName);
 			wObj.scale(scale);
-			DisplayContext dc = props.get(WorldManagerClient.TEMPL_DISPLAY_CONTEXT);
+			DisplayContext dc = (DisplayContext) props.get(WorldManagerClient.TEMPL_DISPLAY_CONTEXT);
 			if (dc != null) {
 				dc = (DisplayContext) dc.clone();
 				dc.setObjRef(wObj.getOid());
@@ -1711,7 +1711,7 @@ public abstract class WorldManagerPlugin extends EnginePlugin implements Message
 			wnode.setInstanceOid(instanceOid);
 			wnode.setLoc(loc);
 			wnode.setOrientation(orient);
-			Boolean followsTerrain = props.get(WorldManagerClient.TEMPL_FOLLOWS_TERRAIN);
+			Boolean followsTerrain = (Boolean) props.get(WorldManagerClient.TEMPL_FOLLOWS_TERRAIN);
 			if (followsTerrain == null) {
 				followsTerrain = Boolean.TRUE;
 			}
@@ -1719,7 +1719,7 @@ public abstract class WorldManagerPlugin extends EnginePlugin implements Message
 			wObj.worldNode(wnode);
 			wnode.setObject(wObj);
 			wObj.setPersistenceFlag(persistent);
-			EntityManager.registerEntityByNamespace(wObj, Namespace.WORLD_MANAGER);
+			EntityManager.registerEntityByNamespace(wObj, Namespace.WORLD_MANAGER);// ×¢²áaoobject
 			if (persistent) {
 				Engine.getPersistenceManager().persistEntity(wObj);
 			}
@@ -2604,7 +2604,7 @@ public abstract class WorldManagerPlugin extends EnginePlugin implements Message
 
 		@Override
 		public boolean matchesMap(final Map propMap, final Message msg) {
-			final Point loc = propMap.get(WorldManagerClient.MSG_PROP_LOC);
+			final Point loc = (Point) propMap.get(WorldManagerClient.MSG_PROP_LOC);
 			if (loc == null) {
 				Log.debug("WorldManagerTransferFilter.matchesMap: no loc, msg=" + msg);
 				return false;

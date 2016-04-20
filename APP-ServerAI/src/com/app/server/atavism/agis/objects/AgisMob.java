@@ -2,7 +2,7 @@
 // Decompiled by Procyon v0.5.30
 // 
 
-package atavism.agis.objects;
+package com.app.server.atavism.agis.objects;
 
 import java.util.List;
 import java.util.Iterator;
