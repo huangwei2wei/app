@@ -2,16 +2,18 @@
 // Decompiled by Procyon v0.5.30
 // 
 
-package atavism.server.pathing;
+package com.app.server.atavism.server.pathing;
 
 import java.util.HashMap;
-import atavism.server.math.AOVector;
+import com.app.server.atavism.server.math.AOVector;
 import java.util.Iterator;
-import atavism.server.util.Logger;
+
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.List;
 import java.io.Serializable;
+
+import org.apache.log4j.Logger;
 
 public class PathObject implements Serializable, Cloneable {
 	String modelName;
@@ -25,10 +27,10 @@ public class PathObject implements Serializable, Cloneable {
 	Map<Integer, PathPolygon> polygonMap;
 	LinkedList<PathPolygon> terrainPolygonAtCorner;
 	protected static float insideDistance;
-	protected static final Logger log;
+	protected static final Logger log = Logger.getLogger("navmesh");
 	protected static boolean logAll;
 	private static final long serialVersionUID = 1L;
-	static final boolean $assertionsDisabled = false;
+	static final/* synthetic */boolean $assertionsDisabled;
 
 	public PathObject() {
 		this.polygonArcs = null;

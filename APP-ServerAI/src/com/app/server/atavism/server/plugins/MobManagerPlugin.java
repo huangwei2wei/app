@@ -6,7 +6,7 @@ package com.app.server.atavism.server.plugins;
 
 import atavism.msgsys.ResponseMessage;
 import atavism.msgsys.SubjectMessage;
-import atavism.server.objects.SpawnData;
+import  com.app.server.atavism.server.objects.SpawnData;
 import atavism.agis.objects.SpawnGenerator;
 import atavism.msgsys.Message;
 import java.util.HashMap;
@@ -16,44 +16,46 @@ import java.util.List;
 import java.util.ArrayList;
 import atavism.server.pathing.PathSearcher;
 import atavism.server.objects.World;
-import atavism.server.engine.BasicWorldNode;
-import atavism.server.objects.Entity;
-import atavism.server.objects.EntityManager;
-import atavism.server.engine.InterpolatedWorldNode;
+import com.app.server.atavism.server.engine.BasicWorldNode;
+import com.app.server.atavism.server.objects.Entity;
+import com.app.server.atavism.server.objects.EntityManager;
+import com.app.server.atavism.server.engine.InterpolatedWorldNode;
 import java.io.Serializable;
-import atavism.server.objects.Template;
+import com.app.server.atavism.server.objects.Template;
 import atavism.server.util.Log;
-import atavism.server.objects.ObjectStub;
-import atavism.server.math.Quaternion;
-import atavism.server.math.Point;
+import com.app.server.atavism.server.objects.ObjectStub;
+import com.app.server.atavism.server.math.Quaternion;
+import com.app.server.atavism.server.math.Point;
 import atavism.server.engine.Hook;
 import atavism.server.util.AORuntimeException;
-import atavism.server.objects.ObjectFactory;
+import com.app.server.atavism.server.objects.ObjectFactory;
 import atavism.server.objects.WEObjFactory;
 import atavism.msgsys.MessageCallback;
 import atavism.msgsys.IFilter;
-import atavism.server.engine.Engine;
+import com.app.server.atavism.server.engine.Engine;
 import atavism.msgsys.MessageTypeFilter;
-import atavism.server.engine.Namespace;
-import atavism.server.pathing.PathInfo;
-import atavism.server.util.Logger;
-import atavism.server.objects.ObjectType;
+import com.app.server.atavism.server.engine.Namespace;
+import com.app.server.atavism.server.pathing.PathInfo;
+
+import com.app.server.atavism.server.objects.ObjectType;
 import java.util.Collection;
 import atavism.server.objects.ObjectTracker;
-import atavism.server.engine.OID;
+import com.app.server.atavism.server.engine.OID;
 import java.util.Map;
+
+import org.apache.log4j.Logger;
+
 import atavism.server.engine.EnginePlugin;
 
-public class MobManagerPlugin extends EnginePlugin {
+public class MobManagerPlugin {
 	private static Map<String, Class> spawnGeneratorClasses;
 	private static Map<OID, ObjectTracker> trackers;
 	private static Collection<ObjectType> trackedObjectTypes;
-	protected static final Logger log;
+	protected static final Logger log = Logger.getLogger("navmesh");
 	protected PathInfo pathInfo;
 	protected boolean askedForPathInfo;
 
 	public MobManagerPlugin() {
-		super("MobManager");
 		this.pathInfo = null;
 		this.askedForPathInfo = false;
 		this.setPluginType("MobManager");

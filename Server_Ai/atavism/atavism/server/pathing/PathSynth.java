@@ -538,15 +538,15 @@ public class PathSynth
     }
     
     public static void main(final String[] args) {
-        final Properties props = new Properties();
-        ((Hashtable<String, String>)props).put("log4j.appender.FILE", "org.apache.log4j.RollingFileAppender");
-        ((Hashtable<String, String>)props).put("log4j.appender.FILE.File", "${atavism.logs}/pathing.out");
-        ((Hashtable<String, String>)props).put("log4j.appender.FILE.MaxFileSize", "50MB");
-        ((Hashtable<String, String>)props).put("log4j.appender.FILE.layout", "org.apache.log4j.PatternLayout");
-        ((Hashtable<String, String>)props).put("log4j.appender.FILE.layout.ConversionPattern", "%-5p %m%n");
-        ((Hashtable<String, String>)props).put("atavism.log_level", "0");
-        ((Hashtable<String, String>)props).put("log4j.rootLogger", "DEBUG, FILE");
-        Log.init(props);
+//        final Properties props = new Properties();
+//        ((Hashtable<String, String>)props).put("log4j.appender.FILE", "org.apache.log4j.RollingFileAppender");
+//        ((Hashtable<String, String>)props).put("log4j.appender.FILE.File", "${atavism.logs}/pathing.out");
+//        ((Hashtable<String, String>)props).put("log4j.appender.FILE.MaxFileSize", "50MB");
+//        ((Hashtable<String, String>)props).put("log4j.appender.FILE.layout", "org.apache.log4j.PatternLayout");
+//        ((Hashtable<String, String>)props).put("log4j.appender.FILE.layout.ConversionPattern", "%-5p %m%n");
+//        ((Hashtable<String, String>)props).put("atavism.log_level", "0");
+//        ((Hashtable<String, String>)props).put("log4j.rootLogger", "DEBUG, FILE");
+//        Log.init(props);
         test1();
         test2();
         test3();

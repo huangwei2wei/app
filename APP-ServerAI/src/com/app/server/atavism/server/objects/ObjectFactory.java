@@ -2,13 +2,13 @@
 // Decompiled by Procyon v0.5.30
 // 
 
-package atavism.server.objects;
+package com.app.server.atavism.server.objects;
 
 import java.util.HashMap;
-import atavism.server.math.Quaternion;
-import atavism.server.plugins.MobManagerPlugin;
-import atavism.server.math.Point;
-import atavism.server.engine.OID;
+import com.app.server.atavism.server.math.Quaternion;
+import com.app.server.atavism.server.plugins.MobManagerPlugin;
+import com.app.server.atavism.server.math.Point;
+import com.app.server.atavism.server.engine.OID;
 import java.util.Map;
 
 public class ObjectFactory {
