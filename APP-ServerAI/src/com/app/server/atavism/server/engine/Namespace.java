@@ -16,6 +16,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import atavism.server.engine.Namespace;
+
 public class Namespace implements Serializable {
 	private transient String name;
 	private int number;
@@ -27,6 +29,7 @@ public class Namespace implements Serializable {
 	public static Namespace WORLD_MANAGER;
 	public static Namespace MOB;
 	public static Namespace TRANSIENT = null;
+	public static Namespace OBJECT_MANAGER = null;
 
 	public Namespace() {
 		this.number = 0;
@@ -142,6 +145,7 @@ public class Namespace implements Serializable {
 		Namespace.WORLD_MANAGER = intern("NS.wmgr");
 		Namespace.MOB = intern("NS.mob");
 		Namespace.TRANSIENT = intern("NS.transient");
+		Namespace.OBJECT_MANAGER = intern("NS.master");
 	}
 	static {
 		Namespace.namespaceStringToNamespace = new HashMap<String, Namespace>();

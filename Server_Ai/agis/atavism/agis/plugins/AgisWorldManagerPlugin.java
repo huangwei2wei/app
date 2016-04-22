@@ -116,7 +116,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 		this.getHookManager().addHook(AgisMobClient.MSG_TYPE_CHANGE_INSTANCE, (Hook) new ChangeInstanceHook());
 		this.getHookManager().addHook(AgisMobClient.MSG_TYPE_SPAWN_INSTANCE_MOBS, (Hook) new SpawnInstanceMobsHook());
 	}
-
+	@Override
 	protected AOObject generateWorldManagerSubObject(final Template template, final OID masterOid) {
 		final ObjectType objType = (ObjectType) template.get(Namespace.WORLD_MANAGER, WorldManagerClient.TEMPL_OBJECT_TYPE);
 		AOObject obj = null;

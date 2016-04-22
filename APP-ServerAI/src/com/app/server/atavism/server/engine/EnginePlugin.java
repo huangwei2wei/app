@@ -2,10 +2,10 @@
 // Decompiled by Procyon v0.5.30
 // 
 
-package atavism.server.engine;
+package com.app.server.atavism.server.engine;
 
 import atavism.server.messages.OIDNamespaceMessage;
-import atavism.server.objects.Template;
+import com.app.server.atavism.server.objects.Template;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.ThreadFactory;
@@ -18,12 +18,12 @@ import atavism.msgsys.ExceptionResponseMessage;
 import javax.management.JMException;
 import javax.management.ObjectName;
 import atavism.server.messages.PropertyMessage;
-import atavism.server.objects.EntityManager;
+import com.app.server.atavism.server.objects.EntityManager;
 import atavism.server.messages.INamespaceMessage;
-import atavism.server.objects.Entity;
+import com.app.server.atavism.server.objects.Entity;
 import java.io.Serializable;
 import atavism.msgsys.Filter;
-import atavism.server.plugins.ObjectManagerClient;
+import com.app.server.atavism.server.plugins.ObjectManagerClient;
 import atavism.server.messages.NamespaceFilter;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,9 +31,8 @@ import atavism.msgsys.Message;
 import java.util.Iterator;
 import atavism.msgsys.IFilter;
 import atavism.msgsys.MessageTypeFilter;
-import atavism.server.util.Log;
-import atavism.server.util.AORuntimeException;
-import atavism.server.util.LockFactory;
+import com.app.server.atavism.server.util.AORuntimeException;
+import com.app.server.atavism.server.util.LockFactory;
 import java.util.Collections;
 import java.util.HashMap;
 import atavism.server.messages.INamespaceFilter;

@@ -4,63 +4,66 @@
 
 package com.app.server.atavism.agis.plugins;
 
-import atavism.server.objects.Marker;
-import atavism.server.plugins.InstanceClient;
-import atavism.agis.objects.DetourActor;
+import com.app.server.atavism.server.objects.Marker;
+import com.app.server.atavism.server.plugins.InstanceClient;
+import com.app.server.atavism.agis.objects.DetourActor;
 import java.util.Calendar;
-import atavism.agis.objects.ArenaQueue;
-import atavism.server.messages.LogoutMessage;
-import atavism.msgsys.ResponseMessage;
+import com.app.server.atavism.agis.objects.ArenaQueue;
+//import atavism.server.messages.LogoutMessage;
+//import atavism.msgsys.ResponseMessage;
 import java.util.LinkedList;
-import atavism.server.util.Points;
-import atavism.server.objects.World;
-import atavism.server.math.AOVector;
-import atavism.server.engine.InterpolatedWorldNode;
-import atavism.server.math.Quaternion;
-import atavism.server.engine.WorldNode;
-import atavism.server.engine.WMWorldNode;
-import atavism.server.util.Logger;
-import atavism.agis.util.AgisDisplayContext;
-import atavism.server.messages.PropertyMessage;
-import atavism.msgsys.Message;
-import atavism.server.engine.BasicWorldNode;
-import atavism.server.objects.Entity;
+import com.app.server.atavism.server.util.Points;
+import com.app.server.atavism.server.objects.World;
+import com.app.server.atavism.server.math.AOVector;
+import com.app.server.atavism.server.engine.InterpolatedWorldNode;
+import com.app.server.atavism.server.math.Quaternion;
+import com.app.server.atavism.server.engine.WorldNode;
+import com.app.server.atavism.server.engine.WMWorldNode;
+import com.app.server.atavism.agis.util.AgisDisplayContext;
+//import atavism.server.messages.PropertyMessage;
+//import atavism.msgsys.Message;
+import com.app.server.atavism.server.engine.BasicWorldNode;
+import com.app.server.atavism.server.objects.Entity;
 import java.util.ArrayList;
-import atavism.server.objects.EntityManager;
+import com.app.server.atavism.server.objects.EntityManager;
 import java.util.List;
-import atavism.server.math.Point;
+import com.app.server.atavism.server.math.Point;
 import java.util.Iterator;
-import atavism.server.objects.DisplayContext;
+import com.app.server.atavism.server.objects.DisplayContext;
 import java.io.Serializable;
 import java.util.Map;
-import atavism.server.objects.LightData;
-import atavism.server.objects.Light;
-import atavism.agis.objects.AgisMob;
-import atavism.server.objects.ObjectTypes;
-import atavism.server.util.Log;
-import atavism.server.engine.Namespace;
-import atavism.server.objects.ObjectType;
-import atavism.server.objects.AOObject;
-import atavism.server.objects.Template;
-import atavism.server.engine.EnginePlugin;
-import atavism.server.engine.Hook;
-import atavism.server.messages.LoginMessage;
-import atavism.msgsys.MessageCallback;
-import atavism.msgsys.IFilter;
-import atavism.server.engine.Engine;
-import atavism.server.plugins.WorldManagerClient;
-import atavism.msgsys.MessageTypeFilter;
-import atavism.agis.objects.AgisObject;
-import atavism.agis.objects.InstanceNavMeshManager;
-import atavism.server.engine.OID;
+import com.app.server.atavism.server.objects.LightData;
+import com.app.server.atavism.server.objects.Light;
+import com.app.server.atavism.agis.objects.AgisMob;
+import com.app.server.atavism.server.objects.ObjectTypes;
+import com.app.server.atavism.server.engine.Namespace;
+import com.app.server.atavism.server.objects.ObjectType;
+import com.app.server.atavism.server.objects.AOObject;
+import com.app.server.atavism.server.objects.Template;
+import com.app.server.atavism.server.engine.EnginePlugin;
+//import atavism.server.engine.Hook;
+//import atavism.server.messages.LoginMessage;
+//import atavism.msgsys.MessageCallback;
+//import atavism.msgsys.IFilter;
+//import atavism.msgsys.MessageTypeFilter;
+import com.app.server.atavism.server.engine.Engine;
+import com.app.server.atavism.server.plugins.WorldManagerClient;
+
+import com.app.server.atavism.agis.objects.AgisObject;
+import com.app.server.atavism.agis.objects.InstanceNavMeshManager;
+import com.app.server.atavism.server.engine.OID;
 import java.util.HashMap;
-import atavism.server.plugins.WorldManagerPlugin;
+
+import org.apache.log4j.Logger;
+
+import com.app.server.atavism.server.plugins.WorldManagerPlugin;
 
 public class AgisWorldManagerPlugin extends WorldManagerPlugin {
-	public static Float defaultRunThreshold;
-	private HashMap<OID, InstanceNavMeshManager> instanceNavMeshes;
+	private static Logger log = Logger.getLogger("navmesh");
+	public static Float defaultRunThreshold = 2.0f;
+	private HashMap<OID, InstanceNavMeshManager> instanceNavMeshes = new HashMap<OID, InstanceNavMeshManager>();
 	private long serverStartTime;
-	private long currentSecondsRunning;
+	private long currentSecondsRunning = 0L;
 	public static final int MOVEMENT_STATE_RUNNING = 1;
 	public static final int MOVEMENT_STATE_SWIMMING = 2;
 	public static final int MOVEMENT_STATE_FLYING = 3;
@@ -68,57 +71,15 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 	public static final String PROP_MOVEMENT_STATE = "movement_state";
 	public static final String PROP_MOVEMENT_SPEED = "movement_speed";
 	public static final String PROP_ACTION_STATE = "action_state";
-	protected int waterHeight;
-
-	static {
-		AgisWorldManagerPlugin.defaultRunThreshold = 2.0f;
-	}
+	protected int waterHeight = Integer.MIN_VALUE;
 
 	public AgisWorldManagerPlugin() {
-		this.instanceNavMeshes = new HashMap<OID, InstanceNavMeshManager>();
-		this.currentSecondsRunning = 0L;
-		this.waterHeight = Integer.MIN_VALUE;
 		this.propertyExclusions.add(AgisObject.baseDCKey);
-	}
-
-	public void onActivate() {
-		super.onActivate();
-		final MessageTypeFilter filter = new MessageTypeFilter();
-		filter.addType(AgisMobClient.MSG_TYPE_ADD_TARGET_TO_CHECK);
-		filter.addType(AgisMobClient.MSG_TYPE_REMOVE_TARGET_TO_CHECK);
-		filter.addType(AgisMobClient.MSG_TYPE_SET_MOVEMENT_STATE);
-		filter.addType(AgisMobClient.MSG_TYPE_SET_UNDERWATER);
-		filter.addType(AgisMobClient.MSG_TYPE_CHANGE_INSTANCE);
-		filter.addType(WorldManagerClient.MSG_TYPE_SPAWNED);
-		filter.addType(WorldManagerClient.MSG_TYPE_DESPAWNED);
-		filter.addType(AgisMobClient.MSG_TYPE_SPAWN_INSTANCE_MOBS);
-		Engine.getAgent().createSubscription((IFilter) filter, (MessageCallback) this);
-		final MessageTypeFilter filter2 = new MessageTypeFilter();
-		filter2.addType(CombatClient.MSG_TYPE_GET_AOE_TARGETS);
-		filter2.addType(LoginMessage.MSG_TYPE_LOGIN);
-		Engine.getAgent().createSubscription((IFilter) filter2, (MessageCallback) this, 8);
 		this.serverStartTime = System.currentTimeMillis();
 	}
-
-	protected void registerHooks() {
-		super.registerHooks();
-		this.getHookManager().addHook(WorldManagerClient.MSG_TYPE_SETWNODE_REQ, (Hook) new SetWNodeReqHook());
-		this.getHookManager().addHook(WorldManagerClient.MSG_TYPE_UPDATEWNODE_REQ, (Hook) new UpdateWNodeReqHook());
-		this.getHookManager().addHook(EnginePlugin.MSG_TYPE_SET_PROPERTY, (Hook) new NoMovePropertyHook());
-		this.getHookManager().addHook(EnginePlugin.MSG_TYPE_SET_PROPERTY_NONBLOCK, (Hook) new NoMovePropertyHook());
-		this.getHookManager().addHook(WorldManagerClient.MSG_TYPE_REPARENT_WNODE_REQ, (Hook) new ReparentWNodeReqHook());
-		this.getHookManager().addHook(WorldManagerClient.MSG_TYPE_SPAWNED, (Hook) new SpawnedHook());
-		this.getHookManager().addHook(WorldManagerClient.MSG_TYPE_DESPAWNED, (Hook) new DespawnedHook());
-		this.getHookManager().addHook(LoginMessage.MSG_TYPE_LOGIN, (Hook) new LoginHook());
-		this.getHookManager().addHook(CombatClient.MSG_TYPE_GET_AOE_TARGETS, (Hook) new GetTargetsInAreaHook());
-		this.getHookManager().addHook(AgisMobClient.MSG_TYPE_SET_MOVEMENT_STATE, (Hook) new SetMovementStateHook());
-		this.getHookManager().addHook(AgisMobClient.MSG_TYPE_SET_UNDERWATER, (Hook) new SetUnderwaterHook());
-		this.getHookManager().addHook(AgisMobClient.MSG_TYPE_CHANGE_INSTANCE, (Hook) new ChangeInstanceHook());
-		this.getHookManager().addHook(AgisMobClient.MSG_TYPE_SPAWN_INSTANCE_MOBS, (Hook) new SpawnInstanceMobsHook());
-	}
-
 	/**
-	 * 生成 世界经理人 子对象
+	 * 生成 世界管理 子对象
+	 * 
 	 * @param template
 	 * @param masterOid
 	 * @return
@@ -126,11 +87,9 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 	protected AOObject generateWorldManagerSubObject(final Template template, final OID masterOid) {
 		final ObjectType objType = (ObjectType) template.get(Namespace.WORLD_MANAGER, WorldManagerClient.TEMPL_OBJECT_TYPE);
 		AOObject obj = null;
-		if (Log.loggingDebug) {
-			Log.debug("AgisWorldManagerPlugin: generateWorldManagerSubObject: objectType=" + objType + ", template=" + template);
-		}
+		log.debug("AgisWorldManagerPlugin: generateWorldManagerSubObject: objectType=" + objType + ", template=" + template);
 		if (objType == null) {
-			Log.warn("AgisWorldManagerPlugin: generateSubObject: no object type, using structure");
+			log.warn("AgisWorldManagerPlugin: generateSubObject: no object type, using structure");
 			obj = new AgisObject(masterOid);
 			obj.setType(ObjectTypes.structure);
 		} else if (objType == ObjectTypes.mob || objType == ObjectTypes.player) {
@@ -150,7 +109,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 		}
 		final Map<String, Serializable> props = (Map<String, Serializable>) template.getSubMap(Namespace.WORLD_MANAGER);
 		if (props == null) {
-			Log.warn("AgisWorldManagerPlugin.generateSubObject: no props in ns " + Namespace.WORLD_MANAGER);
+			log.warn("AgisWorldManagerPlugin.generateSubObject: no props in ns " + Namespace.WORLD_MANAGER);
 			return null;
 		}
 		for (final Map.Entry<String, Serializable> entry : props.entrySet()) {
@@ -165,7 +124,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 			DisplayContext dc = (DisplayContext) props.get(WorldManagerClient.TEMPL_DISPLAY_CONTEXT);
 			if (dc == null) {
 				if (objType != ObjectTypes.terrainDecal) {
-					Log.warn("AgisWorldManagerPlugin.generateSubObject: obj has no display context, oid=" + masterOid);
+					log.warn("AgisWorldManagerPlugin.generateSubObject: obj has no display context, oid=" + masterOid);
 				}
 			} else {
 				dc = (DisplayContext) dc.clone();
@@ -189,13 +148,13 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 				if (obj != null) {
 					final BasicWorldNode entityWorldNode = obj.baseWorldNode();
 					if (entity.getType().getTypeId() == objectType.getTypeId() && instanceOid.equals((Object) entityWorldNode.getInstanceOid())) {
-						Log.debug("[CYC][1] entityType: " + entity.getType() + ", objectType: " + objectType);
+						log.debug("[CYC][1] entityType: " + entity.getType() + ", objectType: " + objectType);
 						final Point entityLoc = entityWorldNode.getLoc();
-						Log.debug("[CYC][1] loc: " + loc + ", entityLoc: " + entityLoc + ", entityName: " + entity.getName());
+						log.debug("[CYC][1] loc: " + loc + ", entityLoc: " + entityLoc + ", entityName: " + entity.getName());
 						if (Math.round(Point.distanceTo(loc, entityLoc)) <= radius) {
 							objectsIn.add(entityOid);
 						}
-						Log.debug("[CYC][1] distance: " + Math.round(Point.distanceTo(loc, entityLoc)) + ", radius: " + radius);
+						log.debug("[CYC][1] distance: " + Math.round(Point.distanceTo(loc, entityLoc)) + ", radius: " + radius);
 					}
 				}
 			}
@@ -206,13 +165,13 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 				final OID entityOid = entity.getOid();
 				final BasicWorldNode entityWorldNode2 = ((AOObject) this.getWorldManagerEntity(entityOid)).baseWorldNode();
 				if (instanceOid.equals((Object) entityWorldNode2.getInstanceOid())) {
-					Log.debug("[CYC][2] entityType: " + entity.getType());
+					log.debug("[CYC][2] entityType: " + entity.getType());
 					final Point entityLoc2 = entityWorldNode2.getLoc();
-					Log.debug("[CYC][2] loc: " + loc + ", entityLoc: " + entityLoc2 + ", entityName: " + entity.getName());
+					log.debug("[CYC][2] loc: " + loc + ", entityLoc: " + entityLoc2 + ", entityName: " + entity.getName());
 					if (Math.round(Point.distanceTo(loc, entityLoc2)) <= radius) {
 						objectsIn.add(entityOid);
 					}
-					Log.debug("[CYC][2] distance: " + Math.round(Point.distanceTo(loc, entityLoc2)) + ", radius: " + radius);
+					log.debug("[CYC][2] distance: " + Math.round(Point.distanceTo(loc, entityLoc2)) + ", radius: " + radius);
 				}
 			}
 		}
@@ -251,9 +210,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 	}
 
 	protected void sendDCMessage(final AOObject obj, final boolean forceInstantLoad) {
-		if (Log.loggingDebug) {
-			AgisWorldManagerPlugin.log.debug("sendDCMessage: obj=" + obj);
-		}
+		AgisWorldManagerPlugin.log.debug("sendDCMessage: obj=" + obj);
 		if (!(obj instanceof AgisObject)) {
 			return;
 		}
@@ -262,9 +219,9 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 	}
 
 	protected void sendDCMessage(final OID oid, final DisplayContext dc, final boolean forceInstantLoad) {
-		if (Log.loggingDebug) {
-			AgisWorldManagerPlugin.log.debug("sendDCMessage: obj=" + oid);
-		}
+
+		AgisWorldManagerPlugin.log.debug("sendDCMessage: obj=" + oid);
+
 		if (dc == null) {
 			AgisWorldManagerPlugin.log.warn("sendDCMessage: obj has no dc: " + oid);
 			return;
@@ -276,9 +233,9 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 
 	protected void sendPropertyMessage(final OID notifyOid, final AOObject updateObj) {
 		if (!(updateObj instanceof AgisObject)) {
-			if (Log.loggingDebug) {
-				AgisWorldManagerPlugin.log.debug("AgisWorldManagerPlugin.sendPropertyMessage: skipping, obj is not agisobject: " + updateObj);
-			}
+
+			AgisWorldManagerPlugin.log.debug("AgisWorldManagerPlugin.sendPropertyMessage: skipping, obj is not agisobject: " + updateObj);
+
 			return;
 		}
 		final AgisObject mObj = (AgisObject) updateObj;
@@ -290,15 +247,13 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 			}
 			propMessage.setProperty(key, mObj.getProperty(key));
 		}
-		Log.debug("AgisWorldManagerPlugin.sendPropertyMessage: sending property message for obj=" + updateObj + " to=" + notifyOid + " msg=" + propMessage);
+		log.debug("AgisWorldManagerPlugin.sendPropertyMessage: sending property message for obj=" + updateObj + " to=" + notifyOid + " msg=" + propMessage);
 		Engine.getAgent().sendBroadcast((Message) propMessage);
 	}
 
 	protected void sendTargetedPropertyMessage(final OID targetOid, final AOObject updateObj) {
 		if (!(updateObj instanceof AgisObject)) {
-			if (Log.loggingDebug) {
-				AgisWorldManagerPlugin.log.debug("AgisWorldManagerPlugin.sendTargetedPropertyMessage: skipping, obj is not agisobject: " + updateObj);
-			}
+			AgisWorldManagerPlugin.log.debug("AgisWorldManagerPlugin.sendTargetedPropertyMessage: skipping, obj is not agisobject: " + updateObj);
 			return;
 		}
 		final AgisObject mObj = (AgisObject) updateObj;
@@ -310,7 +265,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 			}
 			propMessage.setProperty(key, mObj.getProperty(key));
 		}
-		Log.debug("AgisWorldManagerPlugin.sendTargetedPropertyMessage: subject=" + updateObj + " target=" + targetOid + " msg=" + propMessage);
+		log.debug("AgisWorldManagerPlugin.sendTargetedPropertyMessage: subject=" + updateObj + " target=" + targetOid + " msg=" + propMessage);
 		Engine.getAgent().sendBroadcast((Message) propMessage);
 	}
 
@@ -353,9 +308,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 						newWnode.setOrientation(currentOrient);
 					}
 					newWnode.setPerceptionRadius(((WMWorldNode) obj.worldNode()).getPerceptionRadius());
-					if (Log.loggingDebug) {
-						AgisWorldManagerPlugin.log.debug("SetWNodeReqHook: obj=" + obj + ", newWnode=" + newWnode + ", perceiver=" + obj.perceiver());
-					}
+					AgisWorldManagerPlugin.log.debug("SetWNodeReqHook: obj=" + obj + ", newWnode=" + newWnode + ", perceiver=" + obj.perceiver());
 					obj.worldNode((WorldNode) newWnode);
 					newWnode.setObject(obj);
 					if ((setNodeMsg.getFlags() & 0x1) != 0x0) {
@@ -363,9 +316,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 					} else {
 						Engine.getPersistenceManager().setDirty((Entity) obj);
 					}
-					if (Log.loggingDebug) {
-						AgisWorldManagerPlugin.log.debug("SetWNodeReqHook: done oid=" + oid + ", wnode=" + obj.worldNode());
-					}
+					AgisWorldManagerPlugin.log.debug("SetWNodeReqHook: done oid=" + oid + ", wnode=" + obj.worldNode());
 					rv = true;
 				}
 			} else {
@@ -397,9 +348,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 			final boolean noturn = obj.getBooleanProperty("world.noturn");
 			boolean sendCorrection = false;
 			final Point oldLoc = curWnode.getLoc();
-			if (Log.loggingDebug) {
-				Log.debug("UpdateWNodeReqHook: oldLoc=" + oldLoc + " nomove=" + nomove + " noturn=" + noturn);
-			}
+			log.debug("UpdateWNodeReqHook: oldLoc=" + oldLoc + " nomove=" + nomove + " noturn=" + noturn);
 			final BasicWorldNode newNode = new BasicWorldNode(curWnode);
 			Quaternion orient = wnode.getOrientation();
 			if (orient != null) {
@@ -427,9 +376,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 				curWnode.setDir(dir);
 			}
 			Point newLoc = wnode.getLoc();
-			if (Log.loggingDebug) {
-				Log.debug("UpdateWNodeReqHook: masterOid " + masterOid + ", oldLoc " + oldLoc + ", newLoc " + newLoc + ", override " + updateOverride);
-			}
+			log.debug("UpdateWNodeReqHook: masterOid " + masterOid + ", oldLoc " + oldLoc + ", newLoc " + newLoc + ", override " + updateOverride);
 			if (newLoc != null) {
 				if (!updateOverride && nomove) {
 					if (Point.distanceTo(oldLoc, newLoc) > 0.0f) {
@@ -446,13 +393,9 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 					sendCorrection = true;
 				}
 			}
-			if (Log.loggingDebug) {
-				AgisWorldManagerPlugin.log.debug("UpdateWNodeReqHook: set world node, entity=" + entity + ", new wnode=" + curWnode);
-			}
+			AgisWorldManagerPlugin.log.debug("UpdateWNodeReqHook: set world node, entity=" + entity + ", new wnode=" + curWnode);
 			if (sendCorrection) {
-				if (Log.loggingDebug) {
-					AgisWorldManagerPlugin.log.debug("UpdateWNodeReqHook: sending world node correction " + newNode);
-				}
+				AgisWorldManagerPlugin.log.debug("UpdateWNodeReqHook: sending world node correction " + newNode);
 				WorldManagerClient.correctWorldNode(masterOid, newNode);
 			}
 			if (updateMsg.getPreMessage() != null) {
@@ -480,9 +423,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 			final WorldManagerClient.ReparentWNodeReqMessage rMsg = (WorldManagerClient.ReparentWNodeReqMessage) msg;
 			final OID oid = rMsg.getSubject();
 			final OID parentOid = rMsg.getParentOid();
-			if (Log.loggingDebug) {
-				AgisWorldManagerPlugin.log.debug("ReparentWNodeReqHook: oid=" + oid + " parent=" + parentOid);
-			}
+			AgisWorldManagerPlugin.log.debug("ReparentWNodeReqHook: oid=" + oid + " parent=" + parentOid);
 			final Entity entity = AgisWorldManagerPlugin.this.getWorldManagerEntity(oid);
 			InterpolatedWorldNode parentWnode = null;
 			if (entity == null) {
@@ -565,12 +506,12 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 		public boolean processMessage(final Message msg, final int flags) {
 			final LogoutMessage message = (LogoutMessage) msg;
 			final OID playerOid = message.getSubject();
-			Log.debug("LogoutHook: playerOid=" + playerOid);
+			log.debug("LogoutHook: playerOid=" + playerOid);
 			int arenaID = -1;
 			try {
 				arenaID = (int) EnginePlugin.getObjectProperty(playerOid, WorldManagerClient.NAMESPACE, "arenaID");
 			} catch (NullPointerException e) {
-				Log.warn("ARENA PLUGIN: player " + playerOid + " does not have an arenaID property");
+				log.warn("ARENA PLUGIN: player " + playerOid + " does not have an arenaID property");
 			}
 			if (arenaID != -1) {
 				ArenaClient.removePlayer(playerOid);
@@ -587,20 +528,20 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 			if (challengeID != -1) {
 				EnginePlugin.setObjectProperty(playerOid, WorldManagerClient.NAMESPACE, "factionOverride", (Serializable) "");
 				final String name = WorldManagerClient.getObjectInfo(playerOid).name;
-				Log.debug("ARENA PLUGIN: removing player who is logging out from their duel");
+				log.debug("ARENA PLUGIN: removing player who is logging out from their duel");
 				ArenaClient.duelChallengeDisconnect(playerOid, name, challengeID);
 			}
-			Log.debug("ARENA PLUGIN: checking duelID for player logging out");
+			log.debug("ARENA PLUGIN: checking duelID for player logging out");
 			int duelID = -1;
 			try {
 				duelID = (int) EnginePlugin.getObjectProperty(playerOid, WorldManagerClient.NAMESPACE, "duelID");
 			} catch (NullPointerException ex2) {
 			}
-			Log.debug("ARENA PLUGIN: checking duelID for player logging out; ID is " + duelID);
+			log.debug("ARENA PLUGIN: checking duelID for player logging out; ID is " + duelID);
 			if (duelID != -1) {
 				EnginePlugin.setObjectProperty(playerOid, WorldManagerClient.NAMESPACE, "factionOverride", (Serializable) "");
 				final String name2 = WorldManagerClient.getObjectInfo(playerOid).name;
-				Log.debug("ARENA PLUGIN: removing player who is logging out from their duel");
+				log.debug("ARENA PLUGIN: removing player who is logging out from their duel");
 				ArenaClient.duelDisconnect(playerOid, name2, duelID);
 			}
 			Engine.getAgent().sendResponse(new ResponseMessage((Message) message));
@@ -656,7 +597,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 			final WorldManagerClient.ExtensionMessage spawnMsg = (WorldManagerClient.ExtensionMessage) msg;
 			final OID playerOid = spawnMsg.getSubject();
 			final int movementState = (int) spawnMsg.getProperty("movement_state");
-			Log.debug("STATE: setting movement state to " + movementState + " for " + playerOid);
+			log.debug("STATE: setting movement state to " + movementState + " for " + playerOid);
 			EnginePlugin.setObjectProperty(playerOid, WorldManagerClient.NAMESPACE, "movement_state", (Serializable) movementState);
 			boolean followTerrain = true;
 			if (movementState != 1) {
@@ -676,7 +617,7 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 			final WorldManagerClient.ExtensionMessage spawnMsg = (WorldManagerClient.ExtensionMessage) msg;
 			final OID playerOid = spawnMsg.getSubject();
 			final boolean underwater = (boolean) spawnMsg.getProperty("underwater");
-			Log.debug("STATE: setting underwater to " + underwater + " for " + playerOid);
+			log.debug("STATE: setting underwater to " + underwater + " for " + playerOid);
 			EnginePlugin.setObjectProperty(playerOid, CombatClient.NAMESPACE, "underwater", (Serializable) underwater);
 			return true;
 		}
@@ -688,10 +629,10 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 			final OID playerOid = spawnMsg.getSubject();
 			final String instanceName = (String) spawnMsg.getProperty("instanceName");
 			final String markerName = (String) spawnMsg.getProperty("marker");
-			Log.debug("CHANGEI: player " + playerOid + " is changing instance to " + instanceName + " with marker " + markerName);
+			log.debug("CHANGEI: player " + playerOid + " is changing instance to " + instanceName + " with marker " + markerName);
 			final OID instanceOid = InstanceClient.getInstanceOid(instanceName);
 			if (instanceOid == null) {
-				Log.debug("CHANGEI: Instance name is wrong: " + instanceName);
+				log.debug("CHANGEI: Instance name is wrong: " + instanceName);
 				return true;
 			}
 			final BasicWorldNode node = new BasicWorldNode();

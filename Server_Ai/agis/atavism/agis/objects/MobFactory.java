@@ -4,16 +4,16 @@
 
 package atavism.agis.objects;
 
-import java.util.Iterator;
-import atavism.server.util.Log;
-import atavism.server.objects.ObjectStub;
-import atavism.server.math.Point;
-import atavism.server.engine.OID;
-import atavism.server.objects.SpawnData;
-import atavism.server.engine.Behavior;
-import java.util.LinkedList;
 import java.io.Serializable;
+import java.util.LinkedList;
+
+import atavism.server.engine.Behavior;
+import atavism.server.engine.OID;
+import atavism.server.math.Point;
 import atavism.server.objects.ObjectFactory;
+import atavism.server.objects.ObjectStub;
+import atavism.server.objects.SpawnData;
+import atavism.server.util.Log;
 
 public class MobFactory extends ObjectFactory implements Serializable
 {

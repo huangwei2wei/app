@@ -171,11 +171,6 @@ public class ObjectTracker {
 		this.lock.lock();
 		try {
 			this.localObjects.remove(oid);
-			if (this.perceptionFilter.removeTarget(oid)) {
-				final FilterUpdate filterUpdate = new FilterUpdate(1);
-				filterUpdate.removeFieldValue(1, oid);
-				Engine.getAgent().applyFilterUpdate(this.perceptionSubId, filterUpdate);
-			}
 			this.reactionRadiusMap.remove(oid);
 			final List<OID> trackersToRemove = new ArrayList<OID>();
 			for (final OID objOid : this.trackMap.keySet()) {
@@ -196,44 +191,7 @@ public class ObjectTracker {
 		} finally {
 			this.lock.unlock();
 		}
-		if (Log.loggingDebug) {
-			Log.debug("ObjectTracker.removeLocalObject: oid=" + oid + " instanceOid=" + this.instanceOid);
-		}
-		return true;
-	}
-
-	protected boolean maybeAddRemoteObject(final PerceptionMessage.ObjectNote objectNote) {
-		final ObjectType objType = objectNote.getObjectType();
-		final OID oid = objectNote.getSubject();
-		final OID trackerOid = objectNote.getTarget();
-		boolean callbackNixedIt = false;
-		if (this.remoteObjectFilter != null) {
-			callbackNixedIt = !this.remoteObjectFilter.objectShouldBeTracked(oid, objectNote);
-		}
-		if (callbackNixedIt || !objType.isMob()) {
-			if (Log.loggingDebug) {
-				Log.debug("ObjectTracker.maybeAddRemoteObject: ignoring oid=" + oid + " objType=" + objType + " detected by " + trackerOid + ", instanceOid=" + this.instanceOid);
-			}
-			return false;
-		}
-		if (Log.loggingDebug) {
-			Log.debug("ObjectTracker.maybeAddRemoteObject: oid=" + oid + " objType=" + objType + " detected by " + trackerOid + ", instanceOid=" + this.instanceOid);
-		}
-		this.lock.lock();
-		try {
-			if (this.localObjects.contains(oid)) {
-				return false;
-			}
-			Entry tracker = this.trackMap.get(oid);
-			if (tracker == null) {
-				tracker = new Entry(oid);
-				this.trackMap.put(oid, tracker);
-				tracker.activate(objType);
-			}
-			tracker.add(trackerOid);
-		} finally {
-			this.lock.unlock();
-		}
+		log.debug("ObjectTracker.removeLocalObject: oid=" + oid + " instanceOid=" + this.instanceOid);
 		return true;
 	}
 
@@ -274,7 +232,11 @@ public class ObjectTracker {
 			this.lock.unlock();
 		}
 	}
-
+	/**
+	 * 更新 entity
+	 * 
+	 * @param ewwn
+	 */
 	public void updateEntity(final EntityWithWorldNode ewwn) {
 		this.lock.lock();
 		Map<OID, NotifyData> mapCopy;
@@ -287,7 +249,7 @@ public class ObjectTracker {
 		final Entity entity = ewwn.getEntity();
 		final OID oid = entity.getOid();
 		if (entity.getType() == ObjectTypes.player) {
-			Log.debug("Checking player perceiver for obj: " + oid);
+			log.debug("Checking player perceiver for obj: " + oid);
 		}
 		for (final Map.Entry<OID, NotifyData> entry : mapCopy.entrySet()) {
 			final OID notifyOid = entry.getKey();
@@ -299,7 +261,7 @@ public class ObjectTracker {
 			if (perceiver != null) {
 				final InterpolatedWorldNode perceiverNode = perceiver.getWorldNode();
 				if (perceiverNode == null) {
-					Log.error("REACT: percieverNode is null for: " + perceiver.getOid());
+					log.error("REACT: percieverNode is null for: " + perceiver.getOid());
 				} else {
 					final Point perceiverLocation = perceiverNode.getLoc();
 					final float distance = Point.distanceTo(perceiverLocation, wnode.getLoc());
@@ -344,23 +306,16 @@ public class ObjectTracker {
 					}
 				}
 			} else {
-				Log.warn("ObjectTracker.updateEntity: No perceiver for oid " + notifyOid + " in namespace " + this.namespace);
+				log.warn("ObjectTracker.updateEntity: No perceiver for oid " + notifyOid + " in namespace " + this.namespace);
 			}
 		}
-	}
-
-	@Override
-	public void dispatchMessage(final Message message, final int flags, final MessageCallback callback) {
-		Engine.defaultDispatchMessage(message, flags, callback);
 	}
 
 	protected void handlePerception(final PerceptionMessage perceptionMessage) {
 		final OID targetOid = perceptionMessage.getTarget();
 		final List<PerceptionMessage.ObjectNote> gain = perceptionMessage.getGainObjects();
 		final List<PerceptionMessage.ObjectNote> lost = perceptionMessage.getLostObjects();
-		if (Log.loggingDebug) {
-			Log.debug("ObjectTracker.handlePerception: start instanceOid=" + this.instanceOid + " " + ((gain == null) ? 0 : gain.size()) + " gain and " + ((lost == null) ? 0 : lost.size()) + " lost");
-		}
+		log.debug("ObjectTracker.handlePerception: start instanceOid=" + this.instanceOid + " " + ((gain == null) ? 0 : gain.size()) + " gain and " + ((lost == null) ? 0 : lost.size()) + " lost");
 		if (gain != null) {
 			for (final PerceptionMessage.ObjectNote note : gain) {
 				this.maybeAddRemoteObject(note);
@@ -389,9 +344,7 @@ public class ObjectTracker {
 			final OID oid = wnodeMsg.getSubject();
 			final EntityWithWorldNode obj = (EntityWithWorldNode) EntityManager.getEntityByNamespace(oid, this.namespace);
 			if (obj == null) {
-				if (Log.loggingDebug) {
-					Log.debug("ObjectTracker.handleMessage: ignoring updateWNMsg for oid " + oid + " because EntityWithWorldNode for oid not found");
-				}
+				log.debug("ObjectTracker.handleMessage: ignoring updateWNMsg for oid " + oid + " because EntityWithWorldNode for oid not found");
 				return;
 			}
 			final BasicWorldNode bwnode = wnodeMsg.getWorldNode();
@@ -404,13 +357,8 @@ public class ObjectTracker {
 			}
 			this.updateEntity(obj);
 		} else {
-			Log.error("ObjectTracker.handleMessage: unknown message type=" + msg.getMsgType() + " class=" + msg.getClass().getName());
+			log.error("ObjectTracker.handleMessage: unknown message type=" + msg.getMsgType() + " class=" + msg.getClass().getName());
 		}
-	}
-
-	static {
-		MSG_TYPE_NOTIFY_REACTION_RADIUS = MessageType.intern("ao.NOTIFY_REACTION_RADIUS");
-		MSG_TYPE_NOTIFY_AGGRO_RADIUS = MessageType.intern("ao.NOTIFY_AGGRO_RADIUS");
 	}
 
 	public static class NotifyReactionRadiusMessage extends TargetMessage {
@@ -467,16 +415,12 @@ public class ObjectTracker {
 			final EntityWithWorldNode obj = ObjectTracker.this.entityFactory.createEntity(this.oid, null, -1);
 			final Entity entity = obj.getEntity();
 			entity.setType(objType);
-			if (Log.loggingDebug) {
-				Log.debug("ObjectTracker.Entry.activate: obj=" + obj + " objType=" + objType);
-			}
+			log.debug("ObjectTracker.Entry.activate: obj=" + obj + " objType=" + objType);
 			EntityManager.registerEntityByNamespace((Entity) obj, ObjectTracker.this.namespace);
 		}
 
 		public void deactivate() {
-			if (Log.loggingDebug) {
-				Log.debug("ObjectTracker.Entry.deactivate: oid=" + this.oid + " instanceOid=" + ObjectTracker.this.instanceOid + " namespace=" + ObjectTracker.this.namespace.getName());
-			}
+			log.debug("ObjectTracker.Entry.deactivate: oid=" + this.oid + " instanceOid=" + ObjectTracker.this.instanceOid + " namespace=" + ObjectTracker.this.namespace.getName());
 			EntityManager.removeEntityByNamespace(this.oid, ObjectTracker.this.namespace);
 		}
 	}
@@ -548,14 +492,14 @@ public class ObjectTracker {
 
 		@Override
 		public boolean matchRemaining(final Message msg) {
-			Log.debug("TrackerFilter.match checking message with data: " + msg.toString());
+			log.debug("TrackerFilter.match checking message with data: " + msg.toString());
 			if (!super.matchRemaining(msg)) {
 				return false;
 			}
 			if (msg instanceof WorldManagerClient.UpdateWorldNodeMessage) {
 				final WorldManagerClient.UpdateWorldNodeMessage message = (WorldManagerClient.UpdateWorldNodeMessage) msg;
 				final OID instanceOid = message.getWorldNode().getInstanceOid();
-				Log.debug("TrackerFilter.match checking message with subject: " + message.getSubject() + " instanceOid: " + instanceOid);
+				log.debug("TrackerFilter.match checking message with subject: " + message.getSubject() + " instanceOid: " + instanceOid);
 				return instanceOid.equals(this.trackedInstanceOid);
 			}
 			return true;

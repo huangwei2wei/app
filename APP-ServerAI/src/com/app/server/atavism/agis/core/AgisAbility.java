@@ -2,32 +2,32 @@
 // Decompiled by Procyon v0.5.30
 // 
 
-package atavism.agis.core;
+package com.app.server.atavism.agis.core;
 
 import atavism.agis.util.EventMessageHelper;
-import atavism.server.engine.EnginePlugin;
+import com.app.server.atavism.server.engine.EnginePlugin;
 import atavism.agis.objects.AgisItem;
 import atavism.server.plugins.InventoryClient;
 import atavism.agis.objects.TargetInfo;
 import atavism.msgsys.Message;
-import atavism.server.engine.Engine;
+import com.app.server.atavism.server.engine.Engine;
 import atavism.agis.plugins.CombatClient;
 import atavism.agis.plugins.AgisInventoryClient;
-import atavism.server.engine.BasicWorldNode;
+import com.app.server.atavism.server.engine.BasicWorldNode;
 import atavism.agis.plugins.CombatPlugin;
-import atavism.server.math.Point;
+import com.app.server.atavism.server.math.Point;
 import atavism.server.util.Log;
-import atavism.server.plugins.WorldManagerClient;
-import atavism.server.engine.OID;
-import atavism.agis.objects.CombatInfo;
+import com.app.server.atavism.server.plugins.WorldManagerClient;
+import com.app.server.atavism.server.engine.OID;
+import com.app.server.atavism.agis.objects.CombatInfo;
 import java.util.List;
 import java.util.Iterator;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Collection;
 import java.util.HashMap;
-import atavism.server.util.LockFactory;
-import atavism.agis.objects.LevelingMap;
+import com.app.server.atavism.server.util.LockFactory;
+import com.app.server.atavism.agis.objects.LevelingMap;
 import atavism.agis.objects.CoordinatedEffect;
 import java.util.Set;
 import java.util.LinkedList;

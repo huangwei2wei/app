@@ -4,48 +4,49 @@
 
 package com.app.server.atavism.server.plugins;
 
-import atavism.msgsys.ResponseMessage;
-import atavism.msgsys.SubjectMessage;
-import  com.app.server.atavism.server.objects.SpawnData;
+import com.app.server.atavism.server.objects.SpawnData;
 import atavism.agis.objects.SpawnGenerator;
-import atavism.msgsys.Message;
 import java.util.HashMap;
-import atavism.server.objects.EntityWithWorldNodeFactory;
-import atavism.server.objects.ObjectStubFactory;
+import com.app.server.atavism.server.objects.EntityWithWorldNodeFactory;
+import com.app.server.atavism.server.objects.ObjectStubFactory;
 import java.util.List;
 import java.util.ArrayList;
-import atavism.server.pathing.PathSearcher;
-import atavism.server.objects.World;
+import java.util.Set;
+
+import com.app.server.atavism.server.pathing.PathSearcher;
+import com.app.server.atavism.server.objects.World;
 import com.app.server.atavism.server.engine.BasicWorldNode;
 import com.app.server.atavism.server.objects.Entity;
 import com.app.server.atavism.server.objects.EntityManager;
 import com.app.server.atavism.server.engine.InterpolatedWorldNode;
 import java.io.Serializable;
 import com.app.server.atavism.server.objects.Template;
-import atavism.server.util.Log;
 import com.app.server.atavism.server.objects.ObjectStub;
 import com.app.server.atavism.server.math.Quaternion;
 import com.app.server.atavism.server.math.Point;
-import atavism.server.engine.Hook;
-import atavism.server.util.AORuntimeException;
+import com.app.server.atavism.server.util.AORuntimeException;
 import com.app.server.atavism.server.objects.ObjectFactory;
-import atavism.server.objects.WEObjFactory;
-import atavism.msgsys.MessageCallback;
-import atavism.msgsys.IFilter;
+import com.app.server.atavism.server.objects.WEObjFactory;
 import com.app.server.atavism.server.engine.Engine;
-import atavism.msgsys.MessageTypeFilter;
 import com.app.server.atavism.server.engine.Namespace;
 import com.app.server.atavism.server.pathing.PathInfo;
 
 import com.app.server.atavism.server.objects.ObjectType;
 import java.util.Collection;
+
+import atavism.msgsys.GenericResponseMessage;
+import atavism.msgsys.Message;
 import atavism.server.objects.ObjectTracker;
+import atavism.server.plugins.ObjectManagerClient;
+import com.app.server.atavism.server.plugins.ObjectManagerPlugin;
+import atavism.server.plugins.WorldManagerClient;
+import atavism.server.plugins.ObjectManagerPlugin.MasterObject;
+import atavism.server.util.Log;
+
 import com.app.server.atavism.server.engine.OID;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
-
-import atavism.server.engine.EnginePlugin;
 
 public class MobManagerPlugin {
 	private static Map<String, Class> spawnGeneratorClasses;
@@ -55,38 +56,20 @@ public class MobManagerPlugin {
 	protected PathInfo pathInfo;
 	protected boolean askedForPathInfo;
 
+	protected static ObjectManagerPlugin objectManagerPlugin;
+
 	public MobManagerPlugin() {
 		this.pathInfo = null;
 		this.askedForPathInfo = false;
-		this.setPluginType("MobManager");
 	}
 
-	@Override
 	public void onActivate() {
 		try {
 			MobManagerPlugin.log.debug("onActivate()");
-			this.registerHooks();
-			this.registerUnloadHook(Namespace.MOB, new MobUnloadHook());
-			this.registerDeleteHook(Namespace.MOB, new MobDeleteHook());
-			final MessageTypeFilter filter = new MessageTypeFilter();
-			filter.addType(MobManagerClient.MSG_TYPE_CREATE_SPAWN_GEN);
-			filter.addType(InstanceClient.MSG_TYPE_INSTANCE_DELETED);
-			filter.addType(InstanceClient.MSG_TYPE_INSTANCE_UNLOADED);
-			Engine.getAgent().createSubscription(filter, this, 8);
-			final MessageTypeFilter filter2 = new MessageTypeFilter();
-			filter2.addType(MobManagerClient.MSG_TYPE_SET_AGGRO_RADIUS);
-			Engine.getAgent().createSubscription(filter2, this);
 			ObjectFactory.register("WEObjFactory", new WEObjFactory());
 		} catch (Exception e) {
 			throw new AORuntimeException("activate failed", e);
 		}
-	}
-
-	protected void registerHooks() {
-		this.getHookManager().addHook(MobManagerClient.MSG_TYPE_CREATE_SPAWN_GEN, new CreateSpawnGenHook());
-		this.getHookManager().addHook(MobManagerClient.MSG_TYPE_SET_AGGRO_RADIUS, new SetAggroRadiusHook());
-		this.getHookManager().addHook(InstanceClient.MSG_TYPE_INSTANCE_DELETED, new InstanceUnloadedHook());
-		this.getHookManager().addHook(InstanceClient.MSG_TYPE_INSTANCE_UNLOADED, new InstanceUnloadedHook());
 	}
 
 	public static ObjectStub createObject(final int templateID, final OID instanceOid, final Point loc, final Quaternion orient) {
@@ -94,9 +77,7 @@ public class MobManagerPlugin {
 	}
 
 	public static ObjectStub createObject(final int templateID, final OID instanceOid, final Point loc, final Quaternion orient, final boolean followsTerrain) {
-		if (Log.loggingDebug) {
-			MobManagerPlugin.log.debug("createObject: template=" + templateID + ", point=" + loc + ", calling into objectmanager to generate");
-		}
+		MobManagerPlugin.log.debug("createObject: template=" + templateID + ", point=" + loc + ", calling into objectmanager to generate");
 		final Template override = new Template();
 		override.put(WorldManagerClient.NAMESPACE, WorldManagerClient.TEMPL_INSTANCE, instanceOid);
 		override.put(WorldManagerClient.NAMESPACE, WorldManagerClient.TEMPL_LOC, loc);
@@ -108,27 +89,22 @@ public class MobManagerPlugin {
 	}
 
 	public static ObjectStub createObject(final int templateID, final Template override, final OID instanceOid) {
-		if (Log.loggingDebug) {
-			MobManagerPlugin.log.debug("createObject: template=" + templateID + ", override=" + override + ", instanceOid=" + instanceOid + " calling into objectmanager to generate");
-		}
+		MobManagerPlugin.log.debug("createObject: template=" + templateID + ", override=" + override + ", instanceOid=" + instanceOid + " calling into objectmanager to generate");
 		if (instanceOid != null) {
 			override.put(WorldManagerClient.NAMESPACE, WorldManagerClient.TEMPL_INSTANCE, instanceOid);
 		}
-		final OID objId = ObjectManagerClient.generateObject(templateID, ObjectManagerPlugin.MOB_TEMPLATE, override);
-		if (Log.loggingDebug) {
-			MobManagerPlugin.log.debug("generated object oid=" + objId);
-		}
+		// final OID objId = ObjectManagerClient.generateObject(templateID, ObjectManagerPlugin.MOB_TEMPLATE, override);
+		final OID objId = objectManagerPlugin.generateObject(templateID, ObjectManagerPlugin.MOB_TEMPLATE, override);// 创建怪物
+		MobManagerPlugin.log.debug("generated object oid=" + objId);
 		if (objId == null) {
-			Log.warn("MobManagerPlugin: oid is null, skipping");
+			log.warn("MobManagerPlugin: oid is null, skipping");
 			return null;
 		}
 		final BasicWorldNode bwNode = WorldManagerClient.getWorldNode(objId);
 		final InterpolatedWorldNode iwNode = new InterpolatedWorldNode(bwNode);
 		final ObjectStub obj = new ObjectStub(objId, iwNode, templateID);
 		EntityManager.registerEntityByNamespace(obj, Namespace.MOB);
-		if (Log.loggingDebug) {
-			MobManagerPlugin.log.debug("createObject: obj=" + obj);
-		}
+		MobManagerPlugin.log.debug("createObject: obj=" + obj);
 		return obj;
 	}
 

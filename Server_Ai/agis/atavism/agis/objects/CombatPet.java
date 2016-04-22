@@ -86,8 +86,8 @@ public class CombatPet extends Pet implements Serializable, MessageCallback
         final BasicWorldNode bwNode = WorldManagerClient.getWorldNode(this.ownerOid);
         final SpawnData spawnData = new SpawnData();
         ObjectStub obj = null;
-        obj = mobFactory.makeObject(spawnData, bwNode.getInstanceOid(), bwNode.getLoc());
-        obj.spawn();
+        obj = mobFactory.makeObject(spawnData, bwNode.getInstanceOid(), bwNode.getLoc());//创建对象
+        obj.spawn();//刷入地图
         final InterpolatedWorldNode iwNode = obj.getWorldNode();
         Log.debug("PET: pet " + this.mobName + " spawned at: " + iwNode.getLoc() + " in instance: " + iwNode.getInstanceOid());
         Log.debug("PET: owner is at: " + bwNode.getLoc() + " in instance: " + bwNode.getInstanceOid());

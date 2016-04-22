@@ -95,6 +95,8 @@ public class WorldManagerClient {
 	public static final String TEMPL_WORLDMGR_NAME = ":wmName";
 	public static String MOB_PATH_PROPERTY;
 	public static String MSG_PROP_LOC;
+	public static Namespace NAMESPACE;
+	public static Namespace INSTANCE_NAMESPACE = null;
 
 	public static boolean setWorldNode(final OID oid, final BasicWorldNode wnode) {
 		return setWorldNode(oid, wnode, 0);

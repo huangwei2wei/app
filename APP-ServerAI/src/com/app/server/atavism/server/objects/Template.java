@@ -15,20 +15,16 @@ import com.app.server.atavism.server.engine.Namespace;
 import java.util.Map;
 
 public class Template extends NamedPropertyClass implements Cloneable {
-	protected int templateID;
-	protected String templateType;
+	protected int templateID = -1;
+	protected String templateType = "Base";
 	private Map<Namespace, Map<String, Serializable>> propMap;
 	private static final long serialVersionUID = 1L;
 
 	public Template() {
-		this.templateID = -1;
-		this.templateType = "Base";
 		this.propMap = new HashMap<Namespace, Map<String, Serializable>>();
 	}
 
 	public Template(final String name) {
-		this.templateID = -1;
-		this.templateType = "Base";
 		this.propMap = new HashMap<Namespace, Map<String, Serializable>>();
 		this.setName(name);
 		this.setTemplateID(ObjectManagerPlugin.getNextFreeTemplateID());
@@ -36,8 +32,6 @@ public class Template extends NamedPropertyClass implements Cloneable {
 	}
 
 	public Template(final String name, final int id, final String type) {
-		this.templateID = -1;
-		this.templateType = "Base";
 		this.propMap = new HashMap<Namespace, Map<String, Serializable>>();
 		this.setName(name);
 		this.setTemplateID(id);

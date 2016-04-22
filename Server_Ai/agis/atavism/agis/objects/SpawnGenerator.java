@@ -105,7 +105,7 @@ public class SpawnGenerator implements MessageCallback, MessageDispatch, Runnabl
     public void initialize(final SpawnData data) {
         this.setSpawnData(data);
         this.setName(data.getName());
-        this.setSpawnID((int)data.getProperty("id"));
+        this.setSpawnID((Integer)data.getProperty("id"));
         this.setInstanceOid(data.getInstanceOid());
         this.setLoc(data.getLoc());
         this.setOrientation(data.getOrientation());

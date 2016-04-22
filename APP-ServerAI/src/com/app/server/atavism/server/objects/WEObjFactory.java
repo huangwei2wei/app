@@ -2,22 +2,24 @@
 // Decompiled by Procyon v0.5.30
 // 
 
-package atavism.server.objects;
+package com.app.server.atavism.server.objects;
 
 import java.util.HashMap;
 import java.lang.reflect.Constructor;
-import atavism.server.util.AORuntimeException;
-import atavism.server.plugins.MobManagerPlugin;
-import atavism.server.util.Log;
-import atavism.server.math.Point;
-import atavism.server.engine.OID;
-import atavism.server.engine.Behavior;
+import com.app.server.atavism.server.util.AORuntimeException;
+import com.app.server.atavism.server.plugins.MobManagerPlugin;
+import com.app.server.atavism.server.math.Point;
+import com.app.server.atavism.server.engine.OID;
+import com.app.server.atavism.server.engine.Behavior;
 import java.util.Map;
+import org.apache.log4j.Logger;
 
 public class WEObjFactory extends ObjectFactory {
+	protected static final Logger log = Logger.getLogger("navmesh");
 	protected static Map<String, Class<Behavior>> behavClassMap = new HashMap<String, Class<Behavior>>();
 	private static final Class[] constructorArgs = new Class[]{SpawnData.class};
 	protected SpawnData spawnData = null;
+
 	public WEObjFactory() {
 		super(0);
 	}
@@ -29,9 +31,7 @@ public class WEObjFactory extends ObjectFactory {
 	public ObjectStub makeObject(final SpawnData spawnData, final OID instanceOid, final Point loc) {
 		final int templateID = spawnData.getTemplateID();
 		final String behavNames = (String) spawnData.getProperty("Behaviors");
-		if (Log.loggingDebug) {
-			Log.debug("WEObjFactory.makeObject: templateID=" + templateID + " instanceOid=" + instanceOid + " Behaviors=" + behavNames + " propsize=" + spawnData.getPropertyMap().size());
-		}
+		log.debug("WEObjFactory.makeObject: templateID=" + templateID + " instanceOid=" + instanceOid + " Behaviors=" + behavNames + " propsize=" + spawnData.getPropertyMap().size());
 		final ObjectStub obj = MobManagerPlugin.createObject(templateID, spawnData.getInstanceOid(), loc, spawnData.getOrientation());
 		if (behavNames != null) {
 			for (String behavName : behavNames.split(",")) {
@@ -40,11 +40,11 @@ public class WEObjFactory extends ObjectFactory {
 					if (behavName.length() != 0) {
 						final Class behavClass = WEObjFactory.behavClassMap.get(behavName);
 						if (behavClass == null) {
-							Log.error("WEObjFactory.makeObject: unknown behavior=" + behavName + ", templateName=" + this.templateName + " instanceOid=" + instanceOid + " Behaviors=" + behavNames);
+							log.error("WEObjFactory.makeObject: unknown behavior=" + behavName + ", templateName=" + this.templateName + " instanceOid=" + instanceOid + " Behaviors=" + behavNames);
 						} else {
 							final Constructor<Behavior> constructor = behavClass.getConstructor((Class<?>[]) WEObjFactory.constructorArgs);
 							if (constructor == null) {
-								Log.error("WEObjFactory.makeObject: missing constructor with signature (SpawnData) on class " + behavClass);
+								log.error("WEObjFactory.makeObject: missing constructor with signature (SpawnData) on class " + behavClass);
 							} else {
 								final Object[] args = {spawnData};
 								final Behavior behav = constructor.newInstance(args);
