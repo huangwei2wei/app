@@ -11,16 +11,10 @@ import com.app.server.atavism.server.engine.BasicWorldNode;
 import com.app.server.atavism.server.engine.EnginePlugin.SubObjData;
 import com.app.server.atavism.server.engine.WMWorldNode;
 import com.app.server.atavism.server.objects.AOObject;
-import atavism.msgsys.GenericMessage;
 import com.app.server.atavism.server.objects.ObjectTypes;
-import atavism.msgsys.SubjectMessage;
 import java.util.Set;
-import atavism.server.util.Table;
-import atavism.msgsys.BooleanResponseMessage;
-import atavism.msgsys.ResponseMessage;
-import atavism.server.messages.OIDNamespaceMessage;
-import atavism.msgsys.ResponseCallback;
-import atavism.msgsys.NoRecipientsException;
+import com.app.server.atavism.server.util.Table;
+import com.app.server.atavism.msgsys.NoRecipientsException;
 import com.app.server.atavism.server.math.Point;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -28,20 +22,13 @@ import java.io.Serializable;
 import com.app.server.atavism.server.objects.Entity;
 import com.app.server.atavism.server.objects.EntityManager;
 import com.app.server.atavism.server.objects.ObjectType;
-import atavism.msgsys.GenericResponseMessage;
 import java.util.Iterator;
-import atavism.msgsys.Message;
-import atavism.server.engine.Hook;
 import java.util.List;
 import com.app.server.atavism.server.util.AORuntimeException;
 import java.util.Collection;
 import com.app.server.atavism.server.engine.Namespace;
 import java.util.ArrayList;
-import atavism.msgsys.MessageCallback;
-import atavism.msgsys.IFilter;
 import com.app.server.atavism.server.engine.Engine;
-import atavism.management.Management;
-import atavism.msgsys.MessageTypeFilter;
 import com.app.server.atavism.server.engine.OID;
 import java.util.Map;
 import com.app.server.atavism.server.objects.Template;
@@ -51,7 +38,7 @@ import com.app.server.atavism.server.plugins.ObjectManagerPlugin.MasterObject;
 import com.app.server.atavism.server.engine.Manager;
 import java.util.HashMap;
 import org.apache.log4j.Logger;
-import atavism.server.engine.EnginePlugin;
+import com.app.server.atavism.server.engine.EnginePlugin;
 
 public class ObjectManagerPlugin {
 	private static final int INSTANCE_OK = 0;
@@ -72,50 +59,38 @@ public class ObjectManagerPlugin {
 		this.registerTemplate(new Template("BaseTemplate", -1, "BaseTemplate"));
 	}
 
-	GenericResponseMessage generateSubObject(final OID masterOid, final Namespace namespace, final Template template) {
-		final ObjectManagerClient.GenerateSubObjectMessage msg = new ObjectManagerClient.GenerateSubObjectMessage(masterOid, namespace, template);
-		final GenericResponseMessage respMsg = (GenericResponseMessage) Engine.getAgent().sendRPC(msg);
-		return respMsg;
-	}
-
 	private void addInstance(final MasterObject instance) {
 		final InstanceState instanceState = new InstanceState(instance);
 		synchronized (this.instanceContent) {
 			final InstanceState previous = this.instanceContent.put(instance.getOid(), instanceState);
 			if (previous != null) {
-				Log.error("addInstance: duplicate instance [OLD " + previous + "] [NEW " + instanceState + "]");
+				log.error("addInstance: duplicate instance [OLD " + previous + "] [NEW " + instanceState + "]");
 			}
 		}
-		if (Log.loggingDebug) {
-			Log.debug("addInstance: added instanceOid=" + instance.getOid());
-		}
+		log.debug("addInstance: added instanceOid=" + instance.getOid());
 	}
 
 	private void removeInstance(final MasterObject instance) {
 		synchronized (this.instanceContent) {
 			final InstanceState instanceState = this.instanceContent.get(instance.getOid());
 			if (instanceState == null) {
-				Log.error("removeInstance: unknown instanceOid=" + instance.getOid());
+				log.error("removeInstance: unknown instanceOid=" + instance.getOid());
 				return;
 			}
 			if (instanceState.entities.size() > 0) {
-				Log.warn("removeInstance: wrong state: " + instanceState);
+				log.warn("removeInstance: wrong state: " + instanceState);
 			}
 			this.instanceContent.remove(instance.getOid());
 		}
-		if (Log.loggingDebug) {
-			Log.debug("removeInstance: removed instanceOid=" + instance.getOid());
-		}
+		log.debug("removeInstance: removed instanceOid=" + instance.getOid());
 	}
 
 	private void addInstanceContent(final OID instanceOid, final MasterObject entity) {
-		if (Log.loggingDebug) {
-			Log.debug("addInstanceContent: instanceOid=" + instanceOid + " oid=" + entity.getOid());
-		}
+		log.debug("addInstanceContent: instanceOid=" + instanceOid + " oid=" + entity.getOid());
 		synchronized (this.instanceContent) {
 			final InstanceState instanceState = this.instanceContent.get(instanceOid);
 			if (instanceState == null) {
-				Log.error("addInstanceContent: unknown instanceOid=" + instanceOid + " for " + entity);
+				log.error("addInstanceContent: unknown instanceOid=" + instanceOid + " for " + entity);
 				return;
 			}
 			instanceState.entities.add(entity);
@@ -126,12 +101,10 @@ public class ObjectManagerPlugin {
 		synchronized (this.instanceContent) {
 			final InstanceState instanceState = this.instanceContent.get(instanceOid);
 			if (instanceState == null) {
-				Log.error("removeInstanceContent: unknown instanceOid=" + instanceOid);
+				log.error("removeInstanceContent: unknown instanceOid=" + instanceOid);
 				return;
 			}
-			if (Log.loggingDebug) {
-				Log.debug("removeInstanceContent: instanceOid=" + instanceOid + " oid=" + entity.getOid() + " count=" + instanceState.entities.size());
-			}
+			log.debug("removeInstanceContent: instanceOid=" + instanceOid + " oid=" + entity.getOid() + " count=" + instanceState.entities.size());
 			instanceState.entities.remove(entity);
 		}
 	}
@@ -298,375 +271,6 @@ public class ObjectManagerPlugin {
 		return ObjectManagerPlugin.nextFreeTemplateID--;
 	}
 
-	class LoadObjectHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final ObjectManagerClient.LoadObjectMessage msg = (ObjectManagerClient.LoadObjectMessage) m;
-			OID oid = msg.getOid();
-			String persistenceKey = null;
-			MasterObject entity = null;
-			if (oid == null) {
-				persistenceKey = msg.getKey();
-				if (persistenceKey == null) {
-					Log.warn("LoadObjectHook: no key or oid");
-					Engine.getAgent().sendOIDResponse(msg, null);
-					return false;
-				}
-				final Entity temp = Engine.getDatabase().loadEntity(persistenceKey);
-				if (temp == null) {
-					ObjectManagerPlugin.log.error("LoadObjectHook: unknown object, key=" + persistenceKey);
-					Engine.getAgent().sendOIDResponse(msg, null);
-					return false;
-				}
-				if (!(temp instanceof MasterObject) || temp.getSubObjectNamespacesInt() == null) {
-					ObjectManagerPlugin.log.error("LoadObjectHook: not a master object, key=" + persistenceKey + " oid=" + temp.getOid());
-					Engine.getAgent().sendOIDResponse(msg, null);
-					return false;
-				}
-				entity = (MasterObject) EntityManager.getEntityByNamespace(temp.getOid(), Namespace.OBJECT_MANAGER);
-				if (entity != null) {
-					if (entity.loadComplete()) {
-						Log.debug("LoadObjectHook: object already loaded oid=" + oid + " entity=" + entity);
-						Engine.getAgent().sendOIDResponse(msg, oid);
-						return false;
-					}
-				} else {
-					entity = (MasterObject) temp;
-					EntityManager.registerEntityByNamespace(entity, Namespace.OBJECT_MANAGER);
-				}
-				oid = entity.getOid();
-			} else {
-				if (Log.loggingDebug) {
-					ObjectManagerPlugin.log.debug("LoadObjectHook: master oid=" + oid);
-				}
-				entity = (MasterObject) EntityManager.getEntityByNamespace(oid, Namespace.OBJECT_MANAGER);
-				if (entity != null) {
-					if (entity.loadComplete()) {
-						final Point location = new Point();
-						final OID instanceOid = Engine.getDatabase().getLocation(oid, WorldManagerClient.NAMESPACE, location);
-						Log.debug("LoadObjectHook: object already loaded oid=" + oid + " entity=" + entity + " with instanceOid: " + entity.getInstanceOid() + " and instanceOid from the database: "
-								+ instanceOid);
-						if (!instanceOid.equals(entity.getInstanceOid())) {
-						}
-						Engine.getAgent().sendOIDResponse(msg, oid);
-						return false;
-					}
-				} else {
-					entity = (MasterObject) Engine.getDatabase().loadEntity(oid, Namespace.OBJECT_MANAGER);
-					if (entity != null) {
-						EntityManager.registerEntityByNamespace(entity, Namespace.OBJECT_MANAGER);
-					}
-				}
-			}
-			if (entity == null || entity.isDeleted()) {
-				ObjectManagerPlugin.log.error("LoadObjectHook: no such entity with oid " + oid + " or key " + persistenceKey);
-				Engine.getAgent().sendOIDResponse(msg, null);
-				return false;
-			}
-			Collection<Namespace> namespaces = msg.getNamespaces();
-			if (namespaces == null) {
-				namespaces = entity.getSubObjectNamespaces();
-			}
-			OID instanceOid = null;
-			Point location2 = null;
-			if (namespaces.contains(WorldManagerClient.NAMESPACE) && !entity.isNamespaceLoaded(WorldManagerClient.NAMESPACE)) {
-				location2 = new Point();
-				instanceOid = Engine.getDatabase().getLocation(oid, WorldManagerClient.NAMESPACE, location2);
-				if (instanceOid == null) {
-					Log.error("LoadObjectHook: world manager object missing instanceOid, entity=" + entity);
-					Engine.getAgent().sendOIDResponse(msg, null);
-					return false;
-				}
-				Log.debug("POP: got instance on load: " + instanceOid);
-				if (ObjectManagerPlugin.this.instanceContent.get(instanceOid) == null) {
-					final int rc = InstanceClient.loadInstance(instanceOid);
-					if (rc != 0) {
-						if (rc != -1) {
-							Log.error("LoadObjectHook: internal error loading instanceOid=" + instanceOid + " for oid=" + oid + ", rc=" + rc);
-						}
-						Engine.getAgent().sendOIDResponse(msg, null);
-						return false;
-					}
-				}
-				if (!ObjectManagerPlugin.this.isInstanceLoading(instanceOid)) {
-					Log.error("LoadObjectHook: instance unavailable for oid=" + oid + " instanceOid=" + instanceOid + " " + ObjectManagerPlugin.this.instanceContent.get(instanceOid));
-					Engine.getAgent().sendOIDResponse(msg, null);
-					return false;
-				}
-				entity.setInstanceOid(instanceOid);
-			}
-			for (final Namespace namespace : namespaces) {
-				if (entity.isNamespaceLoaded(namespace)) {
-					continue;
-				}
-				if (Log.loggingDebug) {
-					ObjectManagerPlugin.log.debug("LoadObjectHook: masterOid=" + oid + ", sending load subobj msg, ns=" + namespace);
-				}
-				ObjectManagerClient.LoadSubObjectMessage loadSubMsg;
-				if (namespace == WorldManagerClient.NAMESPACE) {
-					loadSubMsg = new WorldManagerClient.LoadSubObjectMessage(oid, namespace, location2, instanceOid);
-				} else {
-					loadSubMsg = new ObjectManagerClient.LoadSubObjectMessage(oid, namespace);
-				}
-				Boolean rv;
-				try {
-					rv = Engine.getAgent().sendRPCReturnBoolean(loadSubMsg);
-				} catch (NoRecipientsException e) {
-					ObjectManagerPlugin.log.exception("LoadObjectHook: sub object load failed, maybe instance does not exist", e);
-					Engine.getAgent().sendOIDResponse(msg, null);
-					return false;
-				}
-				if (!rv) {
-					ObjectManagerPlugin.log.error("LoadObjectHook: sub object load failed: " + namespace);
-					Engine.getAgent().sendOIDResponse(msg, null);
-					return false;
-				}
-				entity.addLoadedNamespace(namespace);
-			}
-			if (namespaces.contains(WorldManagerClient.INSTANCE_NAMESPACE)) {
-				ObjectManagerPlugin.this.addInstance(entity);
-			}
-			if (instanceOid != null && !entity.getType().isPlayer()) {
-				ObjectManagerPlugin.this.addInstanceContent(instanceOid, entity);
-			}
-			Engine.getAgent().sendOIDResponse(msg, oid);
-			if (Log.loggingDebug) {
-				ObjectManagerPlugin.log.debug("LoadObjectHook: sent success response for master obj=" + oid);
-			}
-			return true;
-		}
-	}
-
-	class UnloadObjectHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final ObjectManagerClient.UnloadObjectMessage msg = (ObjectManagerClient.UnloadObjectMessage) m;
-			final OID oid = msg.getOid();
-			final MasterObject entity = (MasterObject) EntityManager.getEntityByNamespace(oid, Namespace.OBJECT_MANAGER);
-			if (entity == null) {
-				ObjectManagerPlugin.log.error("UnloadObjectHook: no such entity oid=" + oid);
-				Engine.getAgent().sendBooleanResponse(msg, false);
-				return false;
-			}
-			Collection<Namespace> namespaces = msg.getNamespaces();
-			if (namespaces == null) {
-				namespaces = entity.getSubObjectNamespaces();
-			}
-			int failure = 0;
-			for (final Namespace namespace : namespaces) {
-				if (Log.loggingDebug) {
-					ObjectManagerPlugin.log.debug("UnloadObjectHook: oid=" + oid + ", sending unload subobj msg, ns=" + namespace);
-				}
-				final ObjectManagerClient.UnloadSubObjectMessage unloadSubMsg = new ObjectManagerClient.UnloadSubObjectMessage(oid, namespace);
-				final Boolean rv = Engine.getAgent().sendRPCReturnBoolean(unloadSubMsg);
-				if (!rv) {
-					ObjectManagerPlugin.log.error("UnloadObjectHook: sub object unload failed oid=" + oid + " ns=" + namespace);
-					++failure;
-				} else {
-					if (msg.getNamespaces() == null) {
-						continue;
-					}
-					entity.removeLoadedNamespace(namespace);
-				}
-			}
-			if (msg.getNamespaces() == null) {
-				EntityManager.removeEntityByNamespace(entity, Namespace.OBJECT_MANAGER);
-				if (entity.getPersistenceFlag() && Engine.getPersistenceManager().isDirty(entity)) {
-					Engine.getPersistenceManager().persistEntity(entity);
-				}
-			}
-			if (namespaces.contains(WorldManagerClient.INSTANCE_NAMESPACE)) {
-				ObjectManagerPlugin.this.removeInstance(entity);
-			}
-			if (entity.getInstanceOid() != null && !entity.getType().isPlayer() && namespaces.contains(WorldManagerClient.NAMESPACE)) {
-				ObjectManagerPlugin.this.removeInstanceContent(entity.getInstanceOid(), entity);
-			}
-			if (Log.loggingDebug) {
-				ObjectManagerPlugin.log.debug("UnloadObjectHook: unloaded oid=" + oid + ", " + failure + " failures");
-			}
-			Engine.getAgent().sendBooleanResponse(msg, failure == 0);
-			return true;
-		}
-	}
-
-	class DeleteObjectHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final ObjectManagerClient.DeleteObjectMessage msg = (ObjectManagerClient.DeleteObjectMessage) m;
-			final OID oid = msg.getOid();
-			final MasterObject entity = (MasterObject) EntityManager.getEntityByNamespace(oid, Namespace.OBJECT_MANAGER);
-			if (entity == null) {
-				ObjectManagerPlugin.log.debug("DeleteObjectHook: no such entity oid=" + oid);
-				Engine.getDatabase().deleteObjectData(oid);
-				Engine.getAgent().sendBooleanResponse(msg, true);
-				return false;
-			}
-			if (entity.isDeleted()) {
-				return true;
-			}
-			entity.setDeleted();
-			final List<Namespace> namespaces = entity.getSubObjectNamespaces();
-			int failure = 0;
-			for (final Namespace namespace : namespaces) {
-				if (Log.loggingDebug) {
-					ObjectManagerPlugin.log.debug("DeleteObjectHook: oid=" + oid + ", sending delete subobj msg, ns=" + namespace);
-				}
-				final ObjectManagerClient.DeleteSubObjectMessage deleteSubMsg = new ObjectManagerClient.DeleteSubObjectMessage(oid, namespace);
-				final Boolean rv = Engine.getAgent().sendRPCReturnBoolean(deleteSubMsg);
-				if (!rv) {
-					ObjectManagerPlugin.log.error("DeleteObjectHook: sub object delete failed oid=" + oid + " ns=" + namespace);
-					++failure;
-				}
-			}
-			Engine.getDatabase().deleteObjectData(oid);
-			EntityManager.removeEntityByNamespace(entity, Namespace.OBJECT_MANAGER);
-			if (namespaces.contains(WorldManagerClient.INSTANCE_NAMESPACE)) {
-				ObjectManagerPlugin.this.removeInstance(entity);
-			}
-			if (entity.getInstanceOid() != null && !entity.getType().isPlayer()) {
-				ObjectManagerPlugin.this.removeInstanceContent(entity.getInstanceOid(), entity);
-			}
-			if (Log.loggingDebug) {
-				ObjectManagerPlugin.log.debug("DeleteObjectHook: deleted oid=" + oid + ", " + failure + " failures");
-			}
-			Engine.getAgent().sendBooleanResponse(msg, failure == 0);
-			return true;
-		}
-	}
-
-	class SaveObjectHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final ObjectManagerClient.SaveObjectMessage msg = (ObjectManagerClient.SaveObjectMessage) m;
-			new SaveObjectProcessor(msg).processMessage();
-			return true;
-		}
-	}
-
-	static class SaveObjectProcessor implements ResponseCallback {
-		ObjectManagerClient.SaveObjectMessage msg;
-		OID oid;
-		String key;
-		MasterObject masterObj;
-		List<Message> pendingRPC;
-
-		public SaveObjectProcessor(final ObjectManagerClient.SaveObjectMessage message) {
-			this.msg = message;
-			this.oid = this.msg.getOid();
-			this.key = this.msg.getKey();
-			this.masterObj = (MasterObject) EntityManager.getEntityByNamespace(this.oid, Namespace.OBJECT_MANAGER);
-		}
-
-		public void processMessage() {
-			if (Log.loggingDebug) {
-				Log.debug("SaveObjectHook: oid=" + this.oid);
-			}
-			if (!this.masterObj.getPersistenceFlag()) {
-				Log.warn("Ignoring saveObject for non-persistent object oid=" + this.oid);
-				Engine.getAgent().sendBooleanResponse(this.msg, Boolean.FALSE);
-				return;
-			}
-			final List<Namespace> namespaces = this.masterObj.getSubObjectNamespaces();
-			if (Log.loggingDebug) {
-				String s = "";
-				for (final Namespace ns : namespaces) {
-					if (s != "") {
-						s += ",";
-					}
-					s += ns;
-				}
-				Log.debug("SaveObjectHook: masterObj namespaces " + s);
-			}
-			synchronized (this.pendingRPC = new ArrayList<Message>(namespaces.size())) {
-				for (final Namespace namespace : namespaces) {
-					if (Log.loggingDebug) {
-						Log.debug("SaveObjectHook: oid=" + this.oid + ", sending save subobj msg to ns=" + namespace);
-					}
-					final Message saveSubMsg = new OIDNamespaceMessage(ObjectManagerClient.MSG_TYPE_SAVE_SUBOBJECT, this.oid, namespace);
-					this.pendingRPC.add(saveSubMsg);
-					Engine.getAgent().sendRPC(saveSubMsg, this);
-				}
-			}
-		}
-
-		@Override
-		public void handleResponse(final ResponseMessage response) {
-			synchronized (this.pendingRPC) {
-				Message request = null;
-				for (final Message message : this.pendingRPC) {
-					if (message.getMsgId() == response.getRequestId()) {
-						this.pendingRPC.remove(message);
-						request = message;
-						break;
-					}
-				}
-				if (request == null) {
-					Log.error("SaveObjectHook: unexpected response " + response);
-				}
-				if (!((BooleanResponseMessage) response).getBooleanVal()) {
-					ObjectManagerPlugin.log.warn("SaveObjectHook: sub object load failed for oid=" + this.oid + " " + request);
-				}
-			}
-			if (this.pendingRPC.size() == 0) {
-				this.saveMasterObject();
-				Engine.getAgent().sendBooleanResponse(this.msg, Boolean.TRUE);
-			}
-		}
-
-		void saveMasterObject() {
-			if (Log.loggingDebug) {
-				Log.debug("SaveObjectHook: saving master object oid=" + this.oid);
-			}
-			Engine.getPersistenceManager().callSaveHooks(this.masterObj);
-			Engine.getDatabase().saveObject(this.key, this.masterObj.toBytes(), this.masterObj.getNamespace());
-			if (Log.loggingDebug) {
-				Log.debug("SaveObjectHook: success oid=" + this.oid);
-			}
-		}
-	}
-
-	class LoadObjectDataHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final ObjectManagerClient.LoadObjectDataMessage msg = (ObjectManagerClient.LoadObjectDataMessage) m;
-			final OID oid = msg.getSubject();
-			final String persistenceKey = msg.getKey();
-			Entity entity = null;
-			if (persistenceKey != null) {
-				entity = Engine.getDatabase().loadEntity(persistenceKey);
-			} else if (oid != null) {
-				entity = Engine.getDatabase().loadEntity(oid, msg.getNamespace());
-			} else {
-				ObjectManagerPlugin.log.error("LoadObjectDataHook: oid and key both null");
-			}
-			Engine.getAgent().sendObjectResponse(msg, entity);
-			return true;
-		}
-	}
-
-	class SaveObjectDataHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final ObjectManagerClient.SaveObjectDataMessage msg = (ObjectManagerClient.SaveObjectDataMessage) m;
-			final OID oid = msg.getSubject();
-			final String persistenceKey = msg.getKey();
-			if (msg.getNamespace() == Namespace.TRANSIENT) {
-				ObjectManagerPlugin.log.warn("SaveObjectDataHook: ignoring transient namespace for oid=" + oid + " key=" + persistenceKey);
-				Engine.getAgent().sendBooleanResponse(msg, Boolean.FALSE);
-				return false;
-			}
-			if (Log.loggingDebug) {
-				ObjectManagerPlugin.log.debug("SaveObjectDataHook: oid=" + oid);
-			}
-			final byte[] data = msg.getDataBytes();
-			Engine.getDatabase().saveObject(persistenceKey, data, msg.getNamespace());
-			Engine.getAgent().sendBooleanResponse(msg, Boolean.TRUE);
-			if (Log.loggingDebug) {
-				ObjectManagerPlugin.log.debug("SaveObjectDataHook: sent response for obj=" + oid);
-			}
-			return true;
-		}
-	}
 	/**
 	 * 生成对象(怪物，人物
 	 * 
@@ -682,7 +286,6 @@ public class ObjectManagerPlugin {
 			log.error("template not found: " + templateType + ":" + templateID);
 			return null;
 		}
-
 		Template finalTemplate;
 		if (overrideTemplate != null) {
 			finalTemplate = template.merge(overrideTemplate);
@@ -723,7 +326,7 @@ public class ObjectManagerPlugin {
 			final Template subTemplate = finalTemplate.restrict(namespace);
 			subTemplate.put(Namespace.OBJECT_MANAGER, ":persistent", persistent);
 			ObjectManagerPlugin.log.debug("GenerateObjectHook: creating subobj for ns=" + namespace + ", subTemplate=" + subTemplate);
-			SubObjData subObjData = agisWorldManagerPlugin.generateSubObject(subTemplate, namespace, masterObj.getOid()); // 生成子对象
+			AOObject subObjData = agisWorldManagerPlugin.generateSubObject(subTemplate, namespace, masterObj.getOid()); // 生成子对象
 
 			// final GenericResponseMessage respMsg = ObjectManagerPlugin.this.generateSubObject(masterObj.getOid(), namespace, subTemplate);
 			masterObj.addLoadedNamespace(namespace);
@@ -739,334 +342,13 @@ public class ObjectManagerPlugin {
 		return masterObj.getOid();
 	}
 
-	class LoadInstanceContentHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final SubjectMessage message = (SubjectMessage) m;
-			final OID instanceOid = message.getSubject();
-			final MasterObject entity = (MasterObject) EntityManager.getEntityByNamespace(instanceOid, Namespace.OBJECT_MANAGER);
-			if (entity == null) {
-				Log.error("LoadInstanceContentHook: instance not loaded instanceOid=" + instanceOid);
-				Engine.getAgent().sendBooleanResponse(message, false);
-				return true;
-			}
-			if (!ObjectManagerPlugin.this.isInstanceOk(instanceOid, 1)) {
-				Log.error("LoadInstanceContentHook: instance not available instanceOid=" + instanceOid);
-				Engine.getAgent().sendBooleanResponse(message, false);
-				return true;
-			}
-			final List<OID> content = Engine.getDatabase().getInstanceContent(instanceOid, ObjectTypes.player);
-			for (final OID oid : content) {
-				if (ObjectManagerClient.loadObject(oid) != null) {
-					WorldManagerClient.spawn(oid);
-				}
-			}
-			ObjectManagerPlugin.this.setInstanceStatus(instanceOid, 0);
-			Engine.getAgent().sendBooleanResponse(message, true);
-			return true;
-		}
-	}
+ 
 
-	class UnloadInstanceHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final SubjectMessage message = (SubjectMessage) m;
-			final OID instanceOid = message.getSubject();
-			final MasterObject entity = (MasterObject) EntityManager.getEntityByNamespace(instanceOid, Namespace.OBJECT_MANAGER);
-			if (entity == null) {
-				Log.error("UnloadInstanceHook: instance not loaded oid=" + instanceOid);
-				Engine.getAgent().sendBooleanResponse(message, false);
-				return true;
-			}
-			if (!ObjectManagerPlugin.this.isInstanceOk(instanceOid, 2)) {
-				Log.error("UnloadInstanceHook: instance not available instanceOid=" + instanceOid);
-				Engine.getAgent().sendBooleanResponse(message, false);
-				return true;
-			}
-			final InstanceState instanceState = ObjectManagerPlugin.this.instanceContent.get(instanceOid);
-			if (instanceState != null) {
-				final List<MasterObject> objects = new ArrayList<MasterObject>(instanceState.entities);
-				for (final MasterObject obj : objects) {
-					if (!obj.getType().isPlayer()) {
-						ObjectManagerClient.unloadObject(obj.getOid());
-					}
-				}
-			}
-			final SubjectMessage unloadedMessage = new SubjectMessage(InstanceClient.MSG_TYPE_INSTANCE_UNLOADED, instanceOid);
-			Engine.getAgent().sendBroadcastRPC(unloadedMessage, new InstanceRPCCallback(instanceOid, "InstanceUnloaded"));
-			ObjectManagerClient.unloadObject(instanceOid);
-			Engine.getAgent().sendBooleanResponse(message, true);
-			return true;
-		}
-	}
 
-	class DeleteInstanceHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final SubjectMessage message = (SubjectMessage) m;
-			final OID instanceOid = message.getSubject();
-			final MasterObject entity = (MasterObject) EntityManager.getEntityByNamespace(instanceOid, Namespace.OBJECT_MANAGER);
-			if (entity == null) {
-				Log.error("DeleteInstanceHook: instance not loaded oid=" + instanceOid);
-				Engine.getAgent().sendBooleanResponse(message, false);
-				return true;
-			}
-			if (!ObjectManagerPlugin.this.isInstanceOk(instanceOid, 3)) {
-				Log.error("DeleteInstanceHook: instance not available instanceOid=" + instanceOid);
-				Engine.getAgent().sendBooleanResponse(message, false);
-				return true;
-			}
-			final InstanceState instanceState = ObjectManagerPlugin.this.instanceContent.get(instanceOid);
-			if (instanceState != null) {
-				final List<MasterObject> objects = new ArrayList<MasterObject>(instanceState.entities);
-				for (final MasterObject obj : objects) {
-					if (!obj.getType().isPlayer()) {
-						ObjectManagerClient.deleteObject(obj.getOid());
-					}
-				}
-			}
-			final SubjectMessage deletedMessage = new SubjectMessage(InstanceClient.MSG_TYPE_INSTANCE_DELETED, instanceOid);
-			Engine.getAgent().sendBroadcastRPC(deletedMessage, new InstanceRPCCallback(instanceOid, "InstanceDeleted"));
-			ObjectManagerClient.deleteObject(instanceOid);
-			Engine.getAgent().sendBooleanResponse(message, true);
-			return true;
-		}
-	}
 
-	public static class InstanceRPCCallback implements ResponseCallback {
-		OID instanceOid;
-		String operation;
 
-		public InstanceRPCCallback(final OID instanceOid, final String operation) {
-			this.instanceOid = instanceOid;
-			this.operation = operation;
-		}
 
-		@Override
-		public void handleResponse(final ResponseMessage response) {
-			Log.debug(this.operation + ": got response, instanceOid=" + this.instanceOid);
-		}
-	}
 
-	class SetPersistenceHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final ObjectManagerClient.SetPersistenceMessage msg = (ObjectManagerClient.SetPersistenceMessage) m;
-			final OID oid = msg.getSubject();
-			final Entity master = EntityManager.getEntityByNamespace(oid, Namespace.OBJECT_MANAGER);
-			if (master == null) {
-				Log.error("SetPersistenceHook: no master entity found for oid " + oid);
-				Engine.getAgent().sendBooleanResponse(m, false);
-			}
-			final Boolean persistVal = msg.getPersistVal();
-			if (Log.loggingDebug) {
-				ObjectManagerPlugin.log.debug("SetPersistenceHook: masterOid=" + oid + ", persistVal=" + persistVal);
-			}
-			final List<Namespace> namespaces = master.getSubObjectNamespaces();
-			for (final Namespace namespace : namespaces) {
-				if (Log.loggingDebug) {
-					ObjectManagerPlugin.log.debug("SetPersistenceHook: masterOid=" + oid + ", sending setpersistence msg to sub ns " + namespace);
-				}
-				final Message persistSubMsg = new ObjectManagerClient.SetSubPersistenceMessage(oid, namespace, persistVal);
-				Engine.getAgent().sendRPC(persistSubMsg);
-			}
-			master.setPersistenceFlag(persistVal);
-			if (persistVal) {
-				Engine.getPersistenceManager().setDirty(master);
-				ObjectManagerPlugin.log.debug("SetPersistenceHook: set master object dirty");
-			} else {
-				Engine.getDatabase().deleteObjectData(oid);
-			}
-			ObjectManagerPlugin.log.debug("SetPersistenceHook: done with persistence");
-			Engine.getAgent().sendBooleanResponse(m, true);
-			return true;
-		}
-	}
-	/**
-	 * 注册模板
-	 * 
-	 * @param m
-	 * @param flags
-	 * @return
-	 */
-	public boolean RegisterTemplate(Template template) {
-		final boolean successStatus = ObjectManagerPlugin.this.registerTemplate(template);
-		if (Log.loggingDebug) {
-			ObjectManagerPlugin.log.debug("handleRegisterTemplateMsg: registered template: " + template + ", success=" + successStatus);
-		}
-		ObjectManagerPlugin.log.debug("handleRegisterTemplateMsg: sending response message");
-
-		ObjectManagerPlugin.log.debug("handleRegisterTemplateMsg: response message sent");
-		return true;
-	}
-
-	class RegisterTemplateHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final ObjectManagerClient.RegisterTemplateMessage msg = (ObjectManagerClient.RegisterTemplateMessage) m;
-			final Template template = msg.getTemplate();
-			final boolean successStatus = ObjectManagerPlugin.this.registerTemplate(template);
-			if (Log.loggingDebug) {
-				ObjectManagerPlugin.log.debug("handleRegisterTemplateMsg: registered template: " + template + ", success=" + successStatus);
-			}
-			ObjectManagerPlugin.log.debug("handleRegisterTemplateMsg: sending response message");
-			Engine.getAgent().sendBooleanResponse(msg, successStatus);
-			ObjectManagerPlugin.log.debug("handleRegisterTemplateMsg: response message sent");
-			return true;
-		}
-	}
-
-	class GetTemplateHook implements Hook {
-		@Override
-		public boolean processMessage(final Message m, final int flags) {
-			final ObjectManagerClient.GetTemplateMessage msg = (ObjectManagerClient.GetTemplateMessage) m;
-			final String templateType = msg.getTemplateType();
-			final int templateID = msg.getTemplateID();
-			final Template template = ObjectManagerPlugin.this.templateManager.get(templateType).get(templateID);
-			Engine.getAgent().sendObjectResponse(msg, template);
-			return true;
-		}
-	}
-
-	class GetTemplateNamesHook implements Hook {
-		@Override
-		public boolean processMessage(final Message message, final int flags) {
-			final GenericMessage msg = (GenericMessage) message;
-			final String templateType = (String) msg.getProperty("templateType");
-			final List<Integer> templateIDs = ObjectManagerPlugin.this.templateManager.get(templateType).keyList();
-			Engine.getAgent().sendObjectResponse(message, templateIDs);
-			return true;
-		}
-	}
-
-	class FixWorldNodeHook implements Hook {
-		@Override
-		public boolean processMessage(final Message msg, final int flags) {
-			final ObjectManagerClient.FixWorldNodeMessage message = (ObjectManagerClient.FixWorldNodeMessage) msg;
-			final BasicWorldNode worldNode = message.getWorldNode();
-			Entity entity = null;
-			try {
-				entity = Engine.getDatabase().loadEntity(message.getOid(), WorldManagerClient.NAMESPACE);
-			} catch (AORuntimeException e) {
-				Engine.getAgent().sendBooleanResponse(msg, false);
-				return false;
-			}
-			if (entity == null) {
-				Log.error("FixWorldNodeHook: unknown oid=" + message.getOid());
-				Engine.getAgent().sendBooleanResponse(msg, false);
-				return false;
-			}
-			if (!(entity instanceof AOObject)) {
-				Log.error("FixWorldNodeHook: not instanceof AOObject oid=" + message.getOid() + " class=" + entity.getClass().getName());
-				Engine.getAgent().sendBooleanResponse(msg, false);
-				return false;
-			}
-			final AOObject obj = (AOObject) entity;
-			final WMWorldNode wnode = (WMWorldNode) obj.worldNode();
-			wnode.setInstanceOid(worldNode.getInstanceOid());
-			if (worldNode.getLoc() != null) {
-				wnode.setLoc(worldNode.getLoc());
-			}
-			if (worldNode.getOrientation() != null) {
-				wnode.setOrientation(worldNode.getOrientation());
-			}
-			if (worldNode.getDir() != null) {
-				wnode.setDir(worldNode.getDir());
-			}
-			Engine.getPersistenceManager().persistEntity(obj);
-			if (Log.loggingDebug) {
-				ObjectManagerPlugin.log.debug("FixWorldNodeHook: done oid=" + message.getOid() + " wnode=" + obj.worldNode());
-			}
-			Engine.getAgent().sendBooleanResponse(msg, true);
-			return true;
-		}
-	}
-
-	class GetNamedObjectHook implements Hook {
-		@Override
-		public boolean processMessage(final Message msg, final int flags) {
-			final ObjectManagerClient.GetNamedObjectMessage message = (ObjectManagerClient.GetNamedObjectMessage) msg;
-			OID oid = null;
-			if (message.getInstanceOid() != null) {
-				oid = ObjectManagerPlugin.this.getInstanceNamedObject(message.getInstanceOid(), message.getName(), message.getObjectType());
-			} else if (message.getName() != null) {
-				oid = ObjectManagerPlugin.this.getNamedObject(message.getName(), message.getObjectType());
-			}
-			Engine.getAgent().sendOIDResponse(message, oid);
-			return true;
-		}
-	}
-
-	class GetMatchingObjectsHook implements Hook {
-		@Override
-		public boolean processMessage(final Message msg, final int flags) {
-			final ObjectManagerClient.GetMatchingObjectsMessage message = (ObjectManagerClient.GetMatchingObjectsMessage) msg;
-			final List<OID> rv = ObjectManagerPlugin.this.getMatchingObjects(message.getInstanceOid(), message.getName(), message.getObjectType(), message.getFilters());
-			Engine.getAgent().sendObjectResponse(message, rv);
-			return true;
-		}
-	}
-
-	class GetPluginStatusHook implements Hook {
-		int lastLoginCount;
-
-		GetPluginStatusHook() {
-			this.lastLoginCount = 0;
-		}
-
-		@Override
-		public boolean processMessage(final Message msg, final int flags) {
-			final LinkedHashMap<String, Serializable> status = new LinkedHashMap<String, Serializable>();
-			status.put("plugin", ObjectManagerPlugin.this.getName());
-			try {
-				status.put("account", Engine.getDatabase().getAccountCount(Engine.getWorldName()));
-			} catch (Exception e) {
-				Log.exception("GetPluginStatusHook", e);
-			}
-			Engine.getAgent().sendObjectResponse(msg, status);
-			return true;
-		}
-	}
-
-	class GetObjectStatusHook implements Hook {
-		int lastLoginCount;
-
-		GetObjectStatusHook() {
-			this.lastLoginCount = 0;
-		}
-
-		@Override
-		public boolean processMessage(final Message msg, final int flags) {
-			final OID oid = ((SubjectMessage) msg).getSubject();
-			final ObjectManagerClient.ObjectStatus objectStatus = new ObjectManagerClient.ObjectStatus();
-			objectStatus.oid = oid;
-			final MasterObject masterObject = (MasterObject) EntityManager.getEntityByNamespace(oid, Namespace.OBJECT_MANAGER);
-			if (masterObject == null) {
-				final String name = Engine.getDatabase().getObjectName(oid, Namespace.OBJECT_MANAGER);
-				objectStatus.name = name;
-				Engine.getAgent().sendObjectResponse(msg, objectStatus);
-				return true;
-			}
-			if (masterObject.isDeleted()) {
-				Engine.getAgent().sendObjectResponse(msg, objectStatus);
-				return true;
-			}
-			objectStatus.name = masterObject.getName();
-			objectStatus.type = masterObject.getType();
-			objectStatus.persistent = masterObject.getPersistenceFlag();
-			objectStatus.namespaces = new ArrayList<Namespace>(masterObject.getSubObjectNamespaces());
-			objectStatus.loadedNamespaces = new ArrayList<Namespace>(objectStatus.namespaces.size());
-			final int loadedNS = masterObject.getLoadedNamespaces();
-			for (int nsBit = 2, nsInt = 1; nsBit != 0; nsBit <<= 1, ++nsInt) {
-				if ((loadedNS & nsBit) != 0x0) {
-					final Namespace namespace = Namespace.getNamespaceFromInt(nsInt);
-					objectStatus.loadedNamespaces.add(namespace);
-				}
-			}
-			Engine.getAgent().sendObjectResponse(msg, objectStatus);
-			return true;
-		}
-	}
 
 	public static class MasterObject extends Entity {
 		private transient int loadedNamespaces;

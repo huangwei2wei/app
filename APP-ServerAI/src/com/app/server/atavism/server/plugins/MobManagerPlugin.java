@@ -5,7 +5,7 @@
 package com.app.server.atavism.server.plugins;
 
 import com.app.server.atavism.server.objects.SpawnData;
-import atavism.agis.objects.SpawnGenerator;
+import com.app.server.atavism.agis.objects.SpawnGenerator;
 import java.util.HashMap;
 import com.app.server.atavism.server.objects.EntityWithWorldNodeFactory;
 import com.app.server.atavism.server.objects.ObjectStubFactory;
@@ -34,14 +34,11 @@ import com.app.server.atavism.server.pathing.PathInfo;
 import com.app.server.atavism.server.objects.ObjectType;
 import java.util.Collection;
 
-import atavism.msgsys.GenericResponseMessage;
-import atavism.msgsys.Message;
-import atavism.server.objects.ObjectTracker;
-import atavism.server.plugins.ObjectManagerClient;
+import com.app.server.atavism.server.objects.ObjectTracker;
+import com.app.server.atavism.server.plugins.ObjectManagerClient;
 import com.app.server.atavism.server.plugins.ObjectManagerPlugin;
-import atavism.server.plugins.WorldManagerClient;
-import atavism.server.plugins.ObjectManagerPlugin.MasterObject;
-import atavism.server.util.Log;
+import com.app.server.atavism.server.plugins.WorldManagerClient;
+import com.app.server.atavism.server.plugins.ObjectManagerPlugin.MasterObject;
 
 import com.app.server.atavism.server.engine.OID;
 import java.util.Map;
@@ -132,9 +129,7 @@ public class MobManagerPlugin {
 		synchronized (MobManagerPlugin.trackers) {
 			ObjectTracker tracker = MobManagerPlugin.trackers.get(instanceOID);
 			if (tracker == null) {
-				if (Log.loggingDebug) {
-					MobManagerPlugin.log.debug("Creating ObjectTracker for instanceOid=" + instanceOID + "with types: " + MobManagerPlugin.trackedObjectTypes);
-				}
+				MobManagerPlugin.log.debug("Creating ObjectTracker for instanceOid=" + instanceOID + "with types: " + MobManagerPlugin.trackedObjectTypes);
 				tracker = new ObjectTracker(Namespace.MOB, instanceOID, new ObjectStubFactory(), MobManagerPlugin.trackedObjectTypes);
 				MobManagerPlugin.trackers.put(instanceOID, tracker);
 			}
@@ -150,7 +145,7 @@ public class MobManagerPlugin {
 
 	public static void setAggroRadiusTracker(final OID mob, final OID target, final int reactionRadius) {
 		final OID instanceOID = WorldManagerClient.getObjectInfo(mob).instanceOid;
-		Log.debug("AJ: AggroRadius with instanceOid: " + instanceOID + " and trackers: " + MobManagerPlugin.trackers);
+		log.debug("AJ: AggroRadius with instanceOid: " + instanceOID + " and trackers: " + MobManagerPlugin.trackers);
 		synchronized (MobManagerPlugin.trackers) {
 			final ObjectTracker tracker = MobManagerPlugin.trackers.get(instanceOID);
 			if (tracker == null) {
@@ -177,93 +172,6 @@ public class MobManagerPlugin {
 	static {
 		MobManagerPlugin.spawnGeneratorClasses = new HashMap<String, Class>();
 		MobManagerPlugin.trackers = new HashMap<OID, ObjectTracker>();
-		log = new Logger("MobManagerPlugin");
 	}
 
-	class MobUnloadHook implements UnloadHook {
-		@Override
-		public void onUnload(final Entity entity) {
-			if (entity instanceof ObjectStub) {
-				((ObjectStub) entity).unload();
-			}
-		}
-	}
-
-	class MobDeleteHook implements DeleteHook {
-		@Override
-		public void onDelete(final Entity entity) {
-			if (entity instanceof ObjectStub) {
-				((ObjectStub) entity).unload();
-			}
-		}
-
-		@Override
-		public void onDelete(final OID oid, final Namespace namespace) {
-		}
-	}
-
-	class CreateSpawnGenHook implements Hook {
-		@Override
-		public boolean processMessage(final Message msg, final int flags) {
-			final MobManagerClient.CreateSpawnGeneratorMessage message = (MobManagerClient.CreateSpawnGeneratorMessage) msg;
-			final SpawnData spawnData = message.getSpawnData();
-			final ObjectFactory factory = ObjectFactory.getFactory(spawnData.getFactoryName());
-			if (factory == null) {
-				Engine.getAgent().sendBooleanResponse(message, false);
-				if (Log.loggingDebug) {
-					Log.debug("CreateSpawnGenHook: unknown factory=" + spawnData.getFactoryName());
-				}
-				return true;
-			}
-			SpawnGenerator spawnGen = null;
-			String spawnGenClassName = (String) spawnData.getProperty("className");
-			if (spawnGenClassName == null) {
-				spawnGenClassName = spawnData.getClassName();
-			}
-			if (spawnGenClassName == null) {
-				spawnGen = new SpawnGenerator(spawnData);
-			} else {
-				try {
-					final Class spawnGenClass = MobManagerPlugin.spawnGeneratorClasses.get(spawnGenClassName);
-					if (spawnGenClass == null) {
-						throw new AORuntimeException("spawn generator class not registered");
-					}
-					spawnGen = (SpawnGenerator) spawnGenClass.newInstance();
-					spawnGen.initialize(spawnData);
-				} catch (Exception ex) {
-					Log.exception("CreateSpawnGenHook: failed instantiating class " + spawnGenClassName, ex);
-					Engine.getAgent().sendBooleanResponse(message, false);
-					return true;
-				}
-			}
-			spawnGen.setObjectFactory(factory);
-			spawnGen.activate();
-			Engine.getAgent().sendBooleanResponse(message, true);
-			return true;
-		}
-	}
-
-	class InstanceUnloadedHook implements Hook {
-		@Override
-		public boolean processMessage(final Message msg, final int flags) {
-			final SubjectMessage message = (SubjectMessage) msg;
-			final OID instanceOid = message.getSubject();
-			SpawnGenerator.cleanupInstance(instanceOid);
-			MobManagerPlugin.removeTracker(instanceOid);
-			Engine.getAgent().sendResponse(new ResponseMessage(message));
-			return true;
-		}
-	}
-
-	class SetAggroRadiusHook implements Hook {
-		@Override
-		public boolean processMessage(final Message msg, final int flags) {
-			final MobManagerClient.SetAggroRadiusMessage message = (MobManagerClient.SetAggroRadiusMessage) msg;
-			final OID mob = message.getMob();
-			final OID target = message.getTarget();
-			final int reactionRadius = message.getRadius();
-			MobManagerPlugin.setAggroRadiusTracker(mob, target, reactionRadius);
-			return true;
-		}
-	}
 }
