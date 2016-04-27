@@ -32,7 +32,6 @@ public class S2SData implements INetData {
 	}
 
 	public S2SData(byte data[], int serial, int sessionId, boolean needUncompress) {
-		pos = 0;
 		sourceCompressed = false;
 		this.data = data;
 		flag = (byte) (int) getNumber(data, 0, 1);// 1
@@ -41,7 +40,7 @@ public class S2SData implements INetData {
 		this.sessionId = sessionId;// 4
 		numOfParameter = this.data[7];// 1 字段个数
 		this.serial = serial;
-		pos = 8;
+		pos = 8;// 从第8个开始读
 		sourceCompressed = needUncompress;
 	}
 
