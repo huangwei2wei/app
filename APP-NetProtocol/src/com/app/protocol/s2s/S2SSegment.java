@@ -242,7 +242,7 @@ public class S2SSegment implements INetSegment {
 		S2SSegment tmp22_21 = this;
 		tmp22_21.numOfParameter = (byte) (tmp22_21.numOfParameter + 1);
 		setNumOfParameter();
-		setNumOfParameter();
+		// setNumOfParameter();
 	}
 	public int size() {
 		return this.buffer.size();
