@@ -41,6 +41,7 @@ import org.apache.log4j.Logger;
 import com.app.server.atavism.server.engine.EnginePlugin;
 
 public class ObjectManagerPlugin {
+	private static ObjectManagerPlugin objectManagerPlugin = new ObjectManagerPlugin();
 	private static final int INSTANCE_OK = 0;
 	private static final int INSTANCE_LOADING = 1;
 	private static final int INSTANCE_UNLOADING = 2;
@@ -52,6 +53,10 @@ public class ObjectManagerPlugin {
 	protected HashMap<String, Manager<Template>> templateManager;
 	private Map<OID, InstanceState> instanceContent;
 	private AgisWorldManagerPlugin agisWorldManagerPlugin;
+
+	public static ObjectManagerPlugin getObjectManagerPlugin() {
+		return objectManagerPlugin;
+	}
 
 	public ObjectManagerPlugin() {
 		this.templateManager = new HashMap<String, Manager<Template>>();
@@ -341,14 +346,6 @@ public class ObjectManagerPlugin {
 		}
 		return masterObj.getOid();
 	}
-
- 
-
-
-
-
-
-
 
 	public static class MasterObject extends Entity {
 		private transient int loadedNamespaces;

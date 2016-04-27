@@ -138,7 +138,7 @@ public class WorldManagerClient {
 		Engine.getAgent().sendBroadcast(msg);
 	}
 
-	public static BasicWorldNode getWorldNode(final OID oid) {
+	public static BasicWorldNode getWorldNode(OID oid) {
 		final SubjectMessage msg = new SubjectMessage(WorldManagerClient.MSG_TYPE_GETWNODE_REQ, oid);
 		final BasicWorldNode wnode = (BasicWorldNode) Engine.getAgent().sendRPCReturnObject(msg);
 		if (Log.loggingDebug) {

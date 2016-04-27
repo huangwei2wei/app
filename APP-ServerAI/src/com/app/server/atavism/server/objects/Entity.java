@@ -4,26 +4,25 @@
 
 package com.app.server.atavism.server.objects;
 
-import com.app.server.atavism.server.util.LockFactory;
-import java.util.HashSet;
-import java.io.OutputStream;
-import java.io.ObjectOutputStream;
 import java.io.ByteArrayOutputStream;
-import java.util.List;
-import com.app.server.atavism.server.engine.Namespace;
-import java.util.HashMap;
-import com.app.server.atavism.server.util.DLock;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import com.app.server.atavism.server.engine.Engine;
-import java.util.concurrent.locks.Lock;
-import java.util.Map;
-import com.app.server.atavism.server.engine.OID;
-//import atavism.server.util.Logger;
-import java.util.Set;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.locks.Lock;
 
 import org.apache.log4j.Logger;
+
+import com.app.server.atavism.server.engine.Engine;
+import com.app.server.atavism.server.engine.Namespace;
+import com.app.server.atavism.server.engine.OID;
+import com.app.server.atavism.server.util.DLock;
+import com.app.server.atavism.server.util.LockFactory;
 
 public class Entity extends NamedPropertyClass implements Serializable
 {
@@ -31,7 +30,6 @@ public class Entity extends NamedPropertyClass implements Serializable
     protected Integer subObjectNamespacesInt;
     protected static final Logger log = Logger.getLogger("navmesh");
     
-    private byte namespaceByte;
     private boolean persistEntity;
     private transient boolean deleted;
     private OID oid;
@@ -42,7 +40,6 @@ public class Entity extends NamedPropertyClass implements Serializable
     
     public Entity() {
         this.subObjectNamespacesInt = null;
-        this.namespaceByte = 1;
         this.persistEntity = false;
         this.deleted = false;
         this.oid = null;
@@ -50,10 +47,9 @@ public class Entity extends NamedPropertyClass implements Serializable
         this.transientMap = null;
     }
     
-    public Entity(final String name) {
+	public Entity(final String name) {
         super(name);
         this.subObjectNamespacesInt = null;
-        this.namespaceByte = 1;
         this.persistEntity = false;
         this.deleted = false;
         this.oid = null;
@@ -64,7 +60,6 @@ public class Entity extends NamedPropertyClass implements Serializable
     
     public Entity(final OID oid) {
         this.subObjectNamespacesInt = null;
-        this.namespaceByte = 1;
         this.persistEntity = false;
         this.deleted = false;
         this.oid = null;
@@ -150,16 +145,6 @@ public class Entity extends NamedPropertyClass implements Serializable
         return this.transientMap;
     }
     
-    public static boolean equals(final Entity obj1, final Entity obj2) {
-        return obj1 != null && obj2 != null && obj1.getOid().equals(obj2.getOid()) && obj1.namespaceByte == obj2.namespaceByte;
-    }
-    
-    @Override
-    public boolean equals(final Object other) {
-        final Entity otherObj = (Entity)other;
-        return equals(this, otherObj);
-    }
-    
     public void setPersistenceFlag(final boolean flag) {
         this.persistEntity = flag;
     }
@@ -168,13 +153,6 @@ public class Entity extends NamedPropertyClass implements Serializable
         return this.persistEntity;
     }
     
-    public Namespace getNamespace() {
-        return Namespace.getNamespaceFromInt((int)this.namespaceByte);
-    }
-    
-    public void setNamespace(final Namespace namespace) {
-        this.namespaceByte = (byte)namespace.getNumber();
-    }
     
     public List<Namespace> getSubObjectNamespaces() {
         this.lock.lock();

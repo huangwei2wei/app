@@ -49,19 +49,16 @@ public class AOObject extends Entity {
 	private static final long serialVersionUID = 1L;
 
 	public AOObject() {
-		setNamespace(Namespace.WORLD_MANAGER);
 		init();
 	}
 
 	public AOObject(String name) {
 		super(name);
-		setNamespace(Namespace.WORLD_MANAGER);
 		init();
 	}
 
 	public AOObject(OID oid) {
 		super(oid);
-		setNamespace(Namespace.WORLD_MANAGER);
 		init();
 	}
 

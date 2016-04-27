@@ -44,6 +44,7 @@ import com.app.server.atavism.server.engine.OID;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class MobManagerPlugin {
 	private static Map<String, Class> spawnGeneratorClasses;
@@ -52,7 +53,6 @@ public class MobManagerPlugin {
 	protected static final Logger log = Logger.getLogger("navmesh");
 	protected PathInfo pathInfo;
 	protected boolean askedForPathInfo;
-
 	protected static ObjectManagerPlugin objectManagerPlugin;
 
 	public MobManagerPlugin() {
@@ -86,12 +86,12 @@ public class MobManagerPlugin {
 	}
 
 	public static ObjectStub createObject(final int templateID, final Template override, final OID instanceOid) {
-		MobManagerPlugin.log.debug("createObject: template=" + templateID + ", override=" + override + ", instanceOid=" + instanceOid + " calling into objectmanager to generate");
 		if (instanceOid != null) {
 			override.put(WorldManagerClient.NAMESPACE, WorldManagerClient.TEMPL_INSTANCE, instanceOid);
 		}
 		// final OID objId = ObjectManagerClient.generateObject(templateID, ObjectManagerPlugin.MOB_TEMPLATE, override);
-		final OID objId = objectManagerPlugin.generateObject(templateID, ObjectManagerPlugin.MOB_TEMPLATE, override);// 创建怪物
+		System.out.println(ObjectManagerPlugin.getObjectManagerPlugin());
+		final OID objId = ObjectManagerPlugin.getObjectManagerPlugin().generateObject(templateID, ObjectManagerPlugin.MOB_TEMPLATE, override);// 创建怪物
 		MobManagerPlugin.log.debug("generated object oid=" + objId);
 		if (objId == null) {
 			log.warn("MobManagerPlugin: oid is null, skipping");

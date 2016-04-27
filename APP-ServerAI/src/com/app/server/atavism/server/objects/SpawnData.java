@@ -26,12 +26,10 @@ public class SpawnData extends Entity
     private static final long serialVersionUID = 1L;
     
     public SpawnData() {
-        this.setNamespace(Namespace.TRANSIENT);
     }
     
     public SpawnData(final String name, final String templateName, final int category, final String factoryName, final OID instanceOid, final Point loc, final Quaternion orient, final Integer spawnRadius, final Integer numSpawns, final Integer respawnTime) {
         super(name);
-        this.setNamespace(Namespace.TRANSIENT);
         this.setTemplateName(templateName);
         this.setCategory(category);
         this.setFactoryName(factoryName);

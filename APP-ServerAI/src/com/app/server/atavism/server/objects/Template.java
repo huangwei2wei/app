@@ -42,25 +42,25 @@ public class Template extends NamedPropertyClass implements Cloneable {
 		return "Template";
 	}
 
-	@Override
-	public String toString() {
-		String s = "[Template: name=" + this.getName() + ", id=" + this.getTemplateID() + ", type=" + this.getTemplateType() + "] ";
-		this.lock.lock();
-		try {
-			for (final Map.Entry<Namespace, Map<String, Serializable>> entry : this.propMap.entrySet()) {
-				final Namespace ns = entry.getKey();
-				final Map<String, Serializable> subMap = entry.getValue();
-				for (final Map.Entry<String, Serializable> sEntry : subMap.entrySet()) {
-					final String key = sEntry.getKey();
-					final Serializable val = sEntry.getValue();
-					s = s + "(ns=" + ns.getName() + ", key=" + key + ", val=" + val + ")";
-				}
-			}
-			return s;
-		} finally {
-			this.lock.unlock();
-		}
-	}
+//	@Override
+//	public String toString() {
+//		String s = "[Template: name=" + this.getName() + ", id=" + this.getTemplateID() + ", type=" + this.getTemplateType() + "] ";
+//		this.lock.lock();
+//		try {
+//			for (final Map.Entry<Namespace, Map<String, Serializable>> entry : this.propMap.entrySet()) {
+//				final Namespace ns = entry.getKey();
+//				final Map<String, Serializable> subMap = entry.getValue();
+//				for (final Map.Entry<String, Serializable> sEntry : subMap.entrySet()) {
+//					final String key = sEntry.getKey();
+//					final Serializable val = sEntry.getValue();
+//					s = s + "(ns=" + ns.getName() + ", key=" + key + ", val=" + val + ")";
+//				}
+//			}
+//			return s;
+//		} finally {
+//			this.lock.unlock();
+//		}
+//	}
 
 	public Object clone() throws CloneNotSupportedException {
 		this.lock.lock();
@@ -171,13 +171,13 @@ public class Template extends NamedPropertyClass implements Cloneable {
 		return this.getName() != null && this.getName().equals(oTempl.getName());
 	}
 
-	@Override
-	public int hashCode() {
-		if (this.getName() == null) {
-			throw new RuntimeException("hashCode fails for null name");
-		}
-		return this.getName().hashCode();
-	}
+//	@Override
+//	public int hashCode() {
+//		if (this.getName() == null) {
+//			throw new RuntimeException("hashCode fails for null name");
+//		}
+//		return this.getName().hashCode();
+//	}
 
 	// public Entity generate() {
 	// throw new AORuntimeException("generate not implemented");
