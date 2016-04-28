@@ -4,41 +4,27 @@
 
 package com.app.server.atavism.server.plugins;
 
-import java.util.LinkedHashMap;
-
-import com.app.server.atavism.agis.plugins.AgisWorldManagerPlugin;
-import com.app.server.atavism.server.engine.BasicWorldNode;
-import com.app.server.atavism.server.engine.EnginePlugin.SubObjData;
-import com.app.server.atavism.server.engine.WMWorldNode;
-import com.app.server.atavism.server.objects.AOObject;
-import com.app.server.atavism.server.objects.ObjectTypes;
-import java.util.Set;
-import com.app.server.atavism.server.util.Table;
-import com.app.server.atavism.msgsys.NoRecipientsException;
-import com.app.server.atavism.server.math.Point;
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
-import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.apache.log4j.Logger;
+
+import com.app.server.atavism.agis.plugins.AgisWorldManagerPlugin;
+import com.app.server.atavism.server.engine.EnginePlugin;
+import com.app.server.atavism.server.engine.Manager;
+import com.app.server.atavism.server.engine.Namespace;
+import com.app.server.atavism.server.engine.OID;
+import com.app.server.atavism.server.objects.AOObject;
 import com.app.server.atavism.server.objects.Entity;
 import com.app.server.atavism.server.objects.EntityManager;
 import com.app.server.atavism.server.objects.ObjectType;
-import java.util.Iterator;
-import java.util.List;
-import com.app.server.atavism.server.util.AORuntimeException;
-import java.util.Collection;
-import com.app.server.atavism.server.engine.Namespace;
-import java.util.ArrayList;
-import com.app.server.atavism.server.engine.Engine;
-import com.app.server.atavism.server.engine.OID;
-import java.util.Map;
 import com.app.server.atavism.server.objects.Template;
-import com.app.server.atavism.server.plugins.ObjectManagerPlugin;
-import com.app.server.atavism.server.plugins.WorldManagerClient;
-import com.app.server.atavism.server.plugins.ObjectManagerPlugin.MasterObject;
-import com.app.server.atavism.server.engine.Manager;
-import java.util.HashMap;
-import org.apache.log4j.Logger;
-import com.app.server.atavism.server.engine.EnginePlugin;
 
 public class ObjectManagerPlugin {
 	private static ObjectManagerPlugin objectManagerPlugin = new ObjectManagerPlugin();
@@ -264,7 +250,7 @@ public class ObjectManagerPlugin {
 	 * @param tmpl
 	 * @return
 	 */
-	protected boolean registerTemplate(final Template tmpl) {
+	public boolean registerTemplate(final Template tmpl) {
 		final String templateType = tmpl.getTemplateType();
 		if (!this.templateManager.containsKey(templateType)) {
 			this.templateManager.put(templateType, new Manager<Template>(templateType + "Manager"));
@@ -291,17 +277,20 @@ public class ObjectManagerPlugin {
 			log.error("template not found: " + templateType + ":" + templateID);
 			return null;
 		}
+		final Set<Namespace> namespaces22 = template.getNamespaces();
 		Template finalTemplate;
 		if (overrideTemplate != null) {
 			finalTemplate = template.merge(overrideTemplate);
 		} else {
 			finalTemplate = template;
 		}
+		final Set<Namespace> namespaces33 = finalTemplate.getNamespaces();
 		Boolean persistent = (Boolean) finalTemplate.get(Namespace.OBJECT_MANAGER, ":persistent");
 		if (persistent == null) {
 			persistent = false;
 		}
 		ObjectManagerPlugin.log.debug("GenerateObjectHook: generating entity: " + finalTemplate.getName() + ", template=" + finalTemplate);
+		System.out.println(finalTemplate.get(Namespace.WORLD_MANAGER, WorldManagerClient.TEMPL_NAME));
 		String entityName = (String) finalTemplate.get(Namespace.WORLD_MANAGER, WorldManagerClient.TEMPL_NAME);
 		if (entityName == null) {
 			entityName = finalTemplate.getName();
@@ -331,7 +320,7 @@ public class ObjectManagerPlugin {
 			final Template subTemplate = finalTemplate.restrict(namespace);
 			subTemplate.put(Namespace.OBJECT_MANAGER, ":persistent", persistent);
 			ObjectManagerPlugin.log.debug("GenerateObjectHook: creating subobj for ns=" + namespace + ", subTemplate=" + subTemplate);
-			AOObject subObjData = agisWorldManagerPlugin.generateSubObject(subTemplate, namespace, masterObj.getOid()); // 生成子对象
+			AOObject subObjData = AgisWorldManagerPlugin.getAgisWorldManagerPlugin().generateSubObject(subTemplate, namespace, masterObj.getOid()); // 生成子对象
 
 			// final GenericResponseMessage respMsg = ObjectManagerPlugin.this.generateSubObject(masterObj.getOid(), namespace, subTemplate);
 			masterObj.addLoadedNamespace(namespace);

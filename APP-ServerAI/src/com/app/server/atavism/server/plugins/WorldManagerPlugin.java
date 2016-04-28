@@ -3,76 +3,41 @@
 // 
 
 package com.app.server.atavism.server.plugins;
-
-import com.app.server.atavism.server.pathing.PathFinderValue;
-import com.app.server.atavism.server.pathing.PathObject;
-import java.util.LinkedHashMap;
-import com.app.server.atavism.server.objects.Boundary;
-import com.app.server.atavism.server.engine.QuadTreeElement;
-import com.app.server.atavism.server.engine.PerceiverFilter;
-import com.app.server.atavism.server.engine.WorldNode;
-import com.app.server.atavism.server.pathing.PathInterpolator;
-import com.app.server.atavism.server.pathing.PathLinear;
-import com.app.server.atavism.server.pathing.PathSpline;
-import com.app.server.atavism.server.math.AOVector;
-import com.app.server.atavism.server.objects.Color;
-import com.app.server.atavism.server.math.Quaternion;
-import com.app.server.atavism.server.objects.Light;
-import com.app.server.atavism.server.engine.SoundManager;
-import java.util.ListIterator;
-import com.app.server.atavism.server.objects.LightData;
-import com.app.server.atavism.server.objects.RoadRegionConfig;
-import com.app.server.atavism.server.objects.FogRegionConfig;
-import com.app.server.atavism.server.objects.SoundRegionConfig;
-import com.app.server.atavism.server.objects.RegionConfig;
-import com.app.server.atavism.server.util.LockFactory;
-import java.util.concurrent.locks.Lock;
-import com.app.server.atavism.server.objects.SoundData;
-import com.app.server.atavism.server.objects.DisplayContext;
-import com.app.server.atavism.server.objects.Template;
-import com.app.server.atavism.server.engine.BasicWorldNode;
-import java.util.ArrayList;
 import java.io.Serializable;
-import com.app.server.atavism.server.engine.InterpolatedWorldNode;
-import com.app.server.atavism.server.pathing.PathSearcher;
-import java.util.Iterator;
-import com.app.server.atavism.server.messages.PerceptionMessage;
-import com.app.server.atavism.server.engine.PerceiverNewsAndFrees;
-import com.app.server.atavism.server.engine.FixedPerceiver;
-import com.app.server.atavism.server.engine.Perceiver;
-import com.app.server.atavism.server.engine.MobilePerceiver;
-import com.app.server.atavism.server.objects.ObjectType;
-import com.app.server.atavism.server.objects.ObjectTypes;
-import com.app.server.atavism.server.objects.Fog;
-import com.app.server.atavism.server.objects.Region;
-import com.app.server.atavism.server.math.Point;
-import com.app.server.atavism.server.engine.QuadTreeNode;
-import com.app.server.atavism.server.objects.AOObject;
-import com.app.server.atavism.server.objects.Entity;
-import com.app.server.atavism.server.objects.EntityManager;
-import java.util.List;
-import java.util.Collection;
-import com.app.server.atavism.server.engine.Namespace;
-import java.util.LinkedList;
-import com.app.server.atavism.server.objects.World;
-import com.app.server.atavism.server.math.Geometry;
-import java.io.IOException;
-import com.app.server.atavism.server.util.AORuntimeException;
-import com.app.server.atavism.server.engine.Engine;
-import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.HashMap;
-import com.app.server.atavism.server.pathing.PathInfo;
-import java.util.Set;
-import com.app.server.atavism.server.objects.RegionTrigger;
-import com.app.server.atavism.server.engine.QuadTree;
-import com.app.server.atavism.server.engine.OID;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.locks.Lock;
 
 import org.apache.log4j.Logger;
 
+import com.app.server.atavism.server.engine.BasicWorldNode;
+import com.app.server.atavism.server.engine.InterpolatedWorldNode;
+import com.app.server.atavism.server.engine.MobilePerceiver;
+import com.app.server.atavism.server.engine.Namespace;
+import com.app.server.atavism.server.engine.OID;
+import com.app.server.atavism.server.engine.QuadTree;
 import com.app.server.atavism.server.engine.WMWorldNode;
-import com.app.server.atavism.server.engine.PerceiverCallback;
-import com.app.server.atavism.server.engine.EnginePlugin;
+import com.app.server.atavism.server.math.AOVector;
+import com.app.server.atavism.server.math.Point;
+import com.app.server.atavism.server.math.Quaternion;
+import com.app.server.atavism.server.objects.AOObject;
+import com.app.server.atavism.server.objects.DisplayContext;
+import com.app.server.atavism.server.objects.Entity;
+import com.app.server.atavism.server.objects.EntityManager;
+import com.app.server.atavism.server.objects.ObjectType;
+import com.app.server.atavism.server.objects.ObjectTypes;
+import com.app.server.atavism.server.objects.RegionTrigger;
+import com.app.server.atavism.server.objects.Template;
+import com.app.server.atavism.server.objects.World;
+import com.app.server.atavism.server.pathing.PathInfo;
+import com.app.server.atavism.server.pathing.PathObject;
+import com.app.server.atavism.server.pathing.PathSearcher;
+import com.app.server.atavism.server.util.AORuntimeException;
+import com.app.server.atavism.server.util.LockFactory;
 
 public abstract class WorldManagerPlugin {
 	protected static final Logger log = Logger.getLogger("navmesh");
@@ -171,7 +136,7 @@ public abstract class WorldManagerPlugin {
 		if (objInfo.objType == ObjectTypes.mob) {
 			final Object pathMsgObject = obj.getProperty(WorldManagerClient.MOB_PATH_PROPERTY);
 			if (pathMsgObject != null) {
-				final WorldManagerClient.MobPathMessage pathMsg = (WorldManagerClient.MobPathMessage) pathMsgObject;
+//				final WorldManagerClient.MobPathMessage pathMsg = (WorldManagerClient.MobPathMessage) pathMsgObject;
 //				objInfo.setProperty(WorldManagerClient.MOB_PATH_PROPERTY, pathMsg);// 设置属性
 			}
 		}
@@ -434,16 +399,22 @@ public abstract class WorldManagerPlugin {
 		// WorldManagerPlugin.this.subscribeForMob(masterOid);
 		return wObj;
 	}
-	// public SubObjData generateInstanceSubObject(final OID masterOid, final Boolean persistent) {
-	// final WorldManagerInstance instance = WorldManagerPlugin.this.createInstanceEntity(masterOid);
-	// instance.setPersistenceFlag(persistent);
-	// if (persistent) {
-	// Engine.getPersistenceManager().persistEntity(instance);
-	// }
-	// WorldManagerPlugin.this.subscribeForObject(masterOid);
-	// WorldManagerPlugin.this.hostInstance(masterOid, instance.getQuadTree().getLocalGeometry());
-	// return new SubObjData();
-	// }
+	
+	/**
+	 * 获取BasicWorldNode
+	 * @param oid
+	 * @return
+	 */
+	public BasicWorldNode getWNode(OID oid){
+		final AOObject obj = (AOObject) WorldManagerPlugin.this.getWorldManagerEntity(oid);
+		if (obj == null) {
+			log.error("GetWNodeReqHook: could not find obj for oid=" + oid);
+			return null;
+		}
+		return obj.baseWorldNode();
+	}
+	 
+	
 
 	public static class PathObjectCache {
 		protected Map<String, PathObject> cache;

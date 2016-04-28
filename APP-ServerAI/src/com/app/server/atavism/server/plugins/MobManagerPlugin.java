@@ -6,6 +6,8 @@ package com.app.server.atavism.server.plugins;
 
 import com.app.server.atavism.server.objects.SpawnData;
 import com.app.server.atavism.agis.objects.SpawnGenerator;
+import com.app.server.atavism.agis.plugins.AgisWorldManagerPlugin;
+
 import java.util.HashMap;
 import com.app.server.atavism.server.objects.EntityWithWorldNodeFactory;
 import com.app.server.atavism.server.objects.ObjectStubFactory;
@@ -90,14 +92,13 @@ public class MobManagerPlugin {
 			override.put(WorldManagerClient.NAMESPACE, WorldManagerClient.TEMPL_INSTANCE, instanceOid);
 		}
 		// final OID objId = ObjectManagerClient.generateObject(templateID, ObjectManagerPlugin.MOB_TEMPLATE, override);
-		System.out.println(ObjectManagerPlugin.getObjectManagerPlugin());
 		final OID objId = ObjectManagerPlugin.getObjectManagerPlugin().generateObject(templateID, ObjectManagerPlugin.MOB_TEMPLATE, override);// 创建怪物
 		MobManagerPlugin.log.debug("generated object oid=" + objId);
 		if (objId == null) {
 			log.warn("MobManagerPlugin: oid is null, skipping");
 			return null;
 		}
-		final BasicWorldNode bwNode = WorldManagerClient.getWorldNode(objId);
+		final BasicWorldNode bwNode = AgisWorldManagerPlugin.getAgisWorldManagerPlugin().getWNode(objId);// WorldManagerClient.getWorldNode(objId);
 		final InterpolatedWorldNode iwNode = new InterpolatedWorldNode(bwNode);
 		final ObjectStub obj = new ObjectStub(objId, iwNode, templateID);
 		EntityManager.registerEntityByNamespace(obj, Namespace.MOB);
@@ -140,22 +141,6 @@ public class MobManagerPlugin {
 	public static void removeTracker(final OID instanceOid) {
 		synchronized (MobManagerPlugin.trackers) {
 			MobManagerPlugin.trackers.remove(instanceOid);
-		}
-	}
-
-	public static void setAggroRadiusTracker(final OID mob, final OID target, final int reactionRadius) {
-		final OID instanceOID = WorldManagerClient.getObjectInfo(mob).instanceOid;
-		log.debug("AJ: AggroRadius with instanceOid: " + instanceOID + " and trackers: " + MobManagerPlugin.trackers);
-		synchronized (MobManagerPlugin.trackers) {
-			final ObjectTracker tracker = MobManagerPlugin.trackers.get(instanceOID);
-			if (tracker == null) {
-				return;
-			}
-			if (reactionRadius == -1) {
-				tracker.removeAggroRadius(mob, target);
-			} else {
-				tracker.addAggroRadius(mob, target, reactionRadius);
-			}
 		}
 	}
 

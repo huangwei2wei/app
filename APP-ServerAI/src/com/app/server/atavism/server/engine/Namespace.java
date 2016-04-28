@@ -15,8 +15,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import atavism.server.engine.Namespace;
+import com.app.server.atavism.agis.plugins.CombatClient;
+import com.app.server.atavism.server.plugins.WorldManagerClient;
+import com.app.server.atavism.server.engine.Namespace;
 
 public class Namespace implements Serializable {
 	private transient String name;
@@ -30,7 +31,9 @@ public class Namespace implements Serializable {
 	public static Namespace MOB;
 	public static Namespace TRANSIENT = null;
 	public static Namespace OBJECT_MANAGER = null;
-
+	 public static Namespace COMBAT;
+	 
+	 
 	public Namespace() {
 		this.number = 0;
 	}
@@ -137,15 +140,20 @@ public class Namespace implements Serializable {
 	}
 
 	private static Namespace createNamespace(final String nsString) {
-		// Log.info("Creating namespace '" + nsString + "'");
 		int number = id.incrementAndGet();
 		return addDBNamespace(nsString, number);
 	}
 	public static void encacheNamespaceMapping() {
+		Namespace.TRANSIENT = intern("NS.transient");
+		Namespace.OBJECT_MANAGER = intern("NS.master");
+		Namespace.WORLD_MANAGER = intern("NS.wmgr");
+		WorldManagerClient.NAMESPACE = Namespace.WORLD_MANAGER;
 		Namespace.WORLD_MANAGER = intern("NS.wmgr");
 		Namespace.MOB = intern("NS.mob");
 		Namespace.TRANSIENT = intern("NS.transient");
 		Namespace.OBJECT_MANAGER = intern("NS.master");
+        Namespace.COMBAT = intern("NS.combat");
+        CombatClient.NAMESPACE = Namespace.COMBAT;
 	}
 	static {
 		Namespace.namespaceStringToNamespace = new HashMap<String, Namespace>();

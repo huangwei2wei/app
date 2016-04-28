@@ -4,61 +4,36 @@
 
 package com.app.server.atavism.agis.plugins;
 
-import com.app.server.atavism.server.objects.Marker;
-import com.app.server.atavism.server.plugins.InstanceClient;
-import com.app.server.atavism.agis.objects.DetourActor;
-import java.util.Calendar;
-import com.app.server.atavism.agis.objects.ArenaQueue;
-//import atavism.server.messages.LogoutMessage;
-//import atavism.msgsys.ResponseMessage;
-import java.util.LinkedList;
-import com.app.server.atavism.server.util.Points;
-import com.app.server.atavism.server.objects.World;
-import com.app.server.atavism.server.math.AOVector;
-import com.app.server.atavism.server.engine.InterpolatedWorldNode;
-import com.app.server.atavism.server.math.Quaternion;
-import com.app.server.atavism.server.engine.WorldNode;
-import com.app.server.atavism.server.engine.WMWorldNode;
-import com.app.server.atavism.agis.util.AgisDisplayContext;
-//import atavism.server.messages.PropertyMessage;
-//import atavism.msgsys.Message;
-import com.app.server.atavism.server.engine.BasicWorldNode;
-import com.app.server.atavism.server.objects.Entity;
-import java.util.ArrayList;
-import com.app.server.atavism.server.objects.EntityManager;
-import java.util.List;
-import com.app.server.atavism.server.math.Point;
-import java.util.Iterator;
-import com.app.server.atavism.server.objects.DisplayContext;
 import java.io.Serializable;
-import java.util.Map;
-import com.app.server.atavism.server.objects.LightData;
-import com.app.server.atavism.server.objects.Light;
-import com.app.server.atavism.agis.objects.AgisMob;
-import com.app.server.atavism.server.objects.ObjectTypes;
-import com.app.server.atavism.server.engine.Namespace;
-import com.app.server.atavism.server.objects.ObjectType;
-import com.app.server.atavism.server.objects.AOObject;
-import com.app.server.atavism.server.objects.Template;
-import com.app.server.atavism.server.engine.EnginePlugin;
-//import atavism.server.engine.Hook;
-//import atavism.server.messages.LoginMessage;
-//import atavism.msgsys.MessageCallback;
-//import atavism.msgsys.IFilter;
-//import atavism.msgsys.MessageTypeFilter;
-import com.app.server.atavism.server.engine.Engine;
-import com.app.server.atavism.server.plugins.WorldManagerClient;
-
-import com.app.server.atavism.agis.objects.AgisObject;
-import com.app.server.atavism.agis.objects.InstanceNavMeshManager;
-import com.app.server.atavism.server.engine.OID;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 
+import com.app.server.atavism.agis.objects.AgisMob;
+import com.app.server.atavism.agis.objects.AgisObject;
+import com.app.server.atavism.agis.objects.InstanceNavMeshManager;
+import com.app.server.atavism.agis.util.AgisDisplayContext;
+import com.app.server.atavism.server.engine.BasicWorldNode;
+import com.app.server.atavism.server.engine.Namespace;
+import com.app.server.atavism.server.engine.OID;
+import com.app.server.atavism.server.math.Point;
+import com.app.server.atavism.server.objects.AOObject;
+import com.app.server.atavism.server.objects.DisplayContext;
+import com.app.server.atavism.server.objects.Entity;
+import com.app.server.atavism.server.objects.EntityManager;
+import com.app.server.atavism.server.objects.Light;
+import com.app.server.atavism.server.objects.LightData;
+import com.app.server.atavism.server.objects.ObjectType;
+import com.app.server.atavism.server.objects.ObjectTypes;
+import com.app.server.atavism.server.objects.Template;
+import com.app.server.atavism.server.plugins.WorldManagerClient;
 import com.app.server.atavism.server.plugins.WorldManagerPlugin;
 
 public class AgisWorldManagerPlugin extends WorldManagerPlugin {
+	private static AgisWorldManagerPlugin agisWorldManagerPlugin = new AgisWorldManagerPlugin();
 	private static Logger log = Logger.getLogger("navmesh");
 	public static Float defaultRunThreshold = 2.0f;
 	private HashMap<OID, InstanceNavMeshManager> instanceNavMeshes = new HashMap<OID, InstanceNavMeshManager>();
@@ -77,6 +52,10 @@ public class AgisWorldManagerPlugin extends WorldManagerPlugin {
 		this.propertyExclusions.add(AgisObject.baseDCKey);
 		this.serverStartTime = System.currentTimeMillis();
 	}
+	public static AgisWorldManagerPlugin getAgisWorldManagerPlugin() {
+		return agisWorldManagerPlugin;
+	}
+
 	/**
 	 * 生成 世界管理 子对象
 	 * 

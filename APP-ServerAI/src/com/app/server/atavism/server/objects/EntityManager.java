@@ -28,7 +28,7 @@ public class EntityManager {
 	}
 
 	public static void registerEntityByNamespace(final Entity entity, final Namespace namespace) {
-		entity.setNamespace(namespace);
+		// entity.setNamespace(namespace);
 		synchronized (EntityManager.entitiesByNamespace) {
 			Map<OID, Entity> namespaceEntities = EntityManager.entitiesByNamespace.get(namespace);
 			if (namespaceEntities == null) {
