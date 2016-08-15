@@ -194,7 +194,7 @@ public class GameConfigService {
 		this.loadConfig(tradeNpcDao, TradeNpc.class, "type", "npcLv");// 兑换npc
 		this.loadConfig(tradeVipDao, TradeVip.class, "vipLv");// vip
 
-		 System.out.println(this.gameConfig4MulKey);
+		// System.out.println(this.gameConfig4MulKey);
 
 	}
 
