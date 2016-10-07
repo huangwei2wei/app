@@ -17,8 +17,8 @@ public class GetRoleListOKHandler implements IDataHandler {
 		String[] nicknames = ok.getNickName();
 		String str = UUID.randomUUID().toString();
 		String nickname = str.replace("-", "").substring(0, 15);
-//		if (nicknames.length > 0)
-//			nickname = nicknames[0];
+		if (nicknames.length > 0)
+			nickname = nicknames[0];
 
 		System.out.println("角色：" + nickname);
 		IConnector connector = data.getSource();

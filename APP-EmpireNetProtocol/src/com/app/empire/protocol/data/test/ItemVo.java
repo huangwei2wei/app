@@ -14,6 +14,7 @@ public class ItemVo {
 	private byte[] j;
 	private short k;
 	private short[] l;
+	private ItemVo2 vo2;
 
 	public int getA() {
 		return a;
@@ -86,6 +87,12 @@ public class ItemVo {
 	}
 	public void setL(short[] l) {
 		this.l = l;
+	}
+	public ItemVo2 getVo2() {
+		return vo2;
+	}
+	public void setVo2(ItemVo2 vo2) {
+		this.vo2 = vo2;
 	}
 
 }

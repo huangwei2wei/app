@@ -1,4 +1,5 @@
 package com.app.protocol.s2s;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
@@ -11,6 +12,7 @@ import com.app.protocol.INetData;
 import com.app.protocol.INetSegment;
 import com.app.protocol.data.DataBeanEncoder;
 import com.app.protocol.utils.ByteListUtil;
+
 public class S2SSegment implements INetSegment {
 	private ByteList buffer;
 	private byte numOfParameter;
@@ -230,6 +232,7 @@ public class S2SSegment implements INetSegment {
 		tmp32_31.numOfParameter = (byte) (tmp32_31.numOfParameter + 1);
 		setNumOfParameter();
 	}
+
 	public void writeList(List<Object> list) throws IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		ByteListUtil.addByte(this.buffer, (byte) 7);
 		ByteListUtil.addShort(this.buffer, (short) list.size());
@@ -244,6 +247,21 @@ public class S2SSegment implements INetSegment {
 		setNumOfParameter();
 		// setNumOfParameter();
 	}
+
+	@Override
+	public void writeObj(Object obj) throws IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+		ByteListUtil.addByte(this.buffer, (byte) 8);
+
+		Field[] fs = obj.getClass().getDeclaredFields();
+		for (Field f : fs)
+			DataBeanEncoder.setValue(this, f, PropertyUtils.getProperty(obj, f.getName()));
+
+		setSize();
+		S2SSegment tmp22_21 = this;
+		tmp22_21.numOfParameter = (byte) (tmp22_21.numOfParameter + 1);
+		setNumOfParameter();
+	}
+
 	public int size() {
 		return this.buffer.size();
 	}

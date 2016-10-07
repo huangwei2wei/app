@@ -1,4 +1,5 @@
 package com.app.dispatch;
+
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -29,6 +30,7 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 
 	private TimeControlProcessor() {
 	}
+
 	public static TimeControlProcessor getControlProcessor() {
 		return controlProcessor;
 	}
@@ -47,6 +49,7 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 	public void setConfiguration(ConfigMenger configuration) {
 		this.configuration = configuration;
 	}
+
 	// public void setTrustIpService(TrustIpService trustIpService) {
 	// this.trustIpService = trustIpService;
 	// }
@@ -57,6 +60,7 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 	public void setIpdService(IpdService ipdService) {
 		this.ipdService = ipdService;
 	}
+
 	/** 添加执行任务 */
 	public void process(INetData data) {
 		try {
@@ -65,17 +69,18 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 			log.info("TimeControlProcessor process INetData Exception.");
 		}
 	}
+
 	/** 任务处理 */
 	protected void process0(INetData data) {
 		byte type = data.getType();
 		try {
 			switch (type) {
-				case Protocol.MAIN_SERVER :// 服务器间协议
-					processServerMsg(data);
-					break;
-				case Protocol.MAIN_CHAT :
-					processChannelMsg(data);
-					break;
+			case Protocol.MAIN_SERVER:// 服务器间协议
+				processServerMsg(data);
+				break;
+			case Protocol.MAIN_CHAT:
+				processChannelMsg(data);
+				break;
 			}
 		} catch (Exception ex) {
 			log.error(ex, ex);
@@ -93,34 +98,35 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 			}
 		}
 	}
+
 	private void processServerMsg(INetData data) {
 		byte type = data.getSubType();
 		try {
 			switch (type) {
-				case Protocol.SERVER_SyncPlayer :
-					syncPlayer(data);// 同步玩家基本数据
-					break;
-				case Protocol.SERVER_NotifyMaintance : // '\037'
-					maintance(data);// 设置服务器状态状态
-					break;
-				case Protocol.SERVER_NotifyMaxPlayer : // '\031'
-					maxPlayer(data);
-					break;
-				case Protocol.SERVER_BroadCast : // '\027'
-					broadcast(data);
-					break;
-				case Protocol.SERVER_ForceBroadCast : // '\028'
-					forceBroadcast(data);
-					break;
-				case Protocol.SERVER_Kick : // '\029' 提玩家下线
-					kick(data);
-					break;
-				case Protocol.SERVER_ShutDown : // '\030'
-					shutdown();// 重新开启dis
-					break;
-				case Protocol.SERVER_UpdateServerInfo : // '\091'
-					updateServerInfo(data);
-					break;
+			case Protocol.SERVER_SyncPlayer:
+				// syncPlayer(data);// 同步玩家基本数据
+				break;
+			case Protocol.SERVER_NotifyMaintance: // '\037'
+				maintance(data);// 设置服务器状态状态
+				break;
+			case Protocol.SERVER_NotifyMaxPlayer: // '\031'
+				maxPlayer(data);
+				break;
+			case Protocol.SERVER_BroadCast: // '\027'
+				broadcast(data);
+				break;
+			case Protocol.SERVER_ForceBroadCast: // '\028'
+				forceBroadcast(data);
+				break;
+			case Protocol.SERVER_Kick: // '\029' 提玩家下线
+				kick(data);
+				break;
+			case Protocol.SERVER_ShutDown: // '\030'
+				shutdown();// 重新开启dis
+				break;
+			case Protocol.SERVER_UpdateServerInfo: // '\091'
+				updateServerInfo(data);
+				break;
 			}
 		} catch (Exception ex) {
 			log.error(ex, ex);
@@ -149,17 +155,18 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 		byte subType = data.getSubType();
 		try {
 			switch (subType) {
-				case Protocol.CHAT_SyncChannels :// 通讯频道设置
-					syncChannels(data);
-					break;
-				case Protocol.CHAT_RemoveChannels :// 移除频道
-					removeChannels(data);
-					break;
+			case Protocol.CHAT_SyncChannels:// 通讯频道设置
+				syncChannels(data);
+				break;
+			case Protocol.CHAT_RemoveChannels:// 移除频道
+				removeChannels(data);
+				break;
 			}
 		} catch (Exception ex) {
 			log.error(ex, ex);
 		}
 	}
+
 	/** 玩家频道设置 如聊天、pvp */
 	private void syncChannels(INetData data) throws Exception {
 		int sessionId = data.readInt();// 玩家session id
@@ -226,7 +233,8 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 		int current = data.readInt();
 		int maxPlayer = data.readInt();
 		long c = data.readLong();
-		log.info((new StringBuilder()).append("SyncTime[").append(System.currentTimeMillis() - c).append("] ONLINE[").append(current).append("] MAX[").append(maxPlayer).append("]").toString());
+		log.info((new StringBuilder()).append("SyncTime[").append(System.currentTimeMillis() - c).append("] ONLINE[").append(current).append("] MAX[").append(maxPlayer)
+				.append("]").toString());
 		if (ipdService != null) {
 			ipdService.notifyIPD(current, maxPlayer, configuration.getConfiguration().getBoolean("maintance", true));
 		}
@@ -251,18 +259,10 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 			ipdService.updateServerInfo(area, group, machine, version, updateurl, remark, appraisal);
 		}
 	}
+
 	/** 踢玩家下线 */
 	private void kick(INetData data) throws Exception {
 		int sessionId = data.readInt();
 		dispatcher.unRegisterClient(sessionId);
-	}
-	/***
-	 * 同步玩家角色信息
-	 * 
-	 * @param data
-	 * @throws Exception
-	 */
-	private void syncPlayer(INetData data) throws Exception {
-		dispatcher.syncPlayer(data);
 	}
 }

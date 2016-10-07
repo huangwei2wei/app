@@ -224,11 +224,15 @@ public class Demo {
 //		 m.put("2", "a");
 //		 
 //		 System.out.println(m.get(1+""));
-		if((0 & 0x1) != 0x0){
-			System.out.println("1");
-			
-		}
-		System.out.println(1 & 0x1);
+//		if((0 & 0x1) != 0x0){
+//			System.out.println("1");
+//			
+//		}
+//		System.out.println(1 & 0x1);
+		
+		
+		String t=Thread.currentThread().getContextClassLoader().getResource("mapData").getPath();
+		System.out.println("t---"+t);
 	}
 
 }

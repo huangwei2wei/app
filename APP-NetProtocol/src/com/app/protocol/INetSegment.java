@@ -4,8 +4,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public abstract interface INetSegment {
-	public static final byte[] HEAD = {1, 0, 0, 0};
-	public static final byte[] EMTPY_PACKET = {0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0};
+	public static final byte[] HEAD = { 1, 0, 0, 0 };
+	public static final byte[] EMTPY_PACKET = { 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0 };
 
 	public abstract byte getType();
 
@@ -43,7 +43,9 @@ public abstract interface INetSegment {
 
 	public abstract void writeStrings(String[] paramArrayOfString);
 
-	public abstract void writeList(List<Object> list)throws IllegalAccessException, InvocationTargetException, NoSuchMethodException;
+	public abstract void writeObj(Object obj) throws IllegalAccessException, InvocationTargetException, NoSuchMethodException;
+
+	public abstract void writeList(List<Object> list) throws IllegalAccessException, InvocationTargetException, NoSuchMethodException;
 
 	public abstract int size();
 

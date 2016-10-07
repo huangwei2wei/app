@@ -52,7 +52,7 @@ public class IpdConnector extends Connector {
 			String uuid = UUID.randomUUID().toString();
 			Login login = new Login();
 			login.setAccountName(uuid);
-			login.setAccountName("af6b0351-e8cf-49f2-a026-e7cb5b1ae4c8");
+			login.setAccountName("af6b0351-e8cf-49f2-a026-e8");
 			// login.setAccountName("af6b0351");
 			login.setPassWord("123456");
 			login.setVersion("1.0.0.0");

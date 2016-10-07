@@ -30,6 +30,7 @@ import com.app.empire.protocol.data.shop.Buy;
 import com.app.empire.protocol.data.shop.GetShop;
 import com.app.empire.protocol.data.shop.Refresh;
 import com.app.empire.protocol.data.test.ItemVo;
+import com.app.empire.protocol.data.test.ItemVo2;
 import com.app.empire.protocol.data.test.Test;
 import com.app.net.IConnector;
 import com.app.protocol.data.AbstractData;
@@ -211,9 +212,26 @@ public class RoleLoginOkHandler implements IDataHandler {
 		test.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
 		test.setK((short) 1800);
 		test.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
-
+		
+		
+		ItemVo2 itemVo2 = new ItemVo2();
+		itemVo2.setA(1);
+		itemVo2.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()])));
+		itemVo2.setC(false);
+		itemVo2.setD(ArrayUtils.toPrimitive(d.toArray(new Boolean[d.size()])));
+		itemVo2.setE("---itemVo2itemVo2itemVo2itemVo2");
+		itemVo2.setF(f.toArray(new String[f.size()]));
+		itemVo2.setG(100000);
+		itemVo2.setH(ArrayUtils.toPrimitive(h.toArray(new Long[h.size()])));
+		itemVo2.setI((byte) 125);
+		itemVo2.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
+		itemVo2.setK((short) 1800);
+		itemVo2.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
+		
+		
+		
 		List<ItemVo> list = new ArrayList<ItemVo>();
-		for (int i = 0; i < 300; i++) {
+		for (int i = 0; i < 10; i++) {
 			ItemVo itemVo = new ItemVo();
 			itemVo.setA(1);
 			itemVo.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()])));
@@ -227,9 +245,28 @@ public class RoleLoginOkHandler implements IDataHandler {
 			itemVo.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
 			itemVo.setK((short) 1800);
 			itemVo.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
+//			itemVo.setVo2(itemVo2);
 			list.add(itemVo);
 		}
 		test.setM(list);
+		
+		ItemVo itemVo = new ItemVo();
+		itemVo.setA(1);
+		itemVo.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()])));
+		itemVo.setC(false);
+		itemVo.setD(ArrayUtils.toPrimitive(d.toArray(new Boolean[d.size()])));
+		itemVo.setE("---testttttttt22");
+		itemVo.setF(f.toArray(new String[f.size()]));
+		itemVo.setG(100000);
+		itemVo.setH(ArrayUtils.toPrimitive(h.toArray(new Long[h.size()])));
+		itemVo.setI((byte) 125);
+		itemVo.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
+		itemVo.setK((short) 1800);
+		itemVo.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
+		itemVo.setVo2(itemVo2);
+		test.setItemVo(itemVo);
+		
+		
 		connector.send(test);
 
 		return null;

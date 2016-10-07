@@ -1,4 +1,5 @@
 package com.app.protocol.data;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
@@ -7,6 +8,7 @@ import org.apache.log4j.Logger;
 
 import com.app.net.ProtocolFactory;
 import com.app.protocol.INetData;
+
 public class DataBeanDecoder {
 	private static Logger log = Logger.getLogger(DataBeanDecoder.class);
 
@@ -48,37 +50,69 @@ public class DataBeanDecoder {
 		return d;
 	}
 
-	public static Object getValue(INetData data, Field field) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException {
-		String fieldName = field.getName();// 字段名
+	public static Object getValue(INetData data, Field field) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException,
+			ClassNotFoundException {
+		// String fieldName = field.getName();// 字段名
 		String type = field.getType().getSimpleName();// 类型
-		if (type.equals("byte"))
+		switch (type) {
+		case "byte":
 			return Byte.valueOf(data.readByte());
-		if (type.equals("byte[]"))
+		case "byte[]":
 			return data.readBytes();
-		if (type.equals("short"))
+		case "short":
 			return Short.valueOf(data.readShort());
-		if (type.equals("short[]"))
+		case "short[]":
 			return data.readShorts();
-		if (type.equals("int"))
+		case "int":
 			return Integer.valueOf(data.readInt());
-		if (type.equals("int[]"))
+		case "int[]":
 			return data.readInts();
-		if (type.equals("long"))
+		case "long":
 			return Long.valueOf(data.readLong());
-		if (type.equals("long[]"))
+		case "long[]":
 			return data.readLongs();
-		if (type.equals("boolean"))
+		case "boolean":
 			return Boolean.valueOf(data.readBoolean());
-		if (type.equals("boolean[]"))
+		case "boolean[]":
 			return data.readBooleans();
-		if (type.endsWith("String"))
+		case "String":
 			return data.readString();
-		if (type.endsWith("String[]"))
+		case "String[]":
 			return data.readStrings();
-		if (type.endsWith("List")) // 列表结构
+		case "List":
 			return data.readList(field);
+		default:// 其他类型(自定义)
+			return data.readObj(field);
+		}
 
-		throw new IllegalAccessException("fieldName:" + fieldName + ",type:" + type + ",data:" + data);
+		// if (type.equals("byte"))
+		// return Byte.valueOf(data.readByte());
+		// if (type.equals("byte[]"))
+		// return data.readBytes();
+		// if (type.equals("short"))
+		// return Short.valueOf(data.readShort());
+		// if (type.equals("short[]"))
+		// return data.readShorts();
+		// if (type.equals("int"))
+		// return Integer.valueOf(data.readInt());
+		// if (type.equals("int[]"))
+		// return data.readInts();
+		// if (type.equals("long"))
+		// return Long.valueOf(data.readLong());
+		// if (type.equals("long[]"))
+		// return data.readLongs();
+		// if (type.equals("boolean"))
+		// return Boolean.valueOf(data.readBoolean());
+		// if (type.equals("boolean[]"))
+		// return data.readBooleans();
+		// if (type.endsWith("String"))
+		// return data.readString();
+		// if (type.endsWith("String[]"))
+		// return data.readStrings();
+		// if (type.endsWith("List")) // 列表结构
+		// return data.readList(field);
+
+		// throw new IllegalAccessException("fieldName:" + fieldName + ",type:" + type + ",data:" + data);
 	}
 
 }

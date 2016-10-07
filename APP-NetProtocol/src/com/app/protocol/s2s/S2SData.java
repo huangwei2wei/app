@@ -3,6 +3,7 @@
 // Decompiler options: packimports(3) fieldsfirst ansi space
 // Source File Name: SSSData.java
 package com.app.protocol.s2s;
+
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -15,6 +16,7 @@ import org.apache.commons.beanutils.PropertyUtils;
 
 import com.app.protocol.INetData;
 import com.app.protocol.data.DataBeanDecoder;
+
 public class S2SData implements INetData {
 	private byte data[];
 	private byte type;
@@ -25,6 +27,7 @@ public class S2SData implements INetData {
 	private int sessionId;
 	private byte flag;
 	private boolean sourceCompressed;
+
 	// private static final String sep = ", ";
 
 	public S2SData(byte data[], int serial, int sessionId) {
@@ -276,7 +279,7 @@ public class S2SData implements INetData {
 		return data;
 	}
 
-	public List<Object> readList(Field field) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException {
+	public List<Object> readList(Field field) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException, ClassNotFoundException {
 		if (pos + 3 > data.length || (data[pos] & 0xff) != 7)
 			throw new IllegalAccessException();
 		pos++;
@@ -299,7 +302,26 @@ public class S2SData implements INetData {
 		}
 		return list;
 	}
-	// private String readList() throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException {
+
+	// 读取自定义对象数据类型
+	public Object readObj(Field field) throws IllegalAccessException, ClassNotFoundException, InstantiationException, InvocationTargetException, NoSuchMethodException {
+		if (pos + 3 > data.length || (data[pos] & 0xff) != 8)
+			throw new IllegalAccessException();
+		pos++;
+
+		Class<?> clazz = field.getType();
+		// Class<?> clazz = Class.forName(field.getType().getName());
+		Object objVo = clazz.newInstance();
+		Field[] fs = objVo.getClass().getDeclaredFields();
+		for (Field field2 : fs)
+			PropertyUtils.setProperty(objVo, field2.getName(), DataBeanDecoder.getValue(this, field2));
+
+		return objVo;
+	}
+
+	// private String readList() throws IllegalAccessException,
+	// InstantiationException, InvocationTargetException, NoSuchMethodException
+	// {
 	// if (pos + 3 > data.length || (data[pos] & 0xff) != 7)
 	// throw new IllegalAccessException();
 	// StringBuffer sb = new StringBuffer("List size:");
@@ -322,90 +344,90 @@ public class S2SData implements INetData {
 		for (int i = 0; i < numOfParameter; i++) {
 			try {
 				switch (data[pos] & 0xff) {
-					case 2 : // '\002'
-					{
-						sbuf.append(", ").append("boolean:").append(readBoolean());
-						break;
-					}
-					case 1 : // '\001'
-					{
-						sbuf.append(", ").append("byte:").append(readByte());
-						break;
-					}
-					case 4 : // '\004'
-					{
-						sbuf.append(", ").append("int:").append(readInt());
-						break;
-					}
-					case 5 : // '\005'
-					{
-						sbuf.append(", ").append("long:").append(readLong());
-						break;
-					}
-					case 3 : // '\003'
-					{
-						sbuf.append(", ").append("Short:").append(readShort());
-						break;
-					}
-					case 6 : // '\006'
-					{
-						sbuf.append(", ").append("UTF-8:").append(readString());
-						break;
-					}
-					case 7 : // '\007'
-					{
-						break;
-					}
-					case 130 : {
-						boolean barr[] = readBooleans();
-						sbuf.append(", ").append("boolean array num:").append(barr.length).append(" data:");
+				case 2: // '\002'
+				{
+					sbuf.append(", ").append("boolean:").append(readBoolean());
+					break;
+				}
+				case 1: // '\001'
+				{
+					sbuf.append(", ").append("byte:").append(readByte());
+					break;
+				}
+				case 4: // '\004'
+				{
+					sbuf.append(", ").append("int:").append(readInt());
+					break;
+				}
+				case 5: // '\005'
+				{
+					sbuf.append(", ").append("long:").append(readLong());
+					break;
+				}
+				case 3: // '\003'
+				{
+					sbuf.append(", ").append("Short:").append(readShort());
+					break;
+				}
+				case 6: // '\006'
+				{
+					sbuf.append(", ").append("UTF-8:").append(readString());
+					break;
+				}
+				case 7: // '\007'
+				{
+					break;
+				}
+				case 130: {
+					boolean barr[] = readBooleans();
+					sbuf.append(", ").append("boolean array num:").append(barr.length).append(" data:");
+					for (int j = 0; j < barr.length; j++)
+						sbuf.append(" ").append(barr[j]);
+					break;
+				}
+				case 129: {
+					byte barr[] = readBytes();
+					sbuf.append(", ").append("byte array num:").append(barr.length).append(" data:");
+					if (barr.length < 40) {
 						for (int j = 0; j < barr.length; j++)
 							sbuf.append(" ").append(barr[j]);
-						break;
+					} else {
+						sbuf.append(" omitted");
 					}
-					case 129 : {
-						byte barr[] = readBytes();
-						sbuf.append(", ").append("byte array num:").append(barr.length).append(" data:");
-						if (barr.length < 40) {
-							for (int j = 0; j < barr.length; j++)
-								sbuf.append(" ").append(barr[j]);
-						} else {
-							sbuf.append(" omitted");
-						}
-						break;
-					}
-					case 132 : {
-						int barr[] = readInts();
-						sbuf.append(", ").append("int array num:").append(barr.length).append(" data:");
-						for (int j = 0; j < barr.length; j++)
-							sbuf.append(" ").append(barr[j]);
-						break;
-					}
-					case 133 : {
-						long barr[] = readLongs();
-						sbuf.append(", ").append("long array num:").append(barr.length).append(" data:");
-						for (int j = 0; j < barr.length; j++)
-							sbuf.append(" ").append(barr[j]);
-						break;
-					}
-					case 131 : {
-						short barr[] = readShorts();
-						sbuf.append(", ").append("short array num:").append(barr.length).append(" data:");
-						for (int j = 0; j < barr.length; j++)
-							sbuf.append(" ").append(barr[j]);
-						break;
-					}
-					case 134 : {
-						String barr[] = readStrings();
-						sbuf.append(", ").append("String array num:").append(barr.length).append(" data:");
-						for (int j = 0; j < barr.length; j++)
-							sbuf.append(" ").append(barr[j]);
-						break;
-					}
-					default : {
-						return sbuf.toString();
-						// throw new IllegalAccessException();
-					}
+					break;
+				}
+				case 132: {
+					int barr[] = readInts();
+					sbuf.append(", ").append("int array num:").append(barr.length).append(" data:");
+					for (int j = 0; j < barr.length; j++)
+						sbuf.append(" ").append(barr[j]);
+					break;
+				}
+				case 133: {
+					long barr[] = readLongs();
+					sbuf.append(", ").append("long array num:").append(barr.length).append(" data:");
+					for (int j = 0; j < barr.length; j++)
+						sbuf.append(" ").append(barr[j]);
+					break;
+				}
+				case 131: {
+					short barr[] = readShorts();
+					sbuf.append(", ").append("short array num:").append(barr.length).append(" data:");
+					for (int j = 0; j < barr.length; j++)
+						sbuf.append(" ").append(barr[j]);
+					break;
+				}
+				case 134: {
+					String barr[] = readStrings();
+					sbuf.append(", ").append("String array num:").append(barr.length).append(" data:");
+					for (int j = 0; j < barr.length; j++)
+						sbuf.append(" ").append(barr[j]);
+					break;
+				}
+				default: {
+					return sbuf.toString();
+					// throw new IllegalAccessException();
+				}
 				}
 				continue;
 			} catch (Exception e) {

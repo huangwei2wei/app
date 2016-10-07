@@ -1,4 +1,5 @@
 package com.app.empire.protocol;
+
 public class Protocol {
 	public static final byte MAIN_ERROR = 0;
 	public static final byte ERROR_ProtocolError = 0;
@@ -212,6 +213,13 @@ public class Protocol {
 	/** AI */
 	public static final byte MAIN_AI = 17;
 	public static final byte AI_CommandMessage = 1;
+
+	// /***** 以下是 scene 服的协议 ******/
+	/** 玩家登录scene */
+	public static final byte MAIN_WORLD = 101;
+	/** 登录scene 服 **/
+	public static final byte WORLD_LoginIn = 1;
+	public static final byte WORLD_LoginInOK = 2;
 
 	/** 客户端日志上传控制 */
 	public static final byte MAIN_ERRORLOG = 107;

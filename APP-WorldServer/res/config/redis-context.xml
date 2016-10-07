@@ -11,7 +11,7 @@
                ">
 
 	<!-- scanner redis properties -->
-	<context:property-placeholder location="classpath:/jdbc.properties" />
+	<!-- context:property-placeholder location="classpath:/jdbc.properties" /-->
 
 	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
 		<property name="maxIdle" value="${redis.maxIdle}" />

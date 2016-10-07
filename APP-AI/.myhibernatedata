@@ -1,0 +1,24 @@
+#MyEclipse Hibernate Properties
+#Fri Sep 23 13:12:56 CST 2016
+sessionFactoryName=com.HibernateSessionFactory
+genBasicCompId=true
+profile=
+daoSFId=
+version=4.1
+jndiPath=
+detectM2M=true
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=assigned
+libInstallFolder=
+addLibs2Project=false
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=true
+reSettingsFile=/APP-Scenes/hibernate.reveng.xml
+configFile=/APP-Scenes/res/config/hibernate.cfg.gameConfig.xml
+createConfigFile=false
+addLibs2Classpath=false

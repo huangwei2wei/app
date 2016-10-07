@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.BaseLanguage" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.BaseRandomName" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.Hero" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.HeroExt" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.PlayerLv" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.Skill" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.SkillExt" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.Task" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.BaseModule" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.BaseModuleSub" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.MapCopy" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.EquipBar" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.EquipAchieve" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.EquipRefine" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.Goods" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.Box" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.Store" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.Parameter" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.TradeNpc" />
+		<mapping
+			class="com.app.empire.world.entity.mysql.gameConfig.TradeVip" />
+		<mapping resource="./TbZSkillinfo.hbm.xml" />
+		<mapping resource="./TbZSkillBuffer.hbm.xml" />
+		<mapping resource="./TbZSkillActioninfo.hbm.xml" />
+		<mapping resource="./TbZSkillActioninfoMove.hbm.xml" />
+		<mapping resource="./TbZSkillProperty.hbm.xml" />
+		<mapping class="com.app.empire.scene.entity.BaseLanguage" />
+
+	</session-factory>
+</hibernate-configuration>

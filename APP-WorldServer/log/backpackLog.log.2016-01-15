@@ -1,5 +1,0 @@
-[2016-01-15|10:18:05] com.app.empire.world.exception.PlayerDataException: 物品不存在
-[2016-01-15|12:15:36] java.lang.NullPointerException
-[2016-01-15|12:16:22] java.lang.NullPointerException
-[2016-01-15|12:16:39] java.lang.NullPointerException
-[2016-01-15|12:19:08] java.lang.NullPointerException

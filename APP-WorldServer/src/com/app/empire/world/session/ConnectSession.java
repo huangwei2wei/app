@@ -32,7 +32,6 @@ public class ConnectSession extends Session {
 	private static final Logger log = Logger.getLogger(ConnectSession.class);
 	public static final String SERVERPASSWORD = "serverpassword";
 	public static final long GETEXP_TIME_LIMIT = 259200000L;
-	private int id;
 	private int maxPlayer;
 	private String name;
 
@@ -91,13 +90,6 @@ public class ConnectSession extends Session {
 
 	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public int getId() {
-		return this.id;
-	}
 
 	/**
 	 * 根据玩家id发送对应数据包
@@ -367,7 +359,7 @@ public class ConnectSession extends Session {
 	 * @return
 	 */
 	public boolean contains(int playerId) {
-		return this.playerid2sessionid.containsKey(id);
+		return this.playerid2sessionid.containsKey(playerId);
 	}
 
 	public int getPlayerSessionId(int playerId) {

@@ -18,9 +18,10 @@ public class Test extends AbstractData {
 	private byte[] j;
 	private short k;
 	private short[] l;
-	
+	private ItemVo itemVo;
 	private List<ItemVo> m;
-
+	
+	
 	public Test(int sessionId, int serial) {
 		super(Protocol.MAIN_TEST, Protocol.TEST_Test, sessionId, serial);
 	}
@@ -104,6 +105,12 @@ public class Test extends AbstractData {
 	}
 	public void setM(List<ItemVo> m) {
 		this.m = m;
+	}
+	public ItemVo getItemVo() {
+		return itemVo;
+	}
+	public void setItemVo(ItemVo itemVo) {
+		this.itemVo = itemVo;
 	}
 	
 //	public static class ItemVo {

@@ -17,12 +17,15 @@ public class TestHandler implements IDataHandler {
 
 		for (ItemVo itemVo : vos) {
 			System.out.println("itemVo ---" + itemVo.getA() + "---" + itemVo.getB() + "---" + itemVo.isC() + "---" + itemVo.getD() + "---" + itemVo.getE() + "---" + itemVo.getF() + "---"
-					+ itemVo.getH() + "---" + itemVo.getI() + "---" + itemVo.getJ() + "---" + itemVo.getK() + "---" + itemVo.getL());
+					+ itemVo.getH() + "---" + itemVo.getI() + "---" + itemVo.getJ() + "---" + itemVo.getK() + "---" + itemVo.getL()+"--"+itemVo.getVo2().getE());
 //			short[] s = itemVo.getL();
 //			for (int i = 0; i < s.length; i++) {
 //				System.out.println(s[i]);
 //			}
 		}
+		
+		ItemVo vo = test.getItemVo();
+		System.out.println(vo.getE()+"-----"+vo.getVo2().getE());
 		return null;
 	}
 }

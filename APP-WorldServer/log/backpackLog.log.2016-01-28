@@ -1,8 +1,0 @@
-[2016-01-28|10:12:41] java.lang.ClassCastException: com.alibaba.fastjson.JSONArray cannot be cast to java.util.Map
-[2016-01-28|10:12:44] java.lang.ClassCastException: com.alibaba.fastjson.JSONArray cannot be cast to java.util.Map
-[2016-01-28|10:12:46] java.lang.ClassCastException: com.alibaba.fastjson.JSONArray cannot be cast to java.util.Map
-[2016-01-28|10:12:48] java.lang.ClassCastException: com.alibaba.fastjson.JSONArray cannot be cast to java.util.Map
-[2016-01-28|10:12:51] java.lang.ClassCastException: com.alibaba.fastjson.JSONArray cannot be cast to java.util.Map
-[2016-01-28|10:12:55] java.lang.ClassCastException: com.alibaba.fastjson.JSONArray cannot be cast to java.util.Map
-[2016-01-28|10:16:59] java.lang.ClassCastException: com.alibaba.fastjson.JSONArray cannot be cast to java.util.Map
-[2016-01-28|10:30:29] java.lang.ClassCastException: com.alibaba.fastjson.JSONArray cannot be cast to java.util.Map

@@ -11,7 +11,7 @@ public class ClientInfo {
 	private long moveTime = 0;// 移动时间
 	private int moveCount = 0;// 移动次数
 	private IoSession ioSession;// 连接客户端的ioSession
-	private Player player;
+//	private Player player;
 	private Timer timer = new Timer();
 	private byte protocolType;// 上一次执行的协议
 	private byte protocolSubType;// 上一次执行的协议
@@ -56,13 +56,13 @@ public class ClientInfo {
 		return ioSession;
 	}
 
-	public Player getPlayer() {
-		return player;
-	}
-
-	public void setPlayer(Player player) {
-		this.player = player;
-	}
+	// public Player getPlayer() {
+	// return player;
+	// }
+	//
+	// public void setPlayer(Player player) {
+	// this.player = player;
+	// }
 
 	public long getMoveTime() {
 		return moveTime;

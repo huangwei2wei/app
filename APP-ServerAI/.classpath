@@ -5,6 +5,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/APP-EmpireNetProtocol"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/APP-NetProtocol"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/NetGame"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Sun JDK 1.6.0_13"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

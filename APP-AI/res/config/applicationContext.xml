@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:mongo="http://www.springframework.org/schema/data/mongo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	        http://www.springframework.org/schema/context
+	        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	        http://www.springframework.org/schema/tx
+	        http://www.springframework.org/schema/tx/spring-tx.xsd
+	        http://www.springframework.org/schema/aop
+	        http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<!-- JDBC参数配置 -->
+
+
+	<context:property-placeholder location="classpath:/jdbc.properties" />
+
+	<!-- 游戏Config数据源配置 -->
+	<bean id="gameConfigDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<!-- 设置JDBC驱动名称 -->
+		<property name="driverClass" value="${gameConfig.jdbc.driver}" />
+		<!-- 设置JDBC连接URL -->
+		<property name="jdbcUrl" value="${gameConfig.jdbc.url}" />
+		<!-- 设置数据库用户名 -->
+		<property name="user" value="${gameConfig.jdbc.username}" />
+		<!-- 设置数据库密码 -->
+		<property name="password" value="${gameConfig.jdbc.password}" />
+		<!-- 设置连接池初始值 -->
+		<property name="initialPoolSize" value="2" />
+		<!-- 设置连接池最大值 -->
+		<property name="maxPoolSize" value="10" />
+		<!-- 设置连接池最小值 -->
+		<property name="minPoolSize" value="1" />
+		<!-- 设置连接池最大空闲值 -->
+		<property name="maxIdleTime" value="60" />
+	</bean>
+
+	<bean id="gameConfigSessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<!-- 配置Hibernate拦截器,自动填充数据的插入、更新时间 -->
+		<property name="dataSource" ref="gameConfigDataSource" />
+		<property name="configLocation" value="classpath:hibernate.cfg.gameConfig.xml" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${gameConfig.hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${gameConfig.hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql">${gameConfig.hibernate.format_sql}</prop>
+				<prop key="hibernate.cache.use_second_level_cache">${gameConfig.hibernate.cache.use_second_level_cache}</prop>
+				<prop key="hibernate.cache.provider_class">${gameConfig.hibernate.cache.provider_class}</prop>
+				<prop key="hibernate.cache.use_query_cache">${gameConfig.hibernate.cache.use_query_cache}</prop>
+				<prop key="hibernate.jdbc.fetch_size">${gameConfig.hibernate.jdbc.fetch_size}</prop>
+				<prop key="hibernate.jdbc.batch_size">${gameConfig.hibernate.jdbc.batch_size}</prop>
+				<prop key="hibernate.bytecode.use_reflection_optimizer">${gameConfig.hibernate.bytecode.use_reflection_optimizer}</prop>
+				<prop key="hibernate.connection.release_mode">auto</prop>
+				<prop key="hibernate.autoReconnect">true</prop>
+			</props>
+
+		</property>
+	</bean>
+	<!-- mySql 配置结束 -->
+
+
+</beans>
