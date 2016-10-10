@@ -1,7 +1,5 @@
 package com.app.dispatch;
 
-import java.net.InetSocketAddress;
-
 import org.apache.log4j.Logger;
 import org.apache.mina.core.future.ConnectFuture;
 
@@ -68,6 +66,10 @@ public class DisServer {
 		ConnectFuture future = ((SocketDispatcher) this.dispatcher).connectWoeldServer();
 		// 阻塞数据，直到确定与world server连接成功
 		future.awaitUninterruptibly();
+		// 连接scenes
+		ConnectFuture scenesFuture = ((SocketDispatcher) this.dispatcher).connectSceneServer();
+		scenesFuture.awaitUninterruptibly();
+		
 		log.info("数据分发服务器启动完成  -- 端口:" + configuration.getConfiguration().getInt("port"));
 
 		System.out.println("数据分发服务器启动完成  -- 端口:" + configuration.getConfiguration().getInt("port"));

@@ -1,4 +1,0 @@
-#是否打开facebook功能，0关闭，1打开
-0
-#应用在googleplayer中的id
-0123456789
