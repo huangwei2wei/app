@@ -68,8 +68,8 @@ public class DisServer {
 		future.awaitUninterruptibly();
 		// 连接scenes
 		ConnectFuture scenesFuture = ((SocketDispatcher) this.dispatcher).connectSceneServer();
-		scenesFuture.awaitUninterruptibly();
-		
+		// scenesFuture.awaitUninterruptibly();
+
 		log.info("数据分发服务器启动完成  -- 端口:" + configuration.getConfiguration().getInt("port"));
 
 		System.out.println("数据分发服务器启动完成  -- 端口:" + configuration.getConfiguration().getInt("port"));
