@@ -1,0 +1,9 @@
+//protocol= 735;
+option java_package = "com.app.empire.protocol.pb";
+option java_outer_classname = "TestMsgProto";
+
+//购买或赠送vip成功
+message TestMsg {
+	required int64 vipTimeLimit = 1;//vip 到期时间 （时间戳
+	required int64 vipInterimTimeLimit=2;//临时vip 到期时间（时间戳
+}
