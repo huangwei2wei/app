@@ -26,10 +26,14 @@ public class DataBeanFilter extends IoFilterAdapter {
 
 	@Override
 	public void filterWrite(IoFilter.NextFilter nextFilter, IoSession session, WriteRequest writeRequest) throws Exception {
-		AbstractData msg = (AbstractData) writeRequest.getMessage();
-		INetSegment seg = this.encoder.encode(msg);
-		if (seg != null)
-			nextFilter.filterWrite(session, new DefaultWriteRequest(seg, writeRequest.getFuture()));
+		if (writeRequest.getMessage() instanceof AbstractData) {
+			AbstractData msg = (AbstractData) writeRequest.getMessage();
+			INetSegment seg = this.encoder.encode(msg);
+			if (seg != null)
+				nextFilter.filterWrite(session, new DefaultWriteRequest(seg, writeRequest.getFuture()));
+		} else {
+
+		}
 	}
 
 	@Override
