@@ -90,8 +90,8 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		}
 		IoBuffer buffer = (IoBuffer) object;
 		buffer.order(ByteOrder.LITTLE_ENDIAN);// 设置小头在前　默认大头序
-		byte type = buffer.get(19);
-		byte subType = buffer.get(20);
+		byte type = buffer.get(15);
+		byte subType = buffer.get(16);
 
 		if (!checkProtocol(session, type, subType)) // 协议检查
 			return;
@@ -118,7 +118,7 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 
 	/** 转发数据至 worldServer */
 	public void dispatchToWorldServer(int sessionId, IoBuffer buffer) {
-		buffer.putInt(4, sessionId);// sessionId
+		buffer.putInt(0, sessionId);// sessionId
 		this.worldServerSession.write(buffer.duplicate());// 发送worldServer
 	}
 

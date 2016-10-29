@@ -67,7 +67,7 @@ public class RoleLoginHandler implements IDataHandler {
 			playerLoginOk.setGold(player.getGold());
 			playerLoginOk.setProperty(player.getProperty());
 			playerLoginOk.setFight(player.getFight());
-			log.info("udid:" + client.getName());
+			//log.info("udid:" + client.getName());
 			return playerLoginOk;
 		} catch (CreatePlayerException ex) {
 			throw new ProtocolException(ex.getMessage(), data.getSerial(), data.getSessionId(), data.getType(), data.getSubType());

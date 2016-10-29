@@ -30,18 +30,18 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 		} else {
 			buffer = in;
 		}
-		buffer.order(ByteOrder.LITTLE_ENDIAN);// 设置小头在前　默认大头序
+		buffer.order(ByteOrder.LITTLE_ENDIAN);// 设置小头在前 默认大头序
 		while (buffer.hasRemaining()) {
 			buffer.mark();
 			int size = buffer.remaining();
-			if (size > 19) {
-				byte[] head = new byte[4];
-				buffer.get(head);
-				int version = compareHead(head);
-				if (version == -1) {
-					session.setAttribute(CURRENT_DECODER, null);
-					throw new IOException("error protocol");
-				}
+			if (size > 14) {
+				// byte[] head = new byte[4];
+				// buffer.get(head);
+				// int version = compareHead(head);
+				// if (version == -1) {
+				// session.setAttribute(CURRENT_DECODER, null);
+				// throw new IOException("error protocol");
+				// }
 				int sessionId = buffer.getInt();
 				int serial = buffer.getInt();
 				int len = buffer.getInt();
@@ -50,7 +50,7 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 					session.setAttribute(CURRENT_DECODER, null);
 					throw new IOException("error protocol");
 				}
-				if (len + 1 <= size) {
+				if (len <= size) {
 					if (sessionId == -1) {// 后端处理
 						buffer.mark();
 						byte flag = buffer.get();
@@ -60,7 +60,7 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 						buffer.reset();
 						byte[] data = new byte[dataLen];
 						buffer.get(data);
-						buffer.get();
+						// buffer.get();
 						INetData udata = new S2SData(data, serial, sessionId);
 						Packet packet = new Packet(udata, type, subtype);
 						out.write(packet);
@@ -68,7 +68,7 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 						byte flag = buffer.get();
 						byte type = buffer.get();
 						byte subtype = buffer.get();
-						byte[] data = new byte[len + 1];
+						byte[] data = new byte[len];
 						buffer.reset();
 						buffer.get(data);
 						Packet packet = new Packet(IoBuffer.wrap(data), sessionId, type, subtype);
@@ -90,12 +90,12 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 		}
 	}
 
-	public int compareHead(byte[] head) {
-		for (int i = 0; i < INetSegment.HEAD.length - 1; ++i) {
-			if (INetSegment.HEAD[i] != head[i])
-				return -1;
-		}
-		int version = head[3] - 48;
-		return version;
-	}
+	// public int compareHead(byte[] head) {
+	// for (int i = 0; i < INetSegment.HEAD.length - 1; ++i) {
+	// if (INetSegment.HEAD[i] != head[i])
+	// return -1;
+	// }
+	// int version = head[3] - 48;
+	// return version;
+	// }
 }

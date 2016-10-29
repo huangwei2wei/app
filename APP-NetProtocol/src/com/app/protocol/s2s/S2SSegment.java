@@ -273,13 +273,13 @@ public class S2SSegment implements INetSegment {
 	public byte[] getPacketByteArray() {
 		byte[] bytes = getByteArray();
 		ByteList byteList = new ArrayByteList(bytes.length + 20);
-		ByteListUtil.addBytes(byteList, INetSegment.HEAD);// 4
+		//ByteListUtil.addBytes(byteList, INetSegment.HEAD);// 4
 		ByteListUtil.addInt(byteList, this.sessionId);// 4
 		ByteListUtil.addInt(byteList, this.serial);// 4
-		ByteListUtil.addInt(byteList, 18 + bytes.length);// 4
+		ByteListUtil.addInt(byteList, 14 + bytes.length);// 4
 		ByteListUtil.addShort(byteList, (short) 1);// 2
 		ByteListUtil.addBytes(byteList, bytes);
-		ByteListUtil.addByte(byteList, (byte) 0);// 1
+		//ByteListUtil.addByte(byteList, (byte) 0);// 1
 		return byteList.toArray();
 	}
 

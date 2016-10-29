@@ -1,4 +1,5 @@
 package com.app.protocol.s2s;
+
 import com.app.protocol.*;
 
 import java.io.IOException;
@@ -10,6 +11,7 @@ import org.apache.mina.core.session.AttributeKey;
 import org.apache.mina.core.session.IoSession;
 import org.apache.mina.filter.codec.ProtocolDecoderAdapter;
 import org.apache.mina.filter.codec.ProtocolDecoderOutput;
+
 /**
  * 类 <code>S2SDecoder</code>对服务器间的数据进行解码
  * 
@@ -48,19 +50,19 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 		} else {
 			buffer = in;
 		}
-		buffer.order(ByteOrder.LITTLE_ENDIAN);// 设置小头在前　默认大头序
+		buffer.order(ByteOrder.LITTLE_ENDIAN);// 设置小头在前 默认大头序
 		while (buffer.hasRemaining()) {
 			buffer.mark();
 			int size = buffer.remaining();
-			if (size >= 19) {
-				byte head[] = new byte[4];
-				buffer.get(head);
-				int version = checkVersion(head);
-				if (version == -1) {
-					// session.setAttachment(null);
-					session.setAttribute(CURRENT_DECODER, null);
-					throw new IOException("error protocol 1");
-				}
+			if (size >= 14) {
+				// byte head[] = new byte[4];
+				// buffer.get(head);
+				// int version = checkVersion(head);
+				// if (version == -1) {
+				// // session.setAttachment(null);
+				// session.setAttribute(CURRENT_DECODER, null);
+				// throw new IOException("error protocol 1");
+				// }
 				int sessionId = buffer.getInt();
 				int ser = buffer.getInt();
 				int len = buffer.getInt(); // 包长度
@@ -70,8 +72,8 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 					session.setAttribute(CURRENT_DECODER, null);
 					throw new IOException("error protocol 2");
 				}
-				byte minBytes = 7;
-				if (len + 1 <= size) {
+				byte minBytes = 8;
+				if (len <= size) {
 					byte flag = 0;
 					INetData datas[] = new INetData[num];
 					for (int i = 0; i < num; i++) {
@@ -96,7 +98,7 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 						buffer.get(data);
 						datas[i] = new S2SData(data, ser, sessionId, false);
 					}
-					buffer.get();
+					// buffer.get();
 					if ((flag & 1) != 0)
 						log.debug((new StringBuilder()).append("***Recv Error Msg:").append(datas[0].getType()).append(".").append(datas[0].getSubType()).toString());
 					else
@@ -123,12 +125,12 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 		}
 	}
 
-	public int checkVersion(byte head[]) {
-		for (int i = 0; i < INetSegment.HEAD.length - 1; i++) {
-			if (INetSegment.HEAD[i] != head[i]) {
-				return -1;
-			}
-		}
-		return (int) (((head[0] & 0xFF) << 24) | ((head[1] & 0xFF) << 16) | ((head[2] & 0xFF) << 8) | (head[3] & 0xFF));
-	}
+	// public int checkVersion(byte head[]) {
+	// for (int i = 0; i < INetSegment.HEAD.length - 1; i++) {
+	// if (INetSegment.HEAD[i] != head[i]) {
+	// return -1;
+	// }
+	// }
+	// return (int) (((head[0] & 0xFF) << 24) | ((head[1] & 0xFF) << 16) | ((head[2] & 0xFF) << 8) | (head[3] & 0xFF));
+	// }
 }

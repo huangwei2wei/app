@@ -26,13 +26,13 @@ public class S2SEncoder extends ProtocolEncoderAdapter {
         buffer.order(ByteOrder.LITTLE_ENDIAN);// 设置小头在前　默认大头序
         
         buffer.setAutoExpand(true);
-        buffer.put(INetSegment.HEAD);//4
+        //buffer.put(INetSegment.HEAD);//4
         buffer.putInt(segment.getSessionId());//4
         buffer.putInt(segment.getSerial());//4
-        buffer.putInt(18 + segment.size());//4
+        buffer.putInt(14 + segment.size());//4
         buffer.putShort((short) 1);//2
         buffer.put(segment.getByteArray());
-        buffer.put((byte) 0);//1
+        //buffer.put((byte) 0);//1
         buffer.flip();
         out.write(buffer);
         if ((segment.getFlag() & 0x1) != 0)

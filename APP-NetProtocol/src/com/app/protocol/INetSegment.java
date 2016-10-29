@@ -4,8 +4,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public abstract interface INetSegment {
-	public static final byte[] HEAD = { 1, 0, 0, 0 };
-	public static final byte[] EMTPY_PACKET = { 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0 };
+	// public static final byte[] HEAD = { 1, 0, 0, 0 };
+	// public static final byte[] EMTPY_PACKET = { 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0 };
 
 	public abstract byte getType();
 

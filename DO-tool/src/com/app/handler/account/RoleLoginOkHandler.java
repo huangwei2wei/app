@@ -45,15 +45,15 @@ public class RoleLoginOkHandler implements IDataHandler {
 		// GetRoleList getRoleList = new GetRoleList();
 		// connector.send(getRandomName);
 		/**
-		 * List<Integer> b = new ArrayList<Integer>(); List<Boolean> d = new ArrayList<Boolean>(); List<String> f = new ArrayList<String>(); List<Long> h = new ArrayList<Long>(); List<Byte> j = new
-		 * ArrayList<Byte>(); List<Short> l = new ArrayList<Short>();
+		 * List<Integer> b = new ArrayList<Integer>(); List<Boolean> d = new ArrayList<Boolean>(); List<String> f = new ArrayList<String>(); List<Long> h = new ArrayList<Long>();
+		 * List<Byte> j = new ArrayList<Byte>(); List<Short> l = new ArrayList<Short>();
 		 * 
 		 * for (int i = 0; i < 10; i++) { b.add(i); d.add(true); f.add("abc"); h.add(9999119999L); j.add((byte) i); l.add((short) (i * 10)); }
 		 * 
-		 * Test test = new Test(); test.setA(1); test.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()]))); test.setC(false); test.setD(ArrayUtils.toPrimitive(d.toArray(new
-		 * Boolean[d.size()]))); test.setE("testttttttt"); test.setF(f.toArray(new String[f.size()])); test.setG(100000); test.setH(ArrayUtils.toPrimitive(h.toArray(new Long[h.size()])));
-		 * test.setI((byte) 125); test.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()]))); test.setK((short) 1800); test.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
-		 * connector.send(test);
+		 * Test test = new Test(); test.setA(1); test.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()]))); test.setC(false);
+		 * test.setD(ArrayUtils.toPrimitive(d.toArray(new Boolean[d.size()]))); test.setE("testttttttt"); test.setF(f.toArray(new String[f.size()])); test.setG(100000);
+		 * test.setH(ArrayUtils.toPrimitive(h.toArray(new Long[h.size()]))); test.setI((byte) 125); test.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
+		 * test.setK((short) 1800); test.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()]))); connector.send(test);
 		 */
 
 		// for (int i = 0; i < 10000000; i++) {
@@ -84,10 +84,10 @@ public class RoleLoginOkHandler implements IDataHandler {
 		// getEquipList.setHeroId(heroids);
 		// connector.send(getEquipList);
 		//
-//		 GetMailList getMaillist = new GetMailList();
-//		 getMaillist.setSkip(0);
-//		 getMaillist.setLimit(10);
-//		 connector.send(getMaillist);
+		// GetMailList getMaillist = new GetMailList();
+		// getMaillist.setSkip(0);
+		// getMaillist.setLimit(10);
+		// connector.send(getMaillist);
 		//
 		// ReceiveMail receiveMail = new ReceiveMail();
 		// receiveMail.setMailId(new int[]{5});
@@ -212,8 +212,7 @@ public class RoleLoginOkHandler implements IDataHandler {
 		test.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
 		test.setK((short) 1800);
 		test.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
-		
-		
+
 		ItemVo2 itemVo2 = new ItemVo2();
 		itemVo2.setA(1);
 		itemVo2.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()])));
@@ -227,9 +226,7 @@ public class RoleLoginOkHandler implements IDataHandler {
 		itemVo2.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
 		itemVo2.setK((short) 1800);
 		itemVo2.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
-		
-		
-		
+
 		List<ItemVo> list = new ArrayList<ItemVo>();
 		for (int i = 0; i < 10; i++) {
 			ItemVo itemVo = new ItemVo();
@@ -245,11 +242,11 @@ public class RoleLoginOkHandler implements IDataHandler {
 			itemVo.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
 			itemVo.setK((short) 1800);
 			itemVo.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
-//			itemVo.setVo2(itemVo2);
+			itemVo.setVo2(itemVo2);
 			list.add(itemVo);
 		}
 		test.setM(list);
-		
+
 		ItemVo itemVo = new ItemVo();
 		itemVo.setA(1);
 		itemVo.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()])));
@@ -265,9 +262,8 @@ public class RoleLoginOkHandler implements IDataHandler {
 		itemVo.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
 		itemVo.setVo2(itemVo2);
 		test.setItemVo(itemVo);
-		
-		
-		connector.send(test);
+
+		// connector.send(test);
 
 		return null;
 	}
