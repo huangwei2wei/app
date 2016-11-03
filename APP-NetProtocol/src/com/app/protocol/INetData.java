@@ -45,7 +45,7 @@ public abstract interface INetData {
 
 	public abstract List<Object> readList(Field field) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException,ClassNotFoundException;
 
-	public abstract byte getFlag();
+//	public abstract byte getFlag();
 
 	public abstract byte[] toBytes();
 }

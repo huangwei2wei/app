@@ -16,7 +16,7 @@ public class DataBeanEncoder {
 	// SimpleDateFormat sdf = new SimpleDateFormat("mm:ss:SSSS");
 	public INetSegment encode(AbstractData data) throws Exception {
 		try {
-			INetSegment segment = ProtocolManager.getNetSegmentInstance(data.getType(), data.getSubType(), data.getSessionId(), data.getSerial(), data.getFlag());
+			INetSegment segment = ProtocolManager.getNetSegmentInstance(data.getType(), data.getSubType(), data.getSessionId(), data.getSerial());
 			Field[] fs = data.getClass().getDeclaredFields();
 			for (Field f : fs) {
 				// String ftype = f.getType().getSimpleName();

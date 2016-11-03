@@ -15,23 +15,23 @@ public class DataBeanDecoder {
 	public AbstractData decode(INetData data) throws Exception {
 		byte type = data.getType();
 		byte subType = data.getSubType();
-		byte flag = data.getFlag();
+//		byte flag = data.getFlag();
 		AbstractData d = null;
 		// System.out.println("type:"+type+",subType:"+subType);
-		if ((flag & 0x1) != 0) {
-			d = ProtocolFactory.getProtocolDataBean((byte) -1, (byte) -1);
-			d.setType(type);
-			d.setSubType(subType);
-			log.debug("flag不为0，数据异常:" + ProtocolFactory.getProtocolDataBean(type, subType).getClass().getName());
-			return d;
-		} else {
+//		if ((flag & 0x1) != 0) {
+//			d = ProtocolFactory.getProtocolDataBean((byte) -1, (byte) -1);
+//			d.setType(type);
+//			d.setSubType(subType);
+//			log.debug("flag不为0，数据异常:" + ProtocolFactory.getProtocolDataBean(type, subType).getClass().getName());
+//			return d;
+//		} else {
 			d = ProtocolFactory.getProtocolDataBean(type, subType);
 			if (d == null)
 				log.error("***未定义的类型：" + Integer.toHexString(type) + ".0x" + Integer.toHexString(subType));
 			else {
 				log.debug("***接收消息： " + d.getClass().getName());
 			}
-		}
+//		}
 		if (d != null) {
 			try {
 				d.setSerial(data.getSerial());

@@ -37,9 +37,9 @@ public class S2SEncoder extends ProtocolEncoderAdapter {
 		// buffer.put((byte) 0);//1
 		buffer.flip();
 		out.write(buffer);
-		if ((segment.getFlag() & 0x1) != 0)
-			log.debug("***Send Error: " + segment.getType() + "." + segment.getSubType());
-		else
-			log.debug("***Send Protocol: " + segment.getType() + "." + segment.getSubType());
+		// if ((segment.getFlag() & 0x1) != 0)
+		// log.debug("***Send Error: " + segment.getType() + "." + segment.getSubType());
+		// else
+		// log.debug("***Send Protocol: " + segment.getType() + "." + segment.getSubType());
 	}
 }

@@ -89,9 +89,9 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 			return;
 		}
 		IoBuffer buffer = (IoBuffer) object;
-		buffer.order(ByteOrder.LITTLE_ENDIAN);// 设置小头在前　默认大头序
-		byte type = buffer.get(15);
-		byte subType = buffer.get(16);
+		buffer.order(ByteOrder.LITTLE_ENDIAN);// 设置小头在前 默认大头序
+		byte type = buffer.get(13);
+		byte subType = buffer.get(14);
 
 		if (!checkProtocol(session, type, subType)) // 协议检查
 			return;
@@ -288,9 +288,9 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		IoBuffer buffer = packet.buffer;
 		IoSession session = (IoSession) this.sessions.get(Integer.valueOf(sessionId));
 		if (session != null) {
-			byte type = buffer.get(14);
+			byte type = buffer.get(13);
 			if (type == Protocol.MAIN_ACCOUNT) {
-				byte subType = buffer.get(15);
+				byte subType = buffer.get(14);
 				if (subType == Protocol.ACCOUNT_LoginOk) {// 账号登录成功
 					session.setAttribute(LOGINMARK_KEY, LOGINMARK_LOGED);
 					SocketDispatcher.this.channelService.getWorldChannel().join(session);// 加入到世界频道

@@ -56,14 +56,14 @@ public class ClientDecoder extends ProtocolDecoderAdapter {
 				if (size >= len) {// 满足一个包的数据
 					buffer.reset();
 					buffer.skip(13);
-					if (buffer.remaining() < 8) {
+					if (buffer.remaining() < 7) {
 						session.setAttribute(CURRENT_DECODER, null);
 						System.out.println("error protocol_4");
 						throw new IOException("error protocol_4");
 					}
-					buffer.skip(3);
+					buffer.skip(2);
 					int dataLen = buffer.getInt();// 数据长度
-					if ((dataLen < 0) || (dataLen - 8 >= buffer.remaining())) {
+					if ((dataLen < 0) || (dataLen - 7 >= buffer.remaining())) {
 						session.setAttribute(CURRENT_DECODER, null);
 						System.out.println("error protocol_5");
 						throw new IOException("error protocol_5");

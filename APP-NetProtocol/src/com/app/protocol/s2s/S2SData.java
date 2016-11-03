@@ -25,7 +25,7 @@ public class S2SData implements INetData {
 	private int serial;
 	private int pos;
 	private int sessionId;
-	private byte flag;
+	// private byte flag;
 	private boolean sourceCompressed;
 
 	// private static final String sep = ", ";
@@ -37,13 +37,13 @@ public class S2SData implements INetData {
 	public S2SData(byte data[], int serial, int sessionId, boolean needUncompress) {
 		sourceCompressed = false;
 		this.data = data;
-		flag = (byte) (int) getNumber(data, 0, 1);// 1
-		type = (byte) (int) getNumber(data, 1, 1);// 1
-		subType = (byte) (int) getNumber(data, 2, 1);// 1
+		// flag = (byte) (int) getNumber(data, 0, 1);// 1
+		type = (byte) (int) getNumber(data, 0, 1);// 1
+		subType = (byte) (int) getNumber(data, 1, 1);// 1
 		this.sessionId = sessionId;// 4
-		numOfParameter = this.data[7];// 1 字段个数
+		numOfParameter = this.data[6];// 1 字段个数
 		this.serial = serial;
-		pos = 8;// 从第8个开始读
+		pos = 7;// 从第8个开始读
 		sourceCompressed = needUncompress;
 	}
 
@@ -340,7 +340,7 @@ public class S2SData implements INetData {
 		StringBuffer sbuf = new StringBuffer();
 		sbuf.append("Type:").append(type).append(" SubType:").append(subType);
 		int tmppos = pos;
-		pos = 8;
+		pos = 7;
 		for (int i = 0; i < numOfParameter; i++) {
 			try {
 				switch (data[pos] & 0xff) {
@@ -441,7 +441,7 @@ public class S2SData implements INetData {
 		return sbuf.toString();
 	}
 
-	public byte getFlag() {
-		return flag;
-	}
+	// public byte getFlag() {
+	// return flag;
+	// }
 }

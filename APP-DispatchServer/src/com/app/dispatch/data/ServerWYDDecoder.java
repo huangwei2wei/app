@@ -53,7 +53,7 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 				if (len <= size) {
 					if (sessionId == -1) {// 后端处理
 						buffer.mark();
-						byte flag = buffer.get();
+						// byte flag = buffer.get();
 						byte type = buffer.get();
 						byte subtype = buffer.get();
 						int dataLen = buffer.getInt();
@@ -65,7 +65,7 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 						Packet packet = new Packet(udata, type, subtype);
 						out.write(packet);
 					} else {// 发送前端或服务器
-						byte flag = buffer.get();
+						// byte flag = buffer.get();
 						byte type = buffer.get();
 						byte subtype = buffer.get();
 						byte[] data = new byte[len];

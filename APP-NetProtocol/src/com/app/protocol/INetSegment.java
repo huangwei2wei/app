@@ -51,7 +51,7 @@ public abstract interface INetSegment {
 
 	public abstract byte[] getByteArray();
 
-	public abstract byte getFlag();
+	// public abstract byte getFlag();
 
 	public abstract byte getSubType();
 

@@ -72,9 +72,9 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 					session.setAttribute(CURRENT_DECODER, null);
 					throw new IOException("error protocol 2");
 				}
-				byte minBytes = 8;
+				byte minBytes = 7;
 				if (len <= size) {
-					byte flag = 0;
+					// byte flag = 0;
 					INetData datas[] = new INetData[num];
 					for (int i = 0; i < num; i++) {
 						if (buffer.remaining() < minBytes) {
@@ -83,7 +83,7 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 							throw new IOException("error protocol 3");
 						}
 						buffer.mark();
-						flag = buffer.get();
+						// flag = buffer.get();
 						byte maintype = buffer.get();// 主协议号
 						byte subtype = buffer.get(); // 从协议号
 						int dataLen = buffer.getInt();// 数据长度
@@ -99,10 +99,10 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 						datas[i] = new S2SData(data, ser, sessionId, false);
 					}
 					// buffer.get();
-					if ((flag & 1) != 0)
-						log.debug((new StringBuilder()).append("***Recv Error Msg:").append(datas[0].getType()).append(".").append(datas[0].getSubType()).toString());
-					else
-						log.debug((new StringBuilder()).append("***Recv Protocol:").append(datas[0].getType()).append(".").append(datas[0].getSubType()).toString());
+					// if ((flag & 1) != 0)
+					// log.debug((new StringBuilder()).append("***Recv Error Msg:").append(datas[0].getType()).append(".").append(datas[0].getSubType()).toString());
+					// else
+					// log.debug((new StringBuilder()).append("***Recv Protocol:").append(datas[0].getType()).append(".").append(datas[0].getSubType()).toString());
 					NetPacket packet = new NetPacket();
 					packet.datas = datas;
 					// session.setAttachment(null);

@@ -1,8 +1,10 @@
 package com.app.protocol.data;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 import com.app.net.IConnector;
 import com.app.session.Session;
+
 /**
  * 抽象类 AbstractData对应前后台协议接口常量定义类Protocol传输时产生的对应协议抽象bean数据
  * 
@@ -16,7 +18,6 @@ public abstract class AbstractData {
 	protected int serial;
 	protected int sessionId;
 	protected Session handlerSource;
-	protected byte flag = 0;
 	private static AtomicInteger staticSerial = new AtomicInteger(0);
 
 	public AbstractData(byte type, byte subType, int sessionId, int serial) {
@@ -80,24 +81,6 @@ public abstract class AbstractData {
 
 	public void setHandlerSource(Session handlerSource) {
 		this.handlerSource = handlerSource;
-	}
-
-	public byte getFlag() {
-		return this.flag;
-	}
-
-	public void setFlag(byte flag) {
-		this.flag = flag;
-	}
-
-	public void addFlag(byte flag) {
-		AbstractData tmp1_0 = this;
-		tmp1_0.flag = (byte) (tmp1_0.flag | flag);
-	}
-
-	public void removeFlag(byte flag) {
-		AbstractData tmp1_0 = this;
-		tmp1_0.flag = (byte) (tmp1_0.flag & (flag ^ 0xFFFFFFFF));
 	}
 
 	public String getTypeString() {

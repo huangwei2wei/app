@@ -20,46 +20,46 @@ public class S2SSegment implements INetSegment {
 	private byte subType;
 	private int serial;
 	private int sessionId;
-	private byte flag;
+	// private byte flag;
 
-	public S2SSegment(byte type, byte subType, int serial, byte flag) {
-		this(type, subType, serial, -1, flag);
+	public S2SSegment(byte type, byte subType, int serial) {
+		this(type, subType, serial, -1);
 	}
 
-	public S2SSegment(byte type, byte subType, int serial, int sessionId, byte flag) {
+	public S2SSegment(byte type, byte subType, int serial, int sessionId) {
 		this.numOfParameter = 0;
 		this.serial = -1;
 		this.type = type;
 		this.subType = subType;
 		this.serial = serial;
 		this.sessionId = sessionId;
-		this.flag = flag;
+		// this.flag = flag;
 		this.buffer = new ArrayByteList(128);
-		ByteListUtil.addByte(this.buffer, flag);// 1
+		// ByteListUtil.addByte(this.buffer, flag);// 1
 		ByteListUtil.addByte(this.buffer, type);// 1
 		ByteListUtil.addByte(this.buffer, subType);// 1
-		ByteListUtil.addInt(this.buffer, 8);// 4
+		ByteListUtil.addInt(this.buffer, 7);// 4
 		ByteListUtil.addByte(this.buffer, (byte) 0);// 1
 	}
 
-	public S2SSegment(byte type, byte subType, byte flag) {
-		this(type, subType, -1, flag);
+	public S2SSegment(byte type, byte subType) {
+		this(type, subType, -1);
 	}
 
-	public S2SSegment(byte type, byte subType) {
-		this(type, subType, (byte) -1, (byte) 0);
-	}
+	// public S2SSegment(byte type, byte subType) {
+	// this(type, subType, (byte) -1, (byte) 0);
+	// }
 
 	public S2SSegment(byte type, byte subType, byte[] data, int serial, int sessionId, byte flag) {
 		this.numOfParameter = 0;
 		this.serial = -1;
 		this.sessionId = -1;
-		this.flag = 0;
+		// this.flag = 0;
 		this.type = type;
 		this.subType = subType;
 		this.serial = serial;
 		this.sessionId = sessionId;
-		this.flag = flag;
+		// this.flag = flag;
 		this.buffer = new ArrayByteList(data.length);
 		ByteListUtil.addBytes(this.buffer, data);
 	}
@@ -68,12 +68,12 @@ public class S2SSegment implements INetSegment {
 		this.numOfParameter = 0;
 		this.serial = -1;
 		this.sessionId = -1;
-		this.flag = 0;
+		// this.flag = 0;
 		this.type = data.getType();
 		this.subType = data.getSubType();
 		this.serial = data.getSerial();
 		this.sessionId = sessionId;
-		this.flag = data.getFlag();
+		// this.flag = data.getFlag();
 		byte[] bytes = data.toBytes();
 		this.buffer = new ArrayByteList(bytes.length);
 		ByteListUtil.addBytes(this.buffer, bytes);
@@ -91,9 +91,9 @@ public class S2SSegment implements INetSegment {
 		return this.sessionId;
 	}
 
-	public byte getFlag() {
-		return this.flag;
-	}
+	// public byte getFlag() {
+	// return this.flag;
+	// }
 
 	public void setSessionId(int sessionId) {
 		this.sessionId = sessionId;
@@ -112,11 +112,11 @@ public class S2SSegment implements INetSegment {
 	}
 
 	protected void setSize() {
-		ByteListUtil.setInt(this.buffer, 3, this.buffer.size());
+		ByteListUtil.setInt(this.buffer, 2, this.buffer.size());
 	}
 
 	protected void setNumOfParameter() {
-		this.buffer.set(7, this.numOfParameter);
+		this.buffer.set(6, this.numOfParameter);
 	}
 
 	public void write(byte value) {
