@@ -54,7 +54,7 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 		while (buffer.hasRemaining()) {
 			buffer.mark();
 			int size = buffer.remaining();
-			if (size >= 14) {
+			if (size >= 13) {
 				// byte head[] = new byte[4];
 				// buffer.get(head);
 				// int version = checkVersion(head);
@@ -66,7 +66,7 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 				int sessionId = buffer.getInt();
 				int ser = buffer.getInt();
 				int len = buffer.getInt(); // 包长度
-				int num = buffer.getShort(); // 包个数
+				byte num = buffer.get(); // 包个数(协议类型)
 				if (len > 0x19000) {
 					// session.setAttachment(null);
 					session.setAttribute(CURRENT_DECODER, null);

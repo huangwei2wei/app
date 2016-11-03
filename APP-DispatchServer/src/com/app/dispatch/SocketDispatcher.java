@@ -288,9 +288,9 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		IoBuffer buffer = packet.buffer;
 		IoSession session = (IoSession) this.sessions.get(Integer.valueOf(sessionId));
 		if (session != null) {
-			byte type = buffer.get(19);
+			byte type = buffer.get(14);
 			if (type == Protocol.MAIN_ACCOUNT) {
-				byte subType = buffer.get(20);
+				byte subType = buffer.get(15);
 				if (subType == Protocol.ACCOUNT_LoginOk) {// 账号登录成功
 					session.setAttribute(LOGINMARK_KEY, LOGINMARK_LOGED);
 					SocketDispatcher.this.channelService.getWorldChannel().join(session);// 加入到世界频道

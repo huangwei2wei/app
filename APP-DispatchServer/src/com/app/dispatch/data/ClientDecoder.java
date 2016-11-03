@@ -9,8 +9,6 @@ import org.apache.mina.core.session.IoSession;
 import org.apache.mina.filter.codec.ProtocolDecoderAdapter;
 import org.apache.mina.filter.codec.ProtocolDecoderOutput;
 
-import com.app.protocol.INetSegment;
-
 public class ClientDecoder extends ProtocolDecoderAdapter {
 	protected final AttributeKey CURRENT_DECODER = new AttributeKey(getClass(), "decoder");
 	public static int companyCode = -1;
@@ -33,7 +31,7 @@ public class ClientDecoder extends ProtocolDecoderAdapter {
 		while (buffer.hasRemaining()) {
 			buffer.mark();
 			int size = buffer.remaining();
-			if (size > 18) {
+			if (size > 13) {
 				// byte[] head = new byte[4];
 				// buffer.get(head);
 				// int version = compareHead(head);// 验证版本
@@ -44,7 +42,7 @@ public class ClientDecoder extends ProtocolDecoderAdapter {
 				// }
 				buffer.skip(8);
 				int len = buffer.getInt();// 包长度
-				int segNum = buffer.getShort();// 包个数
+				byte segNum = buffer.get();// 包个数
 				if (segNum < 1) {
 					session.setAttribute(CURRENT_DECODER, null);
 					System.out.println("error protocol_2");
@@ -57,7 +55,7 @@ public class ClientDecoder extends ProtocolDecoderAdapter {
 				}
 				if (size >= len) {// 满足一个包的数据
 					buffer.reset();
-					buffer.skip(14);
+					buffer.skip(13);
 					if (buffer.remaining() < 8) {
 						session.setAttribute(CURRENT_DECODER, null);
 						System.out.println("error protocol_4");

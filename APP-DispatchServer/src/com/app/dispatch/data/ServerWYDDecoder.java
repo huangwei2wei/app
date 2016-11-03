@@ -34,7 +34,7 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 		while (buffer.hasRemaining()) {
 			buffer.mark();
 			int size = buffer.remaining();
-			if (size > 14) {
+			if (size > 13) {
 				// byte[] head = new byte[4];
 				// buffer.get(head);
 				// int version = compareHead(head);
@@ -45,7 +45,7 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 				int sessionId = buffer.getInt();
 				int serial = buffer.getInt();
 				int len = buffer.getInt();
-				buffer.skip(2);
+				buffer.skip(1);
 				if (len > 204800) {
 					session.setAttribute(CURRENT_DECODER, null);
 					throw new IOException("error protocol");
