@@ -2,6 +2,7 @@ package com.app.empire.gameaccount.handler.server;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.log4j.Logger;
 
@@ -20,6 +21,7 @@ import com.app.protocol.handler.IDataHandler;
  */
 
 public class AccountLoginHandler implements IDataHandler {
+	//private  AtomicInteger staticSerial = new AtomicInteger(1);
 	private Logger log = Logger.getLogger(AccountLoginHandler.class);
 	public AbstractData handle(AbstractData data) {
 		AccountLogin login = (AccountLogin) data;
@@ -80,6 +82,7 @@ public class AccountLoginHandler implements IDataHandler {
 				loginOk.setPassword("");
 				loginOk.setStatus(1);
 			}
+			//System.out.println(staticSerial.getAndIncrement());
 			return loginOk;
 		} catch (Exception e) {
 			log.error(e, e);

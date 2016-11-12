@@ -77,7 +77,7 @@ public class GameLogService {
 		@Override
 		public void run() {
 			try {
-				dao.save(entity);
+				//dao.save(entity);
 			} catch (Throwable e) {
 				Log.info(e.getMessage());
 				e.printStackTrace();

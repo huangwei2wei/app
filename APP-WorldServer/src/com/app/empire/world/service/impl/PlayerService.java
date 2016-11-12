@@ -264,7 +264,7 @@ public class PlayerService implements Runnable {
 			newPlayer.setNickname(nickname);
 			newPlayer.setCreateTime(new Date());
 			newPlayer.setLoginTime(new Date());
-			newPlayer.setLv(10);
+			newPlayer.setLv(1);
 			newPlayer.setLvExp(0);
 			newPlayer.setVipLv(0);
 			newPlayer.setVipExp(0);

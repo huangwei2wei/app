@@ -1,5 +1,7 @@
 package com.app.empire.world.server.handler.account;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 import org.apache.log4j.Logger;
 
 import com.app.empire.protocol.data.account.Login;
@@ -21,6 +23,7 @@ import com.app.protocol.handler.IDataHandler;
  */
 public class LoginHandler implements IDataHandler {
 	private Logger log = Logger.getLogger(LoginHandler.class);
+	//private  AtomicInteger staticSerial = new AtomicInteger(1);
 
 	public AbstractData handle(AbstractData data) throws Exception {
 		Login login = (Login) data;
@@ -55,7 +58,10 @@ public class LoginHandler implements IDataHandler {
 			ServiceManager.getManager().getRequestService().add(accountLogin.getSerial(), loginRequest);
 			// 发送至账号服务器
 			ServiceManager.getManager().getAccountSkeleton().send(accountLogin);
+		}else{
+			this.log.error("账号数据出现异常---");
 		}
+		//System.out.println(staticSerial.getAndIncrement());
 		return null;
 	}
 }

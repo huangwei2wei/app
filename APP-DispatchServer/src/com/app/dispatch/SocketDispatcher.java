@@ -86,6 +86,7 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		Integer sessionId = (Integer) session.getAttribute(ATTRIBUTE_STRING);
 		if (sessionId == null) {
 			session.close(true);
+			log.error("sessionId is null,close session........");
 			return;
 		}
 		IoBuffer buffer = (IoBuffer) object;
@@ -93,10 +94,11 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		byte type = buffer.get(13);
 		byte subType = buffer.get(14);
 
-		if (!checkProtocol(session, type, subType)) // 协议检查
+		if (!checkProtocol(session, type, subType)) { // 协议检查
+			log.error("协议检查不通过........");
 			return;
-
-		if (type > 100) {
+		}
+		if (type > 100) {// 发送scence 服
 			dispatchToScenceServer(sessionId, buffer);
 		} else {// 发world 服
 			if (type == Protocol.MAIN_ACCOUNT) {
@@ -351,6 +353,11 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		// this.channelService.getWorldChannel().join(session);
 		// ====发送ip地址到worldserver===
 		InetSocketAddress address = (InetSocketAddress) session.getRemoteAddress();
+		if (address == null) {
+			log.error("远程地址获取失败.......账号注册失败。");
+			session.close(true);
+			return;
+		}
 		String hostAddress = address.getAddress().getHostAddress();
 		if (StringUtils.hasText(hostAddress)) {
 			S2SSegment seg = new S2SSegment((byte) Protocol.MAIN_SERVER, (byte) Protocol.SERVER_SetClientIPAddress);
@@ -606,9 +613,9 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 
 		@Override
 		public void sessionOpened(IoSession session) throws Exception {
-			InetSocketAddress address = (InetSocketAddress) session.getRemoteAddress();
 			SocketDispatcher.this.registerClient(session);
-			log.info("ok:" + address.getAddress().getHostAddress());
+			InetSocketAddress address = (InetSocketAddress) session.getRemoteAddress();
+			log.info("ip: " + address.getAddress().getHostAddress());
 		}
 
 		@Override
