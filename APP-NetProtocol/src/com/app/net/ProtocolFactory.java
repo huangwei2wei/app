@@ -17,7 +17,7 @@ public class ProtocolFactory {
     private static Logger                          log              = Logger.getLogger(ProtocolFactory.class);
     private static String                          dataPackage      = "com.app.empire.net.data";
     private static String                          dataHandler      = "com.app.empire.net.handler";
-    private Map<Short, Class<AbstractData>>        protocolDataBean = new HashMap<Short, Class<AbstractData>>();
+    private Map<Integer, Class<AbstractData>>        protocolDataBean = new HashMap<Integer, Class<AbstractData>>();
     private Map<Class<AbstractData>, IDataHandler> protocolHandler  = new HashMap<Class<AbstractData>, IDataHandler>();
     private static ProtocolFactory                 instance         = null;
     private IDataHandler                           defaultHandler   = null;
@@ -53,7 +53,7 @@ public class ProtocolFactory {
      * @return 
      */
     @SuppressWarnings({ "rawtypes", "unchecked"})
-    public static <T extends AbstractData> T getProtocolDataBean(byte mainType, byte subType) {
+    public static <T extends AbstractData> T getProtocolDataBean(short mainType, short subType) {
         Class clazz = getInstance().getProtocolDataBeanClass(mainType, subType);
         if (clazz == null) return null;
         try {
@@ -91,9 +91,9 @@ public class ProtocolFactory {
                 try {
                     Byte mainValue = (Byte) mainTypeMap.get(mainType);
                     if (mainValue == null) throw new Exception("没有找到对应的MAIN_TYPE");
-                    short v = (short) ((mainValue.byteValue() & 0xFF) << 8 | field.getByte(protocolClass.newInstance()) & 0xFF);
+                    int v = (int) ((mainValue.byteValue() & 0xFF) << 16 | field.getByte(protocolClass.newInstance()) & 0xFF);
                     Class clazz = Class.forName(className);
-                    this.protocolDataBean.put(Short.valueOf(v), clazz);
+                    this.protocolDataBean.put(Integer.valueOf(v), clazz);
                     IDataHandler handler = getProtocolHandlerClassInstance(name);
                     if (handler == null)
                         log.warn("没有找到 " + name + " 对应的protocol handler");
@@ -115,9 +115,9 @@ public class ProtocolFactory {
      * @return Class<AbstractData>>
      */
     @SuppressWarnings("rawtypes")
-    public Class<?> getProtocolDataBeanClass(byte mainType, byte subType) {
-        short v = (short) ((mainType & 0xFF) << 8 | subType & 0xFF);
-        return ((Class) this.protocolDataBean.get(Short.valueOf(v)));
+    public Class<?> getProtocolDataBeanClass(short mainType, short subType) {
+        int v = (int) ((mainType & 0xFF) << 16 | subType & 0xFF);
+        return ((Class) this.protocolDataBean.get(Integer.valueOf(v)));
     }
 
     /**

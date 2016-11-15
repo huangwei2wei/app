@@ -11,9 +11,9 @@ public abstract interface INetData {
 
 	public abstract int getSerial();
 
-	public abstract byte getType();
+	public abstract short getType();
 
-	public abstract byte getSubType();
+	public abstract short getSubType();
 
 	public abstract int getNumOfParameter();
 

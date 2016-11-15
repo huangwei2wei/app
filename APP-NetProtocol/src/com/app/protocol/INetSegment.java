@@ -7,7 +7,7 @@ public abstract interface INetSegment {
 	// public static final byte[] HEAD = { 1, 0, 0, 0 };
 	// public static final byte[] EMTPY_PACKET = { 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0 };
 
-	public abstract byte getType();
+	public abstract short getType();
 
 	public abstract int getSessionId();
 
@@ -53,7 +53,7 @@ public abstract interface INetSegment {
 
 	// public abstract byte getFlag();
 
-	public abstract byte getSubType();
+	public abstract short getSubType();
 
 	public abstract byte[] getPacketByteArray();
 }

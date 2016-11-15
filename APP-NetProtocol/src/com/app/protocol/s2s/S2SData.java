@@ -18,32 +18,35 @@ import com.app.protocol.INetData;
 import com.app.protocol.data.DataBeanDecoder;
 
 public class S2SData implements INetData {
-	private byte data[];
-	private byte type;
-	private byte subType;
-	private int numOfParameter;
-	private int serial;
-	private int pos;
-	private int sessionId;
+	private byte	data[];
+	private short	type;
+	private short	subType;
+	private int		numOfParameter;
+	private int		serial;
+	private int		pos;
+	private int		sessionId;
 	// private byte flag;
-	private boolean sourceCompressed;
+	private boolean	sourceCompressed;
 
 	// private static final String sep = ", ";
 
-	public S2SData(byte data[], int serial, int sessionId) {
-		this(data, serial, sessionId, false);
+	public S2SData(short type, short subType, byte data[], int serial, int sessionId) {
+		this(type, subType, data, serial, sessionId, false);
 	}
 
-	public S2SData(byte data[], int serial, int sessionId, boolean needUncompress) {
+	public S2SData(short type, short subType, byte data[], int serial, int sessionId, boolean needUncompress) {
 		sourceCompressed = false;
 		this.data = data;
 		// flag = (byte) (int) getNumber(data, 0, 1);// 1
-		type = (byte) (int) getNumber(data, 0, 1);// 1
-		subType = (byte) (int) getNumber(data, 1, 1);// 1
+		// type = (byte) (int) getNumber(data, 0, 1);// 1
+		// subType = (byte) (int) getNumber(data, 1, 1);// 1
+
+		this.type = type;
+		this.subType = subType;
 		this.sessionId = sessionId;// 4
-		numOfParameter = this.data[6];// 1 字段个数
+		numOfParameter = this.data[0];// 1 字段个数
 		this.serial = serial;
-		pos = 7;// 从第8个开始读
+		pos = 1;// 从第8个开始读
 		sourceCompressed = needUncompress;
 	}
 
@@ -59,11 +62,11 @@ public class S2SData implements INetData {
 		return serial;
 	}
 
-	public byte getType() {
+	public short getType() {
 		return type;
 	}
 
-	public byte getSubType() {
+	public short getSubType() {
 		return subType;
 	}
 
@@ -340,94 +343,94 @@ public class S2SData implements INetData {
 		StringBuffer sbuf = new StringBuffer();
 		sbuf.append("Type:").append(type).append(" SubType:").append(subType);
 		int tmppos = pos;
-		pos = 7;
+		pos = 1;
 		for (int i = 0; i < numOfParameter; i++) {
 			try {
 				switch (data[pos] & 0xff) {
-				case 2: // '\002'
-				{
-					sbuf.append(", ").append("boolean:").append(readBoolean());
-					break;
-				}
-				case 1: // '\001'
-				{
-					sbuf.append(", ").append("byte:").append(readByte());
-					break;
-				}
-				case 4: // '\004'
-				{
-					sbuf.append(", ").append("int:").append(readInt());
-					break;
-				}
-				case 5: // '\005'
-				{
-					sbuf.append(", ").append("long:").append(readLong());
-					break;
-				}
-				case 3: // '\003'
-				{
-					sbuf.append(", ").append("Short:").append(readShort());
-					break;
-				}
-				case 6: // '\006'
-				{
-					sbuf.append(", ").append("UTF-8:").append(readString());
-					break;
-				}
-				case 7: // '\007'
-				{
-					break;
-				}
-				case 130: {
-					boolean barr[] = readBooleans();
-					sbuf.append(", ").append("boolean array num:").append(barr.length).append(" data:");
-					for (int j = 0; j < barr.length; j++)
-						sbuf.append(" ").append(barr[j]);
-					break;
-				}
-				case 129: {
-					byte barr[] = readBytes();
-					sbuf.append(", ").append("byte array num:").append(barr.length).append(" data:");
-					if (barr.length < 40) {
+					case 2: // '\002'
+					{
+						sbuf.append(", ").append("boolean:").append(readBoolean());
+						break;
+					}
+					case 1: // '\001'
+					{
+						sbuf.append(", ").append("byte:").append(readByte());
+						break;
+					}
+					case 4: // '\004'
+					{
+						sbuf.append(", ").append("int:").append(readInt());
+						break;
+					}
+					case 5: // '\005'
+					{
+						sbuf.append(", ").append("long:").append(readLong());
+						break;
+					}
+					case 3: // '\003'
+					{
+						sbuf.append(", ").append("Short:").append(readShort());
+						break;
+					}
+					case 6: // '\006'
+					{
+						sbuf.append(", ").append("UTF-8:").append(readString());
+						break;
+					}
+					case 7: // '\007'
+					{
+						break;
+					}
+					case 130: {
+						boolean barr[] = readBooleans();
+						sbuf.append(", ").append("boolean array num:").append(barr.length).append(" data:");
 						for (int j = 0; j < barr.length; j++)
 							sbuf.append(" ").append(barr[j]);
-					} else {
-						sbuf.append(" omitted");
+						break;
 					}
-					break;
-				}
-				case 132: {
-					int barr[] = readInts();
-					sbuf.append(", ").append("int array num:").append(barr.length).append(" data:");
-					for (int j = 0; j < barr.length; j++)
-						sbuf.append(" ").append(barr[j]);
-					break;
-				}
-				case 133: {
-					long barr[] = readLongs();
-					sbuf.append(", ").append("long array num:").append(barr.length).append(" data:");
-					for (int j = 0; j < barr.length; j++)
-						sbuf.append(" ").append(barr[j]);
-					break;
-				}
-				case 131: {
-					short barr[] = readShorts();
-					sbuf.append(", ").append("short array num:").append(barr.length).append(" data:");
-					for (int j = 0; j < barr.length; j++)
-						sbuf.append(" ").append(barr[j]);
-					break;
-				}
-				case 134: {
-					String barr[] = readStrings();
-					sbuf.append(", ").append("String array num:").append(barr.length).append(" data:");
-					for (int j = 0; j < barr.length; j++)
-						sbuf.append(" ").append(barr[j]);
-					break;
-				}
-				default: {
-					return sbuf.toString();
-					// throw new IllegalAccessException();
-				}
+					case 129: {
+						byte barr[] = readBytes();
+						sbuf.append(", ").append("byte array num:").append(barr.length).append(" data:");
+						if (barr.length < 40) {
+							for (int j = 0; j < barr.length; j++)
+								sbuf.append(" ").append(barr[j]);
+						} else {
+							sbuf.append(" omitted");
+						}
+						break;
+					}
+					case 132: {
+						int barr[] = readInts();
+						sbuf.append(", ").append("int array num:").append(barr.length).append(" data:");
+						for (int j = 0; j < barr.length; j++)
+							sbuf.append(" ").append(barr[j]);
+						break;
+					}
+					case 133: {
+						long barr[] = readLongs();
+						sbuf.append(", ").append("long array num:").append(barr.length).append(" data:");
+						for (int j = 0; j < barr.length; j++)
+							sbuf.append(" ").append(barr[j]);
+						break;
+					}
+					case 131: {
+						short barr[] = readShorts();
+						sbuf.append(", ").append("short array num:").append(barr.length).append(" data:");
+						for (int j = 0; j < barr.length; j++)
+							sbuf.append(" ").append(barr[j]);
+						break;
+					}
+					case 134: {
+						String barr[] = readStrings();
+						sbuf.append(", ").append("String array num:").append(barr.length).append(" data:");
+						for (int j = 0; j < barr.length; j++)
+							sbuf.append(" ").append(barr[j]);
+						break;
+					}
+					default: {
+						return sbuf.toString();
+						// throw new IllegalAccessException();
+					}
 				}
 				continue;
 			} catch (Exception e) {

@@ -13,8 +13,8 @@ public class DataBeanDecoder {
 	private static Logger log = Logger.getLogger(DataBeanDecoder.class);
 
 	public AbstractData decode(INetData data) throws Exception {
-		byte type = data.getType();
-		byte subType = data.getSubType();
+		short type = data.getType();
+		short subType = data.getSubType();
 //		byte flag = data.getFlag();
 		AbstractData d = null;
 		// System.out.println("type:"+type+",subType:"+subType);

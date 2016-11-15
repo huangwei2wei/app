@@ -20,7 +20,7 @@ public class ToolServer {
 		// 加载配置文件
 		configuration = new ConfigMenger("configDispatch.properties");
 		long a = System.currentTimeMillis();
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 100; i++) {
 			// System.out.println(i);
 			new ipdServer(configuration.getConfiguration());
 		}

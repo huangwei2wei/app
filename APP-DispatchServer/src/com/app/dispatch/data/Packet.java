@@ -9,10 +9,10 @@ public class Packet {
 	public INetData data;
 	public IoBuffer buffer;
 	public int sessionId = 0;
-	public byte pType;
-	public byte pSubType;
+	public short pType;
+	public short pSubType;
 
-	public Packet(IoBuffer buffer, int sessionId, byte pType, byte pSubType) {
+	public Packet(IoBuffer buffer, int sessionId, short pType, short pSubType) {
 		this.type = TYPE.BUFFER;
 		this.buffer = buffer;
 		this.sessionId = sessionId;
@@ -20,7 +20,7 @@ public class Packet {
 		this.pSubType = pSubType;
 	}
 
-	public Packet(INetData data, byte pType, byte pSubType) {
+	public Packet(INetData data, short pType, short pSubType) {
 		this.type = TYPE.DATA;
 		this.data = data;
 		this.pType = pType;

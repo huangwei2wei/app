@@ -6,10 +6,10 @@ public class ProtocolException extends Exception {
     private static final long serialVersionUID = -6469638634722657818L;
     private int               serial;
     private int               sessionId;
-    private byte              type;
-    private byte              subType;
+    private short              type;
+    private short              subType;
 
-    public ProtocolException(String message, int serial, int sessionId, byte type, byte subType) {
+    public ProtocolException(String message, int serial, int sessionId, short type, short subType) {
         super(message);
         this.serial = serial;
         this.sessionId = sessionId;
@@ -17,7 +17,7 @@ public class ProtocolException extends Exception {
         this.subType = subType;
     }
 
-    public ProtocolException(String message, int serial, byte type, byte subType) {
+    public ProtocolException(String message, int serial, short type, short subType) {
         this(message, serial, -1, type, subType);
     }
     
@@ -33,11 +33,11 @@ public class ProtocolException extends Exception {
         return this.sessionId;
     }
 
-    public byte getType() {
+    public short getType() {
         return this.type;
     }
 
-    public byte getSubType() {
+    public short getSubType() {
         return this.subType;
     }
 }

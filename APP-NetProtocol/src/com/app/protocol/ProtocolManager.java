@@ -5,7 +5,7 @@ import com.app.protocol.data.DataBeanEncoder;
 import com.app.protocol.s2s.S2SSegment;
 
 public class ProtocolManager {
-	public static INetSegment getNetSegmentInstance(byte type, byte subType, int sessionId, int serial) {
+	public static INetSegment getNetSegmentInstance(short type, short subType, int sessionId, int serial) {
 		return new S2SSegment(type, subType, serial, sessionId);
 	}
 

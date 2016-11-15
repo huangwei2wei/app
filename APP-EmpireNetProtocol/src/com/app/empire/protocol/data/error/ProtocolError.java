@@ -10,8 +10,8 @@ import com.app.protocol.exception.ProtocolException;
  * @author doter
  */
 public class ProtocolError extends AbstractData {
-	private byte errorType;// 错误对应协议
-	private byte errorSubType;// 错误对应协议
+	private short errorType;// 错误对应协议
+	private short errorSubType;// 错误对应协议
 	private int code;// 错误码
 	private String msg;// 消息
 
@@ -32,19 +32,19 @@ public class ProtocolError extends AbstractData {
 			setMsg("");
 	}
 
-	public byte getErrorType() {
+	public short getErrorType() {
 		return errorType;
 	}
 
-	public void setErrorType(byte errorType) {
+	public void setErrorType(short errorType) {
 		this.errorType = errorType;
 	}
 
-	public byte getErrorSubType() {
+	public short getErrorSubType() {
 		return errorSubType;
 	}
 
-	public void setErrorSubType(byte errorSubType) {
+	public void setErrorSubType(short errorSubType) {
 		this.errorSubType = errorSubType;
 	}
 

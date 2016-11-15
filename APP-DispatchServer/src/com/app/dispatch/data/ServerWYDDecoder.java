@@ -10,14 +10,12 @@ import org.apache.mina.filter.codec.ProtocolDecoderAdapter;
 import org.apache.mina.filter.codec.ProtocolDecoderOutput;
 
 import com.app.protocol.INetData;
-import com.app.protocol.INetSegment;
 import com.app.protocol.s2s.S2SData;
 
 public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 	protected final AttributeKey CURRENT_DECODER = new AttributeKey(getClass(), "decoder");
 
 	/** 解码worldServer 发送过来的数据 */
-	@SuppressWarnings("unused")
 	public void decode(IoSession session, IoBuffer in, ProtocolDecoderOutput out) throws Exception {
 		byte remains[] = (byte[]) (byte[]) session.getAttribute(CURRENT_DECODER);
 		IoBuffer buffer = null;
@@ -34,7 +32,7 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 		while (buffer.hasRemaining()) {
 			buffer.mark();
 			int size = buffer.remaining();
-			if (size > 13) {
+			if (size >= 17) {
 				// byte[] head = new byte[4];
 				// buffer.get(head);
 				// int version = compareHead(head);
@@ -50,18 +48,18 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 					session.setAttribute(CURRENT_DECODER, null);
 					throw new IOException("error protocol");
 				}
-				if (len <= size) {
+				if (size >= len) {
 					if (sessionId == -1) {// 后端处理
-						buffer.mark();
+						// buffer.mark();
 						// byte flag = buffer.get();
-						byte type = buffer.get();
-						byte subtype = buffer.get();
-						int dataLen = buffer.getInt();
-						buffer.reset();
-						byte[] data = new byte[dataLen];
+						short type = buffer.getShort();
+						short subtype = buffer.getShort();
+						// int dataLen = buffer.getInt();
+						// buffer.reset();
+						byte[] data = new byte[len - 17];
 						buffer.get(data);
 						// buffer.get();
-						INetData udata = new S2SData(data, serial, sessionId);
+						INetData udata = new S2SData(type, subtype, data, serial, sessionId);
 						Packet packet = new Packet(udata, type, subtype);
 						out.write(packet);
 					} else {// 发送前端或服务器

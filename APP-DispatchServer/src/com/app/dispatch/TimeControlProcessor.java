@@ -72,7 +72,7 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 
 	/** 任务处理 */
 	protected void process0(INetData data) {
-		byte type = data.getType();
+		short type = data.getType();
 		try {
 			switch (type) {
 			case Protocol.MAIN_SERVER:// 服务器间协议
@@ -100,7 +100,7 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 	}
 
 	private void processServerMsg(INetData data) {
-		byte type = data.getSubType();
+		short type = data.getSubType();
 		try {
 			switch (type) {
 			case Protocol.SERVER_SyncPlayer:
@@ -152,7 +152,7 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 	}
 
 	private void processChannelMsg(INetData data) {
-		byte subType = data.getSubType();
+		short subType = data.getSubType();
 		try {
 			switch (subType) {
 			case Protocol.CHAT_SyncChannels:// 通讯频道设置

@@ -10,9 +10,9 @@ import org.apache.mina.filter.codec.ProtocolDecoderAdapter;
 import org.apache.mina.filter.codec.ProtocolDecoderOutput;
 
 public class ClientDecoder extends ProtocolDecoderAdapter {
-	protected final AttributeKey CURRENT_DECODER = new AttributeKey(getClass(), "decoder");
-	public static int companyCode = -1;
-	public static int machineCode = -1;
+	protected final AttributeKey	CURRENT_DECODER	= new AttributeKey(getClass(), "decoder");
+	public static int				companyCode		= -1;
+	public static int				machineCode		= -1;
 
 	/** 解码玩家发送过来的数据 */
 	public void decode(IoSession session, IoBuffer in, ProtocolDecoderOutput out) throws Exception {
@@ -31,7 +31,7 @@ public class ClientDecoder extends ProtocolDecoderAdapter {
 		while (buffer.hasRemaining()) {
 			buffer.mark();
 			int size = buffer.remaining();
-			if (size > 13) {
+			if (size >= 17) {
 				// byte[] head = new byte[4];
 				// buffer.get(head);
 				// int version = compareHead(head);// 验证版本
@@ -42,39 +42,38 @@ public class ClientDecoder extends ProtocolDecoderAdapter {
 				// }
 				buffer.skip(8);
 				int len = buffer.getInt();// 包长度
-				byte segNum = buffer.get();// 包个数
+				byte segNum = buffer.get();// 协议类型
 				if (segNum < 1) {
 					session.setAttribute(CURRENT_DECODER, null);
 					System.out.println("error protocol_2");
 					throw new IOException("error protocol_2");
 				}
-				if ((len > 102400) || (len < 18)) {
+				if ((len > 102400) || (len < 17)) {
 					session.setAttribute(CURRENT_DECODER, null);
 					System.out.println("error protocol_3");
 					throw new IOException("error protocol_3");
 				}
 				if (size >= len) {// 满足一个包的数据
-					buffer.reset();
-					buffer.skip(13);
-					if (buffer.remaining() < 7) {
-						session.setAttribute(CURRENT_DECODER, null);
-						System.out.println("error protocol_4");
-						throw new IOException("error protocol_4");
-					}
-					buffer.skip(2);
-					int dataLen = buffer.getInt();// 数据长度
-					if ((dataLen < 0) || (dataLen - 7 >= buffer.remaining())) {
-						session.setAttribute(CURRENT_DECODER, null);
-						System.out.println("error protocol_5");
-						throw new IOException("error protocol_5");
-					}
+					// buffer.reset();
+					// buffer.skip(13);
+					// if (buffer.remaining() < 7) {
+					// session.setAttribute(CURRENT_DECODER, null);
+					// System.out.println("error protocol_4");
+					// throw new IOException("error protocol_4");
+					// }
+					// buffer.skip(2);
+					// int dataLen = buffer.getInt();// 数据长度
+					// if ((dataLen < 0) || (dataLen - 7 >= buffer.remaining())) {
+					// session.setAttribute(CURRENT_DECODER, null);
+					// System.out.println("error protocol_5");
+					// throw new IOException("error protocol_5");
+					// }
 
 					byte[] data = new byte[len];
 					buffer.reset();
 					buffer.get(data);
 					out.write(IoBuffer.wrap(data));
 					session.setAttribute(CURRENT_DECODER, null);
-
 				} else {
 					buffer.reset();
 					byte[] bytes = new byte[size];

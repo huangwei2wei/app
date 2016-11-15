@@ -12,22 +12,22 @@ import com.app.session.Session;
  *
  */
 public abstract class AbstractData {
-	protected byte type;
-	protected byte subType;
+	protected short type;
+	protected short subType;
 	protected IConnector source;
 	protected int serial;
 	protected int sessionId;
 	protected Session handlerSource;
 	private static AtomicInteger staticSerial = new AtomicInteger(0);
 
-	public AbstractData(byte type, byte subType, int sessionId, int serial) {
+	public AbstractData(short type, short subType, int sessionId, int serial) {
 		this.type = type;
 		this.subType = subType;
 		this.serial = serial;
 		this.sessionId = sessionId;
 	}
 
-	public AbstractData(byte type, byte subType) {
+	public AbstractData(short type, short subType) {
 		this.type = type;
 		this.subType = subType;
 		this.source = null;
@@ -35,19 +35,19 @@ public abstract class AbstractData {
 		this.sessionId = -1;
 	}
 
-	public byte getType() {
+	public short getType() {
 		return this.type;
 	}
 
-	public void setType(byte type) {
+	public void setType(short type) {
 		this.type = type;
 	}
 
-	public byte getSubType() {
+	public short getSubType() {
 		return this.subType;
 	}
 
-	public void setSubType(byte subType) {
+	public void setSubType(short subType) {
 		this.subType = subType;
 	}
 

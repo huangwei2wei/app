@@ -13,21 +13,14 @@ import org.apache.mina.filter.codec.ProtocolDecoderAdapter;
 import org.apache.mina.filter.codec.ProtocolDecoderOutput;
 
 /**
- * 类 <code>S2SDecoder</code>对服务器间的数据进行解码
+ * 类 <code>S2SDecoder</code>对服务器间的数据进行解码 对服务器间的数据进行解码
  * 
  * @see org.apache.mina.filter.codec.ProtocolDecoderAdapter
  * @since JDK 1.6
  */
 public class S2SDecoder extends ProtocolDecoderAdapter {
-	private Logger log = null;
-	protected final AttributeKey CURRENT_DECODER = new AttributeKey(getClass(), "decoder");
-
-	/**
-	 * 对服务器间的数据进行解码
-	 */
-	public S2SDecoder() {
-		log = Logger.getLogger(S2SDecoder.class);
-	}
+	private Logger					log				= Logger.getLogger(S2SDecoder.class);
+	protected final AttributeKey	CURRENT_DECODER	= new AttributeKey(getClass(), "decoder");
 
 	/**
 	 * 对服务器间数据进行解码
@@ -54,7 +47,7 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 		while (buffer.hasRemaining()) {
 			buffer.mark();
 			int size = buffer.remaining();
-			if (size >= 13) {
+			if (size >= 17) {
 				// byte head[] = new byte[4];
 				// buffer.get(head);
 				// int version = checkVersion(head);
@@ -68,36 +61,29 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 				int len = buffer.getInt(); // 包长度
 				byte num = buffer.get(); // 包个数(协议类型)
 				if (len > 0x19000) {
-					// session.setAttachment(null);
 					session.setAttribute(CURRENT_DECODER, null);
 					throw new IOException("error protocol 2");
 				}
-				byte minBytes = 7;
 				if (len <= size) {
 					// byte flag = 0;
-					INetData datas[] = new INetData[num];
-					for (int i = 0; i < num; i++) {
-						if (buffer.remaining() < minBytes) {
-							// session.setAttachment(null);
-							session.setAttribute(CURRENT_DECODER, null);
-							throw new IOException("error protocol 3");
-						}
-						buffer.mark();
-						// flag = buffer.get();
-						byte maintype = buffer.get();// 主协议号
-						byte subtype = buffer.get(); // 从协议号
-						int dataLen = buffer.getInt();// 数据长度
-						int l = buffer.remaining();
-						if (dataLen < 0 || dataLen - minBytes >= buffer.remaining()) {
-							// session.setAttachment(null);
-							session.setAttribute(CURRENT_DECODER, null);
-							throw new IOException("error protocol 4");
-						}
-						byte data[] = new byte[dataLen];
-						buffer.reset();
-						buffer.get(data);
-						datas[i] = new S2SData(data, ser, sessionId, false);
-					}
+					INetData datas[] = new INetData[1];
+					// for (int i = 0; i < 1; i++) {
+					// buffer.mark();
+					// flag = buffer.get();
+					short type = buffer.getShort();// 主协议号
+					short subtype = buffer.getShort(); // 从协议号
+					// int dataLen = buffer.getInt();// 数据长度
+					// int l = buffer.remaining();
+					// if (dataLen < 0 || dataLen - minBytes >= buffer.remaining()) {
+					// // session.setAttachment(null);
+					// session.setAttribute(CURRENT_DECODER, null);
+					// throw new IOException("error protocol 4");
+					// }
+					byte data[] = new byte[len - 17];
+					// buffer.reset();
+					buffer.get(data);
+					datas[0] = new S2SData(type, subtype, data, ser, sessionId, false);
+					// }
 					// buffer.get();
 					// if ((flag & 1) != 0)
 					// log.debug((new StringBuilder()).append("***Recv Error Msg:").append(datas[0].getType()).append(".").append(datas[0].getSubType()).toString());
