@@ -6,29 +6,30 @@ import com.app.net.IConnector;
 import com.app.session.Session;
 
 /**
- * 抽象类 AbstractData对应前后台协议接口常量定义类Protocol传输时产生的对应协议抽象bean数据
+ * 抽象类 ProtoBufAbstractData对应前后台协议接口常量定义类Protocol传输时产生的对应协议抽象bean数据
  * 
  * @author doter
  *
  */
-public abstract class AbstractData {
-	protected final byte			proType			= 1;
+public abstract class ProtoBufAbstractData {
+	protected final byte			proType			= 2;					// 协议类型
 	protected short					type;
 	protected short					subType;
 	protected IConnector			source;
 	protected int					serial;
 	protected int					sessionId;
 	protected Session				handlerSource;
+	protected byte[]				bytes;
 	private static AtomicInteger	staticSerial	= new AtomicInteger(0);
 
-	public AbstractData(short type, short subType, int sessionId, int serial) {
+	public ProtoBufAbstractData(short type, short subType, int sessionId, int serial) {
 		this.type = type;
 		this.subType = subType;
 		this.serial = serial;
 		this.sessionId = sessionId;
 	}
 
-	public AbstractData(short type, short subType) {
+	public ProtoBufAbstractData(short type, short subType) {
 		this.type = type;
 		this.subType = subType;
 		this.source = null;
@@ -86,6 +87,14 @@ public abstract class AbstractData {
 
 	public byte getProType() {
 		return proType;
+	}
+
+	public byte[] getBytes() {
+		return bytes;
+	}
+
+	public void setBytes(byte[] bytes) {
+		this.bytes = bytes;
 	}
 
 	public String getTypeString() {

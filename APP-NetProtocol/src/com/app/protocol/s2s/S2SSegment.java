@@ -42,7 +42,7 @@ public class S2SSegment implements INetSegment {
 		ByteListUtil.addByte(this.buffer, (byte) 0);// 1 字段个数
 	}
 
-	public S2SSegment(byte type, byte subType) {
+	public S2SSegment(short type, short subType) {
 		this(type, subType, -1);
 	}
 
