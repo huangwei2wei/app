@@ -33,32 +33,32 @@ import com.app.protocol.ProtocolManager;
 import com.app.protocol.s2s.S2SSegment;
 
 public class SocketDispatcher implements Dispatcher, Runnable {
-	private static final String ATTRIBUTE_STRING = "SESSIONID";
-	private static final Logger log = Logger.getLogger(SocketDispatcher.class);
-	private AtomicInteger ids = new AtomicInteger(0);
-	private ConcurrentHashMap<Integer, IoSession> sessions = new ConcurrentHashMap<Integer, IoSession>();// sessionID-->客户端IoSession
+	private static final String						ATTRIBUTE_STRING	= "SESSIONID";
+	private static final Logger						log					= Logger.getLogger(SocketDispatcher.class);
+	private AtomicInteger							ids					= new AtomicInteger(0);
+	private ConcurrentHashMap<Integer, IoSession>	sessions			= new ConcurrentHashMap<Integer, IoSession>();	// sessionID-->客户端IoSession
 	// private ConcurrentHashMap<Integer, ClientInfo> allClientInfo = new ConcurrentHashMap<Integer, ClientInfo>();// playerId-->客户端
 
-	private ChannelService channelService = null;
-	private NioSocketAcceptor acceptor = null;
-	private NioSocketConnector connector = null;
+	private ChannelService							channelService		= null;
+	private NioSocketAcceptor						acceptor			= null;
+	private NioSocketConnector						connector			= null;
 	/** worldServer Iosession */
-	private IoSession worldServerSession = null;
-	private IoSession sceneServerSession = null;
+	private IoSession								worldServerSession	= null;
+	private IoSession								sceneServerSession	= null;
 	/** 允许加载的ip段 */
-	private TrustIpService trustIpService = null;
-	private Configuration configuration = null;
-	public static final String SERVERID = "serverid";
-	public static final String SERVERNAME = "servername";
-	public static final String SERVERPASSWORD = "serverpassword";
-	private SocketAddress address;
-	private boolean shutdown = false;
-	private Heartbeat heartbeat = new Heartbeat();// 心跳
-	private static final String LOGINMARK_KEY = "ISLOGED";// 账号登录成功设为true
-	protected static final String CLIENTINFO_KEY = "CLIENTINFO";
-	protected static final String PLAYERID_KEY = "PLAYERID";
-	private static final boolean LOGINMARK_UNLOG = false;
-	private static final boolean LOGINMARK_LOGED = true;
+	private TrustIpService							trustIpService		= null;
+	private Configuration							configuration		= null;
+	public static final String						SERVERID			= "serverid";
+	public static final String						SERVERNAME			= "servername";
+	public static final String						SERVERPASSWORD		= "serverpassword";
+	private SocketAddress							address;
+	private boolean									shutdown			= false;
+	private Heartbeat								heartbeat			= new Heartbeat();								// 心跳
+	private static final String						LOGINMARK_KEY		= "ISLOGED";									// 账号登录成功设为true
+	protected static final String					CLIENTINFO_KEY		= "CLIENTINFO";
+	protected static final String					PLAYERID_KEY		= "PLAYERID";
+	private static final boolean					LOGINMARK_UNLOG		= false;
+	private static final boolean					LOGINMARK_LOGED		= true;
 
 	public SocketDispatcher(Configuration configuration) {
 		this.configuration = configuration;
@@ -91,8 +91,8 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		}
 		IoBuffer buffer = (IoBuffer) object;
 		buffer.order(ByteOrder.LITTLE_ENDIAN);// 设置小头在前 默认大头序
-		byte type = buffer.get(13);
-		byte subType = buffer.get(14);
+		short type = buffer.getShort(13);
+		short subType = buffer.getShort(15);
 
 		if (!checkProtocol(session, type, subType)) { // 协议检查
 			log.error("协议检查不通过........");
@@ -138,7 +138,7 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 	 * @param subType
 	 * @return true正常false异常
 	 */
-	public boolean checkProtocol(IoSession session, byte type, byte subType) {
+	public boolean checkProtocol(IoSession session, Short type, Short subType) {
 		ClientInfo client = (ClientInfo) session.getAttribute(CLIENTINFO_KEY);
 		long nowTime = System.currentTimeMillis();
 		if (client == null) {
@@ -284,16 +284,16 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 	}
 
 	/** 转发数据至前端 */
-	@SuppressWarnings("unused")
 	public void dispatchToClient(Packet packet) {
 		int sessionId = packet.sessionId;
 		IoBuffer buffer = packet.buffer;
 		IoSession session = (IoSession) this.sessions.get(Integer.valueOf(sessionId));
 		if (session != null) {
-			byte type = buffer.get(13);
-			if (type == Protocol.MAIN_ACCOUNT) {
-				byte subType = buffer.get(14);
-				if (subType == Protocol.ACCOUNT_LoginOk) {// 账号登录成功
+			// buffer.order(ByteOrder.LITTLE_ENDIAN);// 设置小头在前 默认大头序
+			// short type = buffer.getShort(13);
+			if (packet.getpType() == Protocol.MAIN_ACCOUNT) {
+				// short subType = buffer.getShort(15);
+				if (packet.getpSubType() == Protocol.ACCOUNT_LoginOk) {// 账号登录成功
 					session.setAttribute(LOGINMARK_KEY, LOGINMARK_LOGED);
 					SocketDispatcher.this.channelService.getWorldChannel().join(session);// 加入到世界频道
 				}
@@ -459,8 +459,7 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		while (true) {
 			try {
 				Thread.sleep(60000L);
-			} catch (InterruptedException ex) {
-			}
+			} catch (InterruptedException ex) {}
 			log.info("ONLINE Session[" + this.sessions.size() + "]");
 		}
 	}

@@ -13,8 +13,8 @@ public class ClientInfo {
 	private IoSession ioSession;// 连接客户端的ioSession
 //	private Player player;
 	private Timer timer = new Timer();
-	private byte protocolType;// 上一次执行的协议
-	private byte protocolSubType;// 上一次执行的协议
+	private short protocolType;// 上一次执行的协议
+	private short protocolSubType;// 上一次执行的协议
 
 	public ClientInfo(IoSession ioSession) {
 		this.ioSession = ioSession;
@@ -93,19 +93,19 @@ public class ClientInfo {
 		return timer;
 	}
 
-	public byte getProtocolType() {
+	public short getProtocolType() {
 		return protocolType;
 	}
 
-	public void setProtocolType(byte protocolType) {
+	public void setProtocolType(short protocolType) {
 		this.protocolType = protocolType;
 	}
 
-	public byte getProtocolSubType() {
+	public short getProtocolSubType() {
 		return protocolSubType;
 	}
 
-	public void setProtocolSubType(byte protocolSubType) {
+	public void setProtocolSubType(short protocolSubType) {
 		this.protocolSubType = protocolSubType;
 	}
 

@@ -64,8 +64,8 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 						out.write(packet);
 					} else {// 发送前端或服务器
 						// byte flag = buffer.get();
-						byte type = buffer.get();
-						byte subtype = buffer.get();
+						short type = buffer.getShort();
+						short subtype = buffer.getShort();
 						byte[] data = new byte[len];
 						buffer.reset();
 						buffer.get(data);

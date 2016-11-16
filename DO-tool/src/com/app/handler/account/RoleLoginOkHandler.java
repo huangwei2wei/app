@@ -32,6 +32,8 @@ import com.app.empire.protocol.data.shop.Refresh;
 import com.app.empire.protocol.data.test.ItemVo;
 import com.app.empire.protocol.data.test.ItemVo2;
 import com.app.empire.protocol.data.test.Test;
+import com.app.empire.protocol.data.test.Test2;
+import com.app.empire.protocol.pb.TestMsgProto.TestMsg;
 import com.app.net.IConnector;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.handler.IDataHandler;
@@ -45,15 +47,15 @@ public class RoleLoginOkHandler implements IDataHandler {
 		// GetRoleList getRoleList = new GetRoleList();
 		// connector.send(getRandomName);
 		/**
-		 * List<Integer> b = new ArrayList<Integer>(); List<Boolean> d = new ArrayList<Boolean>(); List<String> f = new ArrayList<String>(); List<Long> h = new ArrayList<Long>();
-		 * List<Byte> j = new ArrayList<Byte>(); List<Short> l = new ArrayList<Short>();
+		 * List<Integer> b = new ArrayList<Integer>(); List<Boolean> d = new ArrayList<Boolean>(); List<String> f = new ArrayList<String>(); List<Long> h = new ArrayList<Long>(); List<Byte> j = new
+		 * ArrayList<Byte>(); List<Short> l = new ArrayList<Short>();
 		 * 
 		 * for (int i = 0; i < 10; i++) { b.add(i); d.add(true); f.add("abc"); h.add(9999119999L); j.add((byte) i); l.add((short) (i * 10)); }
 		 * 
-		 * Test test = new Test(); test.setA(1); test.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()]))); test.setC(false);
-		 * test.setD(ArrayUtils.toPrimitive(d.toArray(new Boolean[d.size()]))); test.setE("testttttttt"); test.setF(f.toArray(new String[f.size()])); test.setG(100000);
-		 * test.setH(ArrayUtils.toPrimitive(h.toArray(new Long[h.size()]))); test.setI((byte) 125); test.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
-		 * test.setK((short) 1800); test.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()]))); connector.send(test);
+		 * Test test = new Test(); test.setA(1); test.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()]))); test.setC(false); test.setD(ArrayUtils.toPrimitive(d.toArray(new
+		 * Boolean[d.size()]))); test.setE("testttttttt"); test.setF(f.toArray(new String[f.size()])); test.setG(100000); test.setH(ArrayUtils.toPrimitive(h.toArray(new Long[h.size()])));
+		 * test.setI((byte) 125); test.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()]))); test.setK((short) 1800); test.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
+		 * connector.send(test);
 		 */
 
 		// for (int i = 0; i < 10000000; i++) {
@@ -265,6 +267,13 @@ public class RoleLoginOkHandler implements IDataHandler {
 
 		// connector.send(test);
 
+		Test2 test2 = new Test2();
+		TestMsg.Builder testMsg = TestMsg.newBuilder();
+		testMsg.setVipInterimTimeLimit(111112);
+		testMsg.setVipTimeLimit(100);
+		test2.setBytes(testMsg.build().toByteArray());
+		connector.send(test2);
+		
 		return null;
 	}
 }
