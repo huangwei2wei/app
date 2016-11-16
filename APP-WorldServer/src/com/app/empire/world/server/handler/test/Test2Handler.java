@@ -1,7 +1,7 @@
 package com.app.empire.world.server.handler.test;
 
 import com.app.empire.protocol.data.test.Test2;
-import com.app.empire.protocol.pb.TestMsgProto.TestMsg;
+import com.app.empire.protocol.pb.test.TestMsgProto.TestMsg;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.handler.IDataHandler;
 

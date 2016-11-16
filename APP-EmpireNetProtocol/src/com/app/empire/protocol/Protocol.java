@@ -1,5 +1,8 @@
 package com.app.empire.protocol;
 
+/**
+ * 1-10000 wroldServer，10001-20000 scenesServer。服务器内部服数据不受协议号影响，客户机发协议受协议号影响
+ */
 public class Protocol {
 	public static final short	MAIN_ERROR								= 0;
 	public static final short	ERROR_ProtocolError						= 0;

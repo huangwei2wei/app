@@ -33,7 +33,7 @@ import com.app.empire.protocol.data.test.ItemVo;
 import com.app.empire.protocol.data.test.ItemVo2;
 import com.app.empire.protocol.data.test.Test;
 import com.app.empire.protocol.data.test.Test2;
-import com.app.empire.protocol.pb.TestMsgProto.TestMsg;
+import com.app.empire.protocol.pb.test.TestMsgProto.TestMsg;
 import com.app.net.IConnector;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.handler.IDataHandler;
