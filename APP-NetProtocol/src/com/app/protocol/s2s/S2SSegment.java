@@ -20,25 +20,27 @@ public class S2SSegment implements INetSegment {
 	private short		subType;
 	private int			serial;
 	private int			sessionId;
+	private byte		target;
 	// private byte flag;
 
 	public S2SSegment(short type, short subType, int serial) {
-		this(type, subType, serial, -1);
+		this(type, subType, serial, -1, (byte) 0);
 	}
 
-	public S2SSegment(short type, short subType, int serial, int sessionId) {
+	public S2SSegment(short type, short subType, int serial, int sessionId, byte target) {
 		this.numOfParameter = 0;
 		this.serial = -1;
 		this.type = type;
 		this.subType = subType;
 		this.serial = serial;
 		this.sessionId = sessionId;
+		this.target = target;
 		// this.flag = flag;
 		this.buffer = new ArrayByteList(128);
 		// ByteListUtil.addByte(this.buffer, flag);// 1
 		ByteListUtil.addShort(this.buffer, type);// 1
 		ByteListUtil.addShort(this.buffer, subType);// 1
-		// ByteListUtil.addInt(this.buffer, 7);// 4  包长度
+		// ByteListUtil.addInt(this.buffer, 7);// 4 包长度
 		ByteListUtil.addByte(this.buffer, (byte) 0);// 1 字段个数
 	}
 
@@ -50,7 +52,7 @@ public class S2SSegment implements INetSegment {
 	// this(type, subType, (byte) -1, (byte) 0);
 	// }
 
-	public S2SSegment(short type, short subType, byte[] data, int serial, int sessionId, byte flag) {
+	public S2SSegment(short type, short subType, byte[] data, int serial, int sessionId, byte target) {
 		this.numOfParameter = 0;
 		this.serial = -1;
 		this.sessionId = -1;
@@ -59,7 +61,7 @@ public class S2SSegment implements INetSegment {
 		this.subType = subType;
 		this.serial = serial;
 		this.sessionId = sessionId;
-		// this.flag = flag;
+		this.target = target;
 		this.buffer = new ArrayByteList(data.length);
 		ByteListUtil.addBytes(this.buffer, data);
 	}
@@ -73,7 +75,7 @@ public class S2SSegment implements INetSegment {
 		this.subType = data.getSubType();
 		this.serial = data.getSerial();
 		this.sessionId = sessionId;
-		// this.flag = data.getFlag();
+		this.target = data.getTarget();
 		byte[] bytes = data.toBytes();
 		this.buffer = new ArrayByteList(bytes.length);
 		ByteListUtil.addBytes(this.buffer, bytes);
@@ -114,6 +116,14 @@ public class S2SSegment implements INetSegment {
 	// protected void setSize() {
 	// ByteListUtil.setInt(this.buffer, 2, this.buffer.size());
 	// }
+
+	public byte getTarget() {
+		return target;
+	}
+
+	public void setTarget(byte target) {
+		this.target = target;
+	}
 
 	protected void setNumOfParameter() {
 		this.buffer.set(4, this.numOfParameter);

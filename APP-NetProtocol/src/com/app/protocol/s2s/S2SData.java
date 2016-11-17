@@ -25,34 +25,28 @@ public class S2SData implements INetData {
 	private int		serial;
 	private int		pos;
 	private int		sessionId;
-	// private byte flag;
-	private boolean	sourceCompressed;
+	private byte	target;
+	// private boolean sourceCompressed;
 
 	// private static final String sep = ", ";
 
-	public S2SData(short type, short subType, byte data[], int serial, int sessionId) {
-		this(type, subType, data, serial, sessionId, false);
-	}
-
-	public S2SData(short type, short subType, byte data[], int serial, int sessionId, boolean needUncompress) {
-		sourceCompressed = false;
+	public S2SData(short type, short subType, byte data[], int serial, int sessionId, byte target) {
 		this.data = data;
 		// flag = (byte) (int) getNumber(data, 0, 1);// 1
 		// type = (byte) (int) getNumber(data, 0, 1);// 1
 		// subType = (byte) (int) getNumber(data, 1, 1);// 1
-
 		this.type = type;
 		this.subType = subType;
 		this.sessionId = sessionId;// 4
 		numOfParameter = this.data[0];// 1 字段个数
 		this.serial = serial;
 		pos = 1;// 从第8个开始读
-		sourceCompressed = needUncompress;
+		this.target = target;
 	}
 
-	public boolean needCompress() {
-		return sourceCompressed;
-	}
+	// public boolean needCompress() {
+	// return sourceCompressed;
+	// }
 
 	public int getSessionId() {
 		return sessionId;
@@ -72,6 +66,10 @@ public class S2SData implements INetData {
 
 	public int getNumOfParameter() {
 		return numOfParameter;
+	}
+
+	public byte getTarget() {
+		return target;
 	}
 
 	public boolean readBoolean() throws IllegalAccessException {

@@ -7,6 +7,8 @@ import java.nio.ByteOrder;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import javax.persistence.EnumType;
+
 import org.apache.commons.configuration.Configuration;
 import org.apache.log4j.Logger;
 import org.apache.mina.core.buffer.IoBuffer;
@@ -30,6 +32,7 @@ import com.app.dispatch.vo.ClientInfo;
 import com.app.empire.protocol.Protocol;
 import com.app.empire.protocol.data.account.Heartbeat;
 import com.app.protocol.ProtocolManager;
+import com.app.protocol.data.AbstractData.EnumTarget;
 import com.app.protocol.s2s.S2SSegment;
 
 public class SocketDispatcher implements Dispatcher, Runnable {
@@ -98,7 +101,7 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 			log.error("协议检查不通过........");
 			return;
 		}
-		if (type > 100) {// 发送scence 服
+		if (type > 10000) {// 发送scence 服
 			dispatchToScenceServer(sessionId, buffer);
 		} else {// 发world 服
 			if (type == Protocol.MAIN_ACCOUNT) {
@@ -109,7 +112,7 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 				} else {
 					dispatchToWorldServer(sessionId, buffer);
 				}
-			} else if ((Boolean) session.getAttribute(LOGINMARK_KEY) || type == Protocol.MAIN_SYSTEM) {// 判断用户是否已经登录或者为登录协议
+			} else if ((Boolean) session.getAttribute(LOGINMARK_KEY)) {// 判断用户是否已经登录或者为登录协议
 				dispatchToWorldServer(sessionId, buffer);
 			} else {// 不是心跳，不是登录协议，并且用户未登录则断开socket连接
 				log.info("用户未登录Kill Session LOGINMARK:" + session.getAttribute(LOGINMARK_KEY) + "---type:" + type + "---subtype:" + subType);
@@ -479,10 +482,11 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 			Packet packet = (Packet) object;
 			if (packet.type == Packet.TYPE.BUFFER) {
 				// System.out.println("dis收到WORLD数据发前端或场景服：" + packet.data.toString());
-				if (packet.pType > 100)
+				if (packet.getTarget() == EnumTarget.SCENESSERVER.getValue()) {
 					dispatchToScenceServer(packet.sessionId, packet.buffer);
-				else
+				} else {
 					SocketDispatcher.this.dispatchToClient(packet);
+				}
 			} else {
 				System.out.println(System.currentTimeMillis() + " dis收到WORLD数据发系统：" + packet.data.toString());
 				SocketDispatcher.this.processControl(packet);
@@ -538,11 +542,12 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		public void messageReceived(IoSession session, Object object) throws Exception {
 			Packet packet = (Packet) object;
 			if (packet.type == Packet.TYPE.BUFFER) {
-				// System.out.println("dis收到WORLD数据发前端：" + packet.data.toString());
-				if (packet.pType < 100)
+				if (packet.getTarget() == EnumTarget.WORLDSERVER.getValue()) {
 					SocketDispatcher.this.dispatchToWorldServer(packet.sessionId, packet.buffer);
-				else
+				} else {
+					// System.out.println("dis收到Scence数据发前端：" + packet.data.toString());
 					SocketDispatcher.this.dispatchToClient(packet);
+				}
 			} else {
 				System.out.println(System.currentTimeMillis() + " dis收到WORLD数据发系统：" + packet.data.toString());
 				SocketDispatcher.this.processControl(packet);

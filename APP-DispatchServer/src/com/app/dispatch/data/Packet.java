@@ -11,20 +11,23 @@ public class Packet {
 	public int		sessionId	= 0;
 	public short	pType;
 	public short	pSubType;
+	public byte		target;
 
-	public Packet(IoBuffer buffer, int sessionId, short pType, short pSubType) {
+	public Packet(IoBuffer buffer, int sessionId, short pType, short pSubType, byte target) {
 		this.type = TYPE.BUFFER;
 		this.buffer = buffer;
 		this.sessionId = sessionId;
 		this.pType = pType;
 		this.pSubType = pSubType;
+		this.target = target;
 	}
 
-	public Packet(INetData data, short pType, short pSubType) {
+	public Packet(INetData data, short pType, short pSubType, byte target) {
 		this.type = TYPE.DATA;
 		this.data = data;
 		this.pType = pType;
 		this.pSubType = pSubType;
+		this.target = target;
 	}
 
 	public static enum TYPE {
@@ -77,6 +80,10 @@ public class Packet {
 
 	public void setpSubType(short pSubType) {
 		this.pSubType = pSubType;
+	}
+
+	public byte getTarget() {
+		return target;
 	}
 
 }

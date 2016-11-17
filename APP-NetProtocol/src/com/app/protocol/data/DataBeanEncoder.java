@@ -16,7 +16,7 @@ public class DataBeanEncoder {
 	// SimpleDateFormat sdf = new SimpleDateFormat("mm:ss:SSSS");
 	public INetSegment encode(AbstractData data) throws Exception {
 		try {
-			INetSegment segment = ProtocolManager.getNetSegmentInstance(data.getType(), data.getSubType(), data.getSessionId(), data.getSerial());
+			INetSegment segment = ProtocolManager.getNetSegmentInstance(data.getType(), data.getSubType(), data.getSessionId(), data.getSerial(), data.getTarget());
 			Field[] fs = data.getClass().getDeclaredFields();
 			for (Field f : fs) {
 				// String ftype = f.getType().getSimpleName();
@@ -53,48 +53,48 @@ public class DataBeanEncoder {
 		String type = f.getType().getSimpleName();
 
 		switch (type) {
-		case "byte":
-			data.write(((Byte) value).byteValue());
-			break;
-		case "byte[]":
-			data.write((byte[]) (byte[]) value);
-			break;
-		case "short":
-			data.writeShort(((Short) value).shortValue());
-			break;
-		case "short[]":
-			data.writeShorts((short[]) (short[]) value);
-			break;
-		case "int":
-			data.writeInt(((Integer) value).intValue());
-			break;
-		case "int[]":
-			data.writeInts((int[]) (int[]) value);
-			break;
-		case "long":
-			data.writeLong(((Long) value).longValue());
-			break;
-		case "long[]":
-			data.writeLongs((long[]) (long[]) value);
-			break;
-		case "boolean":
-			data.writeBoolean(((Boolean) value).booleanValue());
-			break;
-		case "boolean[]":
-			data.writeBooleans((boolean[]) value);
-			break;
-		case "String":
-			data.writeString((String) value);
-			break;
-		case "String[]":
-			data.writeStrings((String[]) (String[]) value);
-			break;
-		case "List":
-			data.writeList((List<Object>) value);
-			break;
-		default:// 其他类型(自定义)
-			data.writeObj(value);
-			break;
+			case "byte":
+				data.write(((Byte) value).byteValue());
+				break;
+			case "byte[]":
+				data.write((byte[]) (byte[]) value);
+				break;
+			case "short":
+				data.writeShort(((Short) value).shortValue());
+				break;
+			case "short[]":
+				data.writeShorts((short[]) (short[]) value);
+				break;
+			case "int":
+				data.writeInt(((Integer) value).intValue());
+				break;
+			case "int[]":
+				data.writeInts((int[]) (int[]) value);
+				break;
+			case "long":
+				data.writeLong(((Long) value).longValue());
+				break;
+			case "long[]":
+				data.writeLongs((long[]) (long[]) value);
+				break;
+			case "boolean":
+				data.writeBoolean(((Boolean) value).booleanValue());
+				break;
+			case "boolean[]":
+				data.writeBooleans((boolean[]) value);
+				break;
+			case "String":
+				data.writeString((String) value);
+				break;
+			case "String[]":
+				data.writeStrings((String[]) (String[]) value);
+				break;
+			case "List":
+				data.writeList((List<Object>) value);
+				break;
+			default:// 其他类型(自定义)
+				data.writeObj(value);
+				break;
 		}
 
 		// if (type.equals("byte")) {

@@ -3,7 +3,7 @@ package com.app.empire.protocol;
 /**
  * 1-10000 wroldServer，10001-20000 scenesServer。服务器内部服数据不受协议号影响，客户机发协议受协议号影响
  */
-public class Protocol {
+public class Protocol extends ScenesProtocol {
 	public static final short	MAIN_ERROR								= 0;
 	public static final short	ERROR_ProtocolError						= 0;
 	/** 服务器间的消息协议 */
@@ -241,8 +241,8 @@ public class Protocol {
 	public static final short	ERRORCODE_GetSmsCodeNewList				= 14;
 	public static final short	ERRORCODE_GetSmsCodeNewListOk			= 15;
 
-	/** 协议测试 */
-	public static final short	MAIN_TEST								= 50;
-	public static final short	TEST_Test								= 1;
-	public static final short	TEST_Test2								= 2;
+//	/** 协议测试 */
+//	public static final short	MAIN_TEST								= 50;
+//	public static final short	TEST_Test								= 1;
+//	public static final short	TEST_Test2								= 2;
 }

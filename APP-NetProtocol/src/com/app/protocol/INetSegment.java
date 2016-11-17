@@ -9,6 +9,8 @@ public abstract interface INetSegment {
 
 	public abstract short getType();
 
+	public abstract short getSubType();
+
 	public abstract int getSessionId();
 
 	public abstract void setSessionId(int paramInt);
@@ -51,9 +53,7 @@ public abstract interface INetSegment {
 
 	public abstract byte[] getByteArray();
 
-	// public abstract byte getFlag();
-
-	public abstract short getSubType();
+	public abstract byte getTarget();
 
 	public abstract byte[] getPacketByteArray();
 }

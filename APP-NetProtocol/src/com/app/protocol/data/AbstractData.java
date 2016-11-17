@@ -12,7 +12,8 @@ import com.app.session.Session;
  *
  */
 public abstract class AbstractData {
-	protected final byte			proType			= 1;
+	/** 消息的目的地 */
+	protected byte					target;
 	protected short					type;
 	protected short					subType;
 	protected IConnector			source;
@@ -34,6 +35,23 @@ public abstract class AbstractData {
 		this.source = null;
 		this.serial = getIncrementSerial();
 		this.sessionId = -1;
+	}
+
+	public AbstractData(short type, short subType, int sessionId, int serial, byte target) {
+		this.type = type;
+		this.subType = subType;
+		this.sessionId = sessionId;
+		this.serial = serial;
+		this.target = target;
+	}
+
+	public AbstractData(short type, short subType, byte target) {
+		this.type = type;
+		this.subType = subType;
+		this.source = null;
+		this.serial = getIncrementSerial();
+		this.sessionId = -1;
+		this.target = target;
 	}
 
 	public short getType() {
@@ -84,8 +102,12 @@ public abstract class AbstractData {
 		this.handlerSource = handlerSource;
 	}
 
-	public byte getProType() {
-		return proType;
+	public void setTarget(byte target) {
+		this.target = target;
+	}
+
+	public byte getTarget() {
+		return target;
 	}
 
 	public String getTypeString() {
@@ -98,4 +120,25 @@ public abstract class AbstractData {
 			staticSerial.set(0);
 		return i;
 	}
+
+	public enum EnumTarget {
+		WORLDSERVER((byte) 1, "发向world逻辑服务器"), SCENESSERVER((byte) 2, "发向场景服务器"), CLIENT((byte) 3, "发向场景服务器");
+
+		private byte	value;
+		private String	desc;
+
+		private EnumTarget(byte v, String desc) {
+			this.value = v;
+			this.desc = desc;
+		}
+
+		public byte getValue() {
+			return value;
+		}
+
+		public String getDesc() {
+			return desc;
+		}
+	}
+
 }

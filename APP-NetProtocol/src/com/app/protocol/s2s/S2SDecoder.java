@@ -29,7 +29,6 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 	 * @param in
 	 * @param out
 	 */
-	@SuppressWarnings("unused")
 	public void decode(IoSession session, IoBuffer in, ProtocolDecoderOutput out) throws Exception {
 		// byte remains[] = (byte[]) (byte[]) session.getAttachment();
 		byte remains[] = (byte[]) session.getAttribute(CURRENT_DECODER);
@@ -59,7 +58,7 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 				int sessionId = buffer.getInt();
 				int ser = buffer.getInt();
 				int len = buffer.getInt(); // 包长度
-				byte num = buffer.get(); // 包个数(协议类型)
+				byte target = buffer.get(); // 包个数(协议类型)
 				if (len > 0x19000) {
 					session.setAttribute(CURRENT_DECODER, null);
 					throw new IOException("error protocol 2");
@@ -82,7 +81,7 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 					byte data[] = new byte[len - 17];
 					// buffer.reset();
 					buffer.get(data);
-					datas[0] = new S2SData(type, subtype, data, ser, sessionId, false);
+					datas[0] = new S2SData(type, subtype, data, ser, sessionId, target);
 					// }
 					// buffer.get();
 					// if ((flag & 1) != 0)

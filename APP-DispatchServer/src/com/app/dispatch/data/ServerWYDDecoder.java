@@ -43,7 +43,7 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 				int sessionId = buffer.getInt();
 				int serial = buffer.getInt();
 				int len = buffer.getInt();
-				buffer.skip(1);
+				byte target = buffer.get();
 				if (len > 204800) {
 					session.setAttribute(CURRENT_DECODER, null);
 					throw new IOException("error protocol");
@@ -59,8 +59,8 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 						byte[] data = new byte[len - 17];
 						buffer.get(data);
 						// buffer.get();
-						INetData udata = new S2SData(type, subtype, data, serial, sessionId);
-						Packet packet = new Packet(udata, type, subtype);
+						INetData udata = new S2SData(type, subtype, data, serial, sessionId, target);
+						Packet packet = new Packet(udata, type, subtype, target);
 						out.write(packet);
 					} else {// 发送前端或服务器
 						// byte flag = buffer.get();
@@ -69,7 +69,7 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 						byte[] data = new byte[len];
 						buffer.reset();
 						buffer.get(data);
-						Packet packet = new Packet(IoBuffer.wrap(data), sessionId, type, subtype);
+						Packet packet = new Packet(IoBuffer.wrap(data), sessionId, type, subtype, target);
 						out.write(packet);
 					}
 					session.setAttribute(CURRENT_DECODER, null);

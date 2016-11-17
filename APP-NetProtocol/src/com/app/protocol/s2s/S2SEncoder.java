@@ -32,7 +32,7 @@ public class S2SEncoder extends ProtocolEncoderAdapter {
 		buffer.putInt(segment.getSessionId());// 4
 		buffer.putInt(segment.getSerial());// 4
 		buffer.putInt(13 + segment.size());// 4
-		buffer.put((byte) 1);// 2
+		buffer.put(segment.getTarget());// 2
 		buffer.put(segment.getByteArray());
 		// buffer.put((byte) 0);//1
 		buffer.flip();

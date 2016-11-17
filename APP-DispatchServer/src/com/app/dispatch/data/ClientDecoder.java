@@ -42,12 +42,13 @@ public class ClientDecoder extends ProtocolDecoderAdapter {
 				// }
 				buffer.skip(8);
 				int len = buffer.getInt();// 包长度
-				byte segNum = buffer.get();// 协议类型
-				if (segNum < 1) {
-					session.setAttribute(CURRENT_DECODER, null);
-					System.out.println("error protocol_2");
-					throw new IOException("error protocol_2");
-				}
+				buffer.skip(1);
+				// byte target = buffer.get();// 协议类型
+				// if (target < 0) {
+				// session.setAttribute(CURRENT_DECODER, null);
+				// System.out.println("error protocol_2");
+				// throw new IOException("error protocol_2");
+				// }
 				if ((len > 102400) || (len < 17)) {
 					session.setAttribute(CURRENT_DECODER, null);
 					System.out.println("error protocol_3");

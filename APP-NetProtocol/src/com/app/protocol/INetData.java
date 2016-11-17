@@ -5,7 +5,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public abstract interface INetData {
-	public abstract boolean needCompress();
 
 	public abstract int getSessionId();
 
@@ -41,11 +40,11 @@ public abstract interface INetData {
 
 	public abstract String[] readStrings() throws IllegalAccessException;
 
-	public abstract Object readObj(Field field) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException,ClassNotFoundException;
+	public abstract Object readObj(Field field) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException, ClassNotFoundException;
 
-	public abstract List<Object> readList(Field field) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException,ClassNotFoundException;
+	public abstract List<Object> readList(Field field) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException, ClassNotFoundException;
 
-//	public abstract byte getFlag();
+	public abstract byte getTarget();
 
 	public abstract byte[] toBytes();
 }
