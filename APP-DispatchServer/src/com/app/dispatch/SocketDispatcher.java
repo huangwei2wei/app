@@ -231,8 +231,8 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		int scenePort = this.configuration.getInt("sceneport");
 		InetSocketAddress address = new InetSocketAddress(sceneIp, scenePort);
 
-		this.connector = new NioSocketConnector(Runtime.getRuntime().availableProcessors() + 1);
-		SocketSessionConfig cfg = this.connector.getSessionConfig();
+		NioSocketConnector connector = new NioSocketConnector(Runtime.getRuntime().availableProcessors() + 1);
+		SocketSessionConfig cfg = connector.getSessionConfig();
 		cfg.setIdleTime(IdleStatus.BOTH_IDLE, 120);
 		cfg.setTcpNoDelay(true);
 		cfg.setReceiveBufferSize(scenereceivebuffsize);
@@ -241,10 +241,10 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		connector.getFilterChain().addLast("threadPool", new ExecutorFilter(1, 4));
 		connector.setHandler(new ScenceServerSessionHandler());
 		connector.setDefaultRemoteAddress(address);
-		ConnectFuture future = this.connector.connect();
+		ConnectFuture future = connector.connect();
 		future.awaitUninterruptibly();
 
-		if (this.worldServerSession == null || !this.worldServerSession.isConnected())
+		if (this.sceneServerSession == null || !this.sceneServerSession.isConnected())
 			System.out.println("Scene Server 连接失败!");
 		else
 			System.out.println("Scene Server 连接成功!");
@@ -560,7 +560,7 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 			// 断线重连worldServer
 			try {
 				Thread.sleep(12000L);
-				SocketDispatcher.this.connectWoeldServer();
+				SocketDispatcher.this.connectSceneServer();
 				SocketDispatcher.log.info("Scene Server 断线重连。。。");
 			} catch (Exception e) {
 				SocketDispatcher.log.error(e.getMessage());
