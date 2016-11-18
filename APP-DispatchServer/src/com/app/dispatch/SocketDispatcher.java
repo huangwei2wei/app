@@ -94,9 +94,8 @@ public class SocketDispatcher implements Dispatcher, Runnable {
 		}
 		IoBuffer buffer = (IoBuffer) object;
 		buffer.order(ByteOrder.LITTLE_ENDIAN);// 设置小头在前 默认大头序
-		short type = buffer.getShort(13);
-		short subType = buffer.getShort(15);
-
+		short type = buffer.getShort(14);
+		short subType = buffer.getShort(16);
 		if (!checkProtocol(session, type, subType)) { // 协议检查
 			log.error("协议检查不通过........");
 			return;

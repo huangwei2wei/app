@@ -15,23 +15,28 @@ public class DataBeanDecoder {
 	public AbstractData decode(INetData data) throws Exception {
 		short type = data.getType();
 		short subType = data.getSubType();
-//		byte flag = data.getFlag();
+		// byte flag = data.getFlag();
 		AbstractData d = null;
 		// System.out.println("type:"+type+",subType:"+subType);
-//		if ((flag & 0x1) != 0) {
-//			d = ProtocolFactory.getProtocolDataBean((byte) -1, (byte) -1);
-//			d.setType(type);
-//			d.setSubType(subType);
-//			log.debug("flag不为0，数据异常:" + ProtocolFactory.getProtocolDataBean(type, subType).getClass().getName());
-//			return d;
-//		} else {
+		// if ((flag & 0x1) != 0) {
+		// d = ProtocolFactory.getProtocolDataBean((byte) -1, (byte) -1);
+		// d.setType(type);
+		// d.setSubType(subType);
+		// log.debug("flag不为0，数据异常:" + ProtocolFactory.getProtocolDataBean(type, subType).getClass().getName());
+		// return d;
+		// } else {
+		if (data.getProType() == 0) {
 			d = ProtocolFactory.getProtocolDataBean(type, subType);
-			if (d == null)
-				log.error("***未定义的类型：" + Integer.toHexString(type) + ".0x" + Integer.toHexString(subType));
-			else {
-				log.debug("***接收消息： " + d.getClass().getName());
-			}
-//		}
+		} else {
+			d = new PbAbstractData(type, subType);
+			d.setProType(data.getProType());
+		}
+		if (d == null)
+			log.error("***未定义的类型：" + Integer.toHexString(type) + ".0x" + Integer.toHexString(subType));
+		else {
+			log.debug("***接收消息： " + d.getClass().getName());
+		}
+		// }
 		if (d != null) {
 			try {
 				d.setSerial(data.getSerial());
@@ -50,39 +55,38 @@ public class DataBeanDecoder {
 		return d;
 	}
 
-	public static Object getValue(INetData data, Field field) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException,
-			ClassNotFoundException {
+	public static Object getValue(INetData data, Field field) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException, ClassNotFoundException {
 		// String fieldName = field.getName();// 字段名
 		String type = field.getType().getSimpleName();// 类型
 		switch (type) {
-		case "byte":
-			return Byte.valueOf(data.readByte());
-		case "byte[]":
-			return data.readBytes();
-		case "short":
-			return Short.valueOf(data.readShort());
-		case "short[]":
-			return data.readShorts();
-		case "int":
-			return Integer.valueOf(data.readInt());
-		case "int[]":
-			return data.readInts();
-		case "long":
-			return Long.valueOf(data.readLong());
-		case "long[]":
-			return data.readLongs();
-		case "boolean":
-			return Boolean.valueOf(data.readBoolean());
-		case "boolean[]":
-			return data.readBooleans();
-		case "String":
-			return data.readString();
-		case "String[]":
-			return data.readStrings();
-		case "List":
-			return data.readList(field);
-		default:// 其他类型(自定义)
-			return data.readObj(field);
+			case "byte":
+				return Byte.valueOf(data.readByte());
+			case "byte[]":
+				return data.readBytes();
+			case "short":
+				return Short.valueOf(data.readShort());
+			case "short[]":
+				return data.readShorts();
+			case "int":
+				return Integer.valueOf(data.readInt());
+			case "int[]":
+				return data.readInts();
+			case "long":
+				return Long.valueOf(data.readLong());
+			case "long[]":
+				return data.readLongs();
+			case "boolean":
+				return Boolean.valueOf(data.readBoolean());
+			case "boolean[]":
+				return data.readBooleans();
+			case "String":
+				return data.readString();
+			case "String[]":
+				return data.readStrings();
+			case "List":
+				return data.readList(field);
+			default:// 其他类型(自定义)
+				return data.readObj(field);
 		}
 
 		// if (type.equals("byte"))

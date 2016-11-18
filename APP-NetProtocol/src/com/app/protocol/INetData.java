@@ -14,7 +14,7 @@ public abstract interface INetData {
 
 	public abstract short getSubType();
 
-	public abstract int getNumOfParameter();
+	public abstract byte getProType();
 
 	public abstract boolean readBoolean() throws IllegalAccessException;
 

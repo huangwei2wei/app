@@ -14,6 +14,8 @@ import com.app.session.Session;
 public abstract class AbstractData {
 	/** 消息的目的地 */
 	protected byte					target;
+	/** 协议类型 **/
+	protected byte					proType;
 	protected short					type;
 	protected short					subType;
 	protected IConnector			source;
@@ -54,8 +56,24 @@ public abstract class AbstractData {
 		this.target = target;
 	}
 
+	public byte getTarget() {
+		return target;
+	}
+
+	public void setTarget(byte target) {
+		this.target = target;
+	}
+
+	public byte getProType() {
+		return proType;
+	}
+
+	public void setProType(byte proType) {
+		this.proType = proType;
+	}
+
 	public short getType() {
-		return this.type;
+		return type;
 	}
 
 	public void setType(short type) {
@@ -63,7 +81,7 @@ public abstract class AbstractData {
 	}
 
 	public short getSubType() {
-		return this.subType;
+		return subType;
 	}
 
 	public void setSubType(short subType) {
@@ -71,15 +89,15 @@ public abstract class AbstractData {
 	}
 
 	public IConnector getSource() {
-		return this.source;
+		return source;
 	}
 
-	public void setSource(IConnector session) {
-		this.source = session;
+	public void setSource(IConnector source) {
+		this.source = source;
 	}
 
 	public int getSerial() {
-		return this.serial;
+		return serial;
 	}
 
 	public void setSerial(int serial) {
@@ -87,7 +105,7 @@ public abstract class AbstractData {
 	}
 
 	public int getSessionId() {
-		return this.sessionId;
+		return sessionId;
 	}
 
 	public void setSessionId(int sessionId) {
@@ -95,19 +113,19 @@ public abstract class AbstractData {
 	}
 
 	public Session getHandlerSource() {
-		return this.handlerSource;
+		return handlerSource;
 	}
 
 	public void setHandlerSource(Session handlerSource) {
 		this.handlerSource = handlerSource;
 	}
 
-	public void setTarget(byte target) {
-		this.target = target;
+	public static AtomicInteger getStaticSerial() {
+		return staticSerial;
 	}
 
-	public byte getTarget() {
-		return target;
+	public static void setStaticSerial(AtomicInteger staticSerial) {
+		AbstractData.staticSerial = staticSerial;
 	}
 
 	public String getTypeString() {
@@ -128,6 +146,26 @@ public abstract class AbstractData {
 		private String	desc;
 
 		private EnumTarget(byte v, String desc) {
+			this.value = v;
+			this.desc = desc;
+		}
+
+		public byte getValue() {
+			return value;
+		}
+
+		public String getDesc() {
+			return desc;
+		}
+	}
+
+	public enum EnumProType {
+		COMMON((byte) 0, "自研协议"), PROBUFFER((byte) 1, "probuffer协议");
+
+		private byte	value;
+		private String	desc;
+
+		private EnumProType(byte v, String desc) {
 			this.value = v;
 			this.desc = desc;
 		}

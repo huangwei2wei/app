@@ -54,11 +54,11 @@ import com.app.session.SessionRegistry;
  */
 
 public class WorldServer {
-	private static final Logger log = Logger.getLogger(WorldServer.class);
-	public IRequestService requestService;
-	public static WorldServer instance = null;
-	public static ServerConfig serverConfig;
-	private ApplicationContext context;
+	private static final Logger	log			= Logger.getLogger(WorldServer.class);
+	public IRequestService		requestService;
+	public static WorldServer	instance	= null;
+	public static ServerConfig	serverConfig;
+	private ApplicationContext	context;
 
 	/**
 	 * 描述：启动服务
@@ -130,8 +130,7 @@ public class WorldServer {
 				List<NameValuePair> data = new ArrayList<NameValuePair>();
 				data.add(new NameValuePair("param", sb.toString()));
 				System.out.println(HttpClientUtil.PostData(configuration.getString("adminurl") + "/updateWorld/updateWorld.action", data));
-			} catch (Exception e) {
-			}
+			} catch (Exception e) {}
 		}
 		// 同步充值服务器信息
 		if (null != configuration.getString("rechargeurl")) {
@@ -148,10 +147,10 @@ public class WorldServer {
 				List<NameValuePair> data = new ArrayList<NameValuePair>();
 				data.add(new NameValuePair("param", sb.toString()));
 				System.out.println(HttpClientUtil.PostData(configuration.getString("rechargeurl") + "/updateWorld/updateWorld.action", data));
-			} catch (Exception e) {
-			}
+			} catch (Exception e) {}
 		}
 	}
+
 	/**
 	 * 连接帐号服务
 	 * 
@@ -174,6 +173,7 @@ public class WorldServer {
 		log.info("Account auth connected");
 		ServiceManager.getManager().setAccountSkeleton(accountSkeleton);
 	}
+
 	/**
 	 * 启动游戏世界，启动端口监听
 	 * 
@@ -279,6 +279,7 @@ public class WorldServer {
 		//
 		server.start();
 	}
+
 	/**
 	 * 跨服对战服务
 	 * 
@@ -332,28 +333,12 @@ public class WorldServer {
 		}
 	}
 
-	class AuthSessionHandler extends SessionHandler {
-		public AuthSessionHandler(SessionRegistry paramSessionRegistry) {
-			super(paramSessionRegistry);
-		}
-
-		@Override
-		public Session createSession(IoSession session) {
-			return new AuthSession(session);
-		}
-
-		// @Override
-		// public void inputClosed(IoSession arg0) throws Exception {
-		// // TODO Auto-generated method stub
-		//
-		// }
-	}
-
 	static class ConnectSessionHandler extends WorldHandler {
 		/**
-		 * 创建一个　Session　类
+		 * 创建一个 Session 类
 		 * 
-		 * @param IoSession 　 Dispatch的链接IoSession
+		 * @param IoSession
+		 *            Dispatch的链接IoSession
 		 * @return ConnectSession
 		 */
 		@Override

@@ -15,7 +15,7 @@ public abstract interface INetSegment {
 
 	public abstract void setSessionId(int paramInt);
 
-	public abstract byte getNumOfParameter();
+	public abstract byte getProType();
 
 	public abstract int getSerial();
 

@@ -15,14 +15,14 @@ import com.app.protocol.handler.IDataHandler;
  * @since JDK 1.6
  */
 public class ProtocolFactory {
-	private static Logger							log					= Logger.getLogger(ProtocolFactory.class);
-	private static String							dataPackage			= "com.app.empire.net.data";
-	private static String							dataHandler			= "com.app.empire.net.handler";
-	private Map<Integer, Class<AbstractData>>		protocolDataBean	= new HashMap<Integer, Class<AbstractData>>();
-	private Map<Class<AbstractData>, IDataHandler>	protocolHandler		= new HashMap<Class<AbstractData>, IDataHandler>();
-	private static ProtocolFactory					instance			= null;
-	private IDataHandler							defaultHandler		= null;
-	private static Class<?>							protocolClass;
+	private static Logger						log					= Logger.getLogger(ProtocolFactory.class);
+	private static String						dataPackage			= "com.app.empire.net.data";
+	private static String						dataHandler			= "com.app.empire.net.handler";
+	private Map<Integer, Class<AbstractData>>	protocolDataBean	= new HashMap<Integer, Class<AbstractData>>();
+	private Map<Integer, IDataHandler>			protocolHandler		= new HashMap<Integer, IDataHandler>();
+	private static ProtocolFactory				instance			= null;
+	private IDataHandler						defaultHandler		= null;
+	private static Class<?>						protocolClass;
 
 	/**
 	 * 初始化游戏协议，加载业务逻辑中的Data数据以及相对的Handler
@@ -104,10 +104,10 @@ public class ProtocolFactory {
 					Class clazz = Class.forName(className);
 					this.protocolDataBean.put(Integer.valueOf(v), clazz);
 					IDataHandler handler = getProtocolHandlerClassInstance(name);
-					if (handler == null)
+					if (handler == null) {
 						log.warn("没有找到 " + name + " 对应的protocol handler");
-					else {
-						this.protocolHandler.put(clazz, handler);
+					} else {
+						this.protocolHandler.put(Integer.valueOf(v), handler);
 						// log.warn("协议关联 " + className + "对应Handle " + name);
 					}
 				} catch (Exception e) {
@@ -203,7 +203,7 @@ public class ProtocolFactory {
 	 * @return
 	 */
 	public static IDataHandler getDataHandler(AbstractData data) {
-		return getDataHandler(data.getClass());
+		return getDataHandler(data.getType(), data.getSubType());
 	}
 
 	/**
@@ -212,8 +212,10 @@ public class ProtocolFactory {
 	 * @param data
 	 * @return
 	 */
-	public static IDataHandler getDataHandler(Class<? extends AbstractData> data) {
-		IDataHandler handler = (IDataHandler) getInstance().protocolHandler.get(data);
+	public static IDataHandler getDataHandler(short mainType, short subType) {
+		int v = (int) ((mainType & 0xFF) << 16 | subType & 0xFF);
+		// return ((Class) this.protocolDataBean.get(Integer.valueOf(v)));
+		IDataHandler handler = (IDataHandler) getInstance().protocolHandler.get(Integer.valueOf(v));
 		if (handler == null)
 			handler = getInstance().defaultHandler;
 		return handler;

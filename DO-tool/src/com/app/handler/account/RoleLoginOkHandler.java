@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.commons.lang.ArrayUtils;
 
 import com.app.dispatch.StatisticsServer;
+import com.app.empire.protocol.Protocol;
 import com.app.empire.protocol.data.account.GetRandomName;
 import com.app.empire.protocol.data.account.GetRoleList;
 import com.app.empire.protocol.data.account.Heartbeat;
@@ -267,13 +268,13 @@ public class RoleLoginOkHandler implements IDataHandler {
 
 		// connector.send(test);
 
-		Test2 test2 = new Test2();
+		// Test2 test2 = new Test2();
 		TestMsg.Builder testMsg = TestMsg.newBuilder();
 		testMsg.setVipInterimTimeLimit(111112);
 		testMsg.setVipTimeLimit(100);
-		test2.setBytes(testMsg.build().toByteArray());
-		connector.send(test2);
-		
+		// test2.setBytes(testMsg.build().toByteArray());
+		// connector.send(test2);
+		connector.send(Protocol.MAIN_TEST, Protocol.TEST_Test2, testMsg.build());
 		return null;
 	}
 }

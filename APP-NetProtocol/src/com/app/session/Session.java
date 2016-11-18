@@ -1,13 +1,16 @@
 package com.app.session;
+
 import org.apache.mina.core.session.IdleStatus;
 import org.apache.mina.core.session.IoSession;
 
 import com.app.protocol.data.AbstractData;
+import com.app.protocol.data.PbAbstractData;
 import com.app.protocol.exception.ProtocolException;
+import com.google.protobuf.Message;
 
 public abstract class Session {
-	protected IoSession session;
-	protected int sessionId;
+	protected IoSession	session;
+	protected int		sessionId;
 
 	public Session(IoSession session) {
 		this.session = session;
@@ -52,6 +55,18 @@ public abstract class Session {
 
 	public void write(AbstractData data) {
 		this.session.write(data);
+	}
+
+	public void write(short type, short subType, Message msg) {
+		PbAbstractData pbMsg = new PbAbstractData(type, subType);
+		pbMsg.setBytes(msg.toByteArray());
+		write(pbMsg);
+	}
+
+	public void write(short type, short subType, int sessionId, int serial, Message msg) {
+		PbAbstractData pbMsg = new PbAbstractData(type, subType, sessionId, serial);
+		pbMsg.setBytes(msg.toByteArray());
+		write(pbMsg);
 	}
 
 	public void reply(AbstractData data) {

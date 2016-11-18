@@ -1,4 +1,5 @@
 package com.app.net;
+
 import java.net.ConnectException;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
@@ -12,19 +13,22 @@ import org.apache.mina.transport.socket.SocketSessionConfig;
 import org.apache.mina.transport.socket.nio.NioSocketConnector;
 
 import com.app.protocol.data.AbstractData;
+import com.app.protocol.data.PbAbstractData;
 import com.app.protocol.handler.IDataHandler;
+import com.google.protobuf.Message;
+
 public abstract class Connector implements IConnector {
-	protected static final Logger log = Logger.getLogger(Connector.class);
-	protected InetSocketAddress address;
-	protected String userName = "";
-	protected String password = "";
-	protected boolean needRetry = false;
-	protected NioSocketConnector connector;
-	protected SocketSessionConfig config;
-	protected int receiveBufferSize = 65534;
-	protected int sendBufferSize = 65534;
-	protected IoSession session;
-	protected String id;
+	protected static final Logger	log					= Logger.getLogger(Connector.class);
+	protected InetSocketAddress		address;
+	protected String				userName			= "";
+	protected String				password			= "";
+	protected boolean				needRetry			= false;
+	protected NioSocketConnector	connector;
+	protected SocketSessionConfig	config;
+	protected int					receiveBufferSize	= 65534;
+	protected int					sendBufferSize		= 65534;
+	protected IoSession				session;
+	protected String				id;
 
 	public Connector(String id, InetSocketAddress address) {
 		this.id = id;
@@ -78,6 +82,18 @@ public abstract class Connector implements IConnector {
 		this.session.write(data);
 	}
 
+	public void send(short type, short subType, Message msg) {
+		PbAbstractData pbMsg = new PbAbstractData(type, subType);
+		pbMsg.setBytes(msg.toByteArray());
+		send(pbMsg);
+	}
+
+	public void send(short type, short subType, int sessionId, int serial, Message msg) {
+		PbAbstractData pbMsg = new PbAbstractData(type, subType, sessionId, serial);
+		pbMsg.setBytes(msg.toByteArray());
+		send(pbMsg);
+	}
+
 	public void close() {
 		if ((this.session != null) && (this.session.isConnected())) {
 			this.session.close(true);
@@ -89,6 +105,7 @@ public abstract class Connector implements IConnector {
 	}
 
 	protected abstract void connected();
+
 	protected abstract void idle();
 
 	/**
@@ -100,6 +117,7 @@ public abstract class Connector implements IConnector {
 		public void exceptionCaught(IoSession session, Throwable cause) throws Exception {
 			Connector.log.info(cause, cause);
 		}
+
 		@Override
 		public void messageReceived(IoSession session, Object message) throws Exception {
 			AbstractData data = (AbstractData) message;
@@ -115,6 +133,7 @@ public abstract class Connector implements IConnector {
 				}
 			}
 		}
+
 		@Override
 		public void sessionClosed(IoSession session) throws Exception {
 			// super.sessionClosed(session);
@@ -136,17 +155,20 @@ public abstract class Connector implements IConnector {
 				}
 			}
 		}
+
 		@Override
 		public void sessionCreated(IoSession session) throws Exception {
 			// super.sessionCreated(session);
 			Connector.this.session = session;
 		}
+
 		@Override
 		public void sessionOpened(IoSession session) throws Exception {
 			// super.sessionOpened(session);
 			// Connector.this.session = session;
 			Connector.this.connected();
 		}
+
 		@Override
 		public void sessionIdle(IoSession session, IdleStatus status) throws Exception {
 			super.sessionIdle(session, status);

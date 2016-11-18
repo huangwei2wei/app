@@ -1,0 +1,9 @@
+option java_package = "com.app.empire.protocol.pb.warField";
+option java_outer_classname = "PostionMsgProto";
+import "warField/PBVector3.proto";
+message PostionMsg{
+	optional int32 map_id=1; //地图真实ID
+	optional int32 map_key=2; //地图模型ID
+	optional PBVector3 postion=3; //坐标
+}
+

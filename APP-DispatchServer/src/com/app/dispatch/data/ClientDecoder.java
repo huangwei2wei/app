@@ -31,7 +31,7 @@ public class ClientDecoder extends ProtocolDecoderAdapter {
 		while (buffer.hasRemaining()) {
 			buffer.mark();
 			int size = buffer.remaining();
-			if (size >= 17) {
+			if (size >= 18) {
 				// byte[] head = new byte[4];
 				// buffer.get(head);
 				// int version = compareHead(head);// 验证版本
@@ -42,7 +42,7 @@ public class ClientDecoder extends ProtocolDecoderAdapter {
 				// }
 				buffer.skip(8);
 				int len = buffer.getInt();// 包长度
-				buffer.skip(1);
+				buffer.skip(2);
 				// byte target = buffer.get();// 协议类型
 				// if (target < 0) {
 				// session.setAttribute(CURRENT_DECODER, null);

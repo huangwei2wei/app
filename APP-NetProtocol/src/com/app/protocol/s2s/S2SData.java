@@ -21,7 +21,7 @@ public class S2SData implements INetData {
 	private byte	data[];
 	private short	type;
 	private short	subType;
-	private int		numOfParameter;
+	private byte	proType;
 	private int		serial;
 	private int		pos;
 	private int		sessionId;
@@ -30,7 +30,7 @@ public class S2SData implements INetData {
 
 	// private static final String sep = ", ";
 
-	public S2SData(short type, short subType, byte data[], int serial, int sessionId, byte target) {
+	public S2SData(short type, short subType, byte data[], int serial, int sessionId, byte target, byte proType) {
 		this.data = data;
 		// flag = (byte) (int) getNumber(data, 0, 1);// 1
 		// type = (byte) (int) getNumber(data, 0, 1);// 1
@@ -38,9 +38,9 @@ public class S2SData implements INetData {
 		this.type = type;
 		this.subType = subType;
 		this.sessionId = sessionId;// 4
-		numOfParameter = this.data[0];// 1 字段个数
+		this.proType = proType;
 		this.serial = serial;
-		pos = 1;// 从第8个开始读
+		this.pos = 0;// 从第8个开始读
 		this.target = target;
 	}
 
@@ -64,8 +64,8 @@ public class S2SData implements INetData {
 		return subType;
 	}
 
-	public int getNumOfParameter() {
-		return numOfParameter;
+	public byte getProType() {
+		return proType;
 	}
 
 	public byte getTarget() {
@@ -341,8 +341,8 @@ public class S2SData implements INetData {
 		StringBuffer sbuf = new StringBuffer();
 		sbuf.append("Type:").append(type).append(" SubType:").append(subType);
 		int tmppos = pos;
-		pos = 1;
-		for (int i = 0; i < numOfParameter; i++) {
+		pos = 0;
+		while (pos < data.length) {
 			try {
 				switch (data[pos] & 0xff) {
 					case 2: // '\002'

@@ -5,7 +5,7 @@ package com.app.empire.protocol;
  */
 public class ScenesProtocol {
 	/** 协议测试 */
-	public static final short	MAIN_TEST	= 10001;
+	public static final short	MAIN_TEST	= 50;
 	public static final short	TEST_Test	= 1;
 	public static final short	TEST_Test2	= 2;
 }

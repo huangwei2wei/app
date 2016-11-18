@@ -15,7 +15,7 @@ import com.app.protocol.utils.ByteListUtil;
 
 public class S2SSegment implements INetSegment {
 	private ByteList	buffer;
-	private byte		numOfParameter;
+	private byte		proType;
 	private short		type;
 	private short		subType;
 	private int			serial;
@@ -24,11 +24,11 @@ public class S2SSegment implements INetSegment {
 	// private byte flag;
 
 	public S2SSegment(short type, short subType, int serial) {
-		this(type, subType, serial, -1, (byte) 0);
+		this(type, subType, serial, -1, (byte) 0, (byte) 0);
 	}
 
-	public S2SSegment(short type, short subType, int serial, int sessionId, byte target) {
-		this.numOfParameter = 0;
+	public S2SSegment(short type, short subType, int serial, int sessionId, byte target, byte proType) {
+		this.proType = proType;
 		this.serial = -1;
 		this.type = type;
 		this.subType = subType;
@@ -41,7 +41,7 @@ public class S2SSegment implements INetSegment {
 		ByteListUtil.addShort(this.buffer, type);// 1
 		ByteListUtil.addShort(this.buffer, subType);// 1
 		// ByteListUtil.addInt(this.buffer, 7);// 4 包长度
-		ByteListUtil.addByte(this.buffer, (byte) 0);// 1 字段个数
+		// ByteListUtil.addByte(this.buffer, (byte) 0);// 1 字段个数
 	}
 
 	public S2SSegment(short type, short subType) {
@@ -52,8 +52,8 @@ public class S2SSegment implements INetSegment {
 	// this(type, subType, (byte) -1, (byte) 0);
 	// }
 
-	public S2SSegment(short type, short subType, byte[] data, int serial, int sessionId, byte target) {
-		this.numOfParameter = 0;
+	public S2SSegment(short type, short subType, byte[] data, int serial, int sessionId, byte target, byte proType) {
+		this.proType = proType;
 		this.serial = -1;
 		this.sessionId = -1;
 		// this.flag = 0;
@@ -66,8 +66,8 @@ public class S2SSegment implements INetSegment {
 		ByteListUtil.addBytes(this.buffer, data);
 	}
 
-	public S2SSegment(INetData data, int sessionId) {
-		this.numOfParameter = 0;
+	public S2SSegment(INetData data, int sessionId, byte proType) {
+		this.proType = proType;
 		this.serial = -1;
 		this.sessionId = -1;
 		// this.flag = 0;
@@ -89,6 +89,10 @@ public class S2SSegment implements INetSegment {
 		return this.subType;
 	}
 
+	public byte getProType() {
+		return proType;
+	}
+
 	public int getSessionId() {
 		return this.sessionId;
 	}
@@ -99,10 +103,6 @@ public class S2SSegment implements INetSegment {
 
 	public void setSessionId(int sessionId) {
 		this.sessionId = sessionId;
-	}
-
-	public byte getNumOfParameter() {
-		return this.numOfParameter;
 	}
 
 	public int getSerial() {
@@ -125,17 +125,17 @@ public class S2SSegment implements INetSegment {
 		this.target = target;
 	}
 
-	protected void setNumOfParameter() {
-		this.buffer.set(4, this.numOfParameter);
-	}
+	// protected void setNumOfParameter() {
+	// this.buffer.set(4, this.numOfParameter);
+	// }
 
 	public void write(byte value) {
 		ByteListUtil.addByte(this.buffer, (byte) 1);
 		ByteListUtil.addByte(this.buffer, value);
 		// setSize();
-		S2SSegment tmp21_20 = this;
-		tmp21_20.numOfParameter = (byte) (tmp21_20.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp21_20 = this;
+		// tmp21_20.numOfParameter = (byte) (tmp21_20.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void write(byte[] value) {
@@ -143,18 +143,18 @@ public class S2SSegment implements INetSegment {
 		ByteListUtil.addInt(this.buffer, value.length);
 		ByteListUtil.addBytes(this.buffer, value);
 		// setSize();
-		S2SSegment tmp31_30 = this;
-		tmp31_30.numOfParameter = (byte) (tmp31_30.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp31_30 = this;
+		// tmp31_30.numOfParameter = (byte) (tmp31_30.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void writeBoolean(boolean value) {
 		ByteListUtil.addByte(this.buffer, (byte) 2);
 		ByteListUtil.addByte(this.buffer, (value) ? (byte) 1 : (byte) 0);
 		// setSize();
-		S2SSegment tmp29_28 = this;
-		tmp29_28.numOfParameter = (byte) (tmp29_28.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp29_28 = this;
+		// tmp29_28.numOfParameter = (byte) (tmp29_28.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void writeBooleans(boolean[] value) {
@@ -162,18 +162,18 @@ public class S2SSegment implements INetSegment {
 		ByteListUtil.addShort(this.buffer, (short) value.length);
 		ByteListUtil.addBooleans(this.buffer, value);
 		// setSize();
-		S2SSegment tmp32_31 = this;
-		tmp32_31.numOfParameter = (byte) (tmp32_31.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp32_31 = this;
+		// tmp32_31.numOfParameter = (byte) (tmp32_31.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void writeShort(short value) {
 		ByteListUtil.addByte(this.buffer, (byte) 3);
 		ByteListUtil.addShort(this.buffer, value);
 		// setSize();
-		S2SSegment tmp21_20 = this;
-		tmp21_20.numOfParameter = (byte) (tmp21_20.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp21_20 = this;
+		// tmp21_20.numOfParameter = (byte) (tmp21_20.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void writeShorts(short[] value) {
@@ -181,18 +181,18 @@ public class S2SSegment implements INetSegment {
 		ByteListUtil.addShort(this.buffer, (short) value.length);
 		ByteListUtil.addShorts(this.buffer, value);
 		// setSize();
-		S2SSegment tmp32_31 = this;
-		tmp32_31.numOfParameter = (byte) (tmp32_31.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp32_31 = this;
+		// tmp32_31.numOfParameter = (byte) (tmp32_31.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void writeInt(int value) {
 		ByteListUtil.addByte(this.buffer, (byte) 4);
 		ByteListUtil.addInt(this.buffer, value);
 		// setSize();
-		S2SSegment tmp21_20 = this;
-		tmp21_20.numOfParameter = (byte) (tmp21_20.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp21_20 = this;
+		// tmp21_20.numOfParameter = (byte) (tmp21_20.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void writeInts(int[] value) {
@@ -200,18 +200,18 @@ public class S2SSegment implements INetSegment {
 		ByteListUtil.addShort(this.buffer, (short) value.length);
 		ByteListUtil.addInts(this.buffer, value);
 		// setSize();
-		S2SSegment tmp32_31 = this;
-		tmp32_31.numOfParameter = (byte) (tmp32_31.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp32_31 = this;
+		// tmp32_31.numOfParameter = (byte) (tmp32_31.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void writeLong(long value) {
 		ByteListUtil.addByte(this.buffer, (byte) 5);
 		ByteListUtil.addLong(this.buffer, value);
 		// setSize();
-		S2SSegment tmp21_20 = this;
-		tmp21_20.numOfParameter = (byte) (tmp21_20.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp21_20 = this;
+		// tmp21_20.numOfParameter = (byte) (tmp21_20.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void writeLongs(long[] value) {
@@ -219,18 +219,18 @@ public class S2SSegment implements INetSegment {
 		ByteListUtil.addShort(this.buffer, (short) value.length);
 		ByteListUtil.addLongs(this.buffer, value);
 		// setSize();
-		S2SSegment tmp32_31 = this;
-		tmp32_31.numOfParameter = (byte) (tmp32_31.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp32_31 = this;
+		// tmp32_31.numOfParameter = (byte) (tmp32_31.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void writeString(String value) {
 		ByteListUtil.addByte(this.buffer, (byte) 6);
 		ByteListUtil.addString(this.buffer, value);
 		// setSize();
-		S2SSegment tmp22_21 = this;
-		tmp22_21.numOfParameter = (byte) (tmp22_21.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp22_21 = this;
+		// tmp22_21.numOfParameter = (byte) (tmp22_21.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void writeStrings(String[] value) {
@@ -238,9 +238,9 @@ public class S2SSegment implements INetSegment {
 		ByteListUtil.addShort(this.buffer, (short) value.length);
 		ByteListUtil.addStrings(this.buffer, value);
 		// setSize();
-		S2SSegment tmp32_31 = this;
-		tmp32_31.numOfParameter = (byte) (tmp32_31.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp32_31 = this;
+		// tmp32_31.numOfParameter = (byte) (tmp32_31.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public void writeList(List<Object> list) throws IllegalAccessException, InvocationTargetException, NoSuchMethodException {
@@ -252,9 +252,9 @@ public class S2SSegment implements INetSegment {
 				DataBeanEncoder.setValue(this, f, PropertyUtils.getProperty(obj, f.getName()));
 		}
 		// setSize();
-		S2SSegment tmp22_21 = this;
-		tmp22_21.numOfParameter = (byte) (tmp22_21.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp22_21 = this;
+		// tmp22_21.numOfParameter = (byte) (tmp22_21.numOfParameter + 1);
+		// setNumOfParameter();
 		// setNumOfParameter();
 	}
 
@@ -267,9 +267,9 @@ public class S2SSegment implements INetSegment {
 			DataBeanEncoder.setValue(this, f, PropertyUtils.getProperty(obj, f.getName()));
 
 		// setSize();
-		S2SSegment tmp22_21 = this;
-		tmp22_21.numOfParameter = (byte) (tmp22_21.numOfParameter + 1);
-		setNumOfParameter();
+		// S2SSegment tmp22_21 = this;
+		// tmp22_21.numOfParameter = (byte) (tmp22_21.numOfParameter + 1);
+		// setNumOfParameter();
 	}
 
 	public int size() {
@@ -282,12 +282,13 @@ public class S2SSegment implements INetSegment {
 
 	public byte[] getPacketByteArray() {
 		byte[] bytes = getByteArray();
-		ByteList byteList = new ArrayByteList(13 + bytes.length);
+		ByteList byteList = new ArrayByteList(14 + bytes.length);
 		// ByteListUtil.addBytes(byteList, INetSegment.HEAD);// 4
 		ByteListUtil.addInt(byteList, this.sessionId);// 4
 		ByteListUtil.addInt(byteList, this.serial);// 4
-		ByteListUtil.addInt(byteList, 13 + bytes.length);// 4
-		ByteListUtil.addByte(byteList, (byte) 1);// 2
+		ByteListUtil.addInt(byteList, 14 + bytes.length);// 4
+		ByteListUtil.addByte(byteList, (byte) this.getTarget());// 2目的地
+		ByteListUtil.addByte(byteList, (byte) this.getProType());// 类型
 		ByteListUtil.addBytes(byteList, bytes);
 		// ByteListUtil.addByte(byteList, (byte) 0);// 1
 		return byteList.toArray();

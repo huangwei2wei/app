@@ -46,7 +46,7 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 		while (buffer.hasRemaining()) {
 			buffer.mark();
 			int size = buffer.remaining();
-			if (size >= 17) {
+			if (size >= 18) {
 				// byte head[] = new byte[4];
 				// buffer.get(head);
 				// int version = checkVersion(head);
@@ -58,7 +58,6 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 				int sessionId = buffer.getInt();
 				int ser = buffer.getInt();
 				int len = buffer.getInt(); // 包长度
-				byte target = buffer.get(); // 包个数(协议类型)
 				if (len > 0x19000) {
 					session.setAttribute(CURRENT_DECODER, null);
 					throw new IOException("error protocol 2");
@@ -69,8 +68,10 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 					// for (int i = 0; i < 1; i++) {
 					// buffer.mark();
 					// flag = buffer.get();
+					byte target = buffer.get(); // 目的地
+					byte proType = buffer.get();// 协议类型
 					short type = buffer.getShort();// 主协议号
-					short subtype = buffer.getShort(); // 从协议号
+					short subtype = buffer.getShort(); // 子协议号
 					// int dataLen = buffer.getInt();// 数据长度
 					// int l = buffer.remaining();
 					// if (dataLen < 0 || dataLen - minBytes >= buffer.remaining()) {
@@ -78,10 +79,10 @@ public class S2SDecoder extends ProtocolDecoderAdapter {
 					// session.setAttribute(CURRENT_DECODER, null);
 					// throw new IOException("error protocol 4");
 					// }
-					byte data[] = new byte[len - 17];
+					byte data[] = new byte[len - 18];
 					// buffer.reset();
 					buffer.get(data);
-					datas[0] = new S2SData(type, subtype, data, ser, sessionId, target);
+					datas[0] = new S2SData(type, subtype, data, ser, sessionId, target, proType);
 					// }
 					// buffer.get();
 					// if ((flag & 1) != 0)
