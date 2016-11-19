@@ -1,4 +1,4 @@
-package com.app.empire.scene.service.warField;
+package com.app.empire.scene.service.warfield;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,32 +10,22 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg;
-import com.app.empire.scene.util.FileOperate;
-import com.app.empire.scene.util.Rect;
 import com.app.empire.scene.constant.SpwanInfoType;
 import com.app.empire.scene.entity.FieldInfo;
 import com.app.empire.scene.entity.FieldSpawn;
-//import com.chuangyou.xianni.proto.MessageUtil;
-//import com.chuangyou.xianni.proto.PBMessage;
-import com.chuangyou.xianni.role.helper.IDMakerHelper;
-import com.chuangyou.xianni.touchPoint.TouchPointSpwanNode;
-import com.chuangyou.xianni.warfield.field.Field;
-import com.chuangyou.xianni.warfield.helper.ParseMapDataHelper;
-import com.chuangyou.xianni.warfield.navi.seeker.NavmeshSeeker;
-import com.chuangyou.xianni.warfield.spawn.ActiveSpwanNode;
-import com.chuangyou.xianni.warfield.spawn.EliteBossSpawnNode;
-import com.chuangyou.xianni.warfield.spawn.GatherSpawnNode;
-import com.chuangyou.xianni.warfield.spawn.MonsterSpawnNode;
-import com.chuangyou.xianni.warfield.spawn.NpcSpawnNode;
-import com.chuangyou.xianni.warfield.spawn.PerareState;
-import com.chuangyou.xianni.warfield.spawn.SpwanNode;
-import com.chuangyou.xianni.warfield.spawn.TimeControlerNodeMgr;
-import com.chuangyou.xianni.warfield.spawn.TriggerPointSpwanNode;
-import com.chuangyou.xianni.warfield.spawn.WorkingState;
-import com.chuangyou.xianni.warfield.spawn.WorldBossSpawnNode;
-import com.chuangyou.xianni.warfield.template.FieldTemplateMgr;
-import com.chuangyou.xianni.warfield.template.SpawnTemplateMgr;
+import com.app.empire.scene.service.ServiceManager;
+import com.app.empire.scene.service.role.helper.IDMakerHelper;
+import com.app.empire.scene.service.warfield.field.Field;
+import com.app.empire.scene.service.warfield.helper.ParseMapDataHelper;
+import com.app.empire.scene.service.warfield.navi.seeker.NavmeshSeeker;
+import com.app.empire.scene.service.warfield.spawn.MonsterSpawnNode;
+import com.app.empire.scene.service.warfield.spawn.NpcSpawnNode;
+import com.app.empire.scene.service.warfield.spawn.PerareState;
+import com.app.empire.scene.service.warfield.spawn.SpwanNode;
+import com.app.empire.scene.service.warfield.spawn.WorkingState;
+import com.app.empire.scene.util.FileOperate;
+import com.app.empire.scene.util.Rect;
+import com.sun.corba.se.spi.activation.ServerManager;
 
 public class FieldMgr {
 
@@ -48,12 +38,12 @@ public class FieldMgr {
 	/**
 	 * 寻路模板数据
 	 */
-	private static Map<String, NavmeshSeeker>	_seekersTemp	= new HashMap<String, NavmeshSeeker>();
+	private static Map<String, NavmeshSeeker> _seekersTemp = new HashMap<String, NavmeshSeeker>();
 
 	/**
 	 * 地图边界配置
 	 */
-	private static Map<String, Rect>			_mapBounds		= new HashMap<String, Rect>();
+	private static Map<String, Rect> _mapBounds = new HashMap<String, Rect>();
 
 	/**
 	 * 获取一个地图的查看器
@@ -90,7 +80,6 @@ public class FieldMgr {
 			return false;
 		}
 		createStateField();
-		WorldBossManager.init();
 		return true;
 	}
 
@@ -98,7 +87,7 @@ public class FieldMgr {
 	 * 场景静态地图
 	 */
 	private boolean initField() {
-		String ROOT = Config.getValue("mapdata");
+		String ROOT = Thread.currentThread().getContextClassLoader().getResource("mapData").getPath();
 		File f = new File(ROOT);
 		Map<String, String> realNameMaping = new HashMap<>();
 		if (f.isDirectory()) {
@@ -107,9 +96,9 @@ public class FieldMgr {
 				realNameMaping.put(str.toLowerCase(), str);
 			}
 		}
-		for (Map.Entry<Integer, FieldInfo> entry : FieldTemplateMgr.fieldTemps.entrySet()) {
+		for (Map.Entry<Integer, FieldInfo> entry : ServiceManager.getManager().getGameConfigService().getFieldInfoConfig().entrySet()) {
 			if (!_seekersTemp.containsKey(entry.getValue().getResName())) {
-				String sonFileName = entry.getValue().getResName() + ".txt";
+				String sonFileName = entry.getValue().getResName() + ".map";
 				String realFileName = realNameMaping.get(sonFileName.toLowerCase());
 				File configFile = new File(ROOT + realFileName);
 				if (configFile.exists()) {
@@ -122,8 +111,7 @@ public class FieldMgr {
 						_mapBounds.put(configName.toLowerCase(), rect);
 						_seekersTemp.put(configName.toLowerCase(), seeker);
 					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						Log.error("初始化场景数据错误", e);
+						// System.err.println("初始化场景数据错误", e);
 						e.printStackTrace();
 						return false;
 					}
@@ -137,9 +125,9 @@ public class FieldMgr {
 	 * 创建静态地图
 	 */
 	private void createStateField() {
-		for (Map.Entry<Integer, FieldInfo> entry : FieldTemplateMgr.fieldTemps.entrySet()) {
-			if (entry.getValue().getType() == 1) // 公共/静态地图
-			{
+		for (Map.Entry<Integer, FieldInfo> entry : ServiceManager.getManager().getGameConfigService().getFieldInfoConfig().entrySet()) {
+			if (entry.getValue().getType() == 1) {// 公共、静态地图
+
 				initCreateField(entry.getValue().getMapKey(), entry.getValue().getType());
 			}
 		}
@@ -194,28 +182,26 @@ public class FieldMgr {
 		f.setMapKey(mapkey);
 		fields.put(f.id, f);
 		spwanInit(f);
-		// Log.error("-初始化地图，mapKey = " + mapkey+" f.id: "+f.id);
 		return f;
 	}
 
 	/** 服务器启动时，创建初始化地图 */
-	public Field initCreateField(int mapkey, byte type) {
+	public Field initCreateField(int mapkey, Short type) {
 		Field f = new Field();
 		f.setMapKey(mapkey);
 		f.id = mapkey;
 		fields.put(f.id, f);
 		spwanInit(f);
-		Log.error("初始化地图，mapKey = " + mapkey);
 		return f;
 	}
 
 	protected void spwanInit(Field f) {
-		Map<Integer, SpawnInfo> spawnInfos = SpawnTemplateMgr.getFieldSpawnInfos(f.getMapKey());
+		Map<Integer, FieldSpawn> spawnInfos = ServiceManager.getManager().getGameConfigService().getFieldSpawnMap().get(f.getMapKey());
 		if (spawnInfos == null || spawnInfos.size() == 0) {
-			Log.error("map has not anly spawnInfo ,the mapKey is:" + f.getMapKey());
+			System.err.println("map has not anly spawnInfo ,the mapKey is:" + f.getMapKey());
 			return;
 		}
-		for (SpawnInfo sf : spawnInfos.values()) {
+		for (FieldSpawn sf : spawnInfos.values()) {
 			// if (sf.getTimerType() !=
 			// FieldConstants.MonsterReflushTimerType.none) {
 			// continue;
@@ -223,35 +209,28 @@ public class FieldMgr {
 			SpwanNode node = null;
 
 			switch (sf.getEntityType()) {
-				case SpwanInfoType.MONSTER:
-					node = new MonsterSpawnNode(sf, f);
-					break;
-				case SpwanInfoType.NPC:
-					node = new NpcSpawnNode(sf, f);
-					break;
-				case SpwanInfoType.TRANSPOINT:
-					node = new TouchPointSpwanNode(sf, f);
-					break;
-				case SpwanInfoType.GATHER_POINT:
-					node = new GatherSpawnNode(sf, f);
-					break;
-				case SpwanInfoType.TASK_TRIGGER:
-					node = new TriggerPointSpwanNode(sf, f);
-					break;
-				case SpwanInfoType.COMMON_TRIGGER:
-					node = new ActiveSpwanNode(sf, f);
-					break;
-				case SpwanInfoType.BOSS_ELITE:
-					node = new EliteBossSpawnNode(sf, f);
-					break;
-				case SpwanInfoType.BOSS_WORLD:
-					node = new WorldBossSpawnNode(sf, f);
-					break;
-				default:
-					node = new SpwanNode(sf, f);
+			case SpwanInfoType.MONSTER:
+				node = new MonsterSpawnNode(sf, f);
+				break;
+			case SpwanInfoType.NPC:
+				node = new NpcSpawnNode(sf, f);
+				break;
+			// case SpwanInfoType.TRANSPOINT:
+			// node = new TouchPointSpwanNode(sf, f);
+			// break;
+			// case SpwanInfoType.GATHER_POINT:
+			// node = new GatherSpawnNode(sf, f);
+			// break;
+			// case SpwanInfoType.TASK_TRIGGER:
+			// node = new TriggerPointSpwanNode(sf, f);
+			// break;
+			// case SpwanInfoType.COMMON_TRIGGER:
+			// node = new ActiveSpwanNode(sf, f);
+			// break;
+			default:
+				node = new SpwanNode(sf, f);
 			}
 			f.addSpawnNode(node);
-			TimeControlerNodeMgr.addNode(node);
 			node.build();
 			if (node.getSpawnInfo().getInitStatu() == 1) {
 				node.stateTransition(new WorkingState(node));
@@ -268,7 +247,7 @@ public class FieldMgr {
 		return true;
 	}
 
-	/// 生成怪物
+	// / 生成怪物
 	// private void spawnMonster(Field f) {
 	// List<Integer> indexes =
 	// SpawnTemplateMgr.spawnMonsterIndexes.get(f.getMapKey());

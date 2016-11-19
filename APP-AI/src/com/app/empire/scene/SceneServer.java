@@ -73,7 +73,8 @@ public class SceneServer {
 		cfg.setSendBufferSize(ServiceManager.getManager().getConfiguration().getInt("writebuffsize"));
 		cfg.setTcpNoDelay(ServiceManager.getManager().getConfiguration().getBoolean("tcpnodelay"));
 		acceptor.setHandler(sessionHandler);
-		acceptor.setDefaultLocalAddress(new InetSocketAddress(ServiceManager.getManager().getConfiguration().getString("localip"), ServiceManager.getManager().getConfiguration().getInt("port")));
+		acceptor.setDefaultLocalAddress(new InetSocketAddress(ServiceManager.getManager().getConfiguration()
+				.getString("localip"), ServiceManager.getManager().getConfiguration().getInt("port")));
 		// 监听
 		acceptor.bind();
 	}
