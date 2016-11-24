@@ -1,6 +1,6 @@
 package com.app.empire.scene.service.warfield.helper.selectors;
 
-import com.app.empire.scene.service.role.helper.RoleConstants;
+import com.app.empire.scene.constant.RoleConstants;
 import com.app.empire.scene.service.role.objects.Living;
 import com.app.empire.scene.service.warfield.helper.Selector;
 

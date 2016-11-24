@@ -7,42 +7,41 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import com.app.empire.protocol.data.scene.world.HeroInfoMsg;
-import com.chuangyou.common.protobuf.pb.army.PropertyMsgProto.PropertyMsg;
-import com.chuangyou.common.protobuf.pb.battle.BattleLivingInfoMsgProto.BattleLivingInfoMsg;
-import com.chuangyou.common.protobuf.pb.battle.BattleLivingInfoMsgProto.BattleLivingInfoMsg.Builder;
-import com.chuangyou.common.protobuf.pb.battle.DamageListMsgProtocol.DamageListMsg;
-import com.chuangyou.common.protobuf.pb.battle.DamageMsgProto.DamageMsg;
-import com.chuangyou.common.protobuf.pb.soul.FuseSkillProto.FuseSkillMsg;
-import com.chuangyou.common.util.Log;
+//import com.chuangyou.common.protobuf.pb.army.PropertyMsgProto.PropertyMsg;
+//import com.chuangyou.common.protobuf.pb.battle.BattleLivingInfoMsgProto.BattleLivingInfoMsg;
+//import com.chuangyou.common.protobuf.pb.battle.BattleLivingInfoMsgProto.BattleLivingInfoMsg.Builder;
+//import com.chuangyou.common.protobuf.pb.battle.DamageListMsgProtocol.DamageListMsg;
+//import com.chuangyou.common.protobuf.pb.battle.DamageMsgProto.DamageMsg;
+//import com.chuangyou.common.protobuf.pb.soul.FuseSkillProto.FuseSkillMsg;
 import com.app.empire.scene.util.MathUtils;
 import com.app.empire.scene.service.battle.action.HeroPollingAction;
 import com.app.empire.scene.service.battle.buffer.Buffer;
 import com.app.empire.scene.service.battle.buffer.BufferFactory;
 import com.app.empire.scene.service.battle.damage.Damage;
 import com.app.empire.scene.service.battle.mgr.BattleTempMgr;
-import com.chuangyou.xianni.battle.skill.FuseSkillVo;
+//import com.chuangyou.xianni.battle.skill.FuseSkillVo;
 import com.app.empire.scene.service.battle.skill.Skill;
 import com.app.empire.scene.service.campaign.Campaign;
 import com.app.empire.scene.service.campaign.CampaignMgr;
 import com.app.empire.scene.service.campaign.node.CampaignNodeDecorator;
 import com.app.empire.scene.service.campaign.task.CTBaseCondition;
-import com.chuangyou.xianni.common.templete.SystemConfigTemplateMgr;
+//import com.chuangyou.xianni.common.templete.SystemConfigTemplateMgr;
 import com.app.empire.scene.constant.BattleModeCode;
 import com.app.empire.scene.constant.EnumAttr;
-import com.chuangyou.xianni.entity.buffer.SkillBufferTemplateInfo;
-import com.chuangyou.xianni.entity.equip.EquipAwakenCfg;
-import com.chuangyou.xianni.entity.mount.MountGradeCfg;
-import com.chuangyou.xianni.entity.skill.SkillActionTemplateInfo;
-import com.chuangyou.xianni.entity.skill.SkillTempateInfo;
-import com.chuangyou.xianni.entity.spawn.SpawnInfo;
-import com.chuangyou.xianni.equip.template.EquipTemplateMgr;
+//import com.chuangyou.xianni.entity.buffer.SkillBufferTemplateInfo;
+//import com.chuangyou.xianni.entity.equip.EquipAwakenCfg;
+//import com.chuangyou.xianni.entity.mount.MountGradeCfg;
+//import com.chuangyou.xianni.entity.skill.SkillActionTemplateInfo;
+//import com.chuangyou.xianni.entity.skill.SkillTempateInfo;
+//import com.chuangyou.xianni.entity.spawn.SpawnInfo;
+//import com.chuangyou.xianni.equip.template.EquipTemplateMgr;
 import com.app.empire.scene.util.exec.DelayAction;
 import com.app.empire.scene.util.exec.ThreadManager;
-import com.chuangyou.xianni.mount.MountTempleteMgr;
-import com.chuangyou.xianni.proto.BroadcastUtil;
-import com.chuangyou.xianni.proto.MessageUtil;
-import com.chuangyou.xianni.proto.PBMessage;
-import com.chuangyou.xianni.protocol.Protocol;
+//import com.chuangyou.xianni.mount.MountTempleteMgr;
+//import com.chuangyou.xianni.proto.BroadcastUtil;
+//import com.chuangyou.xianni.proto.MessageUtil;
+//import com.chuangyou.xianni.proto.PBMessage;
+//import com.chuangyou.xianni.protocol.Protocol;
 import com.app.empire.scene.service.role.action.RevivalPlayerAction;
 import com.app.empire.scene.service.role.helper.RoleConstants.RoleType;
 import com.app.empire.scene.service.warfield.field.Field;
@@ -67,8 +66,8 @@ public class Player extends ActiveLiving {
 	/** 副本buffer */
 	private List<Buffer> campaignBuffers = new ArrayList<>();
 
-	/** 魂幡携带buffer */
-	private Map<Integer, FuseSkillVo> fuseSkillVos = new HashMap<>();
+//	/** 魂幡携带buffer */
+//	private Map<Integer, FuseSkillVo> fuseSkillVos = new HashMap<>();
 
 	/** 魂幡buffers */
 	private Buffer[] fuseSkillBuffers = new Buffer[4];

@@ -25,7 +25,6 @@ import com.app.empire.scene.service.warfield.spawn.SpwanNode;
 import com.app.empire.scene.service.warfield.spawn.WorkingState;
 import com.app.empire.scene.util.FileOperate;
 import com.app.empire.scene.util.Rect;
-import com.sun.corba.se.spi.activation.ServerManager;
 
 public class FieldMgr {
 
@@ -38,12 +37,12 @@ public class FieldMgr {
 	/**
 	 * 寻路模板数据
 	 */
-	private static Map<String, NavmeshSeeker> _seekersTemp = new HashMap<String, NavmeshSeeker>();
+	private static Map<String, NavmeshSeeker>	_seekersTemp	= new HashMap<String, NavmeshSeeker>();
 
 	/**
 	 * 地图边界配置
 	 */
-	private static Map<String, Rect> _mapBounds = new HashMap<String, Rect>();
+	private static Map<String, Rect>			_mapBounds		= new HashMap<String, Rect>();
 
 	/**
 	 * 获取一个地图的查看器
@@ -209,26 +208,26 @@ public class FieldMgr {
 			SpwanNode node = null;
 
 			switch (sf.getEntityType()) {
-			case SpwanInfoType.MONSTER:
-				node = new MonsterSpawnNode(sf, f);
-				break;
-			case SpwanInfoType.NPC:
-				node = new NpcSpawnNode(sf, f);
-				break;
-			// case SpwanInfoType.TRANSPOINT:
-			// node = new TouchPointSpwanNode(sf, f);
-			// break;
-			// case SpwanInfoType.GATHER_POINT:
-			// node = new GatherSpawnNode(sf, f);
-			// break;
-			// case SpwanInfoType.TASK_TRIGGER:
-			// node = new TriggerPointSpwanNode(sf, f);
-			// break;
-			// case SpwanInfoType.COMMON_TRIGGER:
-			// node = new ActiveSpwanNode(sf, f);
-			// break;
-			default:
-				node = new SpwanNode(sf, f);
+				case SpwanInfoType.MONSTER:
+					node = new MonsterSpawnNode(sf, f);
+					break;
+				case SpwanInfoType.NPC:
+					node = new NpcSpawnNode(sf, f);
+					break;
+				// case SpwanInfoType.TRANSPOINT:
+				// node = new TouchPointSpwanNode(sf, f);
+				// break;
+				// case SpwanInfoType.GATHER_POINT:
+				// node = new GatherSpawnNode(sf, f);
+				// break;
+				// case SpwanInfoType.TASK_TRIGGER:
+				// node = new TriggerPointSpwanNode(sf, f);
+				// break;
+				// case SpwanInfoType.COMMON_TRIGGER:
+				// node = new ActiveSpwanNode(sf, f);
+				// break;
+				default:
+					node = new SpwanNode(sf, f);
 			}
 			f.addSpawnNode(node);
 			node.build();
@@ -247,77 +246,13 @@ public class FieldMgr {
 		return true;
 	}
 
-	// / 生成怪物
-	// private void spawnMonster(Field f) {
-	// List<Integer> indexes =
-	// SpawnTemplateMgr.spawnMonsterIndexes.get(f.getMapKey());
-	// if (indexes == null)
-	// return;
-	// for (Integer index : indexes) {
-	// SpawnInfo spawn =
-	// SpawnTemplateMgr.spawnMonster.get(f.getMapKey()).get(index);
-	// if (spawn.getTimerType() == FieldConstants.MonsterReflushTimerType.none)
-	// {
-	// ThreadManager.actionExecutor.enDelayQueue(new SpawnMonsterAction(spawn,
-	// f));
-	// }
-	// }
-	// }
-	//
-	// /// 生成NPC
-	// private void spawnNPC(Field f) {
-	// List<Integer> indexes =
-	// SpawnTemplateMgr.spawnNpcIndexes.get(f.getMapKey());
-	// if (indexes == null)
-	// return;
-	// for (Integer index : indexes) {
-	// SpawnInfo spawn =
-	// SpawnTemplateMgr.spawnNpc.get(f.getMapKey()).get(index);
-	// if (spawn.getTimerType() == FieldConstants.MonsterReflushTimerType.none)
-	// {
-	// ThreadManager.actionExecutor.enDelayQueue(new SpawnNpcAction(spawn, f));
-	// }
-	// }
-	// }
-	//
-	// /**
-	// * 生成地图节点
-	// *
-	// * @param f
-	// */
-	// private void spawnPoint(Field f) {
-	// List<Integer> indexes =
-	// SpawnTemplateMgr.spawnPointIndexes.get(f.getMapKey());
-	// if (indexes == null) {
-	// return;
-	// }
-	// for (Integer index : indexes) {
-	// SpawnInfo spawn =
-	// SpawnTemplateMgr.spawnPoint.get(f.getMapKey()).get(index);
-	//
-	// TouchPoint tp = new TouchPoint();
-	// tp.setPointId(spawn.getEntityId());
-	// tp.setSpawnId(spawn.getId());
-	// tp.setMapKey(f.getMapKey());
-	// f.addTouchPoint(tp);
-	//
-	// if (spawn.getTimerType() == FieldConstants.MonsterReflushTimerType.none)
-	// {
-	// ThreadManager.actionExecutor.enDelayQueue(new SpawnTuchPointAction(spawn,
-	// f));
-	// }
-	//
-	// }
-	// }
-
 	// 地图创建成功，通知center服务器创建代理
 	private void notice2Center(int id, int mapKey) {
-		PostionMsg.Builder builder = PostionMsg.newBuilder();
-		builder.setMapId(id);
-		builder.setMapKey(mapKey);
-
-		PBMessage message = MessageUtil.buildMessage(Protocol.C_SCENE_CREATE_MAP, builder.build());
-		GatewayLinkedSet.send2Server(message);
-
+		// PostionMsg.Builder builder = PostionMsg.newBuilder();
+		// builder.setMapId(id);
+		// builder.setMapKey(mapKey);
+		// PBMessage message = MessageUtil.buildMessage(Protocol.C_SCENE_CREATE_MAP, builder.build());
+		// GatewayLinkedSet.send2Server(message);
+		// connector.send(Protocol.MAIN_TEST, Protocol.TEST_Test2, testMsg.build());
 	}
 }

@@ -7,7 +7,6 @@ import org.apache.mina.core.session.IdleStatus;
 import org.apache.mina.core.session.IoSession;
 
 import com.app.empire.protocol.data.error.ProtocolError;
-import com.app.empire.scene.service.world.ArmyProxy;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.exception.ProtocolException;
 import com.app.session.Session;
@@ -19,10 +18,10 @@ import com.app.session.Session;
  * @author doter
  */
 public class ConnectSession extends Session {
-	private static final Logger log = Logger.getLogger(ConnectSession.class);
-	private String name;
+	private static final Logger						log				= Logger.getLogger(ConnectSession.class);
+	private String									name;
 
-	private ConcurrentHashMap<Integer, ArmyProxy> playerid2Army = new ConcurrentHashMap<Integer, ArmyProxy>();// 链接时
+	private ConcurrentHashMap<Integer, ArmyProxy>	playerid2Army	= new ConcurrentHashMap<Integer, ArmyProxy>();	// 链接时
 
 	public ConnectSession(IoSession session) {
 		super(session);
@@ -64,6 +63,8 @@ public class ConnectSession extends Session {
 		if (army != null) {
 			seg.setSessionId(army.getSessionId().intValue());
 			write(seg);
+		} else {
+			log.error("玩家不在线：" + playerId);
 		}
 	}
 

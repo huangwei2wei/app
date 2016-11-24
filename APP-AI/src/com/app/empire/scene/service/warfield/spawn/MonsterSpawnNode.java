@@ -7,6 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import com.app.empire.scene.entity.FieldSpawn;
 import com.app.empire.scene.util.Vector3;
+import com.app.empire.scene.util.exec.DelayAction;
 import com.app.empire.scene.service.battle.buffer.Buffer;
 import com.app.empire.scene.service.battle.buffer.BufferFactory;
 import com.app.empire.scene.service.battle.mgr.BattleTempMgr;
@@ -15,6 +16,7 @@ import com.app.empire.scene.service.campaign.Campaign;
 import com.app.empire.scene.service.campaign.CampaignMgr;
 import com.app.empire.scene.service.campaign.task.CTBaseCondition;
 import com.app.empire.scene.constant.EnumAttr;
+import com.app.empire.scene.constant.SceneGlobal;
 import com.app.empire.scene.constant.SpwanInfoType;
 import com.app.empire.scene.entity.SkillBuffer;
 import com.app.empire.scene.entity.Skillinfo;
@@ -101,9 +103,9 @@ public class MonsterSpawnNode extends SpwanNode { // 刷怪模板
 		}
 		toalCount++;
 
-		int randomx = spwanInfo.getBound_x();
-		int randomy = spwanInfo.getBound_y();
-		int randomz = spwanInfo.getBound_z();
+		int randomx = spwanInfo.getBoundX();
+		int randomy = spwanInfo.getBoundY();
+		int randomz = spwanInfo.getBoundZ();
 
 		Monster monster = new Monster(this);
 		MonsterInfo monsterInfo = MonsterInfoTemplateMgr.get(spwanInfo.getEntityId());

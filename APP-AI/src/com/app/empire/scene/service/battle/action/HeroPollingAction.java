@@ -1,6 +1,6 @@
 package com.app.empire.scene.service.battle.action;
 
-import com.chuangyou.xianni.role.objects.Player;
+import  com.app.empire.scene.service.role.objects.Player;;
 
 /**
  * 英雄自检动作/buffer运算

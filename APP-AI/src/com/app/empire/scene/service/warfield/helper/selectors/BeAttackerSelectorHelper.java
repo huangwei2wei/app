@@ -1,8 +1,8 @@
-package com.app.empire.scene.service.warField.helper.selectors;
+package com.app.empire.scene.service.warfield.helper.selectors;
 
-import com.chuangyou.xianni.constant.RoleConstants.RoleType;
-import com.chuangyou.xianni.role.objects.Living;
-import com.chuangyou.xianni.warfield.helper.Selector;
+import com.app.empire.scene.constant.RoleConstants.RoleType;
+import com.app.empire.scene.service.role.objects.Living;
+import com.app.empire.scene.service.warfield.helper.Selector;
 
 public class BeAttackerSelectorHelper extends Selector {
 

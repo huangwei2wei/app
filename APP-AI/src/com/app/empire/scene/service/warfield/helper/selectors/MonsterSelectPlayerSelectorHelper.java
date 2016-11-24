@@ -1,7 +1,7 @@
 package com.app.empire.scene.service.warfield.helper.selectors;
 
 import com.app.empire.scene.util.Vector3;
-import com.app.empire.scene.service.role.helper.RoleConstants;
+import com.app.empire.scene.constant.RoleConstants;
 import com.app.empire.scene.service.role.objects.Living;
 import com.app.empire.scene.service.role.objects.Monster;
 import com.app.empire.scene.service.warfield.helper.Selector;

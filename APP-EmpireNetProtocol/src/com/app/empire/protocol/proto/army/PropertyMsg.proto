@@ -1,0 +1,9 @@
+option java_package = "com.app.empire.protocol.pb.army";
+option java_outer_classname = "PropertyMsgProto";
+
+//属性模板
+message PropertyMsg {
+	optional int32 type = 1; //属性类型
+	optional int64 basePoint = 2; //基础属性值
+	optional int64 totalPoint = 3; //总属性值
+}

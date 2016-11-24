@@ -5,7 +5,7 @@ import java.util.List;
 import com.chuangyou.xianni.campaign.Campaign;
 import com.chuangyou.xianni.campaign.CampaignMgr;
 import com.chuangyou.xianni.entity.spawn.SpawnInfo;
-import com.chuangyou.xianni.warfield.field.Field;
+import  com.app.empire.scene.service.warfield.field.Field;;
 import com.chuangyou.xianni.warfield.template.SpawnTemplateMgr;
 import com.chuangyou.xianni.world.ArmyProxy;
 

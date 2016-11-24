@@ -1,0 +1,9 @@
+option java_package = "com.app.empire.protocol.pb.army";
+option java_outer_classname = "PropertyListMsgProto";
+
+//属性模板
+import "army/PropertyMsg.proto";
+message PropertyListMsg {
+	repeated  PropertyMsg propertys  = 1;
+}
+
