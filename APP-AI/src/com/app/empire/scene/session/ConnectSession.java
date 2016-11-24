@@ -7,6 +7,7 @@ import org.apache.mina.core.session.IdleStatus;
 import org.apache.mina.core.session.IoSession;
 
 import com.app.empire.protocol.data.error.ProtocolError;
+import com.app.empire.scene.service.world.ArmyProxy;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.exception.ProtocolException;
 import com.app.session.Session;

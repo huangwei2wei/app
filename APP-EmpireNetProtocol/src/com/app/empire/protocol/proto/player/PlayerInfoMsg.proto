@@ -1,0 +1,34 @@
+option java_package = "com.app.empire.protocol.pb.player";
+option java_outer_classname = "PlayerInfoMsgProto";
+
+import "warField/PostionMsg.proto";
+message PlayerInfoMsg {
+	optional int64 player_id=1; //角色ID
+	optional int64 user_id=2; //用户ID
+	optional string nick_name=3; //昵称
+	optional int32 level=4; //等级
+	optional int64 exp=5; //当前经验
+	optional int64 toal_exp=6; //总经验g
+	optional int64 money=7; //金币
+	optional int32 bind_cash=8; //绑定仙玉
+	optional int32 vip_level=9; //VIP等级
+	optional int32 fight=10; //战斗力
+	optional int32 skinId=11; //皮肤
+	optional int32 fashion_id=12; //时装ID
+	optional int32 weapon_id=13; //武器ID
+	optional int32 mount_id=14; //坐骑ID
+	optional int32 magic_weapon_id=15; //法宝ID
+	optional int32 wing_id=16; //翅膀ID
+	optional int32 pBagCount=17; //用户背包格子数
+	optional PostionMsg postionMsg=18; //当前位置
+	optional int32 cash = 19; // 非绑定仙玉
+	optional int32 repair = 20; // 修为
+	optional int32 points = 21; //积分
+	optional int32 job = 22; //职业
+	optional int64 equipExp = 23; // 装备经验
+	optional int32 weaponAwaken = 24; // 当前武器觉醒等级
+	optional int32 stateLv = 25; //境界等级
+	optional int32 guildId = 26; // 所在帮派ID
+	optional string guildName = 27; // 所在帮派名字
+	optional int32 guildJob = 28; // 自己在帮派的职位
+}

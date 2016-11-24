@@ -10,11 +10,19 @@ public class Vector3 {
 	 */
 	public static final float	Accuracy	= 10.0f;
 
-	public float				x;
-	public float				y;
-	public float				z;
+	private float				x;
+	private float				y;
+	private float				z;
+	private int					angle;
 
 	public Vector3() {
+	}
+
+	public Vector3(float x, float y, float z, int angle) {
+		this.x = x;
+		this.y = y;
+		this.z = z;
+		this.angle = angle;
 	}
 
 	public Vector3(float x, float y, float z) {
@@ -56,10 +64,7 @@ public class Vector3 {
 	 * @return
 	 */
 	public static boolean Equal(Vector3 a, Vector3 b) {
-		if(Math.abs(a.x - b.x) < 0.01f &&
-				Math.abs(a.y - b.y) < 0.01f &&
-				Math.abs(a.z - b.z) < 0.01f
-				)
+		if (Math.abs(a.x - b.x) < 0.01f && Math.abs(a.y - b.y) < 0.01f && Math.abs(a.z - b.z) < 0.01f)
 			return true;
 		return false;
 	}
@@ -110,6 +115,19 @@ public class Vector3 {
 		float dy = a.y - b.y;
 		float dz = a.z - b.z;
 		return (float) Math.sqrt(dx * dx + dy * dy + dz * dz);
+	}
+
+	/**
+	 * 求两个向量平面距离
+	 * 
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	public static float planeDistance(Vector3 a, Vector3 b) {
+		float dx = a.x - b.x;
+		float dz = a.z - b.z;
+		return (float) Math.sqrt(dx * dx + dz * dz);
 	}
 
 	/**
@@ -213,9 +231,29 @@ public class Vector3 {
 		return target;
 	}
 
+	public float getX() {
+		return x;
+	}
+
+	public float getY() {
+		return y;
+	}
+
+	public float getZ() {
+		return z;
+	}
+
+	public int getAngle() {
+		return angle;
+	}
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "[" + x + "," + y + "," + z + "]";
+	}
+
+	public boolean equals(Vector3 v3) {
+		return distance(this, v3) <= 1;
 	}
 }
