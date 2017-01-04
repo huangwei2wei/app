@@ -1,0 +1,15 @@
+option java_package = "com.app.empire.protocol.pb.drop";
+option java_outer_classname = "DropPackageProto";
+
+import "drop/DropItemMsg.proto";
+import "warField/PBVector3.proto";
+
+message DropPackageMsg{
+	optional int32 action = 1; // 功能号  1 是物品掉落  2是玩家进地图时同步该地图掉落物
+	optional int32 dropId = 2; // 掉落包ID
+	optional int64 playerId = 3; // 所属玩家ID
+	optional int64 dropRoleId = 4; // 掉落者ID
+	optional int64 dropTime = 5; // 掉落时间
+	optional PBVector3 position = 6; // 掉落位置
+	repeated DropItemMsg item = 7; // 掉落物
+}

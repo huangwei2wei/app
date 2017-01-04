@@ -1,0 +1,9 @@
+option java_package = "com.app.empire.protocol.pb.battle";
+option java_outer_classname = "SnareOptionMsgProto";
+
+message SnareOptionMsg{
+	required int32	type=1;//操作类型 1 进入陷阱，2 退出陷阱
+	required int64  livingId= 2;  //陷阱ID
+	required int64	injuredId=3;  //受伤者ID
+}
+

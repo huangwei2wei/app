@@ -1,0 +1,8 @@
+option java_package = "com.app.empire.protocol.pb.army";
+option java_outer_classname = "PlayerPositionInfoProto";
+import "warField/PostionMsg.proto";
+message PlayerPositionInfoMsg {
+	optional PostionMsg curPos = 1; //当前位置
+	optional PostionMsg prePos = 2; //上一次记录位置
+}
+

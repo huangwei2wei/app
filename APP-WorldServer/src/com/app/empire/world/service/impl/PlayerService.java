@@ -1,4 +1,5 @@
 package com.app.empire.world.service.impl;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -12,18 +13,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
-import com.app.empire.protocol.data.account.RoleLogin;
 import com.app.empire.protocol.data.account.UpdatePlayerData;
+import com.app.empire.protocol.pb.account.RoleLoginMsgProto.RoleLoginMsg;
 import com.app.empire.world.WorldServer;
-//import com.app.empire.protocol.data.cache.PlayerInfo;
-//import com.app.empire.protocol.data.cache.UpdatePlayer;
 import com.app.empire.world.common.util.Common;
 import com.app.empire.world.common.util.KeywordsUtil;
 import com.app.empire.world.common.util.ServiceUtils;
 import com.app.empire.world.dao.mongo.impl.PlayerDao;
 import com.app.empire.world.entity.mongo.Player;
-import com.app.empire.world.entity.mysql.gameConfig.PlayerLv;
+import com.app.empire.world.entity.mongo.PlayerPostion;
 import com.app.empire.world.entity.mysql.gameConfig.BaseRandomName;
+import com.app.empire.world.entity.mysql.gameConfig.PlayerLv;
 import com.app.empire.world.exception.CreatePlayerException;
 import com.app.empire.world.exception.ErrorMessages;
 import com.app.empire.world.exception.PlayerDataException;
@@ -33,6 +33,7 @@ import com.app.empire.world.model.Client;
 import com.app.empire.world.model.player.WorldPlayer;
 import com.app.empire.world.service.base.impl.GameConfigService;
 import com.app.empire.world.service.factory.ServiceManager;
+
 /**
  * 类 <code>PlayerService</code>处理与玩家相关操作业务处理逻辑层
  * 
@@ -49,6 +50,7 @@ public class PlayerService implements Runnable {
 	 * 玩家playerID与WorldPlayer对应关系HashMap，原名players
 	 */
 	private ConcurrentHashMap<Integer, WorldPlayer> worldPlayers = new ConcurrentHashMap<Integer, WorldPlayer>();
+
 	public ConcurrentHashMap<Integer, WorldPlayer> getWorldPlayers() {
 		return worldPlayers;
 	}
@@ -130,6 +132,7 @@ public class PlayerService implements Runnable {
 	public Player getPlayerById(int playerId) {
 		return playerDao.getPlayerById(playerId);
 	}
+
 	/**
 	 * 获取玩家帐号分区下的所有角色 支持一个账号多个角色
 	 * 
@@ -156,6 +159,7 @@ public class PlayerService implements Runnable {
 			e.printStackTrace();
 		}
 	}
+
 	/**
 	 * 从playerService中，释放对应的worldPlayer对象
 	 * 
@@ -173,6 +177,7 @@ public class PlayerService implements Runnable {
 		writeLog("注销保存玩家信息：id=" + worldPlayer.getPlayer().getId() + ",name=" + worldPlayer.getName() + ",level=" + worldPlayer.getPlayer().getLv());
 		return false;
 	}
+
 	/**
 	 * 踢玩家下线
 	 * 
@@ -185,6 +190,7 @@ public class PlayerService implements Runnable {
 			worldPlayer.getConnectSession().removeClient(worldPlayer.getClient());
 		}
 	}
+
 	/**
 	 * 从playerService里注销玩家
 	 * 
@@ -262,6 +268,7 @@ public class PlayerService implements Runnable {
 			newPlayer.setAccountId(accountId);
 			newPlayer.setAccountName(accountName);
 			newPlayer.setNickname(nickname);
+			newPlayer.setHeroExtId(hero_ext_id);
 			newPlayer.setCreateTime(new Date());
 			newPlayer.setLoginTime(new Date());
 			newPlayer.setLv(1);
@@ -274,9 +281,17 @@ public class PlayerService implements Runnable {
 			newPlayer.setClientModel(clientModel);
 			newPlayer.setSystemName(systemName);
 			newPlayer.setSystemVersion(systemVersion);
-			newPlayer.setProperty("");
+			// newPlayer.setProperty("");
 			newPlayer.setFight(0);
 			newPlayer.setServerId(WorldServer.serverConfig.getMachineCode());
+			// 人物位置
+			PlayerPostion pos = new PlayerPostion();
+			pos.setMapId(1001);
+			pos.setMapTempId(1001);
+			pos.setX(1000);
+			pos.setY(1000);
+			pos.setZ(1000);
+			newPlayer.setPostion(pos);
 			newPlayer = this.playerDao.insert(newPlayer);
 			// 记录角色创建日志
 			GameLogService.createPlayer(newPlayer.getId(), newPlayer.getNickname());
@@ -298,29 +313,23 @@ public class PlayerService implements Runnable {
 	 * @return
 	 * @throws Exception
 	 */
-	public WorldPlayer loadWorldPlayer(Client client, RoleLogin roleLoginData) throws Exception {
+	public WorldPlayer loadWorldPlayer(Client client, RoleLoginMsg roleLoginData) throws Exception {
 		int accountId = client.getAccountId();
 		int playerId = client.getPlayerId();
 		String nickname = roleLoginData.getNickname();
 		WorldPlayer worldPlayer;
 		if (playerId == -1) {
 			Player player = playerDao.getPlayerByName(accountId, nickname);
-			boolean isNewPlayer = false;
 			// 不存在就创建角色
 			if (player == null) {
-				player = createPlayer(accountId, nickname, client.getName(), roleLoginData.getHeroExtId(), client.getChannel(), roleLoginData.getClientModel(), roleLoginData.getSystemName(),
-						roleLoginData.getSystemVersion());
-				isNewPlayer = true;
+				player = createPlayer(accountId, nickname, client.getName(), roleLoginData.getHeroExtId(), client.getChannel(), roleLoginData.getClientModel(),
+						roleLoginData.getSystemName(), roleLoginData.getSystemVersion());
 			}
 			worldPlayer = createWorldPlayer(player);
-			if (isNewPlayer)// 新角色给玩家发送一个英雄
-				ServiceManager.getManager().getPlayerHeroService().addHero(worldPlayer, 101);
 			this.log.info("createWorldPlayer ID[" + player.getId() + "]Level[" + player.getLv() + "] load from db");
 		} else {
 			worldPlayer = this.worldPlayers.get(playerId);
 		}
-
-		// this.log.info("GAMEACCOUNTID[" + accountId + "]FAIL TO LOGIN " + nickname);
 		return worldPlayer;
 	}
 
@@ -432,6 +441,7 @@ public class PlayerService implements Runnable {
 		info.put("lvExp", player.getLvExp() + "");
 		sendUpdatePlayer(info, worldPlayer);
 	}
+
 	/***
 	 * 给玩家加金币
 	 * 
@@ -450,40 +460,41 @@ public class PlayerService implements Runnable {
 		Player player = worldPlayer.getPlayer();
 		Map<String, String> info = new HashMap<String, String>();
 		switch (type) {
-			case "gold" :// 金币
-				int gold = player.getGold() + value;
-				if (gold < 0)
-					throw new PlayerDataException(gameConfigService.getMsg(37));// 金币不足
-				player.setGold(gold);
-				writeLog("玩家增加金币 ：id=" + player.getId() + "---name=" + player.getNickname() + ",gold=" + value);
-				info.put("gold", String.valueOf(gold));
-				break;
-			case "diamond" :// 钻石
-				int diamond = player.getDiamond() + value;
-				if (diamond < 0)
-					throw new PlayerDataException(gameConfigService.getMsg(38));// 钻石不足
-				player.setDiamond(diamond);
-				writeLog("玩家增加钻石 ：id=" + player.getId() + "---name=" + player.getNickname() + ",diamond=" + value);
-				info.put("diamond", String.valueOf(diamond));
-				break;
-			case "power" :// 粮草
-				int power = player.getPower() + value;
-				if (power < 0)
-					throw new PlayerDataException(gameConfigService.getMsg(12));// 粮草不足
-				if (value < 0) // 减粮草增加角色经验
-					this.addPlayerEXP(worldPlayer, Math.abs(value));
-				player.setPower(power);
-				info.put("power", String.valueOf(power));
-				break;
-			case "" :
-				break;
-			default :
-				break;
+		case "gold":// 金币
+			int gold = player.getGold() + value;
+			if (gold < 0)
+				throw new PlayerDataException(gameConfigService.getMsg(37));// 金币不足
+			player.setGold(gold);
+			writeLog("玩家增加金币 ：id=" + player.getId() + "---name=" + player.getNickname() + ",gold=" + value);
+			info.put("gold", String.valueOf(gold));
+			break;
+		case "diamond":// 钻石
+			int diamond = player.getDiamond() + value;
+			if (diamond < 0)
+				throw new PlayerDataException(gameConfigService.getMsg(38));// 钻石不足
+			player.setDiamond(diamond);
+			writeLog("玩家增加钻石 ：id=" + player.getId() + "---name=" + player.getNickname() + ",diamond=" + value);
+			info.put("diamond", String.valueOf(diamond));
+			break;
+		case "power":// 粮草
+			int power = player.getPower() + value;
+			if (power < 0)
+				throw new PlayerDataException(gameConfigService.getMsg(12));// 粮草不足
+			if (value < 0) // 减粮草增加角色经验
+				this.addPlayerEXP(worldPlayer, Math.abs(value));
+			player.setPower(power);
+			info.put("power", String.valueOf(power));
+			break;
+		case "":
+			break;
+		default:
+			break;
 		}
 		// savePlayerData(player);
 		sendUpdatePlayer(info, worldPlayer);
 		return true;
 	}
+
 	public void writeLog(Object message) {
 		log.info(message);
 	}
@@ -648,16 +659,18 @@ public class PlayerService implements Runnable {
 		updatePlayerInfo.setValue(info.values().toArray(new String[info.size()]));
 		player.sendData(updatePlayerInfo);
 	}
+
 	// 定时触发
 	public void sysPlayersVigorUp() {
 		// System.out.println("sysPlayersVigorUp");
 	}
+
 	/**
 	 * GM获取玩家列表
 	 * 
 	 * @return
 	 */
-	@SuppressWarnings({"rawtypes", "unchecked"})
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public Map getPlayerList(String user, int userType, long regBeginTime, long regEndTime, long loginBeginTime, long loginEndTime, int page, int pageSize) {
 		Map mapData = new HashMap();
 		Page<Player> players = playerDao.getPlayerList(user, userType, regBeginTime, regEndTime, loginBeginTime, loginEndTime, page, pageSize);

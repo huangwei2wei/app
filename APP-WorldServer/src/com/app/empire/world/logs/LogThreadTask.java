@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import com.app.db.mysql.dao.impl.BaseDaoSupport;
+import com.app.db.mysql.base.dao.impl.BaseDaoSupport;
 
 public class LogThreadTask implements Runnable {
 	private BaseDaoSupport dao;

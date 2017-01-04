@@ -1,0 +1,9 @@
+option java_package = "com.app.empire.protocol.pb.error";
+option java_outer_classname = "ErrorMsgProto";
+message ErrorMsg {
+	optional int32 errorType=1;// 错误对应协议
+	optional int32 errorSubType=2;// 错误对应协议
+	optional int32 code=3;// 错误码
+	optional string msg=4;// 消息
+}
+

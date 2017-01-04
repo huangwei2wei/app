@@ -1,0 +1,13 @@
+option java_package = "com.app.empire.protocol.pb.account";
+option java_outer_classname = "RoleMsgProto";
+message RoleMsg {
+	required string nickName=1; // 角色名称
+	required int32 gold=2; // 金币
+	required int32 lv=3; // 玩家等级
+	required int32 lvExp=4; // 经验
+	required int32 vipExp=5; // vip经验
+	required int32 vipLv=6; // vip等级
+	required int32 fight=8; // 战斗力
+
+}
+

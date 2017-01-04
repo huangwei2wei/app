@@ -1,0 +1,6 @@
+option java_package = "com.app.empire.protocol.pb.map";
+option java_outer_classname = "ReqChangeMapMsgProto";
+import "warField/PostionMsg.proto";
+message ReqChangeMapMsg {
+	optional PostionMsg postionMsg = 1; //坐标
+}

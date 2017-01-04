@@ -1,0 +1,8 @@
+option java_package = "com.app.empire.protocol.pb.army";
+option java_outer_classname = "HeroInfoMsgProto";
+import "army/PropertyListMsg.proto";
+message HeroInfoMsg {
+	optional int64 playerId = 1; //角色ID
+	optional PropertyListMsg propertis = 2; //英雄属性
+	repeated int32 battleSkills = 4; //英雄出战技能
+}

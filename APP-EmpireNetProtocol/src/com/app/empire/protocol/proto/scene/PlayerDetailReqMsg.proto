@@ -1,0 +1,6 @@
+option java_package = "com.app.empire.protocol.pb.scene";
+option java_outer_classname = "PlayerDetailReqMsgProto";
+
+message PlayerDetailReqMsg {
+	optional int64 living_id=1; //角色ID
+}

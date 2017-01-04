@@ -2,8 +2,9 @@ package com.app.dispatch;
 
 import java.util.concurrent.ConcurrentHashMap;
 import org.apache.mina.core.session.IoSession;
+
 /**
- * 通道服务
+ * 通道服务-一组session
  * 
  * @author doter
  * 
@@ -19,6 +20,7 @@ public class ChannelService {
 	public Channel getWorldChannel() {
 		return this.worldChannel;
 	}
+
 	/**
 	 * 获取或创建一个通道组
 	 * 
@@ -33,6 +35,7 @@ public class ChannelService {
 		}
 		return c;
 	}
+
 	/**
 	 * 获取通道组
 	 * 
@@ -42,6 +45,7 @@ public class ChannelService {
 	public Channel getChannel(String name) {
 		return this.channels.get(name);
 	}
+
 	/**
 	 * 移除通道组
 	 * 
@@ -51,6 +55,7 @@ public class ChannelService {
 	public Channel removeChannel(String name) {
 		return this.channels.remove(name);
 	}
+
 	/**
 	 * 移除所有通道中的某个IoSession
 	 * 

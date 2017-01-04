@@ -1,0 +1,17 @@
+option java_package = "com.app.empire.protocol.pb.battle";
+option java_outer_classname = "AttackBroadcastMsgProto";
+import "warField/PBVector3.proto";
+import "battle/DamageMsg.proto";
+//施放技能
+message AttackBroadcastMsg {
+	optional int32 skillId = 1; //技能ID
+	optional int64 livingId = 2; //执行人
+	optional int32 livingType = 3; //类型
+	optional int64 execTime = 4; //施放时间
+	repeated int64 targets = 5; //被攻击人
+	optional int64 attackId = 6; //随机生成唯一ID
+	optional PBVector3 current = 7; //释放前的位置
+	optional PBVector3 position = 8; //释放后的位置
+	repeated DamageMsg damages = 9; //伤害
+}
+

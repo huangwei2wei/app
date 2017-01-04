@@ -8,55 +8,38 @@ import org.apache.commons.lang.ArrayUtils;
 import com.app.dispatch.StatisticsServer;
 import com.app.empire.protocol.Protocol;
 import com.app.empire.protocol.data.account.GetRandomName;
-import com.app.empire.protocol.data.account.GetRoleList;
-import com.app.empire.protocol.data.account.Heartbeat;
-import com.app.empire.protocol.data.backpack.GetBackpackList;
-import com.app.empire.protocol.data.backpack.UseGoods;
-import com.app.empire.protocol.data.copymap.AcessCopyMap;
-import com.app.empire.protocol.data.copymap.CompleteCopyMap;
-import com.app.empire.protocol.data.copymap.GetList;
-import com.app.empire.protocol.data.copymap.GetTeam;
-import com.app.empire.protocol.data.copymap.SaveTeam;
-import com.app.empire.protocol.data.equip.GetEquipList;
-import com.app.empire.protocol.data.hero.GetHeroList;
-import com.app.empire.protocol.data.hero.GetSkillList;
-import com.app.empire.protocol.data.mail.GetMailList;
-import com.app.empire.protocol.data.mail.ReceiveMail;
-import com.app.empire.protocol.data.npc.GetNpc;
-import com.app.empire.protocol.data.pvproom.CreateRoom;
-import com.app.empire.protocol.data.pvproom.GetRoomList;
-import com.app.empire.protocol.data.pvproom.IntoRoom;
-import com.app.empire.protocol.data.pvproom.Start;
-import com.app.empire.protocol.data.shop.Buy;
-import com.app.empire.protocol.data.shop.GetShop;
-import com.app.empire.protocol.data.shop.Refresh;
 import com.app.empire.protocol.data.test.ItemVo;
 import com.app.empire.protocol.data.test.ItemVo2;
 import com.app.empire.protocol.data.test.Test;
-import com.app.empire.protocol.data.test.Test2;
-import com.app.empire.protocol.pb.test.TestMsgProto.TestMsg;
+import com.app.empire.protocol.pb.TestMsgProto.TestMsg;
+import com.app.empire.protocol.pb.player.PlayerInfoMsgProto.PlayerInfoMsg;
 import com.app.net.IConnector;
 import com.app.protocol.data.AbstractData;
+import com.app.protocol.data.AbstractData.EnumTarget;
+import com.app.protocol.data.PbAbstractData;
 import com.app.protocol.handler.IDataHandler;
 
 public class RoleLoginOkHandler implements IDataHandler {
 	public AbstractData handle(AbstractData data) throws Exception {
 		StatisticsServer.getStatisticsServer().getResNum().getAndIncrement();
+		PbAbstractData msg = (PbAbstractData) data;
+		PlayerInfoMsg login = PlayerInfoMsg.parseFrom(msg.getBytes());
+
 		IConnector connector = data.getSource();
 		System.out.println("角色登录数量:" + StatisticsServer.getStatisticsServer().getPlayerNum().incrementAndGet());
 		GetRandomName getRandomName = new GetRandomName();
 		// GetRoleList getRoleList = new GetRoleList();
 		// connector.send(getRandomName);
 		/**
-		 * List<Integer> b = new ArrayList<Integer>(); List<Boolean> d = new ArrayList<Boolean>(); List<String> f = new ArrayList<String>(); List<Long> h = new ArrayList<Long>(); List<Byte> j = new
-		 * ArrayList<Byte>(); List<Short> l = new ArrayList<Short>();
+		 * List<Integer> b = new ArrayList<Integer>(); List<Boolean> d = new ArrayList<Boolean>(); List<String> f = new ArrayList<String>(); List<Long> h = new ArrayList<Long>();
+		 * List<Byte> j = new ArrayList<Byte>(); List<Short> l = new ArrayList<Short>();
 		 * 
 		 * for (int i = 0; i < 10; i++) { b.add(i); d.add(true); f.add("abc"); h.add(9999119999L); j.add((byte) i); l.add((short) (i * 10)); }
 		 * 
-		 * Test test = new Test(); test.setA(1); test.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()]))); test.setC(false); test.setD(ArrayUtils.toPrimitive(d.toArray(new
-		 * Boolean[d.size()]))); test.setE("testttttttt"); test.setF(f.toArray(new String[f.size()])); test.setG(100000); test.setH(ArrayUtils.toPrimitive(h.toArray(new Long[h.size()])));
-		 * test.setI((byte) 125); test.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()]))); test.setK((short) 1800); test.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()])));
-		 * connector.send(test);
+		 * Test test = new Test(); test.setA(1); test.setB(ArrayUtils.toPrimitive(b.toArray(new Integer[b.size()]))); test.setC(false);
+		 * test.setD(ArrayUtils.toPrimitive(d.toArray(new Boolean[d.size()]))); test.setE("testttttttt"); test.setF(f.toArray(new String[f.size()])); test.setG(100000);
+		 * test.setH(ArrayUtils.toPrimitive(h.toArray(new Long[h.size()]))); test.setI((byte) 125); test.setJ(ArrayUtils.toPrimitive(j.toArray(new Byte[j.size()])));
+		 * test.setK((short) 1800); test.setL(ArrayUtils.toPrimitive(l.toArray(new Short[l.size()]))); connector.send(test);
 		 */
 
 		// for (int i = 0; i < 10000000; i++) {
@@ -274,7 +257,7 @@ public class RoleLoginOkHandler implements IDataHandler {
 		testMsg.setVipTimeLimit(100);
 		// test2.setBytes(testMsg.build().toByteArray());
 		// connector.send(test2);
-		connector.send(Protocol.MAIN_TEST, Protocol.TEST_Test2, testMsg.build());
+		connector.send(Protocol.MAIN_TEST, Protocol.TEST_Test2, testMsg.build(), EnumTarget.WORLDSERVER.getValue());
 		return null;
 	}
 }

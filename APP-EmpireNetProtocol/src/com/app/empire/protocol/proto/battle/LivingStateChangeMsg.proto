@@ -1,0 +1,8 @@
+option java_package = "com.app.empire.protocol.pb.battle";
+option java_outer_classname = "LivingStateChangeMsgProto";
+//living状态变更消息
+message LivingStateChangeMsg {    
+	optional int64 livingId = 1; //living唯一ID
+	optional int32 stateType = 2; //状态类型  1 死亡状态  2 元魂/气血状态 3 是否闪名  4 陷阱行为
+	optional int32 stateValue = 3; // (0 活着 1 死亡) (0 气血 1 元魂)  （4 陷阱行为 ： 101 陷阱攻击）
+}

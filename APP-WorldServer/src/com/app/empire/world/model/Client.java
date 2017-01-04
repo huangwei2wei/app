@@ -9,7 +9,7 @@ public class Client {
 	private String password;
 	private int flg;
 	private STATUS status = STATUS.INIT;
-	private int channel;
+	private int channel;//渠道号
 	private String uin;
 	private String ip;// 客户端IP
 

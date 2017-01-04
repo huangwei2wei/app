@@ -1,0 +1,13 @@
+option java_package = "com.app.empire.protocol.pb.army";
+option java_outer_classname = "PetInfoProto";
+
+//属性模板
+import "army/PropertyMsg.proto";
+message PetInfoMsg{
+	optional int64 playerId = 1; // 主人ID
+	optional int32 petTempId = 2; // 宠物模板ID
+	optional int32 petSoul = 3; // 宠物炼魂
+	optional int32 petPhysique = 4; // 宠物炼体
+	optional int32 petQuality = 5; // 宠物品质
+	repeated PropertyMsg petProperty = 6; // 宠物属性
+}

@@ -1,0 +1,7 @@
+option java_package = "com.app.empire.protocol.pb.scene";
+option java_outer_classname = "PlayerEnterGridProto";
+
+message PlayerEnterGridMsg {
+	optional int64 id = 1; //进入自己九宫格区域位置
+}
+

@@ -59,7 +59,7 @@ public class ChatService {
 		if (session == null)
 			return;
 		SyncChannels sync = new SyncChannels();
-		sync.setToSession(session.getPlayerSessionId(playerId));
+		sync.setToSession(playerId);
 		sync.setAdd(addChannels);
 		sync.setRemove(removeChannels);
 		session.write(sync);

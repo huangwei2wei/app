@@ -12,9 +12,9 @@ public interface IConnector {
 
 	public void send(AbstractData paramAbstractData);
 
-	public void send(short type, short subType, Message msg);
+	public void send(short type, short subType, Message msg, byte target);
 
-	public void send(short type, short subType, int sessionId, int serial, Message msg);
+	public void send(short type, short subType, int sessionId, int serial, Message msg, byte target);
 
 	public void close();
 

@@ -4,15 +4,15 @@ public class Vector3 {
 	/**
 	 * 无效的Vector3
 	 */
-	public static Vector3		Invalid		= new Vector3(-10000, -10000, -10000);
+	public static Vector3 Invalid = new Vector3(-10000, -10000, -10000);
 	/**
 	 * 精度
 	 */
-	public static final float	Accuracy	= 10.0f;
+	public static final float Accuracy = 10.0f;
 
-	public float				x;
-	public float				y;
-	public float				z;
+	public float x;
+	public float y;
+	public float z;
 
 	public Vector3() {
 	}
@@ -24,7 +24,7 @@ public class Vector3 {
 	}
 
 	public Vector3 clone() {
-		return new Vector3(x, y, z);
+		return new Vector3(this.x, this.y, this.z);
 	}
 
 	public Vector3 getNormalize() {
@@ -56,10 +56,7 @@ public class Vector3 {
 	 * @return
 	 */
 	public static boolean Equal(Vector3 a, Vector3 b) {
-		if(Math.abs(a.x - b.x) < 0.01f &&
-				Math.abs(a.y - b.y) < 0.01f &&
-				Math.abs(a.z - b.z) < 0.01f
-				)
+		if (Math.abs(a.x - b.x) < 0.01f && Math.abs(a.y - b.y) < 0.01f && Math.abs(a.z - b.z) < 0.01f)
 			return true;
 		return false;
 	}
@@ -157,8 +154,7 @@ public class Vector3 {
 	}
 
 	/**
-	 * 向量的点乘 a · b = |a| * |b| * cosθ >0 a,b向量的方向相同 =0 a,b向量正交(垂直向量) <0
-	 * a,b向量方向相反 几何意义 a · b = a向量在b向量上的投影
+	 * 向量的点乘 a · b = |a| * |b| * cosθ >0 a,b向量的方向相同 =0 a,b向量正交(垂直向量) <0 a,b向量方向相反 几何意义 a · b = a向量在b向量上的投影
 	 * 
 	 * @param l
 	 * @param r
@@ -169,9 +165,8 @@ public class Vector3 {
 	}
 
 	/**
-	 * 向量的叉乘 |a x b| = |a| * |b| * sinθ |a x b| ≠ |b x a| 向量的叉积不可逆 >0
-	 * a向量在b向量水平坐标系中的左边(参考正铉曲线) ==0 无意义 a,b为平行向量 <0 a向量在b向量水平坐标系中的右边(参考正铉曲线)
-	 * 几何意义 a x b = 垂直a b两个向量的向量 3D的几何意义， 求出a, b两个向量所在平面的法线
+	 * 向量的叉乘 |a x b| = |a| * |b| * sinθ |a x b| ≠ |b x a| 向量的叉积不可逆 >0 a向量在b向量水平坐标系中的左边(参考正铉曲线) ==0 无意义 a,b为平行向量 <0 a向量在b向量水平坐标系中的右边(参考正铉曲线) 几何意义 a x b = 垂直a b两个向量的向量 3D的几何意义， 求出a,
+	 * b两个向量所在平面的法线
 	 * 
 	 * @param l
 	 * @param r
@@ -230,7 +225,5 @@ public class Vector3 {
 	public float getZ() {
 		return z;
 	}
-	
-	
-	
+
 }

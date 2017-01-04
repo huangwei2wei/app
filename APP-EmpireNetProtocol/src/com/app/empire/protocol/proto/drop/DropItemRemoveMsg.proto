@@ -1,0 +1,7 @@
+option java_package = "com.app.empire.protocol.pb.drop";
+option java_outer_classname = "DropItemRemoveProto";
+
+message DropItemRemoveMsg{
+	optional int32 packageId = 1; // 掉落包ID
+	optional int64 dropItemId = 2; // 掉落物ID
+}

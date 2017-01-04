@@ -13,7 +13,7 @@ public final class PlayerInfoMsgProto {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int64 player_id = 1;</code>
+     * <code>optional int32 playerId = 1;</code>
      *
      * <pre>
      *角色ID
@@ -21,33 +21,16 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasPlayerId();
     /**
-     * <code>optional int64 player_id = 1;</code>
+     * <code>optional int32 playerId = 1;</code>
      *
      * <pre>
      *角色ID
      * </pre>
      */
-    long getPlayerId();
+    int getPlayerId();
 
     /**
-     * <code>optional int64 user_id = 2;</code>
-     *
-     * <pre>
-     *用户ID
-     * </pre>
-     */
-    boolean hasUserId();
-    /**
-     * <code>optional int64 user_id = 2;</code>
-     *
-     * <pre>
-     *用户ID
-     * </pre>
-     */
-    long getUserId();
-
-    /**
-     * <code>optional string nick_name = 3;</code>
+     * <code>optional string nickName = 2;</code>
      *
      * <pre>
      *昵称
@@ -55,7 +38,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasNickName();
     /**
-     * <code>optional string nick_name = 3;</code>
+     * <code>optional string nickName = 2;</code>
      *
      * <pre>
      *昵称
@@ -63,7 +46,7 @@ public final class PlayerInfoMsgProto {
      */
     java.lang.String getNickName();
     /**
-     * <code>optional string nick_name = 3;</code>
+     * <code>optional string nickName = 2;</code>
      *
      * <pre>
      *昵称
@@ -73,7 +56,7 @@ public final class PlayerInfoMsgProto {
         getNickNameBytes();
 
     /**
-     * <code>optional int32 level = 4;</code>
+     * <code>optional int32 level = 3;</code>
      *
      * <pre>
      *等级
@@ -81,7 +64,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasLevel();
     /**
-     * <code>optional int32 level = 4;</code>
+     * <code>optional int32 level = 3;</code>
      *
      * <pre>
      *等级
@@ -90,7 +73,7 @@ public final class PlayerInfoMsgProto {
     int getLevel();
 
     /**
-     * <code>optional int64 exp = 5;</code>
+     * <code>optional int32 exp = 4;</code>
      *
      * <pre>
      *当前经验
@@ -98,33 +81,16 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasExp();
     /**
-     * <code>optional int64 exp = 5;</code>
+     * <code>optional int32 exp = 4;</code>
      *
      * <pre>
      *当前经验
      * </pre>
      */
-    long getExp();
+    int getExp();
 
     /**
-     * <code>optional int64 toal_exp = 6;</code>
-     *
-     * <pre>
-     *总经验g
-     * </pre>
-     */
-    boolean hasToalExp();
-    /**
-     * <code>optional int64 toal_exp = 6;</code>
-     *
-     * <pre>
-     *总经验g
-     * </pre>
-     */
-    long getToalExp();
-
-    /**
-     * <code>optional int64 money = 7;</code>
+     * <code>optional int32 money = 5;</code>
      *
      * <pre>
      *金币
@@ -132,16 +98,16 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasMoney();
     /**
-     * <code>optional int64 money = 7;</code>
+     * <code>optional int32 money = 5;</code>
      *
      * <pre>
      *金币
      * </pre>
      */
-    long getMoney();
+    int getMoney();
 
     /**
-     * <code>optional int32 bind_cash = 8;</code>
+     * <code>optional int32 bindCash = 6;</code>
      *
      * <pre>
      *绑定仙玉
@@ -149,7 +115,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasBindCash();
     /**
-     * <code>optional int32 bind_cash = 8;</code>
+     * <code>optional int32 bindCash = 6;</code>
      *
      * <pre>
      *绑定仙玉
@@ -158,7 +124,7 @@ public final class PlayerInfoMsgProto {
     int getBindCash();
 
     /**
-     * <code>optional int32 vip_level = 9;</code>
+     * <code>optional int32 vipLevel = 7;</code>
      *
      * <pre>
      *VIP等级
@@ -166,7 +132,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasVipLevel();
     /**
-     * <code>optional int32 vip_level = 9;</code>
+     * <code>optional int32 vipLevel = 7;</code>
      *
      * <pre>
      *VIP等级
@@ -175,7 +141,7 @@ public final class PlayerInfoMsgProto {
     int getVipLevel();
 
     /**
-     * <code>optional int32 fight = 10;</code>
+     * <code>optional int32 fight = 8;</code>
      *
      * <pre>
      *战斗力
@@ -183,7 +149,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasFight();
     /**
-     * <code>optional int32 fight = 10;</code>
+     * <code>optional int32 fight = 8;</code>
      *
      * <pre>
      *战斗力
@@ -192,7 +158,7 @@ public final class PlayerInfoMsgProto {
     int getFight();
 
     /**
-     * <code>optional int32 skinId = 11;</code>
+     * <code>optional int32 skinId = 9;</code>
      *
      * <pre>
      *皮肤
@@ -200,7 +166,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasSkinId();
     /**
-     * <code>optional int32 skinId = 11;</code>
+     * <code>optional int32 skinId = 9;</code>
      *
      * <pre>
      *皮肤
@@ -209,7 +175,7 @@ public final class PlayerInfoMsgProto {
     int getSkinId();
 
     /**
-     * <code>optional int32 fashion_id = 12;</code>
+     * <code>optional int32 fashionId = 10;</code>
      *
      * <pre>
      *时装ID
@@ -217,7 +183,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasFashionId();
     /**
-     * <code>optional int32 fashion_id = 12;</code>
+     * <code>optional int32 fashionId = 10;</code>
      *
      * <pre>
      *时装ID
@@ -226,7 +192,7 @@ public final class PlayerInfoMsgProto {
     int getFashionId();
 
     /**
-     * <code>optional int32 weapon_id = 13;</code>
+     * <code>optional int32 weaponId = 11;</code>
      *
      * <pre>
      *武器ID
@@ -234,7 +200,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasWeaponId();
     /**
-     * <code>optional int32 weapon_id = 13;</code>
+     * <code>optional int32 weaponId = 11;</code>
      *
      * <pre>
      *武器ID
@@ -243,7 +209,7 @@ public final class PlayerInfoMsgProto {
     int getWeaponId();
 
     /**
-     * <code>optional int32 mount_id = 14;</code>
+     * <code>optional int32 mountId = 12;</code>
      *
      * <pre>
      *坐骑ID
@@ -251,7 +217,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasMountId();
     /**
-     * <code>optional int32 mount_id = 14;</code>
+     * <code>optional int32 mountId = 12;</code>
      *
      * <pre>
      *坐骑ID
@@ -260,7 +226,7 @@ public final class PlayerInfoMsgProto {
     int getMountId();
 
     /**
-     * <code>optional int32 magic_weapon_id = 15;</code>
+     * <code>optional int32 magicWeapon_id = 13;</code>
      *
      * <pre>
      *法宝ID
@@ -268,7 +234,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasMagicWeaponId();
     /**
-     * <code>optional int32 magic_weapon_id = 15;</code>
+     * <code>optional int32 magicWeapon_id = 13;</code>
      *
      * <pre>
      *法宝ID
@@ -277,7 +243,7 @@ public final class PlayerInfoMsgProto {
     int getMagicWeaponId();
 
     /**
-     * <code>optional int32 wing_id = 16;</code>
+     * <code>optional int32 wingId = 14;</code>
      *
      * <pre>
      *翅膀ID
@@ -285,7 +251,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasWingId();
     /**
-     * <code>optional int32 wing_id = 16;</code>
+     * <code>optional int32 wingId = 14;</code>
      *
      * <pre>
      *翅膀ID
@@ -294,7 +260,7 @@ public final class PlayerInfoMsgProto {
     int getWingId();
 
     /**
-     * <code>optional int32 pBagCount = 17;</code>
+     * <code>optional int32 pBagCount = 15;</code>
      *
      * <pre>
      *用户背包格子数
@@ -302,7 +268,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasPBagCount();
     /**
-     * <code>optional int32 pBagCount = 17;</code>
+     * <code>optional int32 pBagCount = 15;</code>
      *
      * <pre>
      *用户背包格子数
@@ -311,7 +277,7 @@ public final class PlayerInfoMsgProto {
     int getPBagCount();
 
     /**
-     * <code>optional .PostionMsg postionMsg = 18;</code>
+     * <code>optional .PostionMsg postionMsg = 16;</code>
      *
      * <pre>
      *当前位置
@@ -319,7 +285,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasPostionMsg();
     /**
-     * <code>optional .PostionMsg postionMsg = 18;</code>
+     * <code>optional .PostionMsg postionMsg = 16;</code>
      *
      * <pre>
      *当前位置
@@ -327,7 +293,7 @@ public final class PlayerInfoMsgProto {
      */
     com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg getPostionMsg();
     /**
-     * <code>optional .PostionMsg postionMsg = 18;</code>
+     * <code>optional .PostionMsg postionMsg = 16;</code>
      *
      * <pre>
      *当前位置
@@ -336,7 +302,7 @@ public final class PlayerInfoMsgProto {
     com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsgOrBuilder getPostionMsgOrBuilder();
 
     /**
-     * <code>optional int32 cash = 19;</code>
+     * <code>optional int32 cash = 17;</code>
      *
      * <pre>
      * 非绑定仙玉
@@ -344,7 +310,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasCash();
     /**
-     * <code>optional int32 cash = 19;</code>
+     * <code>optional int32 cash = 17;</code>
      *
      * <pre>
      * 非绑定仙玉
@@ -353,109 +319,7 @@ public final class PlayerInfoMsgProto {
     int getCash();
 
     /**
-     * <code>optional int32 repair = 20;</code>
-     *
-     * <pre>
-     * 修为
-     * </pre>
-     */
-    boolean hasRepair();
-    /**
-     * <code>optional int32 repair = 20;</code>
-     *
-     * <pre>
-     * 修为
-     * </pre>
-     */
-    int getRepair();
-
-    /**
-     * <code>optional int32 points = 21;</code>
-     *
-     * <pre>
-     *积分
-     * </pre>
-     */
-    boolean hasPoints();
-    /**
-     * <code>optional int32 points = 21;</code>
-     *
-     * <pre>
-     *积分
-     * </pre>
-     */
-    int getPoints();
-
-    /**
-     * <code>optional int32 job = 22;</code>
-     *
-     * <pre>
-     *职业
-     * </pre>
-     */
-    boolean hasJob();
-    /**
-     * <code>optional int32 job = 22;</code>
-     *
-     * <pre>
-     *职业
-     * </pre>
-     */
-    int getJob();
-
-    /**
-     * <code>optional int64 equipExp = 23;</code>
-     *
-     * <pre>
-     * 装备经验
-     * </pre>
-     */
-    boolean hasEquipExp();
-    /**
-     * <code>optional int64 equipExp = 23;</code>
-     *
-     * <pre>
-     * 装备经验
-     * </pre>
-     */
-    long getEquipExp();
-
-    /**
-     * <code>optional int32 weaponAwaken = 24;</code>
-     *
-     * <pre>
-     * 当前武器觉醒等级
-     * </pre>
-     */
-    boolean hasWeaponAwaken();
-    /**
-     * <code>optional int32 weaponAwaken = 24;</code>
-     *
-     * <pre>
-     * 当前武器觉醒等级
-     * </pre>
-     */
-    int getWeaponAwaken();
-
-    /**
-     * <code>optional int32 stateLv = 25;</code>
-     *
-     * <pre>
-     *境界等级
-     * </pre>
-     */
-    boolean hasStateLv();
-    /**
-     * <code>optional int32 stateLv = 25;</code>
-     *
-     * <pre>
-     *境界等级
-     * </pre>
-     */
-    int getStateLv();
-
-    /**
-     * <code>optional int32 guildId = 26;</code>
+     * <code>optional int32 guildId = 18;</code>
      *
      * <pre>
      * 所在帮派ID
@@ -463,7 +327,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasGuildId();
     /**
-     * <code>optional int32 guildId = 26;</code>
+     * <code>optional int32 guildId = 18;</code>
      *
      * <pre>
      * 所在帮派ID
@@ -472,7 +336,7 @@ public final class PlayerInfoMsgProto {
     int getGuildId();
 
     /**
-     * <code>optional string guildName = 27;</code>
+     * <code>optional string guildName = 19;</code>
      *
      * <pre>
      * 所在帮派名字
@@ -480,7 +344,7 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasGuildName();
     /**
-     * <code>optional string guildName = 27;</code>
+     * <code>optional string guildName = 19;</code>
      *
      * <pre>
      * 所在帮派名字
@@ -488,7 +352,7 @@ public final class PlayerInfoMsgProto {
      */
     java.lang.String getGuildName();
     /**
-     * <code>optional string guildName = 27;</code>
+     * <code>optional string guildName = 19;</code>
      *
      * <pre>
      * 所在帮派名字
@@ -498,7 +362,7 @@ public final class PlayerInfoMsgProto {
         getGuildNameBytes();
 
     /**
-     * <code>optional int32 guildJob = 28;</code>
+     * <code>optional int32 guildJob = 20;</code>
      *
      * <pre>
      * 自己在帮派的职位
@@ -506,13 +370,132 @@ public final class PlayerInfoMsgProto {
      */
     boolean hasGuildJob();
     /**
-     * <code>optional int32 guildJob = 28;</code>
+     * <code>optional int32 guildJob = 20;</code>
      *
      * <pre>
      * 自己在帮派的职位
      * </pre>
      */
     int getGuildJob();
+
+    /**
+     * <code>optional int32 battleMode = 21;</code>
+     *
+     * <pre>
+     * 战斗模式
+     * </pre>
+     */
+    boolean hasBattleMode();
+    /**
+     * <code>optional int32 battleMode = 21;</code>
+     *
+     * <pre>
+     * 战斗模式
+     * </pre>
+     */
+    int getBattleMode();
+
+    /**
+     * <code>optional int32 pkVal = 22;</code>
+     *
+     * <pre>
+     * pk值
+     * </pre>
+     */
+    boolean hasPkVal();
+    /**
+     * <code>optional int32 pkVal = 22;</code>
+     *
+     * <pre>
+     * pk值
+     * </pre>
+     */
+    int getPkVal();
+
+    /**
+     * <code>optional int32 repair = 23;</code>
+     *
+     * <pre>
+     * 修为
+     * </pre>
+     */
+    boolean hasRepair();
+    /**
+     * <code>optional int32 repair = 23;</code>
+     *
+     * <pre>
+     * 修为
+     * </pre>
+     */
+    int getRepair();
+
+    /**
+     * <code>optional int32 job = 25;</code>
+     *
+     * <pre>
+     *optional int32 points = 24; //积分
+     * </pre>
+     */
+    boolean hasJob();
+    /**
+     * <code>optional int32 job = 25;</code>
+     *
+     * <pre>
+     *optional int32 points = 24; //积分
+     * </pre>
+     */
+    int getJob();
+
+    /**
+     * <code>optional int32 equipExp = 26;</code>
+     *
+     * <pre>
+     * 装备经验
+     * </pre>
+     */
+    boolean hasEquipExp();
+    /**
+     * <code>optional int32 equipExp = 26;</code>
+     *
+     * <pre>
+     * 装备经验
+     * </pre>
+     */
+    int getEquipExp();
+
+    /**
+     * <code>optional int32 weaponAwaken = 27;</code>
+     *
+     * <pre>
+     * 当前武器觉醒等级
+     * </pre>
+     */
+    boolean hasWeaponAwaken();
+    /**
+     * <code>optional int32 weaponAwaken = 27;</code>
+     *
+     * <pre>
+     * 当前武器觉醒等级
+     * </pre>
+     */
+    int getWeaponAwaken();
+
+    /**
+     * <code>optional int32 stateLv = 28;</code>
+     *
+     * <pre>
+     *境界等级
+     * </pre>
+     */
+    boolean hasStateLv();
+    /**
+     * <code>optional int32 stateLv = 28;</code>
+     *
+     * <pre>
+     *境界等级
+     * </pre>
+     */
+    int getStateLv();
   }
   /**
    * Protobuf type {@code PlayerInfoMsg}
@@ -568,93 +551,83 @@ public final class PlayerInfoMsgProto {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              playerId_ = input.readInt64();
+              playerId_ = input.readInt32();
               break;
             }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              userId_ = input.readInt64();
-              break;
-            }
-            case 26: {
+            case 18: {
               com.google.protobuf.ByteString bs = input.readBytes();
-              bitField0_ |= 0x00000004;
+              bitField0_ |= 0x00000002;
               nickName_ = bs;
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              level_ = input.readInt32();
               break;
             }
             case 32: {
               bitField0_ |= 0x00000008;
-              level_ = input.readInt32();
+              exp_ = input.readInt32();
               break;
             }
             case 40: {
               bitField0_ |= 0x00000010;
-              exp_ = input.readInt64();
+              money_ = input.readInt32();
               break;
             }
             case 48: {
               bitField0_ |= 0x00000020;
-              toalExp_ = input.readInt64();
+              bindCash_ = input.readInt32();
               break;
             }
             case 56: {
               bitField0_ |= 0x00000040;
-              money_ = input.readInt64();
+              vipLevel_ = input.readInt32();
               break;
             }
             case 64: {
               bitField0_ |= 0x00000080;
-              bindCash_ = input.readInt32();
+              fight_ = input.readInt32();
               break;
             }
             case 72: {
               bitField0_ |= 0x00000100;
-              vipLevel_ = input.readInt32();
+              skinId_ = input.readInt32();
               break;
             }
             case 80: {
               bitField0_ |= 0x00000200;
-              fight_ = input.readInt32();
+              fashionId_ = input.readInt32();
               break;
             }
             case 88: {
               bitField0_ |= 0x00000400;
-              skinId_ = input.readInt32();
+              weaponId_ = input.readInt32();
               break;
             }
             case 96: {
               bitField0_ |= 0x00000800;
-              fashionId_ = input.readInt32();
+              mountId_ = input.readInt32();
               break;
             }
             case 104: {
               bitField0_ |= 0x00001000;
-              weaponId_ = input.readInt32();
+              magicWeaponId_ = input.readInt32();
               break;
             }
             case 112: {
               bitField0_ |= 0x00002000;
-              mountId_ = input.readInt32();
+              wingId_ = input.readInt32();
               break;
             }
             case 120: {
               bitField0_ |= 0x00004000;
-              magicWeaponId_ = input.readInt32();
-              break;
-            }
-            case 128: {
-              bitField0_ |= 0x00008000;
-              wingId_ = input.readInt32();
-              break;
-            }
-            case 136: {
-              bitField0_ |= 0x00010000;
               pBagCount_ = input.readInt32();
               break;
             }
-            case 146: {
+            case 130: {
               com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg.Builder subBuilder = null;
-              if (((bitField0_ & 0x00020000) == 0x00020000)) {
+              if (((bitField0_ & 0x00008000) == 0x00008000)) {
                 subBuilder = postionMsg_.toBuilder();
               }
               postionMsg_ = input.readMessage(com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg.PARSER, extensionRegistry);
@@ -662,58 +635,63 @@ public final class PlayerInfoMsgProto {
                 subBuilder.mergeFrom(postionMsg_);
                 postionMsg_ = subBuilder.buildPartial();
               }
-              bitField0_ |= 0x00020000;
+              bitField0_ |= 0x00008000;
               break;
             }
-            case 152: {
-              bitField0_ |= 0x00040000;
+            case 136: {
+              bitField0_ |= 0x00010000;
               cash_ = input.readInt32();
+              break;
+            }
+            case 144: {
+              bitField0_ |= 0x00020000;
+              guildId_ = input.readInt32();
+              break;
+            }
+            case 154: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00040000;
+              guildName_ = bs;
               break;
             }
             case 160: {
               bitField0_ |= 0x00080000;
-              repair_ = input.readInt32();
+              guildJob_ = input.readInt32();
               break;
             }
             case 168: {
               bitField0_ |= 0x00100000;
-              points_ = input.readInt32();
+              battleMode_ = input.readInt32();
               break;
             }
             case 176: {
               bitField0_ |= 0x00200000;
-              job_ = input.readInt32();
+              pkVal_ = input.readInt32();
               break;
             }
             case 184: {
               bitField0_ |= 0x00400000;
-              equipExp_ = input.readInt64();
-              break;
-            }
-            case 192: {
-              bitField0_ |= 0x00800000;
-              weaponAwaken_ = input.readInt32();
+              repair_ = input.readInt32();
               break;
             }
             case 200: {
-              bitField0_ |= 0x01000000;
-              stateLv_ = input.readInt32();
+              bitField0_ |= 0x00800000;
+              job_ = input.readInt32();
               break;
             }
             case 208: {
-              bitField0_ |= 0x02000000;
-              guildId_ = input.readInt32();
+              bitField0_ |= 0x01000000;
+              equipExp_ = input.readInt32();
               break;
             }
-            case 218: {
-              com.google.protobuf.ByteString bs = input.readBytes();
-              bitField0_ |= 0x04000000;
-              guildName_ = bs;
+            case 216: {
+              bitField0_ |= 0x02000000;
+              weaponAwaken_ = input.readInt32();
               break;
             }
             case 224: {
-              bitField0_ |= 0x08000000;
-              guildJob_ = input.readInt32();
+              bitField0_ |= 0x04000000;
+              stateLv_ = input.readInt32();
               break;
             }
           }
@@ -756,10 +734,10 @@ public final class PlayerInfoMsgProto {
     }
 
     private int bitField0_;
-    public static final int PLAYER_ID_FIELD_NUMBER = 1;
-    private long playerId_;
+    public static final int PLAYERID_FIELD_NUMBER = 1;
+    private int playerId_;
     /**
-     * <code>optional int64 player_id = 1;</code>
+     * <code>optional int32 playerId = 1;</code>
      *
      * <pre>
      *角色ID
@@ -769,53 +747,30 @@ public final class PlayerInfoMsgProto {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional int64 player_id = 1;</code>
+     * <code>optional int32 playerId = 1;</code>
      *
      * <pre>
      *角色ID
      * </pre>
      */
-    public long getPlayerId() {
+    public int getPlayerId() {
       return playerId_;
     }
 
-    public static final int USER_ID_FIELD_NUMBER = 2;
-    private long userId_;
-    /**
-     * <code>optional int64 user_id = 2;</code>
-     *
-     * <pre>
-     *用户ID
-     * </pre>
-     */
-    public boolean hasUserId() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>optional int64 user_id = 2;</code>
-     *
-     * <pre>
-     *用户ID
-     * </pre>
-     */
-    public long getUserId() {
-      return userId_;
-    }
-
-    public static final int NICK_NAME_FIELD_NUMBER = 3;
+    public static final int NICKNAME_FIELD_NUMBER = 2;
     private java.lang.Object nickName_;
     /**
-     * <code>optional string nick_name = 3;</code>
+     * <code>optional string nickName = 2;</code>
      *
      * <pre>
      *昵称
      * </pre>
      */
     public boolean hasNickName() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
+      return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>optional string nick_name = 3;</code>
+     * <code>optional string nickName = 2;</code>
      *
      * <pre>
      *昵称
@@ -836,7 +791,7 @@ public final class PlayerInfoMsgProto {
       }
     }
     /**
-     * <code>optional string nick_name = 3;</code>
+     * <code>optional string nickName = 2;</code>
      *
      * <pre>
      *昵称
@@ -856,20 +811,20 @@ public final class PlayerInfoMsgProto {
       }
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 4;
+    public static final int LEVEL_FIELD_NUMBER = 3;
     private int level_;
     /**
-     * <code>optional int32 level = 4;</code>
+     * <code>optional int32 level = 3;</code>
      *
      * <pre>
      *等级
      * </pre>
      */
     public boolean hasLevel() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
+      return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional int32 level = 4;</code>
+     * <code>optional int32 level = 3;</code>
      *
      * <pre>
      *等级
@@ -879,89 +834,66 @@ public final class PlayerInfoMsgProto {
       return level_;
     }
 
-    public static final int EXP_FIELD_NUMBER = 5;
-    private long exp_;
+    public static final int EXP_FIELD_NUMBER = 4;
+    private int exp_;
     /**
-     * <code>optional int64 exp = 5;</code>
+     * <code>optional int32 exp = 4;</code>
      *
      * <pre>
      *当前经验
      * </pre>
      */
     public boolean hasExp() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
+      return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>optional int64 exp = 5;</code>
+     * <code>optional int32 exp = 4;</code>
      *
      * <pre>
      *当前经验
      * </pre>
      */
-    public long getExp() {
+    public int getExp() {
       return exp_;
     }
 
-    public static final int TOAL_EXP_FIELD_NUMBER = 6;
-    private long toalExp_;
+    public static final int MONEY_FIELD_NUMBER = 5;
+    private int money_;
     /**
-     * <code>optional int64 toal_exp = 6;</code>
-     *
-     * <pre>
-     *总经验g
-     * </pre>
-     */
-    public boolean hasToalExp() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-    /**
-     * <code>optional int64 toal_exp = 6;</code>
-     *
-     * <pre>
-     *总经验g
-     * </pre>
-     */
-    public long getToalExp() {
-      return toalExp_;
-    }
-
-    public static final int MONEY_FIELD_NUMBER = 7;
-    private long money_;
-    /**
-     * <code>optional int64 money = 7;</code>
+     * <code>optional int32 money = 5;</code>
      *
      * <pre>
      *金币
      * </pre>
      */
     public boolean hasMoney() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
+      return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>optional int64 money = 7;</code>
+     * <code>optional int32 money = 5;</code>
      *
      * <pre>
      *金币
      * </pre>
      */
-    public long getMoney() {
+    public int getMoney() {
       return money_;
     }
 
-    public static final int BIND_CASH_FIELD_NUMBER = 8;
+    public static final int BINDCASH_FIELD_NUMBER = 6;
     private int bindCash_;
     /**
-     * <code>optional int32 bind_cash = 8;</code>
+     * <code>optional int32 bindCash = 6;</code>
      *
      * <pre>
      *绑定仙玉
      * </pre>
      */
     public boolean hasBindCash() {
-      return ((bitField0_ & 0x00000080) == 0x00000080);
+      return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
-     * <code>optional int32 bind_cash = 8;</code>
+     * <code>optional int32 bindCash = 6;</code>
      *
      * <pre>
      *绑定仙玉
@@ -971,20 +903,20 @@ public final class PlayerInfoMsgProto {
       return bindCash_;
     }
 
-    public static final int VIP_LEVEL_FIELD_NUMBER = 9;
+    public static final int VIPLEVEL_FIELD_NUMBER = 7;
     private int vipLevel_;
     /**
-     * <code>optional int32 vip_level = 9;</code>
+     * <code>optional int32 vipLevel = 7;</code>
      *
      * <pre>
      *VIP等级
      * </pre>
      */
     public boolean hasVipLevel() {
-      return ((bitField0_ & 0x00000100) == 0x00000100);
+      return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
-     * <code>optional int32 vip_level = 9;</code>
+     * <code>optional int32 vipLevel = 7;</code>
      *
      * <pre>
      *VIP等级
@@ -994,20 +926,20 @@ public final class PlayerInfoMsgProto {
       return vipLevel_;
     }
 
-    public static final int FIGHT_FIELD_NUMBER = 10;
+    public static final int FIGHT_FIELD_NUMBER = 8;
     private int fight_;
     /**
-     * <code>optional int32 fight = 10;</code>
+     * <code>optional int32 fight = 8;</code>
      *
      * <pre>
      *战斗力
      * </pre>
      */
     public boolean hasFight() {
-      return ((bitField0_ & 0x00000200) == 0x00000200);
+      return ((bitField0_ & 0x00000080) == 0x00000080);
     }
     /**
-     * <code>optional int32 fight = 10;</code>
+     * <code>optional int32 fight = 8;</code>
      *
      * <pre>
      *战斗力
@@ -1017,20 +949,20 @@ public final class PlayerInfoMsgProto {
       return fight_;
     }
 
-    public static final int SKINID_FIELD_NUMBER = 11;
+    public static final int SKINID_FIELD_NUMBER = 9;
     private int skinId_;
     /**
-     * <code>optional int32 skinId = 11;</code>
+     * <code>optional int32 skinId = 9;</code>
      *
      * <pre>
      *皮肤
      * </pre>
      */
     public boolean hasSkinId() {
-      return ((bitField0_ & 0x00000400) == 0x00000400);
+      return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     /**
-     * <code>optional int32 skinId = 11;</code>
+     * <code>optional int32 skinId = 9;</code>
      *
      * <pre>
      *皮肤
@@ -1040,20 +972,20 @@ public final class PlayerInfoMsgProto {
       return skinId_;
     }
 
-    public static final int FASHION_ID_FIELD_NUMBER = 12;
+    public static final int FASHIONID_FIELD_NUMBER = 10;
     private int fashionId_;
     /**
-     * <code>optional int32 fashion_id = 12;</code>
+     * <code>optional int32 fashionId = 10;</code>
      *
      * <pre>
      *时装ID
      * </pre>
      */
     public boolean hasFashionId() {
-      return ((bitField0_ & 0x00000800) == 0x00000800);
+      return ((bitField0_ & 0x00000200) == 0x00000200);
     }
     /**
-     * <code>optional int32 fashion_id = 12;</code>
+     * <code>optional int32 fashionId = 10;</code>
      *
      * <pre>
      *时装ID
@@ -1063,20 +995,20 @@ public final class PlayerInfoMsgProto {
       return fashionId_;
     }
 
-    public static final int WEAPON_ID_FIELD_NUMBER = 13;
+    public static final int WEAPONID_FIELD_NUMBER = 11;
     private int weaponId_;
     /**
-     * <code>optional int32 weapon_id = 13;</code>
+     * <code>optional int32 weaponId = 11;</code>
      *
      * <pre>
      *武器ID
      * </pre>
      */
     public boolean hasWeaponId() {
-      return ((bitField0_ & 0x00001000) == 0x00001000);
+      return ((bitField0_ & 0x00000400) == 0x00000400);
     }
     /**
-     * <code>optional int32 weapon_id = 13;</code>
+     * <code>optional int32 weaponId = 11;</code>
      *
      * <pre>
      *武器ID
@@ -1086,20 +1018,20 @@ public final class PlayerInfoMsgProto {
       return weaponId_;
     }
 
-    public static final int MOUNT_ID_FIELD_NUMBER = 14;
+    public static final int MOUNTID_FIELD_NUMBER = 12;
     private int mountId_;
     /**
-     * <code>optional int32 mount_id = 14;</code>
+     * <code>optional int32 mountId = 12;</code>
      *
      * <pre>
      *坐骑ID
      * </pre>
      */
     public boolean hasMountId() {
-      return ((bitField0_ & 0x00002000) == 0x00002000);
+      return ((bitField0_ & 0x00000800) == 0x00000800);
     }
     /**
-     * <code>optional int32 mount_id = 14;</code>
+     * <code>optional int32 mountId = 12;</code>
      *
      * <pre>
      *坐骑ID
@@ -1109,20 +1041,20 @@ public final class PlayerInfoMsgProto {
       return mountId_;
     }
 
-    public static final int MAGIC_WEAPON_ID_FIELD_NUMBER = 15;
+    public static final int MAGICWEAPON_ID_FIELD_NUMBER = 13;
     private int magicWeaponId_;
     /**
-     * <code>optional int32 magic_weapon_id = 15;</code>
+     * <code>optional int32 magicWeapon_id = 13;</code>
      *
      * <pre>
      *法宝ID
      * </pre>
      */
     public boolean hasMagicWeaponId() {
-      return ((bitField0_ & 0x00004000) == 0x00004000);
+      return ((bitField0_ & 0x00001000) == 0x00001000);
     }
     /**
-     * <code>optional int32 magic_weapon_id = 15;</code>
+     * <code>optional int32 magicWeapon_id = 13;</code>
      *
      * <pre>
      *法宝ID
@@ -1132,20 +1064,20 @@ public final class PlayerInfoMsgProto {
       return magicWeaponId_;
     }
 
-    public static final int WING_ID_FIELD_NUMBER = 16;
+    public static final int WINGID_FIELD_NUMBER = 14;
     private int wingId_;
     /**
-     * <code>optional int32 wing_id = 16;</code>
+     * <code>optional int32 wingId = 14;</code>
      *
      * <pre>
      *翅膀ID
      * </pre>
      */
     public boolean hasWingId() {
-      return ((bitField0_ & 0x00008000) == 0x00008000);
+      return ((bitField0_ & 0x00002000) == 0x00002000);
     }
     /**
-     * <code>optional int32 wing_id = 16;</code>
+     * <code>optional int32 wingId = 14;</code>
      *
      * <pre>
      *翅膀ID
@@ -1155,20 +1087,20 @@ public final class PlayerInfoMsgProto {
       return wingId_;
     }
 
-    public static final int PBAGCOUNT_FIELD_NUMBER = 17;
+    public static final int PBAGCOUNT_FIELD_NUMBER = 15;
     private int pBagCount_;
     /**
-     * <code>optional int32 pBagCount = 17;</code>
+     * <code>optional int32 pBagCount = 15;</code>
      *
      * <pre>
      *用户背包格子数
      * </pre>
      */
     public boolean hasPBagCount() {
-      return ((bitField0_ & 0x00010000) == 0x00010000);
+      return ((bitField0_ & 0x00004000) == 0x00004000);
     }
     /**
-     * <code>optional int32 pBagCount = 17;</code>
+     * <code>optional int32 pBagCount = 15;</code>
      *
      * <pre>
      *用户背包格子数
@@ -1178,20 +1110,20 @@ public final class PlayerInfoMsgProto {
       return pBagCount_;
     }
 
-    public static final int POSTIONMSG_FIELD_NUMBER = 18;
+    public static final int POSTIONMSG_FIELD_NUMBER = 16;
     private com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg postionMsg_;
     /**
-     * <code>optional .PostionMsg postionMsg = 18;</code>
+     * <code>optional .PostionMsg postionMsg = 16;</code>
      *
      * <pre>
      *当前位置
      * </pre>
      */
     public boolean hasPostionMsg() {
-      return ((bitField0_ & 0x00020000) == 0x00020000);
+      return ((bitField0_ & 0x00008000) == 0x00008000);
     }
     /**
-     * <code>optional .PostionMsg postionMsg = 18;</code>
+     * <code>optional .PostionMsg postionMsg = 16;</code>
      *
      * <pre>
      *当前位置
@@ -1201,7 +1133,7 @@ public final class PlayerInfoMsgProto {
       return postionMsg_;
     }
     /**
-     * <code>optional .PostionMsg postionMsg = 18;</code>
+     * <code>optional .PostionMsg postionMsg = 16;</code>
      *
      * <pre>
      *当前位置
@@ -1211,20 +1143,20 @@ public final class PlayerInfoMsgProto {
       return postionMsg_;
     }
 
-    public static final int CASH_FIELD_NUMBER = 19;
+    public static final int CASH_FIELD_NUMBER = 17;
     private int cash_;
     /**
-     * <code>optional int32 cash = 19;</code>
+     * <code>optional int32 cash = 17;</code>
      *
      * <pre>
      * 非绑定仙玉
      * </pre>
      */
     public boolean hasCash() {
-      return ((bitField0_ & 0x00040000) == 0x00040000);
+      return ((bitField0_ & 0x00010000) == 0x00010000);
     }
     /**
-     * <code>optional int32 cash = 19;</code>
+     * <code>optional int32 cash = 17;</code>
      *
      * <pre>
      * 非绑定仙玉
@@ -1234,158 +1166,20 @@ public final class PlayerInfoMsgProto {
       return cash_;
     }
 
-    public static final int REPAIR_FIELD_NUMBER = 20;
-    private int repair_;
-    /**
-     * <code>optional int32 repair = 20;</code>
-     *
-     * <pre>
-     * 修为
-     * </pre>
-     */
-    public boolean hasRepair() {
-      return ((bitField0_ & 0x00080000) == 0x00080000);
-    }
-    /**
-     * <code>optional int32 repair = 20;</code>
-     *
-     * <pre>
-     * 修为
-     * </pre>
-     */
-    public int getRepair() {
-      return repair_;
-    }
-
-    public static final int POINTS_FIELD_NUMBER = 21;
-    private int points_;
-    /**
-     * <code>optional int32 points = 21;</code>
-     *
-     * <pre>
-     *积分
-     * </pre>
-     */
-    public boolean hasPoints() {
-      return ((bitField0_ & 0x00100000) == 0x00100000);
-    }
-    /**
-     * <code>optional int32 points = 21;</code>
-     *
-     * <pre>
-     *积分
-     * </pre>
-     */
-    public int getPoints() {
-      return points_;
-    }
-
-    public static final int JOB_FIELD_NUMBER = 22;
-    private int job_;
-    /**
-     * <code>optional int32 job = 22;</code>
-     *
-     * <pre>
-     *职业
-     * </pre>
-     */
-    public boolean hasJob() {
-      return ((bitField0_ & 0x00200000) == 0x00200000);
-    }
-    /**
-     * <code>optional int32 job = 22;</code>
-     *
-     * <pre>
-     *职业
-     * </pre>
-     */
-    public int getJob() {
-      return job_;
-    }
-
-    public static final int EQUIPEXP_FIELD_NUMBER = 23;
-    private long equipExp_;
-    /**
-     * <code>optional int64 equipExp = 23;</code>
-     *
-     * <pre>
-     * 装备经验
-     * </pre>
-     */
-    public boolean hasEquipExp() {
-      return ((bitField0_ & 0x00400000) == 0x00400000);
-    }
-    /**
-     * <code>optional int64 equipExp = 23;</code>
-     *
-     * <pre>
-     * 装备经验
-     * </pre>
-     */
-    public long getEquipExp() {
-      return equipExp_;
-    }
-
-    public static final int WEAPONAWAKEN_FIELD_NUMBER = 24;
-    private int weaponAwaken_;
-    /**
-     * <code>optional int32 weaponAwaken = 24;</code>
-     *
-     * <pre>
-     * 当前武器觉醒等级
-     * </pre>
-     */
-    public boolean hasWeaponAwaken() {
-      return ((bitField0_ & 0x00800000) == 0x00800000);
-    }
-    /**
-     * <code>optional int32 weaponAwaken = 24;</code>
-     *
-     * <pre>
-     * 当前武器觉醒等级
-     * </pre>
-     */
-    public int getWeaponAwaken() {
-      return weaponAwaken_;
-    }
-
-    public static final int STATELV_FIELD_NUMBER = 25;
-    private int stateLv_;
-    /**
-     * <code>optional int32 stateLv = 25;</code>
-     *
-     * <pre>
-     *境界等级
-     * </pre>
-     */
-    public boolean hasStateLv() {
-      return ((bitField0_ & 0x01000000) == 0x01000000);
-    }
-    /**
-     * <code>optional int32 stateLv = 25;</code>
-     *
-     * <pre>
-     *境界等级
-     * </pre>
-     */
-    public int getStateLv() {
-      return stateLv_;
-    }
-
-    public static final int GUILDID_FIELD_NUMBER = 26;
+    public static final int GUILDID_FIELD_NUMBER = 18;
     private int guildId_;
     /**
-     * <code>optional int32 guildId = 26;</code>
+     * <code>optional int32 guildId = 18;</code>
      *
      * <pre>
      * 所在帮派ID
      * </pre>
      */
     public boolean hasGuildId() {
-      return ((bitField0_ & 0x02000000) == 0x02000000);
+      return ((bitField0_ & 0x00020000) == 0x00020000);
     }
     /**
-     * <code>optional int32 guildId = 26;</code>
+     * <code>optional int32 guildId = 18;</code>
      *
      * <pre>
      * 所在帮派ID
@@ -1395,20 +1189,20 @@ public final class PlayerInfoMsgProto {
       return guildId_;
     }
 
-    public static final int GUILDNAME_FIELD_NUMBER = 27;
+    public static final int GUILDNAME_FIELD_NUMBER = 19;
     private java.lang.Object guildName_;
     /**
-     * <code>optional string guildName = 27;</code>
+     * <code>optional string guildName = 19;</code>
      *
      * <pre>
      * 所在帮派名字
      * </pre>
      */
     public boolean hasGuildName() {
-      return ((bitField0_ & 0x04000000) == 0x04000000);
+      return ((bitField0_ & 0x00040000) == 0x00040000);
     }
     /**
-     * <code>optional string guildName = 27;</code>
+     * <code>optional string guildName = 19;</code>
      *
      * <pre>
      * 所在帮派名字
@@ -1429,7 +1223,7 @@ public final class PlayerInfoMsgProto {
       }
     }
     /**
-     * <code>optional string guildName = 27;</code>
+     * <code>optional string guildName = 19;</code>
      *
      * <pre>
      * 所在帮派名字
@@ -1449,20 +1243,20 @@ public final class PlayerInfoMsgProto {
       }
     }
 
-    public static final int GUILDJOB_FIELD_NUMBER = 28;
+    public static final int GUILDJOB_FIELD_NUMBER = 20;
     private int guildJob_;
     /**
-     * <code>optional int32 guildJob = 28;</code>
+     * <code>optional int32 guildJob = 20;</code>
      *
      * <pre>
      * 自己在帮派的职位
      * </pre>
      */
     public boolean hasGuildJob() {
-      return ((bitField0_ & 0x08000000) == 0x08000000);
+      return ((bitField0_ & 0x00080000) == 0x00080000);
     }
     /**
-     * <code>optional int32 guildJob = 28;</code>
+     * <code>optional int32 guildJob = 20;</code>
      *
      * <pre>
      * 自己在帮派的职位
@@ -1472,14 +1266,173 @@ public final class PlayerInfoMsgProto {
       return guildJob_;
     }
 
+    public static final int BATTLEMODE_FIELD_NUMBER = 21;
+    private int battleMode_;
+    /**
+     * <code>optional int32 battleMode = 21;</code>
+     *
+     * <pre>
+     * 战斗模式
+     * </pre>
+     */
+    public boolean hasBattleMode() {
+      return ((bitField0_ & 0x00100000) == 0x00100000);
+    }
+    /**
+     * <code>optional int32 battleMode = 21;</code>
+     *
+     * <pre>
+     * 战斗模式
+     * </pre>
+     */
+    public int getBattleMode() {
+      return battleMode_;
+    }
+
+    public static final int PKVAL_FIELD_NUMBER = 22;
+    private int pkVal_;
+    /**
+     * <code>optional int32 pkVal = 22;</code>
+     *
+     * <pre>
+     * pk值
+     * </pre>
+     */
+    public boolean hasPkVal() {
+      return ((bitField0_ & 0x00200000) == 0x00200000);
+    }
+    /**
+     * <code>optional int32 pkVal = 22;</code>
+     *
+     * <pre>
+     * pk值
+     * </pre>
+     */
+    public int getPkVal() {
+      return pkVal_;
+    }
+
+    public static final int REPAIR_FIELD_NUMBER = 23;
+    private int repair_;
+    /**
+     * <code>optional int32 repair = 23;</code>
+     *
+     * <pre>
+     * 修为
+     * </pre>
+     */
+    public boolean hasRepair() {
+      return ((bitField0_ & 0x00400000) == 0x00400000);
+    }
+    /**
+     * <code>optional int32 repair = 23;</code>
+     *
+     * <pre>
+     * 修为
+     * </pre>
+     */
+    public int getRepair() {
+      return repair_;
+    }
+
+    public static final int JOB_FIELD_NUMBER = 25;
+    private int job_;
+    /**
+     * <code>optional int32 job = 25;</code>
+     *
+     * <pre>
+     *optional int32 points = 24; //积分
+     * </pre>
+     */
+    public boolean hasJob() {
+      return ((bitField0_ & 0x00800000) == 0x00800000);
+    }
+    /**
+     * <code>optional int32 job = 25;</code>
+     *
+     * <pre>
+     *optional int32 points = 24; //积分
+     * </pre>
+     */
+    public int getJob() {
+      return job_;
+    }
+
+    public static final int EQUIPEXP_FIELD_NUMBER = 26;
+    private int equipExp_;
+    /**
+     * <code>optional int32 equipExp = 26;</code>
+     *
+     * <pre>
+     * 装备经验
+     * </pre>
+     */
+    public boolean hasEquipExp() {
+      return ((bitField0_ & 0x01000000) == 0x01000000);
+    }
+    /**
+     * <code>optional int32 equipExp = 26;</code>
+     *
+     * <pre>
+     * 装备经验
+     * </pre>
+     */
+    public int getEquipExp() {
+      return equipExp_;
+    }
+
+    public static final int WEAPONAWAKEN_FIELD_NUMBER = 27;
+    private int weaponAwaken_;
+    /**
+     * <code>optional int32 weaponAwaken = 27;</code>
+     *
+     * <pre>
+     * 当前武器觉醒等级
+     * </pre>
+     */
+    public boolean hasWeaponAwaken() {
+      return ((bitField0_ & 0x02000000) == 0x02000000);
+    }
+    /**
+     * <code>optional int32 weaponAwaken = 27;</code>
+     *
+     * <pre>
+     * 当前武器觉醒等级
+     * </pre>
+     */
+    public int getWeaponAwaken() {
+      return weaponAwaken_;
+    }
+
+    public static final int STATELV_FIELD_NUMBER = 28;
+    private int stateLv_;
+    /**
+     * <code>optional int32 stateLv = 28;</code>
+     *
+     * <pre>
+     *境界等级
+     * </pre>
+     */
+    public boolean hasStateLv() {
+      return ((bitField0_ & 0x04000000) == 0x04000000);
+    }
+    /**
+     * <code>optional int32 stateLv = 28;</code>
+     *
+     * <pre>
+     *境界等级
+     * </pre>
+     */
+    public int getStateLv() {
+      return stateLv_;
+    }
+
     private void initFields() {
-      playerId_ = 0L;
-      userId_ = 0L;
+      playerId_ = 0;
       nickName_ = "";
       level_ = 0;
-      exp_ = 0L;
-      toalExp_ = 0L;
-      money_ = 0L;
+      exp_ = 0;
+      money_ = 0;
       bindCash_ = 0;
       vipLevel_ = 0;
       fight_ = 0;
@@ -1492,15 +1445,16 @@ public final class PlayerInfoMsgProto {
       pBagCount_ = 0;
       postionMsg_ = com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg.getDefaultInstance();
       cash_ = 0;
-      repair_ = 0;
-      points_ = 0;
-      job_ = 0;
-      equipExp_ = 0L;
-      weaponAwaken_ = 0;
-      stateLv_ = 0;
       guildId_ = 0;
       guildName_ = "";
       guildJob_ = 0;
+      battleMode_ = 0;
+      pkVal_ = 0;
+      repair_ = 0;
+      job_ = 0;
+      equipExp_ = 0;
+      weaponAwaken_ = 0;
+      stateLv_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -1516,88 +1470,85 @@ public final class PlayerInfoMsgProto {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt64(1, playerId_);
+        output.writeInt32(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt64(2, userId_);
+        output.writeBytes(2, getNickNameBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, getNickNameBytes());
+        output.writeInt32(3, level_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, level_);
+        output.writeInt32(4, exp_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt64(5, exp_);
+        output.writeInt32(5, money_);
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeInt64(6, toalExp_);
+        output.writeInt32(6, bindCash_);
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeInt64(7, money_);
+        output.writeInt32(7, vipLevel_);
       }
       if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeInt32(8, bindCash_);
+        output.writeInt32(8, fight_);
       }
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        output.writeInt32(9, vipLevel_);
+        output.writeInt32(9, skinId_);
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
-        output.writeInt32(10, fight_);
+        output.writeInt32(10, fashionId_);
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
-        output.writeInt32(11, skinId_);
+        output.writeInt32(11, weaponId_);
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
-        output.writeInt32(12, fashionId_);
+        output.writeInt32(12, mountId_);
       }
       if (((bitField0_ & 0x00001000) == 0x00001000)) {
-        output.writeInt32(13, weaponId_);
+        output.writeInt32(13, magicWeaponId_);
       }
       if (((bitField0_ & 0x00002000) == 0x00002000)) {
-        output.writeInt32(14, mountId_);
+        output.writeInt32(14, wingId_);
       }
       if (((bitField0_ & 0x00004000) == 0x00004000)) {
-        output.writeInt32(15, magicWeaponId_);
+        output.writeInt32(15, pBagCount_);
       }
       if (((bitField0_ & 0x00008000) == 0x00008000)) {
-        output.writeInt32(16, wingId_);
+        output.writeMessage(16, postionMsg_);
       }
       if (((bitField0_ & 0x00010000) == 0x00010000)) {
-        output.writeInt32(17, pBagCount_);
+        output.writeInt32(17, cash_);
       }
       if (((bitField0_ & 0x00020000) == 0x00020000)) {
-        output.writeMessage(18, postionMsg_);
+        output.writeInt32(18, guildId_);
       }
       if (((bitField0_ & 0x00040000) == 0x00040000)) {
-        output.writeInt32(19, cash_);
+        output.writeBytes(19, getGuildNameBytes());
       }
       if (((bitField0_ & 0x00080000) == 0x00080000)) {
-        output.writeInt32(20, repair_);
+        output.writeInt32(20, guildJob_);
       }
       if (((bitField0_ & 0x00100000) == 0x00100000)) {
-        output.writeInt32(21, points_);
+        output.writeInt32(21, battleMode_);
       }
       if (((bitField0_ & 0x00200000) == 0x00200000)) {
-        output.writeInt32(22, job_);
+        output.writeInt32(22, pkVal_);
       }
       if (((bitField0_ & 0x00400000) == 0x00400000)) {
-        output.writeInt64(23, equipExp_);
+        output.writeInt32(23, repair_);
       }
       if (((bitField0_ & 0x00800000) == 0x00800000)) {
-        output.writeInt32(24, weaponAwaken_);
+        output.writeInt32(25, job_);
       }
       if (((bitField0_ & 0x01000000) == 0x01000000)) {
-        output.writeInt32(25, stateLv_);
+        output.writeInt32(26, equipExp_);
       }
       if (((bitField0_ & 0x02000000) == 0x02000000)) {
-        output.writeInt32(26, guildId_);
+        output.writeInt32(27, weaponAwaken_);
       }
       if (((bitField0_ & 0x04000000) == 0x04000000)) {
-        output.writeBytes(27, getGuildNameBytes());
-      }
-      if (((bitField0_ & 0x08000000) == 0x08000000)) {
-        output.writeInt32(28, guildJob_);
+        output.writeInt32(28, stateLv_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -1610,115 +1561,111 @@ public final class PlayerInfoMsgProto {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, playerId_);
+          .computeInt32Size(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(2, userId_);
+          .computeBytesSize(2, getNickNameBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getNickNameBytes());
+          .computeInt32Size(3, level_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, level_);
+          .computeInt32Size(4, exp_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(5, exp_);
+          .computeInt32Size(5, money_);
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(6, toalExp_);
+          .computeInt32Size(6, bindCash_);
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(7, money_);
+          .computeInt32Size(7, vipLevel_);
       }
       if (((bitField0_ & 0x00000080) == 0x00000080)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, bindCash_);
+          .computeInt32Size(8, fight_);
       }
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, vipLevel_);
+          .computeInt32Size(9, skinId_);
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, fight_);
+          .computeInt32Size(10, fashionId_);
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, skinId_);
+          .computeInt32Size(11, weaponId_);
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, fashionId_);
+          .computeInt32Size(12, mountId_);
       }
       if (((bitField0_ & 0x00001000) == 0x00001000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, weaponId_);
+          .computeInt32Size(13, magicWeaponId_);
       }
       if (((bitField0_ & 0x00002000) == 0x00002000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, mountId_);
+          .computeInt32Size(14, wingId_);
       }
       if (((bitField0_ & 0x00004000) == 0x00004000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, magicWeaponId_);
+          .computeInt32Size(15, pBagCount_);
       }
       if (((bitField0_ & 0x00008000) == 0x00008000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(16, wingId_);
+          .computeMessageSize(16, postionMsg_);
       }
       if (((bitField0_ & 0x00010000) == 0x00010000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(17, pBagCount_);
+          .computeInt32Size(17, cash_);
       }
       if (((bitField0_ & 0x00020000) == 0x00020000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(18, postionMsg_);
+          .computeInt32Size(18, guildId_);
       }
       if (((bitField0_ & 0x00040000) == 0x00040000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(19, cash_);
+          .computeBytesSize(19, getGuildNameBytes());
       }
       if (((bitField0_ & 0x00080000) == 0x00080000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(20, repair_);
+          .computeInt32Size(20, guildJob_);
       }
       if (((bitField0_ & 0x00100000) == 0x00100000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(21, points_);
+          .computeInt32Size(21, battleMode_);
       }
       if (((bitField0_ & 0x00200000) == 0x00200000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(22, job_);
+          .computeInt32Size(22, pkVal_);
       }
       if (((bitField0_ & 0x00400000) == 0x00400000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(23, equipExp_);
+          .computeInt32Size(23, repair_);
       }
       if (((bitField0_ & 0x00800000) == 0x00800000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(24, weaponAwaken_);
+          .computeInt32Size(25, job_);
       }
       if (((bitField0_ & 0x01000000) == 0x01000000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(25, stateLv_);
+          .computeInt32Size(26, equipExp_);
       }
       if (((bitField0_ & 0x02000000) == 0x02000000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(26, guildId_);
+          .computeInt32Size(27, weaponAwaken_);
       }
       if (((bitField0_ & 0x04000000) == 0x04000000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(27, getGuildNameBytes());
-      }
-      if (((bitField0_ & 0x08000000) == 0x08000000)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(28, guildJob_);
+          .computeInt32Size(28, stateLv_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1838,66 +1785,64 @@ public final class PlayerInfoMsgProto {
 
       public Builder clear() {
         super.clear();
-        playerId_ = 0L;
+        playerId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
-        userId_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000002);
         nickName_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000002);
         level_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        exp_ = 0;
         bitField0_ = (bitField0_ & ~0x00000008);
-        exp_ = 0L;
+        money_ = 0;
         bitField0_ = (bitField0_ & ~0x00000010);
-        toalExp_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000020);
-        money_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000040);
         bindCash_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00000020);
         vipLevel_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00000040);
         fight_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000200);
+        bitField0_ = (bitField0_ & ~0x00000080);
         skinId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000400);
+        bitField0_ = (bitField0_ & ~0x00000100);
         fashionId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00000200);
         weaponId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00001000);
+        bitField0_ = (bitField0_ & ~0x00000400);
         mountId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00002000);
+        bitField0_ = (bitField0_ & ~0x00000800);
         magicWeaponId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00004000);
+        bitField0_ = (bitField0_ & ~0x00001000);
         wingId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00008000);
+        bitField0_ = (bitField0_ & ~0x00002000);
         pBagCount_ = 0;
-        bitField0_ = (bitField0_ & ~0x00010000);
+        bitField0_ = (bitField0_ & ~0x00004000);
         if (postionMsgBuilder_ == null) {
           postionMsg_ = com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg.getDefaultInstance();
         } else {
           postionMsgBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00020000);
+        bitField0_ = (bitField0_ & ~0x00008000);
         cash_ = 0;
-        bitField0_ = (bitField0_ & ~0x00040000);
-        repair_ = 0;
-        bitField0_ = (bitField0_ & ~0x00080000);
-        points_ = 0;
-        bitField0_ = (bitField0_ & ~0x00100000);
-        job_ = 0;
-        bitField0_ = (bitField0_ & ~0x00200000);
-        equipExp_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00400000);
-        weaponAwaken_ = 0;
-        bitField0_ = (bitField0_ & ~0x00800000);
-        stateLv_ = 0;
-        bitField0_ = (bitField0_ & ~0x01000000);
+        bitField0_ = (bitField0_ & ~0x00010000);
         guildId_ = 0;
-        bitField0_ = (bitField0_ & ~0x02000000);
+        bitField0_ = (bitField0_ & ~0x00020000);
         guildName_ = "";
-        bitField0_ = (bitField0_ & ~0x04000000);
+        bitField0_ = (bitField0_ & ~0x00040000);
         guildJob_ = 0;
-        bitField0_ = (bitField0_ & ~0x08000000);
+        bitField0_ = (bitField0_ & ~0x00080000);
+        battleMode_ = 0;
+        bitField0_ = (bitField0_ & ~0x00100000);
+        pkVal_ = 0;
+        bitField0_ = (bitField0_ & ~0x00200000);
+        repair_ = 0;
+        bitField0_ = (bitField0_ & ~0x00400000);
+        job_ = 0;
+        bitField0_ = (bitField0_ & ~0x00800000);
+        equipExp_ = 0;
+        bitField0_ = (bitField0_ & ~0x01000000);
+        weaponAwaken_ = 0;
+        bitField0_ = (bitField0_ & ~0x02000000);
+        stateLv_ = 0;
+        bitField0_ = (bitField0_ & ~0x04000000);
         return this;
       }
 
@@ -1933,115 +1878,111 @@ public final class PlayerInfoMsgProto {
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.userId_ = userId_;
+        result.nickName_ = nickName_;
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.nickName_ = nickName_;
+        result.level_ = level_;
         if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
           to_bitField0_ |= 0x00000008;
         }
-        result.level_ = level_;
+        result.exp_ = exp_;
         if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
           to_bitField0_ |= 0x00000010;
         }
-        result.exp_ = exp_;
+        result.money_ = money_;
         if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
           to_bitField0_ |= 0x00000020;
         }
-        result.toalExp_ = toalExp_;
+        result.bindCash_ = bindCash_;
         if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
           to_bitField0_ |= 0x00000040;
         }
-        result.money_ = money_;
+        result.vipLevel_ = vipLevel_;
         if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
           to_bitField0_ |= 0x00000080;
         }
-        result.bindCash_ = bindCash_;
+        result.fight_ = fight_;
         if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
           to_bitField0_ |= 0x00000100;
         }
-        result.vipLevel_ = vipLevel_;
+        result.skinId_ = skinId_;
         if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
           to_bitField0_ |= 0x00000200;
         }
-        result.fight_ = fight_;
+        result.fashionId_ = fashionId_;
         if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
           to_bitField0_ |= 0x00000400;
         }
-        result.skinId_ = skinId_;
+        result.weaponId_ = weaponId_;
         if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
           to_bitField0_ |= 0x00000800;
         }
-        result.fashionId_ = fashionId_;
+        result.mountId_ = mountId_;
         if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
           to_bitField0_ |= 0x00001000;
         }
-        result.weaponId_ = weaponId_;
+        result.magicWeaponId_ = magicWeaponId_;
         if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
           to_bitField0_ |= 0x00002000;
         }
-        result.mountId_ = mountId_;
+        result.wingId_ = wingId_;
         if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
           to_bitField0_ |= 0x00004000;
         }
-        result.magicWeaponId_ = magicWeaponId_;
+        result.pBagCount_ = pBagCount_;
         if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
           to_bitField0_ |= 0x00008000;
-        }
-        result.wingId_ = wingId_;
-        if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
-          to_bitField0_ |= 0x00010000;
-        }
-        result.pBagCount_ = pBagCount_;
-        if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
-          to_bitField0_ |= 0x00020000;
         }
         if (postionMsgBuilder_ == null) {
           result.postionMsg_ = postionMsg_;
         } else {
           result.postionMsg_ = postionMsgBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
+          to_bitField0_ |= 0x00010000;
+        }
+        result.cash_ = cash_;
+        if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
+          to_bitField0_ |= 0x00020000;
+        }
+        result.guildId_ = guildId_;
         if (((from_bitField0_ & 0x00040000) == 0x00040000)) {
           to_bitField0_ |= 0x00040000;
         }
-        result.cash_ = cash_;
+        result.guildName_ = guildName_;
         if (((from_bitField0_ & 0x00080000) == 0x00080000)) {
           to_bitField0_ |= 0x00080000;
         }
-        result.repair_ = repair_;
+        result.guildJob_ = guildJob_;
         if (((from_bitField0_ & 0x00100000) == 0x00100000)) {
           to_bitField0_ |= 0x00100000;
         }
-        result.points_ = points_;
+        result.battleMode_ = battleMode_;
         if (((from_bitField0_ & 0x00200000) == 0x00200000)) {
           to_bitField0_ |= 0x00200000;
         }
-        result.job_ = job_;
+        result.pkVal_ = pkVal_;
         if (((from_bitField0_ & 0x00400000) == 0x00400000)) {
           to_bitField0_ |= 0x00400000;
         }
-        result.equipExp_ = equipExp_;
+        result.repair_ = repair_;
         if (((from_bitField0_ & 0x00800000) == 0x00800000)) {
           to_bitField0_ |= 0x00800000;
         }
-        result.weaponAwaken_ = weaponAwaken_;
+        result.job_ = job_;
         if (((from_bitField0_ & 0x01000000) == 0x01000000)) {
           to_bitField0_ |= 0x01000000;
         }
-        result.stateLv_ = stateLv_;
+        result.equipExp_ = equipExp_;
         if (((from_bitField0_ & 0x02000000) == 0x02000000)) {
           to_bitField0_ |= 0x02000000;
         }
-        result.guildId_ = guildId_;
+        result.weaponAwaken_ = weaponAwaken_;
         if (((from_bitField0_ & 0x04000000) == 0x04000000)) {
           to_bitField0_ |= 0x04000000;
         }
-        result.guildName_ = guildName_;
-        if (((from_bitField0_ & 0x08000000) == 0x08000000)) {
-          to_bitField0_ |= 0x08000000;
-        }
-        result.guildJob_ = guildJob_;
+        result.stateLv_ = stateLv_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -2061,11 +2002,8 @@ public final class PlayerInfoMsgProto {
         if (other.hasPlayerId()) {
           setPlayerId(other.getPlayerId());
         }
-        if (other.hasUserId()) {
-          setUserId(other.getUserId());
-        }
         if (other.hasNickName()) {
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000002;
           nickName_ = other.nickName_;
           onChanged();
         }
@@ -2074,9 +2012,6 @@ public final class PlayerInfoMsgProto {
         }
         if (other.hasExp()) {
           setExp(other.getExp());
-        }
-        if (other.hasToalExp()) {
-          setToalExp(other.getToalExp());
         }
         if (other.hasMoney()) {
           setMoney(other.getMoney());
@@ -2117,11 +2052,25 @@ public final class PlayerInfoMsgProto {
         if (other.hasCash()) {
           setCash(other.getCash());
         }
+        if (other.hasGuildId()) {
+          setGuildId(other.getGuildId());
+        }
+        if (other.hasGuildName()) {
+          bitField0_ |= 0x00040000;
+          guildName_ = other.guildName_;
+          onChanged();
+        }
+        if (other.hasGuildJob()) {
+          setGuildJob(other.getGuildJob());
+        }
+        if (other.hasBattleMode()) {
+          setBattleMode(other.getBattleMode());
+        }
+        if (other.hasPkVal()) {
+          setPkVal(other.getPkVal());
+        }
         if (other.hasRepair()) {
           setRepair(other.getRepair());
-        }
-        if (other.hasPoints()) {
-          setPoints(other.getPoints());
         }
         if (other.hasJob()) {
           setJob(other.getJob());
@@ -2134,17 +2083,6 @@ public final class PlayerInfoMsgProto {
         }
         if (other.hasStateLv()) {
           setStateLv(other.getStateLv());
-        }
-        if (other.hasGuildId()) {
-          setGuildId(other.getGuildId());
-        }
-        if (other.hasGuildName()) {
-          bitField0_ |= 0x04000000;
-          guildName_ = other.guildName_;
-          onChanged();
-        }
-        if (other.hasGuildJob()) {
-          setGuildJob(other.getGuildJob());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -2173,9 +2111,9 @@ public final class PlayerInfoMsgProto {
       }
       private int bitField0_;
 
-      private long playerId_ ;
+      private int playerId_ ;
       /**
-       * <code>optional int64 player_id = 1;</code>
+       * <code>optional int32 playerId = 1;</code>
        *
        * <pre>
        *角色ID
@@ -2185,30 +2123,30 @@ public final class PlayerInfoMsgProto {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional int64 player_id = 1;</code>
+       * <code>optional int32 playerId = 1;</code>
        *
        * <pre>
        *角色ID
        * </pre>
        */
-      public long getPlayerId() {
+      public int getPlayerId() {
         return playerId_;
       }
       /**
-       * <code>optional int64 player_id = 1;</code>
+       * <code>optional int32 playerId = 1;</code>
        *
        * <pre>
        *角色ID
        * </pre>
        */
-      public Builder setPlayerId(long value) {
+      public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000001;
         playerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int64 player_id = 1;</code>
+       * <code>optional int32 playerId = 1;</code>
        *
        * <pre>
        *角色ID
@@ -2216,72 +2154,24 @@ public final class PlayerInfoMsgProto {
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        playerId_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long userId_ ;
-      /**
-       * <code>optional int64 user_id = 2;</code>
-       *
-       * <pre>
-       *用户ID
-       * </pre>
-       */
-      public boolean hasUserId() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional int64 user_id = 2;</code>
-       *
-       * <pre>
-       *用户ID
-       * </pre>
-       */
-      public long getUserId() {
-        return userId_;
-      }
-      /**
-       * <code>optional int64 user_id = 2;</code>
-       *
-       * <pre>
-       *用户ID
-       * </pre>
-       */
-      public Builder setUserId(long value) {
-        bitField0_ |= 0x00000002;
-        userId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int64 user_id = 2;</code>
-       *
-       * <pre>
-       *用户ID
-       * </pre>
-       */
-      public Builder clearUserId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        userId_ = 0L;
+        playerId_ = 0;
         onChanged();
         return this;
       }
 
       private java.lang.Object nickName_ = "";
       /**
-       * <code>optional string nick_name = 3;</code>
+       * <code>optional string nickName = 2;</code>
        *
        * <pre>
        *昵称
        * </pre>
        */
       public boolean hasNickName() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
+        return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional string nick_name = 3;</code>
+       * <code>optional string nickName = 2;</code>
        *
        * <pre>
        *昵称
@@ -2302,7 +2192,7 @@ public final class PlayerInfoMsgProto {
         }
       }
       /**
-       * <code>optional string nick_name = 3;</code>
+       * <code>optional string nickName = 2;</code>
        *
        * <pre>
        *昵称
@@ -2322,7 +2212,7 @@ public final class PlayerInfoMsgProto {
         }
       }
       /**
-       * <code>optional string nick_name = 3;</code>
+       * <code>optional string nickName = 2;</code>
        *
        * <pre>
        *昵称
@@ -2333,26 +2223,26 @@ public final class PlayerInfoMsgProto {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000004;
+  bitField0_ |= 0x00000002;
         nickName_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional string nick_name = 3;</code>
+       * <code>optional string nickName = 2;</code>
        *
        * <pre>
        *昵称
        * </pre>
        */
       public Builder clearNickName() {
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000002);
         nickName_ = getDefaultInstance().getNickName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string nick_name = 3;</code>
+       * <code>optional string nickName = 2;</code>
        *
        * <pre>
        *昵称
@@ -2363,7 +2253,7 @@ public final class PlayerInfoMsgProto {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000004;
+  bitField0_ |= 0x00000002;
         nickName_ = value;
         onChanged();
         return this;
@@ -2371,17 +2261,17 @@ public final class PlayerInfoMsgProto {
 
       private int level_ ;
       /**
-       * <code>optional int32 level = 4;</code>
+       * <code>optional int32 level = 3;</code>
        *
        * <pre>
        *等级
        * </pre>
        */
       public boolean hasLevel() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
+        return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional int32 level = 4;</code>
+       * <code>optional int32 level = 3;</code>
        *
        * <pre>
        *等级
@@ -2391,189 +2281,141 @@ public final class PlayerInfoMsgProto {
         return level_;
       }
       /**
-       * <code>optional int32 level = 4;</code>
+       * <code>optional int32 level = 3;</code>
        *
        * <pre>
        *等级
        * </pre>
        */
       public Builder setLevel(int value) {
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000004;
         level_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 level = 4;</code>
+       * <code>optional int32 level = 3;</code>
        *
        * <pre>
        *等级
        * </pre>
        */
       public Builder clearLevel() {
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000004);
         level_ = 0;
         onChanged();
         return this;
       }
 
-      private long exp_ ;
+      private int exp_ ;
       /**
-       * <code>optional int64 exp = 5;</code>
+       * <code>optional int32 exp = 4;</code>
        *
        * <pre>
        *当前经验
        * </pre>
        */
       public boolean hasExp() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
+        return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>optional int64 exp = 5;</code>
+       * <code>optional int32 exp = 4;</code>
        *
        * <pre>
        *当前经验
        * </pre>
        */
-      public long getExp() {
+      public int getExp() {
         return exp_;
       }
       /**
-       * <code>optional int64 exp = 5;</code>
+       * <code>optional int32 exp = 4;</code>
        *
        * <pre>
        *当前经验
        * </pre>
        */
-      public Builder setExp(long value) {
-        bitField0_ |= 0x00000010;
+      public Builder setExp(int value) {
+        bitField0_ |= 0x00000008;
         exp_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int64 exp = 5;</code>
+       * <code>optional int32 exp = 4;</code>
        *
        * <pre>
        *当前经验
        * </pre>
        */
       public Builder clearExp() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        exp_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        exp_ = 0;
         onChanged();
         return this;
       }
 
-      private long toalExp_ ;
+      private int money_ ;
       /**
-       * <code>optional int64 toal_exp = 6;</code>
-       *
-       * <pre>
-       *总经验g
-       * </pre>
-       */
-      public boolean hasToalExp() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
-      /**
-       * <code>optional int64 toal_exp = 6;</code>
-       *
-       * <pre>
-       *总经验g
-       * </pre>
-       */
-      public long getToalExp() {
-        return toalExp_;
-      }
-      /**
-       * <code>optional int64 toal_exp = 6;</code>
-       *
-       * <pre>
-       *总经验g
-       * </pre>
-       */
-      public Builder setToalExp(long value) {
-        bitField0_ |= 0x00000020;
-        toalExp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int64 toal_exp = 6;</code>
-       *
-       * <pre>
-       *总经验g
-       * </pre>
-       */
-      public Builder clearToalExp() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        toalExp_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long money_ ;
-      /**
-       * <code>optional int64 money = 7;</code>
+       * <code>optional int32 money = 5;</code>
        *
        * <pre>
        *金币
        * </pre>
        */
       public boolean hasMoney() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
+        return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>optional int64 money = 7;</code>
+       * <code>optional int32 money = 5;</code>
        *
        * <pre>
        *金币
        * </pre>
        */
-      public long getMoney() {
+      public int getMoney() {
         return money_;
       }
       /**
-       * <code>optional int64 money = 7;</code>
+       * <code>optional int32 money = 5;</code>
        *
        * <pre>
        *金币
        * </pre>
        */
-      public Builder setMoney(long value) {
-        bitField0_ |= 0x00000040;
+      public Builder setMoney(int value) {
+        bitField0_ |= 0x00000010;
         money_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int64 money = 7;</code>
+       * <code>optional int32 money = 5;</code>
        *
        * <pre>
        *金币
        * </pre>
        */
       public Builder clearMoney() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        money_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        money_ = 0;
         onChanged();
         return this;
       }
 
       private int bindCash_ ;
       /**
-       * <code>optional int32 bind_cash = 8;</code>
+       * <code>optional int32 bindCash = 6;</code>
        *
        * <pre>
        *绑定仙玉
        * </pre>
        */
       public boolean hasBindCash() {
-        return ((bitField0_ & 0x00000080) == 0x00000080);
+        return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
-       * <code>optional int32 bind_cash = 8;</code>
+       * <code>optional int32 bindCash = 6;</code>
        *
        * <pre>
        *绑定仙玉
@@ -2583,27 +2425,27 @@ public final class PlayerInfoMsgProto {
         return bindCash_;
       }
       /**
-       * <code>optional int32 bind_cash = 8;</code>
+       * <code>optional int32 bindCash = 6;</code>
        *
        * <pre>
        *绑定仙玉
        * </pre>
        */
       public Builder setBindCash(int value) {
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000020;
         bindCash_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 bind_cash = 8;</code>
+       * <code>optional int32 bindCash = 6;</code>
        *
        * <pre>
        *绑定仙玉
        * </pre>
        */
       public Builder clearBindCash() {
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00000020);
         bindCash_ = 0;
         onChanged();
         return this;
@@ -2611,17 +2453,17 @@ public final class PlayerInfoMsgProto {
 
       private int vipLevel_ ;
       /**
-       * <code>optional int32 vip_level = 9;</code>
+       * <code>optional int32 vipLevel = 7;</code>
        *
        * <pre>
        *VIP等级
        * </pre>
        */
       public boolean hasVipLevel() {
-        return ((bitField0_ & 0x00000100) == 0x00000100);
+        return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
-       * <code>optional int32 vip_level = 9;</code>
+       * <code>optional int32 vipLevel = 7;</code>
        *
        * <pre>
        *VIP等级
@@ -2631,27 +2473,27 @@ public final class PlayerInfoMsgProto {
         return vipLevel_;
       }
       /**
-       * <code>optional int32 vip_level = 9;</code>
+       * <code>optional int32 vipLevel = 7;</code>
        *
        * <pre>
        *VIP等级
        * </pre>
        */
       public Builder setVipLevel(int value) {
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00000040;
         vipLevel_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 vip_level = 9;</code>
+       * <code>optional int32 vipLevel = 7;</code>
        *
        * <pre>
        *VIP等级
        * </pre>
        */
       public Builder clearVipLevel() {
-        bitField0_ = (bitField0_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00000040);
         vipLevel_ = 0;
         onChanged();
         return this;
@@ -2659,17 +2501,17 @@ public final class PlayerInfoMsgProto {
 
       private int fight_ ;
       /**
-       * <code>optional int32 fight = 10;</code>
+       * <code>optional int32 fight = 8;</code>
        *
        * <pre>
        *战斗力
        * </pre>
        */
       public boolean hasFight() {
-        return ((bitField0_ & 0x00000200) == 0x00000200);
+        return ((bitField0_ & 0x00000080) == 0x00000080);
       }
       /**
-       * <code>optional int32 fight = 10;</code>
+       * <code>optional int32 fight = 8;</code>
        *
        * <pre>
        *战斗力
@@ -2679,27 +2521,27 @@ public final class PlayerInfoMsgProto {
         return fight_;
       }
       /**
-       * <code>optional int32 fight = 10;</code>
+       * <code>optional int32 fight = 8;</code>
        *
        * <pre>
        *战斗力
        * </pre>
        */
       public Builder setFight(int value) {
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00000080;
         fight_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 fight = 10;</code>
+       * <code>optional int32 fight = 8;</code>
        *
        * <pre>
        *战斗力
        * </pre>
        */
       public Builder clearFight() {
-        bitField0_ = (bitField0_ & ~0x00000200);
+        bitField0_ = (bitField0_ & ~0x00000080);
         fight_ = 0;
         onChanged();
         return this;
@@ -2707,17 +2549,17 @@ public final class PlayerInfoMsgProto {
 
       private int skinId_ ;
       /**
-       * <code>optional int32 skinId = 11;</code>
+       * <code>optional int32 skinId = 9;</code>
        *
        * <pre>
        *皮肤
        * </pre>
        */
       public boolean hasSkinId() {
-        return ((bitField0_ & 0x00000400) == 0x00000400);
+        return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       /**
-       * <code>optional int32 skinId = 11;</code>
+       * <code>optional int32 skinId = 9;</code>
        *
        * <pre>
        *皮肤
@@ -2727,27 +2569,27 @@ public final class PlayerInfoMsgProto {
         return skinId_;
       }
       /**
-       * <code>optional int32 skinId = 11;</code>
+       * <code>optional int32 skinId = 9;</code>
        *
        * <pre>
        *皮肤
        * </pre>
        */
       public Builder setSkinId(int value) {
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00000100;
         skinId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 skinId = 11;</code>
+       * <code>optional int32 skinId = 9;</code>
        *
        * <pre>
        *皮肤
        * </pre>
        */
       public Builder clearSkinId() {
-        bitField0_ = (bitField0_ & ~0x00000400);
+        bitField0_ = (bitField0_ & ~0x00000100);
         skinId_ = 0;
         onChanged();
         return this;
@@ -2755,17 +2597,17 @@ public final class PlayerInfoMsgProto {
 
       private int fashionId_ ;
       /**
-       * <code>optional int32 fashion_id = 12;</code>
+       * <code>optional int32 fashionId = 10;</code>
        *
        * <pre>
        *时装ID
        * </pre>
        */
       public boolean hasFashionId() {
-        return ((bitField0_ & 0x00000800) == 0x00000800);
+        return ((bitField0_ & 0x00000200) == 0x00000200);
       }
       /**
-       * <code>optional int32 fashion_id = 12;</code>
+       * <code>optional int32 fashionId = 10;</code>
        *
        * <pre>
        *时装ID
@@ -2775,27 +2617,27 @@ public final class PlayerInfoMsgProto {
         return fashionId_;
       }
       /**
-       * <code>optional int32 fashion_id = 12;</code>
+       * <code>optional int32 fashionId = 10;</code>
        *
        * <pre>
        *时装ID
        * </pre>
        */
       public Builder setFashionId(int value) {
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00000200;
         fashionId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 fashion_id = 12;</code>
+       * <code>optional int32 fashionId = 10;</code>
        *
        * <pre>
        *时装ID
        * </pre>
        */
       public Builder clearFashionId() {
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00000200);
         fashionId_ = 0;
         onChanged();
         return this;
@@ -2803,17 +2645,17 @@ public final class PlayerInfoMsgProto {
 
       private int weaponId_ ;
       /**
-       * <code>optional int32 weapon_id = 13;</code>
+       * <code>optional int32 weaponId = 11;</code>
        *
        * <pre>
        *武器ID
        * </pre>
        */
       public boolean hasWeaponId() {
-        return ((bitField0_ & 0x00001000) == 0x00001000);
+        return ((bitField0_ & 0x00000400) == 0x00000400);
       }
       /**
-       * <code>optional int32 weapon_id = 13;</code>
+       * <code>optional int32 weaponId = 11;</code>
        *
        * <pre>
        *武器ID
@@ -2823,27 +2665,27 @@ public final class PlayerInfoMsgProto {
         return weaponId_;
       }
       /**
-       * <code>optional int32 weapon_id = 13;</code>
+       * <code>optional int32 weaponId = 11;</code>
        *
        * <pre>
        *武器ID
        * </pre>
        */
       public Builder setWeaponId(int value) {
-        bitField0_ |= 0x00001000;
+        bitField0_ |= 0x00000400;
         weaponId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 weapon_id = 13;</code>
+       * <code>optional int32 weaponId = 11;</code>
        *
        * <pre>
        *武器ID
        * </pre>
        */
       public Builder clearWeaponId() {
-        bitField0_ = (bitField0_ & ~0x00001000);
+        bitField0_ = (bitField0_ & ~0x00000400);
         weaponId_ = 0;
         onChanged();
         return this;
@@ -2851,17 +2693,17 @@ public final class PlayerInfoMsgProto {
 
       private int mountId_ ;
       /**
-       * <code>optional int32 mount_id = 14;</code>
+       * <code>optional int32 mountId = 12;</code>
        *
        * <pre>
        *坐骑ID
        * </pre>
        */
       public boolean hasMountId() {
-        return ((bitField0_ & 0x00002000) == 0x00002000);
+        return ((bitField0_ & 0x00000800) == 0x00000800);
       }
       /**
-       * <code>optional int32 mount_id = 14;</code>
+       * <code>optional int32 mountId = 12;</code>
        *
        * <pre>
        *坐骑ID
@@ -2871,27 +2713,27 @@ public final class PlayerInfoMsgProto {
         return mountId_;
       }
       /**
-       * <code>optional int32 mount_id = 14;</code>
+       * <code>optional int32 mountId = 12;</code>
        *
        * <pre>
        *坐骑ID
        * </pre>
        */
       public Builder setMountId(int value) {
-        bitField0_ |= 0x00002000;
+        bitField0_ |= 0x00000800;
         mountId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 mount_id = 14;</code>
+       * <code>optional int32 mountId = 12;</code>
        *
        * <pre>
        *坐骑ID
        * </pre>
        */
       public Builder clearMountId() {
-        bitField0_ = (bitField0_ & ~0x00002000);
+        bitField0_ = (bitField0_ & ~0x00000800);
         mountId_ = 0;
         onChanged();
         return this;
@@ -2899,17 +2741,17 @@ public final class PlayerInfoMsgProto {
 
       private int magicWeaponId_ ;
       /**
-       * <code>optional int32 magic_weapon_id = 15;</code>
+       * <code>optional int32 magicWeapon_id = 13;</code>
        *
        * <pre>
        *法宝ID
        * </pre>
        */
       public boolean hasMagicWeaponId() {
-        return ((bitField0_ & 0x00004000) == 0x00004000);
+        return ((bitField0_ & 0x00001000) == 0x00001000);
       }
       /**
-       * <code>optional int32 magic_weapon_id = 15;</code>
+       * <code>optional int32 magicWeapon_id = 13;</code>
        *
        * <pre>
        *法宝ID
@@ -2919,27 +2761,27 @@ public final class PlayerInfoMsgProto {
         return magicWeaponId_;
       }
       /**
-       * <code>optional int32 magic_weapon_id = 15;</code>
+       * <code>optional int32 magicWeapon_id = 13;</code>
        *
        * <pre>
        *法宝ID
        * </pre>
        */
       public Builder setMagicWeaponId(int value) {
-        bitField0_ |= 0x00004000;
+        bitField0_ |= 0x00001000;
         magicWeaponId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 magic_weapon_id = 15;</code>
+       * <code>optional int32 magicWeapon_id = 13;</code>
        *
        * <pre>
        *法宝ID
        * </pre>
        */
       public Builder clearMagicWeaponId() {
-        bitField0_ = (bitField0_ & ~0x00004000);
+        bitField0_ = (bitField0_ & ~0x00001000);
         magicWeaponId_ = 0;
         onChanged();
         return this;
@@ -2947,17 +2789,17 @@ public final class PlayerInfoMsgProto {
 
       private int wingId_ ;
       /**
-       * <code>optional int32 wing_id = 16;</code>
+       * <code>optional int32 wingId = 14;</code>
        *
        * <pre>
        *翅膀ID
        * </pre>
        */
       public boolean hasWingId() {
-        return ((bitField0_ & 0x00008000) == 0x00008000);
+        return ((bitField0_ & 0x00002000) == 0x00002000);
       }
       /**
-       * <code>optional int32 wing_id = 16;</code>
+       * <code>optional int32 wingId = 14;</code>
        *
        * <pre>
        *翅膀ID
@@ -2967,27 +2809,27 @@ public final class PlayerInfoMsgProto {
         return wingId_;
       }
       /**
-       * <code>optional int32 wing_id = 16;</code>
+       * <code>optional int32 wingId = 14;</code>
        *
        * <pre>
        *翅膀ID
        * </pre>
        */
       public Builder setWingId(int value) {
-        bitField0_ |= 0x00008000;
+        bitField0_ |= 0x00002000;
         wingId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 wing_id = 16;</code>
+       * <code>optional int32 wingId = 14;</code>
        *
        * <pre>
        *翅膀ID
        * </pre>
        */
       public Builder clearWingId() {
-        bitField0_ = (bitField0_ & ~0x00008000);
+        bitField0_ = (bitField0_ & ~0x00002000);
         wingId_ = 0;
         onChanged();
         return this;
@@ -2995,17 +2837,17 @@ public final class PlayerInfoMsgProto {
 
       private int pBagCount_ ;
       /**
-       * <code>optional int32 pBagCount = 17;</code>
+       * <code>optional int32 pBagCount = 15;</code>
        *
        * <pre>
        *用户背包格子数
        * </pre>
        */
       public boolean hasPBagCount() {
-        return ((bitField0_ & 0x00010000) == 0x00010000);
+        return ((bitField0_ & 0x00004000) == 0x00004000);
       }
       /**
-       * <code>optional int32 pBagCount = 17;</code>
+       * <code>optional int32 pBagCount = 15;</code>
        *
        * <pre>
        *用户背包格子数
@@ -3015,27 +2857,27 @@ public final class PlayerInfoMsgProto {
         return pBagCount_;
       }
       /**
-       * <code>optional int32 pBagCount = 17;</code>
+       * <code>optional int32 pBagCount = 15;</code>
        *
        * <pre>
        *用户背包格子数
        * </pre>
        */
       public Builder setPBagCount(int value) {
-        bitField0_ |= 0x00010000;
+        bitField0_ |= 0x00004000;
         pBagCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 pBagCount = 17;</code>
+       * <code>optional int32 pBagCount = 15;</code>
        *
        * <pre>
        *用户背包格子数
        * </pre>
        */
       public Builder clearPBagCount() {
-        bitField0_ = (bitField0_ & ~0x00010000);
+        bitField0_ = (bitField0_ & ~0x00004000);
         pBagCount_ = 0;
         onChanged();
         return this;
@@ -3045,17 +2887,17 @@ public final class PlayerInfoMsgProto {
       private com.google.protobuf.SingleFieldBuilder<
           com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg, com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg.Builder, com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsgOrBuilder> postionMsgBuilder_;
       /**
-       * <code>optional .PostionMsg postionMsg = 18;</code>
+       * <code>optional .PostionMsg postionMsg = 16;</code>
        *
        * <pre>
        *当前位置
        * </pre>
        */
       public boolean hasPostionMsg() {
-        return ((bitField0_ & 0x00020000) == 0x00020000);
+        return ((bitField0_ & 0x00008000) == 0x00008000);
       }
       /**
-       * <code>optional .PostionMsg postionMsg = 18;</code>
+       * <code>optional .PostionMsg postionMsg = 16;</code>
        *
        * <pre>
        *当前位置
@@ -3069,7 +2911,7 @@ public final class PlayerInfoMsgProto {
         }
       }
       /**
-       * <code>optional .PostionMsg postionMsg = 18;</code>
+       * <code>optional .PostionMsg postionMsg = 16;</code>
        *
        * <pre>
        *当前位置
@@ -3085,11 +2927,11 @@ public final class PlayerInfoMsgProto {
         } else {
           postionMsgBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00020000;
+        bitField0_ |= 0x00008000;
         return this;
       }
       /**
-       * <code>optional .PostionMsg postionMsg = 18;</code>
+       * <code>optional .PostionMsg postionMsg = 16;</code>
        *
        * <pre>
        *当前位置
@@ -3103,11 +2945,11 @@ public final class PlayerInfoMsgProto {
         } else {
           postionMsgBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00020000;
+        bitField0_ |= 0x00008000;
         return this;
       }
       /**
-       * <code>optional .PostionMsg postionMsg = 18;</code>
+       * <code>optional .PostionMsg postionMsg = 16;</code>
        *
        * <pre>
        *当前位置
@@ -3115,7 +2957,7 @@ public final class PlayerInfoMsgProto {
        */
       public Builder mergePostionMsg(com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg value) {
         if (postionMsgBuilder_ == null) {
-          if (((bitField0_ & 0x00020000) == 0x00020000) &&
+          if (((bitField0_ & 0x00008000) == 0x00008000) &&
               postionMsg_ != com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg.getDefaultInstance()) {
             postionMsg_ =
               com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg.newBuilder(postionMsg_).mergeFrom(value).buildPartial();
@@ -3126,11 +2968,11 @@ public final class PlayerInfoMsgProto {
         } else {
           postionMsgBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00020000;
+        bitField0_ |= 0x00008000;
         return this;
       }
       /**
-       * <code>optional .PostionMsg postionMsg = 18;</code>
+       * <code>optional .PostionMsg postionMsg = 16;</code>
        *
        * <pre>
        *当前位置
@@ -3143,23 +2985,23 @@ public final class PlayerInfoMsgProto {
         } else {
           postionMsgBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00020000);
+        bitField0_ = (bitField0_ & ~0x00008000);
         return this;
       }
       /**
-       * <code>optional .PostionMsg postionMsg = 18;</code>
+       * <code>optional .PostionMsg postionMsg = 16;</code>
        *
        * <pre>
        *当前位置
        * </pre>
        */
       public com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg.Builder getPostionMsgBuilder() {
-        bitField0_ |= 0x00020000;
+        bitField0_ |= 0x00008000;
         onChanged();
         return getPostionMsgFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .PostionMsg postionMsg = 18;</code>
+       * <code>optional .PostionMsg postionMsg = 16;</code>
        *
        * <pre>
        *当前位置
@@ -3173,7 +3015,7 @@ public final class PlayerInfoMsgProto {
         }
       }
       /**
-       * <code>optional .PostionMsg postionMsg = 18;</code>
+       * <code>optional .PostionMsg postionMsg = 16;</code>
        *
        * <pre>
        *当前位置
@@ -3195,17 +3037,17 @@ public final class PlayerInfoMsgProto {
 
       private int cash_ ;
       /**
-       * <code>optional int32 cash = 19;</code>
+       * <code>optional int32 cash = 17;</code>
        *
        * <pre>
        * 非绑定仙玉
        * </pre>
        */
       public boolean hasCash() {
-        return ((bitField0_ & 0x00040000) == 0x00040000);
+        return ((bitField0_ & 0x00010000) == 0x00010000);
       }
       /**
-       * <code>optional int32 cash = 19;</code>
+       * <code>optional int32 cash = 17;</code>
        *
        * <pre>
        * 非绑定仙玉
@@ -3215,333 +3057,45 @@ public final class PlayerInfoMsgProto {
         return cash_;
       }
       /**
-       * <code>optional int32 cash = 19;</code>
+       * <code>optional int32 cash = 17;</code>
        *
        * <pre>
        * 非绑定仙玉
        * </pre>
        */
       public Builder setCash(int value) {
-        bitField0_ |= 0x00040000;
+        bitField0_ |= 0x00010000;
         cash_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 cash = 19;</code>
+       * <code>optional int32 cash = 17;</code>
        *
        * <pre>
        * 非绑定仙玉
        * </pre>
        */
       public Builder clearCash() {
-        bitField0_ = (bitField0_ & ~0x00040000);
+        bitField0_ = (bitField0_ & ~0x00010000);
         cash_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int repair_ ;
-      /**
-       * <code>optional int32 repair = 20;</code>
-       *
-       * <pre>
-       * 修为
-       * </pre>
-       */
-      public boolean hasRepair() {
-        return ((bitField0_ & 0x00080000) == 0x00080000);
-      }
-      /**
-       * <code>optional int32 repair = 20;</code>
-       *
-       * <pre>
-       * 修为
-       * </pre>
-       */
-      public int getRepair() {
-        return repair_;
-      }
-      /**
-       * <code>optional int32 repair = 20;</code>
-       *
-       * <pre>
-       * 修为
-       * </pre>
-       */
-      public Builder setRepair(int value) {
-        bitField0_ |= 0x00080000;
-        repair_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 repair = 20;</code>
-       *
-       * <pre>
-       * 修为
-       * </pre>
-       */
-      public Builder clearRepair() {
-        bitField0_ = (bitField0_ & ~0x00080000);
-        repair_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int points_ ;
-      /**
-       * <code>optional int32 points = 21;</code>
-       *
-       * <pre>
-       *积分
-       * </pre>
-       */
-      public boolean hasPoints() {
-        return ((bitField0_ & 0x00100000) == 0x00100000);
-      }
-      /**
-       * <code>optional int32 points = 21;</code>
-       *
-       * <pre>
-       *积分
-       * </pre>
-       */
-      public int getPoints() {
-        return points_;
-      }
-      /**
-       * <code>optional int32 points = 21;</code>
-       *
-       * <pre>
-       *积分
-       * </pre>
-       */
-      public Builder setPoints(int value) {
-        bitField0_ |= 0x00100000;
-        points_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 points = 21;</code>
-       *
-       * <pre>
-       *积分
-       * </pre>
-       */
-      public Builder clearPoints() {
-        bitField0_ = (bitField0_ & ~0x00100000);
-        points_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int job_ ;
-      /**
-       * <code>optional int32 job = 22;</code>
-       *
-       * <pre>
-       *职业
-       * </pre>
-       */
-      public boolean hasJob() {
-        return ((bitField0_ & 0x00200000) == 0x00200000);
-      }
-      /**
-       * <code>optional int32 job = 22;</code>
-       *
-       * <pre>
-       *职业
-       * </pre>
-       */
-      public int getJob() {
-        return job_;
-      }
-      /**
-       * <code>optional int32 job = 22;</code>
-       *
-       * <pre>
-       *职业
-       * </pre>
-       */
-      public Builder setJob(int value) {
-        bitField0_ |= 0x00200000;
-        job_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 job = 22;</code>
-       *
-       * <pre>
-       *职业
-       * </pre>
-       */
-      public Builder clearJob() {
-        bitField0_ = (bitField0_ & ~0x00200000);
-        job_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long equipExp_ ;
-      /**
-       * <code>optional int64 equipExp = 23;</code>
-       *
-       * <pre>
-       * 装备经验
-       * </pre>
-       */
-      public boolean hasEquipExp() {
-        return ((bitField0_ & 0x00400000) == 0x00400000);
-      }
-      /**
-       * <code>optional int64 equipExp = 23;</code>
-       *
-       * <pre>
-       * 装备经验
-       * </pre>
-       */
-      public long getEquipExp() {
-        return equipExp_;
-      }
-      /**
-       * <code>optional int64 equipExp = 23;</code>
-       *
-       * <pre>
-       * 装备经验
-       * </pre>
-       */
-      public Builder setEquipExp(long value) {
-        bitField0_ |= 0x00400000;
-        equipExp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int64 equipExp = 23;</code>
-       *
-       * <pre>
-       * 装备经验
-       * </pre>
-       */
-      public Builder clearEquipExp() {
-        bitField0_ = (bitField0_ & ~0x00400000);
-        equipExp_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int weaponAwaken_ ;
-      /**
-       * <code>optional int32 weaponAwaken = 24;</code>
-       *
-       * <pre>
-       * 当前武器觉醒等级
-       * </pre>
-       */
-      public boolean hasWeaponAwaken() {
-        return ((bitField0_ & 0x00800000) == 0x00800000);
-      }
-      /**
-       * <code>optional int32 weaponAwaken = 24;</code>
-       *
-       * <pre>
-       * 当前武器觉醒等级
-       * </pre>
-       */
-      public int getWeaponAwaken() {
-        return weaponAwaken_;
-      }
-      /**
-       * <code>optional int32 weaponAwaken = 24;</code>
-       *
-       * <pre>
-       * 当前武器觉醒等级
-       * </pre>
-       */
-      public Builder setWeaponAwaken(int value) {
-        bitField0_ |= 0x00800000;
-        weaponAwaken_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 weaponAwaken = 24;</code>
-       *
-       * <pre>
-       * 当前武器觉醒等级
-       * </pre>
-       */
-      public Builder clearWeaponAwaken() {
-        bitField0_ = (bitField0_ & ~0x00800000);
-        weaponAwaken_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int stateLv_ ;
-      /**
-       * <code>optional int32 stateLv = 25;</code>
-       *
-       * <pre>
-       *境界等级
-       * </pre>
-       */
-      public boolean hasStateLv() {
-        return ((bitField0_ & 0x01000000) == 0x01000000);
-      }
-      /**
-       * <code>optional int32 stateLv = 25;</code>
-       *
-       * <pre>
-       *境界等级
-       * </pre>
-       */
-      public int getStateLv() {
-        return stateLv_;
-      }
-      /**
-       * <code>optional int32 stateLv = 25;</code>
-       *
-       * <pre>
-       *境界等级
-       * </pre>
-       */
-      public Builder setStateLv(int value) {
-        bitField0_ |= 0x01000000;
-        stateLv_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 stateLv = 25;</code>
-       *
-       * <pre>
-       *境界等级
-       * </pre>
-       */
-      public Builder clearStateLv() {
-        bitField0_ = (bitField0_ & ~0x01000000);
-        stateLv_ = 0;
         onChanged();
         return this;
       }
 
       private int guildId_ ;
       /**
-       * <code>optional int32 guildId = 26;</code>
+       * <code>optional int32 guildId = 18;</code>
        *
        * <pre>
        * 所在帮派ID
        * </pre>
        */
       public boolean hasGuildId() {
-        return ((bitField0_ & 0x02000000) == 0x02000000);
+        return ((bitField0_ & 0x00020000) == 0x00020000);
       }
       /**
-       * <code>optional int32 guildId = 26;</code>
+       * <code>optional int32 guildId = 18;</code>
        *
        * <pre>
        * 所在帮派ID
@@ -3551,27 +3105,27 @@ public final class PlayerInfoMsgProto {
         return guildId_;
       }
       /**
-       * <code>optional int32 guildId = 26;</code>
+       * <code>optional int32 guildId = 18;</code>
        *
        * <pre>
        * 所在帮派ID
        * </pre>
        */
       public Builder setGuildId(int value) {
-        bitField0_ |= 0x02000000;
+        bitField0_ |= 0x00020000;
         guildId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 guildId = 26;</code>
+       * <code>optional int32 guildId = 18;</code>
        *
        * <pre>
        * 所在帮派ID
        * </pre>
        */
       public Builder clearGuildId() {
-        bitField0_ = (bitField0_ & ~0x02000000);
+        bitField0_ = (bitField0_ & ~0x00020000);
         guildId_ = 0;
         onChanged();
         return this;
@@ -3579,17 +3133,17 @@ public final class PlayerInfoMsgProto {
 
       private java.lang.Object guildName_ = "";
       /**
-       * <code>optional string guildName = 27;</code>
+       * <code>optional string guildName = 19;</code>
        *
        * <pre>
        * 所在帮派名字
        * </pre>
        */
       public boolean hasGuildName() {
-        return ((bitField0_ & 0x04000000) == 0x04000000);
+        return ((bitField0_ & 0x00040000) == 0x00040000);
       }
       /**
-       * <code>optional string guildName = 27;</code>
+       * <code>optional string guildName = 19;</code>
        *
        * <pre>
        * 所在帮派名字
@@ -3610,7 +3164,7 @@ public final class PlayerInfoMsgProto {
         }
       }
       /**
-       * <code>optional string guildName = 27;</code>
+       * <code>optional string guildName = 19;</code>
        *
        * <pre>
        * 所在帮派名字
@@ -3630,7 +3184,7 @@ public final class PlayerInfoMsgProto {
         }
       }
       /**
-       * <code>optional string guildName = 27;</code>
+       * <code>optional string guildName = 19;</code>
        *
        * <pre>
        * 所在帮派名字
@@ -3641,26 +3195,26 @@ public final class PlayerInfoMsgProto {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x04000000;
+  bitField0_ |= 0x00040000;
         guildName_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional string guildName = 27;</code>
+       * <code>optional string guildName = 19;</code>
        *
        * <pre>
        * 所在帮派名字
        * </pre>
        */
       public Builder clearGuildName() {
-        bitField0_ = (bitField0_ & ~0x04000000);
+        bitField0_ = (bitField0_ & ~0x00040000);
         guildName_ = getDefaultInstance().getGuildName();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string guildName = 27;</code>
+       * <code>optional string guildName = 19;</code>
        *
        * <pre>
        * 所在帮派名字
@@ -3671,7 +3225,7 @@ public final class PlayerInfoMsgProto {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x04000000;
+  bitField0_ |= 0x00040000;
         guildName_ = value;
         onChanged();
         return this;
@@ -3679,17 +3233,17 @@ public final class PlayerInfoMsgProto {
 
       private int guildJob_ ;
       /**
-       * <code>optional int32 guildJob = 28;</code>
+       * <code>optional int32 guildJob = 20;</code>
        *
        * <pre>
        * 自己在帮派的职位
        * </pre>
        */
       public boolean hasGuildJob() {
-        return ((bitField0_ & 0x08000000) == 0x08000000);
+        return ((bitField0_ & 0x00080000) == 0x00080000);
       }
       /**
-       * <code>optional int32 guildJob = 28;</code>
+       * <code>optional int32 guildJob = 20;</code>
        *
        * <pre>
        * 自己在帮派的职位
@@ -3699,28 +3253,364 @@ public final class PlayerInfoMsgProto {
         return guildJob_;
       }
       /**
-       * <code>optional int32 guildJob = 28;</code>
+       * <code>optional int32 guildJob = 20;</code>
        *
        * <pre>
        * 自己在帮派的职位
        * </pre>
        */
       public Builder setGuildJob(int value) {
-        bitField0_ |= 0x08000000;
+        bitField0_ |= 0x00080000;
         guildJob_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 guildJob = 28;</code>
+       * <code>optional int32 guildJob = 20;</code>
        *
        * <pre>
        * 自己在帮派的职位
        * </pre>
        */
       public Builder clearGuildJob() {
-        bitField0_ = (bitField0_ & ~0x08000000);
+        bitField0_ = (bitField0_ & ~0x00080000);
         guildJob_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int battleMode_ ;
+      /**
+       * <code>optional int32 battleMode = 21;</code>
+       *
+       * <pre>
+       * 战斗模式
+       * </pre>
+       */
+      public boolean hasBattleMode() {
+        return ((bitField0_ & 0x00100000) == 0x00100000);
+      }
+      /**
+       * <code>optional int32 battleMode = 21;</code>
+       *
+       * <pre>
+       * 战斗模式
+       * </pre>
+       */
+      public int getBattleMode() {
+        return battleMode_;
+      }
+      /**
+       * <code>optional int32 battleMode = 21;</code>
+       *
+       * <pre>
+       * 战斗模式
+       * </pre>
+       */
+      public Builder setBattleMode(int value) {
+        bitField0_ |= 0x00100000;
+        battleMode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 battleMode = 21;</code>
+       *
+       * <pre>
+       * 战斗模式
+       * </pre>
+       */
+      public Builder clearBattleMode() {
+        bitField0_ = (bitField0_ & ~0x00100000);
+        battleMode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pkVal_ ;
+      /**
+       * <code>optional int32 pkVal = 22;</code>
+       *
+       * <pre>
+       * pk值
+       * </pre>
+       */
+      public boolean hasPkVal() {
+        return ((bitField0_ & 0x00200000) == 0x00200000);
+      }
+      /**
+       * <code>optional int32 pkVal = 22;</code>
+       *
+       * <pre>
+       * pk值
+       * </pre>
+       */
+      public int getPkVal() {
+        return pkVal_;
+      }
+      /**
+       * <code>optional int32 pkVal = 22;</code>
+       *
+       * <pre>
+       * pk值
+       * </pre>
+       */
+      public Builder setPkVal(int value) {
+        bitField0_ |= 0x00200000;
+        pkVal_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 pkVal = 22;</code>
+       *
+       * <pre>
+       * pk值
+       * </pre>
+       */
+      public Builder clearPkVal() {
+        bitField0_ = (bitField0_ & ~0x00200000);
+        pkVal_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int repair_ ;
+      /**
+       * <code>optional int32 repair = 23;</code>
+       *
+       * <pre>
+       * 修为
+       * </pre>
+       */
+      public boolean hasRepair() {
+        return ((bitField0_ & 0x00400000) == 0x00400000);
+      }
+      /**
+       * <code>optional int32 repair = 23;</code>
+       *
+       * <pre>
+       * 修为
+       * </pre>
+       */
+      public int getRepair() {
+        return repair_;
+      }
+      /**
+       * <code>optional int32 repair = 23;</code>
+       *
+       * <pre>
+       * 修为
+       * </pre>
+       */
+      public Builder setRepair(int value) {
+        bitField0_ |= 0x00400000;
+        repair_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 repair = 23;</code>
+       *
+       * <pre>
+       * 修为
+       * </pre>
+       */
+      public Builder clearRepair() {
+        bitField0_ = (bitField0_ & ~0x00400000);
+        repair_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int job_ ;
+      /**
+       * <code>optional int32 job = 25;</code>
+       *
+       * <pre>
+       *optional int32 points = 24; //积分
+       * </pre>
+       */
+      public boolean hasJob() {
+        return ((bitField0_ & 0x00800000) == 0x00800000);
+      }
+      /**
+       * <code>optional int32 job = 25;</code>
+       *
+       * <pre>
+       *optional int32 points = 24; //积分
+       * </pre>
+       */
+      public int getJob() {
+        return job_;
+      }
+      /**
+       * <code>optional int32 job = 25;</code>
+       *
+       * <pre>
+       *optional int32 points = 24; //积分
+       * </pre>
+       */
+      public Builder setJob(int value) {
+        bitField0_ |= 0x00800000;
+        job_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 job = 25;</code>
+       *
+       * <pre>
+       *optional int32 points = 24; //积分
+       * </pre>
+       */
+      public Builder clearJob() {
+        bitField0_ = (bitField0_ & ~0x00800000);
+        job_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int equipExp_ ;
+      /**
+       * <code>optional int32 equipExp = 26;</code>
+       *
+       * <pre>
+       * 装备经验
+       * </pre>
+       */
+      public boolean hasEquipExp() {
+        return ((bitField0_ & 0x01000000) == 0x01000000);
+      }
+      /**
+       * <code>optional int32 equipExp = 26;</code>
+       *
+       * <pre>
+       * 装备经验
+       * </pre>
+       */
+      public int getEquipExp() {
+        return equipExp_;
+      }
+      /**
+       * <code>optional int32 equipExp = 26;</code>
+       *
+       * <pre>
+       * 装备经验
+       * </pre>
+       */
+      public Builder setEquipExp(int value) {
+        bitField0_ |= 0x01000000;
+        equipExp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 equipExp = 26;</code>
+       *
+       * <pre>
+       * 装备经验
+       * </pre>
+       */
+      public Builder clearEquipExp() {
+        bitField0_ = (bitField0_ & ~0x01000000);
+        equipExp_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int weaponAwaken_ ;
+      /**
+       * <code>optional int32 weaponAwaken = 27;</code>
+       *
+       * <pre>
+       * 当前武器觉醒等级
+       * </pre>
+       */
+      public boolean hasWeaponAwaken() {
+        return ((bitField0_ & 0x02000000) == 0x02000000);
+      }
+      /**
+       * <code>optional int32 weaponAwaken = 27;</code>
+       *
+       * <pre>
+       * 当前武器觉醒等级
+       * </pre>
+       */
+      public int getWeaponAwaken() {
+        return weaponAwaken_;
+      }
+      /**
+       * <code>optional int32 weaponAwaken = 27;</code>
+       *
+       * <pre>
+       * 当前武器觉醒等级
+       * </pre>
+       */
+      public Builder setWeaponAwaken(int value) {
+        bitField0_ |= 0x02000000;
+        weaponAwaken_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 weaponAwaken = 27;</code>
+       *
+       * <pre>
+       * 当前武器觉醒等级
+       * </pre>
+       */
+      public Builder clearWeaponAwaken() {
+        bitField0_ = (bitField0_ & ~0x02000000);
+        weaponAwaken_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int stateLv_ ;
+      /**
+       * <code>optional int32 stateLv = 28;</code>
+       *
+       * <pre>
+       *境界等级
+       * </pre>
+       */
+      public boolean hasStateLv() {
+        return ((bitField0_ & 0x04000000) == 0x04000000);
+      }
+      /**
+       * <code>optional int32 stateLv = 28;</code>
+       *
+       * <pre>
+       *境界等级
+       * </pre>
+       */
+      public int getStateLv() {
+        return stateLv_;
+      }
+      /**
+       * <code>optional int32 stateLv = 28;</code>
+       *
+       * <pre>
+       *境界等级
+       * </pre>
+       */
+      public Builder setStateLv(int value) {
+        bitField0_ |= 0x04000000;
+        stateLv_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 stateLv = 28;</code>
+       *
+       * <pre>
+       *境界等级
+       * </pre>
+       */
+      public Builder clearStateLv() {
+        bitField0_ = (bitField0_ & ~0x04000000);
+        stateLv_ = 0;
         onChanged();
         return this;
       }
@@ -3751,21 +3641,21 @@ public final class PlayerInfoMsgProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\032player/PlayerInfoMsg.proto\032\031warField/P" +
-      "ostionMsg.proto\"\211\004\n\rPlayerInfoMsg\022\021\n\tpla" +
-      "yer_id\030\001 \001(\003\022\017\n\007user_id\030\002 \001(\003\022\021\n\tnick_na" +
-      "me\030\003 \001(\t\022\r\n\005level\030\004 \001(\005\022\013\n\003exp\030\005 \001(\003\022\020\n\010" +
-      "toal_exp\030\006 \001(\003\022\r\n\005money\030\007 \001(\003\022\021\n\tbind_ca" +
-      "sh\030\010 \001(\005\022\021\n\tvip_level\030\t \001(\005\022\r\n\005fight\030\n \001" +
-      "(\005\022\016\n\006skinId\030\013 \001(\005\022\022\n\nfashion_id\030\014 \001(\005\022\021" +
-      "\n\tweapon_id\030\r \001(\005\022\020\n\010mount_id\030\016 \001(\005\022\027\n\017m" +
-      "agic_weapon_id\030\017 \001(\005\022\017\n\007wing_id\030\020 \001(\005\022\021\n" +
-      "\tpBagCount\030\021 \001(\005\022\037\n\npostionMsg\030\022 \001(\0132\013.P",
-      "ostionMsg\022\014\n\004cash\030\023 \001(\005\022\016\n\006repair\030\024 \001(\005\022" +
-      "\016\n\006points\030\025 \001(\005\022\013\n\003job\030\026 \001(\005\022\020\n\010equipExp" +
-      "\030\027 \001(\003\022\024\n\014weaponAwaken\030\030 \001(\005\022\017\n\007stateLv\030" +
-      "\031 \001(\005\022\017\n\007guildId\030\032 \001(\005\022\021\n\tguildName\030\033 \001(" +
-      "\t\022\020\n\010guildJob\030\034 \001(\005B7\n!com.app.empire.pr" +
-      "otocol.pb.playerB\022PlayerInfoMsgProto"
+      "ostionMsg.proto\"\360\003\n\rPlayerInfoMsg\022\020\n\010pla" +
+      "yerId\030\001 \001(\005\022\020\n\010nickName\030\002 \001(\t\022\r\n\005level\030\003" +
+      " \001(\005\022\013\n\003exp\030\004 \001(\005\022\r\n\005money\030\005 \001(\005\022\020\n\010bind" +
+      "Cash\030\006 \001(\005\022\020\n\010vipLevel\030\007 \001(\005\022\r\n\005fight\030\010 " +
+      "\001(\005\022\016\n\006skinId\030\t \001(\005\022\021\n\tfashionId\030\n \001(\005\022\020" +
+      "\n\010weaponId\030\013 \001(\005\022\017\n\007mountId\030\014 \001(\005\022\026\n\016mag" +
+      "icWeapon_id\030\r \001(\005\022\016\n\006wingId\030\016 \001(\005\022\021\n\tpBa" +
+      "gCount\030\017 \001(\005\022\037\n\npostionMsg\030\020 \001(\0132\013.Posti" +
+      "onMsg\022\014\n\004cash\030\021 \001(\005\022\017\n\007guildId\030\022 \001(\005\022\021\n\t",
+      "guildName\030\023 \001(\t\022\020\n\010guildJob\030\024 \001(\005\022\022\n\nbat" +
+      "tleMode\030\025 \001(\005\022\r\n\005pkVal\030\026 \001(\005\022\016\n\006repair\030\027" +
+      " \001(\005\022\013\n\003job\030\031 \001(\005\022\020\n\010equipExp\030\032 \001(\005\022\024\n\014w" +
+      "eaponAwaken\030\033 \001(\005\022\017\n\007stateLv\030\034 \001(\005B7\n!co" +
+      "m.app.empire.protocol.pb.playerB\022PlayerI" +
+      "nfoMsgProto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3785,7 +3675,7 @@ public final class PlayerInfoMsgProto {
     internal_static_PlayerInfoMsg_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_PlayerInfoMsg_descriptor,
-        new java.lang.String[] { "PlayerId", "UserId", "NickName", "Level", "Exp", "ToalExp", "Money", "BindCash", "VipLevel", "Fight", "SkinId", "FashionId", "WeaponId", "MountId", "MagicWeaponId", "WingId", "PBagCount", "PostionMsg", "Cash", "Repair", "Points", "Job", "EquipExp", "WeaponAwaken", "StateLv", "GuildId", "GuildName", "GuildJob", });
+        new java.lang.String[] { "PlayerId", "NickName", "Level", "Exp", "Money", "BindCash", "VipLevel", "Fight", "SkinId", "FashionId", "WeaponId", "MountId", "MagicWeaponId", "WingId", "PBagCount", "PostionMsg", "Cash", "GuildId", "GuildName", "GuildJob", "BattleMode", "PkVal", "Repair", "Job", "EquipExp", "WeaponAwaken", "StateLv", });
     com.app.empire.protocol.pb.warField.PostionMsgProto.getDescriptor();
   }
 

@@ -1,12 +1,12 @@
 package com.app.empire.gameaccount.dao;
 import java.util.List;
 
-import com.app.db.mysql.dao.UniversalDao;
+import com.app.db.mysql.base.dao.UniversalDao;
 import com.app.empire.gameaccount.bean.Account;
 /**
  * 接口 <code>AccountDAO</code>执行与Account表相关数据库操作
  * 
- * @see com.app.accountserver.account.dao.UniversalDao
+ * @see com.app.db.mysql.base.dao.accountserver.account.dao.UniversalDao
  * @author sunzx
  */
 public interface IAccountDao extends UniversalDao {

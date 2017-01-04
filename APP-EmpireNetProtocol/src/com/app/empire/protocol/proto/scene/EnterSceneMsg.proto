@@ -1,0 +1,5 @@
+option java_package = "com.app.empire.protocol.pb.scene";
+option java_outer_classname = "EnterSceneProto";
+message EnterSceneMsg {
+}
+

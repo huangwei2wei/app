@@ -7,7 +7,7 @@ import org.mortbay.log.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.app.db.mysql.dao.impl.BaseDaoSupport;
+import com.app.db.mysql.base.dao.impl.BaseDaoSupport;
 import com.app.empire.world.dao.mysql.gameLog.impl.LogAccountLoginDao;
 import com.app.empire.world.entity.mysql.gameLog.LogAccountLogin;
 import com.app.thread.ThreadPool;

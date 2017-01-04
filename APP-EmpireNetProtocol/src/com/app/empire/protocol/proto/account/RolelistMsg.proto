@@ -1,0 +1,7 @@
+option java_package = "com.app.empire.protocol.pb.account";
+option java_outer_classname = "RoleListMsgProto";
+import "account/RoleMsg.proto";
+message RoleListMsg {
+	repeated RoleMsg role=1; // 角色列表
+}
+

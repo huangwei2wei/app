@@ -1,23 +1,42 @@
 package com.app.empire.world.model.player;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.log4j.Logger;
+import org.aspectj.bridge.MessageUtil;
 
+import com.app.db.mysql.entity.FieldInfo;
+import com.app.empire.protocol.Protocol;
 import com.app.empire.protocol.data.backpack.UpdateGoodsData;
+import com.app.empire.protocol.pb.army.ArmyInfoMsgProto.ArmyInfoMsg;
+import com.app.empire.protocol.pb.army.HeroInfoMsgProto.HeroInfoMsg;
+import com.app.empire.protocol.pb.army.PlayerPositionInfoProto.PlayerPositionInfoMsg;
+import com.app.empire.protocol.pb.army.PropertyListMsgProto.PropertyListMsg;
+import com.app.empire.protocol.pb.army.PropertyMsgProto.PropertyMsg;
+import com.app.empire.protocol.pb.map.ReqChangeMapMsgProto.ReqChangeMapMsg;
+import com.app.empire.protocol.pb.player.PlayerInfoMsgProto.PlayerInfoMsg;
+import com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg;
+import com.app.empire.protocol.pb.warField.Vector3Proto.PBVector3;
+import com.app.empire.world.entity.mongo.HeroSkill;
 import com.app.empire.world.entity.mongo.Player;
 import com.app.empire.world.entity.mongo.PlayerGoods;
+import com.app.empire.world.entity.mongo.PlayerPostion;
 import com.app.empire.world.entity.mongo.PlayerTask;
+import com.app.empire.world.entity.mongo.Property;
+import com.app.empire.world.exception.PlayerDataException;
 import com.app.empire.world.logs.GameLogService;
 import com.app.empire.world.model.Client;
 import com.app.empire.world.service.factory.ServiceManager;
+import com.app.empire.world.service.map.manager.MapProxyManager;
+import com.app.empire.world.service.skill.SkillInventory;
 import com.app.empire.world.session.ConnectSession;
 import com.app.protocol.data.AbstractData;
+import com.app.protocol.data.AbstractData.EnumTarget;
 
 /**
  * 封装游戏世界角色类， 游戏角色的基本属性操作都在本类中继承或实现。
@@ -33,7 +52,8 @@ public class WorldPlayer {
 	private Player player;
 	private PlayerTask playerTask = null; // 玩家进行中的任务列表
 	private ConcurrentHashMap<Integer, PlayerGoods> needPushPlayerGoods = new ConcurrentHashMap<Integer, PlayerGoods>(); // 需要推送的物品
-	private ConcurrentHashMap<Integer, PlayerHeroVo> PlayerHeroMap = new ConcurrentHashMap<Integer, PlayerHeroVo>();// 英雄流水id->obj
+	// //////////////////////////////////////////////////////////////////////////////
+	SkillInventory skillInventory = null;
 
 	/**
 	 * 构造函数，初始化游戏人物各项数值
@@ -47,6 +67,7 @@ public class WorldPlayer {
 
 	// 初始化
 	public void init() {
+		skillInventory = new SkillInventory(this);
 	}
 
 	// 当前所对应的Session
@@ -115,107 +136,6 @@ public class WorldPlayer {
 		this.player = player;
 	}
 
-	// /**
-	// * 活力值增涨一点(但不超过最大值) 跨天回复到最大值
-	// */
-	// public int energyUp(int add) {
-	// Date vigorUpdateTime = playerInfo.getVigorUpdateTime();
-	// int vigor = playerInfo.getVigor();
-	// Calendar cal = Calendar.getInstance();
-	// if (!DateUtil.isSameDate(vigorUpdateTime, cal.getTime())) {
-	// // 购买次数清零
-	// buyVigorCount = 0;
-	// buyLimitedCount.clear();
-	// }
-	// int max = getMaxVigor();
-	// if (getVigor() >= max) {
-	// return 0;
-	// }
-	// vigor += add;
-	// playerInfo.setVigor(vigor);
-	// Map<String, String> info = new HashMap<String, String>();
-	// info.put("vigor", getVigor() + "");
-	// ServiceManager.getManager().getPlayerService().sendUpdatePlayer(info,
-	// this);
-	// return add;
-	// }
-
-	// /**
-	// * 根据上次更新时间到当前时间每5分钟增加一点。
-	// */
-	// public void addVigorFormTime() {
-	// Date vigorUpdateTime = playerInfo.getVigorUpdateTime();
-	// if (vigorUpdateTime == null)
-	// return;
-	// Calendar cal = Calendar.getInstance();
-	// long cha = cal.getTime().getTime() - vigorUpdateTime.getTime();
-	// long min = cha / (1000 * 60);
-	// // 6分钟加一点 注意：更改这个时间同时也要把定时器时间更改过来
-	// int addVigor = (int) min / 6;
-	// if (addVigor > 0) {
-	// addVigor = addVigor > 120 ? 120 : addVigor;
-	// for (int i = 0; i < addVigor; i++) {
-	// vigorUp(1);
-	// }
-	// playerInfo.setVigorUpdateTime(cal.getTime());
-	// }
-	// }
-	//
-	// /**
-	// * 获取活力
-	// *
-	// * @return
-	// */
-	// public int getVigor() {
-	// return playerInfo.getVigor();
-	// }
-	//
-	// public Date getVigorUpdateTime() {
-	// return playerInfo.getVigorUpdateTime();
-	// }
-	//
-	// public void setVigorUpdateTime(Date time) {
-	// playerInfo.setVigorUpdateTime(time);
-	// }
-
-	// /**
-	// * 扣除活力 输入正数
-	// *
-	// * @return
-	// */
-	// public void useVigor(int val) {
-	// int vigor = getVigor();
-	// if (getVigor() < 0)
-	// return;
-	// vigor -= val;
-	// vigor = vigor < 0 ? 0 : vigor;
-	// playerInfo.setVigor(vigor);
-	// Map<String, String> info = new HashMap<String, String>();
-	// info.put("vigor", getVigor() + "");
-	// ServiceManager.getManager().getPlayerService().sendUpdatePlayer(info,
-	// this);
-	// }
-	//
-	// /**
-	// * 增加购买次数
-	// */
-	// public void addBuyVigorCount() {
-	// buyVigorCount++;
-	// Map<String, String> info = new HashMap<String, String>();
-	// info.put("buyVigorTimes", buyVigorCount + "");
-	// ServiceManager.getManager().getPlayerService().sendUpdatePlayer(info,
-	// this);
-	// }
-
-	// /**
-	// * 已购买次数
-	// *
-	// * @return
-	// */
-	// public int getBuyVigorCount() {
-	// return buyVigorCount;
-	// }
-
 	public PlayerTask getPlayerTask() {
 		if (this.playerTask == null) {// 加载任务
 			ServiceManager.getManager().getPlayerTaskService().getPlayerListByAccountId(this);
@@ -243,9 +163,11 @@ public class WorldPlayer {
 
 	public class LoginOutThread implements Runnable {
 		private WorldPlayer player;
+
 		public LoginOutThread(WorldPlayer player) {
 			this.player = player;
 		}
+
 		public void run() {
 			// 记录玩家退出日志
 			GameLogService.logout(player.getPlayer().getId(), player.getPlayer().getLv(), (int) (player.getPlayer().getLoginTime().getTime() / 1000));
@@ -255,9 +177,11 @@ public class WorldPlayer {
 
 	public class LoginThread implements Runnable {
 		private WorldPlayer player;
+
 		public LoginThread(WorldPlayer player) {
 			this.player = player;
 		}
+
 		@Override
 		public void run() {
 			//
@@ -272,6 +196,7 @@ public class WorldPlayer {
 	public void addPushPlayerGoods(PlayerGoods playerGoods) {
 		this.needPushPlayerGoods.put(playerGoods.getId(), playerGoods);
 	}
+
 	/**
 	 * 推送背包物品的数量更新情况
 	 */
@@ -298,8 +223,116 @@ public class WorldPlayer {
 		needPushPlayerGoods.clear();
 	}
 
-	public ConcurrentHashMap<Integer, PlayerHeroVo> getPlayerHeroMap() {
-		return PlayerHeroMap;
+	/**
+	 * 加经验
+	 * 
+	 * @param exp
+	 * @throws PlayerDataException
+	 */
+	public void addEXP(int exp) throws PlayerDataException {
+		int playerLv = getPlayer().getLv();// 角色等级
+		/** 推送 */
 	}
 
+	public SkillInventory getSkillInventory() {
+		return skillInventory;
+	}
+
+	/** 回到出生点 */
+	public void backBornPoint() {
+		int born_map = 1001;
+		FieldInfo fieldTemp = ServiceManager.getManager().getGameConfigService().getFieldInfoConfig().get(born_map);
+		ReqChangeMapMsg.Builder reqBuilder = ReqChangeMapMsg.newBuilder();
+		PostionMsg.Builder postion = PostionMsg.newBuilder();
+		postion.setMapId(born_map);
+		postion.setMapKey(born_map);
+		PBVector3.Builder builder = PBVector3.newBuilder();
+		builder.setX((int) (fieldTemp.getX()));
+		builder.setY((int) (fieldTemp.getY()));
+		builder.setZ((int) (fieldTemp.getZ()));
+		postion.setPostion(builder);
+		reqBuilder.setPostionMsg(postion);
+		connSession.write(Protocol.MAIN_MAP, Protocol.MAP_ChangeMap, reqBuilder.build(), EnumTarget.SCENESSERVER.getValue());
+		// PBMessage message = MessageUtil.buildMessage(Protocol.S_ENTERSCENE, getPlayerId(), reqBuilder);
+		// sendPbMessage(message);
+	}
+
+	/**
+	 * 构建协议数据
+	 * 
+	 * @return
+	 */
+	public ArmyInfoMsg.Builder getArmyPacket() {
+		ArmyInfoMsg.Builder army = ArmyInfoMsg.newBuilder();
+		army.setPlayerInfo(getPlayerInfoProto());
+		army.setHeoBattleInfo(getHeoBattleInfo());
+		army.setPostionInfo(getPos());
+		return army;
+	}
+
+	// 构建角色数据
+	public PlayerInfoMsg.Builder getPlayerInfoProto() {
+		PlayerInfoMsg.Builder msg = PlayerInfoMsg.newBuilder();
+		msg.setPlayerId(player.getId());
+		msg.setNickName(player.getNickname());
+		msg.setFight(player.getFight());
+		msg.setLevel(player.getLv());
+		msg.setExp(player.getLvExp());
+		msg.setMoney(player.getGold());
+		msg.setJob(1);
+		msg.setSkinId(1);
+		msg.setCash(player.getDiamond());
+		PlayerPostion playerPostion = player.getPostion();
+		if (playerPostion != null) {
+			PostionMsg.Builder pos = PostionMsg.newBuilder();
+			pos.setMapId(playerPostion.getMapId());
+			pos.setMapKey(playerPostion.getMapTempId());
+			PBVector3.Builder pbv = PBVector3.newBuilder();
+			pbv.setX(playerPostion.getX());
+			pbv.setY(playerPostion.getY());
+			pbv.setZ(playerPostion.getZ());
+			pos.setPostion(pbv);
+			msg.setPostionMsg(pos);
+		}
+
+		return msg;
+	}
+
+	// 构建英雄战斗数据
+	public HeroInfoMsg.Builder getHeoBattleInfo() {
+		HeroInfoMsg.Builder msg = HeroInfoMsg.newBuilder();
+		msg.setPlayerId(this.player.getId());
+		Map<Integer, HeroSkill> heroSkills = this.skillInventory.getSkill();
+		for (HeroSkill heroSkill : heroSkills.values()) {
+			msg.addBattleSkills(heroSkill.getSkillExtId());
+		}
+		msg.addBattleSkills(1001);
+		// 属性
+		if (player.getProperty() != null) {
+			PropertyListMsg.Builder proList = PropertyListMsg.newBuilder();
+			for (Property entry : player.getProperty().values()) {
+				PropertyMsg.Builder pro = PropertyMsg.newBuilder();
+				pro.setType(entry.getKey());
+				pro.setBasePoint(entry.getVal());
+				proList.addPropertys(pro);
+			}
+			msg.setPropertis(proList);
+		}
+		return msg;
+	}
+
+	// 构建玩家位置数据
+	public PlayerPositionInfoMsg.Builder getPos() {
+		PlayerPositionInfoMsg.Builder playerPositionInfoMsg = PlayerPositionInfoMsg.newBuilder();
+		PostionMsg.Builder posMsg = PostionMsg.newBuilder();
+		posMsg.setMapId(player.getPostion().getMapId());
+		posMsg.setMapKey(player.getPostion().getMapTempId());
+		PBVector3.Builder vec = PBVector3.newBuilder();
+		vec.setX(player.getPostion().getX());
+		vec.setY(player.getPostion().getY());
+		vec.setZ(player.getPostion().getZ());
+		posMsg.setPostion(vec);
+		playerPositionInfoMsg.setCurPos(posMsg);
+		return playerPositionInfoMsg;
+	}
 }

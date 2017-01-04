@@ -20,6 +20,7 @@ public class Demo {
 		final long n = h1 * x + h2 * y;
 		return (int) (n & mask);
 	}
+
 	/**
 	 * @param args
 	 */
@@ -200,39 +201,46 @@ public class Demo {
 		// }
 		// }
 
-//		for (int i = 0; i < 10; i++) {
-//			System.out.println("----------c" + i);
-//			aaa : {
-//				System.out.println("----------b");
-//				if (i > 2) {
-//					System.out.println(i);
-////					 continue;
-////					break bbb;
-//				}
-//				System.out.println("aaa");
-//			}
-//			bbb : {
-//				System.out.println("bbbb");
-//			}
-//		}
-		
-//		 Calendar cal = Calendar.getInstance();
-//		 int i = cal.get(Calendar.DAY_OF_WEEK);
-//		 System.out.println(i);
-//		 HashMap<String, String> m = new HashMap<String, String>();
-//		 m.put("1", "a");
-//		 m.put("2", "a");
-//		 
-//		 System.out.println(m.get(1+""));
-//		if((0 & 0x1) != 0x0){
-//			System.out.println("1");
-//			
-//		}
-//		System.out.println(1 & 0x1);
-		
-		
-		String t=Thread.currentThread().getContextClassLoader().getResource("mapData").getPath();
-		System.out.println("t---"+t);
+		// for (int i = 0; i < 10; i++) {
+		// System.out.println("----------c" + i);
+		// aaa : {
+		// System.out.println("----------b");
+		// if (i > 2) {
+		// System.out.println(i);
+		// // continue;
+		// // break bbb;
+		// }
+		// System.out.println("aaa");
+		// }
+		// bbb : {
+		// System.out.println("bbbb");
+		// }
+		// }
+
+		// Calendar cal = Calendar.getInstance();
+		// int i = cal.get(Calendar.DAY_OF_WEEK);
+		// System.out.println(i);
+		// HashMap<String, String> m = new HashMap<String, String>();
+		// m.put("1", "a");
+		// m.put("2", "a");
+		//
+		// System.out.println(m.get(1+""));
+		// if((0 & 0x1) != 0x0){
+		// System.out.println("1");
+		//
+		// }
+		// System.out.println(1 & 0x1);
+
+		// String t=Thread.currentThread().getContextClassLoader().getResource("mapData").getPath();
+		// System.out.println("t---"+t);
+
+		HashMap<Integer, String> m = new HashMap<Integer, String>();
+		m.put(10000, "aaaaa");
+		m.put(100001, "aaaaa1");
+		System.out.println(m);
+		m.remove(Integer.valueOf(10000));
+		m.remove(100001);
+		System.out.println(m);
 	}
 
 }

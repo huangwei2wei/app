@@ -3,7 +3,7 @@ package com.app.empire.scene.util.exec;
 import org.apache.log4j.Logger;
 
 public abstract class Action implements Runnable {
-	private Logger log = Logger.getLogger(Action.class);
+	protected Logger log = Logger.getLogger(Action.class);
 	private ActionQueue queue;
 	protected Long createTime;
 

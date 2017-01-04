@@ -1,0 +1,9 @@
+option java_package = "com.app.empire.protocol.pb.battle";
+option java_outer_classname = "PlayerKillMonsterProto";
+//通知center。玩家杀死怪物
+message PlayerKillMonsterMsg {
+	required int64 playerId = 1;
+	required int64 beKillId = 2;
+	optional int32 type = 3;//1 怪物 2 人物
+	optional int32 joinType = 4;//1 击杀者 2 参与者
+}

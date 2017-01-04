@@ -21,7 +21,7 @@
 			</list>
 		</property>
 	</bean-->
-
+ 
 	<context:property-placeholder location="classpath:/jdbc.properties" />
 	<!-- 玩家log数据源配置 -->
 	<bean id="logDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">

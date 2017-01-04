@@ -1,0 +1,8 @@
+option java_package = "com.app.empire.protocol.pb.drop";
+option java_outer_classname = "DropItemProto";
+
+message DropItemMsg{
+	optional int64 id = 1; // 掉落物ID
+	optional int32 itemId = 4; // 物品ID
+	optional int32 count = 5; // 数量
+}

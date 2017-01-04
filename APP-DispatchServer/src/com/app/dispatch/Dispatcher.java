@@ -12,7 +12,7 @@ public abstract interface Dispatcher {
 
 	public abstract IoSession getSession(int paramInt);
 
-	public abstract void shutdown();
+	// public abstract void shutdown();
 
 	// public abstract void syncPlayer(INetData data);
 }

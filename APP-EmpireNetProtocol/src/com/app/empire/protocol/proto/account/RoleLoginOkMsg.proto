@@ -1,0 +1,24 @@
+option java_package = "com.app.empire.protocol.pb.account";
+option java_outer_classname = "RoleLoginOkMsgProto";
+import "army/PropertyListMsg.proto";
+// 角色登录成功，返回角色数据
+message RoleLoginOkMsg {
+	required int32 playerId=1;// 角色id
+	required int32 heroExtId=2;// 英雄id
+	required string nickname=3; // 玩家角色名称
+	required int32 lv=4; // 玩家等级
+	required int32 lvExp=5; // 玩家等级
+	required int32 vipLv=6; // 玩家vip等级
+	required int32 vipExp=7; // 玩家vip经验
+	required int32 fight=8; // 玩家当前战斗力
+	required int32 diamond=9;// 钻石
+	required int32 gold=10; // 玩家金币数量
+	required int32 power=11;// 体力
+	optional PropertyListMsg property=12;// 属性
+ 
+
+
+ 
+ 
+}
+

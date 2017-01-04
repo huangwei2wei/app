@@ -1,0 +1,7 @@
+option java_package = "com.app.empire.protocol.pb.map";
+option java_outer_classname = "SpawnNodeChangeListMsgProto";
+import "map/SpawnNodeChangeMsg.proto";
+message SpawnNodeChangeListMsg{
+	repeated SpawnNodeChangeMsg list=1;//变更后的节点集
+}
+

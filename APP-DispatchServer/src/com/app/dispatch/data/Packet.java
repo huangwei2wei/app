@@ -89,4 +89,8 @@ public class Packet {
 		return target;
 	}
 
+	public byte getProType() {
+		return proType;
+	}
+
 }

@@ -1,0 +1,9 @@
+option java_package = "com.app.empire.protocol.pb.army";
+option java_outer_classname = "ArmyInfoReloadMsgProto";
+import "warField/PostionMsg.proto";
+import "army/PropertyMsg.proto";
+message ArmyInfoReloadMsg {
+	repeated PropertyMsg propertys = 1; //属性回写
+	optional PostionMsg postion = 2; //位置回写
+}
+

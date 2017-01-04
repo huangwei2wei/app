@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.apache.mina.core.buffer.IoBuffer;
 import org.apache.mina.core.session.IoSession;
 
+import com.app.dispatch.vo.ClientInfo;
 import com.app.empire.protocol.Protocol;
 import com.app.protocol.INetData;
 
@@ -112,6 +113,9 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 			case Protocol.SERVER_NotifyMaxPlayer: // '\031'
 				maxPlayer(data);
 				break;
+			case Protocol.SERVER_BroadPb:// 广播指定的玩家
+				broadPb(data);
+				break;
 			case Protocol.SERVER_BroadCast: // '\027'
 				broadcast(data);
 				break;
@@ -120,9 +124,6 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 				break;
 			case Protocol.SERVER_Kick: // '\029' 提玩家下线
 				kick(data);
-				break;
-			case Protocol.SERVER_ShutDown: // '\030'
-				shutdown();// 重新开启dis
 				break;
 			case Protocol.SERVER_UpdateServerInfo: // '\091'
 				updateServerInfo(data);
@@ -167,7 +168,7 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 		}
 	}
 
-	/** 玩家频道设置 如聊天、pvp */
+	/** 玩家频道设置 如聊天 */
 	private void syncChannels(INetData data) throws Exception {
 		int sessionId = data.readInt();// 玩家session id
 		IoSession session = dispatcher.getSession(sessionId);
@@ -195,11 +196,6 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 		channelService.removeChannel(name);
 	}
 
-	/** 重新开启服务 */
-	private void shutdown() {
-		dispatcher.shutdown();
-	}
-
 	/**
 	 * 广播线上所有用户 此方法调用 SocketDispatcher中的broadcast方法
 	 * 
@@ -221,6 +217,25 @@ public class TimeControlProcessor implements ControlProcessor, Runnable {
 		Channel channel = channelService.getChannel(data.readString());
 		if (channel != null)
 			channel.broadcast(IoBuffer.wrap(data.readBytes()));
+	}
+
+	/**
+	 * 向指定的玩家广播数据
+	 * 
+	 * @param data
+	 * @throws Exception
+	 */
+	private void broadPb(INetData data) throws Exception {
+		int[] playerIds = data.readInts();
+		if (playerIds.length > 0) {
+			AllPlayer allPlayer = AllPlayer.getAllPlayer();
+			for (int id : playerIds) {
+				IoSession session = allPlayer.getSessions().get(id);
+				if (session != null) {
+					session.write(IoBuffer.wrap(data.readBytes()));
+				}
+			}
+		}
 	}
 
 	/**

@@ -2,7 +2,7 @@ package com.app.empire.world.dao.mysql.gameLog.impl;
 
 import org.springframework.stereotype.Repository;
 
-import com.app.db.mysql.dao.impl.GenericDaoHibernate;
+import com.app.db.mysql.base.dao.impl.GenericDaoHibernate;
 import com.app.empire.world.entity.mysql.gameLog.LogAccountLogin;
 
 /**

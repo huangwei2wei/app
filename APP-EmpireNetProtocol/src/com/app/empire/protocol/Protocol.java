@@ -22,6 +22,7 @@ public class Protocol extends ScenesProtocol {
 	public static final short	SERVER_SyncPlayer						= 12;	// 玩家角色信息同步(系统内部使用)
 	public static final short	SERVER_PlayerLogout						= 13;	// 玩家登出(主要用这个协议通知账号服务器)
 	// 用户管理（广播，踢下线等）
+	public static final short	SERVER_BroadPb						= 14;	// 广播玩家
 	public static final short	SERVER_BroadCast						= 15;	// 广播频道所有用户
 	public static final short	SERVER_ForceBroadCast					= 16;	// 广播线上所有用户（公告
 	public static final short	SERVER_ShutDown							= 17;	// dis 重新绑定

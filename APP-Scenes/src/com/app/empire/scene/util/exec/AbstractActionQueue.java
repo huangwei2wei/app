@@ -5,11 +5,14 @@ import java.util.Queue;
 
 import org.apache.log4j.Logger;
 
-
+/**
+ * 同一队列线程是安全的
+ * 
+ */
 public class AbstractActionQueue implements ActionQueue {
-	private Logger log = Logger.getLogger(AbstractActionQueue.class);
-	private Queue<Action> queue;
-	private ActionExecutor executor;
+	protected Logger log = Logger.getLogger(AbstractActionQueue.class);
+	private Queue<Action> queue;// 列队
+	private ActionExecutor executor;// 执行
 
 	public AbstractActionQueue(ActionExecutor executor) {
 		this.executor = executor;
@@ -43,7 +46,6 @@ public class AbstractActionQueue implements ActionQueue {
 				log.warn(action.toString() + " queue size : " + queue.size());
 			}
 		}
-
 		if (canExec) {
 			executor.execute(action);
 		}

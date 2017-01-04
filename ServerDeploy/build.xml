@@ -65,6 +65,10 @@
 		<echo message="build WorldServer.jar" />
 		<ant antfile="build.xml" dir="../APP-WorldServer/" />
 	</target>
+	<target name="callScenesServer">
+		<echo message="build ScenesServer.jar" />
+		<ant antfile="build.xml" dir="../APP-Scenes/" />
+	</target>
 	<target name="callDispatchServer">
 		<echo message="build DispatchServer.jar" />
 		<ant antfile="build.xml" dir="../APP-DispatchServer/" />
@@ -102,6 +106,7 @@
 		<ant target="callGameAccountServer" />
 		<ant target="callIpdServer" />
 		<ant target="callWorldServer" />
+		<ant target="callScenesServer" />
 		<ant target="callDispatchServer" />
 		<ant target="callChmod" />
 		<echo message="job done!!" />

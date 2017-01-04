@@ -1,0 +1,11 @@
+option java_package = "com.app.empire.protocol.pb.scene";
+option java_outer_classname = "PlayerMoveBoardcastProto";
+
+import "warField/PBVector3.proto";
+
+message PlayerMoveBoardcastMsg {
+	optional int64 id= 1;    //玩家id
+	optional PBVector3 cur = 2; //当前位置
+	optional PBVector3 tar = 3; //目标位置
+	optional int64 preArriveTargetServerTime = 4; //服务端当前时间戳
+}

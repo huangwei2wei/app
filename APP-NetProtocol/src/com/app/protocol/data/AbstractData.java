@@ -9,20 +9,20 @@ import com.app.session.Session;
  * 抽象类 AbstractData对应前后台协议接口常量定义类Protocol传输时产生的对应协议抽象bean数据
  * 
  * @author doter
- *
+ * 
  */
 public abstract class AbstractData {
 	/** 消息的目的地 */
-	protected byte					target;
+	protected byte target;
 	/** 协议类型 **/
-	protected byte					proType;
-	protected short					type;
-	protected short					subType;
-	protected IConnector			source;
-	protected int					serial;
-	protected int					sessionId;
-	protected Session				handlerSource;
-	private static AtomicInteger	staticSerial	= new AtomicInteger(0);
+	protected byte proType;
+	protected short type;
+	protected short subType;
+	protected IConnector source;
+	protected int serial;
+	protected int sessionId;
+	protected Session handlerSource;
+	private static AtomicInteger staticSerial = new AtomicInteger(0);
 
 	public AbstractData(short type, short subType, int sessionId, int serial) {
 		this.type = type;
@@ -36,7 +36,6 @@ public abstract class AbstractData {
 		this.subType = subType;
 		this.source = null;
 		this.serial = getIncrementSerial();
-		this.sessionId = -1;
 	}
 
 	public AbstractData(short type, short subType, int sessionId, int serial, byte target) {
@@ -52,7 +51,6 @@ public abstract class AbstractData {
 		this.subType = subType;
 		this.source = null;
 		this.serial = getIncrementSerial();
-		this.sessionId = -1;
 		this.target = target;
 	}
 
@@ -142,8 +140,8 @@ public abstract class AbstractData {
 	public enum EnumTarget {
 		WORLDSERVER((byte) 1, "发向world逻辑服务器"), SCENESSERVER((byte) 2, "发向场景服务器"), CLIENT((byte) 3, "发向场景服务器");
 
-		private byte	value;
-		private String	desc;
+		private byte value;
+		private String desc;
 
 		private EnumTarget(byte v, String desc) {
 			this.value = v;
@@ -162,8 +160,8 @@ public abstract class AbstractData {
 	public enum EnumProType {
 		COMMON((byte) 0, "自研协议"), PROBUFFER((byte) 1, "probuffer协议");
 
-		private byte	value;
-		private String	desc;
+		private byte value;
+		private String desc;
 
 		private EnumProType(byte v, String desc) {
 			this.value = v;

@@ -1,0 +1,7 @@
+option java_package = "com.app.empire.protocol.pb.map";
+option java_outer_classname = "SpawnNodeChangeMsgProto";
+message SpawnNodeChangeMsg{
+	optional int32  nodeId = 1; //节点ID
+	optional int32  statu = 2;  //节点状态
+}
+

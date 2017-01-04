@@ -1,0 +1,19 @@
+option java_package = "com.app.empire.protocol.pb.player";
+option java_outer_classname = "PlayerAttSnapProto";
+import "warField/PBVector3.proto";
+message PlayerAttSnapMsg {
+	optional int64 playerId = 1;    	//空属性
+	optional int32 type = 2;			//角色类型
+	optional int32 skinId = 3; 			//皮肤
+	optional PBVector3 postion = 4; 		//当前点
+	optional PBVector3 target = 5;		//目标点
+	optional int64 ownerId = 6;			//主人ID，主角不填
+	optional int32 bornNodeId=7;//出生点ID
+
+	optional int32 guildId = 8; // 所在帮派ID
+	optional string guildName = 9; // 所在帮派名字
+	optional int32 guildJob = 10; // 在帮派里的职位
+
+}
+
+

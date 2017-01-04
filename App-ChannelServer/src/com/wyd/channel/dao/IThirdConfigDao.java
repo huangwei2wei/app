@@ -1,6 +1,6 @@
 package com.wyd.channel.dao;
 
-import com.app.db.mysql.dao.UniversalDao;
+import com.app.db.mysql.base.dao.UniversalDao;
 
 
 

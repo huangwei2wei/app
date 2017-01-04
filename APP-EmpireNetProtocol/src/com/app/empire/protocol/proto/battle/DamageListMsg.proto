@@ -1,0 +1,8 @@
+option java_package = "com.app.empire.protocol.pb.battle";
+option java_outer_classname = "DamageListMsgProtocol";
+import "battle/DamageMsg.proto";
+message DamageListMsg {
+	optional int64 attackId = 1; //攻击唯一ID
+	repeated DamageMsg damages = 2;//伤害
+}
+

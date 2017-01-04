@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<project name="dddIpServer" default="all" basedir=".">
+<project name="scenesServer" default="all" basedir=".">
 	<property name="src.dir" value="src" />
 	<property name="build.dir" value="classes" />
-	<property name="deploy.dir" value="../ServerDeploy/ipdmain" />
+	<property name="deploy.dir" value="../ServerDeploy/scenesServer" />
 	<property name="config.res.dir" value="res/config" />
 	<property name="other.res.dir" value="res/other" />
 	<property name="script.res.dir" value="res/script" />
@@ -41,7 +41,7 @@
 		<jar basedir="${build.dir}" destfile="${deploy.dir}/${ant.project.name}.jar" />
 	</target>
 	<target name="cpotherfiles">
-		<echo message="Copy other files from ${script.res.dir}, ${config.res.dir} ." />
+		<echo message="Copy other files from ${script.res.dir}, ${config.res.dir}, ${other.res.dir}." />
 		<copy todir="${deploy.dir}">
 			<fileset dir="${script.res.dir}" defaultexcludes="true" includes="**/*" />
 			<fileset dir="${config.res.dir}" defaultexcludes="true" includes="**/*" />
@@ -49,5 +49,5 @@
 	</target>
 	<target name="deploy">
 	</target>
-	<target name="all" depends="prepare, clean, compile, jar,cpotherfiles" />
+	<target name="all" depends="prepare, clean,  compile, jar,cpotherfiles" />
 </project>

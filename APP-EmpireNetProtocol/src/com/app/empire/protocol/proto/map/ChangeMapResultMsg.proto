@@ -1,0 +1,8 @@
+option java_package = "com.app.empire.protocol.pb.map";
+option java_outer_classname = "ChangeMapResultMsgProto";
+import "warField/PostionMsg.proto";
+message ChangeMapResultMsg {
+	optional int32 result = 1; //进入状态 该字段暂不处理
+	optional int32 mapType = 2; //地图类型 该字段暂不处理
+	optional PostionMsg postion = 3; //地图位置坐标
+}

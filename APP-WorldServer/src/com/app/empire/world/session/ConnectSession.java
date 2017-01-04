@@ -37,8 +37,8 @@ public class ConnectSession extends Session {
 
 	private ConcurrentHashMap<Integer, Client> sessionId2Clients = new ConcurrentHashMap<Integer, Client>();// 链接时
 	private ConcurrentHashMap<Integer, Client> accountId2Clients = new ConcurrentHashMap<Integer, Client>();// 账号登录时
-	private ConcurrentHashMap<Integer, Integer> playerid2sessionid = new ConcurrentHashMap<Integer, Integer>();// 角色登录时
-	private ConcurrentHashMap<Integer, Client> playerId2Clients = new ConcurrentHashMap<Integer, Client>();// 角色登录时
+	// private ConcurrentHashMap<Integer, Integer> playerid2sessionid = new ConcurrentHashMap<Integer, Integer>();// 角色登录时
+	// private ConcurrentHashMap<Integer, Client> playerId2Clients = new ConcurrentHashMap<Integer, Client>();// 角色登录时
 
 	// /** 临时房间匹配池, 类型id->房间id->room,类型：1、神兽副本 */
 	// private HashMap<Integer, HashMap<Integer, Room>> roomPool = new HashMap<Integer, HashMap<Integer, Room>>();
@@ -62,12 +62,16 @@ public class ConnectSession extends Session {
 	@Override
 	public void closed() {
 		if (!(this.shutdown)) {
-			for (Entry<Integer, Client> entry : playerId2Clients.entrySet()) {
+			for (Entry<Integer, Client> entry : sessionId2Clients.entrySet()) {
 				Integer playerId = entry.getKey();
 				WorldPlayer worldPlayer = this.playerService.getWorldPlayers().get(playerId);
 				playerService.release(worldPlayer);// 移除所有在线玩家缓存并保存
-				ServiceManager.getManager().getPlayerService()
-						.writeLog("连接关闭保存玩家信息：id=" + worldPlayer.getPlayer().getId() + "---name=" + worldPlayer.getPlayer().getNickname() + "---level=" + worldPlayer.getPlayer().getLv());
+				ServiceManager
+						.getManager()
+						.getPlayerService()
+						.writeLog(
+								"连接关闭保存玩家信息：id=" + worldPlayer.getPlayer().getId() + "---name=" + worldPlayer.getPlayer().getNickname() + "---level="
+										+ worldPlayer.getPlayer().getLv());
 			}
 			log.info(this.name + " dis closed");
 			System.out.println("dispatch " + this.name + " closed");
@@ -90,7 +94,6 @@ public class ConnectSession extends Session {
 
 	}
 
-
 	/**
 	 * 根据玩家id发送对应数据包
 	 * 
@@ -98,11 +101,8 @@ public class ConnectSession extends Session {
 	 * @param playerId
 	 */
 	public void write(AbstractData seg, int playerId) {
-		Integer sessionId = this.playerid2sessionid.get(playerId);
-		if (sessionId != null) {
-			seg.setSessionId(sessionId.intValue());
-			write(seg);
-		}
+		seg.setSessionId(playerId);
+		write(seg);
 	}
 
 	/**
@@ -126,7 +126,7 @@ public class ConnectSession extends Session {
 	 * @return
 	 */
 	public int getPlayerCount() {
-		return this.playerId2Clients.size();
+		return this.accountId2Clients.size();
 	}
 
 	/**
@@ -166,11 +166,11 @@ public class ConnectSession extends Session {
 	}
 
 	public void loginOnline() {
-		log.info("ONLINE[" + this.name + "][" + this.playerid2sessionid.size() + "]");
+		log.info("ONLINE[" + this.name + "][" + this.accountId2Clients.size() + "]");
 	}
 
 	public int sessionSize() {
-		return this.playerid2sessionid.size();
+		return this.accountId2Clients.size();
 	}
 
 	/**
@@ -179,7 +179,7 @@ public class ConnectSession extends Session {
 	 * @param playerId
 	 */
 	public void kick(int playerId) {
-		Client client = this.playerId2Clients.get(playerId);
+		Client client = this.accountId2Clients.get(playerId);
 		if (client != null) {
 			removeClient(client);
 			this.killSession(client.getSessionId());
@@ -192,10 +192,12 @@ public class ConnectSession extends Session {
 	 * @param client
 	 */
 	public void removeClient(Client client) {
-		this.sessionId2Clients.remove(client.getSessionId());
+		Client removeClient = this.sessionId2Clients.remove(client.getSessionId());
+		if (removeClient == null) {
+			this.sessionId2Clients.remove(client.getPlayerId());
+		}
+		Client removeClient2 = this.sessionId2Clients.remove(8303);
 		this.accountId2Clients.remove(client.getAccountId());
-		this.playerId2Clients.remove(client.getPlayerId());
-		this.playerid2sessionid.remove(client.getPlayerId());
 
 		WorldPlayer worldPlayer = this.playerService.getWorldPlayers().get(client.getPlayerId());
 		if (worldPlayer != null)
@@ -203,7 +205,6 @@ public class ConnectSession extends Session {
 		else
 			log.info("没有创建 worldPlayer就下线了.");
 
-		
 		// if (client.getStatus() == Client.STATUS.PLAYERLOGIN) {
 		// } else {
 		// log.info("没有登录完成就下线了.");
@@ -329,13 +330,17 @@ public class ConnectSession extends Session {
 	 * @throws Exception
 	 */
 	public void loginPlayer(WorldPlayer worldPlayer, AbstractData data, Client client) throws Exception {
+		int playerId = worldPlayer.getPlayer().getId();
 		client.setStatus(Client.STATUS.PLAYERLOGIN);
-		client.setPlayerId(worldPlayer.getPlayer().getId());
+		client.setPlayerId(playerId);
+		client.setSessionId(playerId);
 		worldPlayer.setAccountClient(client);
 		worldPlayer.setConnectSession((ConnectSession) data.getHandlerSource());
+
+		sessionId2Clients.remove(data.getSessionId());
+		sessionId2Clients.put(playerId, client);
+
 		// addWorldPlayer(client, worldPlayer, data.getSessionId());
-		this.playerId2Clients.put(worldPlayer.getPlayer().getId(), client);
-		this.playerid2sessionid.put(worldPlayer.getPlayer().getId(), data.getSessionId());
 		// 初始化玩家频道
 		ServiceManager.getManager().getChatService().initPlayerChannels(this, worldPlayer);
 	}
@@ -351,24 +356,6 @@ public class ConnectSession extends Session {
 	// this.playerId2Clients.put(player.getPlayer().getId(), client);
 	// this.playerid2sessionid.put(player.getPlayer().getId(), sessionId);
 	// }
-
-	/**
-	 * 用户是否已经在线
-	 * 
-	 * @param playerId
-	 * @return
-	 */
-	public boolean contains(int playerId) {
-		return this.playerid2sessionid.containsKey(playerId);
-	}
-
-	public int getPlayerSessionId(int playerId) {
-		Integer sessionId = this.playerid2sessionid.get(playerId);
-		if (sessionId != null) {
-			return sessionId.intValue();
-		}
-		return -1;
-	}
 
 	/**
 	 * 拋出异常

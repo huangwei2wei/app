@@ -1,0 +1,12 @@
+option java_package = "com.app.empire.protocol.pb.campaign";
+option java_outer_classname = "CampaignStatuMsgProto";
+message CampaignStatuMsg{
+	optional int32  indexId= 1; //副本ID
+	optional int32  tempId=2;    //副本模板
+	optional int32  statu = 3;   //状态  0  正常退出 1 进入 2 通过结束退出 3 失败结束退出
+	optional int32  teamId = 4; //队伍ID
+	optional int32  taskId = 5; //副本任务ID
+	optional int64  playerId= 6; //成员ID
+	optional int32  isIn= 7; //在副本内还是在副本外
+}
+

@@ -1,0 +1,11 @@
+option java_package = "com.app.empire.protocol.pb.account";
+option java_outer_classname = "RoleLoginMsgProto";
+message RoleLoginMsg {
+	required string nickname=1;
+	required int32 heroExtId=2;
+	optional string clientModel=3;// 手机型号
+	optional string systemName=4;// 手机系统
+	optional string systemVersion=5;// 系统版本
+ 
+}
+

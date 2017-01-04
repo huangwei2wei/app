@@ -8,8 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.alibaba.fastjson.JSON;
-import com.app.db.mysql.dao.impl.UniversalDaoHibernate;
-import com.app.empire.world.dao.mysql.gameConfig.impl.BaseLanguageDao;
+import com.app.db.mysql.base.dao.impl.UniversalDaoHibernate;
+import com.app.db.mysql.dao.BaseLanguageDao;
+import com.app.db.mysql.dao.FieldInfoDao;
+import com.app.db.mysql.entity.FieldInfo;
 import com.app.empire.world.dao.mysql.gameConfig.impl.BaseModuleDao;
 import com.app.empire.world.dao.mysql.gameConfig.impl.BaseModuleSubDao;
 import com.app.empire.world.dao.mysql.gameConfig.impl.BaseRandomNameDao;
@@ -54,7 +56,7 @@ import com.app.empire.world.entity.mysql.gameConfig.TradeVip;
  * 加载游戏配置
  */
 
-@SuppressWarnings(value = {"rawtypes", "unchecked"})
+@SuppressWarnings(value = { "rawtypes", "unchecked" })
 @Service
 public class GameConfigService {
 	@Autowired
@@ -98,12 +100,63 @@ public class GameConfigService {
 	@Autowired
 	TradeVipDao tradeVipDao;// vip
 
+	@Autowired
+	private FieldInfoDao fieldInfoDao;// 地图数据
+	// 所有地图配置
+	private HashMap<Integer, FieldInfo> fieldInfoConfig = new HashMap<Integer, FieldInfo>();
+
+	public void load() {
+		loadFieldInfoConfig();
+
+		this.loadConfig(parameterDao, Parameter.class, "id");
+		this.loadConfig(baseLanguageDao, BaseLanguage.class, "id");
+		this.loadConfig(heroDao, Hero.class, "id");
+		this.loadConfig(heroExtDao, HeroExt.class, "id");
+		this.loadConfig(baseRandomNameDao, BaseRandomName.class, "id");
+		this.loadConfig(playerLvDao, PlayerLv.class, "id");
+		this.loadConfig(goodsDao, Goods.class, "id");
+		this.loadConfig(equipBarDao, EquipBar.class, "heroType", "stage");
+		this.loadConfig(equipRefineDao, EquipRefine.class, "quality", "star");
+		this.loadConfig(equipAchieveDao, EquipAchieve.class, "id");
+		this.loadConfig(skillDao, Skill.class, "id");// 技能基表
+		this.loadConfig(skillExtDao, SkillExt.class, "id");// 技能扩展
+		this.loadConfig(taskDao, Task.class, "id");// 任务
+		this.loadConfig(baseModuleDao, BaseModule.class, "id");// 模块
+		this.loadConfig(baseModuleSubDao, BaseModuleSub.class, "id");// 模块
+		this.loadConfig(mapCopyDao, MapCopy.class, "id");// 副本
+		this.loadConfig4Key(boxDao, Box.class, "boxId");// 宝箱
+		this.loadConfig4Key(shopDao, Store.class, "grade");// 商店
+		this.loadConfig(shopDao, Store.class, "id");// 商店
+		this.loadConfig(tradeNpcDao, TradeNpc.class, "type", "npcLv");// 兑换npc
+		this.loadConfig(tradeVipDao, TradeVip.class, "vipLv");// vip
+		System.out.println(this.gameConfig4MulKey);
+
+	}
+
+	/**
+	 * 加载地图配置数据
+	 */
+	private void loadFieldInfoConfig() {
+		fieldInfoConfig.clear();
+		List<FieldInfo> rsl = fieldInfoDao.getAll(FieldInfo.class);
+		for (FieldInfo f : rsl) {
+			fieldInfoConfig.put(f.getMapKey(), f);
+		}
+	}
+
+	public HashMap<Integer, FieldInfo> getFieldInfoConfig() {
+		return fieldInfoConfig;
+	}
+
+	// /////////////////////////////////////////////////////////////////////////////////////////
+
 	/** 一般格式配置　表名->id->map */
 	private HashMap<String, Map<Integer, Map>> gameConfig = new HashMap<String, Map<Integer, Map>>();
 	/** 指定key格式配置　表名->groupKey->id->map */
 	private HashMap<String, Map<Integer, Map<Integer, Map>>> gameConfig4Key = new HashMap<String, Map<Integer, Map<Integer, Map>>>();
 	/** 多键值分组格式配置　表名->String->map */
 	private HashMap<String, Map<String, Map>> gameConfig4MulKey = new HashMap<String, Map<String, Map>>();
+
 	/**
 	 * 一般格式配置　id->map
 	 * 
@@ -171,39 +224,14 @@ public class GameConfigService {
 		this.gameConfig4Key.put(classSimpleName, runMap);
 	}
 
-	public void load() {
-		this.loadConfig(parameterDao, Parameter.class, "id");
-		this.loadConfig(baseLanguageDao, BaseLanguage.class, "id");
-		this.loadConfig(heroDao, Hero.class, "id");
-		this.loadConfig(heroExtDao, HeroExt.class, "id");
-		this.loadConfig(baseRandomNameDao, BaseRandomName.class, "id");
-		this.loadConfig(playerLvDao, PlayerLv.class, "id");
-		this.loadConfig(goodsDao, Goods.class, "id");
-		this.loadConfig(equipBarDao, EquipBar.class, "heroType", "stage");
-		this.loadConfig(equipRefineDao, EquipRefine.class, "quality", "star");
-		this.loadConfig(equipAchieveDao, EquipAchieve.class, "id");
-		this.loadConfig(skillDao, Skill.class, "id");// 技能基表
-		this.loadConfig(skillExtDao, SkillExt.class, "id");// 技能扩展
-		this.loadConfig(taskDao, Task.class, "id");// 任务
-		this.loadConfig(baseModuleDao, BaseModule.class, "id");// 模块
-		this.loadConfig(baseModuleSubDao, BaseModuleSub.class, "id");// 模块
-		this.loadConfig(mapCopyDao, MapCopy.class, "id");// 副本
-		this.loadConfig4Key(boxDao, Box.class, "boxId");// 宝箱
-		this.loadConfig4Key(shopDao, Store.class, "grade");// 商店
-		this.loadConfig(shopDao, Store.class, "id");// 商店
-		this.loadConfig(tradeNpcDao, TradeNpc.class, "type", "npcLv");// 兑换npc
-		this.loadConfig(tradeVipDao, TradeVip.class, "vipLv");// vip
-
-		 System.out.println(this.gameConfig4MulKey);
-
-	}
-
 	public HashMap<String, Map<Integer, Map>> getGameConfig() {
 		return this.gameConfig;
 	}
+
 	public HashMap<String, Map<Integer, Map<Integer, Map>>> getGameConfig4Key() {
 		return gameConfig4Key;
 	}
+
 	public HashMap<String, Map<String, Map>> getGameConfig4MulKey() {
 		return gameConfig4MulKey;
 	}

@@ -11,7 +11,7 @@ public class ClientInfo {
 	private long moveTime = 0;// 移动时间
 	private int moveCount = 0;// 移动次数
 	private IoSession ioSession;// 连接客户端的ioSession
-//	private Player player;
+	private int playerId;
 	private Timer timer = new Timer();
 	private short protocolType;// 上一次执行的协议
 	private short protocolSubType;// 上一次执行的协议
@@ -22,6 +22,14 @@ public class ClientInfo {
 
 	public long getHeartbeatTime() {
 		return heartbeatTime;
+	}
+
+	public int getPlayerId() {
+		return playerId;
+	}
+
+	public void setPlayerId(int playerId) {
+		this.playerId = playerId;
 	}
 
 	public void setHeartbeatTime(long heartbeatTime) {
@@ -83,12 +91,15 @@ public class ClientInfo {
 	public void addHeartbeatCount() {
 		this.heartbeatCount++;
 	}
+
 	public void addProtocolCount() {
 		this.protocolCount++;
 	}
+
 	public void addMovecount() {
 		this.moveCount++;
 	}
+
 	public Timer getTimer() {
 		return timer;
 	}

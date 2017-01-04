@@ -1,0 +1,10 @@
+option java_package = "com.app.empire.protocol.pb.scene";
+option java_outer_classname = "MonsterPosSyncProto";
+
+import "warField/PBVector3.proto";
+
+message MonsterPosSyncMsg{
+	optional int64 livingId = 1;//怪物ID
+	optional PBVector3 cur = 2; //当前位置
+}
+

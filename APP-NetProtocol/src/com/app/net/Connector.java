@@ -18,17 +18,17 @@ import com.app.protocol.handler.IDataHandler;
 import com.google.protobuf.Message;
 
 public abstract class Connector implements IConnector {
-	protected static final Logger	log					= Logger.getLogger(Connector.class);
-	protected InetSocketAddress		address;
-	protected String				userName			= "";
-	protected String				password			= "";
-	protected boolean				needRetry			= false;
-	protected NioSocketConnector	connector;
-	protected SocketSessionConfig	config;
-	protected int					receiveBufferSize	= 65534;
-	protected int					sendBufferSize		= 65534;
-	protected IoSession				session;
-	protected String				id;
+	protected static final Logger log = Logger.getLogger(Connector.class);
+	protected InetSocketAddress address;
+	protected String userName = "";
+	protected String password = "";
+	protected boolean needRetry = false;
+	protected NioSocketConnector connector;
+	protected SocketSessionConfig config;
+	protected int receiveBufferSize = 65534;
+	protected int sendBufferSize = 65534;
+	protected IoSession session;
+	protected String id;
 
 	public Connector(String id, InetSocketAddress address) {
 		this.id = id;
@@ -82,14 +82,14 @@ public abstract class Connector implements IConnector {
 		this.session.write(data);
 	}
 
-	public void send(short type, short subType, Message msg) {
-		PbAbstractData pbMsg = new PbAbstractData(type, subType);
+	public void send(short type, short subType, Message msg, byte target) {
+		PbAbstractData pbMsg = new PbAbstractData(type, subType, target);
 		pbMsg.setBytes(msg.toByteArray());
 		send(pbMsg);
 	}
 
-	public void send(short type, short subType, int sessionId, int serial, Message msg) {
-		PbAbstractData pbMsg = new PbAbstractData(type, subType, sessionId, serial);
+	public void send(short type, short subType, int sessionId, int serial, Message msg, byte target) {
+		PbAbstractData pbMsg = new PbAbstractData(type, subType, sessionId, serial, target);
 		pbMsg.setBytes(msg.toByteArray());
 		send(pbMsg);
 	}
@@ -110,7 +110,7 @@ public abstract class Connector implements IConnector {
 
 	/**
 	 * 原始的会话处理
-	 *
+	 * 
 	 */
 	public class OriginalSessionHandler extends IoHandlerAdapter {
 		@Override

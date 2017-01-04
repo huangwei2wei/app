@@ -4,9 +4,13 @@ import java.util.Date;
 
 import org.apache.log4j.Logger;
 
-import com.app.empire.protocol.data.account.RoleLogin;
-import com.app.empire.protocol.data.account.RoleLoginOk;
+import com.app.empire.protocol.Protocol;
+import com.app.empire.protocol.pb.account.RoleLoginMsgProto.RoleLoginMsg;
+import com.app.empire.protocol.pb.account.RoleLoginOkMsgProto.RoleLoginOkMsg;
+import com.app.empire.protocol.pb.army.PropertyListMsgProto.PropertyListMsg;
+import com.app.empire.protocol.pb.army.PropertyMsgProto.PropertyMsg;
 import com.app.empire.world.entity.mongo.Player;
+import com.app.empire.world.entity.mongo.Property;
 import com.app.empire.world.exception.CreatePlayerException;
 import com.app.empire.world.exception.ErrorMessages;
 import com.app.empire.world.model.Client;
@@ -14,6 +18,8 @@ import com.app.empire.world.model.player.WorldPlayer;
 import com.app.empire.world.service.factory.ServiceManager;
 import com.app.empire.world.session.ConnectSession;
 import com.app.protocol.data.AbstractData;
+import com.app.protocol.data.AbstractData.EnumTarget;
+import com.app.protocol.data.PbAbstractData;
 import com.app.protocol.exception.ProtocolException;
 import com.app.protocol.handler.IDataHandler;
 
@@ -27,11 +33,14 @@ public class RoleLoginHandler implements IDataHandler {
 
 	public AbstractData handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
-		RoleLogin login = (RoleLogin) data;
+		// RoleLogin login = (RoleLogin) data;
+		PbAbstractData msg = (PbAbstractData) data;
+		RoleLoginMsg login = RoleLoginMsg.parseFrom(msg.getBytes());
 		Client client = session.getClient(data.getSessionId());
-
-		if (client == null || !client.isLogin())
+		if (client == null || !client.isLogin()) {
+			log.error("client is null sessionId:" + data.getSessionId());
 			return null;
+		}
 
 		if (session.isFull()) {
 			session.removeClient(client);
@@ -56,25 +65,45 @@ public class RoleLoginHandler implements IDataHandler {
 			// 角色登录成功
 			session.loginPlayer(worldPlayer, data, client);
 			player.setLoginTime(new Date());// 设置登录时间
-			RoleLoginOk playerLoginOk = new RoleLoginOk(data.getSessionId(), data.getSerial());
-			playerLoginOk.setId(player.getId());
+			// RoleLoginOk playerLoginOk = new RoleLoginOk(data.getSessionId(), data.getSerial());
+
+			RoleLoginOkMsg.Builder playerLoginOk = RoleLoginOkMsg.newBuilder();
+			playerLoginOk.setPlayerId(player.getId());
 			playerLoginOk.setNickname(player.getNickname());
+			playerLoginOk.setHeroExtId(player.getHeadId());
 			playerLoginOk.setLv(player.getLv());
 			playerLoginOk.setLvExp(player.getLvExp());
 			playerLoginOk.setVipLv(player.getVipLv());
 			playerLoginOk.setVipExp(player.getVipExp());
 			playerLoginOk.setDiamond(player.getDiamond());
 			playerLoginOk.setGold(player.getGold());
-			playerLoginOk.setProperty(player.getProperty());
+			playerLoginOk.setPower(player.getPower());
+			if (player.getProperty() != null) {
+				PropertyListMsg.Builder proList = PropertyListMsg.newBuilder();
+				for (Property entry : player.getProperty().values()) {
+					PropertyMsg.Builder pro = PropertyMsg.newBuilder();
+					pro.setType(entry.getKey());
+					pro.setBasePoint(entry.getVal());
+					proList.addPropertys(pro);
+				}
+				playerLoginOk.setProperty(proList);
+			}
 			playerLoginOk.setFight(player.getFight());
-			//log.info("udid:" + client.getName());
-			return playerLoginOk;
+			// log.info("udid:" + client.getName());
+			// return playerLoginOk;
+
+			// session.write(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_RoleLoginOk, data.getSessionId(), data.getSerial(), playerLoginOk.build(), EnumTarget.CLIENT.getValue());
+			session.write(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_RoleLoginOk, data.getSessionId(), data.getSerial(), worldPlayer.getArmyPacket().build(), EnumTarget.SCENESSERVER.getValue());
+			System.out.println(data.getSessionId() + "    " + data.getSerial());
+			return null;
 		} catch (CreatePlayerException ex) {
+			this.log.error(ex, ex);
 			throw new ProtocolException(ex.getMessage(), data.getSerial(), data.getSessionId(), data.getType(), data.getSubType());
 		} catch (ProtocolException ex) {
 			ServiceManager.getManager().getPlayerService().release(worldPlayer);
 			throw ex;
 		} catch (Exception ex) {
+			ex.printStackTrace();
 			this.log.error(ex, ex);
 			ServiceManager.getManager().getPlayerService().release(worldPlayer);
 			throw new ProtocolException(ex.getMessage(), data.getSerial(), data.getSessionId(), data.getType(), data.getSubType());

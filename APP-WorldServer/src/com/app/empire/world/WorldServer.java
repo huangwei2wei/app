@@ -23,6 +23,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.app.empire.protocol.Protocol;
 import com.app.empire.world.common.util.HttpClientUtil;
 import com.app.empire.world.model.ServerConfig;
+import com.app.empire.world.service.factory.DaoManager;
 import com.app.empire.world.service.factory.ServiceManager;
 import com.app.empire.world.servlet.AddNotice;
 import com.app.empire.world.servlet.DelNotice;
@@ -32,7 +33,6 @@ import com.app.empire.world.servlet.GetPlayerList;
 import com.app.empire.world.servlet.LoadGameConfig;
 import com.app.empire.world.servlet.SendEmail;
 import com.app.empire.world.servlet.UpdateNotice;
-import com.app.empire.world.session.AuthSession;
 import com.app.empire.world.session.ConnectSession;
 import com.app.empire.world.session.WorldHandler;
 import com.app.empire.world.skeleton.AccountSkeleton;
@@ -44,7 +44,6 @@ import com.app.protocol.data.DataBeanFilter;
 import com.app.protocol.s2s.S2SDecoder;
 import com.app.protocol.s2s.S2SEncoder;
 import com.app.session.Session;
-import com.app.session.SessionHandler;
 import com.app.session.SessionRegistry;
 
 /**
@@ -54,11 +53,11 @@ import com.app.session.SessionRegistry;
  */
 
 public class WorldServer {
-	private static final Logger	log			= Logger.getLogger(WorldServer.class);
-	public IRequestService		requestService;
-	public static WorldServer	instance	= null;
-	public static ServerConfig	serverConfig;
-	private ApplicationContext	context;
+	private static final Logger log = Logger.getLogger(WorldServer.class);
+	public IRequestService requestService;
+	public static WorldServer instance = null;
+	public static ServerConfig serverConfig;
+	private ApplicationContext context;
 
 	/**
 	 * 描述：启动服务
@@ -73,7 +72,9 @@ public class WorldServer {
 		// context = new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml", "application-scheduling.xml"});
 		context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		ServiceManager sm = context.getBean(ServiceManager.class);
-		ServiceManager.setServiceManager(sm);
+		DaoManager daoManager = context.getBean(DaoManager.class);
+		sm.setServiceManager(sm);
+		daoManager.setDaoManager(daoManager);
 		SessionRegistry registry = new SessionRegistry();
 		sm.getConnectService().setRegistry(registry);
 
@@ -130,7 +131,8 @@ public class WorldServer {
 				List<NameValuePair> data = new ArrayList<NameValuePair>();
 				data.add(new NameValuePair("param", sb.toString()));
 				System.out.println(HttpClientUtil.PostData(configuration.getString("adminurl") + "/updateWorld/updateWorld.action", data));
-			} catch (Exception e) {}
+			} catch (Exception e) {
+			}
 		}
 		// 同步充值服务器信息
 		if (null != configuration.getString("rechargeurl")) {
@@ -147,7 +149,8 @@ public class WorldServer {
 				List<NameValuePair> data = new ArrayList<NameValuePair>();
 				data.add(new NameValuePair("param", sb.toString()));
 				System.out.println(HttpClientUtil.PostData(configuration.getString("rechargeurl") + "/updateWorld/updateWorld.action", data));
-			} catch (Exception e) {}
+			} catch (Exception e) {
+			}
 		}
 	}
 
@@ -197,7 +200,8 @@ public class WorldServer {
 		cfg.setSendBufferSize(ServiceManager.getManager().getConfiguration().getInt("writebuffsize"));
 		cfg.setTcpNoDelay(ServiceManager.getManager().getConfiguration().getBoolean("tcpnodelay"));
 		acceptor.setHandler(sessionHandler);
-		acceptor.setDefaultLocalAddress(new InetSocketAddress(ServiceManager.getManager().getConfiguration().getString("localip"), ServiceManager.getManager().getConfiguration().getInt("port")));
+		acceptor.setDefaultLocalAddress(new InetSocketAddress(ServiceManager.getManager().getConfiguration().getString("localip"), ServiceManager.getManager().getConfiguration()
+				.getInt("port")));
 		// 监听
 		acceptor.bind();
 	}
@@ -337,8 +341,7 @@ public class WorldServer {
 		/**
 		 * 创建一个 Session 类
 		 * 
-		 * @param IoSession
-		 *            Dispatch的链接IoSession
+		 * @param IoSession Dispatch的链接IoSession
 		 * @return ConnectSession
 		 */
 		@Override

@@ -19,9 +19,10 @@ import com.app.db.mongo.entity.SequenceIdEntity;
 public class SequenceIdDao extends SimpleMongoRepository<SequenceIdEntity, Serializable> {
 	private static Object lock = new Object();// 锁
 	private MongoTemplate mongoTemplate;
-	private static boolean isNew = true;
+	// private static boolean isNew = true;
 
 	ConcurrentHashMap<String, AtomicInteger> chm = new ConcurrentHashMap<String, AtomicInteger>();
+
 	@Autowired
 	public SequenceIdDao(MongoRepositoryFactory factory, MongoTemplate mongoOperations) {
 		super(factory.<SequenceIdEntity, Serializable> getEntityInformation(SequenceIdEntity.class), mongoOperations);
@@ -59,10 +60,10 @@ public class SequenceIdDao extends SimpleMongoRepository<SequenceIdEntity, Seria
 		query.addCriteria(new Criteria("objectId").is(key));
 		Update update = new Update();
 		update.inc("seq", 1);
-		SequenceIdEntity sie;
+		// SequenceIdEntity sie;
 		int id = 1;
 		synchronized (lock) {
-			sie = mongoTemplate.findAndModify(query, update, SequenceIdEntity.class);
+			SequenceIdEntity sie = mongoTemplate.findAndModify(query, update, SequenceIdEntity.class);
 			if (sie == null) {
 				sie = new SequenceIdEntity();
 				sie.setObjectId(key);

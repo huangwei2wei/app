@@ -63,7 +63,7 @@ public class DisServer {
 		((SocketDispatcher) this.dispatcher).bind();
 		log.info("binded");
 		// 链接world
-		ConnectFuture future = ((SocketDispatcher) this.dispatcher).connectWoeldServer();
+		ConnectFuture future = ((SocketDispatcher) this.dispatcher).connectWorldServer();
 		// 阻塞数据，直到确定与world server连接成功
 		future.awaitUninterruptibly();
 		// 连接scenes

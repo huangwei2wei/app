@@ -1,0 +1,33 @@
+//protocol=6;
+option java_package = "com.app.empire.protocol.pb.battle";
+option java_outer_classname = "BattleLivingInfoMsgProto";
+import "warField/PBVector3.proto";
+import "battle/BufferMsg.proto";
+import "army/PropertyMsg.proto";
+message BattleLivingInfoMsg {
+	optional int64 livingId = 1; //living唯一ID
+	optional int64 playerId = 2; //角色ID
+	optional string nick_name = 3; //昵称
+	optional int32 type = 4; //类型  1 玩家 2 怪物 3 宠物 4 NPC
+	optional int32 level = 5; //等级
+	optional int32 vip_level = 6; //VIP等级
+	optional int32 fight = 7; //战斗力
+	optional int32 skinId = 8; //皮肤
+	optional int32 fashion_id = 9; //时装ID
+	optional int32 weapon_id = 10; //武器ID
+	optional int32 mount_id = 11; //坐骑ID
+	optional int32 magic_weapon_id = 12; //法宝ID
+	optional int32 wing_id = 13; //翅膀ID
+	optional PBVector3 postion = 14; //当前位置
+	optional PBVector3 target = 15; //目标位置
+	repeated BufferMsg bufferList = 16; //身上携带buffer
+	repeated int32 skills = 17; //随身携带技能
+	repeated PropertyMsg propertis = 18; //living属性
+	optional int32 liveState = 19; //状态 0 活着   1死亡
+	optional int32 soulState = 20; //是否是元魂状态 0 气血状态 1 元魂状态
+	optional int32 mountState = 21; // 坐骑状态
+	optional int32 weaponAwaken = 22; // 武器觉醒等级
+	optional int32 avatarState = 23; // 变身状态 0 未变身 1 变身
+	optional int32 avatarTempId = 24; //变身后分身模板ID
+	optional int32 stateLv = 25; //境界等级(元婴等等)
+}

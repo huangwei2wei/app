@@ -1,0 +1,10 @@
+option java_package = "com.app.empire.protocol.pb.scene";
+option java_outer_classname = "PlayerCallMoveReqProto";
+
+import "warField/PBVector3.proto";
+
+message PlayerCallMoveReqMsg{
+	optional int64 livingId = 1; // ID
+	optional PBVector3 cur = 2; //当前位置
+	optional PBVector3 tar = 3; //目标位置
+}

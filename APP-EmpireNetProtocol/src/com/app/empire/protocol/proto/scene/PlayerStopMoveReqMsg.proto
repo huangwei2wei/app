@@ -1,0 +1,9 @@
+option java_package = "com.app.empire.protocol.pb.scene";
+option java_outer_classname = "PlayerStopMoveReqProto";
+
+import "warField/PBVector3.proto";
+
+message PlayerStopMoveReqMsg {
+	optional PBVector3 cur = 1; //当前位置
+}
+

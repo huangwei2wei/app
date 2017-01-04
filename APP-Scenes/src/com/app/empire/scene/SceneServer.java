@@ -27,6 +27,7 @@ import com.app.session.SessionRegistry;
 
 public class SceneServer {
 	private static final Logger log = Logger.getLogger(SceneServer.class);
+	private static SessionRegistry registry = new SessionRegistry();// session注册
 
 	public static void main(String[] args) {
 		new SceneServer().launch();
@@ -38,9 +39,8 @@ public class SceneServer {
 			// ServiceManager serviceManager = ServiceManager.getManager();
 			ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 			ServiceManager sm = context.getBean(ServiceManager.class);
-			sm.initService();
 			ServiceManager.setServiceManager(sm);
-
+			sm.initService();
 			openServerListener();
 			System.out.println("场景服务器启动!");
 		} catch (Exception e) {
@@ -55,10 +55,7 @@ public class SceneServer {
 	 * @throws IOException
 	 */
 	private void openServerListener() throws IOException {
-		// session注册
-		SessionRegistry registry = new SessionRegistry();
 		SessionHandler sessionHandler = new SceneSessionHandler(registry);
-
 		NioSocketAcceptor acceptor = new NioSocketAcceptor(Runtime.getRuntime().availableProcessors() + 1);
 		SocketSessionConfig cfg = acceptor.getSessionConfig();
 		cfg.setIdleTime(IdleStatus.BOTH_IDLE, 180);
@@ -73,7 +70,8 @@ public class SceneServer {
 		cfg.setSendBufferSize(ServiceManager.getManager().getConfiguration().getInt("writebuffsize"));
 		cfg.setTcpNoDelay(ServiceManager.getManager().getConfiguration().getBoolean("tcpnodelay"));
 		acceptor.setHandler(sessionHandler);
-		acceptor.setDefaultLocalAddress(new InetSocketAddress(ServiceManager.getManager().getConfiguration().getString("localip"), ServiceManager.getManager().getConfiguration().getInt("port")));
+		acceptor.setDefaultLocalAddress(new InetSocketAddress(ServiceManager.getManager().getConfiguration().getString("localip"), ServiceManager.getManager().getConfiguration()
+				.getInt("port")));
 		// 监听
 		acceptor.bind();
 	}
@@ -91,7 +89,13 @@ public class SceneServer {
 
 		public Session createSession(IoSession session) {
 			ConnectSession connSession = new ConnectSession(session);
+			connSession.setPlayerService(ServiceManager.getManager().getPlayerService());
 			return connSession;
 		}
 	}
+
+	public static SessionRegistry getRegistry() {
+		return registry;
+	}
+
 }

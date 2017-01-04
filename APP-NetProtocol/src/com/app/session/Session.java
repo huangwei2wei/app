@@ -9,8 +9,8 @@ import com.app.protocol.exception.ProtocolException;
 import com.google.protobuf.Message;
 
 public abstract class Session {
-	protected IoSession	session;
-	protected int		sessionId;
+	protected IoSession session;
+	protected int sessionId;
 
 	public Session(IoSession session) {
 		this.session = session;
@@ -57,14 +57,14 @@ public abstract class Session {
 		this.session.write(data);
 	}
 
-	public void write(short type, short subType, Message msg) {
-		PbAbstractData pbMsg = new PbAbstractData(type, subType);
+	public void write(short type, short subType, Message msg, byte target) {
+		PbAbstractData pbMsg = new PbAbstractData(type, subType, target);
 		pbMsg.setBytes(msg.toByteArray());
 		write(pbMsg);
 	}
 
-	public void write(short type, short subType, int sessionId, int serial, Message msg) {
-		PbAbstractData pbMsg = new PbAbstractData(type, subType, sessionId, serial);
+	public void write(short type, short subType, int sessionId, int serial, Message msg, byte target) {
+		PbAbstractData pbMsg = new PbAbstractData(type, subType, sessionId, serial, target);
 		pbMsg.setBytes(msg.toByteArray());
 		write(pbMsg);
 	}

@@ -1,0 +1,7 @@
+option java_package = "com.app.empire.protocol.pb.battle";
+option java_outer_classname = "PlayerKillMonsterListMsgProto";
+//通知center。玩家杀死怪物或人
+import "battle/PlayerKillMonsterMsg.proto";
+message PlayerKillMonsterListMsg {
+	repeated PlayerKillMonsterMsg killInfos = 1;
+}

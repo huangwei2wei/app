@@ -1,0 +1,14 @@
+option java_package = "com.app.empire.protocol.pb.campaign";
+option java_outer_classname = "CampaignInfoMsgProto";
+message CampaignInfoMsg {
+	optional int32 id = 1; //副本唯一ID
+	optional int32 tempId = 2; //模板ID
+	optional int64 createTime = 3; //创建时间
+	optional int32 state = 4; //当前状态
+	optional int32 count = 5; //当前人数
+	optional int64 createrId = 6; //创建人ID
+	optional int32 openTime = 7; //开放时间
+	optional int32 backTime = 8; //玩家回归剩余时间(秒)
+	optional int32 progress = 9; //副本进度
+}
+

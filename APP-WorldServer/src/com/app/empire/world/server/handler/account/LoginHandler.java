@@ -1,11 +1,9 @@
 package com.app.empire.world.server.handler.account;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 import org.apache.log4j.Logger;
 
-import com.app.empire.protocol.data.account.Login;
 import com.app.empire.protocol.data.server.AccountLogin;
+import com.app.empire.protocol.pb.account.AccountLoginMsgProto.AccountLoginMsg;
 import com.app.empire.world.WorldServer;
 import com.app.empire.world.exception.TipMessages;
 import com.app.empire.world.model.Client;
@@ -13,6 +11,7 @@ import com.app.empire.world.request.LoginRequest;
 import com.app.empire.world.service.factory.ServiceManager;
 import com.app.empire.world.session.ConnectSession;
 import com.app.protocol.data.AbstractData;
+import com.app.protocol.data.PbAbstractData;
 import com.app.protocol.exception.ProtocolException;
 import com.app.protocol.handler.IDataHandler;
 
@@ -23,10 +22,13 @@ import com.app.protocol.handler.IDataHandler;
  */
 public class LoginHandler implements IDataHandler {
 	private Logger log = Logger.getLogger(LoginHandler.class);
-	//private  AtomicInteger staticSerial = new AtomicInteger(1);
+
+	// private AtomicInteger staticSerial = new AtomicInteger(1);
 
 	public AbstractData handle(AbstractData data) throws Exception {
-		Login login = (Login) data;
+		PbAbstractData test = (PbAbstractData) data;
+		AccountLoginMsg login = AccountLoginMsg.parseFrom(test.getBytes());
+		// Login login = (Login) data;
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		String accountName = login.getAccountName();
 		String passWord = login.getPassWord();
@@ -58,10 +60,10 @@ public class LoginHandler implements IDataHandler {
 			ServiceManager.getManager().getRequestService().add(accountLogin.getSerial(), loginRequest);
 			// 发送至账号服务器
 			ServiceManager.getManager().getAccountSkeleton().send(accountLogin);
-		}else{
+		} else {
 			this.log.error("账号数据出现异常---");
 		}
-		//System.out.println(staticSerial.getAndIncrement());
+		// System.out.println(staticSerial.getAndIncrement());
 		return null;
 	}
 }

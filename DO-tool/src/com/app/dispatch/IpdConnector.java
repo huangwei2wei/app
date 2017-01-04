@@ -1,15 +1,20 @@
 package com.app.dispatch;
+
 import java.net.InetSocketAddress;
 import java.util.UUID;
 
 import org.apache.log4j.Logger;
 import org.apache.mina.filter.codec.ProtocolCodecFilter;
 
+import com.app.empire.protocol.Protocol;
 import com.app.empire.protocol.data.account.Login;
+import com.app.empire.protocol.pb.account.AccountLoginMsgProto.AccountLoginMsg;
 import com.app.net.Connector;
 import com.app.protocol.data.DataBeanFilter;
+import com.app.protocol.data.AbstractData.EnumTarget;
 import com.app.protocol.s2s.S2SDecoder;
 import com.app.protocol.s2s.S2SEncoder;
+
 public class IpdConnector extends Connector {
 	private static final Logger log = Logger.getLogger(IpdConnector.class);
 
@@ -46,13 +51,14 @@ public class IpdConnector extends Connector {
 	protected void idle() {
 		// TODO Auto-generated method stub
 	}
+
 	public void sendData() {
 		try {
 			System.out.println("发送登录");
 			String uuid = UUID.randomUUID().toString();
 			Login login = new Login();
 			login.setAccountName(uuid);
-			//login.setAccountName("af6b0351-e8cf-49f2-a026-e8");
+			// login.setAccountName("af6b0351-e8cf-49f2-a026-e8");
 			// login.setAccountName("af6b0351");
 			login.setPassWord("123456");
 			login.setVersion("1.0.0.0");
@@ -60,7 +66,18 @@ public class IpdConnector extends Connector {
 			login.setClientModel("htc");
 			login.setSystemName("Andro");
 			login.setSystemVersion("1.0.0.1");
-			this.send(login);
+			// this.send(login);
+
+			AccountLoginMsg.Builder msg = AccountLoginMsg.newBuilder();
+			msg.setAccountName(uuid);
+			msg.setPassWord("123456");
+			msg.setVersion("1.0.0.0");
+			msg.setChannel(1);
+			msg.setClientModel("htc");
+			msg.setSystemName("Andro");
+			msg.setSystemVersion("1.0.0.1");
+			this.send(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_Login, msg.build(), EnumTarget.WORLDSERVER.getValue());
+
 			StatisticsServer.getStatisticsServer().getReqNum().getAndIncrement();
 		} catch (Exception e) {
 			e.printStackTrace();

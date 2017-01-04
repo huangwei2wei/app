@@ -8,32 +8,42 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.app.db.mysql.dao.AiConfigDao;
+import com.app.db.mysql.dao.BaseLanguageDao;
+import com.app.db.mysql.dao.BufferStatusDao;
+import com.app.db.mysql.dao.CampaignInfoDao;
+import com.app.db.mysql.dao.CampaignTaskInfoDao;
+import com.app.db.mysql.dao.DropInfoDao;
+import com.app.db.mysql.dao.DropItemInfoDao;
+import com.app.db.mysql.dao.FieldInfoDao;
+import com.app.db.mysql.dao.FieldSpawnDao;
+import com.app.db.mysql.dao.HeroStatusDao;
+import com.app.db.mysql.dao.MonsterInfoDao;
+import com.app.db.mysql.dao.NpcInfoDao;
+import com.app.db.mysql.dao.SkillActioninfoDao;
+import com.app.db.mysql.dao.SkillActioninfoMoveDao;
+import com.app.db.mysql.dao.SkillBufferDao;
+import com.app.db.mysql.dao.SkillPropertyDao;
+import com.app.db.mysql.dao.SkillinfoDao;
+import com.app.db.mysql.dao.SnareInfoDao;
+import com.app.db.mysql.entity.AiConfig;
+import com.app.db.mysql.entity.BaseLanguage;
+import com.app.db.mysql.entity.BufferStatus;
+import com.app.db.mysql.entity.CampaignInfo;
+import com.app.db.mysql.entity.CampaignTaskInfo;
+import com.app.db.mysql.entity.DropInfo;
+import com.app.db.mysql.entity.DropItemInfo;
+import com.app.db.mysql.entity.FieldInfo;
+import com.app.db.mysql.entity.FieldSpawn;
+import com.app.db.mysql.entity.HeroStatus;
+import com.app.db.mysql.entity.MonsterInfo;
+import com.app.db.mysql.entity.NpcInfo;
+import com.app.db.mysql.entity.SkillActioninfo;
+import com.app.db.mysql.entity.SkillActioninfoMove;
+import com.app.db.mysql.entity.SkillBuffer;
+import com.app.db.mysql.entity.SkillInfo;
+import com.app.db.mysql.entity.SnareInfo;
 import com.app.empire.scene.constant.SpwanInfoType;
-import com.app.empire.scene.dao.impl.BaseLanguageDao;
-import com.app.empire.scene.dao.impl.BufferStatusDao;
-import com.app.empire.scene.dao.impl.DropInfoDao;
-import com.app.empire.scene.dao.impl.DropItemInfoDao;
-import com.app.empire.scene.dao.impl.FieldInfoDao;
-import com.app.empire.scene.dao.impl.FieldSpawnDao;
-import com.app.empire.scene.dao.impl.NpcInfoDao;
-import com.app.empire.scene.dao.impl.SkillActioninfoDao;
-import com.app.empire.scene.dao.impl.SkillActioninfoMoveDao;
-import com.app.empire.scene.dao.impl.SkillBufferDao;
-import com.app.empire.scene.dao.impl.SkillPropertyDao;
-import com.app.empire.scene.dao.impl.SkillinfoDao;
-import com.app.empire.scene.dao.impl.SnareInfoDao;
-import com.app.empire.scene.entity.BaseLanguage;
-import com.app.empire.scene.entity.BufferStatus;
-import com.app.empire.scene.entity.DropInfo;
-import com.app.empire.scene.entity.DropItemInfo;
-import com.app.empire.scene.entity.FieldInfo;
-import com.app.empire.scene.entity.FieldSpawn;
-import com.app.empire.scene.entity.NpcInfo;
-import com.app.empire.scene.entity.SkillActioninfo;
-import com.app.empire.scene.entity.SkillActioninfoMove;
-import com.app.empire.scene.entity.SkillBuffer;
-import com.app.empire.scene.entity.Skillinfo;
-import com.app.empire.scene.entity.SnareInfo;
 
 /**
  * 加载游戏配置
@@ -61,13 +71,22 @@ public class GameConfigService {
 	private BufferStatusDao bufferStatusDao;
 	@Autowired
 	private SnareInfoDao snareInfoDao;
-
 	@Autowired
 	private NpcInfoDao npcInfoDao;//
 	@Autowired
 	private DropInfoDao dropInfoDao;//
 	@Autowired
 	private DropItemInfoDao dropItemInfoDao;
+	@Autowired
+	private MonsterInfoDao monsterInfoDao;
+	@Autowired
+	private HeroStatusDao heroStatusDao;
+	@Autowired
+	private AiConfigDao aiConfigDao;
+	@Autowired
+	private CampaignInfoDao campaignInfoDao;
+	@Autowired
+	private CampaignTaskInfoDao campaignTaskInfoDao;
 
 	private HashMap<Integer, BaseLanguage> gameLanguageConfig = new HashMap<Integer, BaseLanguage>();
 	// 所有地图配置
@@ -83,18 +102,27 @@ public class GameConfigService {
 	// 复活点
 	private Map<Integer, List<FieldSpawn>> reLiveNodes = new HashMap<>();
 	// npc 信息
-	public static Map<Integer, NpcInfo> npcInfo = new HashMap<Integer, NpcInfo>();
+	private Map<Integer, NpcInfo> npcInfo = new HashMap<Integer, NpcInfo>();
 	// 掉落池
-	public static Map<Integer, DropInfo> dropPool = new HashMap<>();
+	private Map<Integer, DropInfo> dropPool = new HashMap<>();
 	// 掉落池中物品
-	public static Map<Integer, Map<Integer, DropItemInfo>> dropItemMap = new HashMap<>();
+	private Map<Integer, Map<Integer, DropItemInfo>> dropItemMap = new HashMap<>();
+	// 英雄状态
+	private Map<Integer, HeroStatus> heroStatus = new HashMap<Integer, HeroStatus>();
 
-	private Map<Integer, Skillinfo> skillTemps = new HashMap<Integer, Skillinfo>();
+	private Map<Integer, SkillInfo> skillTemps = new HashMap<Integer, SkillInfo>();
 	private HashMap<Integer, SkillActioninfo> skillActioninfoTemps = new HashMap<Integer, SkillActioninfo>();
 	private HashMap<Integer, SkillActioninfoMove> skillActioninfoMoveTemps = new HashMap<Integer, SkillActioninfoMove>();
 	private Map<Integer, SkillBuffer> skillBufferTemps = new HashMap<Integer, SkillBuffer>();
 	private Map<Integer, BufferStatus> bufferStatusTemps = new HashMap<Integer, BufferStatus>();
 	private Map<Integer, SnareInfo> snareInfoTemps = new HashMap<Integer, SnareInfo>();
+	private Map<Integer, MonsterInfo> monsterInfoTemps = new HashMap<Integer, MonsterInfo>();
+	// ai 配置
+	private Map<Integer, AiConfig> aiConfigs = new HashMap<Integer, AiConfig>();
+	// 副本配置
+	private Map<Integer, CampaignInfo> campaignTemps = new HashMap<>();
+	// 副本任务
+	private Map<Integer, CampaignTaskInfo> campaignTasks = new HashMap<>();
 
 	/**
 	 * 加载配置数据
@@ -105,6 +133,10 @@ public class GameConfigService {
 		this.loadFieldSpawnConfig();
 		this.loadNpcInfoConfig();
 		this.loadDropInfo();
+		this.loadDropItemInfo();
+		this.loadskillInfo();
+		this.loadMonsterInfo();
+		this.loadHeroStatus();
 	}
 
 	/**
@@ -171,7 +203,7 @@ public class GameConfigService {
 	 */
 	public void loadNpcInfoConfig() {
 		npcInfo.clear();
-		List<NpcInfo> rsl = npcInfoDao.getAll(FieldSpawn.class);
+		List<NpcInfo> rsl = npcInfoDao.getAll(NpcInfo.class);
 		for (NpcInfo npc : rsl) {
 			npcInfo.put(npc.getNpcId(), npc);
 		}
@@ -210,8 +242,8 @@ public class GameConfigService {
 	public void loadskillInfo() {
 		/* 技能 */
 		skillTemps.clear();
-		List<Skillinfo> skillInfo = skillInfoDao.getAll(Skillinfo.class);
-		for (Skillinfo obj : skillInfo) {
+		List<SkillInfo> skillInfo = skillInfoDao.getAll(SkillInfo.class);
+		for (SkillInfo obj : skillInfo) {
 			skillTemps.put(obj.getTemplateId(), obj);
 		}
 
@@ -247,8 +279,44 @@ public class GameConfigService {
 		}
 	}
 
+	public void loadMonsterInfo() {
+		monsterInfoTemps.clear();
+		List<MonsterInfo> rsl = monsterInfoDao.getAll(MonsterInfo.class);
+		for (MonsterInfo monsterInfo : rsl) {
+			monsterInfoTemps.put(monsterInfo.getMonsterId(), monsterInfo);
+		}
+	}
+
+	public void loadHeroStatus() {
+		heroStatus.clear();
+		List<HeroStatus> rsl = monsterInfoDao.getAll(HeroStatus.class);
+		for (HeroStatus status : rsl) {
+			heroStatus.put(status.getId(), status);
+		}
+	}
+
+	public void loadAiConfigs() {
+		aiConfigs = aiConfigDao.loadAiConfig();
+	}
+
+	public void loadCampaignInfo() {
+		campaignTemps = campaignInfoDao.loadCampaignInfo();
+	}
+
+	public void loadCampignTaskTemp() {
+		campaignTasks = campaignTaskInfoDao.loadCampaignTaskInfo();
+	}
+
 	public HashMap<Integer, FieldInfo> getFieldInfoConfig() {
 		return fieldInfoConfig;
+	}
+
+	public HashMap<Integer, HashMap<Integer, FieldInfo>> getCampaignFieldInfoMaps() {
+		return campaignFieldInfoMaps;
+	}
+
+	public Map<Integer, List<FieldSpawn>> getReLiveNodes() {
+		return reLiveNodes;
 	}
 
 	public HashMap<Integer, FieldSpawn> getFieldSpawnConfig() {
@@ -259,8 +327,56 @@ public class GameConfigService {
 		return fieldSpawnMap;
 	}
 
-	public static Map<Integer, NpcInfo> getNpcInfo() {
+	public Map<Integer, MonsterInfo> getMonsterInfoTemps() {
+		return monsterInfoTemps;
+	}
+
+	public Map<Integer, NpcInfo> getNpcInfo() {
 		return npcInfo;
+	}
+
+	public Map<Integer, HeroStatus> getHeroStatus() {
+		return heroStatus;
+	}
+
+	public Map<Integer, Integer> getTagIdToSpanId() {
+		return tagIdToSpanId;
+	}
+
+	public Map<Integer, AiConfig> getAiConfigs() {
+		return aiConfigs;
+	}
+
+	public Map<Integer, CampaignInfo> getCampaignTemps() {
+		return campaignTemps;
+	}
+
+	public Map<Integer, CampaignTaskInfo> getCampaignTasks() {
+		return campaignTasks;
+	}
+
+	public Map<Integer, SkillBuffer> getSkillBufferTemps() {
+		return skillBufferTemps;
+	}
+
+	public Map<Integer, SkillInfo> getSkillTemps() {
+		return skillTemps;
+	}
+
+	public HashMap<Integer, SkillActioninfo> getSkillActioninfoTemps() {
+		return skillActioninfoTemps;
+	}
+
+	public Map<Integer, SnareInfo> getSnareInfoTemps() {
+		return snareInfoTemps;
+	}
+
+	public Map<Integer, DropInfo> getDropPool() {
+		return dropPool;
+	}
+
+	public Map<Integer, Map<Integer, DropItemInfo>> getDropItemMap() {
+		return dropItemMap;
 	}
 
 }

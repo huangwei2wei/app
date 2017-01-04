@@ -9,6 +9,7 @@ import com.app.empire.world.service.factory.ServiceManager;
 import com.app.empire.world.session.ConnectSession;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.handler.IDataHandler;
+
 /**
  * 用户下线
  */
@@ -19,7 +20,6 @@ public class SessionClosedHandler implements IDataHandler {
 		SessionClosed closed = (SessionClosed) data;
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		Client client = session.getClient(closed.getSession());
-		System.out.println(closed.getSession()+"=--closed----------");
 		if (client != null) {
 			log.info("SessionClosed SessionId:" + client.getSessionId() + "----playerId:" + client.getPlayerId());
 			session.removeClient(client);
@@ -32,7 +32,7 @@ public class SessionClosedHandler implements IDataHandler {
 			// ServiceManager.getManager().getAbstractService().removeAllAbstractInfoById(session.getSessionId()
 			// + "-" + client.getSessionId());
 		} else {
-//			log.info("用户下线异常　sessionId: " + closed.getSession());
+			log.info("注意：用户下线异常　sessionId: " + closed.getSession());
 		}
 		return null;
 	}

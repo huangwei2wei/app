@@ -26,6 +26,6 @@
 		<mapping class="com.app.empire.world.entity.mysql.gameConfig.Parameter" />
 		<mapping class="com.app.empire.world.entity.mysql.gameConfig.TradeNpc" />
 		<mapping class="com.app.empire.world.entity.mysql.gameConfig.TradeVip" />
-
+		<mapping class="com.app.db.mysql.entity.FieldInfo" />
 	</session-factory>
 </hibernate-configuration>

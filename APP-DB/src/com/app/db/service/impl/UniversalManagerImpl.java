@@ -7,8 +7,8 @@ import java.util.Map;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.app.db.mysql.dao.UniversalDao;
-import com.app.db.mysql.page.PageList;
+import com.app.db.mysql.base.dao.UniversalDao;
+import com.app.db.mysql.base.page.PageList;
 import com.app.db.service.UniversalManager;
 
 /**

@@ -1,4 +1,5 @@
 package com.app.dispatch;
+
 import java.net.InetSocketAddress;
 
 import org.apache.log4j.Logger;
@@ -10,6 +11,7 @@ import com.app.net.Connector;
 import com.app.protocol.data.DataBeanFilter;
 import com.app.protocol.s2s.S2SDecoder;
 import com.app.protocol.s2s.S2SEncoder;
+
 public class IpdConnector extends Connector {
 	private static final Logger log = Logger.getLogger(IpdConnector.class);
 
@@ -28,7 +30,7 @@ public class IpdConnector extends Connector {
 	 * 初始化过滤器
 	 */
 	public void init() {
-		this.config.setIdleTime(IdleStatus.BOTH_IDLE,120);
+		this.config.setIdleTime(IdleStatus.BOTH_IDLE, 120);
 		this.connector.getFilterChain().addLast("wyd2codec", new ProtocolCodecFilter(new S2SEncoder(), new S2SDecoder()));
 		this.connector.getFilterChain().addLast("wyd2databean", new DataBeanFilter());
 	}

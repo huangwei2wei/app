@@ -12,27 +12,21 @@ import com.app.empire.world.service.base.impl.ConnectService;
 import com.app.empire.world.service.base.impl.GameConfigService;
 import com.app.empire.world.service.base.impl.GameLogService;
 import com.app.empire.world.service.base.impl.OrderSerialService;
-import com.app.empire.world.service.base.impl.PvpRoomService;
 import com.app.empire.world.service.base.impl.SendMailService;
 import com.app.empire.world.service.impl.BulletinService;
 import com.app.empire.world.service.impl.ForceCalculateService;
-import com.app.empire.world.service.impl.PlayerCopyMapService;
 import com.app.empire.world.service.impl.PlayerEquipService;
-import com.app.empire.world.service.impl.PlayerHeroService;
+import com.app.empire.world.service.impl.PlayerGoodsService;
 import com.app.empire.world.service.impl.PlayerMailService;
-import com.app.empire.world.service.impl.PlayerNpcService;
 import com.app.empire.world.service.impl.PlayerService;
 import com.app.empire.world.service.impl.PlayerShopService;
-import com.app.empire.world.service.impl.PlayerSkillService;
 import com.app.empire.world.service.impl.PlayerTaskService;
 import com.app.empire.world.service.impl.PlayerTeamService;
-//import com.app.empire.world.service.impl.CrossService;
+import com.app.empire.world.service.skill.manager.PlayerSkillMgr;
 import com.app.empire.world.skeleton.AccountSkeleton;
 import com.app.empire.world.skeleton.BattleSkeleton;
 import com.app.net.DefaultRequestService;
 import com.app.net.IRequestService;
-import com.app.empire.world.service.impl.PlayerGoodsService;
-import com.app.empire.world.service.scenes.MapInfoService;
 
 @Service
 public class ServiceManager {
@@ -65,31 +59,21 @@ public class ServiceManager {
 	@Autowired
 	private ConnectService connectService;// 连接服务
 	@Autowired
-	private PlayerHeroService heroService;// 英雄服务
-	@Autowired
 	private PlayerGoodsService playerGoodsService;// 物品背包相关服务
 	@Autowired
 	private PlayerEquipService playerEquipService;// 装备相关服务
 	@Autowired
-	private PlayerSkillService playerSkillService;// 英雄技能
+	private PlayerSkillMgr playerSkillService;// 英雄技能
 	@Autowired
 	private PlayerTaskService playerTaskService;// 玩家任务
 	@Autowired
-	private PlayerCopyMapService playerCopyMapService;// 副本相关
-	@Autowired
 	private PlayerMailService playerMailService;// 玩家邮件服務
-	@Autowired
-	private PvpRoomService pvpService;// pvp服务
 	@Autowired
 	private PlayerShopService playerShopService;// 商店
 	@Autowired
 	private PlayerTeamService playerTeamService;// 战队
 	@Autowired
-	private PlayerNpcService PlayerNpcService;// 玩家npc
-	@Autowired
 	private ForceCalculateService forceCalculateService;// 计算玩家英雄属性集和战力
-	@Autowired
-	private MapInfoService mapInfoService;// 地图信息
 
 	private ServiceManager() {
 		try {
@@ -118,7 +102,7 @@ public class ServiceManager {
 		return serviceManager;
 	}
 
-	public static void setServiceManager(ServiceManager serviceManager) {
+	public void setServiceManager(ServiceManager serviceManager) {
 		ServiceManager.serviceManager = serviceManager;
 	}
 
@@ -208,20 +192,12 @@ public class ServiceManager {
 		return playerEquipService;
 	}
 
-	public PlayerSkillService getPlayerSkillService() {
+	public PlayerSkillMgr getPlayerSkillService() {
 		return playerSkillService;
-	}
-
-	public PlayerHeroService getPlayerHeroService() {
-		return heroService;
 	}
 
 	public PlayerTaskService getPlayerTaskService() {
 		return playerTaskService;
-	}
-
-	public PlayerCopyMapService getPlayerCopyMapService() {
-		return playerCopyMapService;
 	}
 
 	public BulletinService getBulletinService() {
@@ -232,10 +208,6 @@ public class ServiceManager {
 		return playerMailService;
 	}
 
-	public PvpRoomService getPvpService() {
-		return pvpService;
-	}
-
 	public PlayerShopService getPlayerShopService() {
 		return playerShopService;
 	}
@@ -244,16 +216,8 @@ public class ServiceManager {
 		return playerTeamService;
 	}
 
-	public PlayerNpcService getPlayerNpcService() {
-		return PlayerNpcService;
-	}
-
 	public ForceCalculateService getForceCalculateService() {
 		return forceCalculateService;
-	}
-
-	public MapInfoService getMapInfoService() {
-		return mapInfoService;
 	}
 
 }

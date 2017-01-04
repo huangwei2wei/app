@@ -1,0 +1,15 @@
+option java_package = "com.app.empire.protocol.pb.battle";
+option java_outer_classname = "BufferMsgProto";
+//变更用户当前某个buffer
+message BufferMsg {
+	optional int32 option=1;      //操作类型 1 添加，2 修改 4 删除，其他增加或者修改
+	optional int64 bufferId = 2;   //buffer唯一ID
+	optional int64 sourceId = 3;   //buffer源ID
+	optional string sourcename=4;  //buffer来源名
+	optional int32 templateId = 5; //模板ID
+	optional int64 aliveTime = 6; //截止时间
+	optional int32 leftCount = 7; //剩余次数
+	optional int64 targetId = 8; //目标id
+	optional int32 pressedNum = 9; //叠加数量
+}
+

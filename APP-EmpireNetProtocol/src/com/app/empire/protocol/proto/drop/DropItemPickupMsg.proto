@@ -1,0 +1,8 @@
+//protocol=20028;
+option java_package = "com.app.empire.protocol.pb.drop";
+option java_outer_classname = "DropItemPickupProto";
+
+message DropItemPickupMsg{
+	optional int32 packageId = 1; // 掉落包ID
+	optional int64 dropItemId = 2; // 掉落物ID
+}

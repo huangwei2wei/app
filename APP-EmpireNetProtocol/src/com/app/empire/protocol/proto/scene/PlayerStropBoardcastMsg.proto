@@ -1,0 +1,9 @@
+option java_package = "com.app.empire.protocol.pb.scene";
+option java_outer_classname = "PlayerStopBoardcastProto";
+
+import "warField/PBVector3.proto";
+
+message PlayerStopBoardcastMsg {
+	optional int64 id= 1;    //玩家id
+	optional PBVector3 cur = 2; //当前位置
+}

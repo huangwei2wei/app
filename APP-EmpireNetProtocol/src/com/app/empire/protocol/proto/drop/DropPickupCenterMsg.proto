@@ -1,0 +1,9 @@
+option java_package = "com.app.empire.protocol.pb.drop";
+option java_outer_classname = "DropPickupCenterProto";
+
+message DropPickupCenterMsg{
+	optional int32 packageId = 1; // 掉落包ID
+	optional int64 dropItemId = 2; // 掉落物ID
+	optional int32 itemId = 3;
+	optional int32 count = 4;
+}

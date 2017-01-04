@@ -1,6 +1,6 @@
 package com.wyd.channel.dao.impl;
 
-import com.app.db.mysql.dao.impl.UniversalDaoHibernate;
+import com.app.db.mysql.base.dao.impl.UniversalDaoHibernate;
 import com.wyd.channel.dao.IThirdConfigDao;
 
 

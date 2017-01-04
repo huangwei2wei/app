@@ -1,6 +1,6 @@
 package com.app.empire.world.dao.mysql.gameConfig.impl;
 
-import com.app.db.mysql.dao.impl.UniversalDaoHibernate;
+import com.app.db.mysql.base.dao.impl.UniversalDaoHibernate;
 import com.app.empire.world.dao.mysql.gameConfig.IChatRecordDao;
 
 /**

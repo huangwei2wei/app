@@ -59,7 +59,7 @@ public class ConnectService implements Runnable {
 		int playerNum = 0;
 		ConcurrentHashMap<IoSession, Session> sessionMap = registry.getIoSession2Session();
 		for (Session session : sessionMap.values()) {
-			playerNum += ((ConnectSession) session).sessionSize();
+			playerNum += ((ConnectSession) session).getPlayerCount();
 		}
 		return playerNum;
 	}

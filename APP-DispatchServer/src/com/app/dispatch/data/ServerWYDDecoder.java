@@ -50,7 +50,7 @@ public class ServerWYDDecoder extends ProtocolDecoderAdapter {
 					throw new IOException("error protocol");
 				}
 				if (size >= len) {
-					if (sessionId == -1) {// 后端处理
+					if (sessionId == 0) {// 后端处理
 						// buffer.mark();
 						// byte flag = buffer.get();
 						short type = buffer.getShort();

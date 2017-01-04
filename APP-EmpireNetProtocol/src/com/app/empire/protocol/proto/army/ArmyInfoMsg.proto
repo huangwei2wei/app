@@ -1,0 +1,13 @@
+option java_package = "com.app.empire.protocol.pb.army";
+option java_outer_classname = "ArmyInfoMsgProto";
+import "player/PlayerInfoMsg.proto";
+import "army/HeroInfoMsg.proto";
+import "army/PetInfoMsg.proto";
+import "army/PlayerPositionInfoMsg.proto";
+message ArmyInfoMsg {
+	optional PlayerInfoMsg playerInfo = 1; //角色外观信息
+	optional HeroInfoMsg heoBattleInfo = 2; //角色战斗信息
+	optional PetInfoMsg petBattleInfo = 3; // 宠物战斗属性
+	optional PlayerPositionInfoMsg postionInfo = 4; //坐标位置
+}
+
