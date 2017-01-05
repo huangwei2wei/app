@@ -19,7 +19,7 @@ import com.app.empire.scene.service.world.ArmyProxy;
 import com.app.empire.scene.util.ErrorMsgUtil;
 import com.app.empire.scene.util.Vector3;
 import com.app.empire.scene.util.Vector3BuilderHelper;
-import com.app.empire.scene.util.exec.Action;
+import com.app.thread.exec.Action;
 
 public class EnterFieldAction extends Action {
 	ArmyProxy army;

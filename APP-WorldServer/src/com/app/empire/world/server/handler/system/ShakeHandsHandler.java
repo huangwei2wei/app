@@ -13,12 +13,11 @@ import com.app.protocol.handler.IDataHandler;
  * 
  */
 public class ShakeHandsHandler implements IDataHandler {
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		ShakeHands shakehands = (ShakeHands) data;
 		if (null != session.getClient(data.getSessionId()) || 1 == shakehands.getCode()) {
 			session.write(shakehands);
 		}
-		return null;
 	}
 }

@@ -1,16 +1,18 @@
-package com.app.empire.scene.util.exec;
+package com.app.empire.world.session;
 
 import org.apache.log4j.Logger;
 
 import com.app.net.ProtocolFactory;
-import com.app.protocol.data.PbAbstractData;
+import com.app.protocol.data.AbstractData;
 import com.app.protocol.handler.IDataHandler;
+import com.app.thread.exec.Action;
+import com.app.thread.exec.ActionQueue;
 
 public class HandlerAction extends Action {
 	private static Logger log = Logger.getLogger(HandlerAction.class);
-	private PbAbstractData data;
+	private AbstractData data;
 
-	public HandlerAction(ActionQueue queue, PbAbstractData data) {
+	public HandlerAction(ActionQueue queue, AbstractData data) {
 		super(queue);
 		this.data = data;
 	}

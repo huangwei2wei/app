@@ -21,12 +21,11 @@ public class SetClientIPAddressHandler implements IDataHandler {
 		this.log = Logger.getLogger(SetClientIPAddressHandler.class);
 	}
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		SetClientIPAddress address = (SetClientIPAddress) data;
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		Client client = session.getAndCreateClient(address.getSession());
 		client.setIp(address.getIp());
 		System.out.println("SessionId:" + address.getSession() + "---address:" + address.getIp());
-		return null;
 	}
 }

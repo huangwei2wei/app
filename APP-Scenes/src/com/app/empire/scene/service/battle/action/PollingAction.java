@@ -14,7 +14,7 @@ import com.app.empire.scene.service.battle.damage.effect.DamageEffecterType;
 import com.app.empire.scene.service.role.objects.Living;
 import com.app.empire.scene.service.warField.helper.selectors.PlayerSelectorHelper;
 import com.app.empire.scene.util.BroadUtil;
-import com.app.empire.scene.util.exec.DelayAction;
+import com.app.thread.exec.DelayAction;
 
 public abstract class PollingAction extends DelayAction {
 	Living living;

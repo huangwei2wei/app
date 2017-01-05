@@ -33,7 +33,7 @@ import com.app.empire.scene.service.warField.spawn.TriggerPointSpwanNode;
 import com.app.empire.scene.service.warField.spawn.WorkingState;
 import com.app.empire.scene.util.FileOperate;
 import com.app.empire.scene.util.Rect;
-import com.app.empire.scene.util.engine.DelayAction;
+import com.app.thread.engine.DelayAction;
 
 public class FieldMgr {
 	private Logger log = Logger.getLogger(FieldMgr.class);

@@ -16,7 +16,7 @@ import com.app.empire.scene.service.warField.spawn.SpwanNode;
 import com.app.empire.scene.service.world.ArmyProxy;
 import com.app.empire.scene.util.Vector3;
 import com.app.empire.scene.util.Vector3BuilderHelper;
-import com.app.empire.scene.util.exec.DelayAction;
+import com.app.thread.exec.DelayAction;
 
 /** 人物复活 */
 public class RevivalPlayerAction extends DelayAction {

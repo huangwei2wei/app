@@ -24,7 +24,7 @@ import com.app.protocol.handler.IDataHandler;
 public class SendMessageHandler implements IDataHandler {
 	Logger log = Logger.getLogger(SendMessageHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		WorldPlayer player = session.getPlayer(data.getSessionId());
 		SendMessage sendMessage = (SendMessage) data;
@@ -85,6 +85,5 @@ public class SendMessageHandler implements IDataHandler {
 		} catch (Exception ex) {
 			log.error(ex, ex);
 		}
-		return null;
 	}
 }

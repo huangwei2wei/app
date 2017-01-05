@@ -28,8 +28,8 @@ import com.app.empire.scene.service.warField.helper.selectors.PlayerSelectorHelp
 import com.app.empire.scene.service.warField.navi.seeker.NavmeshSeeker;
 import com.app.empire.scene.service.warField.spawn.SpwanNode;
 import com.app.empire.scene.util.BroadUtil;
-import com.app.empire.scene.util.exec.AbstractActionQueue;
-import com.app.empire.scene.util.exec.ThreadManager;
+import com.app.thread.exec.AbstractActionQueue;
+import com.app.thread.exec.ThreadManager;
 
 /**
  * 地图基类

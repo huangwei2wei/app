@@ -59,8 +59,8 @@ import com.app.empire.scene.util.BroadUtil;
 import com.app.empire.scene.util.MathUtils;
 import com.app.empire.scene.util.Vector3;
 import com.app.empire.scene.util.Vector3BuilderHelper;
-import com.app.empire.scene.util.exec.AbstractActionQueue;
-import com.app.empire.scene.util.exec.ThreadManager;
+import com.app.thread.exec.AbstractActionQueue;
+import com.app.thread.exec.ThreadManager;
 
 /***
  * 需要瘦身

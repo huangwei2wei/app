@@ -15,7 +15,7 @@ import com.app.protocol.handler.IDataHandler;
  */
 public class ChangeMapHandler implements IDataHandler {
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		PbAbstractData pbData = (PbAbstractData) data;
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		// 玩家当前位置信息
@@ -30,7 +30,6 @@ public class ChangeMapHandler implements IDataHandler {
 		// PBMessage message = MessageUtil.buildMessage(Protocol.S_ENTERSCENE, player.getPlayerId(), msg);
 		// player.sendPbMessage(message);
 		session.write(Protocol.MAIN_MAP, Protocol.MAP_ChangeMap, data.getSessionId(), data.getSerial(), msg, EnumTarget.SCENESSERVER.getValue());
-		return null;
 	}
 
 }

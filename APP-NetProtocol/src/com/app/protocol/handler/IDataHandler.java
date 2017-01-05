@@ -1,5 +1,7 @@
 package com.app.protocol.handler;
+
 import com.app.protocol.data.AbstractData;
+
 /**
  * 接口 <code>IDataHandler</code>，定义逻辑处理接口，内部定义了handle方法。
  * 
@@ -8,5 +10,5 @@ import com.app.protocol.data.AbstractData;
  */
 
 public interface IDataHandler {
-	public AbstractData handle(AbstractData paramAbstractData) throws Exception;
+	public void handle(AbstractData paramAbstractData) throws Exception;
 }

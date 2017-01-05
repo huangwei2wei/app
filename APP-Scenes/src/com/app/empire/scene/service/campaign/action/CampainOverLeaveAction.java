@@ -4,7 +4,7 @@ import com.app.empire.scene.service.campaign.Campaign;
 import com.app.empire.scene.service.warField.action.EnterFieldAction;
 import com.app.empire.scene.service.world.ArmyPositionRecord;
 import com.app.empire.scene.service.world.ArmyProxy;
-import com.app.empire.scene.util.exec.Action;
+import com.app.thread.exec.Action;
 
 public class CampainOverLeaveAction extends Action {
 	Campaign campaign;

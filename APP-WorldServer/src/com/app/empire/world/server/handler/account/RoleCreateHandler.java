@@ -26,7 +26,7 @@ import com.app.protocol.handler.IDataHandler;
 public class RoleCreateHandler implements IDataHandler {
 	private Logger log = Logger.getLogger(RoleCreateHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		Client client = session.getClient(data.getSessionId());
 		RoleCreate createActor = (RoleCreate) data;
@@ -35,17 +35,17 @@ public class RoleCreateHandler implements IDataHandler {
 		String systemVersion = createActor.getSystemVersion();
 
 		if ((client == null) || (client.getStatus() != Client.STATUS.ACCOUNTLOGIN)) {
-			return null;
+			return;
 		}
 		client.setStatus(Client.STATUS.CREATEPLAYE);
 		try {
 			PlayerService playerService = ServiceManager.getManager().getPlayerService();
 			List<Player> list = playerService.getPlayerList(client.getAccountId());
 			if (list.size() > 3) {
-				return null;
+				return;
 			}
-			Player player = playerService.createPlayer(client.getAccountId(), createActor.getNickname(),client.getName(), createActor.getHeroExtId(),
-					client.getChannel(), clientModel, systemName, systemVersion);
+			Player player = playerService.createPlayer(client.getAccountId(), createActor.getNickname(), client.getName(), createActor.getHeroExtId(), client.getChannel(),
+					clientModel, systemName, systemVersion);
 			// Mail mail = new Mail();
 			// mail.setBlackMail(false);
 			// mail.setContent(TipMessages.WELCOME);
@@ -64,18 +64,17 @@ public class RoleCreateHandler implements IDataHandler {
 			// 取角色列表
 			GetRoleListHandler getActorListHandler = new GetRoleListHandler();
 			getActorListHandler.handle(data);
-			return null;
+			return;
 		} catch (CreatePlayerException ex) {
 			ServiceUtils.log(log, -1, data.getTypeString(), "CreateActor [" + createActor.getNickname() + "] failed");
 			if (!ex.getMessage().startsWith(Common.ERRORKEY)) {
 				this.log.error(ex, ex);
 			}
 			if (null != ex.getMessage())
-				throw new ProtocolException(ex.getMessage().replace(Common.ERRORKEY, ""), data.getSerial(), data.getSessionId(),
-						data.getType(), data.getSubType());
+				throw new ProtocolException(ex.getMessage().replace(Common.ERRORKEY, ""), data.getSerial(), data.getSessionId(), data.getType(), data.getSubType());
 		} finally {
 			client.setStatus(Client.STATUS.ACCOUNTLOGIN);
 		}
-		return null;
+		return;
 	}
 }

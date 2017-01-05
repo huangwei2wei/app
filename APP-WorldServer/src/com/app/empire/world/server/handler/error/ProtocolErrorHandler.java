@@ -10,11 +10,11 @@ import com.app.protocol.data.AbstractData;
 import com.app.protocol.handler.IDataHandler;
 
 public class ProtocolErrorHandler implements IDataHandler {
-	public AbstractData handle(AbstractData message) throws Exception {
+	public void handle(AbstractData message) throws Exception {
 		ProtocolError msg = (ProtocolError) message;
 		IRequest request = ServiceManager.getManager().getRequestService().remove(msg.getSerial());
 		if (request == null) {
-			return null;
+			return;
 		}
 		ConnectSession session = ((SessionRequest) request).getConnectionSession();
 		msg.setSerial(request.getId());
@@ -22,6 +22,6 @@ public class ProtocolErrorHandler implements IDataHandler {
 		msg.setSessionId(((SessionRequest) request).getSessionId());
 		if (session != null)
 			session.write(msg);
-		return null;
+
 	}
 }

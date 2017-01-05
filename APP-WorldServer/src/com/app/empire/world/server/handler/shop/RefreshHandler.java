@@ -27,7 +27,8 @@ import com.app.protocol.handler.IDataHandler;
 
 public class RefreshHandler implements IDataHandler {
 	private Logger log = Logger.getLogger(RefreshHandler.class.getPackage().getName());
-	public AbstractData handle(AbstractData data) throws Exception {
+
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
 		Refresh getShop = (Refresh) data;
@@ -63,7 +64,7 @@ public class RefreshHandler implements IDataHandler {
 			ok.setNum(num);
 			ok.setGold(gold);
 			ok.setDiamond(diamond);
-			return ok;
+			session.write(ok);
 
 		} catch (PlayerDataException ex) {
 			throw new ProtocolException(ex.getMessage(), data.getSerial(), data.getSessionId(), data.getType(), data.getSubType());

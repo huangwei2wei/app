@@ -12,7 +12,7 @@ import com.app.empire.scene.service.role.objects.Living;
 import com.app.empire.scene.service.role.objects.Monster;
 import com.app.empire.scene.service.warField.field.Field;
 import com.app.empire.scene.util.TimeUtil;
-import com.app.empire.scene.util.engine.DelayAction;
+import com.app.thread.engine.DelayAction;
 
 public class FieldPollingAction extends DelayAction {
 	private Field field;

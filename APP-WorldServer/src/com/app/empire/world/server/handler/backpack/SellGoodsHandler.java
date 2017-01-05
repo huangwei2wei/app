@@ -17,7 +17,7 @@ import com.app.protocol.handler.IDataHandler;
 public class SellGoodsHandler implements IDataHandler {
 	@SuppressWarnings("unused")
 	private Logger log = Logger.getLogger("backpack");
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		SellGoods sellGoods = (SellGoods) data;
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		WorldPlayer player = session.getPlayer(data.getSessionId());
@@ -27,7 +27,7 @@ public class SellGoodsHandler implements IDataHandler {
 			SellGoodsOk sellGoodsOk = new SellGoodsOk(sellGoods.getSessionId(), sellGoods.getSerial());
 			sellGoodsOk.setName("gold");
 			sellGoodsOk.setPrice(price);
-			return sellGoodsOk;
+			session.write(  sellGoodsOk);
 		} catch (Exception e) {
 			throw new ProtocolException(e.getMessage(), sellGoods.getSerial(), sellGoods.getSessionId(), sellGoods.getType(), sellGoods.getSubType());
 		}

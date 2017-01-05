@@ -14,7 +14,7 @@ public class GetProductIdListHandler implements IDataHandler {
 	Logger log = Logger.getLogger(GetProductIdListHandler.class);
 
 	// 商品列表
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 //		ConnectSession session = (ConnectSession) data.getHandlerSource();
 //		GetProductIdList getProductIdList = (GetProductIdList) data;
 //		WorldPlayer player = session.getPlayer(data.getSessionId());
@@ -45,6 +45,5 @@ public class GetProductIdListHandler implements IDataHandler {
 //		} catch (Exception ex) {
 //			ex.printStackTrace();
 //		}
-		return null;
 	}
 }

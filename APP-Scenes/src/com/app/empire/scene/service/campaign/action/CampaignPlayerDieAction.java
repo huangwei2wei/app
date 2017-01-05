@@ -3,7 +3,7 @@ package com.app.empire.scene.service.campaign.action;
 import com.app.empire.scene.service.campaign.Campaign;
 import com.app.empire.scene.service.role.objects.Living;
 import com.app.empire.scene.service.role.objects.Player;
-import com.app.empire.scene.util.exec.Action;
+import com.app.thread.exec.Action;
 
 public class CampaignPlayerDieAction extends Action {
 

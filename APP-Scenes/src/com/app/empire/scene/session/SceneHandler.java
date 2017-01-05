@@ -2,14 +2,13 @@ package com.app.empire.scene.session;
 
 import org.apache.mina.core.session.IoSession;
 
+import com.app.empire.scene.service.ServiceManager;
 import com.app.empire.scene.service.world.ArmyProxy;
-import com.app.empire.scene.util.exec.HandlerAction;
-import com.app.empire.scene.util.exec.ThreadManager;
-import com.app.net.ProtocolFactory;
 import com.app.protocol.data.PbAbstractData;
-import com.app.protocol.handler.IDataHandler;
+import com.app.session.Session;
 import com.app.session.SessionHandler;
 import com.app.session.SessionRegistry;
+import com.app.thread.exec.ThreadManager;
 
 /**
  * 类 SessionHandler Session处理类 继承SessionHandler ，由子类负责创建不同类型的Session类<br>
@@ -17,7 +16,7 @@ import com.app.session.SessionRegistry;
  * 
  * @since JDK 1.6
  */
-public abstract class SceneHandler extends SessionHandler {
+public class SceneHandler extends SessionHandler {
 
 	/**
 	 * 构造函数，初始化<tt>SessionRegistry</tt>值
@@ -26,6 +25,12 @@ public abstract class SceneHandler extends SessionHandler {
 	 */
 	public SceneHandler(SessionRegistry registry) {
 		super(registry);
+	}
+
+	public Session createSession(IoSession session) {
+		ConnectSession connSession = new ConnectSession(session);
+		connSession.setPlayerService(ServiceManager.getManager().getPlayerService());
+		return connSession;
 	}
 
 	/*

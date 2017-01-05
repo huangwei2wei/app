@@ -1,4 +1,5 @@
 package com.app.empire.world.server.handler.shop;
+
 import org.apache.log4j.Logger;
 
 import com.app.empire.protocol.data.shop.Buy;
@@ -13,7 +14,8 @@ import com.app.protocol.handler.IDataHandler;
 
 public class BuyHandler implements IDataHandler {
 	private Logger log = Logger.getLogger(GetShopHandler.class.getPackage().getName());
-	public AbstractData handle(AbstractData data) throws Exception {
+
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
 		Buy buy = (Buy) data;
@@ -23,7 +25,7 @@ public class BuyHandler implements IDataHandler {
 		try {
 			ServiceManager.getManager().getPlayerShopService().buyShop(worldPlayer, shopType, id, num);
 			BuyOk ok = new BuyOk(data.getSessionId(), data.getSerial());
-			return ok;
+			session.write(ok);
 		} catch (PlayerDataException ex) {
 			throw new ProtocolException(ex.getMessage(), data.getSerial(), data.getSessionId(), data.getType(), data.getSubType());
 		}

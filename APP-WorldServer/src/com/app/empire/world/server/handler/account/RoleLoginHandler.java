@@ -31,7 +31,7 @@ import com.app.protocol.handler.IDataHandler;
 public class RoleLoginHandler implements IDataHandler {
 	private Logger log = Logger.getLogger(RoleLoginHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		// RoleLogin login = (RoleLogin) data;
 		PbAbstractData msg = (PbAbstractData) data;
@@ -39,7 +39,7 @@ public class RoleLoginHandler implements IDataHandler {
 		Client client = session.getClient(data.getSessionId());
 		if (client == null || !client.isLogin()) {
 			log.error("client is null sessionId:" + data.getSessionId());
-			return null;
+			return;
 		}
 
 		if (session.isFull()) {
@@ -52,7 +52,7 @@ public class RoleLoginHandler implements IDataHandler {
 			worldPlayer = ServiceManager.getManager().getPlayerService().loadWorldPlayer(client, login);
 			if (worldPlayer == null) {
 				this.log.info("AccountId[" + client.getAccountId() + "]login.getPlayerName()[" + login.getNickname() + "]LOGIN ERROR");
-				return null;
+				return;
 			}
 			// 返回loginPlayerOk
 			long nTime = System.currentTimeMillis();
@@ -93,9 +93,10 @@ public class RoleLoginHandler implements IDataHandler {
 			// return playerLoginOk;
 
 			// session.write(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_RoleLoginOk, data.getSessionId(), data.getSerial(), playerLoginOk.build(), EnumTarget.CLIENT.getValue());
-			session.write(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_RoleLoginOk, data.getSessionId(), data.getSerial(), worldPlayer.getArmyPacket().build(), EnumTarget.SCENESSERVER.getValue());
+			session.write(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_RoleLoginOk, data.getSessionId(), data.getSerial(), worldPlayer.getArmyPacket().build(),
+					EnumTarget.SCENESSERVER.getValue());
 			System.out.println(data.getSessionId() + "    " + data.getSerial());
-			return null;
+			return;
 		} catch (CreatePlayerException ex) {
 			this.log.error(ex, ex);
 			throw new ProtocolException(ex.getMessage(), data.getSerial(), data.getSessionId(), data.getType(), data.getSubType());

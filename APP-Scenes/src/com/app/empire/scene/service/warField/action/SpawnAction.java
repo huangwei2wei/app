@@ -2,8 +2,8 @@ package com.app.empire.scene.service.warField.action;
 
 import com.app.db.mysql.entity.FieldSpawn;
 import com.app.empire.scene.service.warField.field.Field;
-import com.app.empire.scene.util.exec.DelayAction;
-import com.app.empire.scene.util.exec.ThreadManager;
+import com.app.thread.exec.DelayAction;
+import com.app.thread.exec.ThreadManager;
 
 @Deprecated
 public class SpawnAction extends DelayAction {

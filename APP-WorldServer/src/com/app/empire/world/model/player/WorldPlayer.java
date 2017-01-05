@@ -8,7 +8,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.log4j.Logger;
-import org.aspectj.bridge.MessageUtil;
 
 import com.app.db.mysql.entity.FieldInfo;
 import com.app.empire.protocol.Protocol;
@@ -32,18 +31,19 @@ import com.app.empire.world.exception.PlayerDataException;
 import com.app.empire.world.logs.GameLogService;
 import com.app.empire.world.model.Client;
 import com.app.empire.world.service.factory.ServiceManager;
-import com.app.empire.world.service.map.manager.MapProxyManager;
 import com.app.empire.world.service.skill.SkillInventory;
 import com.app.empire.world.session.ConnectSession;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.data.AbstractData.EnumTarget;
+import com.app.thread.exec.AbstractActionQueue;
+import com.app.thread.exec.ThreadManager;
 
 /**
  * 封装游戏世界角色类， 游戏角色的基本属性操作都在本类中继承或实现。
  * 
  * @author doter
  */
-public class WorldPlayer {
+public class WorldPlayer extends AbstractActionQueue {
 	private Logger log = Logger.getLogger(WorldPlayer.class);
 	private long lastSendMsgTime;// 最后发送聊天时间
 	private int sendMsgCount;// 连续发送消息数量
@@ -62,6 +62,7 @@ public class WorldPlayer {
 	 * @throws Exception
 	 */
 	public WorldPlayer(Player player) {
+		super(ThreadManager.cmdExecutor);
 		this.player = player;
 	}
 

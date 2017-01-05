@@ -9,7 +9,6 @@ import com.app.protocol.handler.IDataHandler;
  * @since JDK 1.6
  */
 public class ChannelLoginHandler implements IDataHandler {
-	public AbstractData handle(AbstractData data) throws Exception {
-		return null;
+	public void handle(AbstractData data) throws Exception {
 	}
 }

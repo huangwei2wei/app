@@ -108,6 +108,30 @@ public abstract class Connector implements IConnector {
 
 	protected abstract void idle();
 
+	public String getUserName() {
+		return this.userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassword() {
+		return this.password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setNeedRetry(boolean needRetry) {
+		this.needRetry = needRetry;
+	}
+
+	public boolean isNeedRetry() {
+		return this.needRetry;
+	}
+
 	/**
 	 * 原始的会话处理
 	 * 
@@ -174,29 +198,5 @@ public abstract class Connector implements IConnector {
 			super.sessionIdle(session, status);
 			Connector.this.idle();
 		}
-	}
-
-	public String getUserName() {
-		return this.userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-
-	public String getPassword() {
-		return this.password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public void setNeedRetry(boolean needRetry) {
-		this.needRetry = needRetry;
-	}
-
-	public boolean isNeedRetry() {
-		return this.needRetry;
 	}
 }

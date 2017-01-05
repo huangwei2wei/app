@@ -17,18 +17,18 @@ import com.app.protocol.handler.IDataHandler;
 public class SetTokenHandler implements IDataHandler {
 	private static Logger log = Logger.getLogger(SetTokenHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		WorldPlayer player = session.getPlayer(data.getSessionId());
 		SetToken setToken = (SetToken) data;
 		try {
-//			player.getPlayer().setToken(setToken.getToken());
-//			player.getPlayer().setUdid(setToken.getUdid());
+			// player.getPlayer().setToken(setToken.getToken());
+			// player.getPlayer().setUdid(setToken.getUdid());
 			ServiceManager.getManager().getPlayerService().savePlayerData(player.getPlayer());
 		} catch (Exception ex) {
 			log.error(ex, ex);
 			ex.printStackTrace();
 		}
-		return null;
+		return;
 	}
 }

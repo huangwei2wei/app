@@ -8,7 +8,7 @@ import com.app.empire.scene.service.battle.buffer.Buffer;
 import com.app.empire.scene.service.battle.buffer.BufferFactory;
 import com.app.empire.scene.service.battle.buffer.BufferTargetType;
 import com.app.empire.scene.service.role.objects.Living;
-import com.app.empire.scene.util.exec.DelayAction;
+import com.app.thread.exec.DelayAction;
 
 public class AddDelayBuffAction extends DelayAction {
 	Living					source;

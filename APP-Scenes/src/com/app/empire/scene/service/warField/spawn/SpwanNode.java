@@ -14,9 +14,9 @@ import com.app.empire.scene.service.campaign.node.CampaignNodeDecorator;
 import com.app.empire.scene.service.role.objects.Living;
 import com.app.empire.scene.service.warField.field.Field;
 import com.app.empire.scene.service.world.ArmyProxy;
-import com.app.empire.scene.util.exec.AbstractActionQueue;
-import com.app.empire.scene.util.exec.DelayAction;
-import com.app.empire.scene.util.exec.ThreadManager;
+import com.app.thread.exec.AbstractActionQueue;
+import com.app.thread.exec.DelayAction;
+import com.app.thread.exec.ThreadManager;
 
 public class SpwanNode {
 	protected Logger log = Logger.getLogger(SpwanNode.class);

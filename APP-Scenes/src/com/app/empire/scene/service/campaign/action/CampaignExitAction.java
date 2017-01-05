@@ -9,7 +9,7 @@ import com.app.empire.scene.service.campaign.state.CampaignState;
 import com.app.empire.scene.service.warField.action.EnterFieldAction;
 import com.app.empire.scene.service.world.ArmyPositionRecord;
 import com.app.empire.scene.service.world.ArmyProxy;
-import com.app.empire.scene.util.exec.Action;
+import com.app.thread.exec.Action;
 
 /**
  * 玩家彻底退出副本，被踢出副本

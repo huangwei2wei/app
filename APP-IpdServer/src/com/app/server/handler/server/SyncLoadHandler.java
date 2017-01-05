@@ -1,4 +1,5 @@
 package com.app.server.handler.server;
+
 import com.app.empire.protocol.data.server.SyncLoad;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.handler.IDataHandler;
@@ -12,7 +13,7 @@ import com.app.server.session.DispatchSession;
  * @see com.sumsharp.protocol.handler.IDataHandler
  */
 public class SyncLoadHandler implements IDataHandler {
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		DispatchSession session = (DispatchSession) data.getHandlerSource();
 		SyncLoad sl = (SyncLoad) data;
 		LineInfo info = ServiceManager.getManager().getServerListService().getLineInfoById(session.getId());
@@ -25,6 +26,6 @@ public class SyncLoadHandler implements IDataHandler {
 				info.setMaintance(sl.getMaintance());
 			}
 		}
-		return null;
+		return;
 	}
 }

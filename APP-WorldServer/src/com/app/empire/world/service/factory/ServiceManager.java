@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.empire.world.common.util.ThreadPool;
-import com.app.empire.world.service.base.impl.AbstractService;
 import com.app.empire.world.service.base.impl.ChatService;
 import com.app.empire.world.service.base.impl.ConnectService;
 import com.app.empire.world.service.base.impl.GameConfigService;
@@ -54,8 +53,6 @@ public class ServiceManager {
 	private OrderSerialService orderSerialService;
 	// @Autowired
 	// private CrossService crossService;// 跨服对战相关服务
-	@Autowired
-	private AbstractService abstractService;// 协议处理线程
 	@Autowired
 	private ConnectService connectService;// 连接服务
 	@Autowired
@@ -161,19 +158,6 @@ public class ServiceManager {
 
 	public ThreadPool getSimpleThreadPool() {
 		return simpleThreadPool;
-	}
-
-	// public CrossService getCrossService() {
-	// return crossService;
-	// }
-
-	/**
-	 * 获取协议处理线程
-	 * 
-	 * @return
-	 */
-	public AbstractService getAbstractService() {
-		return abstractService;
 	}
 
 	public GameConfigService getGameConfigService() {

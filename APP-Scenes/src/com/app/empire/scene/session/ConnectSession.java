@@ -51,6 +51,7 @@ public class ConnectSession extends Session {
 	@Override
 	public void idle(IoSession session, IdleStatus status) {
 		System.out.println("关闭链接：" + session);
+		log.info("关闭链接：" + session);
 		session.close(true);
 	}
 

@@ -2,8 +2,6 @@ package com.app.empire.scene.service.world;
 
 import java.util.Set;
 
-import org.aspectj.bridge.MessageUtil;
-
 import com.app.db.mysql.entity.FieldInfo;
 import com.app.empire.protocol.Protocol;
 import com.app.empire.protocol.pb.army.ArmyInfoReloadMsgProto.ArmyInfoReloadMsg;
@@ -13,7 +11,6 @@ import com.app.empire.protocol.pb.army.PropertyMsgProto.PropertyMsg;
 import com.app.empire.protocol.pb.player.PlayerAttUpdateProto.PlayerAttUpdateMsg;
 import com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg;
 import com.app.empire.protocol.pb.warField.Vector3Proto.PBVector3;
-import com.app.empire.scene.constant.EnterMapResult;
 import com.app.empire.scene.constant.EnumAttr;
 import com.app.empire.scene.service.ServiceManager;
 import com.app.empire.scene.service.campaign.Campaign;
@@ -28,10 +25,9 @@ import com.app.empire.scene.service.warField.helper.selectors.PlayerSelectorHelp
 import com.app.empire.scene.session.ConnectSession;
 import com.app.empire.scene.util.Vector3;
 import com.app.empire.scene.util.Vector3BuilderHelper;
-import com.app.empire.scene.util.exec.AbstractActionQueue;
-import com.app.empire.scene.util.exec.ThreadManager;
 import com.app.protocol.data.AbstractData.EnumTarget;
-import com.app.protocol.data.PbAbstractData;
+import com.app.thread.exec.AbstractActionQueue;
+import com.app.thread.exec.ThreadManager;
 import com.google.protobuf.Message;
 
 /**

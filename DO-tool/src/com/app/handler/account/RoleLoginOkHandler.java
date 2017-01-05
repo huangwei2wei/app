@@ -20,7 +20,7 @@ import com.app.protocol.data.PbAbstractData;
 import com.app.protocol.handler.IDataHandler;
 
 public class RoleLoginOkHandler implements IDataHandler {
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		StatisticsServer.getStatisticsServer().getResNum().getAndIncrement();
 		PbAbstractData msg = (PbAbstractData) data;
 		PlayerInfoMsg login = PlayerInfoMsg.parseFrom(msg.getBytes());
@@ -258,6 +258,5 @@ public class RoleLoginOkHandler implements IDataHandler {
 		// test2.setBytes(testMsg.build().toByteArray());
 		// connector.send(test2);
 		connector.send(Protocol.MAIN_TEST, Protocol.TEST_Test2, testMsg.build(), EnumTarget.WORLDSERVER.getValue());
-		return null;
 	}
 }

@@ -3,7 +3,7 @@ package com.app.empire.scene.service.campaign.action;
 import com.app.empire.scene.service.campaign.Campaign;
 import com.app.empire.scene.service.warField.spawn.SpwanNode;
 import com.app.empire.scene.service.world.ArmyProxy;
-import com.app.empire.scene.util.exec.Action;
+import com.app.thread.exec.Action;
 
 public class CampaignTriggerPointAction extends Action {
 	private Campaign campaign;

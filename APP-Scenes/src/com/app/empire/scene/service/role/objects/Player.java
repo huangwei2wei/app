@@ -37,7 +37,7 @@ import com.app.empire.scene.service.world.ArmyProxy;
 import com.app.empire.scene.service.world.PlayerService;
 import com.app.empire.scene.util.BroadUtil;
 import com.app.empire.scene.util.MathUtils;
-import com.app.empire.scene.util.exec.DelayAction;
+import com.app.thread.exec.DelayAction;
 
 public class Player extends ActiveLiving {
 	/** 是否复活中 */

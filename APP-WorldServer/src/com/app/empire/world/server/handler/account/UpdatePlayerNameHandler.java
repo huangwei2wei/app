@@ -9,6 +9,7 @@ import com.app.empire.world.session.ConnectSession;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.exception.ProtocolException;
 import com.app.protocol.handler.IDataHandler;
+
 /**
  * 修改玩家角色昵称
  * 
@@ -16,7 +17,7 @@ import com.app.protocol.handler.IDataHandler;
  * 
  */
 public class UpdatePlayerNameHandler implements IDataHandler {
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
 		UpdatePlayerName updatePlayerName = (UpdatePlayerName) data;
@@ -24,7 +25,7 @@ public class UpdatePlayerNameHandler implements IDataHandler {
 		try {
 			ServiceManager.getManager().getPlayerService().updateName(worldPlayer, nickname);
 			UpdatePlayerNameOk ok = new UpdatePlayerNameOk(data.getSessionId(), data.getSerial());
-			return ok;
+			session.write(ok);
 		} catch (PlayerDataException ex) {
 			throw new ProtocolException(ex.getMessage(), data.getSerial(), data.getSessionId(), data.getType(), data.getSubType());
 		}

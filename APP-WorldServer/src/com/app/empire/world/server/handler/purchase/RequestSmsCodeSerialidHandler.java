@@ -14,8 +14,7 @@ import com.app.protocol.handler.IDataHandler;
 public class RequestSmsCodeSerialidHandler implements IDataHandler {
 	Logger log = Logger.getLogger(RequestSmsCodeSerialidHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ServiceManager.getManager().getOrderSerialService().addSerialInfo(data);
-		return null;
 	}
 }

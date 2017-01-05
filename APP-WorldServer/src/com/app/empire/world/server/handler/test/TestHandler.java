@@ -8,7 +8,7 @@ import com.app.protocol.data.AbstractData;
 import com.app.protocol.handler.IDataHandler;
 
 public class TestHandler implements IDataHandler {
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		Test test = (Test) data;
 		int a = test.getA();
 		System.out.println(test.isC() + "---------");
@@ -26,6 +26,5 @@ public class TestHandler implements IDataHandler {
 		
 		ItemVo vo = test.getItemVo();
 		System.out.println(vo.getE()+"-----"+vo.getVo2().getE());
-		return null;
 	}
 }

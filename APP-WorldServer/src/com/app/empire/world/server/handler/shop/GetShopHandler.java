@@ -26,7 +26,7 @@ import com.app.protocol.handler.IDataHandler;
 
 public class GetShopHandler implements IDataHandler {
 	private Logger log = Logger.getLogger(GetShopHandler.class.getPackage().getName());
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
 		GetShop getShop = (GetShop) data;
@@ -68,6 +68,6 @@ public class GetShopHandler implements IDataHandler {
 		ok.setGold(gold);
 		ok.setDiamond(diamond);
 		ok.setRefreshNum(refreshNum);
-		return ok;
+		session.write(ok);
 	}
 }

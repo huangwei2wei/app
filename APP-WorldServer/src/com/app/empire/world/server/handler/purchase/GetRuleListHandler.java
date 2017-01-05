@@ -15,7 +15,7 @@ import com.app.protocol.handler.IDataHandler;
 public class GetRuleListHandler implements IDataHandler {
 	Logger log = Logger.getLogger(GetRuleListHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		try {
 			int[] price = new int[4];
@@ -39,6 +39,5 @@ public class GetRuleListHandler implements IDataHandler {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		return null;
 	}
 }

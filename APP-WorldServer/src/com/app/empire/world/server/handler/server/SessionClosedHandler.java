@@ -16,7 +16,7 @@ import com.app.protocol.handler.IDataHandler;
 public class SessionClosedHandler implements IDataHandler {
 	Logger log = Logger.getLogger(SessionClosedHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		SessionClosed closed = (SessionClosed) data;
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		Client client = session.getClient(closed.getSession());
@@ -34,6 +34,5 @@ public class SessionClosedHandler implements IDataHandler {
 		} else {
 			log.info("注意：用户下线异常　sessionId: " + closed.getSession());
 		}
-		return null;
 	}
 }

@@ -31,7 +31,7 @@ public class LoginAgainHandler implements IDataHandler {
 		this.log = Logger.getLogger(LoginAgainHandler.class);
 	}
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		LoginAgain loginAgain = (LoginAgain) data;
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		String accountName = loginAgain.getAccountName();
@@ -63,6 +63,5 @@ public class LoginAgainHandler implements IDataHandler {
 			// loginRequest);
 			// ServiceManager.getManager().getAccountSkeleton().send(legacyLogin);
 		}
-		return null;
 	}
 }

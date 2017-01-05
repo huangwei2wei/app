@@ -19,7 +19,7 @@ import com.app.protocol.handler.IDataHandler;
 public class SendLogHandler implements IDataHandler {
 	Logger log = Logger.getLogger(SendLogHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
 		SendLog sendLog = (SendLog) data;
@@ -34,6 +34,5 @@ public class SendLogHandler implements IDataHandler {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		return null;
 	}
 }

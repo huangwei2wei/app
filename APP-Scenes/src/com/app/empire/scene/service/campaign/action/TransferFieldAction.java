@@ -14,7 +14,7 @@ import com.app.empire.scene.service.warField.field.Field;
 import com.app.empire.scene.service.world.ArmyProxy;
 import com.app.empire.scene.util.Vector3;
 import com.app.empire.scene.util.Vector3BuilderHelper;
-import com.app.empire.scene.util.exec.Action;
+import com.app.thread.exec.Action;
 
 /**
  * 副本内转场地图

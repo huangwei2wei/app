@@ -21,10 +21,10 @@ import com.app.protocol.handler.IDataHandler;
  * 获取英雄技能
  * 
  * @author doter
- *
+ * 
  */
 public class GetSkillListHandler implements IDataHandler {
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		GetSkillList getHeroList = (GetSkillList) data;
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
@@ -48,13 +48,13 @@ public class GetSkillListHandler implements IDataHandler {
 				property.add(skill.getProperty());
 			}
 		}
-		
+
 		GetSkillListOK getSkillListOK = new GetSkillListOK(getHeroList.getSessionId(), getHeroList.getSerial());
 		getSkillListOK.setHeroId((ArrayUtils.toPrimitive(heroId.toArray(new Integer[heroId.size()]))));
 		getSkillListOK.setSkillBaseId((ArrayUtils.toPrimitive(skillBaseId.toArray(new Integer[skillBaseId.size()]))));
 		getSkillListOK.setSkillExtId((ArrayUtils.toPrimitive(skillExtId.toArray(new Integer[skillExtId.size()]))));
 		getSkillListOK.setLv((ArrayUtils.toPrimitive(lv.toArray(new Integer[lv.size()]))));
 		getSkillListOK.setProperty(property.toArray(new String[property.size()]));
-		return getSkillListOK;
+		session.write(getSkillListOK);
 	}
 }

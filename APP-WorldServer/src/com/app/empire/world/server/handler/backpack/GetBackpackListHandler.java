@@ -20,7 +20,7 @@ public class GetBackpackListHandler implements IDataHandler {
 	@SuppressWarnings("unused")
 	private Logger log = Logger.getLogger("backpack");
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		GetBackpackList equipList = (GetBackpackList) data;
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		WorldPlayer player = session.getPlayer(data.getSessionId());
@@ -43,6 +43,6 @@ public class GetBackpackListHandler implements IDataHandler {
 		listOk.setGoodsId(goodsId);
 		listOk.setGoodsNum(goodsNum);
 		listOk.setTime(time);
-		return listOk;
+		session.write(  listOk);
 	}
 }

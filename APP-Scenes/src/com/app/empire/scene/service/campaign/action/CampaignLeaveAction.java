@@ -9,7 +9,7 @@ import com.app.empire.scene.service.warField.action.EnterFieldAction;
 import com.app.empire.scene.service.warField.field.Field;
 import com.app.empire.scene.service.world.ArmyPositionRecord;
 import com.app.empire.scene.service.world.ArmyProxy;
-import com.app.empire.scene.util.exec.Action;
+import com.app.thread.exec.Action;
 
 /**
  * 离开副本

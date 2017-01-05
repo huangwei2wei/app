@@ -17,7 +17,7 @@ public class SendProductIdHandler implements IDataHandler {
 	private Logger log = Logger.getLogger("rechargeLog");
 
 	// 商品列表
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
 		SendProductId sendProductId = (SendProductId) data;
@@ -26,6 +26,5 @@ public class SendProductIdHandler implements IDataHandler {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		return null;
 	}
 }

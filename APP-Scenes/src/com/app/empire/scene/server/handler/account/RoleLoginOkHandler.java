@@ -19,13 +19,14 @@ public class RoleLoginOkHandler implements IDataHandler {
 	Logger log = Logger.getLogger(RoleLoginOkHandler.class);
 
 	@Override
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		PbAbstractData pbData = (PbAbstractData) data;
 		ArmyInfoMsg msg = ArmyInfoMsg.parseFrom(pbData.getBytes());
 		// ArmyInfoMsg msg = (ArmyInfoMsg) data;
 
 		int playerId = msg.getPlayerInfo().getPlayerId();
+		System.out.println("玩家：playerId 登录");
 		SimplePlayerInfo simPlayer = new SimplePlayerInfo();
 		simPlayer.readProto(msg.getPlayerInfo());
 
@@ -60,7 +61,6 @@ public class RoleLoginOkHandler implements IDataHandler {
 
 		session.write(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_RoleLoginOk, data.getSessionId(), data.getSerial(), msg, EnumTarget.SCENESSERVER.getValue());
 
-		return null;
 	}
 
 }

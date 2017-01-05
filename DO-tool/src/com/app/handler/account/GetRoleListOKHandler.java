@@ -15,7 +15,7 @@ import com.app.protocol.data.PbAbstractData;
 import com.app.protocol.handler.IDataHandler;
 
 public class GetRoleListOKHandler implements IDataHandler {
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		StatisticsServer.getStatisticsServer().getResNum().getAndIncrement();
 
 		// GetRoleListOK ok = (GetRoleListOK) data;
@@ -42,6 +42,5 @@ public class GetRoleListOKHandler implements IDataHandler {
 		roleLogin.setSystemVersion("--");
 		connector.send(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_RoleLogin, roleLogin.build(), EnumTarget.CLIENT.getValue());
 
-		return null;
 	}
 }

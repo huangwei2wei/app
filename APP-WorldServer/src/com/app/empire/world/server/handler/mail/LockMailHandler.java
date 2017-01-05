@@ -17,14 +17,14 @@ import com.app.protocol.handler.IDataHandler;
  */
 public class LockMailHandler implements IDataHandler {
 	private Logger log = Logger.getLogger(GetMailListHandler.class);
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		LockMail lockMail = (LockMail) data;
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
 		int mailId = lockMail.getMailId();// 邮件流水号
 		ServiceManager.getManager().getPlayerMailService().setMail(worldPlayer, mailId, (byte) 2);
 		LockMailOk lockMailOk = new LockMailOk(data.getSessionId(), data.getSerial());
-		return lockMailOk;
+		session.write(  lockMailOk);
 	}
 
 }

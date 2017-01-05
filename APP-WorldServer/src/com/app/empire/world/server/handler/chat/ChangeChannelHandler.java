@@ -18,7 +18,7 @@ import com.app.protocol.handler.IDataHandler;
 public class ChangeChannelHandler implements IDataHandler {
 	Logger log = Logger.getLogger(ChangeChannelHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		ChangeChannel changeChannel = (ChangeChannel) data;
 		WorldPlayer player = session.getPlayer(data.getSessionId());
@@ -32,6 +32,5 @@ public class ChangeChannelHandler implements IDataHandler {
 		String[] addChannels = new String[channelIds.size()];
 		channelIds.toArray(addChannels);
 		ServiceManager.getManager().getChatService().syncChannels(session, player.getPlayer().getId(), addChannels, new String[0]);
-		return null;
 	}
 }

@@ -1,4 +1,5 @@
 package com.app.empire.gameaccount.handler.server;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -14,6 +15,7 @@ import com.app.empire.protocol.data.server.AccountLogin;
 import com.app.empire.protocol.data.server.AccountLoginOk;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.handler.IDataHandler;
+
 /**
  * 账号登录
  * 
@@ -21,9 +23,10 @@ import com.app.protocol.handler.IDataHandler;
  */
 
 public class AccountLoginHandler implements IDataHandler {
-	//private  AtomicInteger staticSerial = new AtomicInteger(1);
+	// private AtomicInteger staticSerial = new AtomicInteger(1);
 	private Logger log = Logger.getLogger(AccountLoginHandler.class);
-	public AbstractData handle(AbstractData data) {
+
+	public void handle(AbstractData data) {
 		AccountLogin login = (AccountLogin) data;
 		AcceptSession session = (AcceptSession) data.getHandlerSource();
 		String name = login.getName();
@@ -82,8 +85,8 @@ public class AccountLoginHandler implements IDataHandler {
 				loginOk.setPassword("");
 				loginOk.setStatus(1);
 			}
-			//System.out.println(staticSerial.getAndIncrement());
-			return loginOk;
+			// System.out.println(staticSerial.getAndIncrement());
+			session.write(loginOk);
 		} catch (Exception e) {
 			log.error(e, e);
 			e.printStackTrace();
@@ -93,6 +96,5 @@ public class AccountLoginHandler implements IDataHandler {
 			loginOk.setStatus(2);
 			session.send(loginOk);
 		}
-		return null;
 	}
 }

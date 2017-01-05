@@ -8,7 +8,7 @@ import com.app.protocol.handler.IDataHandler;
 public class SubmitSMSProductHandler implements IDataHandler {
 	Logger log = Logger.getLogger(SubmitSMSProductHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 //		ConnectSession session = (ConnectSession) data.getHandlerSource();
 //		SubmitSMSProduct submitSMSProduct = (SubmitSMSProduct) data;
 //		WorldPlayer player = session.getPlayer(data.getSessionId());
@@ -75,6 +75,5 @@ public class SubmitSMSProductHandler implements IDataHandler {
 //		} catch (Exception ex) {
 //			ex.printStackTrace();
 //		}
-		return null;
 	}
 }

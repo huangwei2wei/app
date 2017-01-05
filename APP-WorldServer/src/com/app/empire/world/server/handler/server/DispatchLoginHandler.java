@@ -23,7 +23,7 @@ public class DispatchLoginHandler implements IDataHandler {
 		this.log = Logger.getLogger(DispatchLoginHandler.class);
 	}
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		UpdateServerInfo updateData = null;
 		DispatchLogin msg = (DispatchLogin) data;
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
@@ -55,6 +55,6 @@ public class DispatchLoginHandler implements IDataHandler {
 		} catch (Exception e) {
 			this.log.error(e, e);
 		}
-		return updateData;
+		session.write(  updateData);
 	}
 }

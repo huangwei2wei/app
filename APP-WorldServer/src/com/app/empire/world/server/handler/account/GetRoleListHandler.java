@@ -26,11 +26,11 @@ public class GetRoleListHandler implements IDataHandler {
 	Logger log = Logger.getLogger(GetRoleListHandler.class);
 
 	// 读取角色列表，但是现在只处理了新加角色
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		Client client = session.getClient(data.getSessionId());
 		if ((client == null) || (!(client.isLogin())))
-			return null;
+			return;
 		try {
 			// long time = System.currentTimeMillis();
 			List<Player> list = ServiceManager.getManager().getPlayerService().getPlayerList(client.getAccountId());
@@ -88,7 +88,6 @@ public class GetRoleListHandler implements IDataHandler {
 			// session.write(sendActorList);
 
 			session.write(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_GetRoleListOK, data.getSessionId(), data.getSerial(), msg.build(), EnumTarget.CLIENT.getValue());
-			return null;
 		} catch (Exception e) {
 			e.printStackTrace();
 			this.log.error(e, e);

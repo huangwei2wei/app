@@ -5,7 +5,6 @@ import java.net.InetSocketAddress;
 
 import org.apache.log4j.Logger;
 import org.apache.mina.core.session.IdleStatus;
-import org.apache.mina.core.session.IoSession;
 import org.apache.mina.filter.codec.ProtocolCodecFilter;
 import org.apache.mina.filter.executor.ExecutorFilter;
 import org.apache.mina.transport.socket.SocketSessionConfig;
@@ -15,13 +14,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.app.empire.protocol.Protocol;
 import com.app.empire.scene.service.ServiceManager;
-import com.app.empire.scene.session.ConnectSession;
 import com.app.empire.scene.session.SceneHandler;
 import com.app.net.ProtocolFactory;
 import com.app.protocol.data.DataBeanFilter;
 import com.app.protocol.s2s.S2SDecoder;
 import com.app.protocol.s2s.S2SEncoder;
-import com.app.session.Session;
 import com.app.session.SessionHandler;
 import com.app.session.SessionRegistry;
 
@@ -55,7 +52,7 @@ public class SceneServer {
 	 * @throws IOException
 	 */
 	private void openServerListener() throws IOException {
-		SessionHandler sessionHandler = new SceneSessionHandler(registry);
+		SessionHandler sessionHandler = new SceneHandler(registry);
 		NioSocketAcceptor acceptor = new NioSocketAcceptor(Runtime.getRuntime().availableProcessors() + 1);
 		SocketSessionConfig cfg = acceptor.getSessionConfig();
 		cfg.setIdleTime(IdleStatus.BOTH_IDLE, 180);
@@ -74,24 +71,6 @@ public class SceneServer {
 				.getInt("port")));
 		// 监听
 		acceptor.bind();
-	}
-
-	/**
-	 * 内部类 <code>DispatchSessionHandler</code>ip 分配器相关Handler
-	 * 
-	 * @see com.app.session.SessionHandler
-	 * @since JDK 1.6
-	 */
-	class SceneSessionHandler extends SceneHandler {
-		public SceneSessionHandler(SessionRegistry sessionRegistry) {
-			super(sessionRegistry);
-		}
-
-		public Session createSession(IoSession session) {
-			ConnectSession connSession = new ConnectSession(session);
-			connSession.setPlayerService(ServiceManager.getManager().getPlayerService());
-			return connSession;
-		}
 	}
 
 	public static SessionRegistry getRegistry() {

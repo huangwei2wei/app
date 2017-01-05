@@ -10,6 +10,7 @@ import com.app.empire.world.service.factory.ServiceManager;
 import com.app.empire.world.session.ConnectSession;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.handler.IDataHandler;
+
 /**
  * 删除邮件
  * 
@@ -18,13 +19,14 @@ import com.app.protocol.handler.IDataHandler;
  */
 public class DelMailHandler implements IDataHandler {
 	private Logger log = Logger.getLogger(GetMailListHandler.class);
-	public AbstractData handle(AbstractData data) throws Exception {
+
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		DelMail delMail = (DelMail) data;
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
 		int[] mailId = delMail.getMailId();// 邮件流水号
 		ServiceManager.getManager().getPlayerMailService().playerDelMail(worldPlayer, ArrayUtils.toObject(mailId));
 		DelMailOk delMailOk = new DelMailOk(data.getSessionId(), data.getSerial());
-		return delMailOk;
+		session.write(delMailOk);
 	}
 }

@@ -17,7 +17,7 @@ public class SendLogListHandler implements IDataHandler {
 	Logger log = Logger.getLogger(SendLogListHandler.class);
 
 	@SuppressWarnings("unused")
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		SendLogList sendLogList = (SendLogList) data;
 		try {
@@ -25,6 +25,5 @@ public class SendLogListHandler implements IDataHandler {
 		} catch (Exception ex) {
 			log.error(ex, ex);
 		}
-		return null;
 	}
 }

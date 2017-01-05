@@ -17,7 +17,7 @@ public class SendMailHandler implements IDataHandler {
 		this.log = Logger.getLogger(SendMailHandler.class);
 	}
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 //		ConnectSession session = (ConnectSession) data.getHandlerSource();
 //		WorldPlayer player = session.getPlayer(data.getSessionId());
 //		SendMail sendMail = (SendMail) data;
@@ -93,6 +93,5 @@ public class SendMailHandler implements IDataHandler {
 //			throw new ProtocolException(ErrorMessages.MAIL_FAIL_MESSAGE, data.getSerial(), data.getSessionId(), data.getType(),
 //					data.getSubType());
 //		}
-		return null;
 	}
 }

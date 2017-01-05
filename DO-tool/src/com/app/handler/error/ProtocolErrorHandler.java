@@ -10,7 +10,7 @@ import com.app.protocol.data.AbstractData;
 import com.app.protocol.handler.IDataHandler;
 
 public class ProtocolErrorHandler implements IDataHandler {
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		StatisticsServer.getStatisticsServer().getErrNum().getAndIncrement();
 		ProtocolError e = (ProtocolError) data;
 ////////////////////////////////////////////////////////////
@@ -28,6 +28,5 @@ public class ProtocolErrorHandler implements IDataHandler {
 //		roleLogin.setSystemVersion("--");
 //		connector.send(roleLogin);
 
-		return null;
 	}
 }

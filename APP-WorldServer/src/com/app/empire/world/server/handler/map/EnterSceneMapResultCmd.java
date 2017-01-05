@@ -23,7 +23,7 @@ import com.app.protocol.handler.IDataHandler;
 public class EnterSceneMapResultCmd implements IDataHandler {
 	Logger log = Logger.getLogger(EnterSceneMapResultCmd.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		PbAbstractData pbData = (PbAbstractData) data;
 		ChangeMapResultMsg msg = ChangeMapResultMsg.parseFrom(pbData.getBytes());
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
@@ -61,7 +61,6 @@ public class EnterSceneMapResultCmd implements IDataHandler {
 			// 当用户登录请求地图失败，则直接回到出生点
 			worldPlayer.backBornPoint();
 		}
-		return null;
 	}
 
 }

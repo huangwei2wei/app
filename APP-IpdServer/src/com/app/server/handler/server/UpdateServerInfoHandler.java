@@ -1,4 +1,5 @@
 package com.app.server.handler.server;
+
 import org.apache.log4j.Logger;
 
 import com.app.empire.protocol.data.server.UpdateServerInfo;
@@ -20,7 +21,7 @@ public class UpdateServerInfoHandler implements IDataHandler {
 		this.log = Logger.getLogger(UpdateServerInfoHandler.class);
 	}
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		UpdateServerInfo address = (UpdateServerInfo) data;
 		DispatchSession session = (DispatchSession) data.getHandlerSource();
 		System.out.println(address.getArea() + " " + address.getGroup() + " " + address.getMachineId());
@@ -38,6 +39,5 @@ public class UpdateServerInfoHandler implements IDataHandler {
 			this.log.info("Server [" + address.getArea() + "] [" + address.getGroup() + "] Connect Fail");
 			session.close();
 		}
-		return null;
 	}
 }

@@ -25,7 +25,7 @@ import com.app.protocol.handler.IDataHandler;
 @SuppressWarnings({"unused", "rawtypes"})
 public class ReceiveMailHandler implements IDataHandler {
 	private Logger log = Logger.getLogger(GetMailListHandler.class);
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		ReceiveMail receiveMail = (ReceiveMail) data;
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
@@ -34,7 +34,7 @@ public class ReceiveMailHandler implements IDataHandler {
 			Map<Integer, List> getGoods = ServiceManager.getManager().getPlayerMailService().receiveMail(worldPlayer, mailId);
 			ReceiveMailOk receiveMailOk = new ReceiveMailOk(data.getSessionId(), data.getSerial());
 			receiveMailOk.setGoods(JSON.toJSONString(getGoods));
-			return receiveMailOk;
+			session.write(  receiveMailOk);
 		} catch (PlayerDataException ex) {
 			throw new ProtocolException(ex.getMessage(), data.getSerial(), data.getSessionId(), data.getType(), data.getSubType());
 		}

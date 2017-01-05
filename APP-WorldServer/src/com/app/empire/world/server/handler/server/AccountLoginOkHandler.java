@@ -27,7 +27,7 @@ import com.app.protocol.handler.IDataHandler;
  */
 public class AccountLoginOkHandler implements IDataHandler {
 	Logger log = Logger.getLogger(AccountLoginOkHandler.class);
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		AccountLoginOk legacyLoginOk = (AccountLoginOk) data;
 		LoginRequest request = (LoginRequest) ServiceManager.getManager().getRequestService().remove(legacyLoginOk.getSerial());
 		ConnectSession session = request.getConnectionSession();
@@ -76,12 +76,11 @@ public class AccountLoginOkHandler implements IDataHandler {
 				LoginFail loginFail = new LoginFail(request.getSessionId(), request.getId());
 				loginFail.setMessage(TipMessages.LOGINFAIL);
 				this.log.info("Account[" + legacyLoginOk.getName() + "][Login Fail]");
-				return loginFail;
+				session.write( loginFail);
 			}
 		} catch (Exception e) {
 			log.info(e, e);
 		}
 
-		return null;
 	}
 }

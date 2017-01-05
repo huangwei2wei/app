@@ -109,7 +109,7 @@ public class WorldServer {
 		connectNearbyService();
 		log.info("NearbyService connected");
 		// 启动世界服务器
-		bind(new ConnectSessionHandler(registry));
+		bind(new WorldHandler(registry));
 		// 启动游戏管理服务
 		openManagerServlet();
 		log.info("游戏世界服务器启动...");
@@ -337,31 +337,4 @@ public class WorldServer {
 		}
 	}
 
-	static class ConnectSessionHandler extends WorldHandler {
-		/**
-		 * 创建一个 Session 类
-		 * 
-		 * @param IoSession Dispatch的链接IoSession
-		 * @return ConnectSession
-		 */
-		@Override
-		public Session createSession(IoSession session) {
-			ConnectSession connSession = new ConnectSession(session);
-			ServiceManager serviceManager = ServiceManager.getManager();
-			connSession.setAccountSkeleton(serviceManager.getAccountSkeleton());
-			connSession.setPlayerService(serviceManager.getPlayerService());
-			return connSession;
-		}
-
-		public ConnectSessionHandler(SessionRegistry sessionRegistry) {
-			super(sessionRegistry);
-		}
-
-		// @Override
-		// public void inputClosed(IoSession arg0) throws Exception {
-		// // TODO Auto-generated method stub
-		//
-		// }
-
-	}
 }

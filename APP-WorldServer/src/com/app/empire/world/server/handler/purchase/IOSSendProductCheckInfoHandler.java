@@ -19,7 +19,7 @@ public class IOSSendProductCheckInfoHandler implements IDataHandler {
 	private Logger log = Logger.getLogger("orderInfoLog");
 	private Logger errorLog = Logger.getLogger(IOSSendProductCheckInfoHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		IOSSendProductCheckInfo iosSendProductCheckInfo = (IOSSendProductCheckInfo) data;
 		WorldPlayer player = ServiceManager.getManager().getPlayerService().getPlayer(iosSendProductCheckInfo.getPlayerId());
 		try {
@@ -48,7 +48,6 @@ public class IOSSendProductCheckInfoHandler implements IDataHandler {
 			buyFailed.setCode(code);
 			player.sendData(buyFailed);
 		}
-		return null;
 	}
 	
 }

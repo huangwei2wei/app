@@ -10,7 +10,7 @@ import com.app.empire.scene.service.campaign.state.StartState;
 import com.app.empire.scene.service.warField.FieldMgr;
 import com.app.empire.scene.service.warField.field.Field;
 import com.app.empire.scene.service.world.ArmyProxy;
-import com.app.empire.scene.util.exec.Action;
+import com.app.thread.exec.Action;
 
 public class CampaignCreateAction extends Action {
 	private ArmyProxy army;

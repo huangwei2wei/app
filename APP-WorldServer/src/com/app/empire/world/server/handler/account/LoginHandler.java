@@ -25,7 +25,7 @@ public class LoginHandler implements IDataHandler {
 
 	// private AtomicInteger staticSerial = new AtomicInteger(1);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		PbAbstractData test = (PbAbstractData) data;
 		AccountLoginMsg login = AccountLoginMsg.parseFrom(test.getBytes());
 		// Login login = (Login) data;
@@ -64,6 +64,5 @@ public class LoginHandler implements IDataHandler {
 			this.log.error("账号数据出现异常---");
 		}
 		// System.out.println(staticSerial.getAndIncrement());
-		return null;
 	}
 }

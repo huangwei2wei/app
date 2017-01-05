@@ -10,6 +10,7 @@ import com.app.empire.world.session.ConnectSession;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.exception.ProtocolException;
 import com.app.protocol.handler.IDataHandler;
+
 /***
  * 技能学习
  * 
@@ -17,7 +18,7 @@ import com.app.protocol.handler.IDataHandler;
  * 
  */
 public class StudySkillHandler implements IDataHandler {
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		StudySkill studySkill = (StudySkill) data;
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
@@ -31,7 +32,7 @@ public class StudySkillHandler implements IDataHandler {
 			studySkillOK.setSkillExtId(skill.getSkillExtId());
 			studySkillOK.setLv(skill.getLv());
 			studySkillOK.setProperty(skill.getProperty());
-			return studySkillOK;
+			session.write(studySkillOK);
 		} catch (PlayerDataException ex) {
 			throw new ProtocolException(ex.getMessage(), data.getSerial(), data.getSessionId(), data.getType(), data.getSubType());
 		}

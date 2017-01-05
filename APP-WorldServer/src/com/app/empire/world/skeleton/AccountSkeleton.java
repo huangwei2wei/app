@@ -23,24 +23,26 @@ public class AccountSkeleton extends Connector implements IDataHandler {
 
 	@Override
 	public void init() {
-		this.config.setIdleTime(IdleStatus.BOTH_IDLE,120);
+		this.config.setIdleTime(IdleStatus.BOTH_IDLE, 120);
 		this.connector.getFilterChain().addLast("uwap2codec", new ProtocolCodecFilter(new S2SEncoder(), new S2SDecoder()));
 		this.connector.getFilterChain().addLast("uwap2databean", new DataBeanFilter());
 	}
+
 	@Override
-	public AbstractData handle(AbstractData message) throws Exception {
-		System.out.println("handle not found:"+message);
-		return null;
+	public void handle(AbstractData message) throws Exception {
+		System.out.println("handle not found:" + message);
 	}
+
 	@Override
 	protected void connected() {
 		String area = ServiceManager.getManager().getConfiguration().getString("area");
 		String group = ServiceManager.getManager().getConfiguration().getString("group");
 		String machinecode = ServiceManager.getManager().getConfiguration().getString("machinecode");
 		WorldServerToAccountServer wta = new WorldServerToAccountServer();
-		wta.setWorldServerId(area+"-"+group+"-"+machinecode);
+		wta.setWorldServerId(area + "-" + group + "-" + machinecode);
 		send(wta);
 	}
+
 	@Override
 	protected void idle() {
 		Heartbeat heart = new Heartbeat();

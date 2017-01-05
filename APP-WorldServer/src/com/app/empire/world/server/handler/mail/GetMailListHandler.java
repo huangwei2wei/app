@@ -20,7 +20,7 @@ import com.app.protocol.handler.IDataHandler;
  */
 public class GetMailListHandler implements IDataHandler {
 	private Logger log = Logger.getLogger(GetMailListHandler.class);
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		GetMailList getMailList = (GetMailList) data;
 		WorldPlayer worldPlayer = session.getPlayer(data.getSessionId());
@@ -60,6 +60,6 @@ public class GetMailListHandler implements IDataHandler {
 		getMailListOk.setGoods(goods);
 		getMailListOk.setStatus(status);
 
-		return getMailListOk;
+		session.write(  getMailListOk);
 	}
 }

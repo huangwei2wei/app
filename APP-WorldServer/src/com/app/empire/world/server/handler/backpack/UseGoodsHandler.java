@@ -21,7 +21,7 @@ import com.app.protocol.handler.IDataHandler;
  */
 public class UseGoodsHandler implements IDataHandler {
 	private Logger log = Logger.getLogger("backpack");
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		UseGoods useGoods = (UseGoods) data;
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		WorldPlayer player = session.getPlayer(data.getSessionId());
@@ -38,7 +38,7 @@ public class UseGoodsHandler implements IDataHandler {
 			UseGoodsOk ok = new UseGoodsOk(useGoods.getSessionId(), useGoods.getSerial());
 			ok.setKey(key.toArray(new String[key.size()]));
 			ok.setValue(ArrayUtils.toPrimitive(val.toArray(new Integer[val.size()])));
-			return ok;
+			session.write(  ok);
 		} catch (Exception e) {
 			e.printStackTrace();
 			this.log.info(e);

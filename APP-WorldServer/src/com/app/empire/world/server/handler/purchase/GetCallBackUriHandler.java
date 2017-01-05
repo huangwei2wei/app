@@ -16,7 +16,7 @@ import com.app.protocol.handler.IDataHandler;
 public class GetCallBackUriHandler implements IDataHandler {
 	Logger log = Logger.getLogger(GetCallBackUriHandler.class);
 
-	public AbstractData handle(AbstractData data) throws Exception {
+	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
 		try {
 			GetCallBackUriOk getCallBackUriOk = new GetCallBackUriOk(data.getSessionId(), data.getSerial());
@@ -27,6 +27,5 @@ public class GetCallBackUriHandler implements IDataHandler {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		return null;
 	}
 }

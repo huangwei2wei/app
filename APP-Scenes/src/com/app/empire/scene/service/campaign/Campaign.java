@@ -51,9 +51,9 @@ import com.app.empire.scene.service.warField.spawn.SpwanNode;
 import com.app.empire.scene.service.world.ArmyProxy;
 import com.app.empire.scene.util.ThreadSafeRandom;
 import com.app.empire.scene.util.Vector3;
-import com.app.empire.scene.util.exec.AbstractActionQueue;
-import com.app.empire.scene.util.exec.DelayAction;
-import com.app.empire.scene.util.exec.ThreadManager;
+import com.app.thread.exec.AbstractActionQueue;
+import com.app.thread.exec.DelayAction;
+import com.app.thread.exec.ThreadManager;
 
 /**
  * 基础副本信息

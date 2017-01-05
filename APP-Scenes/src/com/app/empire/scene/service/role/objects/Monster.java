@@ -33,7 +33,7 @@ import com.app.empire.scene.service.warField.helper.selectors.PlayerSelectorHelp
 import com.app.empire.scene.service.warField.spawn.MonsterSpawnNode;
 import com.app.empire.scene.service.world.ArmyProxy;
 import com.app.empire.scene.util.Vector3;
-import com.app.empire.scene.util.exec.DelayAction;
+import com.app.thread.exec.DelayAction;
 
 public class Monster extends ActiveLiving {
 	protected Logger log = Logger.getLogger(Monster.class);
