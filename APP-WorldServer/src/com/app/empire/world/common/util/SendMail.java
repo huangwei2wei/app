@@ -21,7 +21,7 @@ import javax.mail.util.ByteArrayDataSource;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import sun.misc.BASE64Encoder;
+//import sun.misc.BASE64Encoder;
 
 /**
  * 发送邮件基类
@@ -249,54 +249,54 @@ public class SendMail {
 		}
 	}
 
-	/**
-	 * 增加邮件附件
-	 * 
-	 * @param filePath
-	 *            附件文件地址
-	 * @param fileName
-	 *            附件名称
-	 * @return true：增加附件成功<br/>
-	 *         false：增加附件失败
-	 */
-	public boolean addBodyPart(String fileName, String filePath) {
-		try {
-			BodyPart bp = new MimeBodyPart();
-			FileDataSource fileds = new FileDataSource(filePath);
-			bp.setDataHandler(new DataHandler(fileds));
-			BASE64Encoder enc = new BASE64Encoder();
-			bp.setFileName("=?GBK?B?" + enc.encode((fileName).getBytes()) + "?=");
-			multipart.addBodyPart(bp);
-			return true;
-		} catch (Exception e) {
-			logger.info("增加邮件附件：" + filePath + "发生错误！" + e);
-			return false;
-		}
-	}
+//	/**
+//	 * 增加邮件附件
+//	 * 
+//	 * @param filePath
+//	 *            附件文件地址
+//	 * @param fileName
+//	 *            附件名称
+//	 * @return true：增加附件成功<br/>
+//	 *         false：增加附件失败
+//	 */
+//	public boolean addBodyPart(String fileName, String filePath) {
+//		try {
+//			BodyPart bp = new MimeBodyPart();
+//			FileDataSource fileds = new FileDataSource(filePath);
+//			bp.setDataHandler(new DataHandler(fileds));
+//			BASE64Encoder enc = new BASE64Encoder();
+//			bp.setFileName("=?GBK?B?" + enc.encode((fileName).getBytes()) + "?=");
+//			multipart.addBodyPart(bp);
+//			return true;
+//		} catch (Exception e) {
+//			logger.info("增加邮件附件：" + filePath + "发生错误！" + e);
+//			return false;
+//		}
+//	}
 
-	/**
-	 * 增加邮件附件：(二进制发送附件)
-	 * 
-	 * @param filename
-	 *            附件名称
-	 * @param baos
-	 *            ByteArrayOutputStream
-	 * @return true：增加附件成功<br/>
-	 *         false：增加附件失败
-	 */
-	public boolean addBodyPart(String filename, ByteArrayOutputStream baos) {
-		try {
-			BodyPart bp = new MimeBodyPart();
-			bp.setDataHandler(new DataHandler(new ByteArrayDataSource(baos.toByteArray(), "lotontech/javaobject")));
-			BASE64Encoder enc = new BASE64Encoder();
-			bp.setFileName("=?GBK?B?" + enc.encode((filename).getBytes()) + "?=");
-			multipart.addBodyPart(bp);
-			return true;
-		} catch (Exception e) {
-			logger.info("增加邮件附件：" + filename + "发生错误！" + e);
-			return false;
-		}
-	}
+//	/**
+//	 * 增加邮件附件：(二进制发送附件)
+//	 * 
+//	 * @param filename
+//	 *            附件名称
+//	 * @param baos
+//	 *            ByteArrayOutputStream
+//	 * @return true：增加附件成功<br/>
+//	 *         false：增加附件失败
+//	 */
+//	public boolean addBodyPart(String filename, ByteArrayOutputStream baos) {
+//		try {
+//			BodyPart bp = new MimeBodyPart();
+//			bp.setDataHandler(new DataHandler(new ByteArrayDataSource(baos.toByteArray(), "lotontech/javaobject")));
+//			BASE64Encoder enc = new BASE64Encoder();
+//			bp.setFileName("=?GBK?B?" + enc.encode((filename).getBytes()) + "?=");
+//			multipart.addBodyPart(bp);
+//			return true;
+//		} catch (Exception e) {
+//			logger.info("增加邮件附件：" + filename + "发生错误！" + e);
+//			return false;
+//		}
+//	}
 
 	/**
 	 * 发送邮件

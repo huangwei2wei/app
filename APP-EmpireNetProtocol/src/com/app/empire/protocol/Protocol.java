@@ -11,21 +11,24 @@ public class Protocol extends ScenesProtocol {
 	public static final short	SERVER_Heartbeat						= 1;	// 服务器间心跳
 	public static final short	SERVER_WorldServerToAccountServer		= 2;	// world链接账号服务
 	public static final short	SERVER_DispatchLogin					= 3;	// dis链接world
-	public static final short	SERVER_UpdateServerInfo					= 4;	// dis告知ipd 服务器信息-服务已开启
+	public static final short	SERVER_UpdateServerInfo					= 4;	// dis告知ipd
+																				// 服务器信息-服务已开启
 	public static final short	SERVER_NotifyMaxPlayer					= 5;	// world告知dis人数
 	public static final short	SERVER_SyncLoad							= 6;	// dis告知ipd在线人数等情况
 	public static final short	SERVER_AccountLogin						= 7;
 	public static final short	SERVER_AccountLoginOk					= 8;
-	public static final short	SERVER_SessionClosed					= 9;	// dis告知world 用户下线
+	public static final short	SERVER_SessionClosed					= 9;	// dis告知world
+																				// 用户下线
 	public static final short	SERVER_SetClientIPAddress				= 10;	// 用户链接dis告知world用户ip
 	public static final short	SERVER_Kick								= 11;	// 踢用户下线
 	public static final short	SERVER_SyncPlayer						= 12;	// 玩家角色信息同步(系统内部使用)
 	public static final short	SERVER_PlayerLogout						= 13;	// 玩家登出(主要用这个协议通知账号服务器)
 	// 用户管理（广播，踢下线等）
-	public static final short	SERVER_BroadPb						= 14;	// 广播玩家
+	public static final short	SERVER_BroadPb							= 14;	// 广播玩家
 	public static final short	SERVER_BroadCast						= 15;	// 广播频道所有用户
 	public static final short	SERVER_ForceBroadCast					= 16;	// 广播线上所有用户（公告
-	public static final short	SERVER_ShutDown							= 17;	// dis 重新绑定
+	public static final short	SERVER_ShutDown							= 17;	// dis
+																				// 重新绑定
 	public static final short	SERVER_NotifyMaintance					= 18;	// 设置服务器状态
 	/** 用户帐号相关协议（客户端共享） */
 	public static final short	MAIN_ACCOUNT							= 2;
@@ -46,15 +49,11 @@ public class Protocol extends ScenesProtocol {
 	public static final short	ACCOUNT_SetToken						= 113;
 	public static final short	ACCOUNT_LoginAgain						= 114;
 	public static final short	ACCOUNT_LoginFail						= 115;
-	/** 同屏相关协议 */
-	public static final short	MAIN_SYN								= 3;
-	public static final short	SYN_Move								= 1;	// 玩家角色移动发服务器
-	public static final short	SYN_ReturnMove							= 2;	// 服务器推送给客户端
-	public static final short	SYN_ReportPlace							= 3;	// 报告位置
-	public static final short	SYN_ViewPlayerData						= 4;	// 推送视野范围内的玩家数据
-	public static final short	SYN_JumpMap								= 5;	// 玩家跳地图
-	public static final short	SYN_Attack								= 6;	// 玩家攻击包括技能
-	public static final short	SYN_ReturnAttack						= 6;	// 广播玩家攻击包括技能
+	/** map **/
+	public static final short	MAIN_MAP								= 3;
+	public static final short	MAP_ChangeMap							= 1;	// 请求变更场景
+	public static final short	MAP_EnterMapResult						= 2;	// 申请场景入场结果
+	public static final short	MAP_CreateMap							= 3;	// scene服务器创建地图
 
 	/** 聊天相关协议 */
 	public static final short	MAIN_CHAT								= 4;
@@ -177,22 +176,6 @@ public class Protocol extends ScenesProtocol {
 	public static final short	COPYMAP_GetTeam							= 9;	// 获取战队
 	public static final short	COPYMAP_GetTeamOk						= 10;
 
-	/** PVP房间服务 **/
-	public static final short	MAIN_PVPROOM							= 13;
-	public static final short	PVPROOM_RoomPlayerInfo					= 1;	// PVP 房间内的玩家数据列表
-	public static final short	PVPROOM_GetRoomList						= 2;	// 获取房间列表
-	public static final short	PVPROOM_GetRoomListOk					= 3;
-	public static final short	PVPROOM_CreateRoom						= 4;	// 创建房间
-	public static final short	PVPROOM_CreateRoomOk					= 5;
-	public static final short	PVPROOM_IntoRoom						= 6;	// 进入房间
-	public static final short	PVPROOM_IntoRoomOk						= 7;	// 进入房间Ok
-	public static final short	PVPROOM_OutRoom							= 8;	// 退出房间
-	public static final short	PVPROOM_OutRoomOk						= 9;	// 退出房间Ok
-	public static final short	PVPROOM_Start							= 10;	// 房主开始
-	public static final short	PVPROOM_LoadComplete					= 11;	// 加载完成
-	public static final short	PVPROOM_LoadCompleteOk					= 12;	// 加载完成
-	public static final short	PVPROOM_StartStatus						= 13;	// 开始状态
-
 	/** 商店 **/
 	public static final short	MAIN_SHOP								= 14;
 	public static final short	SHOP_GetShop							= 1;	// 获取商店
@@ -242,8 +225,8 @@ public class Protocol extends ScenesProtocol {
 	public static final short	ERRORCODE_GetSmsCodeNewList				= 14;
 	public static final short	ERRORCODE_GetSmsCodeNewListOk			= 15;
 
-//	/** 协议测试 */
-//	public static final short	MAIN_TEST								= 50;
-//	public static final short	TEST_Test								= 1;
-//	public static final short	TEST_Test2								= 2;
+	// /** 协议测试 */
+	// public static final short MAIN_TEST = 50;
+	// public static final short TEST_Test = 1;
+	// public static final short TEST_Test2 = 2;
 }

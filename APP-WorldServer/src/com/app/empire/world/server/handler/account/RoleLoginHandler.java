@@ -29,7 +29,7 @@ import com.app.protocol.handler.IDataHandler;
  * @since JDK 1.7
  */
 public class RoleLoginHandler implements IDataHandler {
-	private Logger log = Logger.getLogger(RoleLoginHandler.class);
+	private Logger	log	= Logger.getLogger(RoleLoginHandler.class);
 
 	public void handle(AbstractData data) throws Exception {
 		ConnectSession session = (ConnectSession) data.getHandlerSource();
@@ -93,8 +93,7 @@ public class RoleLoginHandler implements IDataHandler {
 			// return playerLoginOk;
 
 			// session.write(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_RoleLoginOk, data.getSessionId(), data.getSerial(), playerLoginOk.build(), EnumTarget.CLIENT.getValue());
-			session.write(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_RoleLoginOk, data.getSessionId(), data.getSerial(), worldPlayer.getArmyPacket().build(),
-					EnumTarget.SCENESSERVER.getValue());
+			session.write(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_RoleLoginOk, data.getSessionId(), data.getSerial(), worldPlayer.getArmyPacket().build(), EnumTarget.SCENESSERVER.getValue());
 			System.out.println(data.getSessionId() + "    " + data.getSerial());
 			return;
 		} catch (CreatePlayerException ex) {

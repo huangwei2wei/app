@@ -34,24 +34,22 @@ import com.google.protobuf.Message;
  * 部队代理
  */
 public class ArmyProxy extends AbstractActionQueue {
-	private static final EnumAttr[] reloadAttrs = { EnumAttr.CUR_SOUL, EnumAttr.CUR_BLOOD, EnumAttr.MANA };
-	private Integer sessionId;
-	private ConnectSession connSession = null; // 当前所对应的Session（网关
+	private static final EnumAttr[]	reloadAttrs	= { EnumAttr.CUR_SOUL, EnumAttr.CUR_BLOOD, EnumAttr.MANA };
+	private ConnectSession			connSession	= null;													// 当前所对应的Session（网关
 	// private CmdTaskQueue cmdTaskQueue;
-	private int playerId; // 用户ID
-	private String site; // 站点（跨服用）
+	private int						playerId;																// 用户ID
+	private String					site;																	// 站点（跨服用）
 	// private Channel channel; // 连接器
-	private int fieldId; // 地图ID，用户退出，回写到center
+	private int						fieldId;																// 地图ID，用户退出，回写到center
 	// private Vector3 position; // 主角位置，用户退出，回写到center
 
-	private Player player; // 英雄
-	private Pet pet; // 宠物
-	private ArmyPositionRecord posRecord; // 玩家位置信息
+	private Player					player;																// 英雄
+	private Pet						pet;																	// 宠物
+	private ArmyPositionRecord		posRecord;																// 玩家位置信息
 
-	public ArmyProxy(int playerId, Integer sessionId, ConnectSession connSession, String site, SimplePlayerInfo simplePlayerInfo, Player hero, Pet pet) {
+	public ArmyProxy(int playerId, ConnectSession connSession, String site, SimplePlayerInfo simplePlayerInfo, Player hero, Pet pet) {
 		super(ThreadManager.actionExecutor);
 		this.playerId = playerId;
-		this.sessionId = sessionId;
 		this.connSession = connSession;
 		this.site = site;
 		this.player = hero;
@@ -70,14 +68,14 @@ public class ArmyProxy extends AbstractActionQueue {
 			if (msg == null) {
 				return;
 			}
-			if (connSession == null) {
+			if (this.connSession == null) {
 				return;
 			}
 			// PbAbstractData pbMsg = new PbAbstractData(type, subType, target);
 			// pbMsg.setSessionId(getSessionId());
 			// pbMsg.setBytes(msg.toByteArray());
 			// connSession.write(pbMsg);
-			connSession.write(subType, subType, getSessionId(), 0, msg, target);
+			this.connSession.write(type, subType, getPlayerId(), 0, msg, target);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -108,7 +106,7 @@ public class ArmyProxy extends AbstractActionQueue {
 			float x = fieldInfo.getX();
 			float y = fieldInfo.getY();
 			float z = fieldInfo.getZ();
-			Vector3 v3 = new Vector3(x/ Vector3.Accuracy, y/ Vector3.Accuracy, z/ Vector3.Accuracy);
+			Vector3 v3 = new Vector3(x / Vector3.Accuracy, y / Vector3.Accuracy, z / Vector3.Accuracy);
 			player.setPostion(v3);
 			if (pet != null) {
 				field.leaveField(pet);
@@ -332,14 +330,6 @@ public class ArmyProxy extends AbstractActionQueue {
 
 	public void setPet(Pet pet) {
 		this.pet = pet;
-	}
-
-	public Integer getSessionId() {
-		return sessionId;
-	}
-
-	public void setSessionId(Integer sessionId) {
-		this.sessionId = sessionId;
 	}
 
 	public ConnectSession getConnSession() {

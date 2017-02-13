@@ -36,11 +36,13 @@ public class ConnectSession extends Session {
 
 	@Override
 	public void created() {
+		System.out.println("dis 链接成功...");
 	}
 
 	@Override
 	public void closed() {
 		// 场景服务器关闭时的操作
+		System.out.println("dis 断开链接...");
 	}
 
 	@Override

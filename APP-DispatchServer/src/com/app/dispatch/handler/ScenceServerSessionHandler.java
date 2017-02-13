@@ -12,7 +12,7 @@ import com.app.protocol.data.AbstractData.EnumTarget;
 import com.app.protocol.s2s.S2SSegment;
 
 public class ScenceServerSessionHandler extends IoHandlerAdapter {
-	private SocketDispatcher socketDispatcher;
+	private SocketDispatcher	socketDispatcher;
 
 	public ScenceServerSessionHandler(SocketDispatcher socketDispatcher) {
 		super();
@@ -32,7 +32,7 @@ public class ScenceServerSessionHandler extends IoHandlerAdapter {
 			if (packet.getTarget() == EnumTarget.WORLDSERVER.getValue()) {
 				socketDispatcher.dispatchToWorldServer(packet.sessionId, packet.buffer);
 			} else {
-				// System.out.println("dis收到Scence数据发前端：" + packet.data.toString());
+				System.out.println(packet.getpType() + "--  " + packet.getpSubType());
 				socketDispatcher.dispatchToClient(packet);
 			}
 		} else {

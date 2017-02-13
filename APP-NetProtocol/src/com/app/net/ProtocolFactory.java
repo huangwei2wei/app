@@ -101,14 +101,17 @@ public class ProtocolFactory {
 					if (mainValue == null)
 						throw new Exception("没有找到对应的MAIN_TYPE");
 					int v = (int) ((mainValue.shortValue() & 0xFF) << 16 | field.getShort(protocolClass.newInstance()) & 0xFF);
-					Class clazz = Class.forName(className);
-					this.protocolDataBean.put(Integer.valueOf(v), clazz);
+					try {
+						Class clazz = Class.forName(className);
+						this.protocolDataBean.put(Integer.valueOf(v), clazz);
+					} catch (ClassNotFoundException e) {
+						log.warn("没有找到 " + name + " 对应的protocol data.");
+					}
 					IDataHandler handler = getProtocolHandlerClassInstance(name);
-					if (handler == null) {
-						log.warn("没有找到 " + name + " 对应的protocol handler");
-					} else {
+					if (handler != null) {
 						this.protocolHandler.put(Integer.valueOf(v), handler);
-						// log.warn("协议关联 " + className + "对应Handle " + name);
+					} else {
+						log.warn("没有找到 " + name + " 对应的protocol handler.");
 					}
 				} catch (Exception e) {
 					log.error("初始化ProtocolFactory错误:" + e.toString());
@@ -152,7 +155,8 @@ public class ProtocolFactory {
 	 * e.g.<br>
 	 * <tt>dataHandler = com.sumsharp.gameaccount.handler</tt><br>
 	 * <tt>typeName = ERROR_ProtocolError</tt><br>
-	 * 则返回结果为：<tt>com.sumsharp.gameaccount.handler.error.ProtocolErrorHandler</tt>
+	 * 则返回结果为：
+	 * <tt>com.sumsharp.gameaccount.handler.error.ProtocolErrorHandler</tt>
 	 * 
 	 * @param typeName
 	 * @return

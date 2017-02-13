@@ -16,7 +16,7 @@ import com.app.protocol.data.AbstractData.EnumTarget;
 import com.app.protocol.handler.IDataHandler;
 
 public class RoleLoginOkHandler implements IDataHandler {
-	Logger log = Logger.getLogger(RoleLoginOkHandler.class);
+	Logger	log	= Logger.getLogger(RoleLoginOkHandler.class);
 
 	@Override
 	public void handle(AbstractData data) throws Exception {
@@ -26,7 +26,7 @@ public class RoleLoginOkHandler implements IDataHandler {
 		// ArmyInfoMsg msg = (ArmyInfoMsg) data;
 
 		int playerId = msg.getPlayerInfo().getPlayerId();
-		System.out.println("玩家：playerId 登录");
+		System.out.println("玩家："+playerId+" 登录");
 		SimplePlayerInfo simPlayer = new SimplePlayerInfo();
 		simPlayer.readProto(msg.getPlayerInfo());
 
@@ -49,7 +49,7 @@ public class RoleLoginOkHandler implements IDataHandler {
 			pet = new Pet(playerId, IDMakerHelper.nextID());
 			pet.readPetInfo(msg.getPetBattleInfo());
 		}
-		ArmyProxy army = new ArmyProxy(playerId, data.getSessionId(), session, "center", simPlayer, player, pet);
+		ArmyProxy army = new ArmyProxy(playerId, session, "center", simPlayer, player, pet);
 		session.playerLogin(army);
 
 		// PBMessage message = MessageUtil.buildMessage(Protocol.U_ARMY_HERO_INFO, msg.getHeoBattleInfo());
@@ -58,7 +58,6 @@ public class RoleLoginOkHandler implements IDataHandler {
 		// LoginInOK ok = new LoginInOK(data.getSessionId(), data.getSerial());
 		// ok.setResult(1);
 		// ok.setTime(System.currentTimeMillis());
-
 		session.write(Protocol.MAIN_ACCOUNT, Protocol.ACCOUNT_RoleLoginOk, data.getSessionId(), data.getSerial(), msg, EnumTarget.SCENESSERVER.getValue());
 
 	}

@@ -286,8 +286,8 @@ public class PlayerService implements Runnable {
 			newPlayer.setServerId(WorldServer.serverConfig.getMachineCode());
 			// 人物位置
 			PlayerPostion pos = new PlayerPostion();
-			pos.setMapId(1001);
-			pos.setMapTempId(1001);
+			pos.setMapId(1009);
+			pos.setMapTempId(1009);
 			pos.setX(1000);
 			pos.setY(1000);
 			pos.setZ(1000);

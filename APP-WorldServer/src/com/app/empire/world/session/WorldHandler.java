@@ -18,7 +18,7 @@ import com.app.thread.exec.ThreadManager;
  * @since JDK 1.6
  */
 public class WorldHandler extends SessionHandler {
-	private static Logger log = Logger.getLogger(WorldHandler.class);
+	private static Logger	log	= Logger.getLogger(WorldHandler.class);
 
 	/**
 	 * 构造函数，初始化<tt>SessionRegistry</tt>值
@@ -57,7 +57,7 @@ public class WorldHandler extends SessionHandler {
 
 		if (session != null) {
 			int sessionId = data.getSessionId();
-			if (sessionId > 0) {
+			if (sessionId > 0) {//已经登录
 				WorldPlayer worldPlayer = ((ConnectSession) session).getPlayer(sessionId);
 				worldPlayer.enqueue(new HandlerAction(worldPlayer, data));
 			} else {

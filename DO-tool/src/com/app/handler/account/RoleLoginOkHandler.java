@@ -12,7 +12,10 @@ import com.app.empire.protocol.data.test.ItemVo;
 import com.app.empire.protocol.data.test.ItemVo2;
 import com.app.empire.protocol.data.test.Test;
 import com.app.empire.protocol.pb.TestMsgProto.TestMsg;
+import com.app.empire.protocol.pb.map.ReqChangeMapMsgProto.ReqChangeMapMsg;
 import com.app.empire.protocol.pb.player.PlayerInfoMsgProto.PlayerInfoMsg;
+import com.app.empire.protocol.pb.warField.PostionMsgProto.PostionMsg;
+import com.app.empire.protocol.pb.warField.Vector3Proto.PBVector3;
 import com.app.net.IConnector;
 import com.app.protocol.data.AbstractData;
 import com.app.protocol.data.AbstractData.EnumTarget;
@@ -258,5 +261,19 @@ public class RoleLoginOkHandler implements IDataHandler {
 		// test2.setBytes(testMsg.build().toByteArray());
 		// connector.send(test2);
 		connector.send(Protocol.MAIN_TEST, Protocol.TEST_Test2, testMsg.build(), EnumTarget.WORLDSERVER.getValue());
+
+		ReqChangeMapMsg.Builder reqChangeMapMsg = ReqChangeMapMsg.newBuilder();
+		PostionMsg.Builder postionMsg = PostionMsg.newBuilder();
+		postionMsg.setMapId(1009);
+		postionMsg.setMapKey(1009);
+		PBVector3.Builder pbv = PBVector3.newBuilder();
+		pbv.setX(100);
+		pbv.setY(101);
+		pbv.setZ(102);
+		postionMsg.setPostion(pbv);
+		reqChangeMapMsg.setPostionMsg(postionMsg);
+		
+		connector.send(Protocol.MAIN_MAP, Protocol.MAP_ChangeMap, reqChangeMapMsg.build(), EnumTarget.WORLDSERVER.getValue());
+
 	}
 }

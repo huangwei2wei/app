@@ -29,7 +29,7 @@ public class ChangeMapHandler implements IDataHandler {
 		// TODO 向场景服务器申请场景进入
 		// PBMessage message = MessageUtil.buildMessage(Protocol.S_ENTERSCENE, player.getPlayerId(), msg);
 		// player.sendPbMessage(message);
-		session.write(Protocol.MAIN_MAP, Protocol.MAP_ChangeMap, data.getSessionId(), data.getSerial(), msg, EnumTarget.SCENESSERVER.getValue());
+		session.write(Protocol.MAIN_WARFIELD, Protocol.WARFIELD_EnterField, data.getSessionId(), data.getSerial(), msg, EnumTarget.SCENESSERVER.getValue());
 	}
 
 }
